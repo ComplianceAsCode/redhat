@@ -1,0 +1,18 @@
+documentation_complete: false
+schema_version: 3.0.0
+name: Red Hat Enterprise Linux 7
+references:
+  - name: Red Hat Enterprise Linux Security Configuration Guide
+    path: https://tbd.com
+    type: URL
+satisfies:
+  - control_key: AC-2 (12)
+    covered_by: []
+    implementation_status: complete
+    control_origin: "service provider system specific"
+    narrative:
+      - key: a
+        text: |
+          'This is sample text on how RHEL7 satisfies AC-2(12)'
+    standard_key: NIST-800-53
+
