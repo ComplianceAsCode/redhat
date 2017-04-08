@@ -22,8 +22,7 @@ clean:
 	rm -rf exports/ opencontrols/
 
 pdf: exports
-	#cd exports && gitbook pdf ./ ../assets/example.pdf
-	cd exports/ && gitbook pdf ./ ./compliance.pdf
+	cd exports/ && gitbook pdf ./ ./OpenShift_v3_Compliance.pdf
 
 serve: exports
 	cd exports && gitbook serve
@@ -32,9 +31,6 @@ exports: opencontrols
 	${CM} docs gitbook FedRAMP-low
 
 opencontrols: opencontrol.yaml */component.yaml 
-	-${CM} get
-
-rhel7: RHEL7/opencontrol.yaml RHEL7/*/component.yaml
 	-${CM} get
 
 coverage:

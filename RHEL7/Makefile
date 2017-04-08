@@ -22,7 +22,7 @@ clean:
 	rm -rf exports/ opencontrols/
 
 pdf: exports
-	cd exports/ && gitbook pdf ./ ./compliance.pdf
+	cd exports/ && gitbook pdf ./ ./Red_Hat_Enterprise_Linux_7_Compliance.pdf
 
 serve: exports
 	cd exports && gitbook serve

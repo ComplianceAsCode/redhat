@@ -16,32 +16,14 @@ EXECUTABLES = $(CM) $(GB)
 K := $(foreach exec,$(EXECUTABLES),\
         $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
 
-default: pdf
+default: rhel7 openshiftv3
 
 clean:
-	rm -rf exports/ opencontrols/
+	- cd RHEL7 && make clean
+	- cd OpenShift-v3 && make clean
 
-pdf: exports
-	#cd exports && gitbook pdf ./ ../assets/example.pdf
-	cd exports/ && gitbook pdf ./ ./compliance.pdf
+rhel7: 
+	- cd RHEL7 && make
 
-serve: exports
-	cd exports && gitbook serve
-
-exports: opencontrols
-	${CM} docs gitbook FedRAMP-low
-
-opencontrols: opencontrol.yaml */component.yaml 
-	-${CM} get
-
-rhel7: RHEL7/opencontrol.yaml RHEL7/*/component.yaml
-	-${CM} get
-
-coverage:
-	${CM} diff FedRAMP-low
-
-fedramp: default
-	${GOPATH}/bin/fedramp-templater fill opencontrols/ FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
-
-fedramp-diff:
-	${GOPATH}/bin/fedramp-templater diff opencontrols/ FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
+openshiftv3:
+	- cd OpenShift-v3 && make
