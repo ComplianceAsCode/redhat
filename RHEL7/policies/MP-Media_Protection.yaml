@@ -1,0 +1,53 @@
+documentation_complete: false
+name: Audit Policy
+schema_version: 3.0.0
+references:
+- name: MP Policy
+  path: https://github.com/opencontrol/freedonia-policies/wiki/Audit-Policy
+satisfies:
+- control_key: MP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: implemented
+  narrative:
+    - text: |
+        This text describes how our organization is meeting the requirements for the
+        Audit policy, and also references a more complete description at ./MP_policy/README.md
+
+        Since the MP-1 `control` is to document and disseminate a policy on Audit and Accountability, then
+        this narrative suffices to provide that control. A verification step could be something
+        that checks that the referenced policy is no more than 365 days old.
+- control_key: MP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+   - text: |
+        Application and Server logs are sent to PaperTrail to provide audit
+        reduction and report generation capabilites for Freedonia Devops and end users
+        of the Freedonia hello_world system.
+
+        PaperTrail is a SaaS for aggregation of audit log data across multiple systems and tiers
+
+        With the PaperTrail capability the organizations's operations and development teams
+        can structure and customize audit logs queries to specific app instances, API
+        calls, system metrics, user access, system components, network traffic flow and
+        other criteria.
+
+- control_key: MP-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+   - text: |
+        Application and Server logs are sent to PaperTrail to provide audit
+        reduction and report generation capabilites for Freedonia Devops and end users
+        of the Freedonia hello_world system.
+
+        PaperTrail is a SaaS for aggregation of audit log data across multiple systems and tiers
+
+        With the PaperTrail capability the organizations's operations and development teams
+        can structure and customize audit logs queries to specific app instances, API
+        calls, system metrics, user access, system components, network traffic flow and
+        other criteria.
+                              

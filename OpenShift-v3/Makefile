@@ -30,8 +30,8 @@ serve: exports
 exports: opencontrols
 	${CM} docs gitbook FedRAMP-low
 
-opencontrols: opencontrol.yaml */component.yaml 
-	-${CM} get
+opencontrols: opencontrol.yaml policies/*.yaml
+	${CM} get
 
 coverage:
 	${CM} diff FedRAMP-low
