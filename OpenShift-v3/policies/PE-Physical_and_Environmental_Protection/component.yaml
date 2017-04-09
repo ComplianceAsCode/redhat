@@ -9,7 +9,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-       PE-1 is an organizational control outside the scope of securely configuring OpenShift.
+       PE-1 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-2
   standard_key: NIST-800-53
@@ -17,7 +17,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-2 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-2 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-3
   standard_key: NIST-800-53
@@ -25,7 +25,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-3 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-3 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-4
   standard_key: NIST-800-53
@@ -33,7 +33,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-4 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-4 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-5
   standard_key: NIST-800-53
@@ -41,7 +41,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-5 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-5 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-6
   standard_key: NIST-800-53
@@ -49,7 +49,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-6 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-6 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-6 (1)
   standard_key: NIST-800-53
@@ -57,7 +57,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-6 (1) is an organizational control outside the scope of securely configuring OpenShift.
+        PE-6 (1) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-8
   standard_key: NIST-800-53
@@ -65,7 +65,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-8 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-8 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-9
   standard_key: NIST-800-53
@@ -73,7 +73,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-9 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-9 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-10
   standard_key: NIST-800-53
@@ -81,7 +81,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-10 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-10 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-11
   standard_key: NIST-800-53
@@ -89,7 +89,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-11 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-11 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-12
   standard_key: NIST-800-53
@@ -97,7 +97,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-12 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-12 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-13
   standard_key: NIST-800-53
@@ -105,7 +105,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-13 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-13 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-13 (2)
   standard_key: NIST-800-53
@@ -113,7 +113,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-13 (2) is an organizational control outside the scope of securely configuring OpenShift.
+        PE-13 (2) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-13 (3)
   standard_key: NIST-800-53
@@ -121,7 +121,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-13 (3) is an organizational control outside the scope of securely configuring OpenShift.
+        PE-13 (3) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-14
   standard_key: NIST-800-53
@@ -129,7 +129,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-14 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-14 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-14 (2)
   standard_key: NIST-800-53
@@ -137,7 +137,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-14 (2) is an organizational control outside the scope of securely configuring OpenShift.
+        PE-14 (2) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-15
   standard_key: NIST-800-53
@@ -145,7 +145,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-15 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-15 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-16
   standard_key: NIST-800-53
@@ -153,7 +153,7 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-16 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-16 is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: PE-17
   standard_key: NIST-800-53
@@ -161,4 +161,4 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        PE-17 is an organizational control outside the scope of securely configuring OpenShift.
+        PE-17 is an organizational control outside the scope of OpenShift configuration.
