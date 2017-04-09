@@ -1,53 +1,434 @@
 documentation_complete: false
-name: Audit Policy
+name: Access Control
 schema_version: 3.0.0
-references:
-- name: AC Policy
-  path: https://github.com/opencontrol/freedonia-policies/wiki/Audit-Policy
 satisfies:
+
 - control_key: AC-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implimentation_status: none
   narrative:
-    - text: |
-        This text describes how our organization is meeting the requirements for the
-        Audit policy, and also references a more complete description at ./AC_policy/README.md
+   - text: |
+        Narrative text on how product can be configured against AC-1 goes here.
 
-        Since the AC-1 `control` is to document and disseminate a policy on Audit and Accountability, then
-        this narrative suffices to provide that control. A verification step could be something
-        that checks that the referenced policy is no more than 365 days old.
+        This answer can be multi-line.
+
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implimentation_status: none
   narrative:
    - text: |
-        Application and Server logs are sent to PaperTrail to provide audit
-        reduction and report generation capabilites for Freedonia Devops and end users
-        of the Freedonia hello_world system.
+        Narrative text on how product can be configured against AC-2 goes here.
 
-        PaperTrail is a SaaS for aggregation of audit log data across multiple systems and tiers
+        This answer can be multi-line.
 
-        With the PaperTrail capability the organizations's operations and development teams
-        can structure and customize audit logs queries to specific app instances, API
-        calls, system metrics, user access, system components, network traffic flow and
-        other criteria.
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (1) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (2) goes here.
+
+        This answer can be multi-line.
 
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implimentation_status: none
   narrative:
    - text: |
-        Application and Server logs are sent to PaperTrail to provide audit
-        reduction and report generation capabilites for Freedonia Devops and end users
-        of the Freedonia hello_world system.
+        Narrative text on how product can be configured against AC-2 (3) goes here.
 
-        PaperTrail is a SaaS for aggregation of audit log data across multiple systems and tiers
+        This answer can be multi-line.
 
-        With the PaperTrail capability the organizations's operations and development teams
-        can structure and customize audit logs queries to specific app instances, API
-        calls, system metrics, user access, system components, network traffic flow and
-        other criteria.
-                              
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (4) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (5) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (7) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (9) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-2 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (10) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-2 (12) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-3 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-4 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-4 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-4 (21) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-5 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-6 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-6 (1) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-6 (2) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-6 (5) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-6 (9) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-6 (10) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-7 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-8 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-10 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-11 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-11 (1) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-12 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-14 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-17 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-17 (1) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-17 (2) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-17 (3) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-17 (4) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-17 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-17 (9) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-18 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-18 (1) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-19 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-19 (5) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-20 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-20 (1) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-20 (2) goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-21 goes here.
+
+        This answer can be multi-line.
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+   - text: |
+        Narrative text on how product can be configured against AC-22 goes here.
+
+        This answer can be multi-line.
