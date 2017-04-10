@@ -1,0 +1,14 @@
+# Files and directories not to track in git tree
+
+# Global files for the entire tree
+*.swp
+*~
+*.pyc
+
+# Build files
+exports/*
+*/exports/*
+
+# OpenControl generated files
+opencontrols/
+*/opencontrols/*
