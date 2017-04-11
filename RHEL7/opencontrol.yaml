@@ -5,16 +5,12 @@ metadata:
   maintainers:
     - Shawn Wells <shawn@redhat.com>
 components:
-  - ./AU_policy
+    - ./AU_policy
 dependencies:
   standards:
-#    - url: https://github.com/opencontrol/freedonia-frist/
-#      revision: master
     - url: https://github.com/opencontrol/NIST-800-53-Standards
       revision: master
   certifications:
-#    - url: https://github.com/opencontrol/freedonia-frist/
-#      revision: master
     - url: https://github.com/opencontrol/FedRAMP-Certifications
       revision: master
 #  systems:
