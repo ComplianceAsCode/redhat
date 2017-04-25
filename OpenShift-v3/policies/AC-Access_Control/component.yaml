@@ -8,20 +8,52 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-1 goes here.
+    - key: a
+      text: |
+        '
+        test first paragraph
 
-        This answer can be multi-line.
+        <The customer will be responsible for developing, documenting, and 
+        disseminating Access Control policy and procedures. A successful
+        control response will need to address the content of the policy
+        (which must include purpose, scope, roles, responsibilities,
+        management committment, coordination, and compliance) and 
+        procedures (which must facilitate the implimentation of the policies
+        and associated controls).>
+
+        <Adding, or binding, a role to users or groups gives the user or
+        group the relevant access granted by the role. OpenShift administrators
+        can add and remove roles to and from users and groups using OpenShift
+        commands. Documentation for the management of OpenShift Role Bindings
+        can be found at: 
+
+        https://docs.openshift.com/container-platform/latest/admin_guide/manage_authorization_policy.html#managing-role-bindings>
+        '
+
+    - key: b
+      text: |
+        '<The customer will be responsible for reviewing and updating the
+         Access Control policy every 3 years, and procedures annually. A
+        successful control response will need to address and review and
+        update process, including the role(s) responsible for initiating
+        the review process, updating the policy and procedures, and
+        providing approval of the updates.>'
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-2 goes here.
+     - key: a
+       text: |
+         '<The customer will be responsible for identifying and selecting the
+         types of accounts required to support the customer application.
+         Examples of account types include individual, shared, group,
+         system, guest/annonymous, emergency, developer/manufacturer/vendor,
+         temporary, and service. A successful control response will need to
+         address the specific requirements fulfulled by each account type
+         in use.'
 
-        This answer can be multi-line.
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
