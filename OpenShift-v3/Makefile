@@ -38,7 +38,7 @@ coverage:
 	${CM} diff FedRAMP-low
 
 fedramp: default
-	${GOPATH}/bin/fedramp-templater fill opencontrols/ FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
+	${GOPATH}/bin/fedramp-templater fill opencontrols/ ../FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
 
 fedramp-diff:
 	${GOPATH}/bin/fedramp-templater diff opencontrols/ FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
