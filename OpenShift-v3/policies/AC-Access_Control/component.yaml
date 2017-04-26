@@ -214,7 +214,8 @@ satisfies:
   narrative:
    - text: |
         '<Within OpenShift, the sessionMaxAgeSeconds variable in the 
-        master-config.yaml file controls when/if users must logout after a period       of inactivity.>'
+        master-config.yaml file controls when/if users must logout after a 
+        period of inactivity.>'
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
@@ -255,64 +256,118 @@ satisfies:
   covered_by: []
   implimentation_status: Implemented
   narrative:
-   - text: |
-        By default, OpenShift does not support group authenticators. OpenShift does provide a role-based access control
-        (RBAC) mechanism and user identity metadata, including group membership. Identity and RBAC controls are enforced
-        against all user (privileged and non) actions and resources. RBAC access controls can be applied to provide
-        access to resources by individual users or groups of users. Groups are typically configured in accordance with
-        Section 3.4, Managing User and Grup Labels in OpenShift's Cluster Administration Guide:
+    - text: |
+        '<The customer will be responsible for defining and enforcing
+        conditions for the use of shared group accounts. A successful control
+        response will need to address the specific need for the existing of
+        a shared or group account versus multiple individual accounts, as well
+        as the process for reviewing membership of shared or group accounts to
+        verify that all individuals with access still require that access.>
 
-        https://docs.openshift.com/container-platform/3.3/admin_guide/manage_users.html#managing-users-managing-user-and-group-labels
+        <By default, OpenShift does not support group authenticators. OpenShift 
+        does provide a role-based access control (RBAC) mechanism and user 
+        identity metadata, including group membership. Identity and RBAC 
+        controls are enforced against all user (privileged and non) actions and 
+        resources. RBAC access controls can be applied to provide access to 
+        resources by individual users or groups of users. Groups are typically 
+        configured in accordance with Section 3.4, Managing User and Group i
+        Labels in OpenShift Cluster Administration Guide:
+
+        https://docs.openshift.com/container-platform/3.3/admin_guide/manage_users.html#managing-users-managing-user-and-group-labels >'
 
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-2 (10) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for terminating or changing
+        credentials for shared or group accounts when membership to those
+        groups changes. A successful control response will need to discuss how
+        group membership change is detected and reported, the peronnel or roles
+        responsible for changing the affected credentials, and the process or
+        mechanism used to perform the change.>'
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-2 (12) goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for monitoring information system
+        accounts for atypical use. A successful control response will relate
+        the monitoring activities required for this control to the auditing
+        activities in the AU control family, and will discuss the criteria
+        for atypical use.>
 
-        This answer can be multi-line.
+        <OpenShift embeds ElasticSearch, Fluentd, and Kibana (EFK) stack. This
+        pre-integrated audit reduction capability aggregates logs from nodes
+        and applications running inside your OpenShift Container Platform
+        installation. Once deployed it uses Fluentd to aggregate event logs
+        from all nodes, projects, and pods into ElasticSearch (ES). It also
+        provides a centralized kibana web UI where users and administrators
+        can create rich visualizations and dashboards with the aggregated
+        data. Triggers may be setup to detect atypical use.
+
+        For aggregate log sizing information, refer to the Aggregate Logging
+        Sizing Guidelines of the Installation and Configuration Guide:
+
+        https://docs.openshift.com/container-platform/3.3/install_config/aggregate_logging_sizing.html 
+
+        For instructions on how to configure aggregate logging, refer to the
+        Aggregating Container Logs section of the Installation and 
+        Configuration guide:
+
+        : https://docs.openshift.com/container-platform/3.3/install_config/aggregate_logging.html >'
+    - key: b
+      text: |
+        '<The customer will be responsible for reporting atypical use of
+        information system accounts. A successful control response will 
+        discuss the personnel or roles that must be notified and the process
+        for notification.>'
+        
 
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-3 goes here.
+    - text: |
+        '<Documentation on OpenShift Authorization frameworks can be found
+        online. Each OpenShift deployment may chose differing authorization
+        processes/configurations. Documentation can be found at:
 
-        This answer can be multi-line.
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/authorization.html >'
 
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-4 goes here.
+    - text: |
+        '<The customer will be responsible for controlling the flow of
+        information within the customer application, and between the customer
+        application and external systems. A successful control response will
+        need to address the customer information flow control policies,
+        as well as mechanisms in place to enforce those policies.>
 
-        This answer can be multi-line.
+        <A review of OpenShift v3 networking can be found in the OpenShift
+        Architecture guide:
+
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/networking.html >'
 
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-4 (21) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for separating information flows
+        within the customer application. A successful control response will
+        need to address the csutomer organizational requirements for
+        the separation of information flows, and the mechanisms and
+        techniques used to accomplish this separation.>'
 
 - control_key: AC-5
   standard_key: NIST-800-53
