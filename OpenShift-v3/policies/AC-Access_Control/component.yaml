@@ -399,60 +399,71 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-6 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for following least-privilege
+        principles when granting authorized access. A successful control
+        response will need to address the use of business requirements
+        to determine the level of access required to perform each job function,
+        and how that is related to the role-based access control scheme used
+        within the system.>'
 
 - control_key: AC-6 (1)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-6 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for defining key security functions
+        and security-relevant information, and for explicitly authorizing
+        access to those functions and information. A successful control response
+        will need to address the criteria used to determine which functions
+        and information require explicit access authorization.>'
 
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-6 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for requiring users to use the
+        lowest level of access required to perform any given function. A
+        successful control response will need to discuss how the level of
+        access in use is monitored and enforced.>'
 
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-6 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for defining specific personnel
+        or roles who require privileged access, and restricting privileged
+        access to those personnel or roles. A successful response will need
+        to address the job functions or responsibilities for which 
+        privileged access is required.>'
 
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-6 (9) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for auditing the execution of 
+        privileged functions. A successful control response will need
+        to relate this requirement to the general auditing requirements
+        of the AU control family,>'
 
 - control_key: AC-6 (10)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-6 (10) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring that non-privileged
+        users cannot execute privileged functions. A successful control
+        response will need to discuss the use of centralized authentication
+        and authorization and any other means of enforcement of privilege
+        levels.>'
 
 - control_key: AC-7
   standard_key: NIST-800-53
