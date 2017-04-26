@@ -803,27 +803,59 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-20 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for restricting or prohibiting the
+        use of customer-controlled portable storage devices on external
+        information systems. If such use is not prohibited, a successful
+        control repsonse will need to address specific restrictions on how
+        or under what conditions such use may occur.>'
 
 - control_key: AC-21
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-21 goes here.
-
-        This answer can be multi-line.
+    - key: 'a'
+      text: |
+        '<The customer will be responsible for determining when authorized users
+        are required to use discretion as to whether to share information. A
+        successful control response will need to address the circumstances
+        where user direction (rather than automatic access enforcement) is
+        required.>'
+    - key: 'b'
+      text: |
+        '<The customer will be responsible for defining and employing automated
+        mechanisms or manual processes to assist users in making information
+        sharing decisions.>'
 
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-22 goes here.
-
-        This answer can be multi-line.
+    - key: 'a'
+      text: |
+        '<The customer will be responsible for designating individuals
+        authorized to post information publicly. A successful control response
+        will need to address the specific business requirements or job functions
+        that justify such access.>'
+    - key: 'b'
+      text: |
+        '<The customer will be responsible for trianing designated authorized
+        individuals to prevent disclosure of nonpublic information. A
+        successful control response will need to outline the training
+        provided.>'
+    - key: 'c'
+      text: |
+        '<The customer will be responsible for reviewing information prior to
+        public posting to ensure that nonpublic information is not included. A
+        successful control response will need to address the roles or personnel
+        responsible for this review and the process for signoff.>'
+    - key: 'd'
+      text: |
+        '<The customer will be responsible for reviewing publicly available
+        information at the reqired frequency and removing nonpublic information
+        when discovered. A successful control response will need to address the
+        roles or personnel responsible for the review, the process used to
+        review publicly available information, and the process for removal of
+        nonpublic information.>'
