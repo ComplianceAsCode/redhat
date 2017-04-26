@@ -44,14 +44,16 @@ sudo yum -y install golang
 `````
 
 (7a) Create GOPATH structure 
+You can use something else besides ``~/golang-projects``, just remember to update the directory in 7b.
 `````
-mkdir -p ~/projects/{bin,pkg,src}
+mkdir -p ~/golang-projects/{bin,pkg,src}
 `````
 
 (7b) Update ~./bash_profile
 `````
-export GOBIN="$HOME/projects/bin"
-export GOPATH="$HOME/projects/src"
+export GOBIN="$HOME/golang-projects/bin"
+export GOPATH="$HOME/golang-projects"
+export GOSRC="$HOME/golang-projects/src"
 `````
 And then source it:
 `````
