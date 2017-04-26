@@ -202,7 +202,8 @@ satisfies:
         pods.
 
         For documentation on how to setup Elasticsearch, Fluentd, and Kibana, 
-        refer to the Aggregate Logging" section of the OpenShift Installation and       Configuration Guide:
+        refer to the Aggregate Logging" section of the OpenShift Installation 
+        and Configuration Guide:
 
         https://docs.openshift.com/container-platform/3.3/install_config/aggregate_logging.html>'
 
@@ -220,12 +221,34 @@ satisfies:
   covered_by: []
   implimentation_status: Implimented
   narrative:
-   - text: |
-        Adding, or binding, a role to users or groups give the user or group the relevant access granted by
-        the role. You can add and remove roles to and from users and groups using OpenShift commands.
-        Documentation for the management of Role Bindings can be found at:
+    - key: a
+      text: |
+        '<The customer will be responsible for establishing and administering
+        privileged accounts in accordance with a role-based access (RBAC)
+        scheme. A successful control response will need to address the types
+        of users or rules that receive privileged access as well as the
+        organization of the RBAC scheme.>
 
-        https://docs.openshift.com/container-platform/latest/admin_guide/manage_authorization_policy.html#managing-role-bindings
+        <Adding, or binding, a role to users or groups give the user or group
+        the relevant access granted by the role. You can add and remove roles 
+        to and from users and groups using OpenShift commands. Documentation 
+        for the management of Role Bindings can be found at:
+
+        https://docs.openshift.com/container-platform/latest/admin_guide/manage_authorization_policy.html#managing-role-bindings >'
+    - key: b
+      text: |
+        '<The customer will be responsible for monitoring privileged role
+        assignments. A successful control response will need to address
+        the process by which role assignments are reviewed for continued
+        appropriateness.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for defining and executing actions
+        to take when privileged role assignments are no longer appropriate.
+        A successful control response will need to address the criteria for
+        determining whether assignments are no longer appropriate, the actions
+        to be taken, and the roles or personnel responsible for taking those
+        actions.>'
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
