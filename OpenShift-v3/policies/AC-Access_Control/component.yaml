@@ -6,7 +6,7 @@ satisfies:
 - control_key: AC-1
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Not applicable
   narrative:
     - key: a
       text: |
@@ -42,7 +42,7 @@ satisfies:
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Not applicable
   narrative:
      - key: a
        text: |
@@ -54,26 +54,31 @@ satisfies:
          address the specific requirements fulfulled by each account type
          in use.'
 
-
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Not applicable
   narrative:
    - text: |
-        Narrative text on how product can be configured against AC-2 (1) goes here.
+        3rd party software must be used to fully support automated management of OpenShift accounts.
 
-        This answer can be multi-line.
+        Documentation on authentication configuration options exposed in OpenShift can be found here:
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/authentication.html
 
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Not applicable
   narrative:
    - text: |
-        Narrative text on how product can be configured against AC-2 (2) goes here.
+        3rd party software must be used to fully support management of temporary and emergency accounts.
 
-        This answer can be multi-line.
+        OpenShift does not have the capability to automatically disable accounts after a configured period of time.
+        To meet this requirement, an authentication provider (such as Active Directory) must be used. Integration
+        between OpenShift and Active Directory can be accomplished through the use of Kerberos cross-realm trusts.
+        Refer to the LDAP Authentication section of the OpenShift Administrators guide:
+
+        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth
 
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
@@ -81,49 +86,65 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        Narrative text on how product can be configured against AC-2 (3) goes here.
+        3rd party software must be used to fully support automatic disablement of inactive accounts.
 
-        This answer can be multi-line.
+        OpenShift does not have the capability to automatically disable accounts after a configured 
+        period of time. To meet this requirement, an authentication provider (such as Active Directory) must be used.
+        Integration between OpenShift and Active Directory can be accomplished throguh the use of Kerberos cross-realm
+        trusts. Refer to the LDAP Authentication section of the OpenShift Administrators guide:
+
+        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Implemented
   narrative:
    - text: |
-        Narrative text on how product can be configured against AC-2 (4) goes here.
+        OpenShift will log events to standardized files, however automatic notification (outside of generating
+        audit data) is not possible. As an OpenShift Container Platform cluster administrator, you can deploy
+        the EFK stack to aggregate logs for a range of OpenShift Container Platform services and setup alerting.
+        Application developers can view the logs of the projects for which they have view access. The EFK stack
+        aggregates logs from hosts and applications, whether coming from multiple containers or even deleted pods.
+        For documentation on how to setup Elasticsearch, Fluentd, and Kibana, refer to the Aggregate Logging" section
+        of the OpenShift Installation and Configuration Guide:
 
-        This answer can be multi-line.
+        https://docs.openshift.com/container-platform/3.3/install_config/aggregate_logging.html
 
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Implemented
   narrative:
    - text: |
-        Narrative text on how product can be configured against AC-2 (5) goes here.
-
-        This answer can be multi-line.
+        The sessionMaxAgeSeconds variable in the master-config.yaml file controls when/if users must logout
+        after a period of inactivity.
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Implimented
   narrative:
    - text: |
-        Narrative text on how product can be configured against AC-2 (7) goes here.
+        Adding, or binding, a role to users or groups give the user or group the relevant access granted by
+        the role. You can add and remove roles to and from users and groups using OpenShift commands.
+        Documentation for the management of Role Bindings can be found at:
 
-        This answer can be multi-line.
+        https://docs.openshift.com/container-platform/latest/admin_guide/manage_authorization_policy.html#managing-role-bindings
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implimentation_status: Implemented
   narrative:
    - text: |
-        Narrative text on how product can be configured against AC-2 (9) goes here.
+        By default, OpenShift does not support group authenticators. OpenShift does provide a role-based access control
+        (RBAC) mechanism and user identity metadata, including group membership. Identity and RBAC controls are enforced
+        against all user (privileged and non) actions and resources. RBAC access controls can be applied to provide
+        access to resources by individual users or groups of users. Groups are typically configured in accordance with
+        Section 3.4, Managing User and Grup Labels in OpenShift's Cluster Administration Guide:
 
-        This answer can be multi-line.
+        https://docs.openshift.com/container-platform/3.3/admin_guide/manage_users.html#managing-users-managing-user-and-group-labels
 
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
