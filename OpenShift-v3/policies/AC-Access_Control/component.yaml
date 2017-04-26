@@ -374,10 +374,25 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-5 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for defining separation of duties
+        between individuals so as to reduce the risk of insider threat without
+        collusion. A successful control response will need to consider the
+        possible actions a malicious insider could take to undermine the
+        security of the system, and delineate how duties are separated to
+        prevent or reduce the likelihood of those actions.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for documenting separation of duties.
+        A successful control response will need to address the location of this
+        documentation and the process for reviewing it if necessary.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for defining access authorizations
+        to support separation of duties, for example by using Role Based
+        Access Control. A successful control response will need to address
+        policy and technical enforcement of separation of duties.>'
 
 - control_key: AC-6
   standard_key: NIST-800-53
