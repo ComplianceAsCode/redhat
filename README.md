@@ -7,7 +7,7 @@ A few packages are needed for successful OpenControl builds on a RHEL7 system.
 
 (1) Install Base Packages
 `````
-$ sudo yum -y install git vim gcc-c++ make xdg-utils
+$ sudo yum -y install git vim gcc-c++ make xdg-utils libxml2-devel
 `````
 
 (2) Enable EPEL
@@ -35,4 +35,30 @@ sudo npm install gitbook-cli -g
 curl -L https://github.com/opencontrol/compliance-masonry/releases/download/v1.1.2/compliance-masonry_1.1.2_linux_amd64.tar.gz -o compliance-masonry.tar.gz
 tar -xf compliance-masonry.tar.gz
 cp compliance-masonry_1.1.2_linux_amd64/compliance-masonry /usr/local/bin
+`````
+
+(7) Install Golang
+`````
+sudo subscription-manager repos --enable=rhel-7-server-optional-rpms
+sudo yum -y install golang
+`````
+
+(7a) Create GOPATH structure 
+`````
+mkdir -p ~/projects/{bin,pkg,src}
+`````
+
+(7b) Update ~./bash_profile
+`````
+export GOBIN="$HOME/projects/bin"
+export GOPATH="$HOME/projects/src"
+`````
+And then source it:
+`````
+source ~/.bash_profile
+`````
+
+(8) Install FedRAMP Templater
+`````
+go get github.com/opencontrol/fedramp-templater
 `````
