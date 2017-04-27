@@ -132,15 +132,24 @@ satisfies:
         for: overwriting the oldest audit records for low impact systems and
         shutting down moderate impact systems. A successful control response
         will outline the actions taken when an auditing failure occurs.>'
+
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-6 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<Customers are responsible for review and analysis of the information
+        system audit records at least weekly for indications of inappropriate
+        or unusual activity. A successful control response will outline how
+        often audit records are reviewed, and types of activities they are
+        reviewed for.>'
+    - key: b
+      text: |
+        '<Customers are responsible for ensuring that audit review findings are
+        reported to the appropriate personnel. A successful control response
+        will outline how the audit review findings are reported.>'
 
 - control_key: AU-6 (1)
   standard_key: NIST-800-53
