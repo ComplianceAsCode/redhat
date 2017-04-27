@@ -85,10 +85,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-3 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsiblef or generating audit records that contain
+        information that establishes what type of event occured, when the event
+        occurred, where the event occured, the source of the event, the
+        outcome of the event, and the identity of any individuals or subjects
+        associated with the event. A successful control response will outline
+        what customers require their audit records to contain.>'
 
 - control_key: AU-3 (1)
   standard_key: NIST-800-53
