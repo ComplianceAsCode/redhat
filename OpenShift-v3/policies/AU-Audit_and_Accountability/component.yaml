@@ -156,10 +156,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-6 (1) goes here.
-
-        This answer can be multi-line.
+     - text: |
+        '<Customers are responsible for employing automated mechanisms to
+        integrate audit, review, analysis, and reporting process to support
+        organizational processes for investigation and response to suspicious
+        activities. A successful control response will review the automated
+        tools used for integrating review, analysis, and reporting, and how
+        these tools are employed.>'
 
 - control_key: AU-6 (3)
   standard_key: NIST-800-53
