@@ -109,10 +109,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-4 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for allocating audit record storage capacity
+        in accordance with the organizations requirements. A successful control
+        response will explain the procedures in place to ensure that audit
+        storage is allocated according to meet customer requirements.>'
 
 - control_key: AU-5
   standard_key: NIST-800-53
