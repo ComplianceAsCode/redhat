@@ -8,20 +8,69 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-1 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing, documenting, and
+        disseminating Audit and Accountability policy and procedures. A
+        successful control repsonse will need to address the content of the
+        policy (which must include purpose, scope, roles, responsibilities,
+        management commitment, coordination, and compliance) and procedures
+        (which must facilitate the implementation of the policies and
+        associated controls).>'
+    - key: b
+      text: |
+        '<The customer will be responsible for reviewing and updating the
+        Audit and Accountability policy every 3 years, and procedures annually.
+        A successful control response will need to address the review and update
+        process, including the role(s) responsible for initiating the review
+        process, updating the policy and procedures, and providing approval
+        of the updates.>'
 
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-2 goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for determining which events their
+        software applications must be capable of auditing. A successful control
+        response will need to address the FedRAMP-required auditable events
+        listed above as well as any additional events the customer feels should
+        auditable based on customer needs.>
 
-        This answer can be multi-line.
+        <OpenShift, when deployed on Red Hat Enterprise Linux, utilizes the
+        underlying audit subsystem. When the audit subsystem is enabled, the
+        metadata required by this control is generated.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for implementing this control. A
+        successful control response will need to address coordination with all
+        interested parties (such as an internal SOC or security team) and
+        incorporation of their input into business requirements in order to
+        determine the selection of auditable events.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for implimenting this control. A
+        successful control response will include a discussion of the decision
+        process behind the selection of auditable events and a justification for
+        the selected events being sufficient to support after-the-fact
+        investigation.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for selecting a subsec of the events
+        listed in Part A to be audited by the system. For FedRAMP compliance,
+        these events must be monitored continuously. A successful control
+        response will include a discussion of the rationale for the events
+        chosen.>
+
+        <Details on configuring the OpenShift audit subsystem can be found
+        here:
+
+        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-configuring_the_audit_service.html >'
+
+
+
 
 - control_key: AU-2 (3)
   standard_key: NIST-800-53
