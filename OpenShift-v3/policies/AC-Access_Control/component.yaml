@@ -470,217 +470,392 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-7 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for enforcing a limit on consecutive 
+        failed login attempts.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for taking the FedRAMP required
+        actions defined by the customer, upon account lockout.>'
 
 - control_key: AC-8
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-8 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for displaying a system use
+        notification banner to users. A successful control response will need
+        to address the conditions under which the banner will be displayed
+        (if a non-government user accesses the system, the system use
+        notification banner may not be appropriate), as well as the contents
+        of the nofication message.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for displaying the use notification
+        banner until the user acknowledges the usage condition and takes
+        explicit actions to further access the system. A successful control
+        response will need to address the means by which the user will indicate
+        acknowlegement and move forward.>'
+    - key: c
+      text: |
+        '
+        '<The customer will be responsible for displaying a system use
+        information message to users. A successful control response will need
+        to address the conditions under which the message will be
+        displayed (if a non-government user accesses the system, the system
+        use information message may not be appropriate), as well as the 
+        contents of the notification message, including references to
+        applicable monitoring, recording, or auditing, and authorized usage
+        of the system.>'
+    - key: 'Req. 1'
+      text: |
+        '<The customer will be responsible for determining the conditions
+        under which the system use notification will be displayed. These
+        conditions must be reviewed and accepted by the FedRAMP JAB.>'
+    - key: 'Req. 2'
+      text: |
+        '<The customer will be responsible for how the system use notification
+        will be verified and how often it should be re-displayed and
+        re-verified. These conditions must be reviewed an accepted by the
+        FedRAMP JAB.>'
+    - key: 'Req. 3'
+      text: |
+        '<The customer will be responsible for verifying that the system use
+        notification is being displayed as required, either through a
+        configuration baseline check or via other means. If this verification
+        does not happen through a configuration baseline check, the JAB must
+        review and accept the process used to perform the verification.>'
 
 - control_key: AC-10
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-10 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for limiting the number of
+        concurrent sessions to the customer application as required.
+        A successful control implemented will need to address the technical
+        mechanism used to enforce this limit.>'
 
 - control_key: AC-11
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-11 goes here.
+    - key: a
+      text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to disconnect the idle users
+        from the management console after 15 minutes.'
+    - key: b
+      text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to disconnect the idle users
+        from the management console after 15 minutes.'
 
-        This answer can be multi-line.
 
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-11 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to disconnect idle users from the
+        management console after 15 minutes.'
 
 - control_key: AC-12
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-12 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for defining events or conditions
+        requiring disconnection (for example, user requesting logout), and for
+        terminating the session when those events or conditions arise. A
+        successful control response will need to outline the qualifying events
+        or conditions.>'
 
 - control_key: AC-14
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-14 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        'Non-authenticated users have no access to the system, other than
+        the presentation of the login screen.'
 
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-17 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for establishing and documenting
+        usage restrictions, configuration and connection requirements, and
+        implementation guidance for access to the customer application
+        (note that in a cloud environment, all user access will be remote
+        access).>'
+    - key: b
+      text: |
+        '<The customer will be responsible for authorizing remote access before
+        allowing such connections. Due to the nature of the cloud environment,
+        a successful control response will need to indicate that authorizing
+        remote access is equivalent to authorizing any access, and relate this
+        control to AC-2>.'
 
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-17 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        'All system events, regardless of local or remote, are captured through
+        the OpenShift and underlying Red Hat Enterprise Linux audit subsystem.
+        This control is inherently met when auditing is enabled.'
 
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-17 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        'OpenShift uses the following cryptographic algorithms and ciphers to
+        protect the confidentiality and integrity of remote access sessions:
+                - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+                - TLS_RSA_WITH_AES_128_CBC_SHA
+                - TLS_RSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+                - TLS_RSA_WITH_3DES_EDE_CBC_SHA'
 
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-17 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for requiring remote access
+        connections to the customer application to be routed through
+        customer-defined network access control points. A successful control
+        response will need to address the nature, number, and location of
+        such access control points, as well as the security controls in place
+        to protect those access control points.>'
 
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-17 (4) goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for authoring the execution of
+        privileged commands and access to security-relevant information via
+        remote access. Due to the nature of the cloud environment, a
+        successful control response will need to indicate that authorizing
+        these activities over remote access is equivalent to authorizing them
+        at all, and refer to AC-2.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for authorizing the execution of
+        privileged commands and access to security-relevant information via
+        remote access. Due to the nature of the cloud environment, a successful
+        control response will need to indicate that authorizing these activities
+        over remote access is equivalent to authorizing them at all, and refer
+        to AC-2.>'
 
-        This answer can be multi-line.
 
 - control_key: AC-17 (9)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-17 (9) goes here.
+    - text: |
+        '<OpenShift utilizes the firewall technology embedded into Red Hat
+        Enterprise Linux. This technology, named firewalld, allows a system
+        administrator to configure host-bsaed rules which take effect 
+        immediately. This gives an OpenShift operator the ability to immediately
+        drop all remote connections. For additional information on embedded
+        firewall capabilities, refer to the *Using Firewalls* section of the
+        Red Hat Enterprise Linux 7 Security Guide:
 
-        This answer can be multi-line.
+        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Using_Firewalls.html
+
+        Additionally, OpenShift nodes may be placed into Maintenance Mode. This
+        designation will migrate applications from a given cluster node to
+        another, disconnecting any active sessions to a given cluster node.
+
+        If immediate disconnect of all hosted applications are desired, 
+        individual containers may be halted. This will disconnect user sessions
+        for tenant applications immediately.>'
 
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-18 goes here.
+    - key: 'a'
+      text: |
+        '<Given the data center focus of the infrastructure running OpenShift,
+        it is likely this control is not applicable. A successful response
+        will document if wireless connectivity is enabled, and if so,
+        how usage and connection requirements were created.>'
+    - key: 'b'
+      text: |
+        '<A successful control response will document how connections are
+        authorized prior to recieving full connectivity to the wireless
+        network. This is frequently accomplished via WEP2 and other
+        encrption and/or passphrase requirements.>'
 
-        This answer can be multi-line.
 
 - control_key: AC-18 (1)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-18 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Given the data center focus of OpenShift deployments, it is likely
+        this requirement is not applicable. A successful control response will
+        document how, if wireless connectivity is permitted, users and devices
+        authenticate to the wireless network.>'
 
 - control_key: AC-19
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-19 goes here.
-
-        This answer can be multi-line.
+    - key: 'a'
+      text: |
+        '<Given the data center focus for OpenShift deployments, it is likely
+        this requirement is not applicable. A successful control response will
+        document how, if wireless connectivity is permitted, end-user
+        devices are organizationally managed (configurations, connections,
+        and applications).>'
+    - key: 'b'
+      text: |
+        '<Given the data center focus for OpenShift deployments, it is likely
+        this requirement is not applicable. A successful control response will
+        document how, if wireless connectivity is permitted, mobile devices
+        are authorized to connect to organizational networks (e.g. MDM).>'
 
 - control_key: AC-19 (5)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-19 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<A successful control response will document how either full-device
+        encryption on mobile devices is being used. This is only applicable
+        if mobile is within scope of your security package.>'
 
 - control_key: AC-20
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-20 goes here.
-
-        This answer can be multi-line.
+    - key: 'a'
+      text: |
+        '<The customer will be responsible for establishing terms and conditions
+        allowing authorized individuals to access the customer application
+        from external information sysetms. A successful control response will
+        need to outline the terms and conditions and the external information
+        systems to which those terms and conditions apply.>'
+    - key: 'b'
+      text: |
+        '<The customer will be responsible for establishing terms and conditions
+        allowing authorized individuals to process, store, or transmit 
+        customer-controlled information using external information systems. A
+        successful control response will need to outline the terms and
+        conditions and the external information systems to which those terms
+        and conditions apply.>'
 
 - control_key: AC-20 (1)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-20 (1) goes here.
-
-        This answer can be multi-line.
+    - key: 'a'
+      text: |
+        '<The customer will be responsible for verifying the implementation of
+        required security controls on external information systems used to
+        access the customer application. A successful control response will
+        need to address how this verification occurs (e.g. through an
+        independent assessment).>'
+    - key: 'b'
+      text: |
+        '<If part (a) is not possible, then the customer will be responsible
+        for establishing and retaining approved information system connection           or processing agreements with the external entity hosting the external
+        information system used to access the customer application.>'
 
 - control_key: AC-20 (2)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-20 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for restricting or prohibiting the
+        use of customer-controlled portable storage devices on external
+        information systems. If such use is not prohibited, a successful
+        control repsonse will need to address specific restrictions on how
+        or under what conditions such use may occur.>'
 
 - control_key: AC-21
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-21 goes here.
-
-        This answer can be multi-line.
+    - key: 'a'
+      text: |
+        '<The customer will be responsible for determining when authorized users
+        are required to use discretion as to whether to share information. A
+        successful control response will need to address the circumstances
+        where user direction (rather than automatic access enforcement) is
+        required.>'
+    - key: 'b'
+      text: |
+        '<The customer will be responsible for defining and employing automated
+        mechanisms or manual processes to assist users in making information
+        sharing decisions.>'
 
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AC-22 goes here.
-
-        This answer can be multi-line.
+    - key: 'a'
+      text: |
+        '<The customer will be responsible for designating individuals
+        authorized to post information publicly. A successful control response
+        will need to address the specific business requirements or job functions
+        that justify such access.>'
+    - key: 'b'
+      text: |
+        '<The customer will be responsible for trianing designated authorized
+        individuals to prevent disclosure of nonpublic information. A
+        successful control response will need to outline the training
+        provided.>'
+    - key: 'c'
+      text: |
+        '<The customer will be responsible for reviewing information prior to
+        public posting to ensure that nonpublic information is not included. A
+        successful control response will need to address the roles or personnel
+        responsible for this review and the process for signoff.>'
+    - key: 'd'
+      text: |
+        '<The customer will be responsible for reviewing publicly available
+        information at the reqired frequency and removing nonpublic information
+        when discovered. A successful control response will need to address the
+        roles or personnel responsible for the review, the process used to
+        review publicly available information, and the process for removal of
+        nonpublic information.>'
