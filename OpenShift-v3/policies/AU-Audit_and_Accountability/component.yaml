@@ -120,11 +120,18 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-5 goes here.
-
-        This answer can be multi-line.
-
+    - key: a
+      text: |
+        '<Customers are responsible for alerting personnel or roles in the
+        event of an audit processing failure. A successful control response
+        will outline the process taken to alert personnel when an auditing
+        failure occures.>'
+    - key: b
+      text: |
+        '<In the event of an audit processing failure, customers are responsible
+        for: overwriting the oldest audit records for low impact systems and
+        shutting down moderate impact systems. A successful control response
+        will outline the actions taken when an auditing failure occurs.>'
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
