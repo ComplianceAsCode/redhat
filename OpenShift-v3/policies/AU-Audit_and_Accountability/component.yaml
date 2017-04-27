@@ -169,10 +169,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-6 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for analyzing and correlating audit records
+        accross different repositories to gain organiational-wide situational
+        awareness. A successful control response will discuss how the customer
+        correlates and analyzes audit records from different sources. This can
+        include processes and tools used to meet these goals.>'
 
 - control_key: AU-7
   standard_key: NIST-800-53
