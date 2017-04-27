@@ -98,10 +98,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-3 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible ensuring that the information generates
+        audit records containing all of the information required to meet
+        FedRAMP requirements. A successful control response will outline the
+        systems audit generation, and the content that it includes.>'
 
 - control_key: AU-4
   standard_key: NIST-800-53
