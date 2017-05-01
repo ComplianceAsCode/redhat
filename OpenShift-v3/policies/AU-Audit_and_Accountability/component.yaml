@@ -238,10 +238,27 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-8 goes here.
+    - key: a
+      text: |
+        '<The Linux audit subsystem, upon which OpenShift logs are generated,
+        uses the system clock by default. This is non-configurable behavior.>'
+    - key: b
+      text: |
+        '<The system time is always kept in Coordinated Universal Time (UTC) and
+        converted in applications to local time as needed. Local time is the
+        actual time on your current time zone, taking into account daylight
+        savings time. The real-time clock can use either UTC or local time.
+        UTC is recommended.
 
-        This answer can be multi-line.
+        By default, OpenShift hosts are configured to use UTC. To manually 
+        verify this, the dimedatectl command may be used:
+
+        $ timedatectl set-local-rtc no
+
+        Refer to the RHEL7 Administrators Guide for additional information on
+        configuring time on OpenShift nodes:
+
+        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/chap-Configuring_the_Date_and_Time.html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone >'
 
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
