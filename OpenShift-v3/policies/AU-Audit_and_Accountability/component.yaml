@@ -226,10 +226,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-7 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for ensuring that the information system
+        provides the capability to process audit records for events of interest
+        based on defined fields within audit records. A successful control
+        response will discuss how audit records can be queried based on these
+        fields.>'
 
 - control_key: AU-8
   standard_key: NIST-800-53
