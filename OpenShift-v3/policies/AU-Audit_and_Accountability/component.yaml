@@ -309,10 +309,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-9 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are required to protect the audit information and audit 
+        tools from unauthorized access, modification, and deletion. A successful
+        control response will discuss the way that audit information and tools 
+        are protected. This can include how access is controlled to audit 
+        information and tools.>'
 
 - control_key: AU-9 (2)
   standard_key: NIST-800-53
