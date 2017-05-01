@@ -265,10 +265,44 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-8 (1) goes here.
+    - key: a
+      text: |
+        '<Customers are responsible for comparing the internal information
+        system clocks at least hourly with an authoritative time source. A
+        successful control response will discuss the time source that system
+        clocks are synced with.>'
+    - key: b
+      text: |
+        '<Customers are responsible for synchonizing internal system clocks to
+        the authoritative time source when the time difference is greater than
+        the organization has defined. A successful control response will 
+        discuss how system clocks are synced.>
 
-        This answer can be multi-line.
+        <OpenShift utilizes the time services of the underyling operating
+        operating system. To configure network time protocol (NTP) daemon to
+        synchronize against NIST time sources, edit the /etc/ntp.conf file
+        (or create one if it does not existing already). The proper format:
+
+        server <<time source>> iburst
+
+        For detailed NTP configuration, reference the Red Hat Enterprise Linu
+        7 System Administrators guide:
+
+        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/s1-Configure_NTP.html >'
+    - key: 'Req.1'
+      text: |
+        '<Customers are responsible for selecting primary and secondary time
+        servers used by the NIST internet time services and ensuring that the
+        secondary server is selected from a different region than the primary.
+        A successful control response will discuss which internet time services
+        are used by the system.>'
+    - key: 'Req. 2'
+      text: |
+        'Customers are responsible for syncronizing the system clocks of
+        network computers that run operating systems other than Windows to the 
+        Windows Domain Controler emulator, or the same time source for that
+        server. A successful conttrol response will discuss which Internet time
+        services are for non-Windows systems.>'
 
 - control_key: AU-9
   standard_key: NIST-800-53
