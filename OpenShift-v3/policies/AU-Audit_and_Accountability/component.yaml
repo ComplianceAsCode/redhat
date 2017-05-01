@@ -345,10 +345,16 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against AU-11 goes here.
+    - text: |
+        '<Customers are required to retain audit records for at least ninety 
+        days to provide support for after the fact investigations of security
+        incidents and to meet regulatory and organizational information
+        retention requirements. A successful control response will discuss how 
+        long audit records are retained.>
 
-        This answer can be multi-line.
+        <Audit log retention may be configured in the underlying Red Hat
+        Enterprise Linux audit daemon. If using a central or 3rd party 
+        logging solution, this may likely need to be configured in that tool.>'
 
 - control_key: AU-12
   standard_key: NIST-800-53
