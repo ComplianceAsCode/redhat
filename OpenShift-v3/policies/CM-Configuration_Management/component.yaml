@@ -161,10 +161,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-4 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for analyzing changes to the
+        information system to determine potential security impacts prior to
+        change implementation. A successful control response will explain the
+        process used to analyze changes before their implementation. This can
+        include any analysis and testing done prior to implementation.>'
 
 - control_key: CM-5
   standard_key: NIST-800-53
