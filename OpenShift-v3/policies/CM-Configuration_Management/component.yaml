@@ -248,10 +248,38 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-6 (1) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for establishing and documenting
+        configuration settings for information technology products employed
+        within the information system using FedRAMP guidance that reflects
+        the most restrictive mode consistent with operational requirements. A
+        successful control response will include how the customer develops
+        base configurations to ensure that they are as restrictive as possible
+        while still allowing the system to operate.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for implementing configuration
+        settings. A successful control response will describe how mandatory
+        configuration settings are implemented. This can include the process
+        or documentation followed.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for identifying, documenting, and
+        approving any deviations from established configuration settings for
+        components based on operational requirements. A successful control
+        response will explain the process for identifying, documenting, and 
+        approving and deviations. This can include tools used to track any
+        exceptions, and the process for identifying and approving these
+        deviations.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for monitoring and controlling
+        changes to the configuration settings in accordance with organization
+        policies and procedures. A successful control response will describe
+        how changes are controlled and monitored. This can include limitations
+        to privileges, how these changes are audited, and any tools in place to
+        track and approve changes.>'
 
 - control_key: CM-7
   standard_key: NIST-800-53
