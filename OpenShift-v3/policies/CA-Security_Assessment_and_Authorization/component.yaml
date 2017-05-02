@@ -181,10 +181,26 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-6 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for working with FedRAMP to designate
+        an authorizing official. A successful control response will need to
+        address how an appropriate authorizing official is selected.>'
+    - key: b 
+      text: |
+        '<The customer will be responsible for recieving official authorizaiton
+        from the authorizing official prior to commencing operations for
+        federal customers. A successful control response will need to address
+        the inputs provided to the authorizing official so that an accreditation
+        decision can be made.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for updating the accreditation
+        package at the required frequency. A successful control response will
+        need to address the components of the package that will be updated, the
+        process for re-assessing the system in alignment with the updated
+        package, and the personnel or roles responsible for managing the update
+        process and engaging with FedRAMP for renewal of authorization.>'
 
 - control_key: CA-7
   standard_key: NIST-800-53
