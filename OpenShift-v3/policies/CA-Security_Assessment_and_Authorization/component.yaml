@@ -66,10 +66,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-2 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for employing a FedRAMP-accredited
+        3PAO to conduct security control assessments. In addition to performing
+        the assessment, this 3PAO will assist in the development of the Security
+        Assessment Plan and Security Assessment Report (see CA-2).>'
 
 - control_key: CA-2 (2)
   standard_key: NIST-800-53
