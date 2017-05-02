@@ -145,10 +145,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-3 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for determining whether connections
+        to external information systems will be governed by an
+        allow-all/deny-by-exception policy or by a deny-all/allow-by-exception
+        policy. A successful control response will need to address the rationale
+        for the selection. In addition, the policy choice and its rationale will
+        need to be included in the Architecture Briefing and in the introductory
+        sections of this Security Plan.>'
 
 - control_key: CA-5
   standard_key: NIST-800-53
