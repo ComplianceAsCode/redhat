@@ -133,10 +133,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-3 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for requiring unclassified,
+        non-national security systems to connec tto customer applications
+        through a TIC. A successful control response will need to address
+        whether this requirement is enforced using technical means or via
+        policy considerations.>'
 
 - control_key: CA-3 (5)
   standard_key: NIST-800-53
