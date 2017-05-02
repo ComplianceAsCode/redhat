@@ -278,10 +278,15 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-7 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for monitoring security controls on
+        an ongoing basis with the assistance of an assessment team with a
+        control-defined level of independance. Note that this may be the 3PAO
+        used for recurring assessments, it may be a different independent
+        assessor, or it may be a team of personnel employed by the customer. A
+        successful control response will need to address the nature of this team
+        and the methods by which they access security controls within the
+        system.>'
 
 - control_key: CA-8
   standard_key: NIST-800-53
