@@ -173,10 +173,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-5 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for defining, documenting, approving
+        and enforcing physical and logical access restrictions associated with
+        changes to the information system. A successful control response will
+        include how logical access associated with change control is defined,
+        documented, and enforced. This should include tools used to enforce
+        these restrictions, such as Active Directory, and how these personnel
+        are approved for access.>'
 
 - control_key: CM-5 (1)
   standard_key: NIST-800-53
