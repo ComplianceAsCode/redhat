@@ -43,10 +43,25 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-2 (1) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for reviewing and updating the
+        baseline configuration of the information system at least annually.
+        A successful control response will need to address how often the
+        baseline configuration is reviewed and updated.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for reviewing and updating the
+        baseline configuration of the information system when required by the
+        JAB. A successful control response will need to address updates to the
+        baseline configuration when required by the JAB.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for reviewing and updating the
+        baseline configuration of the information system as a part of
+        information system component installations and upgrades. A
+        successful control response will need to address updates to the baseline
+        configuration as a part of installations and upgrades.>'
 
 - control_key: CM-2(2)
   standard_key: NIST-800-53
