@@ -80,10 +80,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-2 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The cusotmer will be responsible for retaining previous versions of
+        baseline configurations to support rollback. A successful control
+        response will need to address how previous versions of baseline
+        configurations will be retained in order to roll back to a previous
+        version.>'
 
 - control_key: CM-2 (7)
   standard_key: NIST-800-53
