@@ -329,10 +329,17 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-7 (2) goes here.
+    - text: |
+        '<The customer will be responsible for preventing program execution
+        in accordance with organizational defined policies regarding software
+        program usage and restrictions. A successful control response will
+        explain the process used to ensure that policies followed. This can
+        include processes used to detect unauthorized software, or any
+        whitelisting used.
 
-        This answer can be multi-line.
+        OpenShift utilizes trusted container registries to house white-listed
+        container images. The organization should define process for managing
+        said trusted registries to satisfy this control.>'
 
 - control_key: CM-7 (5)
   standard_key: NIST-800-53
