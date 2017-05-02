@@ -31,10 +31,35 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-2 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing a Security Assessment
+        Plan. A successful control response will need to address the involement
+        of a FedRAMP-accredited 3PAO (see CA-2(1)), the scope of the
+        assessment, and any specific requirements the customer has for the
+        3PAO.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for assessing the security controls
+        on the customer system at the required frequency. A successful control
+        response will need to address the methodology used to determine the
+        security and compliance posture of the system.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for producing a Security Assessment
+        Report as a result of the assessment. A successful control response
+        will need to address the involvement of the 3PAE as well as any
+        specific requirements for the report (e.g., it should include controls
+        that are considered "other than satisfied," potential weaknesses in
+        controls that meet minimum requirements, recommended remediation steps,
+        and risks associated with the system).>'
+    - key: d
+      text: |
+        '<The customer will be responsible for delivering the Security
+        Assessment Report and any supplementary materials to required
+        individuals, including the FedRAMP PMO. A successful control response
+        will need to address the individuals or roles responsible for
+        managing the package for submission and engaging with the PMO.>'
 
 - control_key: CA-2 (1)
   standard_key: NIST-800-53
