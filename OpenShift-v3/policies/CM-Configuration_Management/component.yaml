@@ -68,10 +68,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-2(2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for employing automated mechanisms to
+        maintain an up-to-date, completed, accurate, and readily available
+        baseline configuration of the information system. A successful control
+        response will need to address what automated mechanisms are in use to
+        help maintain the baseline configurations of the information system.>'
 
 - control_key: CM-2 (3)
   standard_key: NIST-800-53
