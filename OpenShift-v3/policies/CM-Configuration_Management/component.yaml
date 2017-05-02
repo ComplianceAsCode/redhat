@@ -92,10 +92,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-2 (7) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        'This control is not applicable to OpenShift operations.'
+    - key: b
+      text: |
+        'This control is not applicable to OpenShift operations.'
 
 - control_key: CM-3
   standard_key: NIST-800-53
