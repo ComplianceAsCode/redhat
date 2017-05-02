@@ -77,10 +77,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-2 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring that, at a minimum,
+        vulnerability scanning is performed annually as part of the
+        assessment process. A successful control response will need to address
+        the minimum requirement, as well as discussing any additional testing
+        performed during assessments, such as malicious user testing, insider
+        threat assessment, performance/load testing, or other tests the customer
+        chooses to perform.>'
 
 - control_key: CA-2 (3)
   standard_key: NIST-800-53
