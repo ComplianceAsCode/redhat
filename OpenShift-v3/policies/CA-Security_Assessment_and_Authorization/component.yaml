@@ -316,7 +316,19 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-9 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for authorizing connections within
+        the system, such as between two types of virtual machines within the
+        customer environment. A successful control response will need to address
+        the individual or roles with the authorizing responsibility, as well
+        as how a determination is made to allow a connection between
+        components or classes of components.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for documenting the required
+        information for each internal connection. This may be documented in
+        e.g. data flow diagrams or architectural diagrams. A successful control
+        response will need to address the process by which this documentation
+        is created.>'
+        
