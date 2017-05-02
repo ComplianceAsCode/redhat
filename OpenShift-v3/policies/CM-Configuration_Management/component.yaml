@@ -310,10 +310,19 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-7 (1) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for reviewing the information system
+        at least monthly to identify unnecessary or nonsecure functions, ports,
+        protocols, and services. A successful control response will describe
+        how often functions, ports, protocols, and services are reviewed.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for disabling functions, ports, 
+        protocols, and services that have been deemed to be unnecessary or
+        nonsecure. A successful control response will explain that these
+        functions, ports, protocols, and services found during the review
+        process are disabled.>'
 
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
