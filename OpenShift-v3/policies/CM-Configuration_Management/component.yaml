@@ -289,10 +289,21 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-7 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for configuring the information
+        system to only provide essential capabilities. A successful control
+        response will describe the process used to ensure that information
+        systems only provide essential capabilites. This can include such things
+        as using USGCB guidance to help ensure that only essential functions
+        are provided.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for prohibiting or restricting the
+        use of functions, ports, protocols, and/or services following the
+        USGCB guidance. A successful control response will describe the process
+        used determine functions, ports, protocols, and services to restrict
+        or prohibit, using USGCB guidance.>'
 
 - control_key: CM-7 (1)
   standard_key: NIST-800-53
