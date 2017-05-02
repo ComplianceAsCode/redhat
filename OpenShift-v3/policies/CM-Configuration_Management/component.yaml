@@ -238,16 +238,6 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-6 goes here.
-
-        This answer can be multi-line.
-
-- control_key: CM-6 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
     - key: a
       text: |
         '<The customer will be responsible for establishing and documenting
@@ -280,6 +270,19 @@ satisfies:
         how changes are controlled and monitored. This can include limitations
         to privileges, how these changes are audited, and any tools in place to
         track and approve changes.>'
+
+- control_key: CM-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '<The customer will be responsible for employing automated mechanisms
+        to centrally manage, apply, and verify configuration settings for
+        information system components. A successful control response will 
+        describe any automated systems in place used to manage, apply, and
+        verify configuration settings. An example of this is using Active
+        Directory Group Policy Objects to manage security settings.>'
 
 - control_key: CM-7
   standard_key: NIST-800-53
