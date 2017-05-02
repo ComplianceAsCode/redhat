@@ -217,10 +217,21 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-5 (5) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for limiting privileges to change
+        information system components and system related information within
+        a production or operational environment. A successful control response
+        will include how privileges to change the production/operation
+        environment are limited. This can include defining who has access to
+        these privileges, how they may be separated, and any gates they must
+        go through.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for reviewing and reevaluating
+        privileges at least quarterly. A successful control response will
+        include how often reviews are performed for presonnel with privileges
+        to change the information system within the production environment.>'
 
 - control_key: CM-6
   standard_key: NIST-800-53
