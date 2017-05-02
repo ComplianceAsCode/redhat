@@ -159,10 +159,22 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CA-5 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing a plan of action and
+        milestones (POA&M) for the remediation of any weaknesses of deficiences
+        discovered during the security assessment. Additionally, any
+        vulnerabilities found as a result of regularly vulnerability scanning
+        (see RA-5) must be included in the POA&M reporting. A successful control
+        response will need to discuss the roles or individuals responsible for
+        creating and tracking POA&M items.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for updating the POA&M items at a
+        required frequency. A successful control response will need to address
+        the roles or individuals responsible for updating the POA&M items,
+        as well as the process by which POA&M items will be updated and
+        remediated.>'
 
 - control_key: CA-6
   standard_key: NIST-800-53
