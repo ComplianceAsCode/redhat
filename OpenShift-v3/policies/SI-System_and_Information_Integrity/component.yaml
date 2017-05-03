@@ -258,10 +258,20 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-11 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for generating error messages in
+        cusomer-controlled operating systems and software that provide
+        information necessary for corrective actions without revealing
+        information that could be exploited by adversaries. A successful
+        control response will need to discuss the process by which error
+        messages are created, analyzed, and corrected when necessary.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for revealing error messages only to
+        authorized personnel. A successful control response will need to
+        address how error messages are displayed and the means by which access
+        to error messages is controlled.>'
 
 - control_key: SI-12
   standard_key: NIST-800-53
