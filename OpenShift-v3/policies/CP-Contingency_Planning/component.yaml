@@ -95,10 +95,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-2 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for reserving capacity for processing
+        in an alternative region. A successful control response will need to
+        note that capacity for necessary processing has been reserved in an
+        alternate region.>'
 
 - control_key: CP-2 (3)
   standard_key: NIST-800-53
