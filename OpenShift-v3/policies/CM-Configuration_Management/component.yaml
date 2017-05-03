@@ -414,10 +414,20 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-8 (3) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for employing automated mechanisms
+        continuously to detect the presence of unauthorized software within
+        the information system. A successful control response will describe
+        automated systems that are in place to detect unauthorized software
+        on the information system.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for actions taken when unauthorized
+        software is detected. A successful control response will describe the
+        actions taken when unauthorized software is detected. This can include
+        notifying personnel, isolating the system, and disabling network access
+        to that system.>'
 
 - control_key: CM-8 (5)
   standard_key: NIST-800-53
