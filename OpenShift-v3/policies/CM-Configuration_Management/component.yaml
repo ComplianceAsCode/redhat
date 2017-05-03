@@ -522,7 +522,20 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-11 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for establishing polocies governing
+        the installation of software by users. A successful control response
+        will describe policies in place that define the restrictions in place
+        for installation of software by users.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for enforcing installation policies
+        using a defined method. A successful control response will describe the
+        process used to enforce installation policies. This can include
+        references to configuration control processes.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for monitoring compliance
+        continuously. A successful control response will describe the process
+        used to monitor compliance of installation policies.>'
