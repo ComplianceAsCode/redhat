@@ -346,10 +346,33 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-7 (5) goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for identifying software programs
+        authorized to execute on the information system. A successful control
+        response will explain the process used to identify authorized
+        software programs.
 
-        This answer can be multi-line.
+        Red Hat container image signing provides a path to ensure authorship,
+        integrity and nonrepudiation. Refer to the Container Image Signing
+        Integration Guide for procedures on how to setup and maintain container
+        signing:
+
+        https://access.redhat.com/articles/2750891 >'
+    - key: b
+      text: |
+        '<The customer will be responsible for employing a deny-all,
+        permit-by-exception policy to allow the execution of authorized software
+        programs on the information system. A successful control response will
+        explain the process to allow the execution of software on the
+        information system.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for reviewing and updating the list
+        of authorized software programs at least annually or when there is a
+        change. A successful control response will outline how often the
+        authorized software list is reviewed and updated. This should be done at
+        least annually and when changes are made.>'
 
 - control_key: CM-8
   standard_key: NIST-800-53
