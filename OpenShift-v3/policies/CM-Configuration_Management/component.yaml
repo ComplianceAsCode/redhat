@@ -434,10 +434,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-8 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for verifying all components within
+        the authorization boundary of the information system are not duplicated
+        in other information system inventories. A successful control response
+        will describe the process used to ensure that assets are not included
+        in multiple system inventories.>'
 
 - control_key: CM-9
   standard_key: NIST-800-53
