@@ -379,10 +379,23 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-8 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing and documenting an
+        inventory that meets FedRAMP requirements. A successful control response
+        will include a description of how the inventory is developed and
+        documented. This process should ensure that the inventory accurately
+        reflects the current system, includes and components, is granular enough
+        to support tracking and reporting, and includes any information the
+        customer has deemed necessary to achieve effective accountability.>'
+    - key: b
+      text: |
+        '<The customer will responsible for reviewing and updating the system
+        inventory at least monthly. This may be performed in conjunction with
+        continuous monitoring and POA&M tracking activities. A sucessful control
+        response will need to address the personnel or roles responsible for
+        updating the system inventory and the process for correcting gaps or
+        discrepancies found.>'
 
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
