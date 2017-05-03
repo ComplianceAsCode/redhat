@@ -31,20 +31,58 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-2 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing a contingency plan
+        meeting the specified requirements. A successful control response will
+        need to address the maintenance, recovery, and resumption of customer
+        applications, as well as any reliance on infrastructure functionality
+        to perform these tasks.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for distributing the contingency plan
+        to key contingency personnel. A successful control response will need
+        to address identification of key personnel (by name, title, or role)
+        and the means by which the customer ensures that all key personnel 
+        receive the contingency plan.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for coordinating contingency planning
+        activities with incident handling activities. A successful control
+        response will need to address the division of responsibilities between
+        contingency personnel and incident response personnel, as well as the
+        means by which contingency planning activities are activated in the
+        event of a security incident.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for reviewing the contingency plan
+        at the required frequency. A successful control response will need to
+        outline how reviews are initiated, performed, and signed off on.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for updating the contingency plan to
+        address relevant changes as well as any problems found in the
+        contingency plan. A successful control response will need to discuss
+        how updates are proposed, implemented, and approved.>'
+    - key: f
+      text: |
+        '<The customer will be responsible for communicating changes to the
+        contingency plan to key contingency personnel. A successful control
+        response will need to address the means by which the
+        customer ensures that all key personnel receive the updated
+        contingency plan.>'
+    - key: g
+      text: |
+        '<The customer will be responsible for protecting the contingency plan
+        from unauthorized disclosure or modification. A successful control
+        response will need to address policy, procedural, and technical
+        safeguards that are in place to protect the contingency plan.>'
 
 - control_key: CP-2 (1)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-2 (1) goes here.
-
-        This answer can be multi-line.
 
 - control_key: CP-2 (2)
   standard_key: NIST-800-53
