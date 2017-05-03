@@ -106,10 +106,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-2 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<This control is often inherited through your platform provider,
+        e.g. Microsoft Azure implements this control on behalf of both PaaS
+        and IaaS customers. A successful control response will indicate if this
+        control is inherited through your platform provider, and if not,
+        details how mission functions will be resumed.>'
 
 - control_key: CP-2 (8)
   standard_key: NIST-800-53
