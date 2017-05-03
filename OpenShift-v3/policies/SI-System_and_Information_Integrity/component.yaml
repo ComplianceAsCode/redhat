@@ -248,10 +248,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-10 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for checking the validity of
+        information inputs to customer-controlled operating systems and
+        software. A successful control response will need to discuss the
+        specific inputs for which the validity is checked, the rationale
+        for selecting those inputs for validity checking, and the response
+        taken by the system to invalid inputs.>'
 
 - control_key: SI-11
   standard_key: NIST-800-53
