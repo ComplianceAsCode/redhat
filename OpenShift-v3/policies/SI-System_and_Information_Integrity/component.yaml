@@ -268,10 +268,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-12 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for handling and retaining
+        information within customer-enrolled  systems and software in accordance
+        with applicable federal laws, Executive Orders, directives, policies,
+        regulations, standards, and operational requirements. A successful
+        control response will need to outline the specific requirements
+        applicable to customer information handling and retention, and the
+        means by which those requirements are met.>'
 
 - control_key: SI-16
   standard_key: NIST-800-53
