@@ -485,10 +485,27 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-10 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for using software and associated
+        documentation in accordance with contract agreements and copyright laws.
+        A successful control response will include a description or reference
+        to the customers acceptable use policy.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for tracking the use of software and
+        associated documentation protected by quantity licenses to control
+        copying and distribution. A successful control response will include
+        a description of how these licenses are tracked and protected.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for control and documentation of the
+        use of peer-to-peer file sharing technology to ensure that this
+        capability is not used for the unauthorized distribution, display,
+        performance, or reproduction of copyrighted work. A successful control
+        response will include any controls and documentation for peer-to-peer
+        technology allowed within the system. An example of this could include
+        acceptable use policies in place.>'
 
 - control_key: CM-10 (1)
   standard_key: NIST-800-53
