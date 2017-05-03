@@ -144,10 +144,30 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-4 goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for testing of contingency plans
+        related to the customer application at the required frequency. A
+        successful control response will need to address the scenarios and
+        exercises chosen for the test.
 
-        This answer can be multi-line.
+        Microsoft Azure has provided documentation around recovery testing for
+        Azure SQL Database, which customers may use to develop their own test
+        plans and procedures:
+        
+        https://azure.microsoft.com/en-us/documentation/articles/sql-database-disaster-recovery-drills/ >'
+    - key: b
+      text: |
+        '<The customer will be responsible for reviewing the results of
+        contingency plan testing. A successful control response will need to
+        discuss the roles or personnel responsible for review, as well as the
+        format and content of reporting on the results.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for initiating corrective action as
+        a result of contingency plan testing. A successful control response will
+        need to address the types of corrective actions taken and timeframes
+        for those actions.>'
 
 - control_key: CP-4 (1)
   standard_key: NIST-800-53
