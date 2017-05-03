@@ -168,10 +168,32 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-5 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for recieving relevant security
+        alerts, advisories and directives. A successful control response will
+        need to discuss the external sources of security alerts, advisories, and
+        directives (including US-CERT as required by FedRAMP.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for generatign internal security
+        alerts, advisories and directives. A successful control response will 
+        need to address the criteria used to determine what alerts, advisories,
+        and directives are necessary, based on the specifics of the customer
+        mission, software, or service.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for disseminating security alerts,
+        advisories and directives within the customer organization and to
+        external organizations as necessary. A successful control response will 
+        need to address the personnel or roles within the organization who
+        require notificiation.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for implementing security directives
+        within customer-controlled operating systems, software, and services. A
+        successful control response will need to address how the organization 
+        meets established time frames for implementing security directives.>'
 
 - control_key: SI-6
   standard_key: NIST-800-53
