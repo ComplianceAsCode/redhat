@@ -174,10 +174,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-4 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for coordinating testing of the
+        contingency plan with related plans (such as business continuity plans,
+        disaster recovery plans, etc.). A successful control response will need
+        to address ensuring that any test results relevant to related plans are
+        communicated so that corrective actions may be taken as needed.>'
 
 - control_key: CP-6
   standard_key: NIST-800-53
