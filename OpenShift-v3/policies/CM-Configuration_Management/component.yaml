@@ -446,10 +446,39 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CM-9 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing, documenting, and
+        implementing a configuration management plan that addresses roles,
+        responsibilities, and configuration management processes and procedures.
+        A successful control response will describe how the configuration
+        management plan deals with roles, responsibilities, and processes
+        and procedures.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for developing, documenting, and
+        implementing a configuration management plan that establishes a 
+        process for identifying configuration items throughout the
+        system development life cycle and for managing the configuration of
+        configuration items. A successful control response will describe how
+        the configuration management plan establishes a system to track and
+        manage changes to the system.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for developing, documenting, and
+        implementing a configuration management plan that defines the
+        configuration items for the information system and places them
+        under configuration management. A successful control response will
+        describe how the configuration management plan defines configuration
+        items, and the process used to manage them.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for developing, documenting, and
+        implementing a configuration management plan that protects the
+        configuration management plan from unauthorized disclosure. A
+        successful control response will describe how the configuration
+        management plan is protected from disclosure, such as where it is
+        stored, and controls in place to prevent unauthorized access.>'
 
 - control_key: CM-10
   standard_key: NIST-800-53
