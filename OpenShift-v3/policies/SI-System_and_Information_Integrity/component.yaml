@@ -208,10 +208,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-7 (7) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for incorporating the detection of
+        customer-defined security-relevant changes into the customers incident
+        response capability. A successful control response will need to outline
+        the process for deeming particular changes as security-relevant and the
+        means by which the incident response capability is invoked when
+        needed.>'
 
 - control_key: SI-8
   standard_key: NIST-800-53
