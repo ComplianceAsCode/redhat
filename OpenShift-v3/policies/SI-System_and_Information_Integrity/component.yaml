@@ -218,10 +218,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-8 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        'OpenShift does not provide customer-routable mail servers, thus spam
+        protection is not applicable.'
 
 - control_key: SI-8 (1)
   standard_key: NIST-800-53
