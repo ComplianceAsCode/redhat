@@ -83,6 +83,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
+    - text: |
+        '<The customer will be responsible for coordinating development of the
+        contingency plan with related plans (such as business continuity plans,
+        disaster recovery plans, etc.). A successful control response will need
+        to address the coordination of initial development, as well as how
+        updates to the contingency plan affect related plans and vice versa.>'
 
 - control_key: CP-2 (2)
   standard_key: NIST-800-53
