@@ -278,7 +278,60 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-16 goes here.
+    - text: |
+        '<Memory and unauthorized code protection mechanisms are provided in 
+        the base operating system, Red Hat Enterprise Linux. This includes 
+        buffer overflow protection, execution of code on a process’ or 
+        thread’s stack, modification of a function return address on the 
+        process’ or threads stack to jump to previously known processor 
+        instructions, and modification of process section other than the 
+        segment that holds compile time initialized data and segment holding 
+        the mapping of all uninitialized variables. For the runtime instances 
+        of binaries, all user-provided applications and their depending 
+        libraries that are compiled and linked with the following properties:
 
-        This answer can be multi-line.
+        (1) presence of the ELF program header entry of PT_GNU_STACK and the 
+        absence of the PF_X bit in the p_flags ELF header flags; 
+       
+        (2) presence of the ELF program header entry of PT_GNU_RELRO with 
+        memory range information covering the following ELF sections: .tdata,
+        .preinit_array, .init_array, .fini_array, .ctors, .dtors, .data.rel.ro, 
+        .dynamic, .got including .got.plt. The secure state implied with this 
+        functionality covers the following aspects where the following list 
+        explains the implication of each bullet above:
+
+                a) When exploiting buffer overruns of an application, the 
+                   attacker cannot feed code onto the stack and execute it.
+
+                b) When exploiting buffer overruns of an application, the 
+                   modify of the return addresses stored on a stack jump to a 
+                   previously known code segment is much harder to achieve by 
+                   an attacker. Due to the address randomization, any memory 
+                   address of code already present with the application or 
+                   loaded libraries will be different with each startup of the 
+                   application.
+
+                c) The ELF header sections listed above are set read-only using                   the mprotect system call by the loaded before the application                   gains control. When exploiting buffer overruns, the attacker 
+                  cannot modify information in those memory sections. These 
+                  sections store offset tables required for the dynamic linking
+                  mechanism and, if abused, allow attackers to modify the jump 
+                  addresses of object accesses. Full protection against this 
+                  type of attack can only be achieved if the application and all                  depending shared libraries are compiled linked with full 
+                  protection enabled. When at least one shared libraroy the 
+                  application depends on or the application itself is compiled 
+                  and linked with partial protection, only partial protection 
+                  against this type of attack is available for the given 
+                  application. 
+
+        To enforce functionality in bullet a), /proc/sys/kernel/exec-shield 
+        must contain either a 1 or 2.
+
+        To enforce the functionality in bullet b), 
+        /proc/sys/kernel/randomize_va_space must contain a 2 (1 implies the 
+        address randomization is enabled except for the brk system call).
+
+        For full documentation on common criteria evaluated memory protections, 
+        Red Hat publishes full common criteria paperwork online:
+
+        https://www.redhat.com/en/technologies/industries/government/standards
+        >'
