@@ -188,10 +188,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-7 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for employing integrity verification
+        tools for customer-controlled operating systems and software. A
+        successful control response will need to discuss the tools in use and
+        the integrity-checking mechanisms these tools employ.>'
 
 - control_key: SI-7 (1)
   standard_key: NIST-800-53
