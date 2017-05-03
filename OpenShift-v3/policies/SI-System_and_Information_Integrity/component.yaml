@@ -178,10 +178,34 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-6 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for verifying the correct operation
+        of security functions within customer-controlled operating systems and
+        software. A successful control response will need to discuss the
+        security functions deemed necessary to verify, as well as the means for
+        testing the correct operation and resolving any issues found.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for performing security function
+        verification at customer-specified frequencies and under
+        customer-specified circumstances (to include the requirements stated by
+        FedRAMP). A successful control response will need to address the
+        rationale for selection of the specific frequency and circumstances
+        of security function verification.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for notifying appropriate personnel
+        of failed security verification tests. A successful control response
+        will need to outline the personnel or roles selected (to include system
+        administrators and security personnel as required by FedRAMP).>'
+    - key: d
+      text: |
+        '<The customer will be responsible for performing appropriate actions
+        in response to anomalies in security unction verifiation. A successful
+        control response will need to discuss the actions taken (to include
+        notification of system administrators and security personnel as required
+        by FedRAMP) as well as the rationale for selecting these actions.>'
 
 - control_key: SI-7
   standard_key: NIST-800-53
