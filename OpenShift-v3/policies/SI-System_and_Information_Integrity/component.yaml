@@ -98,70 +98,82 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-4 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for integrating intrusion detection
+        tools into the OpenShift environment, and documenting how this
+        capability is integrated into enterprise-wide intrusion detection
+        systems when applicable. A successful control response will address
+        the workflow between local and enterprise intrusion detection
+        systems.>'
 
 - control_key: SI-4 (2)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-4 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for deploying automated tools to
+        support near real-time analysis of events in their infrastructure. This
+        is frequently provided by corporate services outside the informarion
+        system, e.g. centralized security operation centers may host an
+        enterprise logging solution. A successful control response will
+        indicate who is responsible for hosting such capabilities, and what
+        technology and processes are in place to support near-realtime 
+        analysis of events.>'
 
 - control_key: SI-4 (4)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-4 (4) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for identifying how and where
+        network traffic is continuously monitored. Frequently this control
+        is inherited from network and Infrastructure as a Service providers,
+        such as Microsoft Azure. A successful control response will indicate
+        if this control is inherited from infrastructure providers, and if not,
+        how network traffic is continuously monitored.>'
 
 - control_key: SI-4 (5)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-4 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for automatic notification of 
+        appropriate staff when indicators of compromise are detected. Frequently
+        this is accomplished by automatic alerting to Security Operations Center
+        staff. A successful control response will indicate who is notified, by
+        name or position title(s), and the mechanism of the notification.>'
 
 - control_key: SI-4 (14)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-4 (14) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        'An OpenShift infrastructure does not have wireless capabilities. This
+        control is Not Applicable.>'
 
 - control_key: SI-4 (16)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-4 (16) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for aggregating and correlating
+        information from monitoring tools, for multiple system components. This
+        is frequently accomplished with centralized audit reduction tools.>'
 
 - control_key: SI-4 (23)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-4 (23) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for installing host-based monitoring
+        mechanisms. A successful control response will need to discuss how various
+        elements of the OpenShift infrastructure are monitored.>'
 
 - control_key: SI-5
   standard_key: NIST-800-53
@@ -379,17 +391,20 @@ satisfies:
                    loaded libraries will be different with each startup of the 
                    application.
 
-                c) The ELF header sections listed above are set read-only using                   the mprotect system call by the loaded before the application                   gains control. When exploiting buffer overruns, the attacker 
-                  cannot modify information in those memory sections. These 
-                  sections store offset tables required for the dynamic linking
-                  mechanism and, if abused, allow attackers to modify the jump 
-                  addresses of object accesses. Full protection against this 
-                  type of attack can only be achieved if the application and all                  depending shared libraries are compiled linked with full 
-                  protection enabled. When at least one shared libraroy the 
-                  application depends on or the application itself is compiled 
-                  and linked with partial protection, only partial protection 
-                  against this type of attack is available for the given 
-                  application. 
+                c) The ELF header sections listed above are set read-only using
+                   the mprotect system call by the loaded before the application
+                   gains control. When exploiting buffer overruns, the attacker 
+                   cannot modify information in those memory sections. These 
+                   sections store offset tables required for the dynamic linking
+                   mechanism and, if abused, allow attackers to modify the jump 
+                   addresses of object accesses. Full protection against this 
+                   type of attack can only be achieved if the application and
+                   all depending shared libraries are compiled linked with full 
+                   protection enabled. When at least one shared libraroy the 
+                   application depends on or the application itself is compiled 
+                   and linked with partial protection, only partial protection 
+                   against this type of attack is available for the given 
+                   application. 
 
         To enforce functionality in bullet a), /proc/sys/kernel/exec-shield 
         must contain either a 1 or 2.
