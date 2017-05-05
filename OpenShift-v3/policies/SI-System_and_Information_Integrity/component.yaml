@@ -18,10 +18,36 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-2 goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for analyzing their applications for
+        flaws, reporting on those flaws, and correcting them. A successful
+        control response will include a discussion of the process by which
+        flaws are discovered and remediated, as well as tools that are used to
+        assist in detection and remediation.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for testing application updates
+        related to flaw remediation prior to installation. A successful control
+        response will discuss the testing process (e.g. the nature of the test
+        environment, the types of testing performed, the tools in testing,
+        etc.).>'
+    - key: c
+      text: |
+        '<The customer will be responsible for installing security-relevant
+        software updates to their application within 30 days of the release of
+        those updates. A successful control response will detail how the
+        customer ensures that this update schedule can be met while still
+        performing sufficient testing.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for incorporating flaw remediation
+        activities into their organizational configuration management process.
+        A successful control response will address how flaws are categorized
+        in terms of the types of changes that are subject to configuration
+        management, as well as the approval process for remediation activities
+        (see the CM family of controls).>'
 
-        This answer can be multi-line.
 
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
