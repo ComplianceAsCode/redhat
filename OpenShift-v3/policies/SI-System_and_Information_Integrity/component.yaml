@@ -28,10 +28,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-2 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be required to employ automated mechanisms on a
+        monthly basis to determine the stat of information system components
+        with regard to flaw remediation on their information systems as required
+        by their organizations policy. A successful control response will 
+        address the customers use of automated tools such as Nessus to 
+        perform periodic and on-demand scans through their system to determine
+        the state of system components with regard to flaw remediation.>'
 
 - control_key: SI-2 (3)
   standard_key: NIST-800-53
