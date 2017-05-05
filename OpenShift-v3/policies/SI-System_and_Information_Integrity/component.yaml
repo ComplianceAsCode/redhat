@@ -38,10 +38,21 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-2 (3) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer is responsible for scanning for flaws in their
+        information systems and for measuring the time between flaw
+        identification and flaw remediation. A successful control response will
+        need to address the time between flaw identification and remediation
+        using timestamps and calculates the time elapsed difference.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for scanning for flaws in their
+        information systems and for establishing benchmarks for taking
+        correctie actions according to their organizational policies. A
+        successful control response will need to address the use of
+        benchmarks to remediate high, and moderate risk flaws within a cusotmer
+        defined period after a flaws discovery.>'
 
 - control_key: SI-3
   standard_key: NIST-800-53
