@@ -68,10 +68,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-3 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for ensuring that they update their
+        malicious code protection mechanisms automatically when new versions/
+        definitions become available. A successful control response will need
+        to address that the employed malicious code protection
+        mechanisms definitions are configured to be updated automatically.>'
 
 - control_key: SI-3 (7)
   standard_key: NIST-800-53
