@@ -58,10 +58,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-3 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for ensuring that their malicious code
+        protection mechanisms are centrally managed. A successful control
+        response will need to address that the planning, implementing,
+        assessing, authorizing and monitoring of their malicious code protection
+        mechanism is centered in one location.>'
 
 - control_key: SI-3 (2)
   standard_key: NIST-800-53
