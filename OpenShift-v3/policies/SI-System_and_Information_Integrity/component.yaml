@@ -78,10 +78,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SI-3 (7) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for ensuring that they implement a
+        nonsignature-based malicious code detection mechanism on their
+        information system. A successful control response will need to address
+        a nonsignature based detection mechanism that can detect, analyze and
+        describe the characteristics or behavior of malicious code and
+        could provide safeguards against malicious code for which signatures
+        do not yet exist.>'
 
 - control_key: SI-4
   standard_key: NIST-800-53
