@@ -186,10 +186,19 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-6 goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for enabling geo-replicated within
+        the information system which will allow restoration from backups.
 
-        This answer can be multi-line.
+        If using Microsoft Azure, once geo-replicated backups are enabled, the
+        customer may inherit the remainder of this control from Microsoft
+        Azure.>'
+    - key: b
+      text: |
+        '<The customer will be responsible to ensure alternate storage sites
+        provide information security safeguards equivalent to the primary
+        site.>'
 
 - control_key: CP-6 (1)
   standard_key: NIST-800-53
