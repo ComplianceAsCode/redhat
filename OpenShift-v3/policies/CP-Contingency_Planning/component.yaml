@@ -215,10 +215,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-6 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for identifying potential
+        accessibility problems to the alternate storage site in the event of
+        an area-wide disruption or disaster and outlines explicit
+        mitigation actions. This control is often inherited from IaaS and PaaS
+        providers.>'
 
 - control_key: CP-7
   standard_key: NIST-800-53
