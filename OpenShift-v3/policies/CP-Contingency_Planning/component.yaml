@@ -227,10 +227,24 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-7 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for reserving capacity for processing
+        in an alternate region. A successful control response will need to note
+        that capacity for necessary processing has been reserved in an alternate
+        region, and will then indicate inheritance of capacity planning from
+        most IaaS providers.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for ensuring that equipment and
+        supplies required to transfer and resume operations are available
+        at the alternate processing site. This control is often inherited
+        from organizational processes.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for ensuring that the alternate
+        processing site provides information security safeguards equivalent
+        to that of the primary site.>'
 
 - control_key: CP-7 (1)
   standard_key: NIST-800-53
