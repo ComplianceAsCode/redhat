@@ -420,10 +420,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (6) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for protecting authenticators.
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address the mechanisms, processes, or
+        tools used to protect authenticators.>'
 
 - control_key: IA-5 (7)
   standard_key: NIST-800-53
