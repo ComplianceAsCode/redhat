@@ -431,10 +431,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (7) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring that unencrypted static
+        authenticators are not embedded or stored. A successful control response
+        will need to address both policy requirements and technical enforcement
+        mechanisms.>'
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
