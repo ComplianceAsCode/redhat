@@ -123,10 +123,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against PL-4 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for incorporating explicit
+        restrictions on the use of social media/networking sites and posting
+        organizational information on public websites into the rules of
+        behavior. A successful control response will need to outline the
+        relevant portions of the rules of behavior.>'
 
 - control_key: PL-8
   standard_key: NIST-800-53
