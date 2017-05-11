@@ -167,10 +167,15 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-3 goes here.
+    - text: |
+        '<The customer will be responsible for ensuring that customer-owned
+        virtual machines are properly authenticated prior to establishing a
+        connetion to the rest of the customer system. A successful control
+        response will need to address the virtual machines or types of virtual
+        machines in use and the mechanism by which each is authenticated.
 
-        This answer can be multi-line.
+        OpenShift nodes can be configured with x509/PKI certificates, which
+        will provide identity of the machines.>'
 
 - control_key: IA-4
   standard_key: NIST-800-53
