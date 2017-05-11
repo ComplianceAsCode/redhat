@@ -66,7 +66,11 @@ satisfies:
         need to address the scenarios and exercise chosen for the test, as well
         as the process for documenting and reviewing test results. Test plans
         will need to be approved by the Authorizing Official prior to the test
-        commencing.>'
+        commencing.
+
+        NIST Special Publication 800-61, Rev 2, Computer Security Incident
+        Handling Guide, provides guidance on the development and testing
+        of incident response plans.>'
 
 - control_key: IR-3 (2)
   standard_key: NIST-800-53
