@@ -185,10 +185,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against RA-5 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring that vulnerability
+        scanning tools and procedures demonstrate the breadth and depth of
+        coverage. A successful control response will need to address the
+        specific tools in use and discuss the reason each tool is felt to
+        provide sufficient breadth and depth of coverage.>'
 
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
