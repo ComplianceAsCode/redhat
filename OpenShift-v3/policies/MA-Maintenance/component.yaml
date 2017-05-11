@@ -233,7 +233,7 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against MA-6 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for obtaining maintenance support
+        and/or spare parts for critical components within a reasonable time
+        to minimize production impact.>'
