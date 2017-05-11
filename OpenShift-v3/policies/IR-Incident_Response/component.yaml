@@ -206,8 +206,24 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-7 (2) is an organizational control outside the scope of OpenShift configuration.
+    - key: a
+      text: |
+        '<The customer will be responsible for establishing relationships
+        between its incident response capability and external providers. In
+        particular, it is the customers responsibility to provide accurate
+        and current contact information to IaaS providers in order to receive
+        notifications of security incidents involving the potential breach
+        of customer data. Additionally, the customer is responsible to designate
+        US-CERT as a notification contact. A successful control response will
+        need to address these requirements as well as relationships with any
+        other relevant external providers of information system protection
+        capability.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for identifying incident response
+        team members to IaaS providers and any other external providers. A
+        successful control response will need to discuss the means by which
+        this identification is communicated.>'
 
 - control_key: IR-8
   standard_key: NIST-800-53
