@@ -470,10 +470,15 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-7 goes here.
+    - text: |
+        '<Administrative access to OpenShift nodes is performed over SSH. To
+        limit SSH ciphers to those algorithms which are FIPS-approved, update
+        the following line in /etc/ssh/sshd_config:
+        
+        Ciphers aes128,aes192-ctr,aes256-ctr
 
-        This answer can be multi-line.
+        The OpenShift Console, which is the web interface to the system,
+        automatically converts incoming authentication requests to HTTPS.>'
 
 - control_key: IA-8
   standard_key: NIST-800-53
