@@ -332,10 +332,44 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-9 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for conducting daily incremental and
+        weekly full backups of user-level information contained in the 
+        information system. Additional FedRAMP requirements and guidance include        maintaining at least three backup copies of user-level information (at 
+        least one of which is available online) or provides an equivalent 
+        alternative. A successful control response will detail how backups of 
+        user-level information occures, and how three backup copies are 
+        maintained.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for conducting daily incremental and
+        weekly full backups of system-level information contained in the
+        information system. Additional FedRAMP requirements and guidance include
+        maintaining at least three backup copies of user-level information (at 
+        least one of which is available online) or provides an equivalent 
+        alternative. A successful control response will detail how backups of 
+        user-level information occures, and how three backup copies are 
+        maintained.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for conducting daily incremental and
+        weekly full backups of information system documentation including
+        security-related documentation. Additional FedRAMP requirements and
+        guidance include maintaining at least three backup copies of user-level
+        information (at least one of which is available online) or provides an
+        equivalent alternative. A successful control response will detail how
+        backups of user-level information occures, and how three backup copies
+        are maintained.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for protecting the confidentiality,
+        integrity, and available of backup information at storage locations.
+        Additional FedRAMP requirements and guidance include determining
+        what elements of the cloud environment require the Information System
+        Backup control. The customer will determine how Information System
+        Backup is going to be verified and appropriate periodicity of the
+        check.>'
 
 - control_key: CP-9 (1)
   standard_key: NIST-800-53
