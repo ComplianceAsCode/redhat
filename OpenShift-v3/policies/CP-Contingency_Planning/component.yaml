@@ -386,10 +386,9 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-9 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for enabling geo-replicated backups
+        within their subscriptions, which will allow restoration from backup.>'
 
 - control_key: CP-10
   standard_key: NIST-800-53
