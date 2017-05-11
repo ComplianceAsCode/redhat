@@ -321,10 +321,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-8 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for obtaining alernate
+        telecommunications services to reduce the likelihood of sharing a
+        single point of failure with primary telecommunications services. This
+        control is often inherited from IaaS and PaaS providers.>'
 
 - control_key: CP-9
   standard_key: NIST-800-53
