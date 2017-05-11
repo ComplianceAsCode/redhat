@@ -222,10 +222,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-4 (4) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for including contractor or foreign
+        national status as a part of individual identifiers. Microsoft AAD
+        solution may be used for this purpose. A successful control response
+        ill need to address how contractors and foreign nationals are
+        identified by the customer and how that information is incorporated
+        into the individual identifier.>'
 
 - control_key: IA-5
   standard_key: NIST-800-53
