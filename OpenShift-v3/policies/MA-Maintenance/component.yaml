@@ -78,10 +78,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against MA-3 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for approving, controlling, and
+        monitoring information system maintenance records. A successful 
+        control response will document this process.>'
 
 - control_key: MA-3 (1)
   standard_key: NIST-800-53
