@@ -126,9 +126,14 @@ satisfies:
   implimentation_status: none
   narrative:
    - text: |
-        Narrative text on how product can be configured against IA-2 (8) goes here.
+        '<The customer will be responsible for implementing replay-resistant
+        authentication for access to privileged accounts. Microsoft AAD and MFA
+        solutions may be used for this purpose. A successful control response
+        will need to address all user types and the means by which
+        replay-resistant authentication is required for each. 
 
-        This answer can be multi-line.
+        OpenShift can authenticate users against Microsoft Active Directory.
+        It is recommended to use Active Directory if possible.>'
 
 - control_key: IA-2 (11)
   standard_key: NIST-800-53
