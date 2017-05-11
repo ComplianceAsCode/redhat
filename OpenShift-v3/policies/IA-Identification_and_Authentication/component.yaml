@@ -114,10 +114,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-2 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        'This is default, non-configurable behavior of the OpenShift container
+        platform. All users, remote or local, administrative of non-privileged,
+        first authenticate via an individual authenticator. Once individually
+        authenticated, group access/privileges will be granted as applicable.'
 
 - control_key: IA-2 (8)
   standard_key: NIST-800-53
