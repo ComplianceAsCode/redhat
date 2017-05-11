@@ -110,10 +110,15 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against MA-3 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for prevengint unauthorized removal
+        of manteance equipment containing organizational information. A
+        successful control response will address (a) process to verify there
+        is no organizational information contained on the equipment; (b) how
+        equipment is sanitized or destroyed; (c) process to retain the
+        equipment within the facility; (d) process to obtain an exception
+        from these processes from the information owner that explicity
+        authorizes removal of equipment from the facility>'
 
 - control_key: MA-4
   standard_key: NIST-800-53
