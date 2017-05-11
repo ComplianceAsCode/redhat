@@ -208,10 +208,25 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against MA-5 (1) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for implementing procedures for
+        the use of maintenace personnel that lack appropriate security
+        clearances or are not U.S. citizens. These procures must address
+        (1) personnel who do not have needed access authorizations are escorted
+        by those who do; optionally (2) prior to initiating maintenance or
+        diagnostic activities by personnel lacking access authorizations, all
+        volatile information storage components within the information system
+        are santized and all nonvolatile storage media are removed or physically
+        disconnected from the system and secured.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for developing and implimenting
+        alternate security safeguards in the event an information system
+        component cannot be santized, removed, or disconnected from the system.
+        A successful control response will document how maintenance staff
+        lacking appropriate authorizations will not be able to access
+        data residing on the informarion system.>'
 
 - control_key: MA-6
   standard_key: NIST-800-53
