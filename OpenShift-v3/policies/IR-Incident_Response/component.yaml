@@ -276,8 +276,45 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-9 is an organizational control outside the scope of OpenShift configuration.
+    - key: a
+      text: |
+        '<The customer will be repsonsible for identifying the specific
+        information involved in an information spill. A successful control
+        response will need to address how spills are detected and the tools
+        or processes used to identify the specific information involved.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for alerting designated personnel
+        using a non-contaminated method of communication. A successful control
+        response will need to discuss how the personnel are designated and
+        notified.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for isolating the contaminated
+        system or component. This may involved, for example, disabling
+        connections to the component or shutting it down. A successful
+        contorl response will need to address the types of components that
+        could potentially be contaminated and the mechanism for isolating
+        each type.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for eradicating the spilled
+        information from the contaminated system or component. A successful
+        control response will need to address the means by which
+        eradication is carried out and confirmed.>'
+    - key: e
+      text: |
+        '<The customer will be repsonsible for identifying other systems or
+        components that may have been contaminated subsequent to the initial
+        spill. A successful control response will need to outline the
+        investigative process used to make this determination.>'
+    - key: f
+      text: |
+        '<The customer will be responsible for identifying and performing any
+        additional required actions to resolve information spills. A
+        successful control response will need to address how those actions
+        are identified and the roles or individuals responsible for
+        identifying and performing the actions.>'
 
 - control_key: IR-9 (1)
   standard_key: NIST-800-53
