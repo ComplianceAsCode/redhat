@@ -321,8 +321,13 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-9 (1) is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responsible for identifying personnel or roles
+        with responsibility for responding to information spills. This may be
+        all members of the incident response team, specific members with
+        specialized knowledge, or individuals or teams completely distinct from
+        the incident response team. A successful control response will need to
+        address the rationale for the selection.>'
 
 - control_key: IR-9 (2)
   standard_key: NIST-800-53
