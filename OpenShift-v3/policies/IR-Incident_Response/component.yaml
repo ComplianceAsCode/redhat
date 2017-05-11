@@ -31,8 +31,29 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-2 is an organizational control outside the scope of OpenShift configuration.
+    - key: a
+      text: |
+        '<The customer will be responsible for initial training related to
+        contingency plan activities. This training will need to include
+        consideration for all aspects of incident response that are the
+        responsibility of the customer. A successful control response will need
+        to outline the scope and contents of the training, the audience for the
+        training, and the means by which training attendance is tracked and
+        enforced.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for providing retraining related to
+        contingency plan activities as required by information system changes. A
+        successful control response will need to address identification of 
+        changes that require retraining as well as notification to relevant
+        parties that retraining is required and tracking/enforcement of that
+        attendance.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for refresher training related to
+        contingency plan activities at the required frequency. A successful
+        control response will need to address the means by which refresher
+        training attendance is tracked and enforced.>'
 
 - control_key: IR-3
   standard_key: NIST-800-53
