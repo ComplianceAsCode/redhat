@@ -124,8 +124,12 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-4 (1) is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responsible for using automated mechanisms
+        (such as ticketing systems and incident tracking/reporting systems) in
+        support of customer incident handling activities. A successful control
+        response will need to address the automated systems involved and their
+        place within the overall incident handling process.>'
 
 - control_key: IR-5
   standard_key: NIST-800-53
