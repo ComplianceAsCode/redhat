@@ -115,10 +115,45 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against RA-5 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for scanning for vulnerabilities
+        in customer applications and databases. Additionally, IaaS customers
+        using an operating system image will be responsible for scanning
+        for vulnerabilities in the operating system. A successful control
+        response will need to address the tools used to perform scans as well
+        as the additional FedRAMP requirement for independant assessors to
+        scan the system on an annual basis.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for ensuring that vulnerability
+        scanning tools use standards for enumerating components, flaws, and
+        improper configurations; formatting checklists and test procedures;
+        and measuring vulnerability impact. A successful control response will
+        need to address how each vulnerability scanning tool in use meets these
+        requirements (for example, by using Common Vulnerabilities and
+        Exposures (CVE) values).>'
+    - key: c
+      text: |
+        '<The customer will be responsible for analyzing scan reports and
+        assessment results for actionable data. A successful control response
+        will need to address the roles or personnel responsible for the
+        analysis, as well as criteria used in performing the analysis.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for remediating vulnerabilities in
+        customer applications and customer-provider OS images in accordance
+        with the required timeframes. A successful control response will need
+        to address prioritization of remediation activities and roles or
+        personnel responsible for ensuring that timeframe requirements are
+        met.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for sharing vulnerability scan
+        results and security assessment reports with customer-defined
+        stakeholders. A successful control response will need to address the
+        stakeholders involved and the types of information shared with
+        each stakeholder.>'
 
 - control_key: RA-5 (1)
   standard_key: NIST-800-53
