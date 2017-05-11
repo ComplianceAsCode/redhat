@@ -153,10 +153,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-2 (12) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Personal Identity Verification (PIV) credentials are those credentials
+        issued by federal agencies that conform to FIPS Publication 201 and
+        supporting guidance documents. Customers will not be expected to perform
+        this credential verification for government agencies. A mechanism for
+        allowing government agencies to perform credential verification in a way
+        that can be trusted by the customer system is through Active Directory
+        Federation Services (ADFS).>'
 
 - control_key: IA-3
   standard_key: NIST-800-53
