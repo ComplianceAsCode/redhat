@@ -499,12 +499,13 @@ satisfies:
   implimentation_status: none
   narrative:
     - text: |
-        '<The customer will be responsible for identifying and authenticating
-        non-organizational users accessing the customer application. A
-        successful control response will need to address how non-organizational
-        users are defined and the process by which identification and
-        authentication takes place, including any differences from 
-        identification and authentication for organiational users.>'
+        '<Personal Identity Verificiation (PIV_ credentials are those
+        credentials issued by federal agencies that conform to FIPS Publication
+        201 and supporting guidance documents. Customers will not be expected
+        to perform this credential verification for government agencies. A
+        mechanism for allowing government agencies to perform credential
+        verification in a way that can be trusted by the customer system is
+        through Active Directory Federation Services (ADFS).>'
 
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
