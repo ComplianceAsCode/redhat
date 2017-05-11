@@ -160,10 +160,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against RA-5 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for scanning customer applications
+        and customer-deployed operating system images using compliant
+        vulnerability scanning tools. A successful control response will need
+        to address the specific tools used and the process required to
+        update the list of information system vulnerabilities to be scanned
+        for each.>'
 
 - control_key: RA-5 (2)
   standard_key: NIST-800-53
