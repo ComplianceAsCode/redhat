@@ -334,8 +334,13 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-9 (2) is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responsible for providing information spillage
+        response training on a regular basis. This may be incorporated into
+        overall incident response training or may be a separate training
+        course or module. A successful control response will need to outline
+        the contents of the information spillage response training and address
+        the frequency at which training is provided.>'
 
 - control_key: IR-9 (3)
   standard_key: NIST-800-53
