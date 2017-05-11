@@ -395,10 +395,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-10 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for providing recovery and
+        reconstitution of the information system to a known state after a
+        disruption, compromise, or failure.>'
 
 - control_key: CP-10 (2)
   standard_key: NIST-800-53
