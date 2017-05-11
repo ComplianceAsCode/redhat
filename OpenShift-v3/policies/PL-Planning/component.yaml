@@ -135,7 +135,27 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against PL-8 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing their information
+        security architecture. A successful contrl response will need to
+        discuss the guiding principles used to protect confidentiality,
+        integrity, and availability of system information and the dependencies
+        on external services (such as Microsoft Azure). Additionally, a
+        description of the information security architecture should be included
+        in the introductory sections of this system security plan.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for reviewing and updating the
+        security architecture at a required frequency. A succesful control
+        response will need to address the process for initiating review, as well
+        as the individuals or roles responsible for carrying out the review,
+        managing updates, and approving the final version.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for incorporating changes to the
+        security architecture into this system security plan as well as
+        related materials. A successful control response will need to address
+        the process for aligning the contents of the system security plan
+        with the information security architecture, including the
+        individuals or roles responsible for that alignment.>'
