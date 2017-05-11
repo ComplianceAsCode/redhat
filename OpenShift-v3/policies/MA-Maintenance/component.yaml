@@ -125,10 +125,44 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against MA-4 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for approving and monitoring
+        non-local maintenance and diagnostic activities. Because of the nature
+        of a cloud system, all maintenance and diagnostic activities will be
+        considered non-local. Therefore, this control can largely be
+        addressed by reference to acess control authorizations (see AC-2)
+        and the auditing and monitoring discussions in the AU family and SI-4. A
+        successful control response will need to address the personnel or roles
+        who are authorized to perform maintenance and diagnostic activities,
+        and how those activities are tracked.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for ensuring that non-local
+        maintenance and diagnostic activities and tools are consistent
+        with the customers policies. A successful control response will need
+        to discuss ensuring that, for example, authorization, identification,
+        and authentication policies are followed for all personnel and tooles
+        performing maintenance and diagnostic activities.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for ensuring that strong
+        authenticators are used to establish non-local maintenance and
+        diagnostic sessions. A successful control response will need to discuss
+        ensuring that authenticators are resistant to replay attacks and employ
+        multifactor authentication.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for maintaining records of non-local
+        maintenance and diagnostic activities. A successful control response
+        will need to address the types of activities for which records are kept
+        as well as the contents of those records.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for terminating the session and
+        network connections when non-local maintenance and diagnostic activities
+        are completed. A successful control response will need to address
+        monitoring and enforcement of the disconnectionr requirement.>'
 
 - control_key: MA-4 (2)
   standard_key: NIST-800-53
