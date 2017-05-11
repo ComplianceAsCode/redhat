@@ -60,8 +60,13 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-3 is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responsible for testing of incident response
+        plans at the required frequency. A successful control response will
+        need to address the scenarios and exercise chosen for the test, as well
+        as the process for documenting and reviewing test results. Test plans
+        will need to be approved by the Authorizing Official prior to the test
+        commencing.>'
 
 - control_key: IR-3 (2)
   standard_key: NIST-800-53
