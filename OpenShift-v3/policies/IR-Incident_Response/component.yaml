@@ -77,8 +77,13 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-3 (2) is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responsible for coordinating testing of the
+        incident response plan with related plans (such as business continuity
+        plans, contingency plans, etc.). A successful control response will
+        need to address ensuring that any test results relevant to related
+        plans are communicated so that corrective actions may be taken as
+        needed.>'
 
 - control_key: IR-4
   standard_key: NIST-800-53
