@@ -59,10 +59,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against PS-3 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for screening individuals prior to
+        authorizing access. A successful control response will need to
+        demonstrate alignment of the screening as performed to the screening
+        requirements established in PS-2.>'
 
 - control_key: PS-3 (3)
   standard_key: NIST-800-53
