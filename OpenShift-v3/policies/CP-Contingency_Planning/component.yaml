@@ -251,10 +251,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-7 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for identifying an alternate processing
+        site that is separated from the primary processing site to reduce
+        susceptibility to the same threats. Per FedRAMP guidance, the service
+        provider may determine what is considered a sufficient degree of
+        separation between the primary and alternate processing sites, based
+        on the types of threats that are of concern. This control is often
+        inherited from organizational processes.>'
 
 - control_key: CP-7 (2)
   standard_key: NIST-800-53
