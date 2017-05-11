@@ -98,6 +98,25 @@ satisfies:
         distributing rules of behavior. A successful control response will need
         to outline the rules of behavior and discuss the process for making them
         available to users requiring access to the system.>'
+    - key: b
+      text: |
+        '<The customer will be repsonsible for obtaining signed acknowledgement
+        of the rules of behavior from its users. A successful control response
+        will need to address the process for withholding authorization until
+        signatures are obtained.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for reviewing and updating the rules
+        of behavior at the required frequency. A successful control response
+        will need to address the process for initiating review, as well as the
+        individuals or roles for carrying out the review, managing updates, and
+        approving the final version.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for obtaining signed acknowledgement
+        of the updated rules of behavior. A successful control response will
+        need to address the process for removing authorization if signatures
+        are not obtained in a timely manner.>'
 
 - control_key: PL-4 (1)
   standard_key: NIST-800-53
