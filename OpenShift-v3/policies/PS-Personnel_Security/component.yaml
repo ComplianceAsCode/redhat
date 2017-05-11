@@ -199,10 +199,37 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against PS-7 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for establishing personnel security
+        requirements for third-party providers. A successful control response
+        will need to outline these requirements and address the process
+        for notifying third-party providers of the requirements.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for requiring third-party providers
+        to comply with the requirements established in PS-7(a). A successful
+        control response will need to address the process for obtaining
+        agreement to the requirements and enforcing the requirements.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for documenting personnel security
+        requirements for third-party providers. A successful control response
+        will need to discuss the process for creating documentation and sharing
+        it with the providers.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for including nofication of
+        terminations and transfers within the personnel security requirements. A
+        successful control response will need to discuss the specific
+        notification requirements, in particular the requirement for
+        notification within the same day.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for monitoring provider compliance
+        with personnel security requirements. A successful control response
+        will need to address personnel responsible for monitoring compliance,
+        mechanisms used for monitoring, and consequences of non-compliance.>'
 
 - control_key: PS-8
   standard_key: NIST-800-53
