@@ -361,10 +361,34 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (2) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for validating certificates used
+        within the customer application. Active Directory Certificate Services
+        may be used for this purpose. A successful control response will need
+        to address the mechanism used to validate certificates.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for the enforcement of authorized
+        access to private keys associated with certificates used within the
+        customer application. Active Directory Certificate Services may be
+        used for this purpose. A successful control response will need to 
+        address the mechanism used to restrict access to private keys.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for mapping the identity
+        authenticated by a certificate to the account of the individual or
+        group associated with that identity. Active Directory Certificate
+        Services may be used for this purpose. A successful control response
+        will need to address the mechanism used to map identities between
+        certificates and accounts.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for implementing a local (i.e. within
+        their subscription) cache of revocation data. Active Directory 
+        Certificate Serices may be used for this purpose. A successful control
+        response will need to address the mechanism used to establish and
+        populate the revocation data.>'
 
 - control_key: IA-5 (3)
   standard_key: NIST-800-53
