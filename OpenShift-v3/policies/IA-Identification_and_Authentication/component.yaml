@@ -182,10 +182,40 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-4 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for authorizing the assignment of
+        identifiers. A successful control response will need to address the
+        types of identifiers in use and the roles or personnel responsible for
+        authorizing each type.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for selecting identifiers. Microsoft
+        AAD solution may be used for this purpose. A successful control response
+        will need to address all identifier types and the means by which 
+        uniqueness of identifier is assured.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for assigning identifiers. Microsoft
+        AAD solution may be used for this purpose. A successful control
+        response will need to address communication of the assigned identifier
+        to indivuals, groups, roles, or devices.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for preventing the reuse of
+        identifiers for the required timeframe. Microsoft AAD solution may be
+        used for this purpose. Each account created within AAD is assigned a
+        unique identifier (different from username, device name, etc.) which
+        is never reused. A successful control response will need to address the
+        types of identifiers in use and the means by which reuse is 
+        prevented.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for disabling user identifiers after
+        ninety days of inactivity, and other identifier types after customer-
+        defined periods of inactivity. Microsoft AAD solution may be used for
+        this purpose. A successful control response will need to address all
+        identifier types and the means by which disabling takes place.>'
 
 - control_key: IA-4 (4)
   standard_key: NIST-800-53
