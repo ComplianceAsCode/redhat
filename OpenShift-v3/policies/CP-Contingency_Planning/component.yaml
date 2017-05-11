@@ -376,10 +376,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-9 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for testing backup information at
+        least annually to verify media reliability and information
+        integrity.>'
 
 - control_key: CP-9 (3)
   standard_key: NIST-800-53
