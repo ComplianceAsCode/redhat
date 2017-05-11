@@ -405,7 +405,8 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-10 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for implementing transaction
+        recovery within the customer application. A successful control response
+        will need to address how transactions are performed and what occurs in
+        the case of failed or conflicting transactions.>'
