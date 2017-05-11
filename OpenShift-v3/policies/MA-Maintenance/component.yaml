@@ -88,10 +88,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against MA-3 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for inspecting the maintenance
+        tools carried into a facility by maintenance personnel for improper
+        or unauthorized modifications. A successful control response
+        will document this process.>'
 
 - control_key: MA-3 (2)
   standard_key: NIST-800-53
