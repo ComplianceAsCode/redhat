@@ -230,8 +230,46 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-8 is an organizational control outside the scope of OpenShift configuration.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing an incident response
+        plan that includes consideration for any controls that are the
+        responsibility of the customer relating to shared touch points inclduded
+        in the customers authorization boundary and any customer applications
+        leveraging the providers infrastructure. A successful control response
+        will need to address how the plan meets each of the specified
+        requirements, and the individuals or roles responsible for ensuring that
+        the requirements are met.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for distributing the incident
+        response plan to identified internal and FedRAMP personnel. A successful
+        control response will need to address the criteria for inclusion in the
+        distribution list.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for reviewing the incident response
+        plan at the required frequency. A successful control response will need
+        to address how the review process is initiated and the roles or
+        individuals responsible for performing the review.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for updating the incident response
+        plan as appropriate. A successful control response will need to address
+        the criteria for requiring an update to the incident response plan, the
+        individuals or roles responsible for updating the plan, and the process
+        for approval of updates.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for communicating changes made to the
+        incident response plan to the list of internal and FedRAMP personnel
+        identified in IR-8(b).>'
+    - key: f
+      text: |
+        '<The customer will be responsible for protecting the incident response
+        plan from unauthorized disclosure or modification. A successful control
+        response will need to address policy, procedural, and technical
+        safeguards that are in place to protect the incident response plan.>'
 
 - control_key: IR-9
   standard_key: NIST-800-53
