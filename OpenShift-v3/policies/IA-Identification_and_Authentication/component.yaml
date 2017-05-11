@@ -361,127 +361,193 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (2) goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for validating certificates used
+        within the customer application. Active Directory Certificate Services
+        may be used for this purpose. A successful control response will need
+        to address the mechanism used to validate certificates.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for the enforcement of authorized
+        access to private keys associated with certificates used within the
+        customer application. Active Directory Certificate Services may be
+        used for this purpose. A successful control response will need to 
+        address the mechanism used to restrict access to private keys.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for mapping the identity
+        authenticated by a certificate to the account of the individual or
+        group associated with that identity. Active Directory Certificate
+        Services may be used for this purpose. A successful control response
+        will need to address the mechanism used to map identities between
+        certificates and accounts.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for implementing a local (i.e. within
+        their subscription) cache of revocation data. Active Directory 
+        Certificate Serices may be used for this purpose. A successful control
+        response will need to address the mechanism used to establish and
+        populate the revocation data.>'
 
 - control_key: IA-5 (3)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for distributing mulifactor
+        authenticators in person with proper authorizations in place. A
+        successful control response will need to discuss the mulifactor
+        authenticators in use, the personnel or roles serving as the
+        registration authority, and the personnel or roles providing
+        authorization for distribution of the authenticators.>'
 
 - control_key: IA-5 (4)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (4) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for employing automated tools to
+        ensure that password authenticators meet strength requirements. 
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address the automated mechanism used to
+        enforce password strength requirements.>'
 
 - control_key: IA-5 (6)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (6) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for protecting authenticators.
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address the mechanisms, processes, or
+        tools used to protect authenticators.>'
 
 - control_key: IA-5 (7)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (7) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring that unencrypted static
+        authenticators are not embedded or stored. A successful control response
+        will need to address both policy requirements and technical enforcement
+        mechanisms.>'
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 (11) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for employin automated tools to
+        ensure that hardware tokens meet customer-defined token quality
+        requirements. A successful control response will need to discuss the
+        quality requirements in place, the rational for those requirements,
+        and the means by which hardware tokens are shown to meet those
+        requirements.>'
 
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-6 goes here.
+    - text: |
+        '<The customer will be responsible for obscuring authentication feedback
+        during the authentication process for any customer applications. A
+        successful control response will need to address the various
+        authentication scenarios that might arise and the mechanism used
+        to obscure feedback diring each.
 
-        This answer can be multi-line.
+        OpenShift natively obscures such information. OpenShift cannot be
+        configured to be out of compliance with this requirement.>'
 
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-7 goes here.
+    - text: |
+        '<Administrative access to OpenShift nodes is performed over SSH. To
+        limit SSH ciphers to those algorithms which are FIPS-approved, update
+        the following line in /etc/ssh/sshd_config:
+        
+        Ciphers aes128,aes192-ctr,aes256-ctr
 
-        This answer can be multi-line.
+        The OpenShift Console, which is the web interface to the system,
+        automatically converts incoming authentication requests to HTTPS.>'
 
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-8 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for identifying and authenticating
+        non-organiational users accessing the customer application. A 
+        successful control response will need to adderss how non-organizational
+        users are defined and the process by which identification
+        and authentication takes place, including any differences from
+        identification and authentication for organizational users.>'
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-8 (1) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Personal Identity Verificiation (PIV_ credentials are those
+        credentials issued by federal agencies that conform to FIPS Publication
+        201 and supporting guidance documents. Customers will not be expected
+        to perform this credential verification for government agencies. A
+        mechanism for allowing government agencies to perform credential
+        verification in a way that can be trusted by the customer system is
+        through Active Directory Federation Services (ADFS).>'
 
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-8 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS).>'
 
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-8 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS).>'
 
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-8 (4) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS).>'
