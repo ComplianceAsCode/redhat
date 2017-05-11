@@ -277,10 +277,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-7 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for developing alternate processing
+        site agreements that contain priority-of-service provisions in
+        accordance with organizational availability requirements. This control
+        is often inherited from organizational, IaaS, or PaaS providers.>'
 
 - control_key: CP-8
   standard_key: NIST-800-53
