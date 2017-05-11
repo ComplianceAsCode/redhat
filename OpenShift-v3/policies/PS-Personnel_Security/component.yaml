@@ -65,6 +65,12 @@ satisfies:
         authorizing access. A successful control response will need to
         demonstrate alignment of the screening as performed to the screening
         requirements established in PS-2.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for rescreening individuals at the
+        required frequency. A successful control response will need to discuss
+        the process for iniating rescreening, as well as for disabling or
+        removing access if rescreening is not completed in a timely manner.>'
 
 - control_key: PS-3 (3)
   standard_key: NIST-800-53
