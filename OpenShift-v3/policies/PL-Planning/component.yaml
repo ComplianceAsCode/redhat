@@ -78,10 +78,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against PL-2 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for planning and coordinating
+        security-related activities so as to reduce the impact on other
+        organizational entities. These activities may include security
+        assessments, audits, maintenance, patch management, and contingency
+        plan testing. A successful control response will need to address the
+        process by which other organizational entities are notified of and
+        consulted regarding such activities.>'
 
 - control_key: PL-4
   standard_key: NIST-800-53
