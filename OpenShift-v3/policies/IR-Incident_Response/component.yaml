@@ -360,5 +360,11 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-9 (4) is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responsible for defining and employing additional
+        safeguards for personnel exposed to information they were not authorized
+        to access. These may include, for example, additional training, 
+        non-disclosure agreements, etc. A successful control response will need
+        to address the nature of these safeguards and whether they are employed
+        proactively (prior to information spillage incidents) or reactively
+        (following information spillage incidents).>'
