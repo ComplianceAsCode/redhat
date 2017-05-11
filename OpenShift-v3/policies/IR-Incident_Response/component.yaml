@@ -103,6 +103,21 @@ satisfies:
         response (preparation, detection and analysis, containment, eradication,
         and recovery), including identifying roles or individuals responsible
         for each step.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for incident handling activities
+        with contingency plan activities. A successful control response will 
+        need to address communication and prioritization in the case of
+        conflicts (for example, if incident analysis and containment causes
+        delays in service restoration).>'
+    - key: c
+      text: |
+        '<The customer will be responsible for updating incident response plans,
+        procedures, training and testing based on lessons learned from incident
+        handling activities. A successful control response will need to address
+        the personnel or roles responsible for gathering and reviewing lessons
+        learned, updating plans, procedures, trianing, and testing, and
+        reviewing and signing off on changes.>'
 
 - control_key: IR-4 (1)
   standard_key: NIST-800-53
