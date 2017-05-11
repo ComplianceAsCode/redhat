@@ -90,8 +90,19 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-4 is an organizational control outside the scope of OpenShift configuration.
+    - key: a
+      text: |
+        '<The customer will be responsible for developing incident response
+        plans and testing that includes consideration for any controls that are
+        the responsibility of the customer relating to shared touch points
+        included in the customers authorization boundary and any customer
+        applications leveraging the providers infrastructure. Incident handling
+        for customer applications is the responsiblity of the customer unless
+        an incident is caused by platform providers (e.g. IaaS). A successful
+        control response will need to address the required steps in incident
+        response (preparation, detection and analysis, containment, eradication,
+        and recovery), including identifying roles or individuals responsible
+        for each step.>'
 
 - control_key: IR-4 (1)
   standard_key: NIST-800-53
