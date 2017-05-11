@@ -31,10 +31,29 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against RA-2 goes here.
+    - key: a
+      text: |
+        '<The customer will be responsible for categorizing the customer
+        system and information contained within it. A successful control
+        response will need to address the applicable Federal Laws, Executive
+        Orders, directives, policies, regulations, standards, and guidance, as
+        well as the key stakeholders involved in the categorization decision.
 
-        This answer can be multi-line.
+        Resources related to information categorization include FIPS 199,
+        Standards for Security Categorization of Federal Information and
+        Information Systems, and NIST SP 800-61, Rev. 1, Guide for Mapping
+        Types of Information and Inforation Systems to Security Categories.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for documenting the security
+        categorization. A successful response will need to address supporting
+        rationale, including types of information considered, risk impact
+        analysis, and input from stakeholders and organizational officials.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for presneting the security
+        categorization decision to the Authorizing Official or a
+        designated representative for review and approval.>'
 
 - control_key: RA-3
   standard_key: NIST-800-53
