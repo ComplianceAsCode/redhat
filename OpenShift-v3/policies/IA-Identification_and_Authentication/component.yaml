@@ -485,10 +485,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-8 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for identifying and authenticating
+        non-organiational users accessing the customer application. A 
+        successful control response will need to adderss how non-organizational
+        users are defined and the process by which identification
+        and authentication takes place, including any differences from
+        identification and authentication for organizational users.>'
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
