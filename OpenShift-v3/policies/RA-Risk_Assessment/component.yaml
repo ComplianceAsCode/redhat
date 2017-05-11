@@ -209,10 +209,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against RA-5 (6) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for using automated mechanisms to
+        analyze vulnerability scan results over time to determine trends. A
+        successful control response will need to discuss the mechanisms in use
+        and the metrics employed in scan result analysis.>'
 
 - control_key: RA-5 (8)
   standard_key: NIST-800-53
