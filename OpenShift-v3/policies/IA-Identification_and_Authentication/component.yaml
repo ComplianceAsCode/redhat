@@ -235,10 +235,81 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-5 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for verifying the identity of an
+        individual, group, role, or device as part of authenticator
+        distribution. A successful control response will need to address all
+        account types in use and the means of verifiacation for each (for
+        example, verifying an individuals identity with a government-issued
+        identification card).>'
+    - key: b
+      text: |
+        '<The customer will be responsible for establishing initial 
+        authenticator content, such as initial passwords. Microsoft AAD
+        solution may be used for this purpose. A successful control response
+        will need to address all authenticator types and the means by which
+        initial content is established for each.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for enforcing strength requirements
+        for authenticators. Microsoft AAD solution may be used for this purpose.
+        A successful control response will need to address all authenticator
+        types and the means by which strength of mechanism requirements are met
+        for each.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for establishing procedures for
+        authenticator distribution, redistribution, and revocation. Microsoft 
+        AAD solution may be used for this purpose. A successful control response
+        will need to address all authenticator types and scenarios, and the
+        procedures established for each.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for changing default authenticator
+        content, such as default passwords for customer-installed software. A
+        successful control response will address all situations within the
+        customer application where a default authenticator may occur and the
+        process by which changing the default content is enforced.>'
+    - key: f
+      text: |
+        '<The customer will be responsible for setting minimum and maximum
+        lifetime restrictions and reuse conditions for authenticators.
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address all authenticator types and the
+        lifetime restrictions and reuse conditions for each.>'
+    - key: g
+      text: |
+        '<The customer will be responsible for refreshing authenticators at a
+        regular cadence, to include every 60 days for passwords. Microsoft AAD
+        solution may be used for this purpose. A successful control response
+        will need to address all authenticator types, the refresh cadence for
+        each, and the mechanism by which this cadence is enforced.>'
+    - key: h
+      text: |
+        '<The customer will be responsible for protecting authenticator content
+        from unauthorized disclosure or modifiation. Microsoft AAD solution may
+        be used for this purpose. A successful control response will need to
+        address all authenticator types and the means used to protect each,
+        as well as end user training to ensure that users do not disclose
+        authenticators to unauthorized personnel.>'
+    - key: i
+      text: |
+        '<The customer will be responsible for implementing specific security
+        safeguards to protect authenticators. Microsoft AAD solution may be
+        used for this purpose. A successful control response will need to
+        address all authenticator types and the means used to protect each, as
+        well as end user training to ensure that users do not disclose
+        authenticators to unauthorized personnel.>'
+    - key: j
+      text: |
+        '<The customer will be responsible for changing authenticators for group
+        or role accounts when membership to those groups or roles changes. 
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to discuss how group/role membership change
+        is detected and reported, the personnel or roles responsible for
+        changing the affected authenticators and the process or mechanism used
+        to perform the change.>'
 
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
