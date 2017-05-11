@@ -169,10 +169,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against MA-4 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for documenting the policies and
+        procedures for the establishment and use of non-local maintenance
+        and diagnostic connections. A successful control response will need to
+        address when non-local maintenance and diagnostic connections are
+        allowed, what personnel are authorized to establish and use them, and
+        udner what circumstances connections must be terminated.>'
 
 - control_key: MA-5
   standard_key: NIST-800-53
