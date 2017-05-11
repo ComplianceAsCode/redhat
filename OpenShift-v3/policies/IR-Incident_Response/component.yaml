@@ -194,8 +194,12 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-7 (1) is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responislbe for using automated mechanisms
+        (such as websites or email distribution lists) to increase the
+        availability of incident response support resources. A successful 
+        control response will need to discuss the mechanisms used and the
+        information and support resources provided via each mechanism.>'
 
 - control_key: IR-7 (2)
   standard_key: NIST-800-53
