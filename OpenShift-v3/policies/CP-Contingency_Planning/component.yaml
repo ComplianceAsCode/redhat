@@ -288,10 +288,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against CP-8 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for establishing alternate
+        telecommunication services including necessary agreements to permit
+        the resumption of operations. The customer must define a time period
+        to resume business operations that is consistent with the business
+        impact analysis. This control is often inherited from organizational,
+        IaaS, or PaaS providers.>'
 
 - control_key: CP-8 (1)
   standard_key: NIST-800-53
