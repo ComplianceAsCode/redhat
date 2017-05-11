@@ -170,8 +170,12 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-6 (1) is an organizational control outside the scope of OpenShift configuration.
+    - text: |
+        '<The customer will be responsible for using automated mechanisms (such
+        as ticketing systems and incident tracking/reporting systems) in support
+        of the reporting of security incidents. A successful control response
+        will need to address the automated systems involved and how they are
+        used for reporting of incidents.>'
 
 - control_key: IR-7
   standard_key: NIST-800-53
