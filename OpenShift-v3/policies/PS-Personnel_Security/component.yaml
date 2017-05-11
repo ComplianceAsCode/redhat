@@ -90,10 +90,47 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against PS-4 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for disabling system access for
+        terminated employees on teh day of termination. A successful control
+        response will need to address the process by which access disablement
+        is requested, as well as the personnel responsible for initiating and
+        completing the request.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for terminating or revoking
+        authenticators and credentials associated with terminated individuals. A
+        successful control response will need to discuss the authenticators/
+        credentials to be terminated/revoked, as well as the process for
+        terminating or revoking each.>'
+    - key: c
+      text: |
+        '<The customerw ill be responsible for conducting exit interviews. A
+        successful control response will need to address the topics discussed
+        during the interviews and the personnel responsible for conducting
+        the interviews.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for retrieving all security related,
+        information system related, organizational property from terminated
+        indviduals. A successful control response will need to address the
+        prcess and personnel responsible for ensuring that all such property
+        is retrieved.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for retaining access to information
+        and information systems formerly controlled by terminated individuals. A
+        successful control response will need to address how this retention
+        occures, personnel responsible for retention, and any minimum or
+        maximum retention periods.>'
+    - key: f
+      text: |
+        '<The customer will be responsible for notifying relevant personnel
+        within a defined time period after an individual is terminated. A
+        successful control response will need to define the time period and
+        personnel who should be notified, as well as discussing the process
+        by which notification happens.>'
 
 - control_key: PS-5
   standard_key: NIST-800-53
