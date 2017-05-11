@@ -527,10 +527,15 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against IA-8 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS).>'
 
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
