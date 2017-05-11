@@ -148,8 +148,22 @@ satisfies:
   covered_by: []
   implimentation_status: Not applicable
   narrative:
-   - text: |
-        IR-6 is an organizational control outside the scope of OpenShift configuration.
+    - key: a
+      text: |
+        '<The customer will be responsible for requiring personnel to report
+        suspected security incidents within the required timeframes. A
+        successful control response will need to address examples of events that
+        personnel should report, as well as tools, mechanisms, and processes
+        used for reporting.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for reporting security incident
+        information according to the FedRAMP Incident Communications Procedure.
+        In cases where customer security incidents may affect the security
+        status of Microsoft Azure as a whole, the customer will be responsible
+        for notifying Microsoft Azure as well. A successful control response
+        will need to address the individuals or roles responsible for such
+        notifications.>'
 
 - control_key: IR-6 (1)
   standard_key: NIST-800-53
