@@ -300,10 +300,19 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-20 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<If running DNS services, the customer is responsible for providing
+        origin authentication and integrity verification artifacts along
+        with authoritative name resolution data returns in response. A
+        successful control response will discuss the technical means used to
+        accomplish this.>'
+    - key: b
+      text: |
+        '<If running DNS services, the customer is responsible for
+        providing means to indicate the security status of child zones and
+        enable verification of a chain of trust among parent and child domains.
+        A successful control response will discuss the technical means used to
+        accomplish this.>'
 
 - control_key: SC-21
   standard_key: NIST-800-53
