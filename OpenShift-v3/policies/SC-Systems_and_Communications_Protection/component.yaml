@@ -330,10 +330,16 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-23 goes here.
+    - text: |
+        '<The customer will be responsible for guarding against, for
+        example, man in the middle or session hijacking attacks for
+        connections to the customer application, for example via the
+        use of TLS. A successful control response will address the
+        various types of attacks against session authenticity and the
+        mechanisms used to protect against those attacks.
 
-        This answer can be multi-line.
+        OpenShift uses various TLS algorithms and ciphers to protect
+        the authenticity of communications sessions.>'
 
 - control_key: SC-28
   standard_key: NIST-800-53
