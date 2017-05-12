@@ -338,10 +338,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-9 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for restricting the location of information
+        processing, information data, and information services, to
+        continental United States datacenters based on business requirements.>'
 
 - control_key: SA-10
   standard_key: NIST-800-53
