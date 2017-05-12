@@ -31,10 +31,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-2 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for determining the functionality and
+        access to their instance of information system components. Each customer
+        can determine how they want to manage and implement access to their
+        instance.>'
 
 - control_key: SC-4
   standard_key: NIST-800-53
