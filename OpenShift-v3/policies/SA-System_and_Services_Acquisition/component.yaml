@@ -326,10 +326,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-9 (4) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for employing FedRAMP security requirements
+        to ensure the interests of all external systems where Federal
+        information is processed or stored is consistent with and reflect
+        organizational interests. A successful control response will discuss
+        how FedRAMP security requirements are enforced in external systems.>'
 
 - control_key: SA-9 (5)
   standard_key: NIST-800-53
