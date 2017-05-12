@@ -240,10 +240,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-12 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for producign, controlling, and
+        distributing asymetric cryptographic keys (if any are used within the
+        customer application) using one of the specified tools or processes. A
+        successful control response will need to address the process and tools
+        used for key generation and discuss the reasons they are considered
+        compliant.>'
 
 - control_key: SC-13
   standard_key: NIST-800-53
