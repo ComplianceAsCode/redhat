@@ -57,10 +57,33 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-3 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for managing the information system
+        using a Secure Development Lifecycle that incorporates information
+        security considerations. A successful control response will indicate
+        how information security requirements are part of project management
+        plans.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for defining and documenting
+        information security roles and responsibilities throughout the
+        system development lifecycle. A successful control response will
+        indicate how information security roles are kept current during all
+        stages of the information systems lifecycle.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for identifying individuals
+        that have information security roles and responsibilities. A successful
+        control response will document these individuals, their
+        responsibilities, and how the organization keeps current this
+        information.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for integrating the organizational
+        information security risk management process into system lifecycle. A
+        successful control response indicates how the organization follows the
+        NIST Risk Management Framework, or an agency-specific derivative.>'
 
 - control_key: SA-4
   standard_key: NIST-800-53
