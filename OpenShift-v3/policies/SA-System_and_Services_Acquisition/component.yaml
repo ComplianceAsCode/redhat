@@ -401,10 +401,42 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-11 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for ensuring that the developer
+        of customer-controlled operating systems and software creates
+        and implements a security assessment plan. A successful control
+        response will need to outline the security assessment plan.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for ensuring that the developer
+        of customer-controlled operating systems and software performs
+        system testing at a customer-required depto and coverage. A
+        successful control response will need to address the types of testing
+        performed and the depth required.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for ensuring that the developer of
+        customer-controlled operating systems and software produces evidence
+        of the execution of the security assessment plan and the
+        results of the security testing/evaluation. A successful control
+        response will need to address the process by which the customer
+        obtains and reviews the evidence and results of testing.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for ensuring that the developer of
+        customer-controlled operating systems and software implements a
+        verifiable flaw remediation process. A successful control response
+        will need to outline the means by which flaws are identified and
+        addressed.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for ensuring that the developer of
+        customer-controlled operating systems and software corrects flaws 
+        identified during security tsting. A successful control response
+        will need to discuss the procedure for identifying flaws, alerting
+        appropriate personnel to correct flaws, and verifying the success
+        of the correction.>'
 
 - control_key: SA-11 (1)
   standard_key: NIST-800-53
