@@ -210,20 +210,18 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-12 goes here.
+    - text: |
+        '<Government user entities will ensure that personel computing devices
+        (client systems) are configured to request FIPS 140-2 encryption
+        ciphers and protocols for all network sessions.
 
-        This answer can be multi-line.
+        Red Hat Enterprise Linux 7, the underlying operating system for
+        OpenShift, has achieved FIPS 140-2 certification. For documentation
+        of certifications, please visit the US Government Certifications
+        webpage:
 
-- control_key: SC-12 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-12 (1) goes here.
-
-        This answer can be multi-line.
+        https://www.redhat.com/en/technologies/industries/government/standards
+        >'
 
 - control_key: SC-12 (2)
   standard_key: NIST-800-53
@@ -282,7 +280,7 @@ satisfies:
       text: |
         '<The customer will be responsible for providing easy to use
         functionality to disable any collaborative computing devices within
-        or controlled from the customer application.>
+        or controlled from the customer application.>'
 
 - control_key: SC-17
   standard_key: NIST-800-53
@@ -340,7 +338,8 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-    - text: |
+    - key: a
+      text: |
         '<If running DNS services, the customer is responsible for providing
         origin authentication and integrity verification artifacts along
         with authoritative name resolution data returns in response. A
