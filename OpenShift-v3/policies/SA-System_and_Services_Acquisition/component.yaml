@@ -165,10 +165,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-4 (2) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for requiring the developer of the
+        information system to provide design and implementation information
+        for the security controls to be employed that includes security-relevant
+        external interfaces and high-level design. This information must be
+        at a level of detail sufficient for secure deployment. A successful
+        control response will indicate address how this requirement is built
+        into procurement language.>'
 
 - control_key: SA-4 (8)
   standard_key: NIST-800-53
