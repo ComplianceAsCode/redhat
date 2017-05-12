@@ -200,10 +200,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-10 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for terminating network connections
+        at the end of the session or after no longer than 30 minutes of
+        inactivity. A successful control response will document the technical
+        means on how this is established.>'
 
 - control_key: SC-12
   standard_key: NIST-800-53
