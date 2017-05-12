@@ -113,7 +113,19 @@ satisfies:
   narrative:
     - key: a
       text: |
-        '<The customer '
+        'This control is inherited from the network and IaaS provider.'
+    - key: b
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: c
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: d
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: e
+      text: |
+        'This control is inherited from the network and IaaS provider.'
 
 - control_key: SC-7 (5)
   standard_key: NIST-800-53
