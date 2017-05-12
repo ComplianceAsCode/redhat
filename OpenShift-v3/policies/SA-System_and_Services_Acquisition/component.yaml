@@ -384,10 +384,17 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-10 (1) goes here.
+    - text: |
+        '<The customer will be responsible for enabling integrity verification
+        for customer-controlled operating systems and software. A successful
+        control response will need to address the processes and mechanisms
+        involved in integrity verification.
 
-        This answer can be multi-line.
+        Red Hat container image signing provides a path to ensure authorship,
+        integrity, and non-repudiation. Documentation can be found
+        in the "Container Image Signing Integration Guide":
+
+        https://access.redhat.com/articles/2750891 >'
 
 - control_key: SA-11
   standard_key: NIST-800-53
