@@ -2,7 +2,7 @@
 OpenControl content for Red Hat technologies. Work in progress!
 
 
-## Building OpenControl/RedHat content
+## Prep your Development Environment
 A few packages are needed for successful OpenControl builds on a RHEL7 system. 
 
 (1) Install Base Packages
@@ -69,3 +69,15 @@ go get github.com/opencontrol/fedramp-templater
 `````
 sudo yum -y install yamllint
 `````
+
+## Build the Content
+You can run ``make`` in the top-level directory to build OpenControl content for all subprojects. Alternatively, you can ``cd`` into a project directory and run things one at a time.
+
+For example, to build OpenShift v3 content:
+`````
+$ cd OpenShift-v3
+$ make
+`````
+Inside the ``exports`` directory, you will now see two files:
+  * ``FedRAMP-Filled-v2.1.docx``: Completed FedRAMP template with your security controls
+  * ``OpenShift_v3_Compliance.pdf``: DocBook style, breakouts controls without formatting
