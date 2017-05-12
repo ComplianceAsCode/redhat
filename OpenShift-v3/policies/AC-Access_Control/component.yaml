@@ -795,7 +795,8 @@ satisfies:
     - key: 'b'
       text: |
         '<If part (a) is not possible, then the customer will be responsible
-        for establishing and retaining approved information system connection           or processing agreements with the external entity hosting the external
+        for establishing and retaining approved information system connection
+        or processing agreements with the external entity hosting the external
         information system used to access the customer application.>'
 
 - control_key: AC-20 (2)
