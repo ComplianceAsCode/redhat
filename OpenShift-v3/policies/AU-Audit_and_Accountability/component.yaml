@@ -80,7 +80,7 @@ satisfies:
         here:
 
         https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/
-        html/Security_Guide/sec-configuring_the_audit_service.html 
+        html/Security_Guide/sec-configuring_the_audit_service.html
         */'
 
 - control_key: AU-2 (3)
@@ -247,7 +247,7 @@ satisfies:
         Configuration guide:
 
         https://docs.openshift.com/container-platform/3.3/install_config/
-        aggregate_logging.html 
+        aggregate_logging.html
         */'
 
     - key: b
@@ -259,7 +259,7 @@ satisfies:
         documents can be found publicly at:
 
         https://www.redhat.com/en/technologies/industries/government/standards
-        
+
         */'
 
 - control_key: AU-7 (1)
@@ -306,7 +306,7 @@ satisfies:
 
         https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
         7/html/System_Administrators_Guide/chap-Configuring_the_Date_and_Time.
-        html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone 
+        html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone
         */'
 
 - control_key: AU-8 (1)
@@ -341,7 +341,7 @@ satisfies:
         7 System Administrators guide:
 
         https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
-        7/html/System_Administrators_Guide/s1-Configure_NTP.html 
+        7/html/System_Administrators_Guide/s1-Configure_NTP.html
         */'
 
     - key: 'Req.1'
@@ -448,7 +448,7 @@ satisfies:
         <Audit rules may be added/removed through modifying the
         /etc/audit/audit.rules or applicable file under /etc/audit/rules.d/. It
         is recommended that OpenShift specific audit rules be added to
-        /etc/audit/rules.d/openshift.rules 
+        /etc/audit/rules.d/openshift.rules
         */'
     - key: c
       text: |

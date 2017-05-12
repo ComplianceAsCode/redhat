@@ -71,7 +71,7 @@ satisfies:
         Configuration guide:
 
         https://docs.openshift.com/container-platform/3.3/install_config/
-        syncing_groups_with_ldap.html 
+        syncing_groups_with_ldap.html
         */'
 
 - control_key: IA-2 (1)
@@ -97,7 +97,7 @@ satisfies:
         Installation and Configuration Guide:
 
         https://docs.openshift.com/container-platform/3.3/install_config/
-        configuring_authentication.html#RequestHeaderIdentityProvider  
+        configuring_authentication.html#RequestHeaderIdentityProvider
         */'
 
 - control_key: IA-2 (2)

@@ -420,7 +420,7 @@ satisfies:
         Integration Guide for procedures on how to setup and maintain container
         signing:
 
-        https://access.redhat.com/articles/2750891 
+        https://access.redhat.com/articles/2750891
         */'
     - key: b
       text: |

@@ -476,7 +476,7 @@ satisfies:
         integrity, and non-repudiation. Documentation can be found
         in the "Container Image Signing Integration Guide":
 
-        https://access.redhat.com/articles/2750891 
+        https://access.redhat.com/articles/2750891
         */'
 
 - control_key: SA-11

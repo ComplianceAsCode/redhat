@@ -186,7 +186,7 @@ satisfies:
         plans and procedures:
 
         https://azure.microsoft.com/en-us/documentation/articles/
-        sql-database-disaster-recovery-drills/ 
+        sql-database-disaster-recovery-drills/
         */'
     - key: b
       text: |
