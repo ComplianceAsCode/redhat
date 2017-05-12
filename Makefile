@@ -22,7 +22,7 @@ clean:
 	- cd RHEL7 && make clean
 	- cd OpenShift-v3 && make clean
 
-rhel7: 
+rhel7: clean
 	- cd RHEL7 && make
 
 openshiftv3:

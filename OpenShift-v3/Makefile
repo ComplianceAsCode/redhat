@@ -16,7 +16,7 @@ EXECUTABLES = $(CM) $(GB)
 K := $(foreach exec,$(EXECUTABLES),\
         $(if $(shell which $(exec)),some string,$(error "No $(exec) in PATH")))
 
-default: pdf
+default: pdf fedramp
 
 clean:
 	rm -rf exports/ opencontrols/
@@ -36,11 +36,11 @@ opencontrols: opencontrol.yaml
 coverage:
 	${CM} diff FedRAMP-low
 
-fedramp: default
+fedramp:
 	${GOPATH}/bin/fedramp-templater fill opencontrols/ ../FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
 
 fedramp-diff:
-	${GOPATH}/bin/fedramp-templater diff opencontrols/ FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
+	${GOPATH}/bin/fedramp-templater diff opencontrols/ ../FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
 
 checks:
 	yamllint policies/
