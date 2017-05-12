@@ -203,10 +203,14 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-4 (10) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for employing only information
+        technology products on the FIPS 201-approved products list for
+        Personal Identity Vertification (PIV) capability implemented within
+        organizational information systems. A successful control response will
+        indicate that all system components have been selected from this list,
+        and if not, document waivers with appropriate organizational authorities
+        signature.>'
 
 - control_key: SA-5
   standard_key: NIST-800-53
