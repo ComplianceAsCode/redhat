@@ -179,10 +179,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-4 (8) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for requiring the developer of
+        customer-controlled software and operating systems to produce a plan
+        for continuous monitoring of security control effectiveness. A
+        successful control response will discuss the level of detail required
+        by the customer as part of these continuous monitoring activities.>'
 
 - control_key: SA-4 (9)
   standard_key: NIST-800-53
