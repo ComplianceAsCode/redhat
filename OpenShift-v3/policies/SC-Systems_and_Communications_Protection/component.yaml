@@ -320,10 +320,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-22 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer, if DNS services are in use, is responsible for ensuring
+        services are fault-tolerant and implement internal/external role
+        separation.>'
 
 - control_key: SC-23
   standard_key: NIST-800-53
