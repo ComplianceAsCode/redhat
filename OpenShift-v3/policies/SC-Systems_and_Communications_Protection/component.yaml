@@ -350,10 +350,17 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-28 (1) goes here.
+    - text: |
+        '<The customer is responsible for implementing cryptographic
+        mechanisms to prevent unauthorzed disclosure and modification of
+        customer data. A successful control response will outline how
+        cryptography is used to ensure integrity of data in rest and
+        transport.
 
-        This answer can be multi-line.
+        When running on Red Hat Enterprise Linux, full disk encryption
+        is possible for data at rest on the OpenShift nodes. For data
+        in transport, OpenShift uses cryptographic algorithms and ciphers to
+        protect confidentiality and integrity of data in transport.>'
 
 - control_key: SC-39
   standard_key: NIST-800-53
