@@ -267,10 +267,28 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-9 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<Customers are responsible to require that external information systems
+        comply with organiziational security requirements and FedRAMP
+        Security Controls Baseline(s) if Federal information is processed or
+        stored within the external system. A successful control response will
+        indicate how this is enforced, procedurally and technically, for
+        external information systems.>'
+    - key: b
+      text: |
+        '<Customers are responsible for defining and documenting government
+        oversight and user roles and responsibilities regarding external
+        information system services. A successful contro response will address
+        the procedures for this oversight.>'
+    - key: c
+      text: |
+        '<Customers are responsible for employing Federal/FedRAMP Continuous
+        Monitoring Requirements on external systems where Federal information
+        is processed or stored, and monitor security control compliance by
+        external serice providers on an ongoing basis. A successful control
+        response will address the procedural and technical processes used to
+        accomplish this.>'
 
 - control_key: SA-9 (1)
   standard_key: NIST-800-53
