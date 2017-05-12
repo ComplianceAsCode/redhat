@@ -348,10 +348,36 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-10 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for performing configuration
+        management for customer-controlled operating systems and software. A
+        successful control response will need to address the process and
+        mechanisms involved in configuration management.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for documenting, managing, and
+        controlling the integrity of changes to customer-controlled operating
+        systems and software. A successful control response will need to
+        address the processes and mechanisms involved in these activities.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for implementing only approved
+        changes. A successful control response will need to address the
+        approval process and safeguards in place to ensure only approved
+        changes are implemented.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for documenting approved changes
+        to customer-controlled operating systems and software as well as the
+        potential security implications of such changes. A successful control
+        response will need to discuss the process for documentation.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for tracking, resolving, and
+        reporting security flaws within customer-controlled operating systems
+        and software. A successful control response will need to discuss the
+        process and tools used for tracking, resolution, and reporting.>'
 
 - control_key: SA-10 (1)
   standard_key: NIST-800-53
