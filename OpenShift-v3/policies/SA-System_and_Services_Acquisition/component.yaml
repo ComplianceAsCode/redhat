@@ -31,10 +31,26 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-2 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for determining information security
+        requirements during mission/business process planning. A successful
+        control response will indicate how information security has been
+        integrated into mission/business planning.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for determining, documenting, and
+        allocating the resources required to protect the information system
+        as part of capital planning and investment control processes. A
+        successful control response will indicate how information security
+        has been incorporated into financial planning processes.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for establishing a discrete line
+        item for information security in organizational programming and
+        budgeting documentation. A successful control response will indicate
+        how information security is a stand-alone practice within the
+        organization.>'
 
 - control_key: SA-3
   standard_key: NIST-800-53
