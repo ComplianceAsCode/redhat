@@ -180,10 +180,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-8 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for configuring their web browsers, mobile
+        devices, etc., to enable communications through FIPS 140-2 validated
+        encryption. Customers who enforce FDCC/USGCB settings will achieve
+        FIPS 140-2 encryption as part of that baseline. Strong encryption
+        with FIPS-approved ciphers is still possible when hosts are not
+        operating in FIPS mode.>'
 
 - control_key: SC-8 (1)
   standard_key: NIST-800-53
