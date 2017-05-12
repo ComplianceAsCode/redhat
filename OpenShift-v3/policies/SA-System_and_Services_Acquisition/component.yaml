@@ -313,10 +313,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-9 (2) goes here.
+    - text: |
+        '<Customers are responsible for requiring providers of all external
+        information systems where Federal information is processed or stored
+        to identify the functions, ports, protocols, and other services
+        required for the use of such services. A successful control response
+        will indicate this requirement in contracting language.>'
 
-        This answer can be multi-line.
 
 - control_key: SA-9 (4)
   standard_key: NIST-800-53
