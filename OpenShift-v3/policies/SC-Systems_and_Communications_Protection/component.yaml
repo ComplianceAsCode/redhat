@@ -260,10 +260,23 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-15 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for prohibiting remote activation
+        of any collaborative computing devices within or controlled from
+        the customer application.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for providing an explicit indication
+        of use of any collaborative computing devices within or controlled
+        from the customer application. A successful control response will
+        need to address how this explicit indication is enabled, the form
+        it takes, and the means by which activation can be verified.>'
+    - key: 'Req. 1'
+      text: |
+        '<The customer will be responsible for providing easy to use
+        functionality to disable any collaborative computing devices within
+        or controlled from the customer application.>
 
 - control_key: SC-17
   standard_key: NIST-800-53
