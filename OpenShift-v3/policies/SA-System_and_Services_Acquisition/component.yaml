@@ -470,10 +470,12 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-11 (8) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring that the developer of
+        customer-controlled operating systems and software employs dynamic
+        code analysis tools. A successful control response will need to discuss
+        the tools in use, the means by which the tools are used to identify
+        common flaws, and the process for documenting results of testing.>'
 
 - control_key: SA-22
   standard_key: NIST-800-53
