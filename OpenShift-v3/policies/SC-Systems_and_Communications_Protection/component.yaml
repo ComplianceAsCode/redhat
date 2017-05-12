@@ -76,10 +76,24 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer is responsible for monitoring and controlling
+        communications at the external boundary of the system and
+        at key internal boundaries within the system. A successful control
+        response will address how communications are monitored and shaped.>'
+    - key: b
+      text: |
+        '<The customer is responsible for implementing subnetworks for
+        publicly accessible system components that are physically and logically
+        separated. A successful control response will indicate how system
+        component traffic is separated.>'
+    - key: c
+      text: |
+        '<The customer is responsible for connecting to networks through
+        managed interfaces consisting of boundary protection devices. A
+        successful control response will discuss how traffic passes through
+        managed interfaces and boundary protection devices.>'
 
 - control_key: SC-7 (3)
   standard_key: NIST-800-53
