@@ -52,10 +52,13 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-5 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for protecting against or limiting
+        the effects of attacks on bandwidth, attacks on transactional
+        capacity, attacks on storage capacity by employing geo-replication, 
+        IP address blocking, network-based DDos protections. A successful
+        control response will discuss how the information system is protected
+        from these attacks.>'
 
 - control_key: SC-6
   standard_key: NIST-800-53
