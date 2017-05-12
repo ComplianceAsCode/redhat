@@ -170,10 +170,8 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 (18) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        'This control is inherited through organizational network services.'
 
 - control_key: SC-8
   standard_key: NIST-800-53
