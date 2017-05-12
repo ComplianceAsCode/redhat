@@ -100,10 +100,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 (3) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer is responsible for limiting the number of external
+        network connetions to the information system. A successful control
+        response will indicate the rate limiting procedures and technical
+        enforcement.>'
 
 - control_key: SC-7 (4)
   standard_key: NIST-800-53
