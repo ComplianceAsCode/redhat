@@ -250,10 +250,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-13 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<OpenShift relies on the cryptographic services of the underlying
+        operating system, Red Hat Enterprise Linux. To ensure RHEL is configured
+        in FIPS mode, follow CCE-80359-3, "Enable FIPS Mode in GRUB2".>'
 
 - control_key: SC-15
   standard_key: NIST-800-53
