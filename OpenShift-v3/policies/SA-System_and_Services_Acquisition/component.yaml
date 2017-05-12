@@ -256,10 +256,11 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-8 goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<Customers are responsible for embedding secure system development
+        lifecycle principles in the specification, design, development,
+        implementation, and modification of the system. A successful control
+        response will discuss the processes followed.>'
 
 - control_key: SA-9
   standard_key: NIST-800-53
