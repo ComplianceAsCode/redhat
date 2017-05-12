@@ -150,20 +150,23 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 (12) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for implementing host-based
+        boundary protection mechanisms. This is often through configuration of
+        local firewalld and SELinux policies.>'
 
 - control_key: SC-7 (13)
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 (13) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring that OpenShift is
+        isolated from other internal information system components by
+        implementing physically separate subnetworks with managed
+        interfaces to other components of the system. A successful control
+        response will discuss the networking configuration to satisfy this
+        control.>'
 
 - control_key: SC-7 (18)
   standard_key: NIST-800-53
