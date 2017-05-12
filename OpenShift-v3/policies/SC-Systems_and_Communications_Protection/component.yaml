@@ -120,10 +120,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 (5) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for ensuring managed interfaces deny
+        network traffic by default and allow network communications traffic
+        by exception (i.e. deny all, permit by exception).>'
 
 - control_key: SC-7 (7)
   standard_key: NIST-800-53
