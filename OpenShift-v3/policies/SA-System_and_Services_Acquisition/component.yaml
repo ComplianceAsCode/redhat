@@ -217,10 +217,39 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-5 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<Customers are responsible for obtaining administrator documentation
+        for customer-controlled software and operating systems. A successful
+        control response will address the specific content requirements
+        outlined in the control>'
+    - key: b
+      text: |
+        '<Customers are responsible for obtaining user documentation for
+        customer-controlled software and operating systems. A successful control
+        response will address the specific content requirements outlined in
+        the control.>'
+    - key: c
+      text: |
+        '<Customers are responsible for documenting attempts to obtain
+        administrator and user documentation for customer-controlled software
+        and operating systems if that documentation is not available. A
+        successful control response will discuss the process by which attempts
+        to obtain documentation are made as well as any additional actions
+        taken.>'
+    - key: d
+      text: |
+        '<Customers are responsible for protecting administrator and user
+        documentation for customer-controlled software and operating systems.
+        A successful control response will discuss how the safeguards are used
+        in accordance with the organizations risk management strategy.>'
+    - key: e
+      text: |
+        '<Customers are responsible for distributing documentation for
+        customer-controlled software and operating systems to appropriate
+        personnel. A successful control response will discuss the means
+        of distribution and the process for designating appropraite personnel
+        or roles.>'
 
 - control_key: SA-8
   standard_key: NIST-800-53
