@@ -130,20 +130,10 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 (7) goes here.
-
-        This answer can be multi-line.
-
-- control_key: SC-7 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-7 (8) goes here.
-
-        This answer can be multi-line.
+    - text: |
+        '<The customer will be responsible for implementing mechanisms to
+        ensure OpenShift nodes to not act as proxy or relay servers between
+        internal and external networks.>'
 
 - control_key: SC-7 (12)
   standard_key: NIST-800-53
