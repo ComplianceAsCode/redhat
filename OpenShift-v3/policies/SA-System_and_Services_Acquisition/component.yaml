@@ -90,10 +90,63 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-4 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for including security functional
+        requirements in acquisition contracts. A successful control response
+        will need to address consideration of applicable federal laws,
+        Executive Orders, directives, policies, regulations, standards,
+        guidelines, and organizational mission/business needs in the creation
+        of the contracts.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for including security strength
+        requirements in acquisition contracts. A successful control response
+        will need to address consideration of applicable federal laws,
+        Executive Orders, directives, policies, regulations, standards,
+        guidelines, and organizational mission/business needs in the creation
+        of the contracts.>'
+    - key: c
+      text: |
+        '<The customer will be responsible for including security assurance
+        requirements in acquisition contracts. A successful control response
+        will need to address consideration of applicable federal laws,
+        Executive Orders, directives, policies, regulations, standards,
+        guidelines, and organizational mission/business needs in the creation
+        of the contracts.>'
+    - key: d
+      text: |
+        '<The customer will be responsible for including security-related
+        documentation requirements in acquistion contracts. A successful control
+        response will need to address consideration of applicable laws,
+        Executive Orders, directives, policies, regulations, standards,
+        guidelines, and organizational mission/business needs in the creation
+        of the contracts.>'
+    - key: e
+      text: |
+        '<The customer will be responsible for including requirements for
+        protecting security-related documentation in acqusition contracts. A
+        successful control response will need to address consideration of
+        applicable laws, Executive Orders, directives, policies, regulations,
+        standards, guidelines, and organizational mission/business needs in the
+        creation of the contracts.>'
+    - key: f
+      text: |
+        '<The customer will be responsible for including a description of the
+        information system development environment and in which the system
+        is intended to operate in acquisition contracts. A successful control
+        response will need to address consideration of applicable federal laws,
+        Executive Orders, directives, policies, regulations, standards, 
+        guidelines, and organizational mission/business needs in the creation
+        of the contracts.>'
+    - key: g
+      text: |
+        '<The customer will be responsible for including acceptance criteria
+        in acquisition contracts. A successful control response will need to
+        address consideration of applicable federal laws, Executive Orders,
+        directives, policies, regulations, standards, guidelines, and
+        organizational mission/business needs in the creation of the
+        contracts.>'
 
 - control_key: SA-4 (1)
   standard_key: NIST-800-53
