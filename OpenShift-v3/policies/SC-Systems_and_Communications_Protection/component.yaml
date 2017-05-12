@@ -290,10 +290,17 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SC-19 goes here.
-
-        This answer can be multi-line.
+    - key: a
+      text: |
+        '<The customer will be responsible for establishing usage restrictions
+        and implementation guidance for the use of VoIP technologies within
+        the customer application. A successful control response will need
+        to address whether and how VoIP technologies are used and outline
+        the conditions under which that usage is appropriate.>'
+    - key: b
+      text: |
+        '<The customer will be responsible for authorizing, monitoring, and
+        controlling the use of VoIP within the system.>'
 
 - control_key: SC-20
   standard_key: NIST-800-53
