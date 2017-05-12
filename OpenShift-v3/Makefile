@@ -30,9 +30,8 @@ serve: exports
 exports: opencontrols
 	${CM} docs gitbook FedRAMP-low
 
-#opencontrols: opencontrol.yaml policies/*/.yaml
 opencontrols: opencontrol.yaml 
-	${CM} get
+	-${CM} get
 
 coverage:
 	${CM} diff FedRAMP-low
@@ -42,3 +41,6 @@ fedramp: default
 
 fedramp-diff:
 	${GOPATH}/bin/fedramp-templater diff opencontrols/ FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
+
+checks:
+	yamllint policies/

@@ -41,3 +41,6 @@ fedramp: default
 
 fedramp-diff:
 	${GOPATH}/bin/fedramp-templater diff opencontrols/ FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
+
+checks:
+	yamllint policies/
