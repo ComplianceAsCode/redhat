@@ -455,10 +455,15 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-   - text: |
-        Narrative text on how product can be configured against SA-11 (2) goes here.
+    - text: |
+        '<The customer will be responsible for ensuring that the developer of
+        customer-controlled operating systems and software performs threat and
+        vulnerability analysis of testing of the as-built system or software. A
+        successful control response will need to address the analysis of how
+        the as-built system differs from the initial design, as well as how
+        any new vulnerabilities created as a result of these differences
+        are reviewed and mitigated.>'
 
-        This answer can be multi-line.
 
 - control_key: SA-11 (8)
   standard_key: NIST-800-53
