@@ -64,3 +64,8 @@ source ~/.bash_profile
 `````
 go get github.com/opencontrol/fedramp-templater
 `````
+
+(9) Install ``yamllint``
+`````
+sudo yum -y install yamllint
+`````
