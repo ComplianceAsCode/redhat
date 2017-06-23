@@ -103,7 +103,7 @@ satisfies:
   narrative:
     - text: |
         '//*
-        Customers are responsiblef or generating audit records that contain
+        Customers are responsible for generating audit records that contain
         information that establishes what type of event occured, when the event
         occurred, where the event occured, the source of the event, the
         outcome of the event, and the identity of any individuals or subjects
