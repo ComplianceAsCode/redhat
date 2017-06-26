@@ -11,15 +11,8 @@ satisfies:
   narrative:
     - key: a
       text: |
-        '//*
-        The customer will be responsible for developing, documenting, and
-        disseminating Audit and Accountability policy and procedures. A
-        successful control repsonse will need to address the content of the
-        policy (which must include purpose, scope, roles, responsibilities,
-        management commitment, coordination, and compliance) and procedures
-        (which must facilitate the implementation of the policies and
-        associated controls).
-        */'
+        'This is now my response.
+        '
     - key: b
       text: |
         '//*
