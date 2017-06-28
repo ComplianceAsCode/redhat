@@ -16,8 +16,8 @@ satisfies:
         disseminating Access Control policy and procedures. A successful
         control response will need to address the content of the policy
         (which must include purpose, scope, roles, responsibilities,
-        management committment, coordination, and compliance) and
-        procedures (which must facilitate the implimentation of the policies
+        management commitment, coordination, and compliance) and
+        procedures (which must facilitate the implementation of the policies
         and associated controls).
 
         Adding, or binding, a role to users or groups gives the user or
@@ -52,7 +52,7 @@ satisfies:
         The customer will be responsible for identifying and selecting the
         types of accounts required to support the customer application.
         Examples of account types include individual, shared, group,
-        system, guest/annonymous, emergency, developer/manufacturer/vendor,
+        system, guest/anonymous, emergency, developer/manufacturer/vendor,
         temporary, and service. A successful control response will need to
         address the specific requirements fulfulled by each account type
         in use.

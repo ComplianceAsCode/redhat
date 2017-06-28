@@ -4,33 +4,6 @@ name: System and Information Integrity
 schema_version: 3.0.0
 satisfies:
 
-- control_key: SI-1
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for developing, documenting, and
-        disseminating System and Information Integrity policy and procedures. A
-        successful control response will need to address the content of the
-        policy (which must include purpose, scope, roles, responsibilities,
-        management commitment, coordination, and compliance) and procedures
-        (which must facilitate the implementation of the policies and
-        associated controls).
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
-        System and Information Integrity policy every 3 years, and procedures
-        annually. A successful control response will need to address the
-        review and update process, including the role(s) responsible for
-        initiating the review process, updating the policy and procedures,
-        and providing approval of the updates.
-        */'
-
 - control_key: SI-2
   standard_key: NIST-800-53
   covered_by: []
@@ -73,7 +46,6 @@ satisfies:
         management, as well as the approval process for remediation activities
         (see the CM family of controls).
         */'
-
 
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
@@ -383,25 +355,7 @@ satisfies:
         The customer will be responsible for recieving relevant security
         alerts, advisories and directives. A successful control response will
         need to discuss the external sources of security alerts, advisories, and
-        directives (including US-CERT as required by FedRAMP.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for generatign internal security
-        alerts, advisories and directives. A successful control response will
-        need to address the criteria used to determine what alerts, advisories,
-        and directives are necessary, based on the specifics of the customer
-        mission, software, or service.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for disseminating security alerts,
-        advisories and directives within the customer organization and to
-        external organizations as necessary. A successful control response will
-        need to address the personnel or roles within the organization who
-        require notificiation.
+        directives (including US-CERT as required by FedRAMP).
         */'
     - key: d
       text: |
@@ -496,34 +450,6 @@ satisfies:
         means by which the incident response capability is invoked when
         needed.
         */'
-
-- control_key: SI-8
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        'OpenShift does not provide customer-routable mail servers, thus spam
-        protection is not applicable.'
-
-- control_key: SI-8 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        'OpenShift does not provide customer-routable mail servers, thus spam
-        protection is not applicable.'
-
-- control_key: SI-8 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        'OpenShift does not provide customer-routable mail servers, thus spam
-        protection is not applicable.'
 
 - control_key: SI-10
   standard_key: NIST-800-53
