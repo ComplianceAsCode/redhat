@@ -1,1 +1,24 @@
+---
+documentation_complete: false
+name: Audit and Accountability
+schema_version: 3.0.0
+satisfies:
 
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: d
+      text: |
+        '//*
+        The customer will be responsible for selecting a subsec of the events
+        listed in AU-2(a) to be audited by the system. For FedRAMP compliance,
+        these events must be monitored continuously. A successful control
+        response will include a discussion of the rationale for the events
+        chosen.
+
+        Note this control only identifies which events are relevant for this
+        information sysem. Technical implimentation, at a information system
+        component level, is documented in AU-12(a).
+        */'
