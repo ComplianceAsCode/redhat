@@ -4,19 +4,6 @@ name: Audit and Accountability
 schema_version: 3.0.0
 satisfies:
 
-- control_key: AU-3 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        Customers are responsible ensuring that the information generates
-        audit records containing all of the information required to meet
-        FedRAMP requirements. A successful control response will outline the
-        systems audit generation, and the content that it includes.
-        */'
-
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
