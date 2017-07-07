@@ -4,19 +4,6 @@ name: Audit and Accountability
 schema_version: 3.0.0
 satisfies:
 
-- control_key: AU-2 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        Customers are responsible for reviewing and updating the audited
-        events annually or whenever there is a change in the threat environment.
-        A successful control response will outline how often events are
-        reviewed.
-        */'
-
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []

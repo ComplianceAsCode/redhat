@@ -22,3 +22,16 @@ satisfies:
         information sysem. Technical implimentation, at a information system
         component level, is documented in AU-12(a).
         */'
+
+- control_key: AU-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        Customers are responsible for reviewing and updating the audited
+        events annually or whenever there is a change in the threat environment.
+        A successful control response will outline how often events are
+        reviewed.
+        */'
