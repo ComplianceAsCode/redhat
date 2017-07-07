@@ -4,6 +4,18 @@ name: Audit and Accountability
 schema_version: 3.0.0
 satisfies:
 
+- control_key: AU-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        Customers are responsible for configuring the offloading of audit
+        records to a central facility. A successful control response will
+        outline how audit records are dispatched to aggregation points.
+        */'
+
 - control_key: AU-5
   standard_key: NIST-800-53
   covered_by: []
