@@ -35,3 +35,16 @@ satisfies:
         A successful control response will outline how often events are
         reviewed.
         */'
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        Customers are responsible for allocating audit record storage capacity
+        in accordance with the organizations requirements. A successful control
+        response will explain the procedures in place to ensure that audit
+        storage is allocated according to meet customer requirements.
+        */'
