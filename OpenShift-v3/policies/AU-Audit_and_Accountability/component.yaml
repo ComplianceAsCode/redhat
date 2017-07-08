@@ -56,6 +56,7 @@ satisfies:
         rich visualizations and dashboards with the aggregated data. Triggers
         may be setup to detect atypical use.'
 
+#        ADMINISTRATORS NOTE FOR AU-7(a):
 #        For aggregate log sizing information, refer to the Aggregate Logging
 #        Sizing Guidelines of the Installation and Configuration guide:
 #
@@ -71,14 +72,16 @@ satisfies:
 
     - key: b
       text: |
-        '//*
-        Openshift relies upon the underlying Audit Subsystem of Red Hat
-        Enterprise Linux. This subsystem has underone Common Criteria testing,
-        which verifies log integrity during remote transmittal. Certification
-        documents can be found publicly at:
+        'OpenShift logging subsystems do not alter the original contents
+        or time ordering of audit records.' 
 
-        https://www.redhat.com/en/technologies/industries/government/standards
-        */'
+#       ADMINISTRATORS NOTE FOR AU-7(b):
+#       OpenShift can be configured to rely upon the underlying audit subsystem
+#       of Red Hat Enterprise Linux. This subsystem has undergone Common
+#       Criteria certification testing which verified log integrity during
+#       remote transmittal. Certification documents can be found publicly at:
+#
+#       https://www.redhat.com/en/technologies/industries/government/standards
 
 - control_key: AU-7 (1)
   standard_key: NIST-800-53
@@ -89,7 +92,8 @@ satisfies:
         '//*
         Customers are responsible for ensuring that the information system
         provides the capability to process audit records for events of interest
-        based on defined fields within audit records. A successful control
+        based on defined fields within audit records. Those fields are generally
+        defined at an organizational level through AU-3.  A successful control
         response will discuss how audit records can be queried based on these
         fields.
         */'
@@ -101,31 +105,31 @@ satisfies:
   narrative:
     - key: a
       text: |
-        '//*
-        The Linux audit subsystem, upon which OpenShift logs are generated,
-        uses the system clock by default. This is non-configurable behavior.
-        */'
+        'OpenShift logs are generated using the internal system clock by
+        default. This is non-configurable behavior.'
+
     - key: b
       text: |
-        '//*
-        The system time is always kept in Coordinated Universal Time (UTC) and
+        'OpenShift time keeping relies on the time services provided by the
+        underlying operating system. When running on Red Hat Enterprise Linux,
+        the system time is always kept in Coordinated Universal Time (UTC) and
         converted in applications to local time as needed. Local time is the
         actual time on your current time zone, taking into account daylight
-        savings time. The real-time clock can use either UTC or local time.
-        UTC is recommended.
+        savings time. 
 
-        By default, OpenShift hosts are configured to use UTC. To manually
-        verify this, the dimedatectl command may be used:
+        OpenShift hosts are configured to use UTC by default. To manually
+        verify this, the timedatectl command may be used:
 
-        $ timedatectl set-local-rtc no
+        $ timedatectl set-local-rtc no'
 
-        Refer to the RHEL7 Administrators Guide for additional information on
-        configuring time on OpenShift nodes:
-
-        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
-        7/html/System_Administrators_Guide/chap-Configuring_the_Date_and_Time.
-        html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone
-        */'
+#       ADMINISTRATORS NOTE FOR AU-8(b):
+#
+#       Refer to the RHEL7 Administrators Guide for additional information on
+#       configuring time on OpenShift nodes:
+#
+#       https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
+#       7/html/System_Administrators_Guide/chap-Configuring_the_Date_and_Time.
+#       html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone
 
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
@@ -134,51 +138,54 @@ satisfies:
   narrative:
     - key: a
       text: |
-        '//*
-        Customers are responsible for comparing the internal information
-        system clocks at least hourly with an authoritative time source. A
-        successful control response will discuss the time source that system
-        clocks are synced with.
-        */'
+#        Customers are responsible for comparing the internal information
+#        system clocks at least hourly with an authoritative time source. A
+#        successful control response will discuss the time source that system
+#        clocks are synced with.
+        'OpenShift utilizes the time services of the underlying operating
+        system. This control is not applicable to OpenShift.'
+
     - key: b
       text: |
-        '//*
-        Customers are responsible for synchonizing internal system clocks to
-        the authoritative time source when the time difference is greater than
-        the organization has defined. A successful control response will
-        discuss how system clocks are synced.>
+#        Customers are responsible for synchonizing internal system clocks to
+#        the authoritative time source when the time difference is greater than
+#        the organization has defined. A successful control response will
+#        discuss how system clocks are synced.
+        'OpenShift utilizes the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.'
 
-        <OpenShift utilizes the time services of the underyling operating
-        operating system. To configure network time protocol (NTP) daemon to
-        synchronize against NIST time sources, edit the /etc/ntp.conf file
-        (or create one if it does not existing already). The proper format:
-
-        server <<time source>> iburst
-
-        For detailed NTP configuration, reference the Red Hat Enterprise Linux
-        7 System Administrators guide:
-
-        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
-        7/html/System_Administrators_Guide/s1-Configure_NTP.html
-        */'
+#       ADMINISTATIVE NOTE ON AU-8(1)(b):
+#       To configure network time protocol (NTP) daemon to synchronize 
+#       against NIST time sources, edit the /etc/ntp.conf file (or create one 
+#       if it does not existing already). The proper format:
+#
+#        server <<time source>> iburst
+#
+#        For detailed NTP configuration, reference the Red Hat Enterprise Linux
+#        7 System Administrators guide:
+#
+#        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
+#        7/html/System_Administrators_Guide/s1-Configure_NTP.html
 
     - key: 'Req.1'
       text: |
-        '//*
-        Customers are responsible for selecting primary and secondary time
-        servers used by the NIST internet time services and ensuring that the
-        secondary server is selected from a different region than the primary.
-        A successful control response will discuss which internet time services
-        are used by the system.
-        */'
+#        Customers are responsible for selecting primary and secondary time
+#        servers used by the NIST internet time services and ensuring that the
+#        secondary server is selected from a different region than the primary.
+#        A successful control response will discuss which internet time services
+#        are used by the system.
+        'OpenShift utilizes the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.'
+
     - key: 'Req. 2'
       text: |
-        'Customers are responsible for syncronizing the system clocks of
-        network computers that run operating systems other than Windows to the
-        Windows Domain Controler emulator, or the same time source for that
-        server. A successful conttrol response will discuss which Internet time
-        services are for non-Windows systems.
-        */'
+#        Customers are responsible for syncronizing the system clocks of
+#        network computers that run operating systems other than Windows to the
+#        Windows Domain Controler emulator, or the same time source for that
+#        server. A successful conttrol response will discuss which Internet time
+#        services are for non-Windows systems.
+        'OpenShift utilizes the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.'
 
 - control_key: AU-9
   standard_key: NIST-800-53
@@ -206,20 +213,9 @@ satisfies:
         A successful control response will discuss the way that audit records
         are backed up to a system other than the one being audited. This can
         include a centralized repository for all audit records.
-        */'
-
-- control_key: AU-9 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        Customers are required to authorize access to management of audit
-        functionality to only a subset of privileged users. A successful control
-        response will discuss how access to audit functionality is restricted
-        to only appropriate personnel. This can include a description of who
-        this functionality is restricted to, and how this is controlled.
+        
+        To satisfy this control, many information system components offload
+        audit records to a central service via AU-4(1).
         */'
 
 - control_key: AU-11

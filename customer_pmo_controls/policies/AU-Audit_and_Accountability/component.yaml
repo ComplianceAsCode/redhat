@@ -103,3 +103,17 @@ satisfies:
         This can include a discussion of tools used to provide this capability,
         and how they are used.
         */'
+
+- control_key: AU-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        Customers are required to authorize access to management of audit
+        functionality to only a subset of privileged users. A successful control
+        response will discuss how access to audit functionality is restricted
+        to only appropriate personnel. This can include a description of who
+        this functionality is restricted to, and how this is controlled.
+        */'
