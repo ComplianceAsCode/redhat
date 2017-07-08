@@ -11,9 +11,10 @@ satisfies:
   narrative:
     - text: |
         '//*
-        Customers are responsible for configuring the offloading of audit
-        records to a central facility. A successful control response will
-        outline how audit records are dispatched to aggregation points.
+        OpenShift Administrators are responsible for configuring the 
+        offloading of audit records to a central facility. A successful 
+        control response will outline how audit records are dispatched 
+        to aggregation points.
         */'
 
 - control_key: AU-5
@@ -24,18 +25,19 @@ satisfies:
     - key: a
       text: |
         '//*
-        Customers are responsible for alerting personnel or roles in the
-        event of an audit processing failure. A successful control response
-        will outline the process taken to alert personnel when an auditing
-        failure occures.
+        OpenShift Administrators  are responsible for alerting personnel 
+        or roles in the event of an audit processing failure. A successful 
+        control response will outline the process taken to alert personnel 
+        when an auditing failure occures.
         */'
     - key: b
       text: |
         '//*
-        In the event of an audit processing failure, customers are responsible
-        for: overwriting the oldest audit records for low impact systems and
-        shutting down moderate impact systems. A successful control response
-        will outline the actions taken when an auditing failure occurs.
+        In the event of an audit processing failure, OpenShift Administrators
+        are responsible for: overwriting the oldest audit records for low 
+        impact systems and shutting down moderate impact systems. A successful
+        control response will outline the actions taken when an auditing 
+        failure occurs.
         */'
 
 - control_key: AU-7
@@ -45,49 +47,37 @@ satisfies:
   narrative:
     - key: a
       text: |
-        '//*
-        Customers are responsible for ensuring that the information system
-        provides an audit reduction and report generation capability that
-        supports on demand audit review, analysis, and reporting requirements
-        and after-the-fact investigations of security incidents. A successful
-        control response will discuss how the information system provides
-        audit reduction and report generation that supports these requirements.
-        This can include a discussion of tools used to provide this capability,
-        and how they are used.>
-
-        <OpenShift embeds the Elasticsearch, Fluentd, and Kibana (EFK) stack.
+        'OpenShift embeds the Elasticsearch, Fluentd, and Kibana (EFK) stack.
         This pre-integrated audit reduction capability aggregates logs from
         nodes and applications running inside your OpenShift Container Platform.
         Once deployed it uses Fluentd to aggregate log events from all the
         nodes, projects, and pods into Elasticsearch (ES). It also provides a
         centralized Kibana web UI where users and administrators can create
         rich visualizations and dashboards with the aggregated data. Triggers
-        may be setup to detect atypical use.
+        may be setup to detect atypical use.'
 
-        For aggregate log sizing information, refer to the Aggregate Logging
-        Sizing Guidelines of the Installation and Configuration guide:
-
-        https://docs.openshift.com/container-platform/3.3/install_config/
-        aggregate_logging_sizing.html
-
-        For instructions on how to configure aggregate logging, refer to the
-        Aggregating Container Logs section of the Installation and
-        Configuration guide:
-
-        https://docs.openshift.com/container-platform/3.3/install_config/
-        aggregate_logging.html
-        */'
+#        For aggregate log sizing information, refer to the Aggregate Logging
+#        Sizing Guidelines of the Installation and Configuration guide:
+#
+#        https://docs.openshift.com/container-platform/3.3/install_config/
+#        aggregate_logging_sizing.html
+#
+#        For instructions on how to configure aggregate logging, refer to the
+#        Aggregating Container Logs section of the Installation and
+#        Configuration guide:
+#
+#        https://docs.openshift.com/container-platform/3.3/install_config/
+#        aggregate_logging.html
 
     - key: b
       text: |
         '//*
         Openshift relies upon the underlying Audit Subsystem of Red Hat
         Enterprise Linux. This subsystem has underone Common Criteria testing,
-        which verifie slog integrity during remote transmittal. Certification
+        which verifies log integrity during remote transmittal. Certification
         documents can be found publicly at:
 
         https://www.redhat.com/en/technologies/industries/government/standards
-
         */'
 
 - control_key: AU-7 (1)

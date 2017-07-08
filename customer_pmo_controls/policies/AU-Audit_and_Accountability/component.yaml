@@ -70,3 +70,36 @@ satisfies:
         reported to the appropriate personnel. A successful control response
         will outline how the audit review findings are reported.
         */'
+
+- control_key: AU-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        Customers are responsible for employing automated mechanisms to
+        integrate audit, review, analysis, and reporting process to support
+        organizational processes for investigation and response to suspicious
+        activities. A successful control response will review the automated
+        tools used for integrating review, analysis, and reporting, and how
+        these tools are employed.
+        */'
+
+- control_key: AU-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        Customers are responsible for ensuring that the information system
+        provides an audit reduction and report generation capability that
+        supports on demand audit review, analysis, and reporting requirements
+        and after-the-fact investigations of security incidents. A successful
+        control response will discuss how the information system provides
+        audit reduction and report generation that supports these requirements.
+        This can include a discussion of tools used to provide this capability,
+        and how they are used.
+        */'
