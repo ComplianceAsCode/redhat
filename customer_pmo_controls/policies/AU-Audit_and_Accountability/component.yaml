@@ -117,3 +117,21 @@ satisfies:
         to only appropriate personnel. This can include a description of who
         this functionality is restricted to, and how this is controlled.
         */'
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        Customers are required to retain audit records for at least ninety
+        days to provide support for after the fact investigations of security
+        incidents and to meet regulatory and organizational information
+        retention requirements. A successful control response will discuss how
+        long audit records are retained.>
+
+        <Audit log retention may be configured in the underlying Red Hat
+        Enterprise Linux audit daemon. If using a central or 3rd party
+        logging solution, this may likely need to be configured in that tool.
+        */'
