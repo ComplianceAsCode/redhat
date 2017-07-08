@@ -239,12 +239,13 @@ satisfies:
         which auditable events are to be audited by specific components of the
         information system. A successful control response will discuss how
         audit generation is implemented, and who selects and configures
-        auditable events on the information system>
+        auditable events on the information system. Approved personnel or
+        roles are defined in AU-9(4).
 
-        <Audit rules may be added/removed through modifying the
+        Audit rules may be added/removed through modifying the
         /etc/audit/audit.rules or applicable file under /etc/audit/rules.d/. It
         is recommended that OpenShift specific audit rules be added to
-        /etc/audit/rules.d/openshift.rules
+        /etc/audit/rules.d/openshift.rules.
         */'
     - key: c
       text: |
