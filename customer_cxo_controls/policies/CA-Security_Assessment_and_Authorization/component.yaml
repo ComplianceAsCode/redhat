@@ -31,3 +31,17 @@ satisfies:
         providing approval of the updates.
         */'
 
+- control_key: CA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for developing a Security Assessment
+        Plan. A successful control response will need to address the involement
+        of a FedRAMP-accredited 3PAO (see CA-2(1)), the scope of the
+        assessment, and any specific requirements the customer has for the
+        3PAO.
+        */'
