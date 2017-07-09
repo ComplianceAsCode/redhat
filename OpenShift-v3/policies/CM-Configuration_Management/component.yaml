@@ -297,6 +297,45 @@ satisfies:
         least annually and when changes are made.
         */'
 
+#       ADMINISTRATORS NOTE ON CM-8:
+#       Implimentation of this control varies between customers. Some agencies
+#       maintain an inventory that state "OpenShift 3.x," whereas others want
+#       named RPMs installed on the OpenShift components. The vast majority
+#       follow the "OpenShift 3.x" listings. For those that do not, and want
+#       complete listings of underlying RPMs, the following section should be
+#       uncommented and updated.
+#
+#       If Satellite is managing the OpenShift nodes, documenting how OpenShift
+#       components integrate into Satellite for centralized inventory management
+#       is perfectly acceptable.
+#
+#- control_key: CM-8
+#  standard_key: NIST-800-53
+#  covered_by: []
+#  implimentation_status: none
+#  narrative:
+#    - key: a
+#      text: |
+#        '//*
+#        The customer will be responsible for developing and documenting an
+#        inventory that meets FedRAMP requirements. A successful control response
+#        will include a description of how the inventory is developed and
+#        documented. This process should ensure that the inventory accurately
+#        reflects the current system, includes and components, is granular enough
+#        to support tracking and reporting, and includes any information the
+#        customer has deemed necessary to achieve effective accountability.
+#        */'
+#    - key: b
+#      text: |
+#        '//*
+#        The customer will responsible for reviewing and updating the system
+#        inventory at least monthly. This may be performed in conjunction with
+#        continuous monitoring and POA&M tracking activities. A sucessful control
+#        response will need to address the personnel or roles responsible for
+#        updating the system inventory and the process for correcting gaps or
+#        discrepancies found.
+#        */'
+
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
   covered_by: []
