@@ -1,1 +1,29 @@
+---
+documentation_complete: false
+name: Maintenance
+schema_version: 3.0.0
+satisfies:
 
+- control_key: MA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for requiring that datacenter
+        management and property asset owners explicity approve the removal
+        of the information system or system components from organizational
+        facilities for off-site maintenance repairs. This is frequently an
+        inherited control from IaaS providers and not applicable to OpenShift
+        deployments.
+        */'
+    - key: d
+      text: |
+        '//*
+        The customer will be responsible for santizing equipment to remove
+        all information from the associated media prior to removal from
+        organizational facilities. This is frequently an inherited control
+        from IaaS providers and not applicable to OpenShift deployments.
+        */'
