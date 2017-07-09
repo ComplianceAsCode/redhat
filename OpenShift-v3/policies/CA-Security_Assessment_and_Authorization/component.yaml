@@ -38,42 +38,6 @@ satisfies:
         managing the package for submission and engaging with the PMO.
         */'
 
-- control_key: CA-3
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for authorizing connections to
-        external information systems. A successful control response will
-        need to address the individuals or roles responsible for engaging with
-        authorized points of contact for such external systems and the process
-        for documenting and signing the conditions of the connections in
-        Interconnection System Agreements.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for documenting the details of each
-        interconnection. A successful control response will need to address
-        the process for verifying the interface characteristics, security
-        requirements, and the nature of the information communicated; a summary
-        of this information will need to be included as part of the table
-        above.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
-        Interconnection Security Agreements at the required frequency. A
-        successful control response will need to discuss the initiation of the
-        review process, as well as the roles or individuals responsible for
-        reviewing, verifying, updating, and approving any changes to the
-        documentation.
-        */'
-
 - control_key: CA-3 (3)
   standard_key: NIST-800-53
   covered_by: []
