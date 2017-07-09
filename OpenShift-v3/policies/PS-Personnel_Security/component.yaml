@@ -4,104 +4,6 @@ name: Personnel Security
 schema_version: 3.0.0
 satisfies:
 
-- control_key: PS-1
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for developing, documenting, and
-        disseminating Personnel Security policy and procedures. A successful
-        control response will need to address the content of the policy
-        (which must include purpose, scope, roles, responsibilities, management
-        commitment, coordination, and compliance) and procedures (which must
-        facilitate the implementation of the policies and associated
-        controls).
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
-        Personnel Security policy every 3 years, and procedures annually. A
-        successful control response will need to address the review and update
-        process, including the role(s) responsible for initiating the review
-        process, updating the policy and procedures, and providing approval
-        of the updates.
-        */'
-
-- control_key: PS-2
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for assigning risk designations to
-        all positions of cusomer personnel using IaaS that are consistent
-        with the customers internal policies and procedures. A successful
-        control response will need to address the criteria used in risk
-        designation assignments (for example, specific responsibilities, access
-        to certain types of data, etc.).
-        */'
-    - key: b
-      text: |
-        '//*
-        The customerw ill be responsible for establishing screening criteria
-        for individuals filling positions with access to the information
-        system. A successful control response will need to address the rationale
-        for each level of screening based on the responsibilities or access
-        associated with each risk designation.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for reviewing and revising risk
-        designations at the required frequency. A successful control response
-        will need to address the review process, including the role(s)
-        responsible for initiating the review process, revising risk
-        designations, and providing approval of any changes.
-        */'
-
-- control_key: PS-3
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for screening individuals prior to
-        authorizing access. A successful control response will need to
-        demonstrate alignment of the screening as performed to the screening
-        requirements established in PS-2.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for rescreening individuals at the
-        required frequency. A successful control response will need to discuss
-        the process for iniating rescreening, as well as for disabling or
-        removing access if rescreening is not completed in a timely manner.
-        */'
-
-- control_key: PS-3 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        The customer will be responsible for ensuring that access to
-        information requiring special protection is contingent on additional
-        screening as required by the specific nature of that information. A
-        successful control response will need to address identifying such
-        information and enforcing the additional screening prior to
-        authorization of access
-        */'
-
 - control_key: PS-4
   standard_key: NIST-800-53
   covered_by: []
@@ -111,7 +13,7 @@ satisfies:
       text: |
         '//*
         The customer will be responsible for disabling system access for
-        terminated employees on teh day of termination. A successful control
+        terminated employees on the day of termination. A successful control
         response will need to address the process by which access disablement
         is requested, as well as the personnel responsible for initiating and
         completing the request.
@@ -124,41 +26,6 @@ satisfies:
         successful control response will need to discuss the authenticators/
         credentials to be terminated/revoked, as well as the process for
         terminating or revoking each.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customerw ill be responsible for conducting exit interviews. A
-        successful control response will need to address the topics discussed
-        during the interviews and the personnel responsible for conducting
-        the interviews.
-        */'
-    - key: d
-      text: |
-        '//*
-        The customer will be responsible for retrieving all security related,
-        information system related, organizational property from terminated
-        indviduals. A successful control response will need to address the
-        prcess and personnel responsible for ensuring that all such property
-        is retrieved.
-        */'
-    - key: e
-      text: |
-        '//*
-        The customer will be responsible for retaining access to information
-        and information systems formerly controlled by terminated individuals. A
-        successful control response will need to address how this retention
-        occures, personnel responsible for retention, and any minimum or
-        maximum retention periods.
-        */'
-    - key: f
-      text: |
-        '//*
-        The customer will be responsible for notifying relevant personnel
-        within a defined time period after an individual is terminated. A
-        successful control response will need to define the time period and
-        personnel who should be notified, as well as discussing the process
-        by which notification happens.
         */'
 
 - control_key: PS-5
