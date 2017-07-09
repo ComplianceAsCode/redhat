@@ -1,5 +1,5 @@
 schema_version: "1.0.0"
-name: freedonia.fd
+name: OpenShift-v3.fd
 metadata:
   description: Red Hat OpenShift v3
   maintainers:
@@ -26,13 +26,9 @@ components:
 
 dependencies:
   standards:
-#    - url: https://github.com/opencontrol/freedonia-frist/
-#      revision: master
     - url: https://github.com/opencontrol/NIST-800-53-Standards
       revision: master
   certifications:
-#    - url: https://github.com/opencontrol/freedonia-frist/
-#      revision: master
     - url: https://github.com/opencontrol/FedRAMP-Certifications
       revision: master
 #  systems:
