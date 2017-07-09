@@ -4,4 +4,16 @@ name: Configuration Management
 schema_version: 3.0.0
 satisfies:
 
-
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for developing, documenting, and
+        maintaining configuration control, a current baseline configuration
+        of the information system. A successful control response will need to
+        address the way the baseline configurations are managed and
+        maintained.
+        */'
