@@ -106,32 +106,6 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for determining the types of changes
-        to the information system that are configuration controlled. A
-        successful control response will need to address how decisions are made
-        to determine configuration controlled changes.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for reviewing proposed configuration
-        controlled changes to the information system and approving or
-        disapproving changes with explicit consideration for security impact
-        analysis. A successful contorl response will need to address how
-        decisions are made to approve configuration control changes, including
-        how the security impact of these changes is considered.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for documenting configuration change
-        decisions. A successful control response will need to address how
-        configuration change decisions are documented. This can include, for
-        example, what tools are used and what information is documented.
-        */'
     - key: d
       text: |
         '//*
@@ -140,36 +114,6 @@ satisfies:
         response will need to address how changes are implemented after being
         approved. This can include tools used to ensure that changes are
         implemented after approval.
-        */'
-    - key: e
-      text: |
-        '//*
-        The customer will be responsible for retaining records of
-        configuration-controlled changes to the information system for a
-        defined period. A successful control response will need to address long
-        records of configuration-controlled changes are kept, and where these
-        records are maintained.
-        */'
-    - key: f
-      text: |
-        '//*
-        The customer will be responsible for auditing and reviewing activities
-        associated with configuration-controlled changes to the information
-        system for a defined period. A successful control response will need
-        to ensure configuration control change activities are audited and
-        reviewed. This can include tools used to track these changes and when
-        these changes are reviewed.
-        */'
-    - key: g
-      text: |
-        '//*
-        The customer will be responsible for coordinating and providing
-        oversight for the configuration control activities through a central
-        means of communicating major changes or developments that may affect
-        services to the federal government. The means of communication must
-        be approved and accepted by the JAB. A successful control response
-        will outline how major changes or developments that affect government
-        services will be coordinated and overseen.
         */'
 
 - control_key: CM-4
