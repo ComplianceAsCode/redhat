@@ -59,3 +59,61 @@ satisfies:
         whether this requirement is enforced using technical means or via
         policy considerations.
         */'
+
+- control_key: CA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for working with FedRAMP to designate
+        an authorizing official. A successful control response will need to
+        address how an appropriate authorizing official is selected.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for recieving official authorizaiton
+        from the authorizing official prior to commencing operations for
+        federal customers. A successful control response will need to address
+        the inputs provided to the authorizing official so that an accreditation
+        decision can be made.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for updating the accreditation
+        package at the required frequency. A successful control response will
+        need to address the components of the package that will be updated, the
+        process for re-assessing the system in alignment with the updated
+        package, and the personnel or roles responsible for managing the update
+        process and engaging with FedRAMP for renewal of authorization.
+        */'
+
+- control_key: CA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for developing a continuous
+        monitoring strategy that meets the requirements. For metrics to be
+        monitored, a successful control response will need to include a
+        discussion of what information the customer considers important to
+        monitor, as well as a rationale for that information being sufficient
+        to demonstrate the ongoing security of the system.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for developing a continuous
+        monitoring strategy that meets the requirements. For frequency of
+        monitoring, a successful control response will need to address the
+        rationale for the selected frequency. This frequency should be
+        compatible with the frequency of POA&M reporting specified in CA-5.
+        */'
+
