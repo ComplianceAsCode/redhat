@@ -374,19 +374,16 @@ satisfies:
         to that system.
         */'
 
+
+# ADMINISTRATORS NOTE ON CM-11:
+#       This would be a good place to demarcate installation of software
+#       on the OSE nodes vs installation of software in trusted registries.
+#
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
   narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for establishing polocies governing
-        the installation of software by users. A successful control response
-        will describe policies in place that define the restrictions in place
-        for installation of software by users.
-        */'
     - key: b
       text: |
         '//*
