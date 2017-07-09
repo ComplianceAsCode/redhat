@@ -45,3 +45,17 @@ satisfies:
         assessment, and any specific requirements the customer has for the
         3PAO.
         */'
+
+- control_key: CA-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for requiring unclassified,
+        non-national security systems to connect to customer applications
+        through a TIC. A successful control response will need to address
+        whether this requirement is enforced using technical means or via
+        policy considerations.
+        */'
