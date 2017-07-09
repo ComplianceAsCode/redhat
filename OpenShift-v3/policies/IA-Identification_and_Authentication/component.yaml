@@ -87,8 +87,8 @@ satisfies:
   implimentation_status: none
   narrative:
     - text: |
-        'This control is not applicable to tenants of computing platforms, such
-        as OpenShift administrators.'
+        'This control is not applicable to tenants of cloud computing 
+        platforms, such as OpenShift administrators.'
 
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
@@ -96,8 +96,10 @@ satisfies:
   implimentation_status: none
   narrative:
     - text: |
-        'This is default, non-configurable behavior of the OpenShift container
-        platform. All users, remote or local, administrative of non-privileged,
+        'OpenShift requires individuals to be authenticated with an individual
+        authenticator prior to any group authenticators being employed. This is
+        default, non-configurable behavior of the OpenShift container
+        platform. All users, remote or local, administrative or non-privileged,
         first authenticate via an individual authenticator. Once individually
         authenticated, group access/privileges will be granted as applicable.'
 
@@ -113,9 +115,6 @@ satisfies:
         solutions may be used for this purpose. A successful control response
         will need to address all user types and the means by which
         replay-resistant authentication is required for each.
-
-        OpenShift can authenticate users against Microsoft Active Directory.
-        It is recommended to use Active Directory if possible.
         */'
 
 - control_key: IA-2 (11)
@@ -126,8 +125,11 @@ satisfies:
     - text: |
         '//*
         The customer will be responsible for implementing multifactor
-        authentication. Microsoft AAD and MFA solutions may be used for this
-        purpose. A successful control response will need to address all user
+        authentication such that one of the factors is provided by a device
+        separate from the system gaining access. Examples are CAC and PIV
+        cards.
+        
+        A successful control response will need to address all user
         types and the means by which multifactor authentication is enforced
         for each, as well as the strength of mechanism required by the MFA
         solution.
@@ -157,10 +159,11 @@ satisfies:
     - text: |
         '//*
         The customer will be responsible for ensuring that customer-owned
-        virtual machines are properly authenticated prior to establishing a
-        connetion to the rest of the customer system. A successful control
-        response will need to address the virtual machines or types of virtual
-        machines in use and the mechanism by which each is authenticated.
+        infrastructure is  properly authenticated prior to establishing a
+        connection to the rest of the customer system. A successful control
+        response will need to address the type of infrastructure in use 
+        (e.g. bare metal, virtual machines, etc) and the mechanism by which
+        each is authenticated.  
 
         OpenShift nodes can be configured with x509/PKI certificates, which
         will provide identity of the machines.
@@ -438,9 +441,9 @@ satisfies:
   narrative:
     - text: |
         '//*
-        The customer will be responsible for distributing mulifactor
+        The customer will be responsible for distributing 
         authenticators in person with proper authorizations in place. A
-        successful control response will need to discuss the mulifactor
+        successful control response will need to discuss the 
         authenticators in use, the personnel or roles serving as the
         registration authority, and the personnel or roles providing
         authorization for distribution of the authenticators.
