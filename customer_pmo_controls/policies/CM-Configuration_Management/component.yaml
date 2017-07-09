@@ -306,15 +306,3 @@ satisfies:
         technology allowed within the system. An example of this could include
         acceptable use policies in place.
         */'
-
-- control_key: CM-10 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        The customer will be responsible for establishing any restrictions on
-        the use of open source software. A successful control response will
-        describe any restrictions that the organization has in place.
-        */'
