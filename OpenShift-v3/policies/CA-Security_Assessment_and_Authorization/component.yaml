@@ -38,20 +38,6 @@ satisfies:
         managing the package for submission and engaging with the PMO.
         */'
 
-- control_key: CA-2 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        The customer will be responsible for working with a 3PAO to assess
-        the system using the methodology prescribed by FedRAMP. A successful
-        control response will need to address how the assessment will be carried
-        out and how the results will be documented and submitted to FedRAMP
-        for approval.
-        */'
-
 - control_key: CA-3
   standard_key: NIST-800-53
   covered_by: []
