@@ -374,51 +374,6 @@ satisfies:
         to that system.
         */'
 
-- control_key: CM-10
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for using software and associated
-        documentation in accordance with contract agreements and copyright laws.
-        A successful control response will include a description or reference
-        to the customers acceptable use policy.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for tracking the use of software and
-        associated documentation protected by quantity licenses to control
-        copying and distribution. A successful control response will include
-        a description of how these licenses are tracked and protected.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for control and documentation of the
-        use of peer-to-peer file sharing technology to ensure that this
-        capability is not used for the unauthorized distribution, display,
-        performance, or reproduction of copyrighted work. A successful control
-        response will include any controls and documentation for peer-to-peer
-        technology allowed within the system. An example of this could include
-        acceptable use policies in place.
-        */'
-
-- control_key: CM-10 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        The customer will be responsible for establishing any restrictions on
-        the use of open source software. A successful control response will
-        describe any restrictions that the organization has in place.
-        */'
-
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
