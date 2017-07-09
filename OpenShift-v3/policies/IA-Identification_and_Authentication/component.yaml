@@ -4,33 +4,6 @@ name: Identification and Authentication
 schema_version: 3.0.0
 satisfies:
 
-- control_key: IA-1
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for developing, documenting, and
-        disseminating Identification and Authentication policy and procedures.
-        A successful control response will need to address the content of the
-        policy (which must include purpose, scope, roles, responsibilities,
-        management commitment, coordination, and compliance) and procedures
-        (which must facilitate the implementation of the policies and associated
-        controls).
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
-        Identification and Authentication policy every 3 years, and procedures
-        annually. A successful control response will need to address the review
-        and update process, including the role(s) responsible for initiating
-        the review process, updating the policy and procedures, and
-        providing approval of the updates.
-        */'
-
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
@@ -43,20 +16,6 @@ satisfies:
         is commonly used for this purpose. A successful control response will
         need to address the credentials used to identify and authenticate
         users, both internal and external if possible.
-
-        Microsoft Trust Center has resources related to identity and access
-        management. For example:
-
-        - https://www.microsoft.com/en-us/TrustCenter/Security/Identity
-        discusses the use of Azure Active Directory (AAD) and Azure Multi-Factor
-        Authentication to manage customer access:
-
-        - https://azure.microsoft.com/en-us/documentation/articles/multi-factor-authentication-security-best-practices/
-        addresses the use of Multi-Factor Authentication in more detail
-
-        - https://azure.microsoft.com/en-us/documentation/articles/active-directory-hybrid-identity-design-considerations-overview/
-        addresses the integration of cloud-based identity management with
-        existing on-premises identity management solutions
 
         As an OpenShift Container Platform administrator, you can use groups to
         manage users, change their permissions, and enhance collaboration. Your
@@ -74,6 +33,13 @@ satisfies:
         syncing_groups_with_ldap.html
         */'
 
+# ADMINISTRATORS NOTE ON IA-2(1):
+#       Many customers are accepting password-enabled SSH keys as multi-
+#       factor authentication. The SSH key (something they have) and the
+#       decryption password (something they know). Before enabling CAC and
+#       PIV cards, it is recommended to seek guidance from your Program/Project
+#       Management Office.
+#
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -82,10 +48,11 @@ satisfies:
     - text: |
         '//*
         The customer will be responsible for implementing multifactor
-        authentication. Microsoft AAD and MFA solutions may be used for this
-        purpose. A successful control response will need to address all user
-        types and the means by which multifactor authentication is enforced
-        for each.
+        authentication for network access to privileged accounts.
+
+        A successful control response will need to address all network-
+        accessible privileged account types and the means by which 
+        multifactor authentication is enforced for each.
 
         OpenShift provides a plugable authentication architecture that can
         utilize 3rd party authentication schemes that include multi-factor
@@ -108,11 +75,10 @@ satisfies:
     - text: |
         '//*
         The customer will be responsible for implementing multifactor
-        authentication. Microsoft AAD and MFA solutions may be used for this
-        purpose. A successful control response will need to address all user
-        types and the means by which multifactor authentication is enforced
-        for each. This control differs from IA-2(1) in the focus for network
-        access to non-privileged accounts.
+        authentication for network access to non-privileged accounts.
+        A successful control response will need to address all network-
+        accessible non-privileged account types and the means by which 
+        multifactor authentication is enforced for each. 
         */'
 
 - control_key: IA-2 (3)
