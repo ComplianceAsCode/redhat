@@ -4,33 +4,6 @@ name: Security Assessment and Authorization
 schema_version: 3.0.0
 satisfies:
 
-- control_key: CA-1
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for developing, documenting, and
-        disseminating Security Assessment and Authorization policy and
-        procedures. A successful control response will need to address the
-        content of the policy (which must include purpose, scope, roles,
-        responsibilities, management commitment, coordination, and compliance)
-        and procedures (which must facilitate the implementation of the policies
-        and associated controls).
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
-        Security Assessment and Authorization policy every 3 years, and
-        procedures annually. A successful control response will need to address
-        the review and update process, including the role(s) responsible for
-        initiating the review process, updating the policy and procedures, and
-        providing approval of the updates.
-        */'
-
 - control_key: CA-2
   standard_key: NIST-800-53
   covered_by: []
