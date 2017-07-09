@@ -115,3 +115,45 @@ satisfies:
         personnel who should be notified, as well as discussing the process
         by which notification happens.
         */'
+
+- control_key: PS-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for reviewing access authorizations
+        for individuals when those individuals are reassigned or transferred. A
+        successful control response will need to address the intiation of this
+        review and individuals or roles responsible for perfoming and validating
+        the results of reviews.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for initiating reassignments or
+        transfers within a customer-defined time period after the formal
+        reaassignment or transfer. A successful control response will need to
+        address the specific ations taken, personnel responsible for those
+        actions, and timeframes for initiation of those actions.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for modifying access authorizations
+        based on the results of the review carried out in Part A. A successful
+        control response will need to address the process by which
+        authorizations are modified, personnel responsible for intiating the
+        change, and any technical means of enforcement of the change.
+        */'
+    - key: d
+      text: |
+        '//*
+        The customer will be responsible for notifying relevant personnel
+        within the required timeframe after a formal reassignment or transfer. A
+        successful control response will need to address the identification of
+        interested personnel or roles as well as the means by which notification
+        occurs.
+        */'
