@@ -28,40 +28,6 @@ satisfies:
         terminating or revoking each.
         */'
 
-- control_key: PS-6
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for developing agreements for access
-        to the system. A successful control response will need to outline the
-        contents of access agreements and the conditions under which they
-        are used.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating access
-        agreements at the required frequency. A successful control response will
-        need to address the initiation of the review process, the personnel or
-        roles responsible for reviewing and updating the agreement, and the
-        process for approval of any changes.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for ensuring that individuals
-        review and sign access agreements prior to initial access and to
-        maintain access after updates. A successful control response will need
-        to address the process for withholding access until after the initial
-        signature is recieved, as well as for disabling or removing access if
-        the access agreement changes and an individual does not re-sign it in
-        a timely manner.
-        */'
-
 - control_key: PS-7
   standard_key: NIST-800-53
   covered_by: []
