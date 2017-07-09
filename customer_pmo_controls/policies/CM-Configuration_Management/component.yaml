@@ -17,3 +17,25 @@ satisfies:
         address the way the baseline configurations are managed and
         maintained.
         */'
+
+- control_key: CM-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for reviewing and updating the
+        baseline configuration of the information system at least annually.
+        A successful control response will need to address how often the
+        baseline configuration is reviewed and updated.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for reviewing and updating the
+        baseline configuration of the information system when required by the
+        JAB. A successful control response will need to address updates to the
+        baseline configuration when required by the JAB.
+        */'

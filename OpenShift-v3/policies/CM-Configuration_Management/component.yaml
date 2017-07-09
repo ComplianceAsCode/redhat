@@ -35,22 +35,6 @@ satisfies:
   covered_by: []
   implimentation_status: none
   narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
-        baseline configuration of the information system at least annually.
-        A successful control response will need to address how often the
-        baseline configuration is reviewed and updated.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
-        baseline configuration of the information system when required by the
-        JAB. A successful control response will need to address updates to the
-        baseline configuration when required by the JAB.
-        */'
     - key: c
       text: |
         '//*
@@ -61,6 +45,17 @@ satisfies:
         configuration as a part of installations and upgrades.
         */'
 
+# ADMINISTRATORS NOTE ON CM-2(2):
+#       Implimentation of this control varies between customers. Some create
+#       a central configuration management system, e.g. Ansible Tower, and
+#       information system components (e.g. OpenShift Adminstrators) are
+#       expected to create their own playbooks and store them in the
+#       centralized service. Other customers delegate this control
+#       entirely to system component administrators.
+#
+#       For base content, CM-2(2) is expected to be handled at the component
+#       level. It's best to check this assumption with your customer
+#       Program/Project Management Office.
 - control_key: CM-2(2)
   standard_key: NIST-800-53
   covered_by: []
@@ -82,13 +77,18 @@ satisfies:
   narrative:
     - text: |
         '//*
-        The cusotmer will be responsible for retaining previous versions of
+        The customer will be responsible for retaining previous versions of
         baseline configurations to support rollback. A successful control
         response will need to address how previous versions of baseline
         configurations will be retained in order to roll back to a previous
         version.
         */'
 
+# ADMINISTRATORS NOTE ON CM-2(7):
+#       This control relates to organizations issuing equipment, e.g. laptops,
+#       to employees. Unless OpenShift is being deployed on mobile equipment
+#       this control is not applicable.
+#
 - control_key: CM-2 (7)
   standard_key: NIST-800-53
   covered_by: []
@@ -96,10 +96,10 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This control is not applicable to OpenShift operations.'
+        'This control is not applicable to OpenShift.'
     - key: b
       text: |
-        'This control is not applicable to OpenShift operations.'
+        'This control is not applicable to OpenShift.'
 
 - control_key: CM-3
   standard_key: NIST-800-53
