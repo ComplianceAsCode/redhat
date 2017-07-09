@@ -212,3 +212,17 @@ satisfies:
         updating the system inventory and the process for correcting gaps or
         discrepancies found.
         */'
+
+- control_key: CM-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for verifying all components within
+        the authorization boundary of the information system are not duplicated
+        in other information system inventories. A successful control response
+        will describe the process used to ensure that assets are not included
+        in multiple system inventories.
+        */'
