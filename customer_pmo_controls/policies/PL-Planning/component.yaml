@@ -61,3 +61,107 @@ satisfies:
         are in place to protect the system security plan.
         */'
 
+- control_key: PL-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for planning and coordinating
+        security-related activities so as to reduce the impact on other
+        organizational entities. These activities may include security
+        assessments, audits, maintenance, patch management, and contingency
+        plan testing. A successful control response will need to address the
+        process by which other organizational entities are notified of and
+        consulted regarding such activities.
+        */'
+
+- control_key: PL-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for defining, documenting, and
+        distributing rules of behavior. A successful control response will need
+        to outline the rules of behavior and discuss the process for making them
+        available to users requiring access to the system.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be repsonsible for obtaining signed acknowledgement
+        of the rules of behavior from its users. A successful control response
+        will need to address the process for withholding authorization until
+        signatures are obtained.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for reviewing and updating the rules
+        of behavior at the required frequency. A successful control response
+        will need to address the process for initiating review, as well as the
+        individuals or roles for carrying out the review, managing updates, and
+        approving the final version.
+        */'
+    - key: d
+      text: |
+        '//*
+        The customer will be responsible for obtaining signed acknowledgement
+        of the updated rules of behavior. A successful control response will
+        need to address the process for removing authorization if signatures
+        are not obtained in a timely manner.
+        */'
+
+- control_key: PL-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for incorporating explicit
+        restrictions on the use of social media/networking sites and posting
+        organizational information on public websites into the rules of
+        behavior. A successful control response will need to outline the
+        relevant portions of the rules of behavior.
+        */'
+
+- control_key: PL-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for developing their information
+        security architecture. A successful contrl response will need to
+        discuss the guiding principles used to protect confidentiality,
+        integrity, and availability of system information and the dependencies
+        on external services (such as Microsoft Azure). Additionally, a
+        description of the information security architecture should be included
+        in the introductory sections of this system security plan.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for reviewing and updating the
+        security architecture at a required frequency. A succesful control
+        response will need to address the process for initiating review, as well
+        as the individuals or roles responsible for carrying out the review,
+        managing updates, and approving the final version.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for incorporating changes to the
+        security architecture into this system security plan as well as
+        related materials. A successful control response will need to address
+        the process for aligning the contents of the system security plan
+        with the information security architecture, including the
+        individuals or roles responsible for that alignment.
+        */'
