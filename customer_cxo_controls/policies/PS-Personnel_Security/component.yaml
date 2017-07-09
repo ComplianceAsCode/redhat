@@ -30,3 +30,28 @@ satisfies:
         process, updating the policy and procedures, and providing approval
         of the updates.
         */'
+
+- control_key: PS-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for establishing sanctions process
+        for non-compliance with policies and procedures. A successful control
+        response will need to address different forms of non-compliance and
+        specific measures that may be enforced for each.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will ne responsible for notifying interested personnel
+        when the sanctions process is initiated. A successful control response
+        will need to delineate the relevant personnel to be notified, the
+        roles or individuals responsible for notification, and the information
+        convayed as part of the notification (to include, at a minimum the
+        indivual sanctioned and the reason for the sanction).
+        */'
+
