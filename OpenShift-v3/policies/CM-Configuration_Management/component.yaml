@@ -47,15 +47,21 @@ satisfies:
 
 # ADMINISTRATORS NOTE ON CM-2(2):
 #       Implimentation of this control varies between customers. Some create
-#       a central configuration management system, e.g. Ansible Tower, and
-#       information system components (e.g. OpenShift Adminstrators) are
-#       expected to create their own playbooks and store them in the
-#       centralized service. Other customers delegate this control
-#       entirely to system component administrators.
+#       a central configuration management system, while others expect
+#       information system components (e.g. OpenShift Adminstrators) 
+#       to create their own playbooks and store them in the centralized 
+#       service. Other customers delegate this control entirely to 
+#       system component administrators.
 #
-#       For base content, CM-2(2) is expected to be handled at the component
-#       level. It's best to check this assumption with your customer
-#       Program/Project Management Office.
+#       If CM-6(1) is selected, which is mandatory for FISMA Moderate and
+#       FedRAMP systems, the organization must centrally employ automated
+#       mechanisms for configuration management (e.g. Ansible Tower).
+#
+#       In such cases, a proper response would illistrate how OpenShift
+#       administrators will provide configuration management content
+#       (e.g. Ansible Playbooks) to the central service (e.g. Ansible
+#       Tower).
+#
 - control_key: CM-2(2)
   standard_key: NIST-800-53
   covered_by: []
@@ -185,21 +191,6 @@ satisfies:
         track and approve changes.
         */'
 
-- control_key: CM-6 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - text: |
-        '//*
-        The customer will be responsible for employing automated mechanisms
-        to centrally manage, apply, and verify configuration settings for
-        information system components. A successful control response will
-        describe any automated systems in place used to manage, apply, and
-        verify configuration settings. An example of this is using Active
-        Directory Group Policy Objects to manage security settings.
-        */'
-
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
@@ -304,33 +295,6 @@ satisfies:
         change. A successful control response will outline how often the
         authorized software list is reviewed and updated. This should be done at
         least annually and when changes are made.
-        */'
-
-- control_key: CM-8
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for developing and documenting an
-        inventory that meets FedRAMP requirements. A successful control response
-        will include a description of how the inventory is developed and
-        documented. This process should ensure that the inventory accurately
-        reflects the current system, includes and components, is granular enough
-        to support tracking and reporting, and includes any information the
-        customer has deemed necessary to achieve effective accountability.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will responsible for reviewing and updating the system
-        inventory at least monthly. This may be performed in conjunction with
-        continuous monitoring and POA&M tracking activities. A sucessful control
-        response will need to address the personnel or roles responsible for
-        updating the system inventory and the process for correcting gaps or
-        discrepancies found.
         */'
 
 - control_key: CM-8 (1)
