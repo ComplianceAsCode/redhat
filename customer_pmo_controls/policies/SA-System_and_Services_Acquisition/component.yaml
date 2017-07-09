@@ -1,1 +1,38 @@
+---
+documentation_complete: false
+name: System and Services Acquisition
+schema_version: 3.0.0
+satisfies:
+
+- control_key: SA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for determining information security
+        requirements during mission/business process planning. A successful
+        control response will indicate how information security has been
+        integrated into mission/business planning.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for determining, documenting, and
+        allocating the resources required to protect the information system
+        as part of capital planning and investment control processes. A
+        successful control response will indicate how information security
+        has been incorporated into financial planning processes.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for establishing a discrete line
+        item for information security in organizational programming and
+        budgeting documentation. A successful control response will indicate
+        how information security is a stand-alone practice within the
+        organization.
+        */'
 
