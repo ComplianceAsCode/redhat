@@ -117,3 +117,56 @@ satisfies:
         these restrictions, such as Active Directory, and how these personnel
         are approved for access.
         */'
+
+- control_key: CM-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for limiting privileges to change
+        information system components and system related information within
+        a production or operational environment. A successful control response
+        will include how privileges to change the production/operation
+        environment are limited. This can include defining who has access to
+        these privileges, how they may be separated, and any gates they must
+        go through.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for reviewing and reevaluating
+        privileges at least quarterly. A successful control response will
+        include how often reviews are performed for presonnel with privileges
+        to change the information system within the production environment.
+        */'
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for establishing and documenting
+        configuration settings for information technology products employed
+        within the information system using FedRAMP guidance that reflects
+        the most restrictive mode consistent with operational requirements. A
+        successful control response will include how the customer develops
+        base configurations to ensure that they are as restrictive as possible
+        while still allowing the system to operate.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for identifying, documenting, and
+        approving any deviations from established configuration settings for
+        components based on operational requirements. A successful control
+        response will explain the process for identifying, documenting, and
+        approving and deviations. This can include tools used to track any
+        exceptions, and the process for identifying and approving these
+        deviations.
+        */'
