@@ -63,28 +63,3 @@ satisfies:
         as well as the process by which POA&M items will be updated and
         remediated.
         */'
-
-- control_key: CA-9
-  standard_key: NIST-800-53
-  covered_by: []
-  implimentation_status: none
-  narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for authorizing connections within
-        the system, such as between two types of virtual machines within the
-        customer environment. A successful control response will need to address
-        the individual or roles with the authorizing responsibility, as well
-        as how a determination is made to allow a connection between
-        components or classes of components.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for documenting the required
-        information for each internal connection. This may be documented in
-        e.g. data flow diagrams or architectural diagrams. A successful control
-        response will need to address the process by which this documentation
-        is created.
-        */'
