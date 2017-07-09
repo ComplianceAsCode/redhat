@@ -27,3 +27,15 @@ satisfies:
         organizational facilities. This is frequently an inherited control
         from IaaS providers and not applicable to OpenShift deployments.
         */'
+
+- control_key: MA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implimentation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for approving, controlling, and
+        monitoring information system maintenance records. A successful
+        control response will document this process.
+        */'
