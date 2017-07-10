@@ -1,10 +1,10 @@
 ---
 documentation_complete: false
-name: [ORGANIZATIONAL] Access Control
+name: Access Control
 schema_version: 3.0.0
 satisfies:
 
-control_key: AC-1
+- control_key: AC-1
   standard_key: NIST-800-53
   covered_by: []
   implimentation_status: none
@@ -88,13 +88,13 @@ control_key: AC-1
   covered_by: []
   implimentation_status: none
   narrative:
-    text: |
-      '//*
-      The organization will be responsible for disabling accounts of users
-      posing a significant risk within an organizational-defined time
-      period of discovery of the risk. A successful control response defines
-      the time period and the processes to disable the account(s).
-      */'
+    - text: |
+        '//*
+        The organization will be responsible for disabling accounts of users
+        posing a significant risk within an organizational-defined time
+        period of discovery of the risk. A successful control response defines
+        the time period and the processes to disable the account(s).
+        */'
 
 - control_key: AC-18
   standard_key: NIST-800-53
@@ -126,15 +126,15 @@ control_key: AC-1
     - key: a
       text: |
         '//*
-        A successful control response will document how, if wireless 
-        connectivity is permitted, end-user devices are organizationally 
+        A successful control response will document how, if wireless
+        connectivity is permitted, end-user devices are organizationally
         managed (configurations, connections, and applications).
         */'
     - key: b
       text: |
         '//*
-        A successful control response will document how, if wireless 
-        connectivity is permitted, mobile devices are authorized to 
+        A successful control response will document how, if wireless
+        connectivity is permitted, mobile devices are authorized to
         connect to organizational networks (e.g. MDM).
         */'
 
@@ -158,8 +158,8 @@ control_key: AC-1
     - key: a
       text: |
         '//*
-        The customer will be responsible for establishing terms and conditions
-        allowing authorized individuals to access the customer application
+        The organization will be responsible for establishing terms and conditions
+        allowing authorized individuals to access the organization application
         from external information sysetms. A successful control response will
         need to outline the terms and conditions and the external information
         systems to which those terms and conditions apply.
@@ -167,7 +167,7 @@ control_key: AC-1
     - key: b
       text: |
         '//*
-        The customer will be responsible for establishing terms and conditions
+        The organization will be responsible for establishing terms and conditions
         allowing authorized individuals to process, store, or transmit
         customer-controlled information using external information systems. A
         successful control response will need to outline the terms and
@@ -183,19 +183,19 @@ control_key: AC-1
     - key: 'a'
       text: |
         '//*
-        The customer will be responsible for verifying the implementation of
+        The organization will be responsible for verifying the implementation of
         required security controls on external information systems used to
-        access the customer application. A successful control response will
+        access the organization application. A successful control response will
         need to address how this verification occurs (e.g. through an
         independent assessment).
         */'
     - key: 'b'
       text: |
         '//*
-        If part (a) is not possible, then the customer will be responsible
+        If part (a) is not possible, then the organization will be responsible
         for establishing and retaining approved information system connection
         or processing agreements with the external entity hosting the external
-        information system used to access the customer application.
+        information system used to access the organization application.
         */'
 
 - control_key: AC-20 (2)
@@ -205,7 +205,7 @@ control_key: AC-1
   narrative:
     - text: |
         '//*
-        The customer will be responsible for restricting or prohibiting the
+        The organization will be responsible for restricting or prohibiting the
         use of customer-controlled portable storage devices on external
         information systems. If such use is not prohibited, a successful
         control repsonse will need to address specific restrictions on how
@@ -220,7 +220,7 @@ control_key: AC-1
     - key: 'a'
       text: |
         '//*
-        The customer will be responsible for determining when authorized users
+        The organization will be responsible for determining when authorized users
         are required to use discretion as to whether to share information. A
         successful control response will need to address the circumstances
         where user direction (rather than automatic access enforcement) is
@@ -229,7 +229,7 @@ control_key: AC-1
     - key: 'b'
       text: |
         '//*
-        The customer will be responsible for defining and employing automated
+        The organization will be responsible for defining and employing automated
         mechanisms or manual processes to assist users in making information
         sharing decisions.
         */'
@@ -242,7 +242,7 @@ control_key: AC-1
     - key: 'a'
       text: |
         '//*
-        The customer will be responsible for designating individuals
+        The organization will be responsible for designating individuals
         authorized to post information publicly. A successful control response
         will need to address the specific business requirements or job functions
         that justify such access.
@@ -250,7 +250,7 @@ control_key: AC-1
     - key: 'b'
       text: |
         '//*
-        The customer will be responsible for trianing designated authorized
+        The organization will be responsible for trianing designated authorized
         individuals to prevent disclosure of nonpublic information. A
         successful control response will need to outline the training
         provided.
@@ -258,7 +258,7 @@ control_key: AC-1
     - key: 'c'
       text: |
         '//*
-        The customer will be responsible for reviewing information prior to
+        The organization will be responsible for reviewing information prior to
         public posting to ensure that nonpublic information is not included. A
         successful control response will need to address the roles or personnel
         responsible for this review and the process for signoff.
@@ -266,7 +266,7 @@ control_key: AC-1
     - key: 'd'
       text: |
         '//*
-        The customer will be responsible for reviewing publicly available
+        The organization will be responsible for reviewing publicly available
         information at the reqired frequency and removing nonpublic information
         when discovered. A successful control response will need to address the
         roles or personnel responsible for the review, the process used to

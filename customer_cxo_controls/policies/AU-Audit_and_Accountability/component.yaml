@@ -106,7 +106,7 @@ satisfies:
           '//*
           Customers are responsible for analyzing and correlating audit records
           accross different repositories to gain organiational-wide situational
-          awareness. A successful control response will discuss how the customer
+          awareness. A successful control response will discuss how the organization
           correlates and analyzes audit records from different sources. This can
           include processes and tools used to meet these goals.
           */'

@@ -12,7 +12,7 @@ satisfies:
       - key: a
         text: |
           '//*
-          The customer will be responsible for developing, documenting, and
+          The organization will be responsible for developing, documenting, and
           disseminating Configuration Management policy and procedures. A
           successful control response will need to address the content of the
           policy (which must include purpose, scope, roles, responsibilities,
@@ -23,7 +23,7 @@ satisfies:
       - key: b
         text: |
           '//*
-          The customer will be responsible for reviewing and updating the
+          The organization will be responsible for reviewing and updating the
           Configuration Management policy every 3 years, and procedures
           annually. A successful control response will need to address
           the review and update process, including the role(s) responsible
@@ -38,7 +38,7 @@ satisfies:
     narrative:
       - text: |
           '//*
-          The customer will be responsible for establishing any restrictions on
+          The organization will be responsible for establishing any restrictions on
           the use of open source software. A successful control response will
           describe any restrictions that the organization has in place.
           */'

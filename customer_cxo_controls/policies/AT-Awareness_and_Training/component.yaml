@@ -86,7 +86,7 @@ satisfies:
     - key: 'a'
       text: |
         '//*
-        The customer will be responsible for tracking successful completion
+        The organization will be responsible for tracking successful completion
         of basic security awareness training and role-based training
         security training activities. A successful control response will discuss
         the process or system used to monitor and document completion of
@@ -95,7 +95,7 @@ satisfies:
     - key: 'b'
       text: |
         '//*
-        The customer will be responsible for retaining training records for
+        The organization will be responsible for retaining training records for
         the required timeframe. A successful control response will outline the
         methods by which required retention is achieved.
         */'

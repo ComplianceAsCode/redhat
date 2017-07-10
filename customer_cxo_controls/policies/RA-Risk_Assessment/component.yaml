@@ -12,7 +12,7 @@ satisfies:
       - key: a
         text: |
           '//*
-          The customer will be responsible for developing, documenting, and
+          The organization will be responsible for developing, documenting, and
           disseminating Risk Assessment policy and procedures. A successful
           control response will need to address the content of the policy
           (which must include purpose, scope, roles, responsibilities,
@@ -23,7 +23,7 @@ satisfies:
       - key: b
         text: |
           '//*
-          The customer will be responsible for reviewing and updating the
+          The organization will be responsible for reviewing and updating the
           Risk Assessment policy every 3 years, and procedures annually. A
           successful control repsonse will need to address the reiew and update
           process, including the role(s) repsonsible for initiating the review

@@ -43,13 +43,13 @@ satisfies:
           alerts, advisories and directives. A successful control response will
           need to address the criteria used to determine what alerts,
           advisories, and directives are necessary, based on the specifics of
-          the customer mission, software, or service.
+          the organization mission, software, or service.
           */'
       - key: c
         text: |
           '//*
           The organization will be responsible for disseminating security
-          alerts, advisories and directives within the customer organization
+          alerts, advisories and directives within the organization organization
           and to external organizations as necessary. A successful control
           response will need to address the personnel or roles within the
           organization who require notificiation.
