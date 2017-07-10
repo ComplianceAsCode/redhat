@@ -6,6 +6,7 @@ metadata:
   maintainers:
     - Shawn Wells (shawn@redhat.com)
 components:
+  - ./customer_cxo_controls
+  - ./customer_pmo_controls
   - ./RHEL7
   - ./OpenShift-v3
-  - ./OrgControls

@@ -56,7 +56,7 @@ satisfies:
           '//*
           The customer will be required to employ automated mechanisms on a
           monthly basis to determine the stat of information system components
-          with regard to flaw remediation on their information systems as 
+          with regard to flaw remediation on their information systems as
           required by their organizations policy. A successful control response
           will address the customers use of automated tools such as Nessus to
           perform periodic and on-demand scans through their system to determine
@@ -73,9 +73,10 @@ satisfies:
           '//*
           The customer is responsible for scanning for flaws in their
           information systems and for measuring the time between flaw
-          identification and flaw remediation. A successful control response will
-          need to address the time between flaw identification and remediation
-          using timestamps and calculates the time elapsed difference.
+          identification and flaw remediation. A successful control response
+          will need to address the time between flaw identification and
+          remediation using timestamps and calculates the time elapsed
+          difference.
           */'
       - key: b
         text: |
@@ -395,8 +396,8 @@ satisfies:
           '//*
           The customer will be responsible for notifying appropriate personnel
           of failed security verification tests. A successful control response
-          will need to outline the personnel or roles selected (to include system
-          administrators and security personnel as required by FedRAMP).
+          will need to outline the personnel or roles selected (to include
+          system administrators and security personnel as required by FedRAMP).
           */'
       - key: d
         text: |
@@ -404,8 +405,9 @@ satisfies:
           The customer will be responsible for performing appropriate actions
           in response to anomalies in security unction verifiation. A successful
           control response will need to discuss the actions taken (to include
-          notification of system administrators and security personnel as required
-          by FedRAMP) as well as the rationale for selecting these actions.
+          notification of system administrators and security personnel as
+          required by FedRAMP) as well as the rationale for selecting these
+          actions.
           */'
 
   - control_key: SI-7
@@ -445,10 +447,10 @@ satisfies:
           '//*
           The customer will be responsible for incorporating the detection of
           customer-defined security-relevant changes into the customers incident
-          response capability. A successful control response will need to outline
-          the process for deeming particular changes as security-relevant and the
-          means by which the incident response capability is invoked when
-          needed.
+          response capability. A successful control response will need to
+          outline the process for deeming particular changes as
+          security-relevant and the means by which the incident response
+          capability is invoked when needed.
           */'
 
   - control_key: SI-10
@@ -530,36 +532,36 @@ satisfies:
 
           (2) presence of the ELF program header entry of PT_GNU_RELRO with
           memory range information covering the following ELF sections: .tdata,
-          .preinit_array, .init_array, .fini_array, .ctors, .dtors, .data.rel.ro,
-          .dynamic, .got including .got.plt. The secure state implied with this
-          functionality covers the following aspects where the following list
-          explains the implication of each bullet above:
+          .preinit_array, .init_array, .fini_array, .ctors, .dtors,
+          .data.rel.ro, .dynamic, .got including .got.plt. The secure state
+          implied with this functionality covers the following aspects where
+          the following list explains the implication of each bullet above:
 
-                  a) When exploiting buffer overruns of an application, the
-                     attacker cannot feed code onto the stack and execute it.
+             a) When exploiting buffer overruns of an application, the
+                attacker cannot feed code onto the stack and execute it.
 
-                  b) When exploiting buffer overruns of an application, the
-                     modify of the return addresses stored on a stack jump to a
-                     previously known code segment is much harder to achieve by
-                     an attacker. Due to the address randomization, any memory
-                     address of code already present with the application or
-                     loaded libraries will be different with each startup of the
-                     application.
+             b) When exploiting buffer overruns of an application, the
+                modify of the return addresses stored on a stack jump to a
+                previously known code segment is much harder to achieve by
+                an attacker. Due to the address randomization, any memory
+                address of code already present with the application or
+                loaded libraries will be different with each startup of the
+                application.
 
-                  c) The ELF header sections listed above are set read-only using
-                     the mprotect system call by the loaded before the application
-                     gains control. When exploiting buffer overruns, the attacker
-                     cannot modify information in those memory sections. These
-                     sections store offset tables required for the dynamic linking
-                     mechanism and, if abused, allow attackers to modify the jump
-                     addresses of object accesses. Full protection against this
-                     type of attack can only be achieved if the application and
-                     all depending shared libraries are compiled linked with full
-                     protection enabled. When at least one shared libraroy the
-                     application depends on or the application itself is compiled
-                     and linked with partial protection, only partial protection
-                     against this type of attack is available for the given
-                     application.
+             c) The ELF header sections listed above are set read-only using
+                the mprotect system call by the loaded before the application
+                gains control. When exploiting buffer overruns, the attacker
+                cannot modify information in those memory sections. These
+                sections store offset tables required for the dynamic linking
+                mechanism and, if abused, allow attackers to modify the jump
+                addresses of object accesses. Full protection against this
+                type of attack can only be achieved if the application and
+                all depending shared libraries are compiled linked with full
+                protection enabled. When at least one shared libraroy the
+                application depends on or the application itself is compiled
+                and linked with partial protection, only partial protection
+                against this type of attack is available for the given
+                application.
 
           To enforce functionality in bullet a), /proc/sys/kernel/exec-shield
           must contain either a 1 or 2.
@@ -573,5 +575,4 @@ satisfies:
           online:
 
           https://www.redhat.com/en/technologies/industries/government/standards
-
           */'
