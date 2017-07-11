@@ -26,7 +26,7 @@ The ``policies/`` directory contains YAML that corresponds to various NIST 800-5
 To dive right in, take a look at any of the policy files (e.g. policies/AU-Audit_and_Accountability/component.yaml). Each control has generic language outlining what a successful response would be. Anything you can help address would be great! 
 
 ### How do I get help?
-Please open a ticket: (https://github.com/opencontrol/RedHat/issues)[https://github.com/opencontrol/RedHat/issues]
+Please open a ticket: [https://github.com/opencontrol/RedHat/issues](https://github.com/opencontrol/RedHat/issues)
 
 ### Perform a Build
 First, review the [Prep your Dev Environment](https://github.com/opencontrol/RedHat/#prep-your-development-environment) instructions.
