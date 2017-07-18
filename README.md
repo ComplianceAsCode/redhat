@@ -3,7 +3,7 @@ OpenControl content for Red Hat technologies. Work in progress!
 
 
 ## Prep your Development Environment
-A few packages are needed for successful OpenControl builds on a RHEL7 system. 
+A few packages are needed for successful OpenControl builds on a RHEL7/Fedora 25+ system. 
 
 (1) Install Base Packages
 `````
