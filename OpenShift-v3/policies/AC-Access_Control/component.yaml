@@ -4,35 +4,34 @@ name: Access Control
 schema_version: 3.0.0
 satisfies:
 
+# AC-2(2) NOTES:
+#       The customer will be responsible for automatically removing or
+#       disabling emergency and temporary accounts within the required
+#       timeframe. A successful control response will need to address
+#       all of the procedures and mechanisms involved in disabling these
+#       accounts.
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: Not applicable
+  implementation_status: Not applicable
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for automatically removing or
-        disabling emergency and temporary accounts within the required
-        timeframe. A successful control response will need to address
-        all of the procedures and mechanisms involved in disabling these
-        accounts.
+        'OpenShift relies upon 3rd party authentication providers, such as
+        Microsoft Active Directory, Red Hat IdM, or LDAP. By relying on 3rd
+        party authentication providers, OpenShift is not responsible for
+        automatic disablement of accounts after a configured period of time.
 
-        3rd party software must be used to fully support management of
-        temporary and emergency accounts. OpenShift does not have the capability
-        to automatically disable accounts after a configured period of time. To
-        meet this requirement, an authentication provider (such as Active
-        Directory) must be used. Integration between OpenShift and Active
-        Directory can be accomplished through the use of Kerberos cross-realm
-        trusts. Refer to the LDAP Authentication section of the OpenShift
-        Administrators guide:
+        Refer to the LDAP Authentication section of the OpenShift
+        Administrators Guide for configuration references to 3rd parties, e.g.
+        configuration of Kerberos cross-realm trusts with Active Directory.
+        The guide can be found at:
 
-        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth
-        */'
+        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth'
 
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -56,7 +55,7 @@ satisfies:
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: Implemented
+  implementation_status: Implemented
   narrative:
     - text: |
         '//*
@@ -87,7 +86,7 @@ satisfies:
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: Implemented
+  implementation_status: Implemented
   narrative:
     - text: |
         '//*
@@ -99,7 +98,7 @@ satisfies:
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -114,7 +113,7 @@ satisfies:
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -129,7 +128,7 @@ satisfies:
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -149,7 +148,7 @@ satisfies:
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -163,7 +162,7 @@ satisfies:
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -176,7 +175,7 @@ satisfies:
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -189,7 +188,7 @@ satisfies:
 - control_key: AC-6 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -203,7 +202,7 @@ satisfies:
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -221,7 +220,7 @@ satisfies:
 - control_key: AC-8
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -283,7 +282,7 @@ satisfies:
 - control_key: AC-10
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -296,7 +295,7 @@ satisfies:
 - control_key: AC-11
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -313,7 +312,7 @@ satisfies:
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         'Not applicable. When AC-2(5) is implemented, the non-configurable
@@ -323,7 +322,7 @@ satisfies:
 - control_key: AC-12
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -337,7 +336,7 @@ satisfies:
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         'All system events, regardless of local or remote, are captured through
@@ -347,7 +346,7 @@ satisfies:
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         'OpenShift uses the following cryptographic algorithms and ciphers to
@@ -368,7 +367,7 @@ satisfies:
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -383,7 +382,7 @@ satisfies:
 - control_key: AC-17 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -409,7 +408,7 @@ satisfies:
 - control_key: AC-18 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
