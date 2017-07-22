@@ -7,7 +7,7 @@ satisfies:
   - control_key: CP-1
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |

@@ -6,7 +6,7 @@ satisfies:
 - control_key: SA-1
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-1 goes here.
@@ -16,7 +16,7 @@ satisfies:
 - control_key: SA-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-2 goes here.
@@ -26,7 +26,7 @@ satisfies:
 - control_key: SA-3
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-3 goes here.
@@ -36,7 +36,7 @@ satisfies:
 - control_key: SA-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-4 goes here.
@@ -46,7 +46,7 @@ satisfies:
 - control_key: SA-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-4 (1) goes here.
@@ -56,7 +56,7 @@ satisfies:
 - control_key: SA-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-4 (2) goes here.
@@ -66,7 +66,7 @@ satisfies:
 - control_key: SA-4 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-4 (8) goes here.
@@ -76,7 +76,7 @@ satisfies:
 - control_key: SA-4 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-4 (9) goes here.
@@ -86,7 +86,7 @@ satisfies:
 - control_key: SA-4 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-4 (10) goes here.
@@ -96,7 +96,7 @@ satisfies:
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-5 goes here.
@@ -106,7 +106,7 @@ satisfies:
 - control_key: SA-8
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-8 goes here.
@@ -116,7 +116,7 @@ satisfies:
 - control_key: SA-9
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-9 goes here.
@@ -126,7 +126,7 @@ satisfies:
 - control_key: SA-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-9 (1) goes here.
@@ -136,7 +136,7 @@ satisfies:
 - control_key: SA-9 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-9 (2) goes here.
@@ -146,7 +146,7 @@ satisfies:
 - control_key: SA-9 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-9 (4) goes here.
@@ -156,7 +156,7 @@ satisfies:
 - control_key: SA-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-9 (5) goes here.
@@ -166,7 +166,7 @@ satisfies:
 - control_key: SA-10
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-10 goes here.
@@ -176,7 +176,7 @@ satisfies:
 - control_key: SA-10 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-10 (1) goes here.
@@ -186,7 +186,7 @@ satisfies:
 - control_key: SA-11
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-11 goes here.
@@ -196,7 +196,7 @@ satisfies:
 - control_key: SA-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-11 (1) goes here.
@@ -206,7 +206,7 @@ satisfies:
 - control_key: SA-11 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-11 (2) goes here.
@@ -216,7 +216,7 @@ satisfies:
 - control_key: SA-11 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-11 (8) goes here.
@@ -226,7 +226,7 @@ satisfies:
 - control_key: SA-22
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-22 goes here.
@@ -236,7 +236,7 @@ satisfies:
 - control_key: SA-22 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against SA-22 (1) goes here.

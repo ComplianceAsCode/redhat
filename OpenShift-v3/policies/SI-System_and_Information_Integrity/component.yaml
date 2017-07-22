@@ -7,7 +7,7 @@ satisfies:
   - control_key: SI-2
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -50,7 +50,7 @@ satisfies:
   - control_key: SI-2 (2)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -66,7 +66,7 @@ satisfies:
   - control_key: SI-2 (3)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -92,7 +92,7 @@ satisfies:
   - control_key: SI-3
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -139,7 +139,7 @@ satisfies:
   - control_key: SI-3 (1)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -153,7 +153,7 @@ satisfies:
   - control_key: SI-3 (2)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -167,7 +167,7 @@ satisfies:
   - control_key: SI-3 (7)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -183,7 +183,7 @@ satisfies:
   - control_key: SI-4
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -253,7 +253,7 @@ satisfies:
   - control_key: SI-4 (1)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -268,7 +268,7 @@ satisfies:
   - control_key: SI-4 (2)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -285,7 +285,7 @@ satisfies:
   - control_key: SI-4 (4)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -300,7 +300,7 @@ satisfies:
   - control_key: SI-4 (5)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -314,7 +314,7 @@ satisfies:
   - control_key: SI-4 (14)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           'An OpenShift infrastructure does not have wireless capabilities. This
@@ -324,7 +324,7 @@ satisfies:
   - control_key: SI-4 (16)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -336,7 +336,7 @@ satisfies:
   - control_key: SI-4 (23)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -348,7 +348,7 @@ satisfies:
   - control_key: SI-5
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -370,7 +370,7 @@ satisfies:
   - control_key: SI-6
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -413,7 +413,7 @@ satisfies:
   - control_key: SI-7
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -426,7 +426,7 @@ satisfies:
   - control_key: SI-7 (1)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -441,7 +441,7 @@ satisfies:
   - control_key: SI-7 (7)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -456,7 +456,7 @@ satisfies:
   - control_key: SI-10
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -471,7 +471,7 @@ satisfies:
   - control_key: SI-11
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -495,7 +495,7 @@ satisfies:
   - control_key: SI-12
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -512,7 +512,7 @@ satisfies:
   - control_key: SI-16
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*

@@ -7,7 +7,7 @@ satisfies:
 - control_key: SC-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -20,7 +20,7 @@ satisfies:
 - control_key: SC-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -32,7 +32,7 @@ satisfies:
 - control_key: SC-6
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -45,7 +45,7 @@ satisfies:
 - control_key: SC-7
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -75,7 +75,7 @@ satisfies:
 - control_key: SC-7 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -88,7 +88,7 @@ satisfies:
 - control_key: SC-7 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -109,7 +109,7 @@ satisfies:
 - control_key: SC-7 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -121,7 +121,7 @@ satisfies:
 - control_key: SC-7 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -133,7 +133,7 @@ satisfies:
 - control_key: SC-7 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -145,7 +145,7 @@ satisfies:
 - control_key: SC-7 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -160,7 +160,7 @@ satisfies:
 - control_key: SC-7 (18)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         'This control is inherited through organizational network services.'
@@ -168,7 +168,7 @@ satisfies:
 - control_key: SC-8
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -183,7 +183,7 @@ satisfies:
 - control_key: SC-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -197,7 +197,7 @@ satisfies:
 - control_key: SC-10
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -210,7 +210,7 @@ satisfies:
 - control_key: SC-12
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -230,7 +230,7 @@ satisfies:
 - control_key: SC-13
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -242,7 +242,7 @@ satisfies:
 - control_key: SC-18
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: c
       text: |
@@ -255,7 +255,7 @@ satisfies:
 - control_key: SC-19
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: b
       text: |
@@ -268,7 +268,7 @@ satisfies:
 - control_key: SC-20
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -292,7 +292,7 @@ satisfies:
 - control_key: SC-21
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -304,7 +304,7 @@ satisfies:
 - control_key: SC-22
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -316,7 +316,7 @@ satisfies:
 - control_key: SC-23
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -334,7 +334,7 @@ satisfies:
 - control_key: SC-28
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -345,7 +345,7 @@ satisfies:
 - control_key: SC-28 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -364,7 +364,7 @@ satisfies:
 - control_key: SC-39
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         'Red Hat Enterprise Linux, when configured against USGCB settings,

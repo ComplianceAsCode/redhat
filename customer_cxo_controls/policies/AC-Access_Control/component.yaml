@@ -7,7 +7,7 @@ satisfies:
 - control_key: AC-1
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -34,7 +34,7 @@ satisfies:
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -47,7 +47,7 @@ satisfies:
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: Implemented
+  implementation_status: Implemented
   narrative:
     - text: |
         '//*
@@ -63,7 +63,7 @@ satisfies:
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -86,7 +86,7 @@ satisfies:
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -99,7 +99,7 @@ satisfies:
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -121,7 +121,7 @@ satisfies:
 - control_key: AC-19
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -141,7 +141,7 @@ satisfies:
 - control_key: AC-19 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -153,7 +153,7 @@ satisfies:
 - control_key: AC-20
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -178,7 +178,7 @@ satisfies:
 - control_key: AC-20 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: 'a'
       text: |
@@ -201,7 +201,7 @@ satisfies:
 - control_key: AC-20 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -215,7 +215,7 @@ satisfies:
 - control_key: AC-21
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: 'a'
       text: |
@@ -237,7 +237,7 @@ satisfies:
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: 'a'
       text: |

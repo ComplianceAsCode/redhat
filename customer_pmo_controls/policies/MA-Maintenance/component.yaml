@@ -7,7 +7,7 @@ satisfies:
 - control_key: MA-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: c
       text: |
@@ -31,7 +31,7 @@ satisfies:
 - control_key: MA-3
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -43,7 +43,7 @@ satisfies:
 - control_key: MA-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -56,7 +56,7 @@ satisfies:
 - control_key: MA-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -69,7 +69,7 @@ satisfies:
 - control_key: MA-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -86,7 +86,7 @@ satisfies:
 - control_key: MA-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -105,7 +105,7 @@ satisfies:
 - control_key: MA-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -120,7 +120,7 @@ satisfies:
 - control_key: MA-5
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -152,7 +152,7 @@ satisfies:
 - control_key: MA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -181,7 +181,7 @@ satisfies:
 - control_key: MA-6
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*

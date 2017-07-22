@@ -7,7 +7,7 @@ satisfies:
 - control_key: SC-5
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -22,7 +22,7 @@ satisfies:
 - control_key: SC-12 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -37,7 +37,7 @@ satisfies:
 - control_key: SC-12 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -52,7 +52,7 @@ satisfies:
 - control_key: SC-15
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -81,7 +81,7 @@ satisfies:
 - control_key: SC-18
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -102,7 +102,7 @@ satisfies:
 - control_key: SC-19
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |

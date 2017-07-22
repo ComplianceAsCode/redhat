@@ -7,7 +7,7 @@ satisfies:
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -60,7 +60,7 @@ satisfies:
 - control_key: CP-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -72,7 +72,7 @@ satisfies:
 - control_key: CP-9 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -83,7 +83,7 @@ satisfies:
 - control_key: CP-10 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
