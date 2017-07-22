@@ -52,7 +52,7 @@
 # OSCAP_OVAL_VERSION is passed into generate-from-templates.py and it specifies
 # the highest OVAL version we can use.
 
-macro(build_content PRODUCT)
+macro(opencontrol_build_by_certification PRODUCT CERTIFICATION)
 	add_custom_command(
 		OUTPUT "${CMAKE_BINARY_DIR}/${PRODUCT}/test.txt"
 		COMMAND "$CMAKE_COMMAND" -E make_directory "${CMAKE_BINARY_DIR}/${PRODUCT}"
