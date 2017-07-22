@@ -4,12 +4,14 @@ name: Access Control
 schema_version: 3.0.0
 satisfies:
 
+#
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
 #       disabling emergency and temporary accounts within the required
 #       timeframe. A successful control response will need to address
 #       all of the procedures and mechanisms involved in disabling these
 #       accounts.
+#
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -19,7 +21,8 @@ satisfies:
         'OpenShift relies upon 3rd party authentication providers, such as
         Microsoft Active Directory, Red Hat IdM, or LDAP. By relying on 3rd
         party authentication providers, OpenShift is not responsible for
-        automatic disablement of accounts after a configured period of time.
+        automatic disablement of temporary and emergency accounts after a
+        configured period of time.
 
         Refer to the LDAP Authentication section of the OpenShift
         Administrators Guide for configuration references to 3rd parties, e.g.
@@ -28,29 +31,35 @@ satisfies:
 
         https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth'
 
+#
+# AC-2(3) NOTES:
+#       The customer will be responsible for automatically disabling user
+#       accounts after the specified period of inactivity. A successful
+#       control response will need to address all automated mechanisms
+#       involved in disabling inactive accounts.
+#       
+# ADMIN NOTE:
+#       AC-2(2) disables temp/emergency accounts after period of time.
+#       AC-2(3) differs by disabling *every other* account type
+#
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: none
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for automatically disabling user
-        accounts after the specified period of inactivity. A successful control
-        response will need to address all automated mechanisms involved in
-        disabling inactive accounts.>
+        'OpenShift relies upon 3rd party authentication providers, such as
+        Microsoft Active Directory, Red Hat IdM, or LDAP. By relying on 3rd
+        party authentication providers, OpenShift is not responsible for
+        automatic disablement of inactive accounts after a configured period
+        of time.
 
-        <3rd party software must be used to fully support automatic disablement
-        of inactive OpenShift accounts. OpenShift does not have the capability
-        to automatically disable accounts after a configured period of time. To
-        meet this requirement, an authentication provider (such as Active
-        Directory) must be used. Integration between OpenShift and Active
-        Directory can be accomplished throguh the use of Kerberos cross-realm
-        trusts. Refer to the LDAP Authentication section of the OpenShift
-        Administrators guide:
+        Refer to the LDAP Authentication section of the OpenShift
+        Administrators Guide for configuration references to 3rd parties, e.g.
+        configuration of Kerberos cross-realm trusts with Active Directory.
+        The guide can be found at:
 
-        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth
-        */'
+        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth'
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53

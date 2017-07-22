@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
 name: Organizational-Controls.fd
 metadata:
-  description: Red Hat Organizational Controls
+  description: Organizational Controls
   maintainers:
     - Shawn Wells <shawn@redhat.com>
 

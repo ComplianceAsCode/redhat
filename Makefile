@@ -18,12 +18,46 @@ K := $(foreach exec,$(EXECUTABLES),\
 
 default: rhel7 openshiftv3
 
-clean:
+clean-all: clean
 	- cd RHEL7 && make clean
 	- cd OpenShift-v3 && make clean
 
-rhel7: clean
-	- cd RHEL7 && make
+clean:
+	- rm -rf exports/ opencontrols/
 
-openshiftv3: clean
+rhel7-clean:
+	- cd RHEL7 && clean
+
+rhel7: rhel7-clean
+	- cd RHEL7 && make clean
+
+openshiftv3-clean:
+	- cd OpenShift-v3 && make clean
+
+openshiftv3: openshiftv3-clean
 	- cd OpenShift-v3 && make
+
+###
+### Sample 'MyApp' targets
+###
+opencontrols: opencontrol.yaml
+	- ${CM} get
+
+exports: opencontrols
+	- ${CM} docs gitbook FedRAMP-low
+
+pdf: exports
+	- cd exports/ && gitbook pdf ./ ./MyApp_Compliance_Guide.pdf
+	
+serve: exports
+	- cd exports/ && gitbook serve
+
+fedramp:
+	- ${GOPATH}/bin/fedramp-templater fill opencontrols/ ./FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
+
+fedramp-diff:
+	- ${GOPATH}/bin/fedramp-templater diff opencontrols/ ./FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
+
+checks:
+	- yamllint customer_cxo_controls/policies/
+	- yamllint customer_pmo_controls/policies/
