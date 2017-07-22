@@ -60,20 +60,20 @@ include(OpenControlCommon)
 
 add_custom_target(validate)
 
-if (SHIP_PRODUCT_RHEL7)
-	add_subdirectory("RHEL7")
-endif
-if (SHIP_PRODUCT_OPENSTACK)
-	add_subdirectory("OpenStack")
-endif
-if (SHIP_PRODUCT_OPENSHIFT)
-	add_subdirectory("OpenShift-v3")
-endif
+#if (SHIP_PRODUCT_RHEL7)
+#    add_subdirectory("RHEL7")
+#endif
+#if (SHIP_PRODUCT_OPENSTACK)
+#    add_subdirectory("OpenStack")
+#endif
+#if (SHIP_PRODUCT_OPENSHIFT)
+#    add_subdirectory("OpenShift-v3")
+#endif
 
 install(FILES "${CMAKE_SOURCE_DIR}/LICENSE"
 	DESTINATION ${CMAKE_INSTALL_DOCDIR})
 install(FILES "${CMAKE_SOURCE_DIR}/README.md"
-	DESTINATION ${CMAKE_INSTALL_DIRDOR})
+	DESTINATION ${CMAKE_INSTALL_DOCDIR})
 install(FILES "${CMAKE_SOURCE_DIR}/CONTRIBUTORS.md"
 	DESTINATION ${CMAKE_INSTALL_DOCDIR})
 
@@ -107,16 +107,15 @@ set(CPACK_RPM_PACKAGE_LICENSE "BSD-4")
 set(CPACK_RPM_PACKAGE_URL "https://github.com/opencontrol/RedHat")
 set(CPACK_RPM_PACKAGE_ARCHITECTURE "noarch")
 #set(CPACK-RPM_PACKAGE_REQUIRES "something")
-set(CPACK_RPM_PACKAGE_PROVIDES "opencontrol-redhat"
-set(CPACK_RPM_PACKAGE_DESCRIPTION "%{name} provides OpenControl templates for
-Red Hat technologies")
+set(CPACK_RPM_PACKAGE_PROVIDES "opencontrol-redhat")
+set(CPACK_RPM_PACKAGE_DESCRIPTION "%{name} provides OpenControl templates for Red Hat technologies")
 
 # Change the default file name of the RPMs
 # %{release} includes release number and dist type
 # This only has effect with cmake v3.6 or higher
 set(CPACK_RPM_FILE_NAME "%{name}-%{version}-%{release}.rpm")
 # For older versions of cmake (e.g. 2.8) file name is defined like below
-set(CPACK_pACkAGE_FILE_NAME "opencontrol-redhat-${VERSION}")
+set(CPACK_PACKAGE_FILE_NAME "opencontrol-redhat-${VERSION}")
 
-set(CPACK_GENERATOR "RPM:DEB")
+set(CPACK_GENERATOR "RPM;DEB")
 include(CPack)

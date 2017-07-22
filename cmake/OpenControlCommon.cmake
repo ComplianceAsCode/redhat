@@ -52,6 +52,15 @@
 # OSCAP_OVAL_VERSION is passed into generate-from-templates.py and it specifies
 # the highest OVAL version we can use.
 
+# macro(opencontrol_build_product PRODUCT)
+#	add_custom_target(${PRODUCT}-content)
+#	add_custom_target(${PRODUCT}-validate)
+#
+#	opencontrol_build_by_certification(${PRODUCT} "FedRAMP-low")
+#	opencontrol_build_by_certification(${PRODUCT} "FedRAMP-moderate")
+#
+# endmacro()
+
 macro(opencontrol_build_by_certification PRODUCT CERTIFICATION)
 	add_custom_command(
 		OUTPUT "${CMAKE_BINARY_DIR}/${PRODUCT}/test.txt"
