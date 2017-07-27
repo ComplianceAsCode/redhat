@@ -7,7 +7,7 @@ satisfies:
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -43,7 +43,7 @@ satisfies:
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -70,7 +70,7 @@ satisfies:
 - control_key: IA-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -84,7 +84,7 @@ satisfies:
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         'This control is not applicable to tenants of cloud computing 
@@ -93,7 +93,7 @@ satisfies:
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         'OpenShift requires individuals to be authenticated with an individual
@@ -106,7 +106,7 @@ satisfies:
 - control_key: IA-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -120,7 +120,7 @@ satisfies:
 - control_key: IA-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -138,7 +138,7 @@ satisfies:
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -154,7 +154,7 @@ satisfies:
 - control_key: IA-3
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -172,7 +172,7 @@ satisfies:
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -222,7 +222,7 @@ satisfies:
 - control_key: IA-4 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -237,7 +237,7 @@ satisfies:
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -338,7 +338,7 @@ satisfies:
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -395,7 +395,7 @@ satisfies:
 - control_key: IA-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -437,7 +437,7 @@ satisfies:
 - control_key: IA-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -452,7 +452,7 @@ satisfies:
 - control_key: IA-5 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -466,7 +466,7 @@ satisfies:
 - control_key: IA-5 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -479,7 +479,7 @@ satisfies:
 - control_key: IA-5 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -492,7 +492,7 @@ satisfies:
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -507,7 +507,7 @@ satisfies:
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -524,7 +524,7 @@ satisfies:
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -541,7 +541,7 @@ satisfies:
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -556,7 +556,7 @@ satisfies:
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -572,7 +572,7 @@ satisfies:
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -589,7 +589,7 @@ satisfies:
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -606,7 +606,7 @@ satisfies:
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*

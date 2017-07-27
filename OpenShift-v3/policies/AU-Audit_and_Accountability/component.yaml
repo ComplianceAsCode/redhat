@@ -7,7 +7,7 @@ satisfies:
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -20,7 +20,7 @@ satisfies:
 - control_key: AU-5
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -43,7 +43,7 @@ satisfies:
 - control_key: AU-7
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -86,7 +86,7 @@ satisfies:
 - control_key: AU-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -101,7 +101,7 @@ satisfies:
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -134,7 +134,7 @@ satisfies:
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
 #  Customers are responsible for comparing the internal information
 #  system clocks at least hourly with an authoritative time source. A
@@ -191,7 +191,7 @@ satisfies:
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -205,7 +205,7 @@ satisfies:
 - control_key: AU-9 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -222,7 +222,7 @@ satisfies:
 - control_key: AU-12
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |

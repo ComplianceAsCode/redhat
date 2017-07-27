@@ -6,7 +6,51 @@ metadata:
   maintainers:
     - Shawn Wells (shawn@redhat.com)
 components:
-  - ./customer_cxo_controls
-  - ./customer_pmo_controls
-  - ./RHEL7
-  - ./OpenShift-v3
+# First, organizational controls:
+    - ./customer_cxo_controls/policies/AC-Access_Control
+    - ./customer_cxo_controls/policies/AT-Awareness_and_Training
+    - ./customer_cxo_controls/policies/AU-Audit_and_Accountability
+    - ./customer_cxo_controls/policies/CA-Security_Assessment_and_Authorization
+    - ./customer_cxo_controls/policies/CM-Configuration_Management
+    - ./customer_cxo_controls/policies/CP-Contingency_Planning
+    - ./customer_cxo_controls/policies/IA-Identification_and_Authentication
+    - ./customer_cxo_controls/policies/IR-Incident_Response
+    - ./customer_cxo_controls/policies/MA-Maintenance
+    - ./customer_cxo_controls/policies/MP-Media_Protection
+    - ./customer_cxo_controls/policies/PE-Physical_and_Environmental_Protection
+    - ./customer_cxo_controls/policies/PL-Planning
+    - ./customer_cxo_controls/policies/PS-Personnel_Security
+    - ./customer_cxo_controls/policies/RA-Risk_Assessment
+    - ./customer_cxo_controls/policies/SA-System_and_Services_Acquisition
+    - ./customer_cxo_controls/policies/SC-Systems_and_Communications_Protection
+    - ./customer_cxo_controls/policies/SI-System_and_Information_Integrity
+
+# Second, add in PMO controls:
+#    - ./customer_pmo_controls/policies/AC-Access_Control
+#    - ./customer_pmo_controls/policies/AT-Awareness_and_Training
+#    - ./customer_pmo_controls/policies/AU-Audit_and_Accountability
+#    - ./customer_pmo_controls/policies/CA-Security_Assessment_and_Authorization
+#    - ./customer_pmo_controls/policies/CM-Configuration_Management
+#    - ./customer_pmo_controls/policies/CP-Contingency_Planning
+#    - ./customer_pmo_controls/policies/IA-Identification_and_Authentication
+#    - ./customer_pmo_controls/policies/IR-Incident_Response
+#    - ./customer_pmo_controls/policies/MA-Maintenance
+#    - ./customer_pmo_controls/policies/MP-Media_Protection
+#    - ./customer_pmo_controls/policies/PE-Physical_and_Environmental_Protection
+#    - ./customer_pmo_controls/policies/PL-Planning
+#    - ./customer_pmo_controls/policies/PS-Personnel_Security
+#    - ./customer_pmo_controls/policies/RA-Risk_Assessment
+#    - ./customer_pmo_controls/policies/SA-System_and_Services_Acquisition
+#    - ./customer_pmo_controls/policies/SC-Systems_and_Communications_Protection
+#    - ./customer_pmo_controls/policies/SI-System_and_Information_Integrity
+
+dependencies:
+  standards:
+    - url: https://github.com/opencontrol/NIST-800-53-Standards
+      revision: master
+  certifications:
+    - url: https://github.com/opencontrol/FedRAMP-Certifications
+      revision: master
+#  systems:
+#   - url: https://github.com/shawndwells/opencontrol-openshift
+#     revision: master

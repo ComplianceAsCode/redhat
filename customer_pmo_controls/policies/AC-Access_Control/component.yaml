@@ -1,13 +1,13 @@
 ---
 documentation_complete: false
-name: [PROGRAM MANAGEMENT OFFICE] Access Control
+name: Access Control
 schema_version: 3.0.0
 satisfies:
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: Not applicable
+  implementation_status: Not applicable
   narrative:
     - key: a
       text: |
@@ -109,7 +109,7 @@ satisfies:
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: Implimented
+  implementation_status: Implimented
   narrative:
     - key: a
       text: |
@@ -150,7 +150,7 @@ satisfies:
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: Implemented
+  implementation_status: Implemented
   narrative:
     - text: |
         '//*
@@ -165,7 +165,7 @@ satisfies:
 - control_key: AC-5
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -196,7 +196,7 @@ satisfies:
 - control_key: AC-6
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -211,7 +211,7 @@ satisfies:
 - control_key: AC-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -225,7 +225,7 @@ satisfies:
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -239,7 +239,7 @@ satisfies:
 - control_key: AC-14
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -253,7 +253,7 @@ satisfies:
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |
@@ -277,7 +277,7 @@ satisfies:
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: a
       text: |

@@ -22,7 +22,7 @@ clean:
 	rm -rf exports/ opencontrols/
 
 pdf: exports
-	cd exports/ && gitbook pdf ./ ./OpenShift_v3_Compliance.pdf
+	cd exports/ && gitbook pdf ./ ./PMO_Controls_Compliance.pdf
 
 serve: exports
 	cd exports && gitbook serve

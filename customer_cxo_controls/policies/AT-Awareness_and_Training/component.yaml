@@ -7,7 +7,7 @@ satisfies:
 - control_key: AT-1
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: 'a'
       text: |
@@ -34,7 +34,7 @@ satisfies:
 - control_key: AT-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - text: |
         '//*
@@ -48,7 +48,7 @@ satisfies:
 - control_key: AT-3
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: 'a'
       text: |
@@ -81,12 +81,12 @@ satisfies:
 - control_key: AT-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
     - key: 'a'
       text: |
         '//*
-        The customer will be responsible for tracking successful completion
+        The organization will be responsible for tracking successful completion
         of basic security awareness training and role-based training
         security training activities. A successful control response will discuss
         the process or system used to monitor and document completion of
@@ -95,7 +95,7 @@ satisfies:
     - key: 'b'
       text: |
         '//*
-        The customer will be responsible for retaining training records for
+        The organization will be responsible for retaining training records for
         the required timeframe. A successful control response will outline the
         methods by which required retention is achieved.
         */'

@@ -7,7 +7,7 @@ satisfies:
   - control_key: AU-1
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -34,7 +34,7 @@ satisfies:
   - control_key: AU-2
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
@@ -67,7 +67,7 @@ satisfies:
   - control_key: AU-3
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -82,7 +82,7 @@ satisfies:
   - control_key: AU-3 (1)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
@@ -100,13 +100,13 @@ satisfies:
   - control_key: AU-6 (3)
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
           Customers are responsible for analyzing and correlating audit records
           accross different repositories to gain organiational-wide situational
-          awareness. A successful control response will discuss how the customer
+          awareness. A successful control response will discuss how the organization
           correlates and analyzes audit records from different sources. This can
           include processes and tools used to meet these goals.
           */'

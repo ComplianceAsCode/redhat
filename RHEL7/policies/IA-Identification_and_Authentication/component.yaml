@@ -6,7 +6,7 @@ satisfies:
 - control_key: IA-1
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-1 goes here.
@@ -16,7 +16,7 @@ satisfies:
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 goes here.
@@ -26,7 +26,7 @@ satisfies:
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 (1) goes here.
@@ -36,7 +36,7 @@ satisfies:
 - control_key: IA-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 (2) goes here.
@@ -46,7 +46,7 @@ satisfies:
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 (3) goes here.
@@ -56,7 +56,7 @@ satisfies:
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 (5) goes here.
@@ -66,7 +66,7 @@ satisfies:
 - control_key: IA-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 (8) goes here.
@@ -76,7 +76,7 @@ satisfies:
 - control_key: IA-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 (11) goes here.
@@ -86,7 +86,7 @@ satisfies:
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-2 (12) goes here.
@@ -96,7 +96,7 @@ satisfies:
 - control_key: IA-3
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-3 goes here.
@@ -106,7 +106,7 @@ satisfies:
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-4 goes here.
@@ -116,7 +116,7 @@ satisfies:
 - control_key: IA-4 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-4 (4) goes here.
@@ -126,7 +126,7 @@ satisfies:
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 goes here.
@@ -136,7 +136,7 @@ satisfies:
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 (1) goes here.
@@ -146,7 +146,7 @@ satisfies:
 - control_key: IA-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 (2) goes here.
@@ -156,7 +156,7 @@ satisfies:
 - control_key: IA-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 (3) goes here.
@@ -166,7 +166,7 @@ satisfies:
 - control_key: IA-5 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 (4) goes here.
@@ -176,7 +176,7 @@ satisfies:
 - control_key: IA-5 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 (6) goes here.
@@ -186,7 +186,7 @@ satisfies:
 - control_key: IA-5 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 (7) goes here.
@@ -196,7 +196,7 @@ satisfies:
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-5 (11) goes here.
@@ -206,7 +206,7 @@ satisfies:
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-6 goes here.
@@ -216,7 +216,7 @@ satisfies:
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-7 goes here.
@@ -226,7 +226,7 @@ satisfies:
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-8 goes here.
@@ -236,7 +236,7 @@ satisfies:
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-8 (1) goes here.
@@ -246,7 +246,7 @@ satisfies:
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-8 (2) goes here.
@@ -256,7 +256,7 @@ satisfies:
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-8 (3) goes here.
@@ -266,7 +266,7 @@ satisfies:
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against IA-8 (4) goes here.

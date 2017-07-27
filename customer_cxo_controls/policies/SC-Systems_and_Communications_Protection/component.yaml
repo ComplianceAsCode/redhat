@@ -7,12 +7,12 @@ satisfies:
   - control_key: SC-1
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - key: a
         text: |
           '//*
-          The customer will be responsible for developing, documenting, and
+          The organization will be responsible for developing, documenting, and
           disseminating System and Communications Protection policy and
           procedures. A successful control response will need to address the
           content of the policy (which must include purpose, scope, roles,
@@ -23,7 +23,7 @@ satisfies:
       - key: b
         text: |
           '//*
-          The customer will be responsible for reviewing and updating the System
+          The organization will be responsible for reviewing and updating the System
           and Communications Protection policy every 3 years, and procedures
           annually. A successful control response will need to address the
           review and update process, including the role(s) responsible for
@@ -34,11 +34,11 @@ satisfies:
   - control_key: SC-17
     standard_key: NIST-800-53
     covered_by: []
-    implimentation_status: none
+    implementation_status: none
     narrative:
       - text: |
           '//*
-          The customer will be responsible for defining and enforcing a
+          The organization will be responsible for defining and enforcing a
           policy for issuing public key certificates, or else to obtain
           public key certificates from an approved service provider. A
           successful control response will need to outline the policy and

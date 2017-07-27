@@ -10,7 +10,7 @@ satisfies:
 #- control_key: MP-1
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-1.
@@ -20,7 +20,7 @@ satisfies:
 #- control_key: MP-2
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-2.
@@ -30,7 +30,7 @@ satisfies:
 #- control_key: MP-3
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-3.
@@ -40,7 +40,7 @@ satisfies:
 #- control_key: MP-4
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-4.
@@ -50,7 +50,7 @@ satisfies:
 #- control_key: MP-5
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-5.
@@ -60,7 +60,7 @@ satisfies:
 #- control_key: MP-5 (4)
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-5 (4).
@@ -70,7 +70,7 @@ satisfies:
 #- control_key: MP-6
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-6.
@@ -80,7 +80,7 @@ satisfies:
 #- control_key: MP-6 (2)
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-6 (2).
@@ -90,7 +90,7 @@ satisfies:
 #- control_key: MP-7
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-7.
@@ -100,7 +100,7 @@ satisfies:
 #- control_key: MP-7 (1)
 #  standard_key: NIST-800-53
 #  covered_by: []
-#  implimentation_status: none
+#  implementation_status: none
 #  narrative:
 #   - text: |
 #        Narrative text on how product can be configured against MP-7 (1).

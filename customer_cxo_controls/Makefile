@@ -22,7 +22,7 @@ clean:
 	rm -rf exports/ opencontrols/
 
 pdf: exports
-	cd exports/ && gitbook pdf ./ ./OpenShift_v3_Compliance.pdf
+	cd exports/ && gitbook pdf ./ ./Organizational_Controls_Compliance.pdf
 
 serve: exports
 	cd exports && gitbook serve
@@ -35,12 +35,6 @@ opencontrols: opencontrol.yaml
 
 coverage:
 	${CM} diff FedRAMP-low
-
-fedramp:
-	${GOPATH}/bin/fedramp-templater fill opencontrols/ ../FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
-
-fedramp-diff:
-	${GOPATH}/bin/fedramp-templater diff opencontrols/ ../FedRAMP_Template/FedRAMP-System-Security-Plan-Template-v2.1.docx
 
 checks:
 	yamllint policies/

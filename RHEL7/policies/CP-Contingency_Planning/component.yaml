@@ -6,7 +6,7 @@ satisfies:
 - control_key: CP-1
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-1 goes here.
@@ -16,7 +16,7 @@ satisfies:
 - control_key: CP-2
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-2 goes here.
@@ -26,7 +26,7 @@ satisfies:
 - control_key: CP-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-2 (1) goes here.
@@ -36,7 +36,7 @@ satisfies:
 - control_key: CP-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-2 (2) goes here.
@@ -46,7 +46,7 @@ satisfies:
 - control_key: CP-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-2 (3) goes here.
@@ -56,7 +56,7 @@ satisfies:
 - control_key: CP-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-2 (8) goes here.
@@ -66,7 +66,7 @@ satisfies:
 - control_key: CP-3
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-3 goes here.
@@ -76,7 +76,7 @@ satisfies:
 - control_key: CP-4
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-4 goes here.
@@ -86,7 +86,7 @@ satisfies:
 - control_key: CP-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-4 (1) goes here.
@@ -96,7 +96,7 @@ satisfies:
 - control_key: CP-6
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-6 goes here.
@@ -106,7 +106,7 @@ satisfies:
 - control_key: CP-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-6 (1) goes here.
@@ -116,7 +116,7 @@ satisfies:
 - control_key: CP-6 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-6 (3) goes here.
@@ -126,7 +126,7 @@ satisfies:
 - control_key: CP-7
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-7 goes here.
@@ -136,7 +136,7 @@ satisfies:
 - control_key: CP-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-7 (1) goes here.
@@ -146,7 +146,7 @@ satisfies:
 - control_key: CP-7 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-7 (2) goes here.
@@ -156,7 +156,7 @@ satisfies:
 - control_key: CP-7 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-7 (3) goes here.
@@ -166,7 +166,7 @@ satisfies:
 - control_key: CP-8
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-8 goes here.
@@ -176,7 +176,7 @@ satisfies:
 - control_key: CP-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-8 (1) goes here.
@@ -186,7 +186,7 @@ satisfies:
 - control_key: CP-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-8 (2) goes here.
@@ -196,7 +196,7 @@ satisfies:
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-9 goes here.
@@ -206,7 +206,7 @@ satisfies:
 - control_key: CP-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-9 (1) goes here.
@@ -216,7 +216,7 @@ satisfies:
 - control_key: CP-9 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-9 (3) goes here.
@@ -226,7 +226,7 @@ satisfies:
 - control_key: CP-10
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-10 goes here.
@@ -236,7 +236,7 @@ satisfies:
 - control_key: CP-10 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implimentation_status: none
+  implementation_status: none
   narrative:
    - text: |
         Narrative text on how product can be configured against CP-10 (2) goes here.
