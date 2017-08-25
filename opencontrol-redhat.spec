@@ -1,4 +1,5 @@
 %global		redhatrelease	1
+%global 	import_path     code.google.com/p/go.net
 
 Name:		opencontrol-redhat
 Version:	0.1
