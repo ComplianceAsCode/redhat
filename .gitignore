@@ -12,3 +12,6 @@ exports/*
 # OpenControl generated files
 opencontrols/
 */opencontrols/*
+
+# RPM builds
+rpmbuild/

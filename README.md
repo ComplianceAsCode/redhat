@@ -7,7 +7,7 @@ A few packages are needed for successful OpenControl builds on a RHEL7/Fedora 25
 
 (1) Install Base Packages
 `````
-$ sudo yum -y install git vim gcc-c++ make xdg-utils libxml2-devel
+sudo yum -y install git vim gcc-c++ make xdg-utils libxml2-devel
 `````
 
 (2) Enable EPEL
@@ -34,7 +34,7 @@ sudo npm install gitbook-cli -g
 `````
 curl -L https://github.com/opencontrol/compliance-masonry/releases/download/v1.1.2/compliance-masonry_1.1.2_linux_amd64.tar.gz -o compliance-masonry.tar.gz
 tar -xf compliance-masonry.tar.gz
-cp compliance-masonry_1.1.2_linux_amd64/compliance-masonry /usr/local/bin
+sudo cp compliance-masonry_1.1.2_linux_amd64/compliance-masonry /usr/local/bin
 `````
 
 (7) Install Golang
