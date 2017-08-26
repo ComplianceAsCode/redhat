@@ -1,4 +1,4 @@
-%global		redhatrelease	1
+%global		redhatrelease	2
 
 Name:		opencontrol-redhat
 Version:	0.1
@@ -7,7 +7,7 @@ Summary:	OpenControl content for Red Hat technologies
 Vendor:		Red Hat
 
 Group:		System Environment/Base
-License:	BSD-3
+License:	CC0
 URL:		https://github.com/OpenControl/RedHat
 
 Source0:	https://github.com/opencontrol/RedHat/releases/download/v1.0.1/opencontrol-redhat-0.1-1.tar.gz
@@ -41,5 +41,10 @@ cp -a OpenShift-v3/* %{buildroot}%{_datadir}/opencontrol/RedHat/OpenShift-v3/
 #%doc tbd
 
 %changelog
-* Thu Jul 27 2017 Shawn Wells <shawn@redhat.com) 0.1-1
+* Sat Aug 26 2017 Shawn Wells <shawn@redhat.com> 0.1-2
+- Modify build process to support EPEL packaging requirements
+- Bugfixes to build system
+- Update license to reflect CC0
+
+* Thu Jul 27 2017 Shawn Wells <shawn@redhat.com> 0.1-1
 - Initial RPM
