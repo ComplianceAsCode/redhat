@@ -10,11 +10,11 @@ Group:		System Environment/Base
 License:	CC0
 URL:		https://github.com/OpenControl/RedHat
 
-Source0:	https://github.com/opencontrol/RedHat/releases/download/v1.0.1/opencontrol-redhat-0.1-1.tar.gz
+Source0:	https://github.com/opencontrol/RedHat/releases/download/v1.%{version}/%{name}-redhat-%{version}-%{redhatrelease}.tar.gz
 
 BuildArch:	noarch
 
-BuildRequires:	make
+#BuildRequires:	tbd
 #Requires:	tbd
 
 %description
@@ -29,10 +29,15 @@ OpenControl content for Red Hat technologies
 %install
 mkdir -p %{buildroot}%{_datadir}/opencontrol/RedHat/OpenShift-v3
 
-# Add in core content (SCAP)
+#
+# Add in core content (OpenControl)
+#
 cp -a OpenShift-v3/* %{buildroot}%{_datadir}/opencontrol/RedHat/OpenShift-v3/
+# cp -a RHEL7/* %{buildroot}%{_datadir}/opencontrol/RedHat/RHEL7/
 
+#
 # Add in manpage
+#
 #cp -a RHEL6/input/auxiliary/scap-security-guide.8 %{buildroot}%{_mandir}/en/man8/scap-security-guide.8
 
 %files
