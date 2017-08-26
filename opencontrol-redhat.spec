@@ -4,7 +4,7 @@ Name:		opencontrol-redhat
 Version:	0.1
 Release:	%{redhatrelease}%{?dist}
 Summary:	OpenControl content for Red Hat technologies
-Vendor:		Red Hat, Inc
+Vendor:		Red Hat
 
 Group:		System Environment/Base
 License:	BSD-3
@@ -24,7 +24,7 @@ OpenControl content for Red Hat technologies
 %setup -q -n %{name}-%{version}-%{redhatrelease}
 
 %build
-cd OpenShift-v3 && make pdf
+#cd OpenShift-v3 && make pdf
 
 %install
 mkdir -p %{buildroot}%{_datadir}/opencontrol/RedHat/OpenShift-v3
