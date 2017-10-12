@@ -1,6 +1,6 @@
 ---
 documentation_complete: true
-title: Are strict permissions set for horizon configuration files?
+title: Are strict permissions set for horizon configuration files
 rule_id: horizon_file_perms
 primary_group: horizon
 severity: medium
