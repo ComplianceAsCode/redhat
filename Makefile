@@ -56,7 +56,7 @@ clean-all: clean
 	- rpm -rf $(RPM_TMPDIR)
 
 clean:
-	- rm -rf exports/ opencontrols/
+	- rm -rf exports/ opencontrols/ rpmbuild/*
 
 rhel7-clean:
 	- cd RHEL7 && clean

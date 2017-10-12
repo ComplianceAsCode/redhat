@@ -1,0 +1,34 @@
+---
+documentation_complete: true
+title: Enable Revocation Checks for Publisher Certificates
+rule_id: java_jre_validation_crl
+primary_group: java
+severity: medium
+
+description: |
+    To ensure that certificate revocation checks are enabled, set
+    <tt>deployment.security.validation.crl</tt> to equal <tt>true</tt>
+    in <tt>/etc/.java/deployment/deployment.properties</tt>.
+
+ocil:
+    clause: it does not exist or is not configured properly
+    description: |
+        To verify that revocation checks are enabled, run the following command:
+        <pre>$ grep 'validation.crl=true' /etc/.java/deployment/deployment.properties</pre>
+        If properly configured, the output should return:
+        <pre>deployment.security.validation.crl=true</pre>
+
+rationale: |    
+    Certificates may be revoked due to improper issuance, compromise of the certificate,
+    and failure to adhere to policy. Therefore, any certificate found on a CRL
+    should not be trusted. Permitting execution of an applet published with a
+    revoked certificate may result in spoofing, malware, system modification,
+    invasion of privacy, and denial of service.
+
+identifiers:
+    cce: 
+    stig: JRE0020-UX
+
+references:
+    nist: DCBP-1
+    disa: 

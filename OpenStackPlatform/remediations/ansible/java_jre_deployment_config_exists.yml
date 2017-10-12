@@ -1,0 +1,16 @@
+- name: @PROSE_RULE_TITLE@
+  file:
+    path: /etc/.java/deployment
+    state: directory
+    mode: 0755
+    owner: root
+    group: root
+
+  file:
+    dest: /etc/.java/deployment/deployment.config
+    mode: 0644
+    owner: root
+    group: root
+
+  tags:
+    @PROSE_RULE_TAGS@
