@@ -13,7 +13,7 @@ ocil:
     description: |
         Run the following command to set the file permissions.  
         Command:
-        <tt>$ stat -L -c "%a" /etc/openstack-dashboard/local_settings </tt>
+        <tt>$ stat -L -c "%a" /etc/openstack-dashboard/local_settings</tt>
         This command will only be available on your system if it supports ACLs.
 
 rationale: |    
