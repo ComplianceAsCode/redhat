@@ -16,4 +16,3 @@ rule_selection:
     - rule: horizon_session_cookie_httponly
     - rule: horizon_session_cookie_secure
     - rule: horizon_use_ssl
-    - rule: installed_OS_is_rhel7
