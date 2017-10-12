@@ -11,11 +11,14 @@ description: |
 ocil:
     clause: value of USE_SSL parameter value is false
     description: |
-        Set the value of parameter USE_SSL in /etc/openstack-dashboard/local_settings to True.
-        
-rationale: |    
-    Openstack services communicate with each other using various protocols and the communication might involve sensitive/confidential information. 
-    An attacker may try to eavesdrop on the channel in order to get access to sensitive information. Thus all the services must communicate with 
+        Set the value of parameter USE_SSL in
+        /etc/openstack-dashboard/local_settings to True.
+
+rationale: |
+    Openstack services communicate with each other using various protocols and
+    the communication might involve sensitive/confidential information. An
+    attacker may try to eavesdrop on the channel in order to get access to
+    sensitive information. Thus all the services must communicate with
     each other using a secured communication protocol like HTTPS.
 
 identifiers:
