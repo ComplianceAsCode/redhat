@@ -8,5 +8,12 @@ description: |
     against FedRAMP Low requirements.
 
 rule_selection:
-    - rule: rule_1
-    - rule: rule_2
+    - rule: horizon_csrf_cookie_secure
+    - rule: horizon_disable_password_reveal
+    - rule: horizon_file_ownership
+    - rule: horizon_file_perms
+    - rule: horizon_password_autocomplete
+    - rule: horizon_session_cookie_httponly
+    - rule: horizon_session_cookie_secure
+    - rule: horizon_use_ssl
+    - rule: installed_OS_is_rhel7
