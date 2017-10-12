@@ -16,8 +16,8 @@ ocil:
 
 rationale: |
     The SECURE cookie attribute instructs web browsers to only send the cookie
-    through an encrypted HTTPS (SSL/TLS) connection. 
-    This session protection mechanism is mandatory to prevent the disclosure 
+    through an encrypted HTTPS (SSL/TLS) connection.
+    This session protection mechanism is mandatory to prevent the disclosure
     of the session ID through MitM (Man-in-the-Middle) attacks. It ensures that
     an attacker cannot simply capture the session ID from web browser traffic.
 
