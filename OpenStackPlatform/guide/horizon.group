@@ -1,0 +1,10 @@
+---
+documentation_complete: true
+title: Horizon
+group_id: OpenStack
+
+description: |
+    Description of Horizon goes here.
+    <br/><br/>
+    <ul>links are supported <li><weblink-macro link="https://somewhere"/></li>
+    </ul>
