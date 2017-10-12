@@ -1,0 +1,10 @@
+### Test the mode for a file
+describe file('/etc/.java/deployment') do
+  its('mode') { should cmp '00755' }
+end
+
+### Test the owner of a file
+describe file('/etc/.java/deployment/deployment.config') do
+  its('owner') { should eq 'root' }
+  its('group') { should eq 'root' }
+end
