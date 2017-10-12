@@ -1,6 +1,6 @@
 ---
 documentation_complete: true
-title: Is CSRF_COOKIE_SECURE parameter set to True?
+title: Is CSRF_COOKIE_SECURE parameter set to True
 rule_id: horizon_csrf_cookie_secure
 primary_group: horizon
 severity: medium
@@ -13,7 +13,7 @@ ocil:
     clause: value of CSRF_COOKIE_SECURE in /etc/openstack-dashboard/local_settings is false
     description: |
         Set the value of <tt>CSRF_COOKIE_SECURE</tt> in
-	<tt>/etc/openstack-dashboard/local_settings</tt> to <tt>True</tt>.
+        <tt>/etc/openstack-dashboard/local_settings</tt> to <tt>True</tt>.
 
 rationale: |    
     CSRF (Cross-site request forgery) is an attack which forces an end user to

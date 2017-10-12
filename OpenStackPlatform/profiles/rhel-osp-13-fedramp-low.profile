@@ -1,5 +1,5 @@
 documentation_complete: true
-title: Red Hat OpenStack Platform Version 13: FedRAMP Low
+title: Red Hat OpenStack Platform Version 13 FedRAMP Low
 title_override: true
 profile_id: rhel-osp-13-fedramp-low
 

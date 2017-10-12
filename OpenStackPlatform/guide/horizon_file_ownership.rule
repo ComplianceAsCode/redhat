@@ -1,6 +1,6 @@
 ---
 documentation_complete: true
-title: Is user/group of config files set to root/horizon?
+title: Is user/group of config files set to root/horizon
 rule_id: horizon_file_ownership
 primary_group: horizon
 severity: medium

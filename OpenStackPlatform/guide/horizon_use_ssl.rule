@@ -1,6 +1,6 @@
 ---
 documentation_complete: true
-title: Is USE_SSL parameter set to True?
+title: Is USE_SSL parameter set to True
 rule_id: horizon_use_ssl
 primary_group: horizon
 severity: medium
