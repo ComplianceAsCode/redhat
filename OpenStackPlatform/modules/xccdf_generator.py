@@ -23,6 +23,9 @@ xccdf_ns = {"xsi": "http://www.w3.org/2001/XMLSchema-instance",
             "xhtml": "http://www.w3.org/1999/xhtml",
             "dc": "http://purl.org/dc/elements/1.1/"}
 
+# Temporary: Need to remove later
+script_extensions = (".yml", ".sh", ".anaconda", ".pp", ".rb", "chef", "py")
+
 datestamp = datetime.datetime.utcnow().strftime("%Y-%m-%d")
 
 
@@ -259,7 +262,7 @@ class XCCDFGeneratorFromYAML(object):
         elif filename.endswith(".py"):
             system = "urn:xccdf:fix:script:python"
 
-        filename = filename.split(".")[0]
+        filename = os.path.basename(filename).split(".")[0]
         for rule in xccdftree.iter("Rule"):
             if rule.attrib["id"] == filename:
                 script = ET.SubElement(rule, "fix", system=system)
@@ -270,17 +273,21 @@ class XCCDFGeneratorFromYAML(object):
     def build(self, guide_file_list, document_type, script_guide_list=None):
         for filename in guide_file_list:
             with open(filename, "r") as yaml_file:
-                yamlcontent = yaml.safe_load(yaml_file)
-                if yamlcontent["documentation_complete"]:
-                    if filename.endswith(".benchmark"):
-                        xccdftree = self.benchmark(yamlcontent)
-                    if filename.endswith(".profile"):
-                        xccdftree = self.profile(xccdftree, yamlcontent)
-                    if filename.endswith(".group"):
-                        xccdftree = self.group(xccdftree, yamlcontent)
-                    if filename.endswith(".var"):
-                        xccdftree = self.variable(xccdftree, yamlcontent)
-                    if filename.endswith(".rule"):
-                        xccdftree = self.rule(xccdftree, yamlcontent)
+                if filename.endswith(script_extensions):
+                    script_content = yaml_file.read()
+                    xccdftree = self.script_to_rule_mapping(xccdftree, filename, script_content)
+                else:
+                    yamlcontent = yaml.safe_load(yaml_file)
+                    if yamlcontent["documentation_complete"]:
+                        if filename.endswith(".benchmark"):
+                            xccdftree = self.benchmark(yamlcontent)
+                        if filename.endswith(".profile"):
+                            xccdftree = self.profile(xccdftree, yamlcontent)
+                        if filename.endswith(".group"):
+                            xccdftree = self.group(xccdftree, yamlcontent)
+                        if filename.endswith(".var"):
+                            xccdftree = self.variable(xccdftree, yamlcontent)
+                        if filename.endswith(".rule"):
+                            xccdftree = self.rule(xccdftree, yamlcontent)
 
         return xccdftree

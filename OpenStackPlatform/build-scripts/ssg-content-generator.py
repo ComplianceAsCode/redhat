@@ -140,9 +140,10 @@ def main():
             script_files = custom_sort(script_files, script_extensions)
             xccdf = XCCDFGeneratorFromYAML(args.product, args.schema, args.scap_version,
                                            args.resolved, args.lang)
-            xmlfile = xccdf.build(guide_files, args.shorthand)
+            xmlfile = xccdf.build((guide_files + script_files), args.shorthand)
 
         xmlfile = fix_xml_elements(ET.tostring(xmlfile))
+        print("Generating shorthand.xml")
         write_file("shorthand.xml", xmlfile)
 
 
