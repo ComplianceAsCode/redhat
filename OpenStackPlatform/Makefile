@@ -18,6 +18,10 @@ EXECUTABLES = $(CM) $(GB)
 K := $(foreach exec,$(EXECUTABLES),\
 	$(if $(shell which $(exec)), some string,$error "No $(exec) in PATH"))))
 
+
+#default: clean checks compliance-pdf fedramp-docs scap
+default: clean compliance-pdf fedramp-docs scap
+
 clean:
 	rm -Rf exports/
 
@@ -28,21 +32,22 @@ serve: exports
 	cd exports/ && gitbook serve
 
 exports: opencontrols
-	${CM} docs gitbook --opencontrols exports/opencontrols/ --exports exports/ --markdowns exports/ FedRAMP-low
+	${CM} docs gitbook --opencontrols ./narratives/opencontrols/ --exports exports/ --markdowns exports/ FedRAMP-low
 
 opencontrols: 
-	cd narratives && ${CM} get --dest ../exports/opencontrols/ --config opencontrol.yaml
+	cd narratives && ${CM} get --dest opencontrols/ --config opencontrol.yaml
 
 coverage:
 	${CM} diff FedRAMP-low
 
 fedramp-docs:
-	${GOPATH}/bin/fedramp-templater fill exports/opencontrols/ ./../shared/doc_templates/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
+	${GOPATH}/bin/fedramp-templater fill ./narratives/opencontrols/ ./../shared/doc_templates/FedRAMP-System-Security-Plan-Template-v2.1.docx exports/FedRAMP-Filled-v2.1.docx
 
 fedramp-diff:
 	${GOPATH}/bin/fedramp-templater diff exports/opencontrols/ ./../shared/doc_templates/FedRAMP-System-Security-Plan-Template-v2.1.docx
-all:
+
+scap:
 	../shared/build-scripts/ssg-content-generator.py xccdf --shorthand ../shared/ profiles/ elements/rules/ elements/checks/ elements/remediations/
 
 checks:
-	yamllint elements/guide/*
+	yamllint narratives/ elements/rules/
