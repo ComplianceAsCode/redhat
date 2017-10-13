@@ -18,7 +18,7 @@ ocil:
 
 rationale: |
     The permissions of 640 translates into owner r/w, group r, and no rights
-    to others i.e. “u=rw,g=r,o=”. With permissions set to 640, root has
+    to others i.e. u=rw,g=r,o=. With permissions set to 640, root has
     read/write access and horizon has read access to these configuration files.
 
 identifiers:
