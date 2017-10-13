@@ -1,7 +1,7 @@
 ---
 documentation_complete: true
 title: Horizon
-group_id: OpenStack
+group_id: horizon
 
 description: |
     Description of Horizon goes here.
