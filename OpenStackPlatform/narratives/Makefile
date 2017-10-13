@@ -22,7 +22,7 @@ clean:
 	rm -rf exports/ opencontrols/
 
 pdf: exports
-	cd exports/ && gitbook pdf ./ ./Red Hat OpenStack Platform 13_v3_Compliance.pdf
+	cd exports/ && gitbook pdf ./ ./Compliance.pdf
 
 serve: exports
 	cd exports && gitbook serve

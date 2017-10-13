@@ -8,6 +8,7 @@
 # Build files
 exports/*
 */exports/*
+*/*/exports/*
 
 # OpenControl generated files
 opencontrols/
