@@ -1,0 +1,11 @@
+## NIST-800-53-PE
+* [PE-1: Physical and Environmental Protection Policy and Procedures](NIST-800-53-PE-1.md)
+* [PE-2: Physical Access Authorizations](NIST-800-53-PE-2.md)
+* [PE-3: Physical Access Control](NIST-800-53-PE-3.md)
+* [PE-6: Monitoring Physical Access](NIST-800-53-PE-6.md)
+* [PE-8: Visitor Access Records](NIST-800-53-PE-8.md)
+* [PE-12: Emergency Lighting](NIST-800-53-PE-12.md)
+* [PE-13: Fire Protection](NIST-800-53-PE-13.md)
+* [PE-14: Temperature and Humidity Controls](NIST-800-53-PE-14.md)
+* [PE-15: Water Damage Protection](NIST-800-53-PE-15.md)
+* [PE-16: Delivery and Removal](NIST-800-53-PE-16.md)

@@ -1,3 +1,6 @@
-The following people have contributed to Red Hat's OpenControl content (listed in alphabetical order):
+The following people have contributed to this project:
 
-* Shawn Wells <shawn@redhat.com>
+* Alford, Gabriel <ralford@redhat.com>
+* Basil, Keith <kbasil@redhat.com>
+* Wells, Shawn <shawn@redhat.com>
+
