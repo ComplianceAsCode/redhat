@@ -18,18 +18,7 @@ satisfies:
   implementation_status: Not applicable
   narrative:
     - text: |
-        'Red Hat OpenStack Platform 13 relies upon 3rd party authentication providers, such as
-        Microsoft Active Directory, Red Hat IdM, or LDAP. By relying on 3rd
-        party authentication providers, Red Hat OpenStack Platform 13 is not responsible for
-        automatic disablement of temporary and emergency accounts after a
-        configured period of time.
-
-        Refer to the LDAP Authentication section of the Red Hat OpenStack Platform 13
-        Administrators Guide for configuration references to 3rd parties, e.g.
-        configuration of Kerberos cross-realm trusts with Active Directory.
-        The guide can be found at:
-
-        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth'
+        'Active directory will be used for IdM.'
 
 #
 # AC-2(3) NOTES:
@@ -334,8 +323,13 @@ satisfies:
   implementation_status: none
   narrative:
     - text: |
-        'I will disconnect users if they do not applaud
-        my demo!'
+        '//*
+        The customer will be responsible for defining events or conditions
+        requiring disconnection (for example, user requesting logout), and for
+        terminating the session when those events or conditions arise. A
+        successful control response will need to outline the qualifying events
+        or conditions.
+        */'
 
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
