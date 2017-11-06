@@ -37,7 +37,7 @@ satisfies:
 #       accounts after the specified period of inactivity. A successful
 #       control response will need to address all automated mechanisms
 #       involved in disabling inactive accounts.
-#       
+#
 # ADMIN NOTE:
 #       AC-2(2) disables temp/emergency accounts after period of time.
 #       AC-2(3) differs by disabling *every other* account type
@@ -334,13 +334,8 @@ satisfies:
   implementation_status: none
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for defining events or conditions
-        requiring disconnection (for example, user requesting logout), and for
-        terminating the session when those events or conditions arise. A
-        successful control response will need to outline the qualifying events
-        or conditions.
-        */'
+        'I will disconnect users if they do not applaud
+        my demo!'
 
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
