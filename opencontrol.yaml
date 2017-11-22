@@ -7,46 +7,46 @@ metadata:
     - Shawn Wells (shawn@redhat.com)
 components:
 # First, organizational controls:
-    - ./customer_cxo_controls/policies/AC-Access_Control
-    - ./customer_cxo_controls/policies/AT-Awareness_and_Training
-    - ./customer_cxo_controls/policies/AU-Audit_and_Accountability
-    - ./customer_cxo_controls/policies/CA-Security_Assessment_and_Authorization
-    - ./customer_cxo_controls/policies/CM-Configuration_Management
-    - ./customer_cxo_controls/policies/CP-Contingency_Planning
-    - ./customer_cxo_controls/policies/IA-Identification_and_Authentication
-    - ./customer_cxo_controls/policies/IR-Incident_Response
-    - ./customer_cxo_controls/policies/MA-Maintenance
-    - ./customer_cxo_controls/policies/MP-Media_Protection
-    - ./customer_cxo_controls/policies/PE-Physical_and_Environmental_Protection
-    - ./customer_cxo_controls/policies/PL-Planning
-    - ./customer_cxo_controls/policies/PS-Personnel_Security
-    - ./customer_cxo_controls/policies/RA-Risk_Assessment
-    - ./customer_cxo_controls/policies/SA-System_and_Services_Acquisition
-    - ./customer_cxo_controls/policies/SC-Systems_and_Communications_Protection
-    - ./customer_cxo_controls/policies/SI-System_and_Information_Integrity
+    - ./shared/narrations/customer_cxo_controls/policies/AC-Access_Control
+    - ./shared/narrations/customer_cxo_controls/policies/AT-Awareness_and_Training
+    - ./shared/narrations/customer_cxo_controls/policies/AU-Audit_and_Accountability
+    - ./shared/narrations/customer_cxo_controls/policies/CA-Security_Assessment_and_Authorization
+    - ./shared/narrations/customer_cxo_controls/policies/CM-Configuration_Management
+    - ./shared/narrations/customer_cxo_controls/policies/CP-Contingency_Planning
+    - ./shared/narrations/customer_cxo_controls/policies/IA-Identification_and_Authentication
+    - ./shared/narrations/customer_cxo_controls/policies/IR-Incident_Response
+    - ./shared/narrations/customer_cxo_controls/policies/MA-Maintenance
+    - ./shared/narrations/customer_cxo_controls/policies/MP-Media_Protection
+    - ./shared/narrations/customer_cxo_controls/policies/PE-Physical_and_Environmental_Protection
+    - ./shared/narrations/customer_cxo_controls/policies/PL-Planning
+    - ./shared/narrations/customer_cxo_controls/policies/PS-Personnel_Security
+    - ./shared/narrations/customer_cxo_controls/policies/RA-Risk_Assessment
+    - ./shared/narrations/customer_cxo_controls/policies/SA-System_and_Services_Acquisition
+    - ./shared/narrations/customer_cxo_controls/policies/SC-Systems_and_Communications_Protection
+    - ./shared/narrations/customer_cxo_controls/policies/SI-System_and_Information_Integrity
 
 # Second, add in PMO controls:
-#    - ./customer_pmo_controls/policies/AC-Access_Control
-#    - ./customer_pmo_controls/policies/AT-Awareness_and_Training
-#    - ./customer_pmo_controls/policies/AU-Audit_and_Accountability
-#    - ./customer_pmo_controls/policies/CA-Security_Assessment_and_Authorization
-#    - ./customer_pmo_controls/policies/CM-Configuration_Management
-#    - ./customer_pmo_controls/policies/CP-Contingency_Planning
-#    - ./customer_pmo_controls/policies/IA-Identification_and_Authentication
-#    - ./customer_pmo_controls/policies/IR-Incident_Response
-#    - ./customer_pmo_controls/policies/MA-Maintenance
-#    - ./customer_pmo_controls/policies/MP-Media_Protection
-#    - ./customer_pmo_controls/policies/PE-Physical_and_Environmental_Protection
-#    - ./customer_pmo_controls/policies/PL-Planning
-#    - ./customer_pmo_controls/policies/PS-Personnel_Security
-#    - ./customer_pmo_controls/policies/RA-Risk_Assessment
-#    - ./customer_pmo_controls/policies/SA-System_and_Services_Acquisition
-#    - ./customer_pmo_controls/policies/SC-Systems_and_Communications_Protection
-#    - ./customer_pmo_controls/policies/SI-System_and_Information_Integrity
+#    - ./shared/narrations/customer_pmo_controls/policies/AC-Access_Control
+#    - ./shared/narrations/customer_pmo_controls/policies/AT-Awareness_and_Training
+#    - ./shared/narrations/customer_pmo_controls/policies/AU-Audit_and_Accountability
+#    - ./shared/narrations/customer_pmo_controls/policies/CA-Security_Assessment_and_Authorization
+#    - ./shared/narrations/customer_pmo_controls/policies/CM-Configuration_Management
+#    - ./shared/narrations/customer_pmo_controls/policies/CP-Contingency_Planning
+#    - ./shared/narrations/customer_pmo_controls/policies/IA-Identification_and_Authentication
+#    - ./shared/narrations/customer_pmo_controls/policies/IR-Incident_Response
+#    - ./shared/narrations/customer_pmo_controls/policies/MA-Maintenance
+#    - ./shared/narrations/customer_pmo_controls/policies/MP-Media_Protection
+#    - ./shared/narrations/customer_pmo_controls/policies/PE-Physical_and_Environmental_Protection
+#    - ./shared/narrations/customer_pmo_controls/policies/PL-Planning
+#    - ./shared/narrations/customer_pmo_controls/policies/PS-Personnel_Security
+#    - ./shared/narrations/customer_pmo_controls/policies/RA-Risk_Assessment
+#    - ./shared/narrations/customer_pmo_controls/policies/SA-System_and_Services_Acquisition
+#    - ./shared/narrations/customer_pmo_controls/policies/SC-Systems_and_Communications_Protection
+#    - ./shared/narrations/customer_pmo_controls/policies/SI-System_and_Information_Integrity
 
 dependencies:
   standards:
-    - url: https://github.com/opencontrol/NIST-800-53-Standards
+    - url: https://github.com/opencontrol/standards
       revision: master
   certifications:
     - url: https://github.com/opencontrol/FedRAMP-Certifications
