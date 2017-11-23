@@ -1,7 +1,0 @@
-documentation_complete: false
-schema_version: 3.0.0
-name: Red Hat Enterprise Linux 7
-references:
-  - name: Red Hat Enterprise Linux Security Configuration Guide
-    path: https://tbd.com
-    type: URL
