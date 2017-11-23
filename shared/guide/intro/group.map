@@ -1,7 +1,0 @@
-map: ["intro.group",
-      "how_to_use.group",
-      "intro_read_sections_completely.group",
-      "intro_root_shell_assumed.group",
-      "intro_test_non_production.group",
-      "intro_formatting_conventions.group",
-     ]
