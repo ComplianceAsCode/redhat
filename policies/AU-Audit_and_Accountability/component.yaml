@@ -1,9 +1,7 @@
----
-documentation_complete: false
-name: Audit and Accountability
-schema_version: 3.0.0
-satisfies:
-
+##
+## BEGIN AUDIT SECTION
+## ./policies/AU-Audit_and_Accountability/component.yaml
+##
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
   covered_by: []

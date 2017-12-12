@@ -1,8 +1,3 @@
----
-documentation_complete: false
-name: Maintenance
-schema_version: 3.0.0
-satisfies:
 
 - control_key: MA-2
   standard_key: NIST-800-53

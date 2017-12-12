@@ -1,9 +1,3 @@
----
-documentation_complete: false
-name: Configuration Management
-schema_version: 3.0.0
-satisfies:
-
 
 # ADMINISTRATORS NOTE ON CM-2:
 #       Implimentation of this control varies greatly between customers. Some
