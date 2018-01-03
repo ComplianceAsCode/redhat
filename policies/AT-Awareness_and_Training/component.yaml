@@ -1,8 +1,3 @@
----
-documentation_complete: false
-name: Awareness and Training
-schema_version: 3.0.0
-satisfies:
 
 # Awareness and Training controls have been moved.
 # 
@@ -12,3 +7,5 @@ satisfies:
 # For Project/Program Management Office responsibilities related to Awareness
 # and Training:
 # ../../../customer_cto_controls/policies/AT-Awareness_and_Training/component.yaml
+#
+
