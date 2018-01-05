@@ -1,4 +1,8 @@
-#
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
 #       disabling emergency and temporary accounts within the required
@@ -23,7 +27,7 @@
         configuration of Kerberos cross-realm trusts with Active Directory.
         The guide can be found at:
 
-        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth'
+        https://docs.openshift.com/container-platform/3.3/admin_solutions/'
 
 #
 # AC-2(3) NOTES:
@@ -31,7 +35,7 @@
 #       accounts after the specified period of inactivity. A successful
 #       control response will need to address all automated mechanisms
 #       involved in disabling inactive accounts.
-#       
+#
 # ADMIN NOTE:
 #       AC-2(2) disables temp/emergency accounts after period of time.
 #       AC-2(3) differs by disabling *every other* account type
@@ -53,7 +57,7 @@
         configuration of Kerberos cross-realm trusts with Active Directory.
         The guide can be found at:
 
-        https://docs.openshift.com/container-platform/3.3/admin_solutions/authentication.html#ldap-auth'
+        https://docs.openshift.com/container-platform/3.3/admin_solutions/'
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
@@ -397,7 +401,7 @@
         firewall capabilities, refer to the *Using Firewalls* section of the
         Red Hat Enterprise Linux 7 Security Guide:
 
-        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Security_Guide/sec-Using_Firewalls.html
+        https://tbd/
 
         Additionally, OpenShift nodes may be placed into Maintenance Mode. This
         designation will migrate applications from a given cluster node to

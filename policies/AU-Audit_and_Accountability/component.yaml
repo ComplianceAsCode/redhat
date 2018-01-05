@@ -1,6 +1,6 @@
 ##
-## BEGIN AUDIT SECTION
-## ./policies/AU-Audit_and_Accountability/component.yaml
+## BEGINNING OF:
+## AUDIT AND ACCOUNTABILITY
 ##
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
@@ -9,9 +9,9 @@
   narrative:
     - text: |
         '//*
-        OpenShift Administrators are responsible for configuring the 
-        offloading of audit records to a central facility. A successful 
-        control response will outline how audit records are dispatched 
+        OpenShift Administrators are responsible for configuring the
+        offloading of audit records to a central facility. A successful
+        control response will outline how audit records are dispatched
         to aggregation points.
         */'
 
@@ -23,18 +23,18 @@
     - key: a
       text: |
         '//*
-        OpenShift Administrators  are responsible for alerting personnel 
-        or roles in the event of an audit processing failure. A successful 
-        control response will outline the process taken to alert personnel 
+        OpenShift Administrators  are responsible for alerting personnel
+        or roles in the event of an audit processing failure. A successful
+        control response will outline the process taken to alert personnel
         when an auditing failure occures.
         */'
     - key: b
       text: |
         '//*
         In the event of an audit processing failure, OpenShift Administrators
-        are responsible for: overwriting the oldest audit records for low 
+        are responsible for: overwriting the oldest audit records for low
         impact systems and shutting down moderate impact systems. A successful
-        control response will outline the actions taken when an auditing 
+        control response will outline the actions taken when an auditing
         failure occurs.
         */'
 
@@ -71,7 +71,7 @@
     - key: b
       text: |
         'OpenShift logging subsystems do not alter the original contents
-        or time ordering of audit records.' 
+        or time ordering of audit records.'
 
 #       ADMINISTRATORS NOTE FOR AU-7(b):
 #       OpenShift can be configured to rely upon the underlying audit subsystem
@@ -113,7 +113,7 @@
         the system time is always kept in Coordinated Universal Time (UTC) and
         converted in applications to local time as needed. Local time is the
         actual time on your current time zone, taking into account daylight
-        savings time. 
+        savings time.
 
         OpenShift hosts are configured to use UTC by default. To manually
         verify this, the timedatectl command may be used:
@@ -134,10 +134,10 @@
   covered_by: []
   implementation_status: none
   narrative:
-#  Customers are responsible for comparing the internal information
-#  system clocks at least hourly with an authoritative time source. A
-#  successful control response will discuss the time source that system
-#  clocks are synced with.
+  #  Customers are responsible for comparing the internal information
+  #  system clocks at least hourly with an authoritative time source. A
+  #  successful control response will discuss the time source that system
+  #  clocks are synced with.
     - key: a
       text: |
         'OpenShift utilizes the time services of the underlying operating
@@ -153,8 +153,8 @@
         operating system. This control is not applicable to OpenShift.'
 
 #       ADMINISTATIVE NOTE ON AU-8(1)(b):
-#       To configure network time protocol (NTP) daemon to synchronize 
-#       against NIST time sources, edit the /etc/ntp.conf file (or create one 
+#       To configure network time protocol (NTP) daemon to synchronize
+#       against NIST time sources, edit the /etc/ntp.conf file (or create one
 #       if it does not existing already). The proper format:
 #
 #        server <<time source>> iburst
@@ -212,7 +212,7 @@
         A successful control response will discuss the way that audit records
         are backed up to a system other than the one being audited. This can
         include a centralized repository for all audit records.
-        
+
         To satisfy this control, many information system components offload
         audit records to a central service via AU-4(1).
         */'

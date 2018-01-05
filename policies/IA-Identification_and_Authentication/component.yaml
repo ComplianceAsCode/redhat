@@ -1,4 +1,7 @@
-
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
@@ -18,11 +21,11 @@
         LDAP server, such as Active Directory. OpenShift Container Platform can
         sync those LDAP records with internal OpenShift Container Platform
         records, enabling you to manage your groups in one place. OpenShift
-        Container Platform currently supports group sync with LDAP servers using
-        three common schemas for defining group membership: RFC 2307, Active
-        Directory, and augmented Active Directory. For additional information,
-        refer to “Syncing Groups with LDAP” in the OpenShift Installation and
-        Configuration guide:
+        Container Platform currently supports group sync with LDAP servers
+        using three common schemas for defining group membership: RFC 2307,
+        Active Directory, and augmented Active Directory. For additional
+        information, refer to “Syncing Groups with LDAP” in the OpenShift
+        Installation and Configuration guide:
 
         https://docs.openshift.com/container-platform/3.3/install_config/
         syncing_groups_with_ldap.html
@@ -46,7 +49,7 @@
         authentication for network access to privileged accounts.
 
         A successful control response will need to address all network-
-        accessible privileged account types and the means by which 
+        accessible privileged account types and the means by which
         multifactor authentication is enforced for each.
 
         OpenShift provides a plugable authentication architecture that can
@@ -72,8 +75,8 @@
         The customer will be responsible for implementing multifactor
         authentication for network access to non-privileged accounts.
         A successful control response will need to address all network-
-        accessible non-privileged account types and the means by which 
-        multifactor authentication is enforced for each. 
+        accessible non-privileged account types and the means by which
+        multifactor authentication is enforced for each.
         */'
 
 - control_key: IA-2 (3)
@@ -82,7 +85,7 @@
   implementation_status: none
   narrative:
     - text: |
-        'This control is not applicable to tenants of cloud computing 
+        'This control is not applicable to tenants of cloud computing
         platforms, such as OpenShift administrators.'
 
 - control_key: IA-2 (5)
@@ -123,7 +126,7 @@
         authentication such that one of the factors is provided by a device
         separate from the system gaining access. Examples are CAC and PIV
         cards.
-        
+
         A successful control response will need to address all user
         types and the means by which multifactor authentication is enforced
         for each, as well as the strength of mechanism required by the MFA
@@ -156,9 +159,9 @@
         The customer will be responsible for ensuring that customer-owned
         infrastructure is  properly authenticated prior to establishing a
         connection to the rest of the customer system. A successful control
-        response will need to address the type of infrastructure in use 
+        response will need to address the type of infrastructure in use
         (e.g. bare metal, virtual machines, etc) and the mechanism by which
-        each is authenticated.  
+        each is authenticated.
 
         OpenShift nodes can be configured with x509/PKI certificates, which
         will provide identity of the machines.
@@ -436,9 +439,9 @@
   narrative:
     - text: |
         '//*
-        The customer will be responsible for distributing 
+        The customer will be responsible for distributing
         authenticators in person with proper authorizations in place. A
-        successful control response will need to discuss the 
+        successful control response will need to discuss the
         authenticators in use, the personnel or roles serving as the
         registration authority, and the personnel or roles providing
         authorization for distribution of the authenticators.

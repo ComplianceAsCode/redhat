@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
 name: OpenShift v3
 metadata:
-  description: Red Hat OpenShift v3
+  description: Red Hat OpenShift v3.x
   maintainers:
     - Shawn Wells <shawn@redhat.com>
 

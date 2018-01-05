@@ -1,3 +1,7 @@
+##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
 
 # ADMINISTRATORS NOTE ON CM-2:
 #       Implimentation of this control varies greatly between customers. Some
@@ -42,9 +46,9 @@
 # ADMINISTRATORS NOTE ON CM-2(2):
 #       Implimentation of this control varies between customers. Some create
 #       a central configuration management system, while others expect
-#       information system components (e.g. OpenShift Adminstrators) 
-#       to create their own playbooks and store them in the centralized 
-#       service. Other customers delegate this control entirely to 
+#       information system components (e.g. OpenShift Adminstrators)
+#       to create their own playbooks and store them in the centralized
+#       service. Other customers delegate this control entirely to
 #       system component administrators.
 #
 #       If CM-6(1) is selected, which is mandatory for FISMA Moderate and
@@ -151,7 +155,7 @@
     - text: |
         'To ensure the system can cryptographically verify base software
         packages of OpenShift, the yum gpgcheck option must be enabled in the
-        underlying Red Hat Enterprise Linux. This is accomplished by applying 
+        underlying Red Hat Enterprise Linux. This is accomplished by applying
         the following Red Hat CCEs:
 
                 - CCE-26989-4: Ensure gpgcheck Enabled in Main Yum Configuration
@@ -303,7 +307,7 @@
 #       components integrate into Satellite for centralized inventory management
 #       is perfectly acceptable.
 #
-#- control_key: CM-8
+# - control_key: CM-8
 #  standard_key: NIST-800-53
 #  covered_by: []
 #  implementation_status: none
@@ -312,19 +316,20 @@
 #      text: |
 #        '//*
 #        The customer will be responsible for developing and documenting an
-#        inventory that meets FedRAMP requirements. A successful control response
-#        will include a description of how the inventory is developed and
-#        documented. This process should ensure that the inventory accurately
-#        reflects the current system, includes and components, is granular enough
-#        to support tracking and reporting, and includes any information the
-#        customer has deemed necessary to achieve effective accountability.
+#        inventory that meets FedRAMP requirements. A successful control
+#        response will include a description of how the inventory is developed
+#        and documented. This process should ensure that the inventory
+#        accurately reflects the current system, includes any components, is
+#        granular enough to support tracking and reporting, and includes any
+#        information the customer has deemed necessary to achieve effective
+#        accountability.
 #        */'
 #    - key: b
 #      text: |
 #        '//*
 #        The customer will responsible for reviewing and updating the system
 #        inventory at least monthly. This may be performed in conjunction with
-#        continuous monitoring and POA&M tracking activities. A sucessful control
+#        continuous monitoring and POA&M tracking activities. A sucessful
 #        response will need to address the personnel or roles responsible for
 #        updating the system inventory and the process for correcting gaps or
 #        discrepancies found.
