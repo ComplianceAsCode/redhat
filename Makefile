@@ -1,3 +1,3 @@
 merge:
-	cat header_opencontrol > component.yaml
+	cat header_opencontrol.yaml > component.yaml
 	cat ./policies/*/component.yaml >> component.yaml
