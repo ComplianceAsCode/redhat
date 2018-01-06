@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Identification and Authentication
-schema_version: 3.0.0
-satisfies:
+##
+## BEGIN SECTION:
+## IDENTIFICATION AND AUTHENTICATION
+##
 
 - control_key: IA-2
   standard_key: NIST-800-53
@@ -17,20 +16,21 @@ satisfies:
         need to address the credentials used to identify and authenticate
         users, both internal and external if possible.
 
-        As an Red Hat OpenStack Platform 13 Container Platform administrator, you can use groups to
-        manage users, change their permissions, and enhance collaboration. Your
-        organization may have already created user groups and stored them in an
-        LDAP server, such as Active Directory. Red Hat OpenStack Platform 13 Container Platform can
-        sync those LDAP records with internal Red Hat OpenStack Platform 13 Container Platform
-        records, enabling you to manage your groups in one place. Red Hat OpenStack Platform 13
-        Container Platform currently supports group sync with LDAP servers using
+        As an Red Hat OpenStack Platform 13 Container Platform administrator,
+        you can use groups to manage users, change their permissions, and
+        enhance collaboration. Your organization may have already created
+        user groups and stored them in an LDAP server, such as Active
+        Directory. Red Hat OpenStack Platform 13 Container Platform can
+        sync those LDAP records with internal Red Hat OpenStack Platform 13
+        Container Platform records, enabling you to manage your groups in
+        one place. Red Hat OpenStack Platform 13 Container Platform
+        currently supports group sync with LDAP servers using
         three common schemas for defining group membership: RFC 2307, Active
         Directory, and augmented Active Directory. For additional information,
-        refer to “Syncing Groups with LDAP” in the Red Hat OpenStack Platform 13 Installation and
-        Configuration guide:
+        refer to “Syncing Groups with LDAP” in the Red Hat OpenStack Platform
+        13 Installation and Configuration guide:
 
-        https://docs.openshift.com/container-platform/3.3/install_config/
-        syncing_groups_with_ldap.html
+        https://tbd/
         */'
 
 # ADMINISTRATORS NOTE ON IA-2(1):
@@ -51,20 +51,20 @@ satisfies:
         authentication for network access to privileged accounts.
 
         A successful control response will need to address all network-
-        accessible privileged account types and the means by which 
+        accessible privileged account types and the means by which
         multifactor authentication is enforced for each.
 
-        Red Hat OpenStack Platform 13 provides a plugable authentication architecture that can
-        utilize 3rd party authentication schemes that include multi-factor
-        authentication. The authentication subsystem in Red Hat OpenStack Platform 13 relies on
-        OAuth 2.0 and any system that can interact with the OAuth token service
-        over HTTPS can recieve authentication tokens. Typically this is
-        implemented using Red Hat OpenStack Platform 13s provided RequestHeaderIdentityProvider as
-        described in Section 12.3.8, Request Header, of the Red Hat OpenStack Platform 13 v3.3
-        Installation and Configuration Guide:
+        Red Hat OpenStack Platform 13 provides a plugable authentication
+        architecture that can utilize 3rd party authentication schemes that
+        include multi-factor authentication. The authentication subsystem in
+        Red Hat OpenStack Platform 13 relies on OAuth 2.0 and any system that
+        can interact with the OAuth token service over HTTPS can recieve
+        authentication tokens. Typically this is implemented using Red Hat
+        OpenStack Platform 13s provided RequestHeaderIdentityProvider as
+        described in Section 12.3.8, Request Header, of the Red Hat OpenStack
+        Platform 13 v3.3 Installation and Configuration Guide:
 
-        https://docs.openshift.com/container-platform/3.3/install_config/
-        configuring_authentication.html#RequestHeaderIdentityProvider
+        https://tbd
         */'
 
 - control_key: IA-2 (2)
@@ -77,8 +77,8 @@ satisfies:
         The customer will be responsible for implementing multifactor
         authentication for network access to non-privileged accounts.
         A successful control response will need to address all network-
-        accessible non-privileged account types and the means by which 
-        multifactor authentication is enforced for each. 
+        accessible non-privileged account types and the means by which
+        multifactor authentication is enforced for each.
         */'
 
 - control_key: IA-2 (3)
@@ -87,7 +87,7 @@ satisfies:
   implementation_status: none
   narrative:
     - text: |
-        'This control is not applicable to tenants of cloud computing 
+        'This control is not applicable to tenants of cloud computing
         platforms, such as Red Hat OpenStack Platform 13 administrators.'
 
 - control_key: IA-2 (5)
@@ -96,9 +96,10 @@ satisfies:
   implementation_status: none
   narrative:
     - text: |
-        'Red Hat OpenStack Platform 13 requires individuals to be authenticated with an individual
-        authenticator prior to any group authenticators being employed. This is
-        default, non-configurable behavior of the Red Hat OpenStack Platform 13 container
+        'Red Hat OpenStack Platform 13 requires individuals to be
+        authenticated with an individual authenticator prior to any group
+        authenticators being employed. This is default, non-configurable
+        behavior of the Red Hat OpenStack Platform 13 container
         platform. All users, remote or local, administrative or non-privileged,
         first authenticate via an individual authenticator. Once individually
         authenticated, group access/privileges will be granted as applicable.'
@@ -128,7 +129,7 @@ satisfies:
         authentication such that one of the factors is provided by a device
         separate from the system gaining access. Examples are CAC and PIV
         cards.
-        
+
         A successful control response will need to address all user
         types and the means by which multifactor authentication is enforced
         for each, as well as the strength of mechanism required by the MFA
@@ -161,12 +162,12 @@ satisfies:
         The customer will be responsible for ensuring that customer-owned
         infrastructure is  properly authenticated prior to establishing a
         connection to the rest of the customer system. A successful control
-        response will need to address the type of infrastructure in use 
+        response will need to address the type of infrastructure in use
         (e.g. bare metal, virtual machines, etc) and the mechanism by which
-        each is authenticated.  
+        each is authenticated.
 
-        Red Hat OpenStack Platform 13 nodes can be configured with x509/PKI certificates, which
-        will provide identity of the machines.
+        Red Hat OpenStack Platform 13 nodes can be configured with x509/PKI
+        certificates, which will provide identity of the machines.
         */'
 
 - control_key: IA-4
@@ -441,9 +442,9 @@ satisfies:
   narrative:
     - text: |
         '//*
-        The customer will be responsible for distributing 
+        The customer will be responsible for distributing
         authenticators in person with proper authorizations in place. A
-        successful control response will need to discuss the 
+        successful control response will need to discuss the
         authenticators in use, the personnel or roles serving as the
         registration authority, and the personnel or roles providing
         authorization for distribution of the authenticators.
@@ -517,8 +518,9 @@ satisfies:
         authentication scenarios that might arise and the mechanism used
         to obscure feedback diring each.
 
-        Red Hat OpenStack Platform 13 natively obscures such information. Red Hat OpenStack Platform 13 cannot be
-        configured to be out of compliance with this requirement.
+        Red Hat OpenStack Platform 13 natively obscures such information.
+        Red Hat OpenStack Platform 13 cannot be configured to be out of
+        compliance with this requirement.
         */'
 
 - control_key: IA-7
@@ -528,14 +530,15 @@ satisfies:
   narrative:
     - text: |
         '//*
-        Administrative access to Red Hat OpenStack Platform 13 nodes is performed over SSH. To
-        limit SSH ciphers to those algorithms which are FIPS-approved, update
-        the following line in /etc/ssh/sshd_config:
+        Administrative access to Red Hat OpenStack Platform 13 nodes is
+        performed over SSH. To limit SSH ciphers to those algorithms which
+        are FIPS-approved, update the following line in /etc/ssh/sshd_config:
 
         Ciphers aes128,aes192-ctr,aes256-ctr
 
-        The Red Hat OpenStack Platform 13 Console, which is the web interface to the system,
-        automatically converts incoming authentication requests to HTTPS.
+        The Red Hat OpenStack Platform 13 Console, which is the web
+        interface to the system, automatically converts incoming
+        authentication requests to HTTPS.
         */'
 
 - control_key: IA-8

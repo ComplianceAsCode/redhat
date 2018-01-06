@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Configuration Management
-schema_version: 3.0.0
-satisfies:
+##
+## BEGIN SECTION:
+## CONFIGURATION MANAGEMENT
+##
 
 
 # ADMINISTRATORS NOTE ON CM-2:
@@ -13,8 +12,9 @@ satisfies:
 #       however it's best to double check with the Information System owner
 #       on expectations (component vs central CM).
 #
-#       In case the customer desires components (e.g. Red Hat OpenStack Platform 13 Admins) to
-#       handle configuration management the lines below can be uncommented:
+#       In case the customer desires components (e.g. Red Hat OpenStack
+#       Platform 13 Admins) to handle configuration management the lines
+#       below can be uncommented:
 #
 #- control_key: CM-2
 #  standard_key: NIST-800-53
@@ -48,17 +48,18 @@ satisfies:
 # ADMINISTRATORS NOTE ON CM-2(2):
 #       Implimentation of this control varies between customers. Some create
 #       a central configuration management system, while others expect
-#       information system components (e.g. Red Hat OpenStack Platform 13 Adminstrators) 
-#       to create their own playbooks and store them in the centralized 
-#       service. Other customers delegate this control entirely to 
+#       information system components (e.g. Red Hat OpenStack Platform 13
+#       Adminstrators)
+#       to create their own playbooks and store them in the centralized
+#       service. Other customers delegate this control entirely to
 #       system component administrators.
 #
 #       If CM-6(1) is selected, which is mandatory for FISMA Moderate and
 #       FedRAMP systems, the organization must centrally employ automated
 #       mechanisms for configuration management (e.g. Ansible Tower).
 #
-#       In such cases, a proper response would illistrate how Red Hat OpenStack Platform 13
-#       administrators will provide configuration management content
+#       In such cases, a proper response would illistrate how Red Hat OpenStack
+#       Platform 13 administrators will provide configuration management content
 #       (e.g. Ansible Playbooks) to the central service (e.g. Ansible
 #       Tower).
 #
@@ -92,8 +93,8 @@ satisfies:
 
 # ADMINISTRATORS NOTE ON CM-2(7):
 #       This control relates to organizations issuing equipment, e.g. laptops,
-#       to employees. Unless Red Hat OpenStack Platform 13 is being deployed on mobile equipment
-#       this control is not applicable.
+#       to employees. Unless Red Hat OpenStack Platform 13 is being deployed on
+#       mobile equipment this control is not applicable.
 #
 - control_key: CM-2 (7)
   standard_key: NIST-800-53
@@ -156,9 +157,9 @@ satisfies:
   narrative:
     - text: |
         'To ensure the system can cryptographically verify base software
-        packages of Red Hat OpenStack Platform 13, the yum gpgcheck option must be enabled in the
-        underlying Red Hat Enterprise Linux. This is accomplished by applying 
-        the following Red Hat CCEs:
+        packages of Red Hat OpenStack Platform 13, the yum gpgcheck option must
+        be enabled in the underlying Red Hat Enterprise Linux. This is
+        accomplished by applying the following Red Hat CCEs:
 
                 - CCE-26989-4: Ensure gpgcheck Enabled in Main Yum Configuration
                 - CCE-26957-1: Ensure Red Hat GPG Key Installed
@@ -253,9 +254,9 @@ satisfies:
         include processes used to detect unauthorized software, or any
         whitelisting used.
 
-        Red Hat OpenStack Platform 13 utilizes trusted container registries to house white-listed
-        container images. The organization should define process for managing
-        said trusted registries to satisfy this control.
+        Red Hat OpenStack Platform 13 utilizes trusted container registries to
+        house white-listed container images. The organization should define
+        process for managing said trusted registries to satisfy this control.
         */'
 
 - control_key: CM-7 (5)
@@ -299,13 +300,15 @@ satisfies:
 
 #       ADMINISTRATORS NOTE ON CM-8:
 #       Implimentation of this control varies between customers. Some agencies
-#       maintain an inventory that state "Red Hat OpenStack Platform 13," whereas others want
-#       named RPMs installed on the Red Hat OpenStack Platform 13 components. The vast majority
-#       follow the "Red Hat OpenStack Platform 13" listings. For those that do not, and want
+#       maintain an inventory that state "Red Hat OpenStack Platform 13,"
+#       whereas others want named RPMs installed on the Red Hat OpenStack
+#       Platform 13 components. The vast majority follow the "Red Hat
+#       OpenStack Platform 13" listings. For those that do not, and want
 #       complete listings of underlying RPMs, the following section should be
 #       uncommented and updated.
 #
-#       If Satellite is managing the Red Hat OpenStack Platform 13 nodes, documenting how Red Hat OpenStack Platform 13
+#       If Satellite is managing the Red Hat OpenStack Platform 13 nodes,
+#       documenting how Red Hat OpenStack Platform 13
 #       components integrate into Satellite for centralized inventory management
 #       is perfectly acceptable.
 #
@@ -318,22 +321,24 @@ satisfies:
 #      text: |
 #        '//*
 #        The customer will be responsible for developing and documenting an
-#        inventory that meets FedRAMP requirements. A successful control response
-#        will include a description of how the inventory is developed and
-#        documented. This process should ensure that the inventory accurately
-#        reflects the current system, includes and components, is granular enough
-#        to support tracking and reporting, and includes any information the
-#        customer has deemed necessary to achieve effective accountability.
+#        inventory that meets FedRAMP requirements. A successful control
+#        response will include a description of how the inventory is developed
+#        and documented. This process should ensure that the inventory
+#        accurately
+#        reflects the current system, includes and components, is granular
+#        enough to support tracking and reporting, and includes any
+#        information the customer has deemed necessary to achieve
+#        effective accountability.
 #        */'
 #    - key: b
 #      text: |
 #        '//*
 #        The customer will responsible for reviewing and updating the system
 #        inventory at least monthly. This may be performed in conjunction with
-#        continuous monitoring and POA&M tracking activities. A sucessful control
-#        response will need to address the personnel or roles responsible for
-#        updating the system inventory and the process for correcting gaps or
-#        discrepancies found.
+#        continuous monitoring and POA&M tracking activities. A sucessful
+#        control response will need to address the personnel or roles
+#        responsible for updating the system inventory and the process
+#        for correcting gaps or discrepancies found.
 #        */'
 
 - control_key: CM-8 (1)

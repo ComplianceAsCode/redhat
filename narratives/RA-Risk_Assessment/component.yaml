@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Risk Assessment
-schema_version: 3.0.0
-satisfies:
+##
+## BEGIN SECTION:
+## RISK ASSESSMENT
+##
 
 - control_key: RA-5
   standard_key: NIST-800-53

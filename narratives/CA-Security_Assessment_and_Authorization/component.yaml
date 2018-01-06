@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Security Assessment and Authorization
-schema_version: 3.0.0
-satisfies:
+##
+## BEGIN SECTION:
+## SECURITY ASSESSMENT AND AUTHORIZATION
+##
 
 - control_key: CA-2
   standard_key: NIST-800-53

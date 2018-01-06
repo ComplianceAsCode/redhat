@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Systems and Communications Protection
-schema_version: 3.0.0
-satisfies:
+##
+## BEGIN SECTION:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
 
 - control_key: SC-2
   standard_key: NIST-800-53
@@ -126,8 +125,8 @@ satisfies:
     - text: |
         '//*
         The customer will be responsible for implementing mechanisms to
-        ensure Red Hat OpenStack Platform 13 nodes to not act as proxy or relay servers between
-        internal and external networks.
+        ensure Red Hat OpenStack Platform 13 nodes to not act as proxy or
+        relay servers between internal and external networks.
         */'
 
 - control_key: SC-7 (12)
@@ -149,9 +148,9 @@ satisfies:
   narrative:
     - text: |
         '//*
-        The customer will be responsible for ensuring that Red Hat OpenStack Platform 13 is
-        isolated from other internal information system components by
-        implementing physically separate subnetworks with managed
+        The customer will be responsible for ensuring that Red Hat OpenStack
+        Platform 13 is isolated from other internal information system
+        components by implementing physically separate subnetworks with managed
         interfaces to other components of the system. A successful control
         response will discuss the networking configuration to satisfy this
         control.
@@ -219,9 +218,9 @@ satisfies:
         ciphers and protocols for all network sessions.
 
         Red Hat Enterprise Linux 7, the underlying operating system for
-        Red Hat OpenStack Platform 13, has achieved FIPS 140-2 certification. For documentation
-        of certifications, please visit the US Government Certifications
-        webpage:
+        Red Hat OpenStack Platform 13, has achieved FIPS 140-2 certification.
+        For documentation of certifications, please visit the US Government
+        Certifications webpage:
 
         https://www.redhat.com/en/technologies/industries/government/standards
 
@@ -234,9 +233,10 @@ satisfies:
   narrative:
     - text: |
         '//*
-        Red Hat OpenStack Platform 13 relies on the cryptographic services of the underlying
-        operating system, Red Hat Enterprise Linux. To ensure RHEL is configured
-        in FIPS mode, follow CCE-80359-3, "Enable FIPS Mode in GRUB2".
+        Red Hat OpenStack Platform 13 relies on the cryptographic
+        services of the underlying operating system, Red Hat Enterprise
+        Linux. To ensure RHEL is configured in FIPS mode, follow
+        CCE-80359-3, "Enable FIPS Mode in GRUB2".
         */'
 
 - control_key: SC-18
@@ -327,8 +327,8 @@ satisfies:
         various types of attacks against session authenticity and the
         mechanisms used to protect against those attacks.
 
-        Red Hat OpenStack Platform 13 uses various TLS algorithms and ciphers to protect
-        the authenticity of communications sessions.
+        Red Hat OpenStack Platform 13 uses various TLS algorithms and
+        ciphers to protect the authenticity of communications sessions.
         */'
 
 - control_key: SC-28
@@ -356,9 +356,10 @@ satisfies:
         transport.
 
         When running on Red Hat Enterprise Linux, full disk encryption
-        is possible for data at rest on the Red Hat OpenStack Platform 13 nodes. For data
-        in transport, Red Hat OpenStack Platform 13 uses cryptographic algorithms and ciphers to
-        protect confidentiality and integrity of data in transport.
+        is possible for data at rest on the Red Hat OpenStack Platform 13
+        nodes. For data in transport, Red Hat OpenStack Platform 13 uses
+        cryptographic algorithms and ciphers to protect confidentiality
+        and integrity of data in transport.
         */'
 
 - control_key: SC-39

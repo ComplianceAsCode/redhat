@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Contingency Planning
-schema_version: 3.0.0
-satisfies:
+##
+## BEGIN SECTION:
+## CONTINGENCY PLANNING
+##
 
 - control_key: CP-9
   standard_key: NIST-800-53

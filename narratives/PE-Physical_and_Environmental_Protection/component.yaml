@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Physical and Environmental Protection
-schema_version: 3.0.0
-satisfies:
+##
+## BEGIN SECTION:
+## PHYSICAL AND ENVIRONMENTAL PROTECTION
+##
 
 # This is generally the guys with guns section. TBD.
 

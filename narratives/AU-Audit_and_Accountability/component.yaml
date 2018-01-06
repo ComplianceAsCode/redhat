@@ -1,8 +1,7 @@
----
-documentation_complete: false
-name: Audit and Accountability
-schema_version: 3.0.0
-satisfies:
+##
+## BEGINNING SECTION:
+## AUDIT AND ACCOUNTABILITY
+##
 
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
@@ -11,10 +10,10 @@ satisfies:
   narrative:
     - text: |
         '//*
-        Red Hat OpenStack Platform 13 Administrators are responsible for configuring the 
-        offloading of audit records to a central facility. A successful 
-        control response will outline how audit records are dispatched 
-        to aggregation points.
+        Red Hat OpenStack Platform 13 Administrators are responsible for
+        configuring the offloading of audit records to a central facility.
+        A successful control response will outline how audit records are
+        dispatched to aggregation points.
         */'
 
 - control_key: AU-5
@@ -25,19 +24,19 @@ satisfies:
     - key: a
       text: |
         '//*
-        Red Hat OpenStack Platform 13 Administrators  are responsible for alerting personnel 
-        or roles in the event of an audit processing failure. A successful 
-        control response will outline the process taken to alert personnel 
-        when an auditing failure occures.
+        Red Hat OpenStack Platform 13 Administrators  are responsible for
+        alerting personnel or roles in the event of an audit processing
+        failure. A successful control response will outline the process
+        taken to alert personnel when an auditing failure occures.
         */'
     - key: b
       text: |
         '//*
-        In the event of an audit processing failure, Red Hat OpenStack Platform 13 Administrators
-        are responsible for: overwriting the oldest audit records for low 
-        impact systems and shutting down moderate impact systems. A successful
-        control response will outline the actions taken when an auditing 
-        failure occurs.
+        In the event of an audit processing failure, Red Hat OpenStack
+        Platform 13 Administrators are responsible for: overwriting the oldest
+        audit records for low impact systems and shutting down moderate impact
+        systems. A successful control response will outline the actions taken
+        when an auditing failure occurs.
         */'
 
 - control_key: AU-7
@@ -47,9 +46,11 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'Red Hat OpenStack Platform 13 embeds the Elasticsearch, Fluentd, and Kibana (EFK) stack.
+        'Red Hat OpenStack Platform 13 embeds the Elasticsearch, Fluentd, and
+        Kibana (EFK) stack.
         This pre-integrated audit reduction capability aggregates logs from
-        nodes and applications running inside your Red Hat OpenStack Platform 13 Container Platform.
+        nodes and applications running inside your Red Hat OpenStack Platform
+        13 Container Platform.
         Once deployed it uses Fluentd to aggregate log events from all the
         nodes, projects, and pods into Elasticsearch (ES). It also provides a
         centralized Kibana web UI where users and administrators can create
@@ -72,14 +73,15 @@ satisfies:
 
     - key: b
       text: |
-        'Red Hat OpenStack Platform 13 logging subsystems do not alter the original contents
-        or time ordering of audit records.' 
+        'Red Hat OpenStack Platform 13 logging subsystems do not alter the
+        original contents or time ordering of audit records.'
 
 #       ADMINISTRATORS NOTE FOR AU-7(b):
-#       Red Hat OpenStack Platform 13 can be configured to rely upon the underlying audit subsystem
-#       of Red Hat Enterprise Linux. This subsystem has undergone Common
-#       Criteria certification testing which verified log integrity during
-#       remote transmittal. Certification documents can be found publicly at:
+#       Red Hat OpenStack Platform 13 can be configured to rely upon the
+#       underlying audit subsystem of Red Hat Enterprise Linux. This subsystem
+#       has undergone Common Criteria certification testing which verified log
+#       integrity during remote transmittal. Certification documents can be
+#       found publicly at:
 #
 #       https://www.redhat.com/en/technologies/industries/government/standards
 
@@ -105,20 +107,20 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'Red Hat OpenStack Platform 13 logs are generated using the internal system clock by
-        default. This is non-configurable behavior.'
+        'Red Hat OpenStack Platform 13 logs are generated using the internal
+        system clock by default. This is non-configurable behavior.'
 
     - key: b
       text: |
-        'Red Hat OpenStack Platform 13 time keeping relies on the time services provided by the
-        underlying operating system. When running on Red Hat Enterprise Linux,
-        the system time is always kept in Coordinated Universal Time (UTC) and
-        converted in applications to local time as needed. Local time is the
-        actual time on your current time zone, taking into account daylight
-        savings time. 
+        'Red Hat OpenStack Platform 13 time keeping relies on the time services
+        provided by the underlying operating system. When running on Red Hat
+        Enterprise Linux, the system time is always kept in Coordinated
+        Universal Time (UTC) and converted in applications to local time as
+        needed. Local time is the actual time on your current time zone, taking
+        into account daylight savings time.
 
-        Red Hat OpenStack Platform 13 hosts are configured to use UTC by default. To manually
-        verify this, the timedatectl command may be used:
+        Red Hat OpenStack Platform 13 hosts are configured to use UTC by
+        default. To manually verify this, the timedatectl command may be used:
 
         $ timedatectl set-local-rtc no'
 
@@ -136,14 +138,15 @@ satisfies:
   covered_by: []
   implementation_status: none
   narrative:
-#  Customers are responsible for comparing the internal information
-#  system clocks at least hourly with an authoritative time source. A
-#  successful control response will discuss the time source that system
-#  clocks are synced with.
+    #  Customers are responsible for comparing the internal information
+    #  system clocks at least hourly with an authoritative time source. A
+    #  successful control response will discuss the time source that system
+    #  clocks are synced with.
     - key: a
       text: |
-        'Red Hat OpenStack Platform 13 utilizes the time services of the underlying operating
-        system. This control is not applicable to Red Hat OpenStack Platform 13.'
+        'Red Hat OpenStack Platform 13 utilizes the time services of the
+        underlying operating system. This control is not applicable to Red
+        Hat OpenStack Platform 13.'
 
 #  Customers are responsible for synchonizing internal system clocks to
 #  the authoritative time source when the time difference is greater than
@@ -151,12 +154,13 @@ satisfies:
 #  discuss how system clocks are synced.
     - key: b
       text: |
-        'Red Hat OpenStack Platform 13 utilizes the time services of the underyling operating
-        operating system. This control is not applicable to Red Hat OpenStack Platform 13.'
+        'Red Hat OpenStack Platform 13 utilizes the time services of the
+        underyling operating operating system. This control is not applicable
+        to Red Hat OpenStack Platform 13.'
 
 #       ADMINISTATIVE NOTE ON AU-8(1)(b):
-#       To configure network time protocol (NTP) daemon to synchronize 
-#       against NIST time sources, edit the /etc/ntp.conf file (or create one 
+#       To configure network time protocol (NTP) daemon to synchronize
+#       against NIST time sources, edit the /etc/ntp.conf file (or create one
 #       if it does not existing already). The proper format:
 #
 #        server <<time source>> iburst
@@ -175,8 +179,9 @@ satisfies:
 #   are used by the system.
     - key: 'Req. 1'
       text: |
-        'Red Hat OpenStack Platform 13 utilizes the time services of the underyling operating
-        operating system. This control is not applicable to Red Hat OpenStack Platform 13.'
+        'Red Hat OpenStack Platform 13 utilizes the time services of the
+        underyling operating operating system. This control is not applicable
+        to Red Hat OpenStack Platform 13.'
 
 #   Req. 2: Customers are responsible for syncronizing the system clocks of
 #   network computers that run operating systems other than Windows to the
@@ -185,8 +190,9 @@ satisfies:
 #   services are for non-Windows systems.
     - key: 'Req. 2'
       text: |
-        'Red Hat OpenStack Platform 13 utilizes the time services of the underyling operating
-        operating system. This control is not applicable to Red Hat OpenStack Platform 13.'
+        'Red Hat OpenStack Platform 13 utilizes the time services of the
+        underyling operating operating system. This control is not applicable
+        to Red Hat OpenStack Platform 13.'
 
 - control_key: AU-9
   standard_key: NIST-800-53
@@ -214,7 +220,7 @@ satisfies:
         A successful control response will discuss the way that audit records
         are backed up to a system other than the one being audited. This can
         include a centralized repository for all audit records.
-        
+
         To satisfy this control, many information system components offload
         audit records to a central service via AU-4(1).
         */'
@@ -245,8 +251,8 @@ satisfies:
 
         Audit rules may be added/removed through modifying the
         /etc/audit/audit.rules or applicable file under /etc/audit/rules.d/. It
-        is recommended that Red Hat OpenStack Platform 13 specific audit rules be added to
-        /etc/audit/rules.d/openshift.rules.
+        is recommended that Red Hat OpenStack Platform 13 specific audit rules
+        be added to /etc/audit/rules.d/openshift.rules.
         */'
     - key: c
       text: |
