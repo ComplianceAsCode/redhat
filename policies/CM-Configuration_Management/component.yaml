@@ -14,19 +14,24 @@
 #       In case the customer desires components (e.g. OpenShift Admins) to
 #       handle configuration management the lines below can be uncommented:
 #
-#- control_key: CM-2
-#  standard_key: NIST-800-53
-#  covered_by: []
-#  implementation_status: none
-#  narrative:
-#    - text: |
-#        '//*
-#        The customer will be responsible for developing, documenting, and
-#        maintaining configuration control, a current baseline configuration
-#        of the information system. A successful control response will need to
-#        address the way the baseline configurations are managed and
-#        maintained.
-#        */'
+
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: CM-2 (1)
   standard_key: NIST-800-53
@@ -123,16 +128,11 @@
 - control_key: CM-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: Not applicable
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for analyzing changes to the
-        information system to determine potential security impacts prior to
-        change implementation. A successful control response will explain the
-        process used to analyze changes before their implementation. This can
-        include any analysis and testing done prior to implementation.
-        */'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: CM-5 (1)
   standard_key: NIST-800-53
@@ -168,50 +168,31 @@
 - control_key: CM-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: b
       text: |
-        '//*
-        The customer will be responsible for implementing configuration
+        'The customer will be responsible for implementing configuration
         settings as defined in CM-6(a). A successful control response will
         describe how mandatory configuration settings are implemented. This can
-        include the process or documentation followed.
-        */'
+        include the process or documentation followed.'
     - key: d
       text: |
-        '//*
-        The customer will be responsible for monitoring and controlling
+        'The customer will be responsible for monitoring and controlling
         changes to the configuration settings in accordance with organization
         policies and procedures. A successful control response will describe
         how changes are controlled and monitored. This can include limitations
         to privileges, how these changes are audited, and any tools in place to
-        track and approve changes.
-        */'
+        track and approve changes.'
 
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: Not applicable
   narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for configuring the information
-        system to only provide essential capabilities. A successful control
-        response will describe the process used to ensure that information
-        systems only provide essential capabilites. This can include such things
-        as using USGCB guidance to help ensure that only essential functions
-        are provided.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for prohibiting or restricting the
-        use of functions, ports, protocols, and/or services following the
-        USGCB guidance. A successful control response will describe the process
-        used determine functions, ports, protocols, and services to restrict
-        or prohibit, using USGCB guidance.
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
         */'
 
 - control_key: CM-7 (1)
@@ -307,33 +288,14 @@
 #       components integrate into Satellite for centralized inventory management
 #       is perfectly acceptable.
 #
-# - control_key: CM-8
-#  standard_key: NIST-800-53
-#  covered_by: []
-#  implementation_status: none
-#  narrative:
-#    - key: a
-#      text: |
-#        '//*
-#        The customer will be responsible for developing and documenting an
-#        inventory that meets FedRAMP requirements. A successful control
-#        response will include a description of how the inventory is developed
-#        and documented. This process should ensure that the inventory
-#        accurately reflects the current system, includes any components, is
-#        granular enough to support tracking and reporting, and includes any
-#        information the customer has deemed necessary to achieve effective
-#        accountability.
-#        */'
-#    - key: b
-#      text: |
-#        '//*
-#        The customer will responsible for reviewing and updating the system
-#        inventory at least monthly. This may be performed in conjunction with
-#        continuous monitoring and POA&M tracking activities. A sucessful
-#        response will need to address the personnel or roles responsible for
-#        updating the system inventory and the process for correcting gaps or
-#        discrepancies found.
-#        */'
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
@@ -373,6 +335,14 @@
         to that system.
         */'
 
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 # ADMINISTRATORS NOTE ON CM-11:
 #       This would be a good place to demarcate installation of software
@@ -381,20 +351,8 @@
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: Not applicable
   narrative:
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for enforcing installation policies
-        using a defined method. A successful control response will describe the
-        process used to enforce installation policies. This can include
-        references to configuration control processes.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for monitoring compliance
-        continuously. A successful control response will describe the process
-        used to monitor compliance of installation policies.
-        */'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'

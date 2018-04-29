@@ -2,6 +2,33 @@
 ## BEGINNING OF:
 ## ACCESS CONTROL
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-1 is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-2 is an organizational control outside the scope of OpenShift
+        configuration. Technical enablement of the organizational processes
+        are covered in AC-2 subcontrols, such as AC-2(2) and AC-2(3).'
+
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -16,18 +43,10 @@
   implementation_status: Not applicable
   narrative:
     - text: |
-        'OpenShift relies upon 3rd party authentication providers, such as
-        Microsoft Active Directory, Red Hat IdM, or LDAP. By relying on 3rd
-        party authentication providers, OpenShift is not responsible for
-        automatic disablement of temporary and emergency accounts after a
-        configured period of time.
-
-        Refer to the LDAP Authentication section of the OpenShift
-        Administrators Guide for configuration references to 3rd parties, e.g.
-        configuration of Kerberos cross-realm trusts with Active Directory.
-        The guide can be found at:
-
-        https://docs.openshift.com/container-platform/3.3/admin_solutions/'
+        'OpenShift relies upon 3rd party authentication
+        providers, such as Microsoft Active Directory, Red Hat IdM, or LDAP.
+        By relying on 3rd party authentication providers this control
+        is not applicable to OpenShift.'
 
 #
 # AC-2(3) NOTES:
@@ -43,21 +62,14 @@
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: Not applicable
   narrative:
     - text: |
-        'OpenShift relies upon 3rd party authentication providers, such as
-        Microsoft Active Directory, Red Hat IdM, or LDAP. By relying on 3rd
-        party authentication providers, OpenShift is not responsible for
-        automatic disablement of inactive accounts after a configured period
-        of time.
-
-        Refer to the LDAP Authentication section of the OpenShift
-        Administrators Guide for configuration references to 3rd parties, e.g.
-        configuration of Kerberos cross-realm trusts with Active Directory.
-        The guide can be found at:
-
-        https://docs.openshift.com/container-platform/3.3/admin_solutions/'
+        'Red Hat OpenShift Container Platform relies upon 3rd party authentication
+        providers, such as Microsoft Active Directory, Red Hat IdM, or LDAP.
+        By relying on 3rd party authentication providers Red Hat Container
+        Platform is not responsible for automatic disablement of inactive
+        accounts after a configured period of time.'
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
@@ -120,17 +132,28 @@
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        Documentation on OpenShift Authorization frameworks can be found
-        online. Each OpenShift deployment may chose differing authorization
-        processes/configurations. Documentation can be found at:
+        'Authorization policies determine whether a user is allowed to perform
+        a given action within an OpenShift project. This allows platform
+        administrators to use policy to control who has various access levels
+        to the OpenShift Container Platform itself and all projects. It also
+        allows developers to use local policy to control who has access to
+        their projects. Note that authorization is a separate step from
+        authentication, which is more about determining the identity of who
+        is taking the action.
+
+        Documentation of OpenShift authorization frameworks and policies 
+        can be found in the OpenShift Architecture documentation:
 
         https://docs.openshift.com/container-platform/3.3/architecture/
         additional_concepts/authorization.html
-        */'
+
+        Each OpenShift deployment is unique in their rules, roles,
+        policy bindings. This section should be updated with deployment
+        specific details on how the authorization policy has been
+        configured.'
 
 - control_key: AC-4
   standard_key: NIST-800-53
@@ -209,45 +232,57 @@
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        The customer will be responsible for enforcing a limit on consecutive
+        'The customer will be responsible for enforcing a limit on consecutive
         failed login attempts.
-        */'
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-1'
     - key: b
       text: |
-        '//*
-        The customer will be responsible for taking the FedRAMP required
+        'The customer will be responsible for taking the FedRAMP required
         actions defined by the customer, upon account lockout.
-        */'
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-2'
 
 - control_key: AC-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        The customer will be responsible for displaying a system use
+        'The customer will be responsible for displaying a system use
         notification banner to users. A successful control response will need
         to address the conditions under which the banner will be displayed
         (if a non-government user accesses the system, the system use
         notification banner may not be appropriate), as well as the contents
         of the nofication message.
-        */'
+
+        In context of OpenShift, a banner must be displayed for all means
+        of accessing OpenShift itself (e.g. service consoles, remote access
+        through SSH, etc).
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-3'
     - key: b
       text: |
-        '//*
-        The customer will be responsible for displaying the use notification
+        'The customer will be responsible for displaying the use notification
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
         acknowlegement and move forward.
-        */'
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-4'
     - key: c
       text: |
         '
@@ -340,6 +375,26 @@
         or conditions.
         */'
 
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Regardless of access mechanism, such as the OpenShift Console or remote
+        access attempts through SSH, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-confiurable behavior.'
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -412,6 +467,15 @@
         for tenant applications immediately.
         */'
 
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative: 
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
 - control_key: AC-18 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -424,3 +488,30 @@
         document how, if wireless connectivity is permitted, users and devices
         authenticate to the wireless network.
         */'
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
