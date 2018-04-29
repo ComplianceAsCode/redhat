@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
-name: OpenShift v3
+name: OpenShift Container Platform 3.x
 metadata:
-  description: Red Hat OpenShift v3.x
+  description: OpenShift Container Platform 3.x
   maintainers:
     - Shawn Wells <shawn@redhat.com>
 

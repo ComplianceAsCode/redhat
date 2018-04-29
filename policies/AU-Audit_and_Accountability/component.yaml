@@ -2,6 +2,66 @@
 ## BEGINNING OF:
 ## AUDIT AND ACCOUNTABILITY
 ##
+
+
+- control_key: AU-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+        NOTE: The organization-defined auditable events are configured in
+        OpenShift through actions specified in AU-12.'
+
+
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift audit records contain this information by default. No
+        additional configuration is required.'
+
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift. This control is reflected
+        in proper disk partitioning of the underlying Operating System.
+
+        Within OpenShift, the Elasticsearch, Fluentd, and Kibana (EFK) stack
+        aggregates logs from nodes and applications running inside your OpenShift
+        Enterprise installation. Once deployed it uses Fluentd to aggregate logs
+        from all nodes, projects, and pods into Elasticsearch. OpenShift also
+        provides a centralized Kibana web UI where users and administrators can
+        create rich visualizations and dashboards with aggregated data.
+
+        To properly plan for audit log retention, refer to "Storage Considerations"
+        of the OpenShift installation and configuration guide. Production
+        installations often generate in excess of 50GB/day of audit information.
+
+        OpenShift Documentation:
+
+        https://docs.openshift.com/enterprise/3.2/install_config/aggregate_logging_sizing.html#install-config-aggregate-logging-sizing-guidelines-storage'
+
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -18,25 +78,30 @@
 - control_key: AU-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        OpenShift Administrators  are responsible for alerting personnel
+        'OpenShift Administrators  are responsible for alerting personnel
         or roles in the event of an audit processing failure. A successful
         control response will outline the process taken to alert personnel
-        when an auditing failure occures.
-        */'
+        when an auditing failure occures.'
     - key: b
       text: |
-        '//*
-        In the event of an audit processing failure, OpenShift Administrators
+        'In the event of an audit processing failure, OpenShift Administrators
         are responsible for: overwriting the oldest audit records for low
         impact systems and shutting down moderate impact systems. A successful
         control response will outline the actions taken when an auditing
-        failure occurs.
-        */'
+        failure occurs.'
+
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: AU-7
   standard_key: NIST-800-53
@@ -99,7 +164,7 @@
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: complete
   narrative:
     - key: a
       text: |
@@ -118,16 +183,14 @@
         OpenShift hosts are configured to use UTC by default. To manually
         verify this, the timedatectl command may be used:
 
-        $ timedatectl set-local-rtc no'
+        $ timedatectl set-local-rtc no
 
-#       ADMINISTRATORS NOTE FOR AU-8(b):
-#
-#       Refer to the RHEL7 Administrators Guide for additional information on
-#       configuring time on OpenShift nodes:
-#
-#       https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
-#       7/html/System_Administrators_Guide/chap-Configuring_the_Date_and_Time.
-#       html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone
+        ADMINISTRATORS NOTE FOR AU-8(b)
+
+        Refer to the RHEL7 Administrators Guide for additional information on
+        configuring time on OpenShift nodes:
+
+        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/chap-Configuring_the_Date_and_Time.html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone'
 
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
@@ -189,16 +252,19 @@
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        Customers are required to protect the audit information and audit
+        'Customers are required to protect the audit information and audit
         tools from unauthorized access, modification, and deletion. A successful
         control response will discuss the way that audit information and tools
         are protected. This can include how access is controlled to audit
         information and tools.
-        */'
+
+        Documentation/instructions on protecting OpenShift audit information
+        is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-6'
 
 - control_key: AU-9 (2)
   standard_key: NIST-800-53
@@ -217,10 +283,21 @@
         audit records to a central service via AU-4(1).
         */'
 
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative: 
+    - text: |
+        'Documentation/instructions on audit retention is being tracked
+        in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-7'
+
 - control_key: AU-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: a
       text: |
