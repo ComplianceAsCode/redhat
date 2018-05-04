@@ -35,23 +35,45 @@
 - control_key: PS-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: Not applicable
   narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for disabling system access for
-        terminated employees on the day of termination. A successful control
-        response will need to address the process by which access disablement
-        is requested, as well as the personnel responsible for initiating and
-        completing the request.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for terminating or revoking
-        authenticators and credentials associated with terminated individuals. A
-        successful control response will need to discuss the authenticators/
-        credentials to be terminated/revoked, as well as the process for
-        terminating or revoking each.
-        */'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+
+- control_key: PS-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'

@@ -7,62 +7,52 @@
   covered_by: []
   implementation_status: Not applicable
   narrative:
-    - key: a
-      text: |
-        'This organizational control is not applicable to the configuration
-        of Red Hat OpenShift Container Platform.'
-    - key: b
-      text: |
-        'This organizational control is not applicable to the configuration
-        of Red Hat OpenShift Container Platform.'
-
+    text: |
+      'This control reflects organizational procedures/policies, and is not
+      applicable to the configuration of OpenShift.'
+    
 - control_key: SI-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        The customer will be responsible for analyzing their applications for
+        'The customer will be responsible for analyzing their OpenShift deployment for
         flaws, reporting on those flaws, and correcting them. A successful
         control response will include a discussion of the process by which
         flaws are discovered and remediated, as well as tools that are used to
         assist in detection and remediation.
-        */'
+
+        Documentation of the overall process of vulnerability identification to
+        patching is forthcoming. This work is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-31'
     - key: b
       text: |
-        '//*
-        The customer will be responsible for testing application updates
+        'The customer will be responsible for testing OpenShift updates
         related to flaw remediation prior to installation. A successful
         control response will discuss the testing process (e.g. the
         nature of the test environment, the types of testing performed,
         the tools in testing, etc.).
-        */'
+
+        Documentation regarding suggested testing procedures is forthcoming.
+        This work is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-32'
     - key: c
       text: |
-        '//*
-        The customer will be responsible for installing security-relevant
-        software updates to their application within 30 days of the release of
-        those updates. A successful control response will detail how the
-        customer ensures that this update schedule can be met while still
-        performing sufficient testing.
-        */'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
     - key: d
       text: |
-        '//*
-        The customer will be responsible for incorporating flaw remediation
-        activities into their organizational configuration management process.
-        A successful control response will address how flaws are categorized
-        in terms of the types of changes that are subject to configuration
-        management, as well as the approval process for remediation activities
-        (see the CM family of controls).
-        */'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
         '//*
@@ -102,50 +92,33 @@
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        The customer is responsible for ensuring that they employ malicious
+        'The customer is responsible for ensuring that they employ malicious
         code protection at information system entry, and exit points to detect
         and eradicate malicious code. A successful control response will need
         to address use of code protection mechanisms to protect assets from
         malicious software (i.e. Viruses, malware, rootkits, worms, and
-        scripts).
-        */'
+        scripts). In regards to OpenShift, this is generally through
+        integrating third party tools into CI/CD pipelines.
+
+        Documentation and suggested integration procedures are forthcoming.
+        This work is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-33'
     - key: b
       text: |
-        '//*
-        The customer is responsible for ensuring that they update their
-        malicious code protection mechanisms whenever new releases are
-        available in accordance with organizational configuration management
-        policy and procedures. A successful control response will need to
-        address that the protection mechanisms stated in Part A of this
-        control are updated when a new version or definition release becomes
-        available.
-        */'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
     - key: c
       text: |
-        '//*
-        The customer is responsible for ensuring that their malicious code
-        protection mechanisms will perform periodic scans on a weekly basis.
-        The customer will perform realtime scans of files from all external
-        sources, including endpoints as the files are downloaded, opened, or
-        executed in accordance with organizational security policy. The
-        customer will also send alerts to an administrator or another
-        defined security personnel in response to detected malicious code.
-        */'
+        'In the scope of OpenShift, this control is duplicative of SI-3(a).'
     - key: d
       text: |
-        '//*
-        The customer is responsible for addressing the receipt of false
-        positives during malicious code detection and eradication. These false
-        positives will report potnetial impact of the availability of the
-        information system. A successful control response will detail the
-        steps taken when false positives are detected within the system with
-        the resulting impact of availability to the information system.
-        */'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: SI-3 (1)
   standard_key: NIST-800-53
@@ -193,74 +166,12 @@
 - control_key: SI-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: Not applicable
   narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for meeting the FedRAMP-defined
-        monitoring objective of ensuring the proper functioning of internal
-        processes and controls in furtherance of regulatory and compliance
-        requirements; examine system records to confirm that the system
-        is functioning in an optimal, resilient, and secure state; identify
-        irregularities or anomalies that are indicators of a system
-        malfunction or compromise. It is common for network service providers
-        to impliment this control on behalf of infrastructure components.
-        A successful control response must articulate how both technology
-        and process is used to identify attacks and indicators of
-        potential attacks.
-        */'
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for monitoring local, network, and
-        remote connections. In modern IT systems, it is common for all
-        connection types to be classified as remote. A successful control
-        response will indicate if all connections are considered remote, and
-        if not, how each category is uniquely monitored.
-        */'
-    - key: c
-      text: |
-        '//*
-        The customer is responsible for deploying monitoring devices at
-        strategic and ad-hoc locations within the system. A successful control
-        response will identify the locations where monitoring devices will be
-        implimented. It is common for network service providers to implement
-        this control on behalf of tenants.
-        */'
-    - key: d
-      text: |
-        '//*
-        The customer will be responsible for protecting information obtained
-        from intrusion-monitoring tools from unauthorized access,
-        modification, and deletion. A successful control response will
-        indicate data access and management processes to ensure protection
-        of the gathered data. It is common for network service providers to
-        implement this control on behalf of customers.
-        */'
-    - key: e
-      text: |
-        '//*
-        The information system must be capable of heightening the level of
-        monitoring during times of duress. A successful control response
-        will indicate increasing tiers of monitoring and analysis that is
-        available should a known, or suspected, attack occur. It is common
-        for network service providers to implement this control on behalf
-        of tenants. For example, Microsoft Azure for Government implements
-        this control on behalf of their IaaS users.
-        */'
-    - key: g
-      text: |
-        '//*
-        The customer will be responsible to ensure monitoring is aligned with
-        SI-4(a), that organizationally defined personnel or roles receive
-        monitoring information daily (and with capabilities for ondemand
-        inquiries). A successful control response will address the reporting
-        available to appropriate staff, and how on-demand reports can be
-        created. It is common for network service providers to implement this
-        control on behalf of tenants.
-        */'
-
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    
 - control_key: SI-4 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -361,25 +272,11 @@
 - control_key: SI-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: Not applicable
   narrative:
-    - key: a
-      text: |
-        '//*
-        The customer will be responsible for recieving relevant security
-        alerts, advisories and directives. A successful control response will
-        need to discuss the external sources of security alerts, advisories,
-        and directives (including US-CERT as required by FedRAMP).
-        */'
-    - key: d
-      text: |
-        '//*
-        The customer will be responsible for implementing security directives
-        within customer-controlled operating systems, software, and services.
-        A successful control response will need to address how the
-        organization meets established time frames for implementing security
-        directives.
-        */'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: SI-6
   standard_key: NIST-800-53
@@ -509,19 +406,23 @@
 - control_key: SI-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for handling and retaining
-        information within customer-enrolled  systems and software in
+        'The customer will be responsible for handling and retaining
+        information within, or hosted by, OpenShift in
         accordance with applicable federal laws, Executive Orders,
         directives, policies, regulations, standards, and operational
         requirements. A successful control response will need to outline
         the specific requirements applicable to customer information
         handling and retention, and the means by which those requirements
         are met.
-        */'
+
+        Documentation and suggestions on protecting customer information
+        hosted within the OpenShift environment is forthcoming. This activity
+        is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-34'
 
 - control_key: SI-16
   standard_key: NIST-800-53
