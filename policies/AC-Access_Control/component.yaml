@@ -1,0 +1,165 @@
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-1 is an organizational control outside the scope of Red Hat OpenStack Platform
+        configuration.'
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-2 is an organizational control outside the scope of Red Hat OpenStack Platform
+        configuration. Technical enablement of the organizational processes
+        are covered in AC-2 subcontrols, such as AC-2(2) and AC-2(3).'
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'The OpenStack Identity service supports the notion of groups and roles.
+        Users belong to groups while a group has a list of roles. OpenStack
+        service reference the roles of the user attempting to access the service.
+        The OpenStack policy enforcer middleware takes into consideration the
+        policy rule associated with each resource then the user group/roles
+        and association to determine if access is allowed to the requested resource.'
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - key: a
+      text: |
+        'It is recommended that OpenStack be integrated with an external
+        identity service, such as Active Directory, Red Hat IdM, or generic
+        LDAP. When configured in such a manner, this control is not applicable
+        to the configuration of Red Hat OpenStack Platform.'
+    - key: b
+      text: |
+        'It is recommended that OpenStack be integrated with an external
+        identity service, such as Active Directory, Red Hat IdM, or generic
+        LDAP. When configured in such a manner, this control is not applicable
+        to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for displaying a system use
+        notification banner to users. A successful control response will need
+        to address the conditions under which the banner will be displayed
+        (if a non-government user accesses the system, the system use
+        notification banner may not be appropriate), as well as the contents
+        of the nofication message.
+
+        In context of Red Hat OpenStack Platform, a banner must be displayed for all means
+        of accessing Red Hat OpenStack Platform itself (e.g. service consoles, remote access
+        through SSH, etc).
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=4&projectKey=OFB&modal=detail&selectedIssue=OFB-3'
+    - key: b
+      text: |
+        'The customer will be responsible for displaying the use notification
+        banner until the user acknowledges the usage condition and takes
+        explicit actions to further access the system. A successful control
+        response will need to address the means by which the user will indicate
+        acknowlegement and move forward.
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=4&projectKey=OFB&modal=detail&selectedIssue=OFB-4'
+    - key: c
+      text: |
+        'The customer will be responsible for displaying a system use
+        information message to users. A successful control response will need
+        to address the conditions under which the message will be
+        displayed (if a non-government user accesses the system, the system
+        use information message may not be appropriate), as well as the
+        contents of the notification message, including references to
+        applicable monitoring, recording, or auditing, and authorized usage
+        of the system.
+
+        It is recommended the same banner be displayed as configured in AC-8(a).'
+    
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Regardless of access mechanism, such as the Red Hat OpenStack Platform Console or remote
+        access attempts through SSH, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-confiurable behavior.
+
+        External service APIs, such as those for Nova, also require authentication
+        prior to granting resource access.'
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative: 
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'

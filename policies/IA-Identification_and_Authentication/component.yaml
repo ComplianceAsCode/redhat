@@ -1,0 +1,228 @@
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Red Hat OpenStack Platform assigns unique identifies to users, groups, and processes
+        acting on behalf of these categories. This is non-configurable behavior.'
+
+- control_key: IA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for network access to privileged accounts.
+
+        A successful control response will need to address all network-
+        accessible privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        Documentation/guidance is being tracked through GitHub:
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1
+
+        NOTE:
+        Many customers are accepting password-enabled SSH keys as multi-
+        factor authentication. The SSH key (something they have) and the
+        decryption password (something they know). Prior to enabling CAC
+        and PIV cards, it is recommended to seek guidance from the
+        Information Security Officer responsible for authorization of
+        Red Hat OpenStack Platform.'
+
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verification (PIV) credentials are those credentials
+        issued by federal agencies that conform to FIPS Publication 201 and
+        supporting guidance documents. Customers will not be expected to perform
+        this credential verification for government agencies. A mechanism for
+        allowing government agencies to perform credential verification in a way
+        that can be trusted by the customer system is through Active Directory
+        Federation Services (ADFS).'
+
+- control_key: IA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for ensuring that customer-owned
+        infrastructure is  properly authenticated prior to establishing a
+        connection to the rest of the customer system. A successful control
+        response will need to address the type of infrastructure in use
+        (e.g. bare metal, virtual machines, etc) and the mechanism by which
+        each is authenticated.
+
+        Red Hat OpenStack Platform nodes can be configured with x509/PKI certificates, which
+        will provide identity of the machines.
+        */'
+
+- control_key: IA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, Red Hat OpenStack Platform
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not Red Hat OpenStack Platform.'
+
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, Red Hat OpenStack Platform
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not Red Hat OpenStack Platform.'
+
+
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, Red Hat OpenStack Platform
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not Red Hat OpenStack Platform.'
+
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, Red Hat OpenStack Platform
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not Red Hat OpenStack Platform.'
+
+- control_key: IA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Red Hat OpenStack Platform natively obscures such information. Red Hat OpenStack Platform cannot be
+        configured to be out of compliance with this requirement.'
+
+- control_key: IA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Administrative access to Red Hat OpenStack Platform nodes is performed over SSH. To
+        limit SSH ciphers to those algorithms which are FIPS-approved, update
+        the following line in /etc/ssh/sshd_config:
+
+        Ciphers aes128,aes192-ctr,aes256-ctr
+
+        The Red Hat OpenStack Platform Console, which is the web interface to the system,
+        automatically converts incoming authentication requests to HTTPS.
+        The underlying web server can be configured to use U.S. Government
+        PKI certificates for authentication and authorization.
+
+        The customer will be responsible for configuring Red Hat OpenStack Platform to use
+        appropriate cryptographic modules. A successful control response will
+        document what modules are in use, how to attest the configuration is
+        in place, and references to supporing documentation outlining the
+        FIPS 140-2 certification for enabled modules.'
+
+- control_key: IA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for identifying and authenticating
+        non-organizational users accessing the customer application. A
+        successful control response will need to address how non-organizational
+        users are defined and the process by which identification
+        and authentication takes place, including any differences from
+        identification and authentication for organizational users.'
+
+- control_key: IA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verificiation (PIV) credentials are those
+        credentials issued by federal agencies that conform to FIPS Publication
+        201 and supporting guidance documents. Customers will not be expected
+        to perform this credential verification for government agencies. A
+        mechanism for allowing government agencies to perform credential
+        verification in a way that can be trusted by the customer system is
+        through Active Directory Federation Services (ADFS) or Red Hat IdM.'
+
+- control_key: IA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
+- control_key: IA-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
+
+- control_key: IA-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
