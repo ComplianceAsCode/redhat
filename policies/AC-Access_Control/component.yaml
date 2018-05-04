@@ -114,7 +114,7 @@
         'Regardless of access mechanism, such as the Red Hat OpenStack Platform Console or remote
         access attempts through SSH, unauthenticated users will only be shown the
         system use notifications (as defined in AC-8) and login prompt. This is
-        non-confiurable behavior.
+        non-configurable behavior.
 
         External service APIs, such as those for Nova, also require authentication
         prior to granting resource access.'
