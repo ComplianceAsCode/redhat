@@ -381,7 +381,17 @@
         computing, authorizing activities over remote access is
         equivalent to authorizing them at all. Such authorizations (and
         procedures) are provided in AC-2.'
-        
+
+- control_key: AC-17 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/182'
+
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
@@ -390,6 +400,17 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative: 
+    - text: |
+        'This control reflects organizational procedures/policies
+        at the network access layer, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
 
 - control_key: AC-19
   standard_key: NIST-800-53
