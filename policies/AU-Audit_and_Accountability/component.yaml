@@ -7,7 +7,7 @@
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -17,7 +17,7 @@
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -29,7 +29,7 @@
 - control_key: AU-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -47,7 +47,7 @@
 - control_key: AU-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -56,7 +56,7 @@
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -90,7 +90,7 @@
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -99,7 +99,7 @@
 - control_key: AU-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -108,7 +108,7 @@
 - control_key: AU-6 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -117,7 +117,7 @@
 - control_key: AU-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'Documentation/guidance on satisfying this control is being tracked on GitHub:
@@ -127,7 +127,7 @@
 - control_key: AU-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'Documentation/guidance on satisfying this control is being tracked on GitHub:
@@ -154,7 +154,7 @@
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Red Hat OpenStack Platform utilizes the time services of the

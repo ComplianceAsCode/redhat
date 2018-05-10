@@ -5,7 +5,7 @@
 - control_key: SI-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     text: |
       'This control reflects organizational procedures/policies, and is not
@@ -83,7 +83,7 @@
 - control_key: SI-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -92,7 +92,7 @@
 - control_key: SI-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -122,7 +122,7 @@
 - control_key: SI-16
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Red Hat Red Hat OpenStack Platform Container Platform inherits memory protections

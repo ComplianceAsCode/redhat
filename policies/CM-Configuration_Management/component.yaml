@@ -18,7 +18,7 @@
 - control_key: CM-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -27,7 +27,7 @@
 - control_key: CM-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -36,7 +36,7 @@
 - control_key: CM-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -45,7 +45,7 @@
 - control_key: CM-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'Documentation/guidance on lifecycle management of Red Hat OpenStack
@@ -56,7 +56,7 @@
 - control_key: CM-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'Documentation/guidance on retaining previous baseline configurations
@@ -68,7 +68,7 @@
 - control_key: CM-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -77,7 +77,7 @@
 - control_key: CM-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'Documentation/guidance on establishing configuration change control
@@ -88,7 +88,7 @@
 - control_key: CM-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -97,7 +97,7 @@
 - control_key: CM-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'Documentation/guidance on enforcing access restrictions associated with
@@ -108,7 +108,7 @@
 - control_key: CM-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'Documentation/guidance on ensuring Red Hat OpenStack Platform enforces
@@ -120,7 +120,7 @@
 - control_key: CM-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Red Hat OpenStack Platform binaries are installed through the package
@@ -132,7 +132,7 @@
 - control_key: CM-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -161,7 +161,7 @@
 - control_key: CM-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Documentation/guidance for this control is being tracked on GitHub:
@@ -171,7 +171,7 @@
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Planned
+  implementation_status: planned
   narrative:
     - text: |
         'OpenStack provides many capabilities, ranging from elastic compute,
@@ -182,7 +182,7 @@
 - control_key: CM-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -191,7 +191,7 @@
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Software execution is a function of an operating system, and is not
@@ -200,7 +200,7 @@
 - control_key: CM-7 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Software whitelisting is a function of an operating system, and is not
@@ -209,7 +209,7 @@
 - control_key: CM-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -238,7 +238,7 @@
 - control_key: CM-8 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -247,7 +247,7 @@
 - control_key: CM-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -256,7 +256,7 @@
 - control_key: CM-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -265,7 +265,7 @@
 - control_key: CM-10 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -278,7 +278,7 @@
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not

@@ -13,7 +13,7 @@
 - control_key: AC-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'AC-1 is an organizational control outside the scope of Red Hat OpenStack Platform
@@ -22,7 +22,7 @@
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'AC-2 is an organizational control outside the scope of Red Hat OpenStack Platform
@@ -43,7 +43,7 @@
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'When OpenStack is configured to use an external identity management
@@ -52,7 +52,7 @@
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'When OpenStack is configured to use an external identity management
@@ -93,7 +93,7 @@
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'AC-2 (9) is an organizational control outside the scope of Red Hat OpenStack Platform
@@ -103,7 +103,7 @@
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'AC-2 (10) is applicable to external identity management components,
@@ -112,7 +112,7 @@
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'AC-2 (12) is an organizational control that applies to centralized
@@ -200,7 +200,7 @@
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'AC-6 (5) is an organizational control outside the scope of Red Hat
@@ -229,7 +229,7 @@
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -301,7 +301,7 @@
 
 - control_key: AC-11
   standard_key: NIST-800-53
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Not applicable. When AC-2(5) is implemented, the non-configurable
@@ -310,7 +310,7 @@
 
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'Not applicable. When AC-2(5) is implemented, the non-configurable
@@ -343,7 +343,7 @@
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -352,7 +352,7 @@
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'As a network accessible service, all connections to Red Hat OpenStack
@@ -383,7 +383,7 @@
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control is not applicable. Due to the native of cloud
@@ -404,7 +404,7 @@
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative: 
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -413,7 +413,7 @@
 - control_key: AC-18 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies
@@ -424,7 +424,7 @@
 - control_key: AC-19
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -433,7 +433,7 @@
 - control_key: AC-19 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control is applicable to mobile devices, and is not applicable
@@ -442,7 +442,7 @@
 - control_key: AC-20
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -451,7 +451,7 @@
 - control_key: AC-20 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies for
@@ -462,7 +462,7 @@
 - control_key: AC-20 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies outside
@@ -472,7 +472,7 @@
 - control_key: AC-21
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies outside
@@ -482,7 +482,7 @@
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
