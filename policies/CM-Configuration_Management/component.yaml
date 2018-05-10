@@ -197,7 +197,7 @@
         'Software execution is a function of an operating system, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
-- control_key: CM-7 (2)
+- control_key: CM-7 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: Not applicable
@@ -283,4 +283,3 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
-        
