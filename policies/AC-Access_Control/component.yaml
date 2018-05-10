@@ -351,6 +351,37 @@
         needed to identify or monitor local versus remote access. This is
         non-configurable behavior.'
 
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/179'
+
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/180'
+
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control is not applicable. Due to the native of cloud
+        computing, authorizing activities over remote access is
+        equivalent to authorizing them at all. Such authorizations (and
+        procedures) are provided in AC-2.'
+        
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
