@@ -26,6 +26,14 @@
         NOTE: The organization-defined auditable events are configured in
         Red Hat OpenStack Platform through actions specified in AU-12.'
 
+- control_key: AU-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
 
 - control_key: AU-3
   standard_key: NIST-800-53
