@@ -385,3 +385,4 @@
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
         (ADFS) or Red Hat IdM.'
+ 
