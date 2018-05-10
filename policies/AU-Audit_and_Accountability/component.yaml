@@ -178,6 +178,30 @@
 
         https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
 
+- control_key: AU-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on configuring OpenStack to perform
+        centralized audit logging to a central facility is being
+        tracked on Github:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/199'
+
+- control_key: AU-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on configuring Red Hat OpenStack Platform
+        logs to only be accessible by a subset of privileged users 
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/200'
+
 - control_key: AU-11
   standard_key: NIST-800-53
   covered_by: []
