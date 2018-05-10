@@ -58,6 +58,37 @@
         'When OpenStack is configured to use an external identity management
         system, this control is not applicable.'
 
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on meeting this control is being tracked in
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/159'
+
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on meeting this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/160'
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on meeting this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/161'
 
 - control_key: AC-3
   standard_key: NIST-800-53
