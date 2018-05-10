@@ -42,6 +42,38 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: CM-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Planned
+  narrative:
+    - text: |
+        'Documentation/guidance on lifecycle management of Red Hat OpenStack
+        Platform is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/210'
+
+- control_key: CM-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Planned
+  narrative:
+    - text: |
+        'Documentation/guidance on retaining previous baseline configurations
+        of Red Hat OpenStack platform is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/211'
+
+
+- control_key: CM-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
 - control_key: CM-4
   standard_key: NIST-800-53
   covered_by: []
