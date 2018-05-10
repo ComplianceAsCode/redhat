@@ -449,6 +449,16 @@
         external information systems accessing the Red Hat OpenStack
         Platform component. This control is not applicable to the
         configuration of Red Hat OpenStack Platform itself.'
+
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies outside
+        the scope of configuring Red Hat OpenStack Platform. This control
+        is not applicable.'
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
