@@ -206,6 +206,26 @@
         'AC-6 (5) is an organizational control outside the scope of Red Hat
         OpenStack Platform configuration.'
 
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/173'
+
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/174'
+
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
@@ -269,6 +289,25 @@
 
         It is recommended the same banner be displayed as configured in AC-8(a).'
     
+
+- control_key: AC-10
+  standard_key: NIST-800-53
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/175'
+
+- control_key: AC-11
+  standard_key: NIST-800-53
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        behavior of Red Hat OpenStack Platform is to disconnect the idle user
+        from the user interface.'
+
 - control_key: AC-14
   standard_key: NIST-800-53
   covered_by: []
