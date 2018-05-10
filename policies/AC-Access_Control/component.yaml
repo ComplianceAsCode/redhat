@@ -176,6 +176,35 @@
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/169'
 
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on how RHOSP requires explicit authorization
+        for elevated privileges is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/170'
+
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+      'Documentation/guidance for this control is being tracked in GitHub:
+
+      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/171'
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-6 (5) is an organizational control outside the scope of Red Hat
+        OpenStack Platform configuration.'
 
 - control_key: AC-7
   standard_key: NIST-800-53
