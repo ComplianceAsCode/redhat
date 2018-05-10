@@ -308,6 +308,15 @@
         behavior of Red Hat OpenStack Platform is to disconnect the idle user
         from the user interface.'
 
+- control_key: AC-11 (1)
+  standard_key: NIST-800-53
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        behavior of Red Hat OpenStack Platform is to disconnect the idle user
+        from the user interface.'
+
 - control_key: AC-12
   standard_key: NIST-800-53
   implementation_status: planned
