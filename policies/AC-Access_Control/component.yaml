@@ -29,6 +29,88 @@
         configuration. Technical enablement of the organizational processes
         are covered in AC-2 subcontrols, such as AC-2(2) and AC-2(3).'
 
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Usage of an external identity management system, such as Red Hat IdM,
+        is recommended. A successful control response will document if an
+        identity management system is in use, and document how to verify
+        OpenStack is configured for its use.'
+
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'When OpenStack is configured to use an external identity management
+        system, this control is not applicable'
+
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'When OpenStack is configured to use an external identity management
+        system, this control is not applicable.'
+
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on meeting this control is being tracked in
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/159'
+
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on meeting this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/160'
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on meeting this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/161'
+
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-2 (9) is an organizational control outside the scope of Red Hat OpenStack Platform
+        configuration.'
+
+
+- control_key: AC-2 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-2 (10) is applicable to external identity management components,
+        and is outside the scope of Red Hat OpenStack Platform configuration.'
+
+
+
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
