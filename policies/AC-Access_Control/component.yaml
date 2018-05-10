@@ -109,7 +109,15 @@
         'AC-2 (10) is applicable to external identity management components,
         and is outside the scope of Red Hat OpenStack Platform configuration.'
 
-
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-2 (12) is an organizational control that applies to centralized
+        audit reduction tools/capabilities, and is outside the scope of
+        Red Hat OpenStack Platform configuration.'
 
 - control_key: AC-3
   standard_key: NIST-800-53
@@ -123,6 +131,100 @@
         The OpenStack policy enforcer middleware takes into consideration the
         policy rule associated with each resource then the user group/roles
         and association to determine if access is allowed to the requested resource.'
+
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance relating to information flow enforcement is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/166'
+
+- control_key: AC-4 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on logical separation of information flows
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/167'
+
+- control_key: AC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance of role/duty enforcement is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/168'
+
+- control_key: AC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on how Red Hat OpenStack Platform follows and
+        enforces the concept of least privilege is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/169'
+
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on how RHOSP requires explicit authorization
+        for elevated privileges is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/170'
+
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+      'Documentation/guidance for this control is being tracked in GitHub:
+
+      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/171'
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-6 (5) is an organizational control outside the scope of Red Hat
+        OpenStack Platform configuration.'
+
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/173'
+
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/174'
 
 - control_key: AC-7
   standard_key: NIST-800-53
@@ -187,6 +289,34 @@
 
         It is recommended the same banner be displayed as configured in AC-8(a).'
     
+
+- control_key: AC-10
+  standard_key: NIST-800-53
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/175'
+
+- control_key: AC-11
+  standard_key: NIST-800-53
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        behavior of Red Hat OpenStack Platform is to disconnect the idle user
+        from the user interface.'
+
+- control_key: AC-12
+  standard_key: NIST-800-53
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/177'
+
 - control_key: AC-14
   standard_key: NIST-800-53
   covered_by: []
@@ -210,6 +340,58 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: AC-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'As a network accessible service, all connections to Red Hat OpenStack
+        Platform are treated as remote access. No additional configuration is
+        needed to identify or monitor local versus remote access. This is
+        non-configurable behavior.'
+
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/179'
+
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/180'
+
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control is not applicable. Due to the native of cloud
+        computing, authorizing activities over remote access is
+        equivalent to authorizing them at all. Such authorizations (and
+        procedures) are provided in AC-2.'
+
+- control_key: AC-17 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/182'
+
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
@@ -218,6 +400,17 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies
+        at the network access layer, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
 
 - control_key: AC-19
   standard_key: NIST-800-53
@@ -228,6 +421,15 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control is applicable to mobile devices, and is not applicable
+        to the configuration of Red Hat OpenStack Platform.'
+
 - control_key: AC-20
   standard_key: NIST-800-53
   covered_by: []
@@ -236,6 +438,37 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies for
+        external information systems accessing the Red Hat OpenStack
+        Platform component. This control is not applicable to the
+        configuration of Red Hat OpenStack Platform itself.'
+
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies outside
+        the scope of configuring Red Hat OpenStack Platform. This control
+        is not applicable.'
+
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies outside
+        the scope of configuring Red Hat OpenStack Platform. This control
+        is not applicable.'
 
 - control_key: AC-22
   standard_key: NIST-800-53
