@@ -44,6 +44,89 @@
         Information Security Officer responsible for authorization of
         Red Hat OpenStack Platform.'
 
+- control_key: IA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for network access to non-privileged accounts.
+
+        A successful control response will need to address all network-
+        accessible non-privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        Documentation/guidance is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/247
+
+        NOTE:
+        Many customers are accepting password-enabled SSH keys as multi-
+        factor authentication. The SSH key (something they have) and the
+        decryption password (something they know). Prior to enabling CAC
+        and PIV cards, it is recommended to seek guidance from the
+        Information Security Officer responsible for authorization of
+        Red Hat OpenStack Platform.'
+
+- control_key: IA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for local access to non-privileged accounts.
+
+        A successful control response will need to address all locally-
+        accessible non-privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        Documentation/guidance is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/247
+
+        NOTE:
+        Many customers are accepting password-enabled SSH keys as multi-
+        factor authentication. The SSH key (something they have) and the
+        decryption password (something they know). Prior to enabling CAC
+        and PIV cards, it is recommended to seek guidance from the
+        Information Security Officer responsible for authorization of
+        Red Hat OpenStack Platform.'
+
+
+- control_key: IA-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Red Hat OpenStack Platform requires all users to have a unique
+        identifier, of which each user first authenticates against prior
+        to being granted group memberships. No additional configuration
+        is required to satisfy this control and OpenStack cannot be
+        configured to be out of compliance with this control.'
+
+- control_key: IA-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on enabling replay-resistant authentication
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/249'
+
+- control_key: IA-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on satisfying this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/250'
+
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
@@ -61,20 +144,13 @@
 - control_key: IA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for ensuring that customer-owned
-        infrastructure is  properly authenticated prior to establishing a
-        connection to the rest of the customer system. A successful control
-        response will need to address the type of infrastructure in use
-        (e.g. bare metal, virtual machines, etc) and the mechanism by which
-        each is authenticated.
+        'Documentation/guidance on satisfying this control is being tracked
+        on GitHub:
 
-        Red Hat OpenStack Platform nodes can be configured with x509/PKI certificates, which
-        will provide identity of the machines.
-        */'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/251'
 
 - control_key: IA-4
   standard_key: NIST-800-53
@@ -86,6 +162,17 @@
         must be configured to use an external identity system (such as Red Hat
         IdM or Microsoft Active Directory). This control is applicable to the
         identity provider, not Red Hat OpenStack Platform.'
+
+- control_key: IA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on satisfying this control is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/252'
 
 - control_key: IA-5
   standard_key: NIST-800-53
@@ -109,6 +196,80 @@
         must be configured to use an external identity system (such as Red Hat
         IdM or Microsoft Active Directory). This control is applicable to the
         identity provider, not Red Hat OpenStack Platform.'
+
+- control_key: IA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation/guidance on establishing certificate validation and
+        trust anchors is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/253'
+    - key: b
+      text: |
+        'Documentation/guidance regarding enforcement fo authorized
+        access to private keys is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/254'
+    - key: c
+      text: |
+        'Documentation/guidance regarding mapping identities to individual accounts
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/255'
+    - key: d
+      text: |
+        'Documentation/guidance on implementing a local cache of revocation
+        data is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/256'
+
+- control_key: IA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To meet FISMA Moderate and/or FedRAMP Moderate controls, Red Hat
+        OpenStack Platform should be configured to use an external identity
+        management service. Determining sufficiency of password authenticators
+        is the responsibility of the external identity management service, and
+        is not applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IA-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on how Red Hat OpenStack Platform protecs
+        authenticators is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/257'
+
+- control_key: IA-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on how to ensure unencrypted static authenticators
+        are not being embedded in applications or access scripts or function keys
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/258'
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
@@ -210,7 +371,6 @@
         customer system is through Active Directory Federation Services
         (ADFS) or Red Hat IdM.'
 
-
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -225,4 +385,3 @@
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
         (ADFS) or Red Hat IdM.'
-
