@@ -35,9 +35,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Usage of an external identity management system, such as Red Hat IdM, is recommended.
-        A successful control response will document if an identity management system is in use,
-        and document how to verify OpenStack is configured for its use.'
+        'Usage of an external identity management system, such as Red Hat IdM,
+        is recommended. A successful control response will document if an
+        identity management system is in use, and document how to verify
+        OpenStack is configured for its use.'
 
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
