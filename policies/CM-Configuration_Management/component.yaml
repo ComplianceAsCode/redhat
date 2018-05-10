@@ -262,6 +262,19 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: CM-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.
+
+        NOTE: Red Hat OpenStack Platform is a commercial product. Open source
+        software policies created through CM-10 (1) do not apply to the use
+        of Red Hat OpenStack Platform.'
+
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
