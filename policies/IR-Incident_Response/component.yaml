@@ -20,7 +20,34 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: IR-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IR-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
 - control_key: IR-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IR-4 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
@@ -47,6 +74,15 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: IR-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
 - control_key: IR-7
   standard_key: NIST-800-53
   covered_by: []
@@ -56,7 +92,71 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: IR-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IR-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
 - control_key: IR-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IR-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IR-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+
+- control_key: IR-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IR-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: IR-9 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
