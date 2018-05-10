@@ -115,6 +115,27 @@
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/194'
 
+
+- control_key: AU-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Planned
+  narrative:
+    - text: |
+        'Documentation/guidance on satisfying this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/196'
+
+- control_key: AU-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Planned
+  narrative:
+    - text: |
+        'Documentation/guidance on satisfying this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/197'
+
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
@@ -131,6 +152,16 @@
         'Red Hat OpenStack Platform time keeping relies on the time services provided by the
         underlying operating system. This control is not applicable to the configuration
         of Red Hat OpenStack Platform.'
+
+- control_key: AU-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'Red Hat OpenStack Platform utilizes the time services of the
+        underlying operating system. This control is not applicable
+        to the configuration of Red Hat OpenStack Platform.'
 
 - control_key: AU-9
   standard_key: NIST-800-53
