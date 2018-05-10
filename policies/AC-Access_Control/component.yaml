@@ -109,7 +109,15 @@
         'AC-2 (10) is applicable to external identity management components,
         and is outside the scope of Red Hat OpenStack Platform configuration.'
 
-
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'AC-2 (12) is an organizational control that applies to centralized
+        audit reduction tools/capabilities, and is outside the scope of
+        Red Hat OpenStack Platform configuration.'
 
 - control_key: AC-3
   standard_key: NIST-800-53
