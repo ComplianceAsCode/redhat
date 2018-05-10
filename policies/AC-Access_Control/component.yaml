@@ -193,9 +193,9 @@
   implementation_status: planned
   narrative:
     - text: |
-      'Documentation/guidance for this control is being tracked in GitHub:
+        'Documentation/guidance for this control is being tracked in GitHub:
 
-      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/171'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/171'
 
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
