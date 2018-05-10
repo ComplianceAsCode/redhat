@@ -39,6 +39,15 @@
         A successful control response will document if an identity management system is in use,
         and document how to verify OpenStack is configured for its use.'
 
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control is not applicable when OpenStack is configured to use an external
+        identity management system.'
+
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
