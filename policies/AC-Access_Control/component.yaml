@@ -46,8 +46,18 @@
   implementation_status: Not applicable
   narrative:
     - text: |
-        'This control is not applicable when OpenStack is configured to use an external
-        identity management system.'
+        'When OpenStack is configured to use an external identity management
+        system, this control is not applicable'
+
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'When OpenStack is configured to use an external identity management
+        system, this control is not applicable.'
+
 
 - control_key: AC-3
   standard_key: NIST-800-53
