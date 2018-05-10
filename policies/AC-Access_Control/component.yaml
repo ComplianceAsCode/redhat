@@ -421,6 +421,15 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control is applicable to mobile devices, and is not applicable
+        to the configuration of Red Hat OpenStack Platform.'
+
 - control_key: AC-20
   standard_key: NIST-800-53
   covered_by: []
