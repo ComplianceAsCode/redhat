@@ -12,6 +12,26 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: SC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/329'
+
+- control_key: SC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/330'
+
 - control_key: SC-5
   standard_key: NIST-800-53
   covered_by: []
@@ -20,6 +40,16 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/331'
 
 - control_key: SC-7
   standard_key: NIST-800-53
@@ -48,6 +78,114 @@
 
         https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
 
+- control_key: SC-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/332'
+
+- control_key: SC-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/333'
+
+- control_key: SC-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/334'
+
+- control_key: SC-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/335'
+
+- control_key: SC-7 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/336'
+
+- control_key: SC-7 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/337'
+
+- control_key: SC-7 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-7 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is inherited through organiztional network services, and is
+        not applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/338'
+
+- control_key: SC-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/339'
+
+- control_key: SC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/340'
+
 - control_key: SC-12
   standard_key: NIST-800-53
   covered_by: []
@@ -59,6 +197,26 @@
         activity is being tracked in GitHub:
 
         https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/341'
+
+- control_key: SC-12 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/342'
 
 - control_key: SC-13
   standard_key: NIST-800-53
@@ -96,31 +254,32 @@
         is not applicable because Red Hat Red Hat OpenStack Platform Container Platform is not
         a collaborative computing device.'
 
+- control_key: SC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
 - control_key: SC-18
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: not applicable
   narrative:
-    - key: c
-      text: |
-        '//*
-        The customer will be responsible for authorizing, monitoring, and
-        controlling the use of mobile code within the system in accordance
-        with organizational policies defined in SC-18(a) and SC-18(b).
-        */'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
 
 - control_key: SC-19
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: not applicable
   narrative:
-    - key: b
-      text: |
-        '//*
-        The customer will be responsible for authorizing, monitoring, and
-        controlling the use of VoIP within the system in accordance with
-        organizational policies defined in SC-19(a)..
-        */'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
 
 - control_key: SC-20
   standard_key: NIST-800-53
@@ -203,6 +362,36 @@
         Red Hat OpenStack Platform is forthcoming. This activity is being tracked in GitHub:
 
         https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/343'
+
+- control_key: SC-28
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/344'
+
+- control_key: SC-238 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/345'
 
 - control_key: SC-39
   standard_key: NIST-800-53
