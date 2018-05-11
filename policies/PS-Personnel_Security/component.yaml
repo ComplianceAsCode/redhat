@@ -12,7 +12,6 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
-
 - control_key: PS-2
   standard_key: NIST-800-53
   covered_by: []
@@ -22,8 +21,16 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
-
 - control_key: PS-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: PS-3 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
