@@ -67,7 +67,7 @@
     text: |
       'This control reflects organizational procedures/policies, and is not
       applicable to the configuration of Red Hat OpenStack Platform.'
-        
+
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
@@ -108,7 +108,7 @@
       'Documentation/guidance addressing this issue is being tracked on GitHub:
 
       https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/353'
-    
+
 - control_key: SI-3 (2)
   standard_key: NIST-800-53
   covered_by: []
