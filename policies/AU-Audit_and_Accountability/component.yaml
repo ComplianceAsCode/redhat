@@ -91,15 +91,16 @@
   narrative:
     - key: a
       text: |
-        'Red Hat Identity Management time keeping relies on the time services provided by the
-        underlying operating system. This control is not applicable to the configuration
-        of Red Hat Identity Management.'
+        'Red Hat Identity Management time keeping relies on the time services
+        provided by the underlying operating system. This control is not
+        applicable to the configuration of Red Hat Identity Management.'
 
     - key: b
       text: |
-        'Red Hat Identity Management time keeping relies on the time services provided by the
-        underlying operating system. This control is not applicable to the configuration
-        of Red Hat Identity Management.'
+        'Red Hat Identity Management time keeping relies on the time
+        services provided by the
+        underlying operating system. This control is not applicable to the
+        configuration of Red Hat Identity Management.'
 
 - control_key: AU-9
   standard_key: NIST-800-53
@@ -113,7 +114,8 @@
         are protected. This can include how access is controlled to audit
         information and tools.
 
-        Documentation/instructions on protecting Red Hat Identity Management audit information
+        Documentation/instructions on protecting Red Hat
+        Identity Management audit information
         is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/21'
@@ -122,7 +124,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
-  narrative: 
+  narrative:
     - text: |
         'Documentation/instructions on audit retention is being tracked
         in GitHub:
@@ -141,7 +143,7 @@
         capability is available. A successful control response will discuss the
         coniguration of all system components to capture the events that were
         defined in AU-2.
-        
+
         Documentation/guidance on configuring auditable events is being
         tracked on GitHub:
 
@@ -166,7 +168,8 @@
         defined in AU-2d with the content defined in AU-3. A successful control
         response will discuss how audit records are generated, and how they meet
         the requirements defined in AU-2 and AU-3.
-        
-        Documentation/guidance on satisfying this control is being tracked on GitHub:
+
+        Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/25'

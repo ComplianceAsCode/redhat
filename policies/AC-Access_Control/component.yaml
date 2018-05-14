@@ -26,8 +26,9 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'AC-2 is an organizational control outside the scope of Red Hat OpenStack Platform
-        configuration. Technical enablement of the organizational processes
+        'AC-2 is an organizational control outside the scope of Red Hat
+        Identity Management configuration. Technical enablement of
+        the organizational processes
         are covered in AC-2 subcontrols, such as AC-2(2) and AC-2(3).'
 
 - control_key: AC-3
@@ -103,7 +104,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: AC-18
   standard_key: NIST-800-53
@@ -112,7 +113,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: AC-19
   standard_key: NIST-800-53
@@ -121,7 +122,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: AC-20
   standard_key: NIST-800-53
@@ -130,7 +131,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: AC-22
   standard_key: NIST-800-53
@@ -139,4 +140,4 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
