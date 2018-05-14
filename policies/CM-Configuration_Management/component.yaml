@@ -11,8 +11,9 @@
 #       however it's best to double check with the Information System owner
 #       on expectations (component vs central CM).
 #
-#       In case the customer desires components (e.g. Red Hat Identity Management Admins) to
-#       handle configuration management the lines below can be uncommented:
+#       In case the customer desires components (e.g. Red Hat Identity
+#       Management Admins) to handle configuration management the
+#       lines below can be uncommented:
 #
 
 - control_key: CM-1
