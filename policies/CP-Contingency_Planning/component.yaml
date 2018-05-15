@@ -104,6 +104,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for documenting how to reconstitute 
-        their Red Hat Identity Management environment. A successful control response will detail
-        processes used to fully recover/restore the Red Hat Identity Management environment.'
+        'The customer will be responsible for documenting how to reconstitute
+        their Red Hat Identity Management environment. A successful control
+        response will detail
+        processes used to fully recover/restore the Red Hat Identity
+        Management environment.'

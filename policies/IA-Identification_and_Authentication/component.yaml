@@ -17,7 +17,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation/guidance on configuring Red Hat Identity Management against
+        'Documentation/guidance on configuring Red Hat
+        Identity Management against
         this requirement is being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/61'
@@ -120,37 +121,37 @@
         'Documentation/guidance for this control is being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/68'
-    - text: e
+    - key: e
       text: |
         'Documentation/guidance for this control is being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/69'
-    - text: f
+    - key: f
       text: |
         'Guidance/documentation for establishing minimum/maximum lifetime
         restrictions and reuse conditions for authenticators is being
         tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/70'
-    - text: g
+    - key: g
       text: |
         'Guidance on changing/refreshing authenticators after an
         organizationally-defined time period is being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/71'
-    - text: h
+    - key: h
       text: |
         'Documentation/guidance for this control is being tracked on
         GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/72'
-    - text: i
+    - key: i
       text: |
         'Documentation/guidance for this control is being tracked on
         GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/73'
-    - text: j
+    - key: j
       text: |
         'This is an organizational control outside the scope of configuring
         Red Hat Identity Management.'
@@ -163,7 +164,7 @@
     - key: a
       text: |
         'Documentation/guidance on implementing password complexity
-        is being tracked on GitHub: 
+        is being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/74'
     - key: b
@@ -227,7 +228,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for configuring Red Hat Identity Management to use
+        'The customer will be responsible for configuring Red Hat Identity
+        Management to use
         appropriate cryptographic modules. A successful control response will
         document what modules are in use, how to attest the configuration is
         in place, and references to supporing documentation outlining the
@@ -308,7 +310,7 @@
         customer system is through Active Directory Federation Services
         (ADFS) or Red Hat IdM.
 
-        Documentation/guidance for this control is being tracked via 
+        Documentation/guidance for this control is being tracked via
         GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/85'
