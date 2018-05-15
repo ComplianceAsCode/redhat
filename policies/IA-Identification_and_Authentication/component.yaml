@@ -1,0 +1,336 @@
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: IA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on configuring Red Hat
+        Identity Management against
+        this requirement is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/61'
+
+- control_key: IA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for network access to privileged accounts.
+
+        A successful control response will need to address all network-
+        accessible privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        Documentation/guidance is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/62
+
+        NOTE:
+        Many customers are accepting password-enabled SSH keys as multi-
+        factor authentication. The SSH key (something they have) and the
+        decryption password (something they know). Prior to enabling CAC
+        and PIV cards, it is recommended to seek guidance from the
+        Information Security Officer responsible for authorization of
+        Red Hat Identity Management.'
+
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verification (PIV) credentials are those credentials
+        issued by federal agencies that conform to FIPS Publication 201 and
+        supporting guidance documents. Customers will not be expected to perform
+        this credential verification for government agencies. A mechanism for
+        allowing government agencies to perform credential verification in a way
+        that can be trusted by the customer system is through Active Directory
+        Federation Services (ADFS).
+
+        Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/63'
+
+- control_key: IA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: c
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: d
+      text: |
+        'Documentation/guidance on preventing the reuse of identifiers is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/64'
+    - key: e
+      text: |
+        'Documentation/guidance on disabling idle accounts is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/65'
+
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: b
+      text: |
+        'Documentation/guidance on how to configure initial authenticator
+        metadata is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/66'
+    - key: c
+      text: |
+        'Documentation/guidance on ensuring authenticators have sufficient
+        strenth of mechanism for their purpose is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/67'
+    - key: d
+      text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/68'
+    - key: e
+      text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/69'
+    - key: f
+      text: |
+        'Guidance/documentation for establishing minimum/maximum lifetime
+        restrictions and reuse conditions for authenticators is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/70'
+    - key: g
+      text: |
+        'Guidance on changing/refreshing authenticators after an
+        organizationally-defined time period is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/71'
+    - key: h
+      text: |
+        'Documentation/guidance for this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/72'
+    - key: i
+      text: |
+        'Documentation/guidance for this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/73'
+    - key: j
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation/guidance on implementing password complexity
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/74'
+    - key: b
+      text: |
+        'Documentation/guidance on implementing changed characters during
+        password creation is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/75'
+    - key: c
+      text: |
+        'Documentation/guidance on storing and transmitting only
+        cryptographically-protected passwords is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/76'
+    - key: d
+      text: |
+        'Documentation/guidance on enforcing password minimum and maximum
+        lifetime restrictions is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/77'
+    - key: e
+      text: |
+        'Documentation/guidance on enforcing password minimum and maximum
+        lifetime restrictions is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/78'
+    - key: f
+      text: |
+        'Documentation/guidance on enforcing an immediate change to temporary
+        passwords is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/79'
+
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'While hardware token quality requirements are not applicable to the
+        configuration of Red Hat Identity Management, a list of supported
+        tokens can be found online.
+
+        The link to track supported tokens is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/80'
+
+- control_key: IA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Red Hat Identity Management natively obscures such information.
+        Red Hat Identity Management cannot be
+        configured to be out of compliance with this requirement.'
+
+- control_key: IA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for configuring Red Hat Identity
+        Management to use
+        appropriate cryptographic modules. A successful control response will
+        document what modules are in use, how to attest the configuration is
+        in place, and references to supporing documentation outlining the
+        FIPS 140-2 certification for enabled modules.
+
+        Documentation to satisfy this control is being tracked on GitHub:
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/81'
+
+- control_key: IA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for identifying and authenticating
+        non-organizational users accessing the customer application. A
+        successful control response will need to address how non-organizational
+        users are defined and the process by which identification
+        and authentication takes place, including any differences from
+        identification and authentication for organizational users.
+
+        Documentation on how to satisfy this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/82'
+
+- control_key: IA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verificiation (PIV) credentials are those
+        credentials issued by federal agencies that conform to FIPS Publication
+        201 and supporting guidance documents. Customers will not be expected
+        to perform this credential verification for government agencies. A
+        mechanism for allowing government agencies to perform credential
+        verification in a way that can be trusted by the customer system is
+        through Active Directory Federation Services (ADFS) or Red Hat IdM.
+
+        Documentation on satisfying this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/82'
+
+- control_key: IA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.
+
+        Documentation/guidance for this control is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/84'
+
+- control_key: IA-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.
+
+        Documentation/guidance for this control is being tracked via
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/85'
+
+- control_key: IA-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.
+
+        Documentation/guidance for this control is being developed on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/86'
