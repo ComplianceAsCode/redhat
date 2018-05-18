@@ -66,7 +66,6 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat Identity Management.'
 
-
 - control_key: PS-8
   standard_key: NIST-800-53
   covered_by: []
