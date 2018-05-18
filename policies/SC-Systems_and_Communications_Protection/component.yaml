@@ -1,0 +1,164 @@
+##
+## BEGINNING OF:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
+
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicableß
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation on how communications at key internal boundaries of
+        Red Hat Identity Management can be monitored is forthcoming.
+        This activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/142'
+    - key: b
+      text: |
+        'Documentation regarding how Red Hat Identity Management can implement subnetworks
+        for publicly accessible system components is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/143'
+    - key: c
+      text: |
+        'Documentation regarding how Red Hat Identity Management can route connections to external
+        systems through a managed interface is forthcoming. This
+        activity is being trackedin GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/144'
+
+- control_key: SC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding how Red Hat Identity Management generates, distributes, stores,
+        accesses, and desctructs, cryptographic keys is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/145'
+
+- control_key: SC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding Red Hat Identity Management's usage of cryptography
+        and applicability to Federal laws is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/146'
+
+- control_key: SC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat Red Hat Identity Management Container Platform is not
+        a collaborative computing device.'
+    - key: b
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat Red Hat Identity Management Container Platform is not
+        a collaborative computing device.'
+    - key: Req. 1
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat Red Hat Identity Management Container Platform is not
+        a collaborative computing device.'
+
+- control_key: SC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation on how to configure Red Hat Identity Management DNS services to provide
+        data origin authentication and integrity verification is forthcoming.
+        That activity is being tracked GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/147'
+    - key: b
+      text: |
+        'Documentation on how to configure this functionality within
+        Red Hat Identity Management is forthcoming. This activity is being tracked in
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/148'
+
+- control_key: SC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation on enabling DNSSEC within Red Hat Identity Management is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/149'
+
+- control_key: SC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation on creating fault-tolerant DNS configurations within
+        Red Hat Identity Management is forthcoming. This activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/150'
+
+- control_key: SC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/343'
+
+- control_key: SC-39
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'When Red Hat Identity Management runs on Red Hat Enterprise Linux, 
+        Red Hat Identity Management maintains separate execution domains for each executing process by
+        assigning a private virtual address space to each process.
+
+        Documentation on ensuring this functionality is configured is forthcoming.
+        This activity is being tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
