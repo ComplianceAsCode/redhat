@@ -35,14 +35,16 @@
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/142'
     - key: b
       text: |
-        'Documentation regarding how Red Hat Identity Management can implement subnetworks
+        'Documentation regarding how Red Hat Identity Management can
+        implement subnetworks
         for publicly accessible system components is forthcoming. This
         activity is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/143'
     - key: c
       text: |
-        'Documentation regarding how Red Hat Identity Management can route connections to external
+        'Documentation regarding how Red Hat Identity Management can route
+        connections to external
         systems through a managed interface is forthcoming. This
         activity is being trackedin GitHub:
 
@@ -54,7 +56,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation regarding how Red Hat Identity Management generates, distributes, stores,
+        'Documentation regarding how Red Hat Identity Management generates,
+        distributes, stores,
         accesses, and desctructs, cryptographic keys is forthcoming. This
         activity is being tracked in GitHub:
 
@@ -66,8 +69,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation regarding Red Hat Identity Management's usage of cryptography
-        and applicability to Federal laws is forthcoming. This
+        'Documentation regarding Red Hat Identity Management's usage of
+        cryptography and applicability to Federal laws is forthcoming. This
         activity is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/146'
@@ -134,7 +137,8 @@
   narrative:
     - text: |
         'Documentation on creating fault-tolerant DNS configurations within
-        Red Hat Identity Management is forthcoming. This activity is being tracked in GitHub:
+        Red Hat Identity Management is forthcoming. This activity is being
+        tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/150'
 
@@ -145,7 +149,8 @@
   narrative:
     - text: |
         'When Red Hat Identity Management runs on Red Hat Enterprise Linux, 
-        Red Hat Identity Management maintains separate execution domains for each executing process by
+        Red Hat Identity Management maintains separate execution domains for
+        each executing process by
         assigning a private virtual address space to each process.
 
         Documentation on ensuring this functionality is configured is forthcoming.
