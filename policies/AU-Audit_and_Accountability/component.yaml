@@ -3,7 +3,6 @@
 ## AUDIT AND ACCOUNTABILITY
 ##
 
-
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
@@ -53,6 +52,17 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: AU-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/387'
+
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
@@ -87,6 +97,28 @@
         control response will outline the actions taken when an auditing
         failure occurs.'
 
+- control_key: AU-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for satisfying this control is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/388'
+
+- control_key: AU-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for satisfying this control is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/389'
+
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
@@ -99,7 +131,7 @@
 - control_key: AU-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -108,7 +140,60 @@
 - control_key: AU-6 (3)
   standard_key: NIST-800-53
   covered_by: []
+  implementation_status: not applicablee
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AU-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
   implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for satisfying this control is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/390'
+
+- control_key: AU-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for satisfying this control is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/391'
+
+- control_key: AU-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for satisfying this control is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/392'
+
+- control_key: AU-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for satisfying this control is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/393'
+
+- control_key: AU-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -190,6 +275,17 @@
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/199'
 
+- control_key: AU-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/394'
+
 - control_key: AU-9 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -250,3 +346,25 @@
         response will discuss how audit records are generated, and how they meet
         the requirements defined in AU-2 and AU-3.
         */'
+
+- control_key: AU-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative: 
+    - text: |
+        'Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/395'
+
+- control_key: AU-12 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative: 
+    - text: |
+        'Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/396'
