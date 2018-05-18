@@ -9,7 +9,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: IR-2
   standard_key: NIST-800-53
@@ -18,7 +18,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: IR-4
   standard_key: NIST-800-53
@@ -27,7 +27,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: IR-5
   standard_key: NIST-800-53
@@ -36,7 +36,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: IR-6
   standard_key: NIST-800-53
@@ -45,7 +45,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: IR-7
   standard_key: NIST-800-53
@@ -54,7 +54,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
 
 - control_key: IR-8
   standard_key: NIST-800-53
@@ -63,4 +63,4 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+        applicable to the configuration of Red Hat Identity Management.'
