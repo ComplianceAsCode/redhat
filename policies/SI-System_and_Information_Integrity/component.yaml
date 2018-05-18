@@ -1,0 +1,130 @@
+##
+## BEGINNING OF:
+## SYSTEM AND INFORMATION INTEGRITY
+##
+- control_key: SI-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    text: |
+      'This control reflects organizational procedures/policies, and is not
+      applicable to the configuration of Red Hat Identity Management.'
+    
+- control_key: SI-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for analyzing their Red Hat Identity Management deployment for
+        flaws, reporting on those flaws, and correcting them. A successful
+        control response will include a discussion of the process by which
+        flaws are discovered and remediated, as well as tools that are used to
+        assist in detection and remediation.
+
+        Documentation of the overall process of vulnerability identification to
+        patching is forthcoming. This work is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/155'
+    - key: b
+      text: |
+        'The customer will be responsible for testing Red Hat Identity Management updates
+        related to flaw remediation prior to installation. A successful
+        control response will discuss the testing process (e.g. the
+        nature of the test environment, the types of testing performed,
+        the tools in testing, etc.).
+
+        Documentation regarding suggested testing procedures is forthcoming.
+        This work is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/156'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SI-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer is responsible for ensuring that they employ malicious
+        code protection at information system entry, and exit points to detect
+        and eradicate malicious code. A successful control response will need
+        to address use of code protection mechanisms to protect assets from
+        malicious software (i.e. Viruses, malware, rootkits, worms, and
+        scripts). In regards to Red Hat Identity Management, this is generally through
+        integrating third party tools into CI/CD pipelines.
+
+        Documentation and suggested integration procedures are forthcoming.
+        This work is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/158'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+    - key: c
+      text: |
+        'In the scope of Red Hat Identity Management, this control is duplicative of SI-3(a).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SI-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SI-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SI-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for handling and retaining
+        information within, or hosted by, Red Hat Identity Management in
+        accordance with applicable federal laws, Executive Orders,
+        directives, policies, regulations, standards, and operational
+        requirements. A successful control response will need to outline
+        the specific requirements applicable to customer information
+        handling and retention, and the means by which those requirements
+        are met.
+
+        Documentation and suggestions on protecting customer information
+        hosted within the Red Hat Identity Management environment is forthcoming. This activity
+        is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/159'
+
+- control_key: SI-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Red Hat Red Hat Identity Management Container Platform inherits memory protections
+        provided by the underlying operating system. This control is not
+        applicable to Red Hat Red Hat Identity Management Container Platform.'
