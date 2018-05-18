@@ -1,0 +1,31 @@
+##
+## BEGINNING OF:
+## PLANNING
+##
+
+- control_key: PL-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: PL-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: PL-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
