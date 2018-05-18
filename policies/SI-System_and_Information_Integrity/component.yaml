@@ -10,7 +10,7 @@
     text: |
       'This control reflects organizational procedures/policies, and is not
       applicable to the configuration of Red Hat Identity Management.'
-    
+
 - control_key: SI-2
   standard_key: NIST-800-53
   covered_by: []
@@ -18,7 +18,8 @@
   narrative:
     - key: a
       text: |
-        'The customer will be responsible for analyzing their Red Hat Identity Management deployment for
+        'The customer will be responsible for analyzing their
+        Red Hat Identity Management deployment for
         flaws, reporting on those flaws, and correcting them. A successful
         control response will include a discussion of the process by which
         flaws are discovered and remediated, as well as tools that are used to
@@ -30,7 +31,8 @@
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/155'
     - key: b
       text: |
-        'The customer will be responsible for testing Red Hat Identity Management updates
+        'The customer will be responsible for testing
+        Red Hat Identity Management updates
         related to flaw remediation prior to installation. A successful
         control response will discuss the testing process (e.g. the
         nature of the test environment, the types of testing performed,
@@ -61,7 +63,8 @@
         and eradicate malicious code. A successful control response will need
         to address use of code protection mechanisms to protect assets from
         malicious software (i.e. Viruses, malware, rootkits, worms, and
-        scripts). In regards to Red Hat Identity Management, this is generally through
+        scripts). In regards to Red Hat Identity Management,
+        this is generally through
         integrating third party tools into CI/CD pipelines.
 
         Documentation and suggested integration procedures are forthcoming.
@@ -74,7 +77,8 @@
         applicable to the configuration of Red Hat Identity Management.'
     - key: c
       text: |
-        'In the scope of Red Hat Identity Management, this control is duplicative of SI-3(a).'
+        'In the scope of Red Hat Identity Management, this control is
+        duplicative of SI-3(a).'
     - key: d
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -114,7 +118,8 @@
         are met.
 
         Documentation and suggestions on protecting customer information
-        hosted within the Red Hat Identity Management environment is forthcoming. This activity
+        hosted within the Red Hat Identity Management environment
+        is forthcoming. This activity
         is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/159'
@@ -125,6 +130,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'Red Hat Red Hat Identity Management Container Platform inherits memory protections
+        'Red Hat Red Hat Identity Management Container Platform
+        inherits memory protections
         provided by the underlying operating system. This control is not
         applicable to Red Hat Red Hat Identity Management Container Platform.'

@@ -148,7 +148,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        'When Red Hat Identity Management runs on Red Hat Enterprise Linux, 
+        'When Red Hat Identity Management runs on Red Hat Enterprise Linux,
         Red Hat Identity Management maintains separate execution domains for
         each executing process by
         assigning a private virtual address space to each process.
