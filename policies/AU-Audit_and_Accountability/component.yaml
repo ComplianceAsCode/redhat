@@ -351,7 +351,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
-  narrative: 
+  narrative:
     - text: |
         'Documentation/guidance on satisfying this control is being
         tracked on GitHub:
@@ -362,7 +362,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
-  narrative: 
+  narrative:
     - text: |
         'Documentation/guidance on satisfying this control is being
         tracked on GitHub:
