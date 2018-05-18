@@ -109,6 +109,16 @@
         'AC-2 (10) is applicable to external identity management components,
         and is outside the scope of Red Hat OpenStack Platform configuration.'
 
+- control_key: AC-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'AC-2 (11) is technical control that applies to centralized
+        identity management tools/capabilities, and is outside the scope of
+        Red Hat OpenStack Platform configuration.'
+
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
@@ -117,6 +127,15 @@
     - text: |
         'AC-2 (12) is an organizational control that applies to centralized
         audit reduction tools/capabilities, and is outside the scope of
+        Red Hat OpenStack Platform configuration.'
+
+- control_key: AC-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'AC-2 (13) is an organizational control outside the scope of
         Red Hat OpenStack Platform configuration.'
 
 - control_key: AC-3
@@ -142,6 +161,17 @@
         being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/166'
+
+- control_key: AC-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance information flow control
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/374'
 
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
@@ -197,6 +227,16 @@
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/171'
 
+- control_key: AC-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/375'
+
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -205,6 +245,25 @@
     - text: |
         'AC-6 (5) is an organizational control outside the scope of Red Hat
         OpenStack Platform configuration.'
+
+- control_key: AC-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'AC-6 (7) is an organizational control outside the scope of Red Hat
+        OpenStack Platform configuration.'
+
+- control_key: AC-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/376'
 
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
@@ -243,6 +302,15 @@
         identity service, such as Active Directory, Red Hat IdM, or generic
         LDAP. When configured in such a manner, this control is not applicable
         to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AC-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'AC-7 (2) is an organizational control outside the scope of Red Hat
+        OpenStack Platform configuration.'
 
 - control_key: AC-8
   standard_key: NIST-800-53
@@ -420,6 +488,32 @@
         at the network access layer, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: AC-18 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'AC-18 (3) is an organizational control outside the scope of Red Hat
+        OpenStack Platform configuration.'
+
+- control_key: AC-18 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'AC-18 (4) is an organizational control outside the scope of Red Hat
+        OpenStack Platform configuration.'
+
+- control_key: AC-18 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'AC-18 (5) is an organizational control outside the scope of Red Hat
+        OpenStack Platform configuration.'
 
 - control_key: AC-19
   standard_key: NIST-800-53
