@@ -3,16 +3,6 @@
 ## PHYSICAL AND ENVIRONMENTAL PROTECTION
 ##
 
-#- control_key: PE-1
-#  standard_key: NIST-800-53
-#  covered_by: []
-#  implementation_status: none
-#  narrative:
-#    - key: a
-#      text: |
-#        '//*
-#        Text goes here - testing
-#        */'
 - control_key: PE-1
   standard_key: NIST-800-53
   covered_by: []
