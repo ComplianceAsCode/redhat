@@ -21,6 +21,24 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: MA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation/guidance on performing automated maintenance
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/433'
+    - key: b
+      text: |
+        'Documentation/guidance on creating complete records of maintenance
+        activity is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/434'
+
 - control_key: MA-3
   standard_key: NIST-800-53
   covered_by: []
@@ -106,6 +124,22 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
+- control_key: MA-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+    - key: b
+      text: |
+        'Documentation/guidance on associated maintenance procedures
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/435'
+
 - control_key: MA-5
   standard_key: NIST-800-53
   covered_by: []
@@ -124,7 +158,6 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat OpenStack Platform.'
 
-
 - control_key: MA-6
   standard_key: NIST-800-53
   covered_by: []
@@ -135,3 +168,14 @@
         on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/275'
+
+- control_key: MA-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/436'
