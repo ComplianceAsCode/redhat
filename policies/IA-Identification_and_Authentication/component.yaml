@@ -92,6 +92,21 @@
         Information Security Officer responsible for authorization of
         Red Hat OpenStack Platform.'
 
+- control_key: IA-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for local access to non-privileged accounts.
+
+        A successful control response will need to address all locally-
+        accessible non-privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        Documentation/guidance is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/421'
 
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
@@ -115,6 +130,18 @@
         is being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/249'
+
+- control_key: IA-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on enabling replay-resistant authentication
+        for network access to non-privileged accounts is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/422'
 
 - control_key: IA-2 (11)
   standard_key: NIST-800-53
@@ -281,6 +308,18 @@
         must be configured to use an external identity system (such as Red Hat
         IdM or Microsoft Active Directory). This control is applicable to the
         identity provider, not Red Hat OpenStack Platform.'
+
+- control_key: IA-5 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on how to prohibit the use of cached
+        authenticators after an organizationally-defined time period
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/423'
 
 - control_key: IA-6
   standard_key: NIST-800-53
