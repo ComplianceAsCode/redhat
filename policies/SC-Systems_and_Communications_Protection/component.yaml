@@ -1,0 +1,469 @@
+##
+## BEGINNING OF:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
+
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/329'
+
+- control_key: SC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/330'
+
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/331'
+
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation on how communications at key internal boundaries of
+        OpenStack can be monitored is forthcoming. This activity is being
+        tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+    - key: b
+      text: |
+        'Documentation regarding how Red Hat OpenStack Platform can implement subnetworks
+        for publicly accessible system components is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+    - key: c
+      text: |
+        'Documentation regarding how Red Hat OpenStack Platform can route connections to external
+        systems through a managed interface is forthcoming. This
+        activity is being trackedin GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/332'
+
+- control_key: SC-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/333'
+
+- control_key: SC-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/334'
+
+- control_key: SC-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/335'
+
+- control_key: SC-7 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/336'
+
+- control_key: SC-7 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/455'
+
+- control_key: SC-7 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/337'
+
+- control_key: SC-7 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-7 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is inherited through organiztional network services, and is
+        not applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-7 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/456'
+
+- control_key: SC-7 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/457'
+
+- control_key: SC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/338'
+
+- control_key: SC-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/339'
+
+- control_key: SC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/340'
+
+- control_key: SC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding how Red Hat OpenStack Platform generates, distributes, stores,
+        accesses, and desctructs, cryptographic keys is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/341'
+
+- control_key: SC-12 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/342'
+
+- control_key: SC-12 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/458'
+
+- control_key: SC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding Red Hat OpenStack Platform's usage of cryptography
+        and applicability to Federal laws is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat Red Hat OpenStack Platform Container Platform is not
+        a collaborative computing device.'
+    - key: b
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat Red Hat OpenStack Platform Container Platform is not
+        a collaborative computing device.'
+    - key: Req. 1
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat Red Hat OpenStack Platform Container Platform is not
+        a collaborative computing device.'
+
+- control_key: SC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: SC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Red Hat OpenStack Platform has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. Red Hat OpenStack Platform supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services. 
+
+        Red Hat OpenStack Platform administrators are responsible for providing
+        origin authentication and integrity verification artifacts along
+        with authoritative name resolution data returns in response. A
+        successful control response will discuss the technical means used to
+        accomplish this
+
+        Documentation on how to configure Red Hat OpenStack Platform DNS services to provide
+        data origin authentication and integrity verification is forthcoming.
+        That activity is being tracked GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+    - key: b
+      text: |
+        'Red Hat OpenStack Platform has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. Red Hat OpenStack Platform supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        Red Hat OpenStack Platform administrators are responsible for
+        providing means to indicate the security status of child zones and
+        enable verification of a chain of trust among parent and child domains.
+        A successful control response will discuss the technical means used to
+        accomplish this.
+        
+        Documentation on how to configure this functionality within
+        Red Hat OpenStack Platform is forthcoming. This activity is being tracked in
+        GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Red Hat OpenStack Platform has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. Red Hat OpenStack Platform supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        Red Hat OpenStack Platform administrators are responsible for configuring DNSSEC. A successful
+        control response will document how DNSSEC is configured on applicable
+        endpoints.
+
+        Documentation on enabling DNSSEC within Red Hat OpenStack Platform is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Red Hat OpenStack Platform has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. Red Hat OpenStack Platform supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        Red Hat OpenStack Platform administrators are responsible for ensuring
+        services are fault-tolerant and implement internal/external role
+        separation.
+
+        Documentation on creating fault-tolerant DNS configurations within
+        Red Hat OpenStack Platform is forthcoming. This activity is being tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+
+- control_key: SC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/343'
+
+- control_key: SC-23 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/459'
+
+- control_key: SC-24
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/460'
+
+- control_key: SC-28
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/344'
+
+- control_key: SC-28 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on this control is being developed on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/345'
+
+- control_key: SC-39
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'When Red Hat OpenStack Platform runs on Red Hat Enterprise Linux, 
+        Red Hat OpenStack Platform maintains separate execution domains for each executing process by
+        assigning a private virtual address space to each process.
+
+        Documentation on ensuring this functionality is configured is forthcoming.
+        This activity is being tracked in GitHub:
+
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'

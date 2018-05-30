@@ -1,0 +1,81 @@
+##
+## BEGINNING OF:
+## AWARENESS AND TRAINING CONTROLS
+##
+
+# Awareness and Training controls have been moved.
+#
+# For organizational responsibilities relating to Awareness and Training:
+# ../../../customer_cxo_controls/policies/AT-Awareness_and_Training/component.yaml
+#
+# For Project/Program Management Office responsibilities related to Awareness
+# and Training:
+# ../../../customer_cto_controls/policies/AT-Awareness_and_Training/component.yaml
+#
+
+- control_key: AT-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+
+- control_key: AT-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+
+- control_key: AT-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AT-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.
+
+        For organizations requiring system operators to receive certifications
+        or training on components for which they have privileged (administrator)
+        access, training and certification programs are available for Red Hat OpenStack Platform.
+        In addition to providing training information, these courses may be
+        helpful in inspiring minimal knowledge requirements for staff
+        performing the role of Red Hat OpenStack Platform Administrator.
+
+        Training information can be found from Red Hat:
+
+        https://www.redhat.com/en/services/training/openstack'
+
+- control_key: AT-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
+
+- control_key: AT-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
