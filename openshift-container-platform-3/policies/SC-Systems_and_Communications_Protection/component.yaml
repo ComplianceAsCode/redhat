@@ -1,0 +1,441 @@
+##
+## BEGINNING OF:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
+
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer is responsible for separating user functionality
+        including user interface services) from information system management
+        functionality. A successful control response will indicate how user
+        and management functionality access is separated.
+        */'
+
+- control_key: SC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer is responsible for preventing unauthorized and
+        unintended information transfer via shared system resources. A
+        successful control response will discuss how this is prevented.
+        */'
+
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer is responsible to protect the availability of
+        resources by allocating processor and memory resources by process
+        priority and resource availability. A successful control response will
+        discuss how resource availability is protected.
+        */'
+
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation on how communications at key internal boundaries of
+        Openshift can be monitored is forthcoming. This activity is being
+        tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-21'
+    - key: b
+      text: |
+        'Documentation regarding how OpenShift can implement subnetworks
+        for publicly accessible system components is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-22'
+    - key: c
+      text: |
+        'Documentation regarding how OpenShift can route connections to external
+        systems through a managed interface is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-23'
+
+- control_key: SC-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer is responsible for limiting the number of external
+        network connetions to the information system. A successful control
+        response will indicate the rate limiting procedures and technical
+        enforcement.
+        */'
+
+- control_key: SC-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: b
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: c
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: d
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: e
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+
+- control_key: SC-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for ensuring managed interfaces deny
+        network traffic by default and allow network communications traffic
+        by exception (i.e. deny all, permit by exception).
+        */'
+
+- control_key: SC-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for implementing mechanisms to
+        ensure OpenShift nodes to not act as proxy or relay servers between
+        internal and external networks.
+        */'
+
+- control_key: SC-7 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for implementing host-based
+        boundary protection mechanisms. This is often through configuration of
+        local firewalld and SELinux policies.
+        */'
+
+- control_key: SC-7 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for ensuring that OpenShift is
+        isolated from other internal information system components by
+        implementing physically separate subnetworks with managed
+        interfaces to other components of the system. A successful control
+        response will discuss the networking configuration to satisfy this
+        control.
+        */'
+
+- control_key: SC-7 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        'This control is inherited through organizational network services.'
+
+- control_key: SC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        Customers are responsible for configuring their web browsers, mobile
+        devices, etc., to enable communications through FIPS 140-2 validated
+        encryption. Customers who enforce FDCC/USGCB settings will achieve
+        FIPS 140-2 encryption as part of that baseline. Strong encryption
+        with FIPS-approved ciphers is still possible when hosts are not
+        operating in FIPS mode.
+        */'
+
+- control_key: SC-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for implimenting cryptographic
+        mechanisms to prevent unauthorized disclosure of information and
+        detect changes to information during transmission. A successful
+        control response will detail how encryption is used for all
+        network communications that carry customer data.
+        */'
+
+- control_key: SC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for terminating network connections
+        at the end of the session or after no longer than 30 minutes of
+        inactivity. A successful control response will document the technical
+        means on how this is established.
+        */'
+
+- control_key: SC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding how OpenShift generates, distributes, stores,
+        accesses, and desctructs, cryptographic keys is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-24'
+
+- control_key: SC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding OpenShift's usage of cryptography
+        and applicability to Federal laws is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-25'
+
+- control_key: SC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - key: a
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat OpenShift Container Platform is not
+        a collaborative computing device.'
+    - key: b
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat OpenShift Container Platform is not
+        a collaborative computing device.'
+    - key: Req. 1
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat OpenShift Container Platform is not
+        a collaborative computing device.'
+
+- control_key: SC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for authorizing, monitoring, and
+        controlling the use of mobile code within the system in accordance
+        with organizational policies defined in SC-18(a) and SC-18(b).
+        */'
+
+- control_key: SC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for authorizing, monitoring, and
+        controlling the use of VoIP within the system in accordance with
+        organizational policies defined in SC-19(a)..
+        */'
+
+- control_key: SC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services. 
+
+        OpenShift administrators are responsible for providing
+        origin authentication and integrity verification artifacts along
+        with authoritative name resolution data returns in response. A
+        successful control response will discuss the technical means used to
+        accomplish this
+
+        Documentation on how to configure OpenShift DNS services to provide
+        data origin authentication and integrity veridication is forthcoming.
+        That activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-26'
+    - key: b
+      text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        OpenShift administrators are responsible for
+        providing means to indicate the security status of child zones and
+        enable verification of a chain of trust among parent and child domains.
+        A successful control response will discuss the technical means used to
+        accomplish this.
+        
+        Documentation on how to configure this functionality within
+        OpenShift is forthcoming. This activity is being tracked in
+        Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-27'
+
+- control_key: SC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        OpenShift administrators are responsible for configuring DNSSEC. A successful
+        control response will document how DNSSEC is configured on applicable
+        endpoints.
+
+        Documentation on enabling DNSSEC within OpenShift is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-28'
+
+- control_key: SC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        OpenShift administrators are responsible for ensuring
+        services are fault-tolerant and implement internal/external role
+        separation.
+
+        Documentation on creating fault-tolerant DNS configurations within
+        OpenShift is forthcoming. This activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-29'
+
+- control_key: SC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for guarding against, for
+        example, man in the middle or session hijacking attacks for
+        connections to the customer application, for example via the
+        use of TLS. A successful control response will address the
+        various types of attacks against session authenticity and the
+        mechanisms used to protect against those attacks.
+
+        OpenShift uses various TLS algorithms and ciphers to protect
+        the authenticity of communications sessions.
+        */'
+
+- control_key: SC-28
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        A successful control response will need to address the means by
+        which data at rest is protected.
+        */'
+
+- control_key: SC-28 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer is responsible for implementing cryptographic
+        mechanisms to prevent unauthorzed disclosure and modification of
+        customer data. A successful control response will outline how
+        cryptography is used to ensure integrity of data in rest and
+        transport.
+
+        When running on Red Hat Enterprise Linux, full disk encryption
+        is possible for data at rest on the OpenShift nodes. For data
+        in transport, OpenShift uses cryptographic algorithms and ciphers to
+        protect confidentiality and integrity of data in transport.
+        */'
+
+- control_key: SC-39
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'When OpenShift runs on Red Hat Enterprise Linux, 
+        OpenShift maintains separate execution domains for each executing process by
+        assigning a private virtual address space to each process.
+
+        Documentation on ensuring this functionality is configured is forthcoming.
+        This activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-30'

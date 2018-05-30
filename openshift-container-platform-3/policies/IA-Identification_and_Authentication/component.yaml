@@ -1,0 +1,416 @@
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: IA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift assigns unique identifies to users, groups, and processes
+        acting on behalf of these categories. This is non-configurable behavior.'
+
+- control_key: IA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for network access to privileged accounts.
+
+        A successful control response will need to address all network-
+        accessible privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        OpenShift provides a plugable authentication architecture that can
+        utilize 3rd party authentication schemes that include multi-factor
+        authentication. The authentication subsystem in OpenShift relies on
+        OAuth 2.0 and any system that can interact with the OAuth token service
+        over HTTPS can recieve authentication tokens. Typically this is
+        implemented using OpenShift-provided RequestHeaderIdentityProvider as
+        described in Section 12.3.8, Request Header, of the OpenShift v3.3
+        Installation and Configuration Guide:
+
+        https://docs.openshift.com/container-platform/3.3/install_config/
+        configuring_authentication.html#RequestHeaderIdentityProvider
+        
+        Many customers are accepting password-enabled SSH keys as multi-
+        factor authentication. The SSH key (something they have) and the
+        decryption password (something they know). Prior to enabling CAC
+        and PIV cards, it is recommended to seek guidance from the
+        Information Security Officer responsible for authorization of
+        OpenShift.'
+
+- control_key: IA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for implementing multifactor
+        authentication for network access to non-privileged accounts.
+        A successful control response will need to address all network-
+        accessible non-privileged account types and the means by which
+        multifactor authentication is enforced for each.
+        */'
+
+- control_key: IA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        'This control is not applicable to tenants of cloud computing
+        platforms, such as OpenShift administrators.'
+
+- control_key: IA-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        'OpenShift requires individuals to be authenticated with an individual
+        authenticator prior to any group authenticators being employed. This is
+        default, non-configurable behavior of the OpenShift container
+        platform. All users, remote or local, administrative or non-privileged,
+        first authenticate via an individual authenticator. Once individually
+        authenticated, group access/privileges will be granted as applicable.'
+
+- control_key: IA-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for implementing replay-resistant
+        authentication for access to privileged accounts. Microsoft AAD and MFA
+        solutions may be used for this purpose. A successful control response
+        will need to address all user types and the means by which
+        replay-resistant authentication is required for each.
+        */'
+
+- control_key: IA-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for implementing multifactor
+        authentication such that one of the factors is provided by a device
+        separate from the system gaining access. Examples are CAC and PIV
+        cards.
+
+        A successful control response will need to address all user
+        types and the means by which multifactor authentication is enforced
+        for each, as well as the strength of mechanism required by the MFA
+        solution.
+        */'
+
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verification (PIV) credentials are those credentials
+        issued by federal agencies that conform to FIPS Publication 201 and
+        supporting guidance documents. Customers will not be expected to perform
+        this credential verification for government agencies. A mechanism for
+        allowing government agencies to perform credential verification in a way
+        that can be trusted by the customer system is through Active Directory
+        Federation Services (ADFS).'
+
+- control_key: IA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for ensuring that customer-owned
+        infrastructure is  properly authenticated prior to establishing a
+        connection to the rest of the customer system. A successful control
+        response will need to address the type of infrastructure in use
+        (e.g. bare metal, virtual machines, etc) and the mechanism by which
+        each is authenticated.
+
+        OpenShift nodes can be configured with x509/PKI certificates, which
+        will provide identity of the machines.
+        */'
+
+- control_key: IA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+- control_key: IA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for including contractor or foreign
+        national status as a part of individual identifiers. Microsoft AAD
+        solution may be used for this purpose. A successful control response
+        ill need to address how contractors and foreign nationals are
+        identified by the customer and how that information is incorporated
+        into the individual identifier.
+        */'
+
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+- control_key: IA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for validating certificates used
+        within the customer application. Active Directory Certificate Services
+        may be used for this purpose. A successful control response will need
+        to address the mechanism used to validate certificates.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for the enforcement of authorized
+        access to private keys associated with certificates used within the
+        customer application. Active Directory Certificate Services may be
+        used for this purpose. A successful control response will need to
+        address the mechanism used to restrict access to private keys.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for mapping the identity
+        authenticated by a certificate to the account of the individual or
+        group associated with that identity. Active Directory Certificate
+        Services may be used for this purpose. A successful control response
+        will need to address the mechanism used to map identities between
+        certificates and accounts.
+        */'
+    - key: d
+      text: |
+        '//*
+        The customer will be responsible for implementing a local (i.e. within
+        their subscription) cache of revocation data. Active Directory
+        Certificate Serices may be used for this purpose. A successful control
+        response will need to address the mechanism used to establish and
+        populate the revocation data.
+        */'
+
+- control_key: IA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for distributing
+        authenticators in person with proper authorizations in place. A
+        successful control response will need to discuss the
+        authenticators in use, the personnel or roles serving as the
+        registration authority, and the personnel or roles providing
+        authorization for distribution of the authenticators.
+        */'
+
+- control_key: IA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for employing automated tools to
+        ensure that password authenticators meet strength requirements.
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address the automated mechanism used to
+        enforce password strength requirements.
+        */'
+
+- control_key: IA-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for protecting authenticators.
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address the mechanisms, processes, or
+        tools used to protect authenticators.
+        */'
+
+- control_key: IA-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for ensuring that unencrypted static
+        authenticators are not embedded or stored. A successful control response
+        will need to address both policy requirements and technical enforcement
+        mechanisms.
+        */'
+
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: Not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+- control_key: IA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift natively obscures such information. OpenShift cannot be
+        configured to be out of compliance with this requirement.'
+
+- control_key: IA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Administrative access to OpenShift nodes is performed over SSH. To
+        limit SSH ciphers to those algorithms which are FIPS-approved, update
+        the following line in /etc/ssh/sshd_config:
+
+        Ciphers aes128,aes192-ctr,aes256-ctr
+
+        The OpenShift Console, which is the web interface to the system,
+        automatically converts incoming authentication requests to HTTPS.
+        The underlying web server can be configured to use U.S. Government
+        PKI certificates for authentication and authorization.
+
+        The customer will be responsible for configuring OpenShift to use
+        appropriate cryptographic modules. A successful control response will
+        document what modules are in use, how to attest the configuration is
+        in place, and references to supporing documentation outlining the
+        FIPS 140-2 certification for enabled modules.'
+
+- control_key: IA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for identifying and authenticating
+        non-organizational users accessing the customer application. A
+        successful control response will need to address how non-organizational
+        users are defined and the process by which identification
+        and authentication takes place, including any differences from
+        identification and authentication for organizational users.'
+
+- control_key: IA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verificiation (PIV) credentials are those
+        credentials issued by federal agencies that conform to FIPS Publication
+        201 and supporting guidance documents. Customers will not be expected
+        to perform this credential verification for government agencies. A
+        mechanism for allowing government agencies to perform credential
+        verification in a way that can be trusted by the customer system is
+        through Active Directory Federation Services (ADFS) or Red Hat IdM.'
+
+- control_key: IA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
+- control_key: IA-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
+
+- control_key: IA-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
