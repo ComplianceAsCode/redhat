@@ -6,7 +6,7 @@ All aggregate, e.g. FedRAMP Moderate requires all
 Bugzillas listed under FedRAMP Low.
 
 # FedRAMP Low
-[https://bugzilla.redhat.com/show_bug.cgi?id=1585366](https://bugzilla.redhat.com/show_bug.cgi?id=1585366)
+[BZ #1585366: Failed logons within organization-defined time period](https://bugzilla.redhat.com/show_bug.cgi?id=1585366)
 # FedRAMP Moderate
 
 # FedRAMP High
