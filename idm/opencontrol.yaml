@@ -1,0 +1,9 @@
+schema_version: "1.0.0"
+name: Red Hat Identity Management
+metadata:
+  description: Red Hat Identity Management
+  maintainers:
+    - Shawn Wells <shawn@redhat.com>
+
+components:
+- ./component.yaml

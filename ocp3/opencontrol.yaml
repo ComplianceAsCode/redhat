@@ -1,0 +1,9 @@
+schema_version: "1.0.0"
+name: Red Hat OpenShift Container Platform v3.x
+metadata:
+  description: Red Hat OpenShift Container Platform v3.x
+  maintainers:
+    - Shawn Wells <shawn@redhat.com>
+
+components:
+- ./component.yaml
