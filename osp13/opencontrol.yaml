@@ -1,7 +1,7 @@
 schema_version: "1.0.0"
-name: Red Hat OpenStack Platform 13 v3
+name: Red Hat OpenStack Platform 13
 metadata:
-  description: Red Hat Red Hat OpenStack Platform 13 v3
+  description: Red Hat OpenStack Platform 13
   maintainers:
     - Shawn Wells <shawn@redhat.com>
 
