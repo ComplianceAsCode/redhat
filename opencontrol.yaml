@@ -1,0 +1,11 @@
+schema_version: "1.0.0"
+name: Red Hat Template Information System
+metadata:
+  description: Template Red Hat Information System
+  maintainers:
+    - Shawn Wells <shawn@redhat.com>
+
+components:
+- ./osp13
+- ./ocp3
+- ./idm
