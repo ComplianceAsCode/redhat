@@ -6,6 +6,6 @@ metadata:
     - Shawn Wells <shawn@redhat.com>
 
 components:
-- ./osp13
-- ./ocp3
-- ./idm
+  - ./osp13
+  - ./ocp3
+  - ./idm
