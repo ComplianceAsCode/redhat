@@ -6,4 +6,4 @@ metadata:
     - Shawn Wells <shawn@redhat.com>
 
 components:
-  - ./openstack-platform-13
+  - ./osp13.yaml

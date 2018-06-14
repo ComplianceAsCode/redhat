@@ -6,4 +6,4 @@ metadata:
     - Shawn Wells <shawn@redhat.com>
 
 components:
-  - ./openshift-container-platform-3
+  - ./ocp3.yaml
