@@ -1,0 +1,182 @@
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+ #   - text: |
+ #       'AC-1 is an organizational control outside the scope of
+ #       Ansible Tower.'
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'AC-2 is an organizational control outside the scope of 
+#        Ansible Tower configuration. Technical enablement of
+#        the organizational processes are covered in AC-2 subcontrols,
+#        such as AC-2(2) and AC-2(3).'
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'There are three types of Tower users that can be assigned:
+
+        - Normal User
+        Normal Users have read and write access limited to the resources
+        (such as inventory, projects, and job templates) for which that user
+        has been granted the appropriate roles and privileges.
+
+        - System Auditor
+        Auditors implicitly inherit the read-only capability for all objects
+        within the Tower environment.
+
+        - System Adminisrator
+        A Tower System Administrator (also known as a Superuser) has admin,
+        read, and write privileges over the entire Tower installation. A
+        System Administrator is typically responsible for managing all
+        aspects of Tower and delegating responsibilities for day-to-day
+        work to various Users.
+
+        Ansible Tower uses role-based access control to provide the ability
+        to read, modify, and administer projects, inventories, job templates,
+        and other Ansible Tower elements. The role-based access control policies
+        can be defined per-user, or per user type as indicated above.
+
+        Additional detail can be found in the Ansible Tower documentation:
+
+        https://docs.ansible.com/ansible-tower/latest/html/userguide/users.html'
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower does not currently have the capability to enforce limits
+        on consecutive logon attempts. This feature request is being tracked
+        through BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591981
+
+        Additionally, Ansible Tower does not currently have the capability to
+        time constrain the failed logon attempts (e.g. 3 attempts within
+        15 minutes). That feature request is being tracked through BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591982'
+    - key: b
+      text: |
+        'Ansible Tower does not currently have the capability to satisfy
+        this control. This feature request is being tracked through
+        BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591985'
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower supports configuration of custom system use
+        notifications. 
+
+        From within the Tower web interface:
+
+        (1) Select "Settings", which is the gear icon in the top right corner
+        
+        (2) Select "Configure Tower," which is the second icon in the third
+        row
+        
+        (3) Select "User Interface"
+
+        (4) Enter your system use notification in the "CUSTOM LOGIN INFO"
+        field. Note breaks must use "\n"'
+    - key: b
+      text: |
+        'Custom system use notifications are displayed on the logon screen
+        prior to the "login" button. This is default, non-configurable
+        behavior.'
+    - key: c
+      text: |
+        'Ansible Tower does not differentiate logon screens between private and
+        publicly accessible instances. Custom system use notifications
+        for publicly accessible systems can be implemented using the
+        procedures from AC-8(a).'
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Regardless of access mechanism, such as the Ansible Tower
+        console, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-configurable behavior.
+
+        External service APIs also require authentication
+        prior to granting resource access.'
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+     - text: ''
+#     - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |    
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
