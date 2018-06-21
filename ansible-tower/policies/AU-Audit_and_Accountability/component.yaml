@@ -1,0 +1,193 @@
+##
+## BEGINNING OF:
+## AUDIT AND ACCOUNTABILITY
+##
+
+- control_key: AU-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Ansible Tower does not currently include the full event data
+        as required in AC-3. Inclusion of this feature is being tracked
+        through Bugzilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591998'
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower does not currently have the capability to notify
+        administrators in the event of an audit processing failure. This
+        feature is being tracked in BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592000'
+    - key: b
+      text: |
+        'Ansible Tower does not currently have the capability to take
+        an organizationally-defined action of shut down, overwrite,
+        or halting audit record generation. This feature is being
+        tracked in BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591956'
+
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower relies on the time services
+        provided by the underlying operating system. Utilization of
+        platform-provided time services is default, non-configurable
+        behavior.'
+
+    - key: b
+      text: |
+        'Ansible Tower utilizes the time zone settings of the underlying
+        operating system. This is default, non-configurable behavior.'
+
+- control_key: AU-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Ansible Tower logs are kept on the underlying operating system.
+        Administrative access to the underlying operating system must be
+        explicitly granted to view Ansible Tower logs.'
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Ansible Tower currently does not have this capability. This feature
+        request is being tracked in BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592002'
+
+- control_key: AU-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The following BugZillas track feature creation for Ansible Tower
+        to audit certain events:
+
+        - Audit Logons (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592003
+
+        - Audit Logoff (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592004
+
+        - Audit File & Object Creation (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592005
+
+        - Audit File & Object Access (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592006
+
+        - Audit File & Object Deletion (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592007
+
+        - Audit File & Object Modification (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592008
+
+--ENDED HERE-000---
+        - Audit File & Object Permission Changes (Success and Failure): 
+
+        - Audit File & Object Ownership Modifications (Success and Failure): 
+
+        - Audit User & Group Management Events, User add (Success and Failure): 
+
+        - Audit User & Group Management Events, User delete (Success and Failure): 
+
+        - Audit User & Group Management Events, User modify (Success and Failure): 
+
+        - Audit User & Group Management Events, User suspend (Success and Failure): 
+
+        - Audit User & Group Management Events, User lock (Success and Failure): 
+
+        - Audit User & Group Management Events, Group/Role add (Success and Failure):
+
+        - Audit User & Group Management Events, Group/Role delete (Success and Failure): 
+
+        - Audit User & Group Management Events, Group/Role modify (Success and Failure):
+
+        - Audit Use of Privileged/Special Rights, security or policy changes (Success and Failure):
+
+        - Audit Use of Privileged/Special Rights, configuration changes (Success and Failure):
+
+        - Audit Use of Privileged/Special Rights, Admin or root-level access (Success and Failure):
+
+        - Audit Privilege/Role Escalation (Success and Failure): 
+
+        - Audit and Log Data Access (Success and Failure): 
+
+        - Export of Information (Success and Failure): 
+
+        - Import of Information (Success and Failure): 
+
+        '
+    - key: b
+      text: |
+        '//*
+        Customers are required to allow defined personnel or roles to select
+        which auditable events are to be audited by specific components of the
+        information system. A successful control response will discuss how
+        audit generation is implemented, and who selects and configures
+        auditable events on the information system. Approved personnel or
+        roles are defined in AU-9(4).
+
+        Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/296'
+    - key: c
+      text: |
+        'Customers are required to generate audit records for the events
+        defined in AU-2d with the content defined in AU-3. A successful control
+        response will discuss how audit records are generated, and how they meet
+        the requirements defined in AU-2 and AU-3.
+
+        Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/297'
