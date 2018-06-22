@@ -15,9 +15,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation/guidance on configuring Red Hat
-        Identity Management against
-        this requirement is being tracked on GitHub:
+        'Documentation/guidance on configuring Ansible Tower
+        against this requirement is being tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/304'
 
@@ -63,15 +62,15 @@
     - key: a
       text: |
         'This is an organizational control outside the scope of configuring
-        Red Hat Identity Management.'
+        Ansible Tower.'
     - key: b
       text: |
         'This is an organizational control outside the scope of configuring
-        Red Hat Identity Management.'
+        Ansible Tower.'
     - key: c
       text: |
         'This is an organizational control outside the scope of configuring
-        Red Hat Identity Management.'
+        Ansible Tower.'
     - key: d
       text: |
         'Documentation/guidance on preventing the reuse of identifiers is
