@@ -20,7 +20,7 @@
   narrative:
     - text: ''
 #    - text: |
-#        'AC-2 is an organizational control outside the scope of 
+#        'AC-2 is an organizational control outside the scope of
 #        Ansible Tower configuration. Technical enablement of
 #        the organizational processes are covered in AC-2 subcontrols,
 #        such as AC-2(2) and AC-2(3).'
@@ -92,15 +92,15 @@
     - key: a
       text: |
         'Ansible Tower supports configuration of custom system use
-        notifications. 
+        notifications.
 
         From within the Tower web interface:
 
         (1) Select "Settings", which is the gear icon in the top right corner
-        
+
         (2) Select "Configure Tower," which is the second icon in the third
         row
-        
+
         (3) Select "User Interface"
 
         (4) Enter your system use notification in the "CUSTOM LOGIN INFO"
@@ -136,7 +136,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-     - text: ''
+    - text: ''
 #     - text: |
 #        'This control reflects organizational procedures/policies, and is not
 #        applicable to the configuration of Ansible Tower.'
