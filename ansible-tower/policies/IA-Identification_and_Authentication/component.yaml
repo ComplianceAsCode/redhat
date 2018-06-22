@@ -120,29 +120,29 @@
         restrictions and reuse conditions for authenticators is being
         tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/70'
+        https://github.com/ComplianceAsCode/redhat/issues/316'
     - key: g
       text: |
         'Guidance on changing/refreshing authenticators after an
         organizationally-defined time period is being tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/71'
+        https://github.com/ComplianceAsCode/redhat/issues/317'
     - key: h
       text: |
         'Documentation/guidance for this control is being tracked on
         GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/72'
+        https://github.com/ComplianceAsCode/redhat/issues/318'
     - key: i
       text: |
         'Documentation/guidance for this control is being tracked on
         GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/73'
+        https://github.com/ComplianceAsCode/redhat/issues/319'
     - key: j
       text: |
         'This is an organizational control outside the scope of configuring
-        Red Hat Identity Management.'
+        Ansible Tower.'
 
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
@@ -154,51 +154,44 @@
         'Documentation/guidance on implementing password complexity
         is being tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/74'
+        https://github.com/ComplianceAsCode/redhat/issues/320'
     - key: b
       text: |
         'Documentation/guidance on implementing changed characters during
         password creation is being tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/75'
+        https://github.com/ComplianceAsCode/redhat/issues/321'
     - key: c
       text: |
         'Documentation/guidance on storing and transmitting only
         cryptographically-protected passwords is being tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/76'
+        https://github.com/ComplianceAsCode/redhat/issues/322'
     - key: d
       text: |
         'Documentation/guidance on enforcing password minimum and maximum
         lifetime restrictions is being tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/77'
+        https://github.com/ComplianceAsCode/redhat/issues/323'
     - key: e
       text: |
         'Documentation/guidance on enforcing password minimum and maximum
         lifetime restrictions is being tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/78'
+        https://github.com/ComplianceAsCode/redhat/issues/324'
     - key: f
       text: |
         'Documentation/guidance on enforcing an immediate change to temporary
         passwords is being tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/79'
+        https://github.com/ComplianceAsCode/redhat/issues/325'
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'While hardware token quality requirements are not applicable to the
-        configuration of Red Hat Identity Management, a list of supported
-        tokens can be found online.
-
-        The link to track supported tokens is being developed on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/80'
+    - text: ''
 
 - control_key: IA-6
   standard_key: NIST-800-53
@@ -206,8 +199,8 @@
   implementation_status: complete
   narrative:
     - text: |
-        'Red Hat Identity Management natively obscures such information.
-        Red Hat Identity Management cannot be
+        'Ansible Tower natively obscures such information.
+        Ansible Tower cannot be
         configured to be out of compliance with this requirement.'
 
 - control_key: IA-7
@@ -216,15 +209,14 @@
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for configuring Red Hat Identity
-        Management to use
+        'The customer will be responsible for configuring Ansible Tower to use
         appropriate cryptographic modules. A successful control response will
         document what modules are in use, how to attest the configuration is
         in place, and references to supporing documentation outlining the
         FIPS 140-2 certification for enabled modules.
 
         Documentation to satisfy this control is being tracked on GitHub:
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/81'
+        https://github.com/ComplianceAsCode/redhat/issues/326'
 
 - control_key: IA-8
   standard_key: NIST-800-53
@@ -242,7 +234,7 @@
         Documentation on how to satisfy this control is being
         tracked on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/82'
+        https://github.com/ComplianceAsCode/redhat/issues/327'
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
@@ -261,7 +253,7 @@
         Documentation on satisfying this control is being tracked on
         GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/82'
+        https://github.com/ComplianceAsCode/redhat/issues/328'
 
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
@@ -281,7 +273,7 @@
         Documentation/guidance for this control is being tracked
         on GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/84'
+        https://github.com/ComplianceAsCode/redhat/issues/329'
 
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
@@ -301,7 +293,7 @@
         Documentation/guidance for this control is being tracked via
         GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/85'
+        https://github.com/ComplianceAsCode/redhat/issues/330'
 
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
@@ -321,4 +313,4 @@
         Documentation/guidance for this control is being developed on
         GitHub:
 
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/86'
+        https://github.com/ComplianceAsCode/redhat/issues/331'
