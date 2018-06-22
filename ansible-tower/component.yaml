@@ -1,0 +1,693 @@
+---
+documentation_complete: false
+name: Ansible Tower
+schema_version: 3.0.0
+satisfies:
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+ #   - text: |
+ #       'AC-1 is an organizational control outside the scope of
+ #       Ansible Tower.'
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'AC-2 is an organizational control outside the scope of
+#        Ansible Tower configuration. Technical enablement of
+#        the organizational processes are covered in AC-2 subcontrols,
+#        such as AC-2(2) and AC-2(3).'
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'There are three types of Tower users that can be assigned:
+
+        - Normal User
+        Normal Users have read and write access limited to the resources
+        (such as inventory, projects, and job templates) for which that user
+        has been granted the appropriate roles and privileges.
+
+        - System Auditor
+        Auditors implicitly inherit the read-only capability for all objects
+        within the Tower environment.
+
+        - System Adminisrator
+        A Tower System Administrator (also known as a Superuser) has admin,
+        read, and write privileges over the entire Tower installation. A
+        System Administrator is typically responsible for managing all
+        aspects of Tower and delegating responsibilities for day-to-day
+        work to various Users.
+
+        Ansible Tower uses role-based access control to provide the ability
+        to read, modify, and administer projects, inventories, job templates,
+        and other Ansible Tower elements. The role-based access control policies
+        can be defined per-user, or per user type as indicated above.
+
+        Additional detail can be found in the Ansible Tower documentation:
+
+        https://docs.ansible.com/ansible-tower/latest/html/userguide/users.html'
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower does not currently have the capability to enforce limits
+        on consecutive logon attempts. This feature request is being tracked
+        through BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591981
+
+        Additionally, Ansible Tower does not currently have the capability to
+        time constrain the failed logon attempts (e.g. 3 attempts within
+        15 minutes). That feature request is being tracked through BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591982'
+    - key: b
+      text: |
+        'Ansible Tower does not currently have the capability to satisfy
+        this control. This feature request is being tracked through
+        BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591985'
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower supports configuration of custom system use
+        notifications.
+
+        From within the Tower web interface:
+
+        (1) Select "Settings", which is the gear icon in the top right corner
+
+        (2) Select "Configure Tower," which is the second icon in the third
+        row
+
+        (3) Select "User Interface"
+
+        (4) Enter your system use notification in the "CUSTOM LOGIN INFO"
+        field. Note breaks must use "\n"'
+    - key: b
+      text: |
+        'Custom system use notifications are displayed on the logon screen
+        prior to the "login" button. This is default, non-configurable
+        behavior.'
+    - key: c
+      text: |
+        'Ansible Tower does not differentiate logon screens between private and
+        publicly accessible instances. Custom system use notifications
+        for publicly accessible systems can be implemented using the
+        procedures from AC-8(a).'
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Regardless of access mechanism, such as the Ansible Tower
+        console, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-configurable behavior.
+
+        External service APIs also require authentication
+        prior to granting resource access.'
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#     - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+#    - text: |
+#        'This control reflects organizational procedures/policies, and is not
+#        applicable to the configuration of Ansible Tower.'
+##
+## BEGINNING OF:
+## AWARENESS AND TRAINING CONTROLS
+##
+
+# Awareness and Training controls have been moved.
+#
+# For organizational responsibilities relating to Awareness and Training:
+# ../../../customer_cxo_controls/policies/AT-Awareness_and_Training/component.yaml
+#
+# For Project/Program Management Office responsibilities related to Awareness
+# and Training:
+# ../../../customer_cto_controls/policies/AT-Awareness_and_Training/component.yaml
+#
+
+- control_key: AT-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AT-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AT-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AT-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## AUDIT AND ACCOUNTABILITY
+##
+
+- control_key: AU-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Ansible Tower does not currently include the full event data
+        as required in AC-3. Inclusion of this feature is being tracked
+        through Bugzilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591998'
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower does not currently have the capability to notify
+        administrators in the event of an audit processing failure. This
+        feature is being tracked in BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592000'
+    - key: b
+      text: |
+        'Ansible Tower does not currently have the capability to take
+        an organizationally-defined action of shut down, overwrite,
+        or halting audit record generation. This feature is being
+        tracked in BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1591956'
+
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'Ansible Tower relies on the time services
+        provided by the underlying operating system. Utilization of
+        platform-provided time services is default, non-configurable
+        behavior.'
+
+    - key: b
+      text: |
+        'Ansible Tower utilizes the time zone settings of the underlying
+        operating system. This is default, non-configurable behavior.'
+
+- control_key: AU-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Ansible Tower logs are kept on the underlying operating system.
+        Administrative access to the underlying operating system must be
+        explicitly granted to view Ansible Tower logs.'
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Ansible Tower currently does not have this capability. This feature
+        request is being tracked in BugZilla:
+
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592002'
+
+- control_key: AU-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The following BugZillas track feature creation for Ansible Tower
+        to audit certain events:
+
+        - Audit Logons (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592003
+
+        - Audit Logoff (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592004
+
+        - Audit File & Object Creation (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592005
+
+        - Audit File & Object Access (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592006
+
+        - Audit File & Object Deletion (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592007
+
+        - Audit File & Object Modification (Success and Failure):
+        https://bugzilla.redhat.com/show_bug.cgi?id=1592008
+
+        - Audit File & Object Permission Changes (Success and Failure):
+
+        - Audit File & Object Ownership Modifications (Success and Failure):
+
+        - Audit User & Group Management Events, User add (Success and Failure):
+
+        - Audit User & Group Management Events, User delete (Success and Failure):
+
+        - Audit User & Group Management Events, User modify (Success and Failure):
+
+        - Audit User & Group Management Events, User suspend (Success and Failure):
+
+        - Audit User & Group Management Events, User lock (Success and Failure):
+
+        - Audit User & Group Management Events, Group/Role add (Success and Failure):
+
+        - Audit User & Group Management Events, Group/Role delete (Success and Failure):
+
+        - Audit User & Group Management Events, Group/Role modify (Success and Failure):
+
+        - Audit Use of Privileged/Special Rights, security or policy changes (Success and Failure):
+
+        - Audit Use of Privileged/Special Rights, configuration changes (Success and Failure):
+
+        - Audit Use of Privileged/Special Rights, Admin or root-level access (Success and Failure):
+
+        - Audit Privilege/Role Escalation (Success and Failure): 
+
+        - Audit and Log Data Access (Success and Failure): 
+
+        - Export of Information (Success and Failure): 
+
+        - Import of Information (Success and Failure): 
+
+        '
+    - key: b
+      text: |
+        'Customers are required to allow defined personnel or roles to select
+        which auditable events are to be audited by specific components of the
+        information system. A successful control response will discuss how
+        audit generation is implemented, and who selects and configures
+        auditable events on the information system. Approved personnel or
+        roles are defined in AU-9(4).
+
+        Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/296'
+    - key: c
+      text: |
+        'Customers are required to generate audit records for the events
+        defined in AU-2d with the content defined in AU-3. A successful control
+        response will discuss how audit records are generated, and how they meet
+        the requirements defined in AU-2 and AU-3.
+
+        Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/297'
+##
+## BEGINNING OF:
+## SECURITY ASSESSMENT AND AUTHORIZATION
+##
+
+- control_key: CA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
+
+# ADMINISTRATORS NOTE ON CM-2:
+#       Implimentation of this control varies greatly between customers. Some
+#       want centralized config management, while others expect component
+#       administrators to handle this (e.g. maintain custom Ansible scripts).
+#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
+#       however it's best to double check with the Information System owner
+#       on expectations (component vs central CM).
+#
+#       In case the customer desires components (e.g. Red Hat Identity
+#       Management Admins) to handle configuration management the
+#       lines below can be uncommented:
+#
+
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management. Use of the NIST National Checklist
+        for Red Hat Identity Management is suggested as a supported,
+        US Government recognized, vendor supported, baseline.'
+    - key: b
+      text: |
+        'The customer will be responsible for implementing configuration
+        settings as defined in CM-6(a). A successful control response will
+        describe how mandatory configuration settings are implemented. This can
+        include the process or documentation followed.
+
+        Creation of a Red Hat Identity Management configuration baseline
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/299'
+    - key: c
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: d
+      text: |
+        'The customer will be responsible for monitoring and controlling
+        changes to the configuration settings in accordance with organization
+        policies and procedures. A successful control response will describe
+        how changes are controlled and monitored. This can include limitations
+        to privileges, how these changes are audited, and any tools in place to
+        track and approve changes.'
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Ensuring Ansible Tower is deployed in a minimal configuration
+        is being tracked through GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/300'
+
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## CONTINGENCY PLANNING
+##
+
+- control_key: CP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of user-level information contained in the
+        information system. Additional FedRAMP requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/303'
+    - key: b
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of system-level information contained in the
+        information system. Additional FedRAMP requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/303'
+    - key: c
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of information system documentation including
+        security-related documentation. Additional FedRAMP requirements and
+        guidance include maintaining at least three backup copies of user-level
+        information (at least one of which is available online) or provides an
+        equivalent alternative. A successful control response will detail how
+        backups of user-level information occures, and how three backup copies
+        are maintained.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/303'
+    - key: d
+      text: |
+        'The customer will be responsible for protecting the confidentiality,
+        integrity, and available of backup information at storage locations.
+        Additional FedRAMP requirements and guidance include determining
+        what elements of the cloud environment require the Information System
+        Backup control. The customer will determine how Information System
+        Backup is going to be verified and appropriate periodicity of the
+        check.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/303'
+
+- control_key: CP-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for documenting how to reconstitute
+        their Red Hat Identity Management environment. A successful control
+        response will detail
+        processes used to fully recover/restore the Red Hat Identity
+        Management environment.
+
+        Guidance on establishing such procedures is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/302'
