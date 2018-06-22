@@ -91,7 +91,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation on ensuring this functionality is configured is forthcoming.
+        'Documentation on ensuring this functionality is
+        configured is forthcoming.
         This activity is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/336'
