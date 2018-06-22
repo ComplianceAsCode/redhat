@@ -130,24 +130,23 @@
         - Audit File & Object Modification (Success and Failure):
         https://bugzilla.redhat.com/show_bug.cgi?id=1592008
 
---ENDED HERE-000---
-        - Audit File & Object Permission Changes (Success and Failure): 
+        - Audit File & Object Permission Changes (Success and Failure):
 
-        - Audit File & Object Ownership Modifications (Success and Failure): 
+        - Audit File & Object Ownership Modifications (Success and Failure):
 
-        - Audit User & Group Management Events, User add (Success and Failure): 
+        - Audit User & Group Management Events, User add (Success and Failure):
 
-        - Audit User & Group Management Events, User delete (Success and Failure): 
+        - Audit User & Group Management Events, User delete (Success and Failure):
 
-        - Audit User & Group Management Events, User modify (Success and Failure): 
+        - Audit User & Group Management Events, User modify (Success and Failure):
 
-        - Audit User & Group Management Events, User suspend (Success and Failure): 
+        - Audit User & Group Management Events, User suspend (Success and Failure):
 
-        - Audit User & Group Management Events, User lock (Success and Failure): 
+        - Audit User & Group Management Events, User lock (Success and Failure):
 
         - Audit User & Group Management Events, Group/Role add (Success and Failure):
 
-        - Audit User & Group Management Events, Group/Role delete (Success and Failure): 
+        - Audit User & Group Management Events, Group/Role delete (Success and Failure):
 
         - Audit User & Group Management Events, Group/Role modify (Success and Failure):
 
@@ -168,8 +167,7 @@
         '
     - key: b
       text: |
-        '//*
-        Customers are required to allow defined personnel or roles to select
+        'Customers are required to allow defined personnel or roles to select
         which auditable events are to be audited by specific components of the
         information system. A successful control response will discuss how
         audit generation is implemented, and who selects and configures
