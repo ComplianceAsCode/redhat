@@ -147,7 +147,7 @@
   implementation_status: not applicable
   narrative:
     - text: ''
-#    - text: |    
+#    - text: |
 #        'This control reflects organizational procedures/policies, and is not
 #        applicable to the configuration of Ansible Tower.'
 
