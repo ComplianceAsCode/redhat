@@ -66,7 +66,7 @@
     - key: a
       text: |
         'Ansible Tower does not currently have the capability to enforce limits
-        on consecutive logon attempts. 
+        on consecutive logon attempts.
 
         To satisfy this control an external authentication service, such
         as Red Hat IdM, must be used. This control is not applicable to
@@ -89,7 +89,7 @@
         algorithm when the maximum number of unsuccessful attempts is
         exceeded. Ansible Tower cannot be configured to perform
         this functionality; delay of further logon prompts is a permanent
-        finding.' 
+        finding.'
 
 - control_key: AC-8
   standard_key: NIST-800-53

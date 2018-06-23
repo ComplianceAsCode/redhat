@@ -25,7 +25,7 @@
     - text: |
         'Ansible Tower does not currently include the full event data
         as required in AC-3. Inclusion of this feature is being tracked
-        through GitHub: 
+        through GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/340'
 
