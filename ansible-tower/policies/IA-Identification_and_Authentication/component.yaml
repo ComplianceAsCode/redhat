@@ -151,18 +151,20 @@
     - key: a
       text: |
         'Ansible Tower does not have the capability to enforce minimum
-        password complexity requirements. To satisfy this control an
-        external authentication service, such as Red Hat IdM, must
-        be used. 
+        password complexity requirements.
 
-        When an external authentication service is used this requirement
-        is not applicable to Ansible Tower.'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: b
       text: |
-        'Documentation/guidance on implementing changed characters during
-        password creation is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce at least
+        an organizationally-defined number of characters be changed
+        when new passwords are created.
 
-        https://github.com/ComplianceAsCode/redhat/issues/321'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
         'Documentation/guidance on storing and transmitting only
