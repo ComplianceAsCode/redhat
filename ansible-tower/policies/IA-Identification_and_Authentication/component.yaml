@@ -124,9 +124,14 @@
         Ansible Tower.'
     - key: e
       text: |
-        'Documentation/guidance for this control is being tracked on GitHub:
+        'Ansible Tower does not have default account authenticators.
+        Authenticators used during the installation of Ansible Tower,
+        such as passwords for the embeded database, are created by the
+        system administratur during the Ansible Tower installation.
+        This is non-configurable behavior.
 
-        https://github.com/ComplianceAsCode/redhat/issues/313'
+        This requirement is not applicable to the
+        configuration of Ansible Tower.'
     - key: f
       text: |
         'Guidance/documentation for establishing minimum/maximum lifetime
