@@ -167,10 +167,33 @@
         Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
-        'Documentation/guidance on storing and transmitting only
-        cryptographically-protected passwords is being tracked on GitHub:
+        'If passwords are used, Ansible Tower handles those by responding
+        directly to the password prompt and decrypting the password before
+        writing it to the prompt.
 
-        https://github.com/ComplianceAsCode/redhat/issues/322'
+        The encryption/decryption algorithm uses a variation of Fernet: a
+        symmetric encryption cipher utilizing AES-256 in CBC mode alongside
+        a SHA-256 HMAC. Specific, sensitive, Model fields in Tower are
+        encrypted and include:
+
+        CREDENTIAL
+          - password
+          - ssh_key_data
+          - ssh_key_unlock
+          - become_password
+          - vault_password
+
+        UNIFIED JOB:
+          - start_args
+
+        Data is encrypted before it is saved to the database and it is
+        decrypted as needed in Tower. The encryption/decryption process
+        derives the AES-256 bit encryption key from
+        <SECRET_KEY, field_name, primary_key> where field_name is the
+        field_name of the Model field and primary_key is the database assigned
+        auto-incremented record ID. Thus, if any attribute used in the key
+        generation process changes, Tower fails to correctly decrypt the
+        secret.'
     - key: d
       text: |
         'Documentation/guidance on enforcing password minimum and maximum
