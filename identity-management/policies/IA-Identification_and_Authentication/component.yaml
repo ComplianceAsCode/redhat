@@ -7,9 +7,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.'
+    - text: ''
 
 - control_key: IA-2
   standard_key: NIST-800-53
@@ -203,14 +201,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'While hardware token quality requirements are not applicable to the
-        configuration of Red Hat Identity Management, a list of supported
-        tokens can be found online.
-
-        The link to track supported tokens is being developed on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat-identity-management/issues/80'
+    - text: ''
 
 - control_key: IA-6
   standard_key: NIST-800-53

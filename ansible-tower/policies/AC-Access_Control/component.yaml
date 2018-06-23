@@ -25,6 +25,61 @@
 #        the organizational processes are covered in AC-2 subcontrols,
 #        such as AC-2(2) and AC-2(3).'
 
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation for this requirement is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/465'
+
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+      'Documentation for this requirement is being tracked on GitHub:
+
+      https://github.com/ComplianceAsCode/redhat/issues/466'
+
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+      'Documentation for this requirement is being tracked on GitHub:
+
+      https://github.com/ComplianceAsCode/redhat/issues/467'
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+      'Documentation for this requirement is being tracked on GitHub:
+
+      https://github.com/ComplianceAsCode/redhat/issues/467'
+
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
@@ -61,7 +116,7 @@
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unsatisfied
+  implementation_status: partial
   narrative:
     - key: a
       text: |

@@ -15,19 +15,14 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'AC-1 is an organizational control outside the scope of Red Hat OpenStack Platform
-        configuration.'
+    - text: ''
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'AC-2 is an organizational control outside the scope of Red Hat OpenStack Platform
-        configuration. Technical enablement of the organizational processes
-        are covered in AC-2 subcontrols, such as AC-2(2) and AC-2(3).'
+    - text: ''
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
@@ -45,18 +40,14 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'When OpenStack is configured to use an external identity management
-        system, this control is not applicable'
+    - text: ''
 
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'When OpenStack is configured to use an external identity management
-        system, this control is not applicable.'
+    - text: ''
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53

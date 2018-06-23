@@ -8,36 +8,28 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.'
+    - text: ''
 
 - control_key: CP-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.'
+    - text: ''
 
 - control_key: CP-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.'
+    - text: ''
 
 - control_key: CP-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.'
+    - text: ''
 
 - control_key: CP-9
   standard_key: NIST-800-53
