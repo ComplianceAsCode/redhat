@@ -150,10 +150,13 @@
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on implementing password complexity
-        is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce minimum
+        password complexity requirements. To satisfy this control an
+        external authentication service, such as Red Hat IdM, must
+        be used. 
 
-        https://github.com/ComplianceAsCode/redhat/issues/320'
+        When an external authentication service is used this requirement
+        is not applicable to Ansible Tower.'
     - key: b
       text: |
         'Documentation/guidance on implementing changed characters during
