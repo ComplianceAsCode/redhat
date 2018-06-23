@@ -94,7 +94,10 @@
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  # NOTE: Because sub keys cannot have their own implementation_status,
+  # using 'complete' to indicate overall satisfaction of requirements,
+  # even if certain sub keys are not applicable.
+  implementation_status: complete
   narrative:
     - key: a
       text: |
@@ -198,7 +201,10 @@
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  # NOTE: Because sub keys cannot have their own implementation_status,
+  # using 'complete' to indicate overall satisfaction of requirements,
+  # even if certain sub keys are not applicable.
+  implementation_status: complete
   narrative:
     - key: a
       text: |
@@ -286,8 +292,8 @@
   narrative:
     - text: |
         'Ansible Tower natively obscures such information.
-        Ansible Tower cannot be
-        configured to be out of compliance with this requirement.'
+        Ansible Tower cannot be configured to be out of
+        compliance with this requirement.'
 
 - control_key: IA-7
   standard_key: NIST-800-53
@@ -307,20 +313,16 @@
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'The customer will be responsible for identifying and authenticating
-        non-organizational users accessing the customer application. A
-        successful control response will need to address how non-organizational
-        users are defined and the process by which identification
-        and authentication takes place, including any differences from
-        identification and authentication for organizational users.
+        'Ansible Tower does not have the capability to uniquely
+        identify and authenticate non-organizational users (or
+        processes acting on behalf of non-organizational users).
 
-        Documentation on how to satisfy this control is being
-        tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/327'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
