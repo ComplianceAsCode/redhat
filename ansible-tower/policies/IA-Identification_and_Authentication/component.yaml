@@ -15,7 +15,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'Ansible Tower does not have the capability uniquely identify and
+        'Ansible Tower does not have the capability to uniquely identify and
         authenticate organizational users (or processes acting on
         behalf of organizational users).
 
@@ -76,10 +76,12 @@
         Ansible Tower.'
     - key: d
       text: |
-        'Documentation/guidance on preventing the reuse of identifiers is
-        being tracked on GitHub:
+        'Ansible Tower does not have the capability uniquely to prevent the
+        reuse of identifiers for an organizationally-defined time period.
 
-        https://github.com/ComplianceAsCode/redhat/issues/307'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: e
       text: |
         'Documentation/guidance on disabling idle accounts is being tracked
