@@ -134,11 +134,14 @@
         configuration of Ansible Tower.'
     - key: f
       text: |
-        'Guidance/documentation for establishing minimum/maximum lifetime
-        restrictions and reuse conditions for authenticators is being
-        tracked on GitHub:
+        'Ansible Tower does not have the capability to establish
+        minimum and maximum lifetime restrictions and reuse
+        conditions for authenticators.
 
-        https://github.com/ComplianceAsCode/redhat/issues/316'
+        To satisfy this control an external authentication service,
+        such as Red Hat IdM, must be used. This control is not
+        applicable to Ansible Tower when an external authentication
+        service is used.'
     - key: g
       text: |
         'Guidance on changing/refreshing authenticators after an
