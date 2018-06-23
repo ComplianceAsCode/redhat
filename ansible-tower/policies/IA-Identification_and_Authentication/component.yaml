@@ -76,7 +76,7 @@
         Ansible Tower.'
     - key: d
       text: |
-        'Ansible Tower does not have the capability uniquely to prevent the
+        'Ansible Tower does not have the capability to prevent the
         reuse of identifiers for an organizationally-defined time period.
 
         To satisfy this control an external authentication service, such
@@ -84,10 +84,12 @@
         Ansible Tower when an external authentication service is used.'
     - key: e
       text: |
-        'Documentation/guidance on disabling idle accounts is being tracked
-        on GitHub:
+        'Ansible Tower does not have the capability to disable an identifier
+        after an organizationally-defined time period of inactivity.
 
-        https://github.com/ComplianceAsCode/redhat/issues/308'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-5
   standard_key: NIST-800-53
