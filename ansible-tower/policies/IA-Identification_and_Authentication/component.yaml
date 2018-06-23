@@ -188,10 +188,8 @@
         secret.'
     - key: i
       text: |
-        'Documentation/guidance for this control is being tracked on
-        GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/319'
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: j
       text: |
         'This is an organizational control outside the scope of configuring
