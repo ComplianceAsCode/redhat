@@ -204,10 +204,12 @@
         Ansible Tower when an external authentication service is used.'
     - key: e
       text: |
-        'Documentation/guidance on enforcing password minimum and maximum
-        lifetime restrictions is being tracked on GitHub:
+        'Ansible Tower does not have the capability prohibit password
+        reuse.
 
-        https://github.com/ComplianceAsCode/redhat/issues/324'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: f
       text: |
         'Documentation/guidance on enforcing an immediate change to temporary
