@@ -61,28 +61,35 @@
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unsatisfied
   narrative:
     - key: a
       text: |
         'Ansible Tower does not currently have the capability to enforce limits
-        on consecutive logon attempts. This feature request is being tracked
-        through BugZilla:
+        on consecutive logon attempts. 
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591981
-
-        Additionally, Ansible Tower does not currently have the capability to
-        time constrain the failed logon attempts (e.g. 3 attempts within
-        15 minutes). That feature request is being tracked through BugZilla:
-
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591982'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: b
       text: |
-        'Ansible Tower does not currently have the capability to satisfy
-        this control. This feature request is being tracked through
-        BugZilla:
+        'Ansible Tower does not currently have the capability automatically
+        lock an account for an organizationally-defined time period, nor
+        does Ansible Tower have the capability to lock an account until
+        released by an administrator.
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591985'
+        To satisfy those elemenets of this control an external
+        authentication service, such as Red Hat IdM, must be used.
+        Those two elements of this control are not applicable to
+        Ansible Tower when an external authentication service
+        is used.
+
+        Ansible Tower does not currently have the ability to delay
+        logon prompts according to an organizationally-defined delay
+        algorithm when the maximum number of unsuccessful attempts is
+        exceeded. Ansible Tower cannot be configured to perform
+        this functionality; delay of further logon prompts is a permanent
+        finding.' 
 
 - control_key: AC-8
   standard_key: NIST-800-53
