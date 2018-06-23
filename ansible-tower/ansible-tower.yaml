@@ -66,28 +66,35 @@ satisfies:
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unsatisfied
   narrative:
     - key: a
       text: |
         'Ansible Tower does not currently have the capability to enforce limits
-        on consecutive logon attempts. This feature request is being tracked
-        through BugZilla:
+        on consecutive logon attempts.
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591981
-
-        Additionally, Ansible Tower does not currently have the capability to
-        time constrain the failed logon attempts (e.g. 3 attempts within
-        15 minutes). That feature request is being tracked through BugZilla:
-
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591982'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: b
       text: |
-        'Ansible Tower does not currently have the capability to satisfy
-        this control. This feature request is being tracked through
-        BugZilla:
+        'Ansible Tower does not currently have the capability automatically
+        lock an account for an organizationally-defined time period, nor
+        does Ansible Tower have the capability to lock an account until
+        released by an administrator.
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591985'
+        To satisfy those elemenets of this control an external
+        authentication service, such as Red Hat IdM, must be used.
+        Those two elements of this control are not applicable to
+        Ansible Tower when an external authentication service
+        is used.
+
+        Ansible Tower does not currently have the ability to delay
+        logon prompts according to an organizationally-defined delay
+        algorithm when the maximum number of unsuccessful attempts is
+        exceeded. Ansible Tower cannot be configured to perform
+        this functionality; delay of further logon prompts is a permanent
+        finding.'
 
 - control_key: AC-8
   standard_key: NIST-800-53
@@ -254,9 +261,9 @@ satisfies:
     - text: |
         'Ansible Tower does not currently include the full event data
         as required in AC-3. Inclusion of this feature is being tracked
-        through Bugzilla:
+        through GitHub:
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591998'
+        https://github.com/ComplianceAsCode/redhat/issues/340'
 
 - control_key: AU-4
   standard_key: NIST-800-53
@@ -276,7 +283,7 @@ satisfies:
         administrators in the event of an audit processing failure. This
         feature is being tracked in BugZilla:
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592000'
+        https://github.com/ComplianceAsCode/redhat/issues/341'
     - key: b
       text: |
         'Ansible Tower does not currently have the capability to take
@@ -284,7 +291,7 @@ satisfies:
         or halting audit record generation. This feature is being
         tracked in BugZilla:
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591956'
+        https://github.com/ComplianceAsCode/redhat/issues/342'
 
 - control_key: AU-6
   standard_key: NIST-800-53
@@ -313,12 +320,17 @@ satisfies:
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - text: |
         'Ansible Tower logs are kept on the underlying operating system.
         Administrative access to the underlying operating system must be
-        explicitly granted to view Ansible Tower logs.'
+        explicitly granted to view Ansible Tower logs.
+
+        The ability to protect embedded log data is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/343'
 
 - control_key: AU-11
   standard_key: NIST-800-53
@@ -326,10 +338,11 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Ansible Tower currently does not have this capability. This feature
-        request is being tracked in BugZilla:
+        'Ansible Tower currently does not have the capability to
+        retain audit records for an organizationally-defined time period.
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592002'
+        This capability is being tracked on GitHub:
+        http://ssptool.securitycentral.io/certifications/FedRAMP-low/NIST-800-53/AU-11'
 
 - control_key: AU-12
   standard_key: NIST-800-53
@@ -342,58 +355,73 @@ satisfies:
         to audit certain events:
 
         - Audit Logons (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592003
+        https://github.com/ComplianceAsCode/redhat/issues/345
 
         - Audit Logoff (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592004
+        https://github.com/ComplianceAsCode/redhat/issues/346
 
         - Audit File & Object Creation (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592005
+        https://github.com/ComplianceAsCode/redhat/issues/347
 
         - Audit File & Object Access (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592006
+        https://github.com/ComplianceAsCode/redhat/issues/348
 
         - Audit File & Object Deletion (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592007
+        https://github.com/ComplianceAsCode/redhat/issues/349
 
         - Audit File & Object Modification (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592008
+        https://github.com/ComplianceAsCode/redhat/issues/350
 
         - Audit File & Object Permission Changes (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/351
 
         - Audit File & Object Ownership Modifications (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/352
 
         - Audit User & Group Management Events, User add (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/448
 
         - Audit User & Group Management Events, User delete (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/449
 
         - Audit User & Group Management Events, User modify (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/450
 
         - Audit User & Group Management Events, User suspend (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/451
 
         - Audit User & Group Management Events, User lock (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/452
 
         - Audit User & Group Management Events, Group/Role add (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/453
 
         - Audit User & Group Management Events, Group/Role delete (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/454
 
         - Audit User & Group Management Events, Group/Role modify (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/455
 
         - Audit Use of Privileged/Special Rights, security or policy changes (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/456
 
         - Audit Use of Privileged/Special Rights, configuration changes (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/457
 
         - Audit Use of Privileged/Special Rights, Admin or root-level access (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/458
 
-        - Audit Privilege/Role Escalation (Success and Failure): 
+        - Audit Privilege/Role Escalation (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/459
 
-        - Audit and Log Data Access (Success and Failure): 
+        - Audit and Log Data Access (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/460
 
-        - Export of Information (Success and Failure): 
+        - Export of Information (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/461
 
-        - Import of Information (Success and Failure): 
-
-        '
+        - Import of Information (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/462'
     - key: b
       text: |
         'Customers are required to allow defined personnel or roles to select
@@ -704,13 +732,16 @@ satisfies:
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'Documentation/guidance on configuring Ansible Tower
-        against this requirement is being tracked on GitHub:
+        'Ansible Tower does not have the capability to uniquely identify and
+        authenticate organizational users (or processes acting on
+        behalf of organizational users).
 
-        https://github.com/ComplianceAsCode/redhat/issues/304'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
@@ -749,7 +780,7 @@ satisfies:
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -765,71 +796,123 @@ satisfies:
         Ansible Tower.'
     - key: d
       text: |
-        'Documentation/guidance on preventing the reuse of identifiers is
-        being tracked on GitHub:
+        'Ansible Tower does not have the capability to prevent the
+        reuse of identifiers for an organizationally-defined time period.
 
-        https://github.com/ComplianceAsCode/redhat/issues/307'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: e
       text: |
-        'Documentation/guidance on disabling idle accounts is being tracked
-        on GitHub:
+        'Ansible Tower does not have the capability to disable an identifier
+        after an organizationally-defined time period of inactivity.
 
-        https://github.com/ComplianceAsCode/redhat/issues/308'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  # NOTE: Because sub keys cannot have their own implementation_status,
+  # using 'complete' to indicate overall satisfaction of requirements,
+  # even if certain sub keys are not applicable.
+  implementation_status: complete
   narrative:
     - key: a
-      text: ''
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: b
       text: |
-        'Documentation/guidance on how to configure initial authenticator
-        metadata is being tracked on GitHub:
+        'Ansible Tower does not have the capability to establish initial
+        authenticator content for authenticators defined by the organization
+        (e.g. complexity requirements in IA-4).
 
-        https://github.com/ComplianceAsCode/redhat/issues/309'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
-        'Documentation/guidance on ensuring authenticators have sufficient
-        strenth of mechanism for their purpose is being tracked on GitHub:
+        'Ansible Tower does not have the capability to ensure that
+        authenticators have sufficient strength of mechanism for their
+        intended use.
 
-        https://github.com/ComplianceAsCode/redhat/issues/310'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: d
       text: |
-        'Documentation/guidance for this control is being tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/311'
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: e
       text: |
-        'Documentation/guidance for this control is being tracked on GitHub:
+        'Ansible Tower does not have default account authenticators.
+        Authenticators used during the installation of Ansible Tower,
+        such as passwords for the embeded database, are created by the
+        system administratur during the Ansible Tower installation.
+        This is non-configurable behavior.
 
-        https://github.com/ComplianceAsCode/redhat/issues/313'
+        This requirement is not applicable to the
+        configuration of Ansible Tower.'
     - key: f
       text: |
-        'Guidance/documentation for establishing minimum/maximum lifetime
-        restrictions and reuse conditions for authenticators is being
-        tracked on GitHub:
+        'Ansible Tower does not have the capability to establish
+        minimum and maximum lifetime restrictions and reuse
+        conditions for authenticators.
 
-        https://github.com/ComplianceAsCode/redhat/issues/316'
+        To satisfy this control an external authentication service,
+        such as Red Hat IdM, must be used. This control is not
+        applicable to Ansible Tower when an external authentication
+        service is used.'
     - key: g
       text: |
-        'Guidance on changing/refreshing authenticators after an
-        organizationally-defined time period is being tracked on GitHub:
+        'Ansible Tower does not have the capability to change/refresh
+        authenticators after an organizationally-defined time period
+        by authenticator type.
 
-        https://github.com/ComplianceAsCode/redhat/issues/317'
+        To satisfy this control an external authentication service,
+        such as Red Hat IdM, must be used. This control is not
+        applicable to Ansible Tower when an external authentication
+        service is used.'
     - key: h
       text: |
-        'Documentation/guidance for this control is being tracked on
-        GitHub:
+        'Ansible Tower uses SSH to connect to remote hosts (or the Windows
+        equivalent). In order to pass the key from Tower to SSH, the key must
+        be decrypted before it can be written to a named pipe. Tower then uses
+        that pipe to send the key to SSH (so that it is never written to disk).
 
-        https://github.com/ComplianceAsCode/redhat/issues/318'
+        If passwords are used, Ansible Tower handles those by responding
+        directly to the password prompt and decrypting the password before
+        writing it to the prompt.
+
+        The encryption/decryption algorithm uses a variation of Fernet: a
+        symmetric encryption cipher utilizing AES-256 in CBC mode alongside
+        a SHA-256 HMAC. Specific, sensitive, Model fields in Tower are
+        encrypted and include:
+
+        CREDENTIAL
+          - password
+          - ssh_key_data
+          - ssh_key_unlock
+          - become_password
+          - vault_password
+
+        UNIFIED JOB:
+          - start_args
+
+        Data is encrypted before it is saved to the database and it is
+        decrypted as needed in Tower. The encryption/decryption process
+        derives the AES-256 bit encryption key from
+        <SECRET_KEY, field_name, primary_key> where field_name is the
+        field_name of the Model field and primary_key is the database assigned
+        auto-incremented record ID. Thus, if any attribute used in the key
+        generation process changes, Tower fails to correctly decrypt the
+        secret.'
     - key: i
       text: |
-        'Documentation/guidance for this control is being tracked on
-        GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/319'
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: j
       text: |
         'This is an organizational control outside the scope of configuring
@@ -838,44 +921,82 @@ satisfies:
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  # NOTE: Because sub keys cannot have their own implementation_status,
+  # using 'complete' to indicate overall satisfaction of requirements,
+  # even if certain sub keys are not applicable.
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on implementing password complexity
-        is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce minimum
+        password complexity requirements.
 
-        https://github.com/ComplianceAsCode/redhat/issues/320'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: b
       text: |
-        'Documentation/guidance on implementing changed characters during
-        password creation is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce at least
+        an organizationally-defined number of characters be changed
+        when new passwords are created.
 
-        https://github.com/ComplianceAsCode/redhat/issues/321'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
-        'Documentation/guidance on storing and transmitting only
-        cryptographically-protected passwords is being tracked on GitHub:
+        'If passwords are used, Ansible Tower handles those by responding
+        directly to the password prompt and decrypting the password before
+        writing it to the prompt.
 
-        https://github.com/ComplianceAsCode/redhat/issues/322'
+        The encryption/decryption algorithm uses a variation of Fernet: a
+        symmetric encryption cipher utilizing AES-256 in CBC mode alongside
+        a SHA-256 HMAC. Specific, sensitive, Model fields in Tower are
+        encrypted and include:
+
+        CREDENTIAL
+          - password
+          - ssh_key_data
+          - ssh_key_unlock
+          - become_password
+          - vault_password
+
+        UNIFIED JOB:
+          - start_args
+
+        Data is encrypted before it is saved to the database and it is
+        decrypted as needed in Tower. The encryption/decryption process
+        derives the AES-256 bit encryption key from
+        <SECRET_KEY, field_name, primary_key> where field_name is the
+        field_name of the Model field and primary_key is the database assigned
+        auto-incremented record ID. Thus, if any attribute used in the key
+        generation process changes, Tower fails to correctly decrypt the
+        secret.'
     - key: d
       text: |
-        'Documentation/guidance on enforcing password minimum and maximum
-        lifetime restrictions is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce password
+        minimum and maximum lifetime restrictions.
 
-        https://github.com/ComplianceAsCode/redhat/issues/323'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: e
       text: |
-        'Documentation/guidance on enforcing password minimum and maximum
-        lifetime restrictions is being tracked on GitHub:
+        'Ansible Tower does not have the capability prohibit password
+        reuse.
 
-        https://github.com/ComplianceAsCode/redhat/issues/324'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: f
       text: |
-        'Documentation/guidance on enforcing an immediate change to temporary
-        passwords is being tracked on GitHub:
+        'Ansible Tower does not have the capability allow the use of a
+        temporary password for system logons with an immediate change
+        to a permanent password.
 
-        https://github.com/ComplianceAsCode/redhat/issues/325'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
@@ -891,8 +1012,8 @@ satisfies:
   narrative:
     - text: |
         'Ansible Tower natively obscures such information.
-        Ansible Tower cannot be
-        configured to be out of compliance with this requirement.'
+        Ansible Tower cannot be configured to be out of
+        compliance with this requirement.'
 
 - control_key: IA-7
   standard_key: NIST-800-53
@@ -912,20 +1033,16 @@ satisfies:
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'The customer will be responsible for identifying and authenticating
-        non-organizational users accessing the customer application. A
-        successful control response will need to address how non-organizational
-        users are defined and the process by which identification
-        and authentication takes place, including any differences from
-        identification and authentication for organizational users.
+        'Ansible Tower does not have the capability to uniquely
+        identify and authenticate non-organizational users (or
+        processes acting on behalf of non-organizational users).
 
-        Documentation on how to satisfy this control is being
-        tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/327'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
