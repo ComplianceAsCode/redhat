@@ -212,10 +212,13 @@
         Ansible Tower when an external authentication service is used.'
     - key: f
       text: |
-        'Documentation/guidance on enforcing an immediate change to temporary
-        passwords is being tracked on GitHub:
+        'Ansible Tower does not have the capability allow the use of a
+        temporary password for system logons with an immediate change
+        to a permanent password.
 
-        https://github.com/ComplianceAsCode/redhat/issues/325'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
