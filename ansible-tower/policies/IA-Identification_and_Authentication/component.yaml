@@ -60,7 +60,7 @@
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -97,13 +97,18 @@
   implementation_status: planned
   narrative:
     - key: a
-      text: ''
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: b
       text: |
-        'Documentation/guidance on how to configure initial authenticator
-        metadata is being tracked on GitHub:
+        'Ansible Tower does not have the capability to establish initial
+        authenticator content for authenticators defined by the organization
+        (e.g. complexity requirements in IA-4).
 
-        https://github.com/ComplianceAsCode/redhat/issues/309'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
         'Documentation/guidance on ensuring authenticators have sufficient
