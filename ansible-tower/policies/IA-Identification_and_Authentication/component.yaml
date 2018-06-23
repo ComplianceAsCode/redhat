@@ -144,10 +144,14 @@
         service is used.'
     - key: g
       text: |
-        'Guidance on changing/refreshing authenticators after an
-        organizationally-defined time period is being tracked on GitHub:
+        'Ansible Tower does not have the capability to change/refresh
+        authenticators after an organizationally-defined time period
+        by authenticator type.
 
-        https://github.com/ComplianceAsCode/redhat/issues/317'
+        To satisfy this control an external authentication service,
+        such as Red Hat IdM, must be used. This control is not
+        applicable to Ansible Tower when an external authentication
+        service is used.'
     - key: h
       text: |
         'Documentation/guidance for this control is being tracked on
