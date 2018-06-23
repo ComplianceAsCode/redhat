@@ -120,9 +120,8 @@
         Ansible Tower when an external authentication service is used.'
     - key: d
       text: |
-        'Documentation/guidance for this control is being tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/311'
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: e
       text: |
         'Documentation/guidance for this control is being tracked on GitHub:
