@@ -8,21 +8,14 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.'
+    - text: ''
 
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.
-
-        NOTE: The organization-defined auditable events are configured in
-        Red Hat Identity Management through actions specified in AU-12.'
+    - text: ''
 
 - control_key: AU-3
   standard_key: NIST-800-53
@@ -38,11 +31,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management. This
-        control is reflected in proper disk partitioning of the underlying
-        Operating System.'
+    - text: ''
 
 - control_key: AU-5
   standard_key: NIST-800-53
@@ -80,9 +69,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Identity Management.'
+    - text: ''
 
 - control_key: AU-8
   standard_key: NIST-800-53
