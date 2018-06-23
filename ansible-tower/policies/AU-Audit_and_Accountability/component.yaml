@@ -20,14 +20,100 @@
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'Ansible Tower does not currently include the full event data
-        as required in AC-3. Inclusion of this feature is being tracked
-        through GitHub:
+        'By default Ansible Tower generates audit records containing
+        information that establishes what type of event occured,
+        when the event occured, where the event occured, the source
+        of the event, the outcome of the event, and the identity
+        of individuals or subjects associated with the event.
 
-        https://github.com/ComplianceAsCode/redhat/issues/340'
+        Ansible Tower cannot be configured to be out of compliance
+        with this control.
+
+        A sample audit record is provided below.
+
+        TYPE OF EVENT:
+        The "operation" field identifies the type of event recorded.
+        In this case, a new user was created.
+
+        WHEN THE EVENT OCCURED:
+        The "timestamp" field indicates the system time of
+        when the event occured. In this example the event happened
+        at 2018-06-19T00:46:45.337458Z.
+
+        WHERE THE EVENT OCCURED:
+        The "X-API-Node" field indicates where the event occured. In
+        this example, the host was tower.redhatgov.io.
+        
+        SOURCE OF EVENT:
+        The "actor" field indicates the "alice" username initiated
+        this event.
+
+        OUTCOME OF EVENT:
+        The "changes" field indicate the user was created with
+        associated metadata such as first_name and last_name.
+
+        IDENTITY OF INDIVIDUALS/OBJECTS INVOLVED:
+        The "summary_fields" indicates an actor with the username "alice"
+        created a new user with the username "bob."
+
+
+
+        ---
+             HTTP 200 OK
+             Allow: GET, HEAD, OPTIONS
+             Content-Type: application/json
+             Vary: Accept
+             X-API-Node: tower.redhatgov.io
+             X-API-Time: 0.739s
+             ....
+             {
+                 "id": 25,
+                 "type": "activity_stream",
+                 "url": "/api/v1/activity_stream/25/",
+                 "related": {
+                     "user": [
+                         "/api/v1/users/4/"
+                     ],
+                     "actor": "/api/v1/users/1/"
+                 },
+                 "summary_fields": {
+                     "user": [
+                         {
+                             "username": "bob",
+                             "first_name": "Bob",
+                             "last_name": "Ross",
+                             "id": 4
+                         }
+                     ],
+                     "actor": {
+                         "username": "alice",
+                         "first_name": "Alice",
+                         "last_name": "Liddel",
+                         "id": 1
+                     }
+                 },
+                 "timestamp": "2018-06-19T00:46:45.337458Z",
+                 "operation": "create",
+                 "changes": {
+                     "username": "bob",
+                     "first_name": "Bob",
+                     "last_name": "Ross",
+                     "is_active": true,
+                     "id": 4,
+                     "is_superuser": false,
+                     "is_staff": false,
+                     "password": "hidden",
+                     "email": "bob@ross.com",
+                     "date_joined": "2018-06-19 00:46:45.314590+00:00"
+                 },
+                 "object1": "user",
+                 "object2": "",
+                 "object_association": ""
+             }
+        ---'
 
 - control_key: AU-4
   standard_key: NIST-800-53
