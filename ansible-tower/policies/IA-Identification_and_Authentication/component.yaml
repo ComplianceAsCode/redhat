@@ -12,13 +12,16 @@
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'Documentation/guidance on configuring Ansible Tower
-        against this requirement is being tracked on GitHub:
+        'Ansible Tower does not have the capability to uniquely identify and
+        authenticate organizational users (or processes acting on
+        behalf of organizational users).
 
-        https://github.com/ComplianceAsCode/redhat/issues/304'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
@@ -57,7 +60,7 @@
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -73,71 +76,123 @@
         Ansible Tower.'
     - key: d
       text: |
-        'Documentation/guidance on preventing the reuse of identifiers is
-        being tracked on GitHub:
+        'Ansible Tower does not have the capability to prevent the
+        reuse of identifiers for an organizationally-defined time period.
 
-        https://github.com/ComplianceAsCode/redhat/issues/307'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: e
       text: |
-        'Documentation/guidance on disabling idle accounts is being tracked
-        on GitHub:
+        'Ansible Tower does not have the capability to disable an identifier
+        after an organizationally-defined time period of inactivity.
 
-        https://github.com/ComplianceAsCode/redhat/issues/308'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  # NOTE: Because sub keys cannot have their own implementation_status,
+  # using 'complete' to indicate overall satisfaction of requirements,
+  # even if certain sub keys are not applicable.
+  implementation_status: complete
   narrative:
     - key: a
-      text: ''
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: b
       text: |
-        'Documentation/guidance on how to configure initial authenticator
-        metadata is being tracked on GitHub:
+        'Ansible Tower does not have the capability to establish initial
+        authenticator content for authenticators defined by the organization
+        (e.g. complexity requirements in IA-4).
 
-        https://github.com/ComplianceAsCode/redhat/issues/309'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
-        'Documentation/guidance on ensuring authenticators have sufficient
-        strenth of mechanism for their purpose is being tracked on GitHub:
+        'Ansible Tower does not have the capability to ensure that
+        authenticators have sufficient strength of mechanism for their
+        intended use.
 
-        https://github.com/ComplianceAsCode/redhat/issues/310'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: d
       text: |
-        'Documentation/guidance for this control is being tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/311'
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: e
       text: |
-        'Documentation/guidance for this control is being tracked on GitHub:
+        'Ansible Tower does not have default account authenticators.
+        Authenticators used during the installation of Ansible Tower,
+        such as passwords for the embeded database, are created by the
+        system administratur during the Ansible Tower installation.
+        This is non-configurable behavior.
 
-        https://github.com/ComplianceAsCode/redhat/issues/313'
+        This requirement is not applicable to the
+        configuration of Ansible Tower.'
     - key: f
       text: |
-        'Guidance/documentation for establishing minimum/maximum lifetime
-        restrictions and reuse conditions for authenticators is being
-        tracked on GitHub:
+        'Ansible Tower does not have the capability to establish
+        minimum and maximum lifetime restrictions and reuse
+        conditions for authenticators.
 
-        https://github.com/ComplianceAsCode/redhat/issues/316'
+        To satisfy this control an external authentication service,
+        such as Red Hat IdM, must be used. This control is not
+        applicable to Ansible Tower when an external authentication
+        service is used.'
     - key: g
       text: |
-        'Guidance on changing/refreshing authenticators after an
-        organizationally-defined time period is being tracked on GitHub:
+        'Ansible Tower does not have the capability to change/refresh
+        authenticators after an organizationally-defined time period
+        by authenticator type.
 
-        https://github.com/ComplianceAsCode/redhat/issues/317'
+        To satisfy this control an external authentication service,
+        such as Red Hat IdM, must be used. This control is not
+        applicable to Ansible Tower when an external authentication
+        service is used.'
     - key: h
       text: |
-        'Documentation/guidance for this control is being tracked on
-        GitHub:
+        'Ansible Tower uses SSH to connect to remote hosts (or the Windows
+        equivalent). In order to pass the key from Tower to SSH, the key must
+        be decrypted before it can be written to a named pipe. Tower then uses
+        that pipe to send the key to SSH (so that it is never written to disk).
 
-        https://github.com/ComplianceAsCode/redhat/issues/318'
+        If passwords are used, Ansible Tower handles those by responding
+        directly to the password prompt and decrypting the password before
+        writing it to the prompt.
+
+        The encryption/decryption algorithm uses a variation of Fernet: a
+        symmetric encryption cipher utilizing AES-256 in CBC mode alongside
+        a SHA-256 HMAC. Specific, sensitive, Model fields in Tower are
+        encrypted and include:
+
+        CREDENTIAL
+          - password
+          - ssh_key_data
+          - ssh_key_unlock
+          - become_password
+          - vault_password
+
+        UNIFIED JOB:
+          - start_args
+
+        Data is encrypted before it is saved to the database and it is
+        decrypted as needed in Tower. The encryption/decryption process
+        derives the AES-256 bit encryption key from
+        <SECRET_KEY, field_name, primary_key> where field_name is the
+        field_name of the Model field and primary_key is the database assigned
+        auto-incremented record ID. Thus, if any attribute used in the key
+        generation process changes, Tower fails to correctly decrypt the
+        secret.'
     - key: i
       text: |
-        'Documentation/guidance for this control is being tracked on
-        GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/319'
+        'This is an organizational control outside the scope of configuring
+        Ansible Tower.'
     - key: j
       text: |
         'This is an organizational control outside the scope of configuring
@@ -146,44 +201,82 @@
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  # NOTE: Because sub keys cannot have their own implementation_status,
+  # using 'complete' to indicate overall satisfaction of requirements,
+  # even if certain sub keys are not applicable.
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on implementing password complexity
-        is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce minimum
+        password complexity requirements.
 
-        https://github.com/ComplianceAsCode/redhat/issues/320'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: b
       text: |
-        'Documentation/guidance on implementing changed characters during
-        password creation is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce at least
+        an organizationally-defined number of characters be changed
+        when new passwords are created.
 
-        https://github.com/ComplianceAsCode/redhat/issues/321'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
-        'Documentation/guidance on storing and transmitting only
-        cryptographically-protected passwords is being tracked on GitHub:
+        'If passwords are used, Ansible Tower handles those by responding
+        directly to the password prompt and decrypting the password before
+        writing it to the prompt.
 
-        https://github.com/ComplianceAsCode/redhat/issues/322'
+        The encryption/decryption algorithm uses a variation of Fernet: a
+        symmetric encryption cipher utilizing AES-256 in CBC mode alongside
+        a SHA-256 HMAC. Specific, sensitive, Model fields in Tower are
+        encrypted and include:
+
+        CREDENTIAL
+          - password
+          - ssh_key_data
+          - ssh_key_unlock
+          - become_password
+          - vault_password
+
+        UNIFIED JOB:
+          - start_args
+
+        Data is encrypted before it is saved to the database and it is
+        decrypted as needed in Tower. The encryption/decryption process
+        derives the AES-256 bit encryption key from
+        <SECRET_KEY, field_name, primary_key> where field_name is the
+        field_name of the Model field and primary_key is the database assigned
+        auto-incremented record ID. Thus, if any attribute used in the key
+        generation process changes, Tower fails to correctly decrypt the
+        secret.'
     - key: d
       text: |
-        'Documentation/guidance on enforcing password minimum and maximum
-        lifetime restrictions is being tracked on GitHub:
+        'Ansible Tower does not have the capability to enforce password
+        minimum and maximum lifetime restrictions.
 
-        https://github.com/ComplianceAsCode/redhat/issues/323'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: e
       text: |
-        'Documentation/guidance on enforcing password minimum and maximum
-        lifetime restrictions is being tracked on GitHub:
+        'Ansible Tower does not have the capability prohibit password
+        reuse.
 
-        https://github.com/ComplianceAsCode/redhat/issues/324'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: f
       text: |
-        'Documentation/guidance on enforcing an immediate change to temporary
-        passwords is being tracked on GitHub:
+        'Ansible Tower does not have the capability allow the use of a
+        temporary password for system logons with an immediate change
+        to a permanent password.
 
-        https://github.com/ComplianceAsCode/redhat/issues/325'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
@@ -199,8 +292,8 @@
   narrative:
     - text: |
         'Ansible Tower natively obscures such information.
-        Ansible Tower cannot be
-        configured to be out of compliance with this requirement.'
+        Ansible Tower cannot be configured to be out of
+        compliance with this requirement.'
 
 - control_key: IA-7
   standard_key: NIST-800-53
@@ -220,20 +313,16 @@
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'The customer will be responsible for identifying and authenticating
-        non-organizational users accessing the customer application. A
-        successful control response will need to address how non-organizational
-        users are defined and the process by which identification
-        and authentication takes place, including any differences from
-        identification and authentication for organizational users.
+        'Ansible Tower does not have the capability to uniquely
+        identify and authenticate non-organizational users (or
+        processes acting on behalf of non-organizational users).
 
-        Documentation on how to satisfy this control is being
-        tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/327'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
