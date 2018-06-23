@@ -25,9 +25,9 @@
     - text: |
         'Ansible Tower does not currently include the full event data
         as required in AC-3. Inclusion of this feature is being tracked
-        through Bugzilla:
+        through GitHub:
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591998'
+        https://github.com/ComplianceAsCode/redhat/issues/340'
 
 - control_key: AU-4
   standard_key: NIST-800-53
@@ -47,7 +47,7 @@
         administrators in the event of an audit processing failure. This
         feature is being tracked in BugZilla:
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592000'
+        https://github.com/ComplianceAsCode/redhat/issues/341'
     - key: b
       text: |
         'Ansible Tower does not currently have the capability to take
@@ -55,7 +55,7 @@
         or halting audit record generation. This feature is being
         tracked in BugZilla:
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1591956'
+        https://github.com/ComplianceAsCode/redhat/issues/342'
 
 - control_key: AU-6
   standard_key: NIST-800-53
@@ -84,12 +84,17 @@
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - text: |
         'Ansible Tower logs are kept on the underlying operating system.
         Administrative access to the underlying operating system must be
-        explicitly granted to view Ansible Tower logs.'
+        explicitly granted to view Ansible Tower logs.
+
+        The ability to protect embedded log data is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/343'
 
 - control_key: AU-11
   standard_key: NIST-800-53
@@ -97,10 +102,11 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Ansible Tower currently does not have this capability. This feature
-        request is being tracked in BugZilla:
+        'Ansible Tower currently does not have the capability to
+        retain audit records for an organizationally-defined time period.
 
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592002'
+        This capability is being tracked on GitHub:
+        http://ssptool.securitycentral.io/certifications/FedRAMP-low/NIST-800-53/AU-11'
 
 - control_key: AU-12
   standard_key: NIST-800-53
@@ -113,58 +119,73 @@
         to audit certain events:
 
         - Audit Logons (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592003
+        https://github.com/ComplianceAsCode/redhat/issues/345
 
         - Audit Logoff (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592004
+        https://github.com/ComplianceAsCode/redhat/issues/346
 
         - Audit File & Object Creation (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592005
+        https://github.com/ComplianceAsCode/redhat/issues/347
 
         - Audit File & Object Access (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592006
+        https://github.com/ComplianceAsCode/redhat/issues/348
 
         - Audit File & Object Deletion (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592007
+        https://github.com/ComplianceAsCode/redhat/issues/349
 
         - Audit File & Object Modification (Success and Failure):
-        https://bugzilla.redhat.com/show_bug.cgi?id=1592008
+        https://github.com/ComplianceAsCode/redhat/issues/350
 
         - Audit File & Object Permission Changes (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/351
 
         - Audit File & Object Ownership Modifications (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/352
 
         - Audit User & Group Management Events, User add (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/448
 
         - Audit User & Group Management Events, User delete (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/449
 
         - Audit User & Group Management Events, User modify (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/450
 
         - Audit User & Group Management Events, User suspend (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/451
 
         - Audit User & Group Management Events, User lock (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/452
 
         - Audit User & Group Management Events, Group/Role add (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/453
 
         - Audit User & Group Management Events, Group/Role delete (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/454
 
         - Audit User & Group Management Events, Group/Role modify (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/455
 
         - Audit Use of Privileged/Special Rights, security or policy changes (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/456
 
         - Audit Use of Privileged/Special Rights, configuration changes (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/457
 
         - Audit Use of Privileged/Special Rights, Admin or root-level access (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/458
 
-        - Audit Privilege/Role Escalation (Success and Failure): 
+        - Audit Privilege/Role Escalation (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/459
 
-        - Audit and Log Data Access (Success and Failure): 
+        - Audit and Log Data Access (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/460
 
-        - Export of Information (Success and Failure): 
+        - Export of Information (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/461
 
-        - Import of Information (Success and Failure): 
-
-        '
+        - Import of Information (Success and Failure):
+        https://github.com/ComplianceAsCode/redhat/issues/462'
     - key: b
       text: |
         'Customers are required to allow defined personnel or roles to select
