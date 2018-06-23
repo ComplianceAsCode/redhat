@@ -111,10 +111,13 @@
         Ansible Tower when an external authentication service is used.'
     - key: c
       text: |
-        'Documentation/guidance on ensuring authenticators have sufficient
-        strenth of mechanism for their purpose is being tracked on GitHub:
+        'Ansible Tower does not have the capability to ensure that
+        authenticators have sufficient strength of mechanism for their
+        intended use.
 
-        https://github.com/ComplianceAsCode/redhat/issues/310'
+        To satisfy this control an external authentication service, such
+        as Red Hat IdM, must be used. This control is not applicable to
+        Ansible Tower when an external authentication service is used.'
     - key: d
       text: |
         'Documentation/guidance for this control is being tracked on GitHub:
