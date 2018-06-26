@@ -32,8 +32,8 @@
         Ansible Tower cannot be configured to be out of compliance
         with this control.
 
-        A sample audit record is provided below.
-
+        A sample audit record is provided below. 
+        
         TYPE OF EVENT:
         The "operation" field identifies the type of event recorded.
         In this case, a new user was created.
@@ -59,6 +59,10 @@
         The "summary_fields" indicates an actor with the username "alice"
         created a new user with the username "bob."
 
+        Full documentation of all available fields is
+        available in the Ansible Tower product documentation:
+
+        https://docs.ansible.com/ansible-tower/latest/html/towerapi/activity_stream.html
 
 
         ---
@@ -173,7 +177,19 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Ansible Tower logs are kept on the underlying operating system.
+        'Ansible Tower logfiles have been consolidated and can be easily
+        accessed from two centralized locations:
+
+        - /var/log/tower/
+        - /var/log/supervisor/
+
+        Each directory is protected by operating system-level
+        mandatory access control settings and require administrative (root)
+        privilege to access.
+
+
+
+        logs are kept on the underlying operating system.
         Administrative access to the underlying operating system must be
         explicitly granted to view Ansible Tower logs.
 
