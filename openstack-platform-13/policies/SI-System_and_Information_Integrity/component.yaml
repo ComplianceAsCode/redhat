@@ -442,6 +442,38 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'Red Hat Red Hat OpenStack Platform Container Platform inherits memory protections
-        provided by the underlying operating system. This control is not
-        applicable to Red Hat Red Hat OpenStack Platform Container Platform.'
+        'Red Hat OpenStack inherits many memory protections provided
+        by the underlying operating system. When running on Red Hat
+        Enterprise Linux, such kernel-level memory protections
+        have undergone Common Criteria Certification.
+
+        Certain hypervisors use memory optimization techniques that overcommit
+        memory to guest virtual machines. This is a useful feature that allows
+        deployment of very dense computer clusters. One approach to this
+        technique is through deduplication or sharing of memory pages.
+
+        When two virtual machines have identical data in memory, there are
+        advantages to having them reference the same memory. Typically this
+        is achieved through Copy-On-Write (COW) mechanisms, such as kernel
+        same-page merging (KSM), These mechanisms are vulnerable to certain
+        attacks.
+
+        Memory deduplication systems are vulnerabile to side-channel attacks.
+        In academic studies, attackers were able to identify software packages
+        and versions running on neighboring virtual machines as well as
+        software downloads and other sensitive information through analyzing
+        memory access times on the attacker Virtual Machine. Consequently, one
+        Virtual Machine can infer something about the state of another, which
+        might not be appropriate for multi-tenant environments where not all
+        tenants are trusted or share the same levels of trust.
+
+        More importantly, row-hammer type attacks have been demonstrated
+        against KSM to enact cross-Virtual Machine modification of
+        executable memory. A hostile instance could gain code execution
+        access to other instances on the same Compute host.
+
+        Deployers should disable KSM if strong project separation (as
+        with public clouds and some private clouds) is required.
+
+        To disable KSM, refer to:
+        https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/virtualization_tuning_and_optimization_guide/#sect-KSM-Deactivating_KSM'
