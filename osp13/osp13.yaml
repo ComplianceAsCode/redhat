@@ -20,19 +20,14 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'AC-1 is an organizational control outside the scope of Red Hat OpenStack Platform
-        configuration.'
+    - text: ''
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'AC-2 is an organizational control outside the scope of Red Hat OpenStack Platform
-        configuration. Technical enablement of the organizational processes
-        are covered in AC-2 subcontrols, such as AC-2(2) and AC-2(3).'
+    - text: ''
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
@@ -50,18 +45,14 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'When OpenStack is configured to use an external identity management
-        system, this control is not applicable'
+    - text: ''
 
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'When OpenStack is configured to use an external identity management
-        system, this control is not applicable.'
+    - text: ''
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
@@ -2914,247 +2905,189 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-3 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'Documentation/guidance for this control is being tracked on
-        GitHub:
-
-        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/440'
+    - text: ''
 
 - control_key: PE-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-6 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-6 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'Documentation/guidance for this control is being tracked
-        on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/441'
+    - text: ''
 
 - control_key: PE-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-8 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-9
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-10
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-11
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-11 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-12
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-13
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-13 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-13 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-13 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-14
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-14 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-15
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-15 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-16
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-17
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 
 - control_key: PE-18
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: ''
 ##
 ## BEGINNING OF:
 ## PLANNING
@@ -4596,6 +4529,38 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'Red Hat Red Hat OpenStack Platform Container Platform inherits memory protections
-        provided by the underlying operating system. This control is not
-        applicable to Red Hat Red Hat OpenStack Platform Container Platform.'
+        'Red Hat OpenStack inherits many memory protections provided
+        by the underlying operating system. When running on Red Hat
+        Enterprise Linux, such kernel-level memory protections
+        have undergone Common Criteria Certification.
+
+        Certain hypervisors use memory optimization techniques that overcommit
+        memory to guest virtual machines. This is a useful feature that allows
+        deployment of very dense computer clusters. One approach to this
+        technique is through deduplication or sharing of memory pages.
+
+        When two virtual machines have identical data in memory, there are
+        advantages to having them reference the same memory. Typically this
+        is achieved through Copy-On-Write (COW) mechanisms, such as kernel
+        same-page merging (KSM), These mechanisms are vulnerable to certain
+        attacks.
+
+        Memory deduplication systems are vulnerabile to side-channel attacks.
+        In academic studies, attackers were able to identify software packages
+        and versions running on neighboring virtual machines as well as
+        software downloads and other sensitive information through analyzing
+        memory access times on the attacker Virtual Machine. Consequently, one
+        Virtual Machine can infer something about the state of another, which
+        might not be appropriate for multi-tenant environments where not all
+        tenants are trusted or share the same levels of trust.
+
+        More importantly, row-hammer type attacks have been demonstrated
+        against KSM to enact cross-Virtual Machine modification of
+        executable memory. A hostile instance could gain code execution
+        access to other instances on the same Compute host.
+
+        Deployers should disable KSM if strong project separation (as
+        with public clouds and some private clouds) is required.
+
+        To disable KSM, refer to:
+        https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html-single/virtualization_tuning_and_optimization_guide/#sect-KSM-Deactivating_KSM'
