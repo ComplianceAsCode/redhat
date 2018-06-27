@@ -32,8 +32,8 @@
         Ansible Tower cannot be configured to be out of compliance
         with this control.
 
-        A sample audit record is provided below. 
-        
+        A sample audit record is provided below.
+
         TYPE OF EVENT:
         The "operation" field identifies the type of event recorded.
         In this case, a new user was created.
@@ -46,7 +46,7 @@
         WHERE THE EVENT OCCURED:
         The "X-API-Node" field indicates where the event occured. In
         this example, the host was tower.redhatgov.io.
-        
+
         SOURCE OF EVENT:
         The "actor" field indicates the "alice" username initiated
         this event.
@@ -187,14 +187,9 @@
         mandatory access control settings and require administrative (root)
         privilege to access.
 
-
-
-        logs are kept on the underlying operating system.
-        Administrative access to the underlying operating system must be
-        explicitly granted to view Ansible Tower logs.
-
-        The ability to protect embedded log data is being tracked
-        on GitHub:
+        The ability to protect embedded log data, such as those
+        included in the Ansible Tower Activity Stream, is being
+        tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/343'
 
