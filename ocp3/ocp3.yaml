@@ -20,19 +20,14 @@ satisfies:
   covered_by: []
   implementation_status: Not applicable
   narrative:
-    - text: |
-        'AC-1 is an organizational control outside the scope of OpenShift
-        configuration.'
+    - text: ''
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: Not applicable
   narrative:
-    - text: |
-        'AC-2 is an organizational control outside the scope of OpenShift
-        configuration. Technical enablement of the organizational processes
-        are covered in AC-2 subcontrols, such as AC-2(2) and AC-2(3).'
+    - text: ''
 
 
 # AC-2(2) NOTES:
@@ -45,13 +40,9 @@ satisfies:
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'OpenShift relies upon 3rd party authentication
-        providers, such as Microsoft Active Directory, Red Hat IdM, or LDAP.
-        By relying on 3rd party authentication providers this control
-        is not applicable to OpenShift.'
+    - text: ''
 
 #
 # AC-2(3) NOTES:
@@ -67,14 +58,9 @@ satisfies:
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'Red Hat OpenShift Container Platform relies upon 3rd party authentication
-        providers, such as Microsoft Active Directory, Red Hat IdM, or LDAP.
-        By relying on 3rd party authentication providers Red Hat Container
-        Platform is not responsible for automatic disablement of inactive
-        accounts after a configured period of time.'
+    - text: ''
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
@@ -2101,106 +2087,194 @@ satisfies:
 ## PHYSICAL AND ENVIRONMENTAL PROTECTION
 ##
 
-#- control_key: PE-1
-#  standard_key: NIST-800-53
-#  covered_by: []
-#  implementation_status: none
-#  narrative:
-#    - key: a
-#      text: |
-#        '//*
-#        Text goes here - testing
-#        */'
 - control_key: PE-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
 
 - control_key: PE-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
 
 - control_key: PE-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
+
+- control_key: PE-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: ''
+
+- control_key: PE-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
 
 - control_key: PE-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
+
+- control_key: PE-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
 
 - control_key: PE-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
+
+- control_key: PE-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
 
 - control_key: PE-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
 
 - control_key: PE-13
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
+
+- control_key: PE-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-13 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
 
 - control_key: PE-14
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
+
+- control_key: PE-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
 
 - control_key: PE-15
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
+
+- control_key: PE-15 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
 
 - control_key: PE-16
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - text: ''
 
+- control_key: PE-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PE-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
 ##
 ## BEGINNING OF:
 ## PLANNING
