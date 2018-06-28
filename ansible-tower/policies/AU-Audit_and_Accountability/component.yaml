@@ -219,7 +219,7 @@
         - Audit User & Group Management Events, User add (Success and Failure):
         - Audit User & Group Management Events, User delete (Success and Failure):
         - Audit User & Group Management Events, Group/Role add (Success and Failure):
-
+        - Audit User & Group Management Events, Group/Role delete (Success and Failure):
 
 
         The following BugZillas track feature creation for Ansible Tower
@@ -257,8 +257,7 @@
 
 
 
-        - Audit User & Group Management Events, Group/Role delete (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/454
+
 
         - Audit User & Group Management Events, Group/Role modify (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/455
