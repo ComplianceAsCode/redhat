@@ -212,7 +212,14 @@
   narrative:
     - key: a
       text: |
-        'The following BugZillas track feature creation for Ansible Tower
+        'By default, Ansible Tower audits the following events.
+        Audit of these events is automatic and not user configurable.
+
+        - Audit User & Group Management Events, User modify (Success and Failure)
+        - Audit User & Group Management Events, User add (Success and Failure):
+
+
+        The following BugZillas track feature creation for Ansible Tower
         to audit certain events:
 
         - Audit Logons (Success and Failure):
@@ -239,11 +246,11 @@
         - Audit File & Object Ownership Modifications (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/352
 
-        - Audit User & Group Management Events, User add (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/448
+
 
         - Audit User & Group Management Events, User delete (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/449
+
 
         - Audit User & Group Management Events, User suspend (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/451
