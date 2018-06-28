@@ -256,12 +256,6 @@
         - Audit User & Group Management Events, User lock (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/452
 
-
-
-
-
-
-
         - Audit Use of Privileged/Special Rights, security or policy changes (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/456
 
@@ -269,7 +263,6 @@
         https://github.com/ComplianceAsCode/redhat/issues/457
 
         - Audit Use of Privileged/Special Rights, Admin or root-level access (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/458
 
         - Audit Privilege/Role Escalation (Success and Failure):
 
