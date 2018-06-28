@@ -239,8 +239,7 @@
 
         - Audit File & Object Deletion (Success and Failure)
 
-        - Audit File & Object Modification (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/350
+        - Audit File & Object Modification (Success and Failure)
 
         - Audit File & Object Permission Changes (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/351
