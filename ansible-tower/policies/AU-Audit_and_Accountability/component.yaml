@@ -233,7 +233,6 @@
         https://github.com/ComplianceAsCode/redhat/issues/346
 
         - Audit File & Object Creation (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/347
 
         - Audit File & Object Access (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/348
@@ -263,7 +262,6 @@
         https://github.com/ComplianceAsCode/redhat/issues/457
 
         - Audit Use of Privileged/Special Rights, Admin or root-level access (Success and Failure):
-
         - Audit Privilege/Role Escalation (Success and Failure):
 
         - Audit and Log Data Access (Success and Failure):
