@@ -245,9 +245,6 @@
         - Audit User & Group Management Events, User delete (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/449
 
-        - Audit User & Group Management Events, User modify (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/450
-
         - Audit User & Group Management Events, User suspend (Success and Failure):
         https://github.com/ComplianceAsCode/redhat/issues/451
 
