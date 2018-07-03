@@ -269,7 +269,87 @@
         https://github.com/ComplianceAsCode/redhat/issues/461
 
         - Import of Information (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/462'
+        
+        Certain events, such as updating Projects, may pull data
+        from a SCM. In such cases the audit event includes the content
+        defined in AU-3 as well as the URL if the information being imported.
+
+        A sample audit event for updating a "Demo Project" with content from
+        GitHub is below. The "scm_url" field reflects source of information
+        being imported and "status" field indicates succes or failure:
+
+            {
+                "count": 1,
+                "next": null,
+                "previous": null,
+                "results": [
+                    {
+                        "id": 2,
+                        "type": "project_update",
+                        "url": "/api/v1/project_updates/2/",
+                        "related": {
+                            "created_by": "/api/v1/users/1/",
+                            "unified_job_template": "/api/v1/projects/4/",
+                            "stdout": "/api/v1/project_updates/2/stdout/",
+                            "project": "/api/v1/projects/4/",
+                            "cancel": "/api/v1/project_updates/2/cancel/",
+                            "notifications": "/api/v1/project_updates/2/notifications/",
+                            "scm_inventory_updates": "/api/v1/project_updates/2/scm_inventory_updates/"
+                        },
+                        "summary_fields": {
+                            "instance_group": {
+                                "id": 1,
+                                "name": "tower"
+                            },
+                            "unified_job_template": {
+                                "id": 4,
+                                "name": "Demo Project",
+                                "description": "",
+                                "unified_job_type": "project_update"
+                            },
+                            "project": {
+                                "id": 4,
+                                "name": "Demo Project",
+                                "description": "",
+                                "status": "successful",
+                                "scm_type": "git"
+                            },
+                            "created_by": {
+                                "id": 1,
+                                "username": "admin",
+                                "first_name": "",
+                                "last_name": ""
+                            },
+                            "user_capabilities": {
+                                "start": true,
+                                "delete": true
+                            }
+                        },
+                        "created": "2018-06-29T16:31:37.862Z",
+                        "modified": "2018-06-29T16:31:38.111Z",
+                        "name": "Demo Project",
+                        "description": "",
+                        "unified_job_template": 4,
+                        "launch_type": "manual",
+                        "status": "successful",
+                        "failed": false,
+                        "started": "2018-06-29T16:31:38.190595Z",
+                        "finished": "2018-06-29T16:31:41.932635Z",
+                        "elapsed": 3.742,
+                        "job_explanation": "",
+                        "execution_node": "localhost",
+                        "local_path": "_4__demo_project",
+                        "scm_type": "git",
+                        "scm_url": "https://github.com/ansible/ansible-tower-samples",
+                        "scm_branch": "",
+                        "scm_clean": false,
+                        "scm_delete_on_update": false,
+                        "credential": null,
+                        "timeout": 0,
+                        "project": 4,
+                        "job_type": "check"
+                    }
+
     - key: b
       text: |
         'Customers are required to allow defined personnel or roles to select
