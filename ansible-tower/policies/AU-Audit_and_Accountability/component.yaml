@@ -215,12 +215,18 @@
         'By default, Ansible Tower audits the following events.
         Audit of these events is automatic and not user configurable.
 
-        - Audit User & Group Management Events, User modify (Success and Failure)
-        - Audit User & Group Management Events, User add (Success and Failure):
-        - Audit User & Group Management Events, User delete (Success and Failure):
-        - Audit User & Group Management Events, Group/Role add (Success and Failure):
-        - Audit User & Group Management Events, Group/Role delete (Success and Failure):
-        - Audit User & Group Management Events, Group/Role modify (Success and Failure):
+        - Audit User & Group Management Events,
+        User modify (Success and Failure)
+        - Audit User & Group Management Events,
+        User add (Success and Failure)
+        - Audit User & Group Management Events,
+        User delete (Success and Failure)
+        - Audit User & Group Management Events,
+        Group/Role add (Success and Failure)
+        - Audit User & Group Management Events,
+        Group/Role delete (Success and Failure)
+        - Audit User & Group Management Events,
+        Group/Role modify (Success and Failure)
 
 
         The following BugZillas track feature creation for Ansible Tower
