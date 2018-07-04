@@ -34,11 +34,14 @@
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        'The customer will be responsible for conducting daily incremental and
+        'As a procedural control, the process of backing up Ansible Tower
+        is outside the scope of a configuration guide.
+
+        The customer will be responsible for conducting daily incremental and
         weekly full backups of user-level information contained in the
         information system. Additional FedRAMP requirements and guidance include
         maintaining at least three backup copies of user-level information (at
@@ -47,12 +50,16 @@
         user-level information occures, and how three backup copies are
         maintained.
 
-        Guidance on establishing such backups is being tracked in GitHub:
+        Documentation on backing up and restoring Ansible Tower data
+        can be found in the Ansible Tower Administration guide:
 
-        https://github.com/ComplianceAsCode/redhat/issues/303'
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
     - key: b
       text: |
-        'The customer will be responsible for conducting daily incremental and
+        'As a procedural control, the process of backing up Ansible Tower
+        is outside the scope of a configuration guide.
+
+        The customer will be responsible for conducting daily incremental and
         weekly full backups of system-level information contained in the
         information system. Additional FedRAMP requirements and guidance include
         maintaining at least three backup copies of user-level information (at
@@ -61,12 +68,16 @@
         user-level information occures, and how three backup copies are
         maintained.
 
-        Guidance on establishing such backups is being tracked in GitHub:
+        Documentation on backing up and restoring Ansible Tower data
+        can be found in the Ansible Tower Administration guide:
 
-        https://github.com/ComplianceAsCode/redhat/issues/303'
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
     - key: c
       text: |
-        'The customer will be responsible for conducting daily incremental and
+        'As a procedural control, the process of backing up Ansible Tower
+        is outside the scope of a configuration guide.
+
+        The customer will be responsible for conducting daily incremental and
         weekly full backups of information system documentation including
         security-related documentation. Additional FedRAMP requirements and
         guidance include maintaining at least three backup copies of user-level
@@ -75,11 +86,16 @@
         backups of user-level information occures, and how three backup copies
         are maintained.
 
-        Guidance on establishing such backups is being tracked in GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/303'
+        Documentation on backing up and restoring Ansible Tower data
+        can be found in the Ansible Tower Administration guide:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
     - key: d
       text: |
-        'The customer will be responsible for protecting the confidentiality,
+        'As a procedural control, the process of backing up Ansible Tower
+        is outside the scope of a configuration guide.
+
+        The customer will be responsible for protecting the confidentiality,
         integrity, and available of backup information at storage locations.
         Additional FedRAMP requirements and guidance include determining
         what elements of the cloud environment require the Information System
@@ -87,21 +103,21 @@
         Backup is going to be verified and appropriate periodicity of the
         check.
 
-        Guidance on establishing such backups is being tracked in GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/303'
+        Documentation on backing up and restoring Ansible Tower data
+        can be found in the Ansible Tower Administration guide:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
 
 - control_key: CP-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'The customer will be responsible for documenting how to reconstitute
-        their Ansible Tower environment. A successful control
-        response will detail
-        processes used to fully recover/restore Ansible Tower.
+        'Guidance on establishing backup procedures can be found in the
+        Ansible Tower Administration Guide:
 
-        Guidance on establishing such procedures is being tracked
-        on GitHub:
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
 
-        https://github.com/ComplianceAsCode/redhat/issues/302'
+        Note that backup of the Ansible Tower database and Ansible Tower playbooks
+        reflects two distinct processes.'
