@@ -275,7 +275,7 @@
         https://github.com/ComplianceAsCode/redhat/issues/461
 
         - Import of Information (Success and Failure):
-        
+
         Certain events, such as updating Projects, may pull data
         from a SCM. In such cases the audit event includes the content
         defined in AU-3 as well as the URL if the information being imported.
