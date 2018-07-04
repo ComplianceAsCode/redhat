@@ -93,15 +93,13 @@
 - control_key: CP-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'The customer will be responsible for documenting how to reconstitute
-        their Ansible Tower environment. A successful control
-        response will detail
-        processes used to fully recover/restore Ansible Tower.
+        'Guidance on establishing backup procedures can be found in the
+        Ansible Tower Administration Guide:
 
-        Guidance on establishing such procedures is being tracked
-        on GitHub:
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
 
-        https://github.com/ComplianceAsCode/redhat/issues/302'
+        Note that backup of the Ansible Tower database and Ansible Tower playbooks
+        reflects two distinct processes.'
