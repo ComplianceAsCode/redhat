@@ -6,7 +6,7 @@
 - control_key: CA-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -15,7 +15,7 @@
 - control_key: CA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -24,7 +24,7 @@
 - control_key: CA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -33,7 +33,7 @@
 - control_key: CA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -42,7 +42,7 @@
 - control_key: CA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -51,7 +51,7 @@
 - control_key: CA-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -61,7 +61,7 @@
 - control_key: CA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -71,7 +71,7 @@
 - control_key: CA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
