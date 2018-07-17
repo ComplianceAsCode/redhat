@@ -5,7 +5,7 @@
 - control_key: IA-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -155,7 +155,7 @@
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
@@ -181,7 +181,7 @@
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
@@ -193,7 +193,7 @@
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
@@ -301,7 +301,7 @@
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: Not applicable
+  implementation_status: not applicable
   narrative:
     - text: |
         'To meet NIST 800-53 identity and authorization requirements, OpenShift
