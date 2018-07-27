@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+shopt -s dotglob
+
+export LC_CTYPE="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+
+echo "---> Installing compliance-masonry content ..."
+mv /tmp/src/redhat/conf/opencontrol.yaml .
+
+echo "---> Running compliance-masonry ..."
+masonry get -d _data
+
+echo "---> Fix directory permissions ..."
+# Fix source directory permissions
+fix-permissions ./
