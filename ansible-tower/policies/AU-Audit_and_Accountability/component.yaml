@@ -171,7 +171,7 @@
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         'Ansible Tower logfiles have been consolidated and can be easily
@@ -184,11 +184,10 @@
         mandatory access control settings and require administrative (root)
         privilege to access.
 
-        The ability to protect embedded log data, such as those
-        included in the Ansible Tower Activity Stream, is being
-        tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/343'
+        Log data kept within Ansible Tower, such as the Activity Stream,
+        is presented only when the accessing user has permissions over the
+        audited object (e.g. shows audit logs only of system groups belonging
+        to the accessing user).'
 
 - control_key: AU-11
   standard_key: NIST-800-53
