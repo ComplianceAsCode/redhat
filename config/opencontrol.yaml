@@ -1,0 +1,34 @@
+schema_version: "1.0.0"
+name: Template Information System
+metadata:
+  description: Template Information System
+  maintainers:
+    - Shawn Wells <shawn@redhat.com>
+
+components:
+#    - ./../../ComplianceAsCode/redhat-openstack-platform-13
+#    - ./../../ComplianceAsCode/redhat-openshift-v3
+#    - ./../../ComplianceAsCode/redhat/ansible-tower
+
+dependencies:
+  standards:
+    - url: https://github.com/opencontrol/standards
+      revision: master
+  certifications:
+    - url: https://github.com/opencontrol/certifications
+      revision: master
+  systems:
+    # - url: https://github.com/SecurityCentral/template-system-process-controls
+    #   revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: osp13
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: ocp3
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: idm
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: ansible-tower
+      revision: opencontrol
