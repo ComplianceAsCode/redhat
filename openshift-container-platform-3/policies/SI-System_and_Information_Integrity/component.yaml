@@ -7,9 +7,9 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    text: |
-      'This control reflects organizational procedures/policies, and is not
-      applicable to the configuration of OpenShift.'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
     
 - control_key: SI-2
   standard_key: NIST-800-53

@@ -7,9 +7,9 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    text: |
-      'This control reflects organizational procedures/policies, and is not
-      applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
     
 - control_key: SI-2
   standard_key: NIST-800-53
@@ -54,29 +54,29 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    text: |
-      'Documentation/guidance addressing this issue is being tracked on GitHub:
+    - text: |
+        'Documentation/guidance addressing this issue is being tracked on GitHub:
 
-      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/461'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/461'
 
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    text: |
-      'Documentation/guidance addressing this issue is being tracked on GitHub:
+    - text: |
+        'Documentation/guidance addressing this issue is being tracked on GitHub:
 
-      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/352'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/352'
 
 - control_key: SI-2 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    text: |
-      'This control reflects organizational procedures/policies, and is not
-      applicable to the configuration of Red Hat OpenStack Platform.'
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat OpenStack Platform.'
 
 - control_key: SI-3
   standard_key: NIST-800-53
@@ -114,30 +114,30 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    text: |
-      'Documentation/guidance addressing this issue is being tracked on GitHub:
+    - text: |
+        'Documentation/guidance addressing this issue is being tracked on GitHub:
 
-      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/353'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/353'
 
 - control_key: SI-3 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    text: |
-      'Documentation/guidance addressing this issue is being tracked on GitHub:
+    - text: |
+        'Documentation/guidance addressing this issue is being tracked on GitHub:
 
-      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/354'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/354'
 
 - control_key: SI-3 (7)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    text: |
-      'Documentation/guidance addressing this issue is being tracked on GitHub:
+    - text: |
+        'Documentation/guidance addressing this issue is being tracked on GitHub:
 
-      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/355'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/355'
 
 - control_key: SI-4
   standard_key: NIST-800-53
@@ -162,10 +162,10 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    text: |
-      'Documentation/guidance addressing this issue is being tracked on GitHub:
+    - text: |
+        'Documentation/guidance addressing this issue is being tracked on GitHub:
 
-      https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/356'
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/356'
 
 - control_key: SI-4 (4)
   standard_key: NIST-800-53

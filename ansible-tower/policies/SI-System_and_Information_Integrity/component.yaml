@@ -7,21 +7,21 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    text: ''
+    - text: ''
 
 - control_key: SI-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    text: ''
+    - text: ''
 
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    text: ''
+    - text: ''
 
 - control_key: SI-4
   standard_key: NIST-800-53
