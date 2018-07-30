@@ -65,7 +65,7 @@
 ##
 ## Developers note on SA-4 (2):
 ##  This control differs from SA-4 (1) in that implementation
-##  details are now required. 
+##  details are now required.
 ##
 ##  The majority of FedRAMP and FISMA Moderate systems refine this control
 ##  with the following:
