@@ -103,17 +103,15 @@
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for terminating or changing
+        'The customer will be responsible for terminating or changing
         credentials for shared or group accounts when membership to those
         groups changes. A successful control response will need to discuss how
         group membership change is detected and reported, the peronnel or roles
         responsible for changing the affected credentials, and the process or
-        mechanism used to perform the change.
-        */'
+        mechanism used to perform the change.'
 
 - control_key: AC-3
   standard_key: NIST-800-53
@@ -144,11 +142,10 @@
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for controlling the flow of
+        'The customer will be responsible for controlling the flow of
         information within the customer application, and between the customer
         application and external systems. A successful control response will
         need to address the customer information flow control policies,
@@ -158,8 +155,7 @@
         Architecture guide:
 
         https://docs.openshift.com/container-platform/3.3/architecture/
-        additional_concepts/networking.html
-        */'
+        additional_concepts/networking.html'
 
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
@@ -167,13 +163,11 @@
   implementation_status: none
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for separating information flows
+        'The customer will be responsible for separating information flows
         within the customer application. A successful control response will
-        need to address the csutomer organizational requirements for
+        need to address the customer organizational requirements for
         the separation of information flows, and the mechanisms and
-        techniques used to accomplish this separation.
-        */'
+        techniques used to accomplish this separation.'
 
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
