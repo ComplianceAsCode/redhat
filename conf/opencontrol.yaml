@@ -32,3 +32,9 @@ dependencies:
     - url: https://github.com/ComplianceAsCode/redhat
       contextdir: ansible-tower
       revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: rhvm
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: rhvh
+      revision: opencontrol
