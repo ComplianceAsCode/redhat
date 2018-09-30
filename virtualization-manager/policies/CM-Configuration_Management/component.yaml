@@ -1,0 +1,99 @@
+##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
+
+# ADMINISTRATORS NOTE ON CM-2:
+#       Implimentation of this control varies greatly between customers. Some
+#       want centralized config management, while others expect component
+#       administrators to handle this (e.g. maintain custom Ansible scripts).
+#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
+#       however it's best to double check with the Information System owner
+#       on expectations (component vs central CM).
+#
+#       In case the customer desires components (e.g. Red Hat Identity
+#       Management Admins) to handle configuration management the
+#       lines below can be uncommented:
+#
+
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of configuring
+        this system component. Use of the NIST National Checklist
+        for this system component is suggested as a supported,
+        US Government recognized, vendor supported, baseline.'
+    - key: b
+      text: |
+        'The customer will be responsible for implementing configuration
+        settings as defined in CM-6(a). A successful control response will
+        describe how mandatory configuration settings are implemented. This can
+        include the process or documentation followed.
+
+        Documentation/guidance on satisfying this control is planned.'
+    - key: c
+      text: |
+        'This is an organizational control outside the scope of configuring
+        this system component.'
+    - key: d
+      text: |
+        'The customer will be responsible for monitoring and controlling
+        changes to the configuration settings in accordance with organization
+        policies and procedures. A successful control response will describe
+        how changes are controlled and monitored. This can include limitations
+        to privileges, how these changes are audited, and any tools in place to
+        track and approve changes.'
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on satisfying this control is planned.'
+
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
