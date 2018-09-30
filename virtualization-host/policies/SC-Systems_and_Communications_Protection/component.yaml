@@ -1,0 +1,418 @@
+##
+## BEGINNING OF:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
+
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-2 is planned.'
+
+- control_key: SC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-2 (1) is planned.'
+
+- control_key: SC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-3 is planned.'
+
+- control_key: SC-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-3 (2) is planned.'
+
+- control_key: SC-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-3 (3) is planned.'
+
+- control_key: SC-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-3 (4) is planned.'
+
+- control_key: SC-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-4 is planned.'
+
+- control_key: SC-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SC-4.'
+
+- control_key: SC-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-4 (2) is planned.'
+
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-5 is planned.'
+
+- control_key: SC-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-5 (1) is planned.'
+
+- control_key: SC-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-5 (2) is planned.'
+
+- control_key: SC-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-6 is planned.'
+
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 is planned.'
+
+- control_key: SC-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SC-7.'
+
+- control_key: SC-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SC-7.'
+
+- control_key: SC-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (3) is planned.'
+
+- control_key: SC-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (5) is planned.'
+
+- control_key: SC-7 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SC-7 (18).'
+
+- control_key: SC-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (7) is planned.'
+
+- control_key: SC-7 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-7 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-7 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-7 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (11) is planned.'
+
+- control_key: SC-7 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (12) is planned.'
+
+- control_key: SC-7 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (13) is planned.'
+
+- control_key: SC-7 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (14) is planned.'
+
+- control_key: SC-7 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (15) is planned.'
+
+- control_key: SC-7 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (16) is planned.'
+
+- control_key: SC-7 (17)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (17) is planned.'
+
+- control_key: SC-7 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SC-7 (19)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (19) is planned.'
+
+- control_key: SC-7 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (20) is planned.'
+
+- control_key: SC-7 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (21) is planned.'
+
+- control_key: SC-7 (22)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (22) is planned.'
+
+- control_key: SC-7 (23)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-7 (23) is planned.'
+
+- control_key: SC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-8 is planned.'
+
+- control_key: SC-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-8 (1) is planned.'
+
+- control_key: SC-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-8 (2) is planned.'
+
+- control_key: SC-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-8 (3) is planned.'
+
+- control_key: SC-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-8 (4) is planned.'
+
+- control_key: SC-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SC-8.'
+
+- control_key: SC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-10 is planned.'
+
+- control_key: SC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-11 is planned.'
+
+- control_key: SC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SC-11 (1) is planned.'

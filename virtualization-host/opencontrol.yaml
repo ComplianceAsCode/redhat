@@ -1,0 +1,43 @@
+schema_version: "1.0.0"
+name: Red Hat Virtualization Host
+metadata:
+  description: |
+    'Red Hat Virtualization Host (RHVH) is a minimal operating system based
+    on Red Hat Enterprise Linux that is designed to provide a simple method for
+    setting up a physical machine to act as a hypervisor in a Red Hat
+    Virtualization environment. The minimal operating system contains only the
+    packages required for the machine to act as a hypervisor, and features
+    a Cockpit user interface for monitoring the host and performing
+    administrative tasks.'
+
+  maintainers:
+    - Shawn Wells <shawn@redhat.com>
+    - Gabriel Alford <ralford@redhat.com>
+    - Ryan Barry <rbarry@redhat.com>
+
+components:
+    - ./policies/AC-Access_Control
+    - ./policies/AT-Awareness_and_Training
+    - ./policies/AU-Audit_and_Accountability
+    - ./policies/CA-Security_Assessment_and_Authorization
+    - ./policies/CM-Configuration_Management
+    - ./policies/CP-Contingency_Planning
+    - ./policies/IA-Identification_and_Authentication
+    - ./policies/IR-Incident_Response
+    - ./policies/MA-Maintenance
+    - ./policies/MP-Media_Protection
+    - ./policies/PE-Physical_and_Environmental_Protection
+    - ./policies/PL-Planning
+    - ./policies/PS-Personnel_Security
+    - ./policies/RA-Risk_Assessment
+    - ./policies/SA-System_and_Services_Acquisition
+    - ./policies/SC-Systems_and_Communications_Protection
+    - ./policies/SI-System_and_Information_Integrity
+
+dependencies:
+  standards:
+    - url: https://github.com/opencontrol/standards
+      revision: master
+  certifications:
+    - url: https://github.com/opencontrol/certifications
+      revision: master
