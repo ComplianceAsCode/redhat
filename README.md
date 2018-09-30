@@ -13,7 +13,7 @@ name: Template Information System
 metadata:
   description: Template Information System
   maintainers:
-    - You <you@domain.com
+    - You <you@domain.com>
 
 components:
 #    - ./local/content/
@@ -23,11 +23,31 @@ dependencies:
     - url: https://github.com/opencontrol/standards
       revision: master
   certifications:
-    - url: https://github.com/SecurityCentral/opencontrol-certifications
-      revision: master
-    - url: https://github.com/opencontrol/FedRAMP-Certifications
+    - url: https://github.com/opencontrol/certifications
       revision: master
   systems:
-    - url: https://github.com/SecurityCentral/redhat-openstack-platform-13
+    # Pulls in OpenStack 13 content
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: osp13
+      revision: opencontrol
+    #Pulls in OpenShift 3 content
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: ocp3
+      revision: opencontrol
+    # Pulls in Red Hat Identity Management content
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: idm
+      revision: opencontrol
+    # Pulls in Ansible Tower content
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: ansible-tower
+      revision: opencontrol
+    # Pulls in Red Hat Virtualization Manager content
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: rhvm
+      revision: opencontrol
+    # Pulls in Red Hat Virtualization Host content
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: rhvh
       revision: opencontrol
 `````
