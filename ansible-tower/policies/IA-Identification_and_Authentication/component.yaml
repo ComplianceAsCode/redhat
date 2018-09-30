@@ -350,7 +350,7 @@
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable.
+  implementation_status: not applicable
   narrative:
     - text: |
         'FICAM approved credentials are those credentials issued by nonfederal
