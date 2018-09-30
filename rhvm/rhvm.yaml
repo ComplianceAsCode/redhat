@@ -1,6 +1,6 @@
 ---
 documentation_complete: false
-name: Red Hat Virtualization Host
+name: Red Hat Virtualization Manager
 schema_version: 3.0.0
 satisfies:
 ##
