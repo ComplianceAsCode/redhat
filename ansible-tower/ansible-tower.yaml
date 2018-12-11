@@ -579,7 +579,94 @@ satisfies:
         https://github.com/ComplianceAsCode/redhat/issues/460
 
         - Export of Information (Success and Failure):
-        https://github.com/ComplianceAsCode/redhat/issues/461
+        https://github.com/ComplianceAsCode/redhat/issues/461 Information within
+        Ansible Tower pertains to the Ansible Tower configuration. While
+        Playbooks/Projects may be created within Tower locally and can be
+        exported, the best practices recommend that the actual automation
+        functions be maintained outside of Tower - in a version controlled
+        repository and/or a CMDB for instance. The Ansible Tower specific
+        data can be exported using 2 methods:
+
+        - The first method is to use the "setup.sh" script to back up the
+          system:
+          https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
+          This will successfully export all the Tower specific data including
+          - the database
+          - the SECRET_KEY file
+          The per-system backups include:
+          - custom user config files
+          - job stdout
+          - manual projects (if external version control systems are not being used to store playbooks)
+
+          OS level controls methods (such as tripwire) could be used to check
+          who ran the setup.sh script and when.
+
+        - Information about Tower may be also gleaned via the APIs. For instance
+          a list of users configured can be obtained from the following API endpoint: `GET /api/v2/users/`
+          Example:
+            ```
+                    {
+            "id": 15,
+            "type": "user",
+            "url": "/api/v2/users/15/",
+            "related": {
+                "admin_of_organizations": "/api/v2/users/15/admin_of_organizations/",
+                "organizations": "/api/v2/users/15/organizations/",
+                "roles": "/api/v2/users/15/roles/",
+                "access_list": "/api/v2/users/15/access_list/",
+                "teams": "/api/v2/users/15/teams/",
+                "credentials": "/api/v2/users/15/credentials/",
+                "activity_stream": "/api/v2/users/15/activity_stream/",
+                "projects": "/api/v2/users/15/projects/"
+            },
+            "summary_fields": {
+                "user_capabilities": {
+                    "edit": true,
+                    "delete": true
+                }
+            },
+            "created": "2018-08-15T10:30:39.041Z",
+            "username": "sysops2",
+            "first_name": "Sysops2",
+            "last_name": "Sysops2",
+            "email": "sys@ops.com",
+            "is_superuser": false,
+            "is_system_auditor": false,
+            "ldap_dn": "",
+            "external_account": null,
+            "auth": []
+            },
+            ```
+
+           An export of all changes made to the system can be obtained at the
+           API end-point: `/api/v2/activity_stream`. For example the following
+           output indicates that a new project was created:
+             ```
+                "operation": "create",
+            "changes": {
+                "credential": null,
+                "scm_branch": "",
+                "name": "Meetup Demos",
+                "scm_update_cache_timeout": 0,
+                "scm_clean": false,
+                "scm_url": "https://github.com/termlen0/meetups",
+                "scm_delete_on_update": false,
+                "local_path": "",
+                "scm_type": "git",
+                "timeout": 0,
+                "scm_update_on_launch": false,
+                "organization": "Default",
+                "id": 29,
+                "description": ""
+            },
+            ```
+
+           The APIs themselves are available to all Tower users. However, the
+           APIs are scoped to whatever that particular user is able to
+           accomplish over the GUI. This is normal since all GUI components are
+           built off of the API and there is a 1-1 relationship between the two.
+           While the activity stream keeps track of the changes made, user
+           clicks across the different APIs are not logged.
 
         - Import of Information (Success and Failure):
 
@@ -1327,7 +1414,7 @@ satisfies:
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable.
+  implementation_status: not applicable
   narrative:
     - text: |
         'FICAM approved credentials are those credentials issued by nonfederal
