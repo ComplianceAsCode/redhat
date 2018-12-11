@@ -123,46 +123,41 @@
 - control_key: SI-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-       '//*
-       The customer is responsible for ensuring that their malicious code
+       'The customer is responsible for ensuring that their malicious code
        protection mechanisms are centrally managed. A successful control
        response will need to address that the planning, implementing,
        assessing, authorizing and monitoring of their malicious code
-       protection mechanism is centered in one location.
-       */'
+       protection mechanism is centered in one location.'
 
 - control_key: SI-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer is responsible for ensuring that they update their
+        'The customer is responsible for ensuring that they update their
         malicious code protection mechanisms automatically when new versions/
         definitions become available. A successful control response will need
         to address that the employed malicious code protection
-        mechanisms definitions are configured to be updated automatically.
-        */'
+        mechanisms definitions are configured to be updated automatically.'
 
 - control_key: SI-3 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer is responsible for ensuring that they implement a
+        'The customer is responsible for ensuring that they implement a
         nonsignature-based malicious code detection mechanism on their
         information system. A successful control response will need to address
         a nonsignature based detection mechanism that can detect, analyze and
         describe the characteristics or behavior of malicious code and
         could provide safeguards against malicious code for which signatures
-        do not yet exist.
-        */'
+        do not yet exist.'
+
 - control_key: SI-4
   standard_key: NIST-800-53
   covered_by: []
@@ -175,99 +170,86 @@
 - control_key: SI-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for integrating intrusion detection
+        'The customer will be responsible for integrating intrusion detection
         tools into the OpenShift environment, and documenting how this
         capability is integrated into enterprise-wide intrusion detection
         systems when applicable. A successful control response will address
         the workflow between local and enterprise intrusion detection
-        systems.
-        */'
+        systems.'
 
 - control_key: SI-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for deploying automated tools to
+        'The customer will be responsible for deploying automated tools to
         support near real-time analysis of events in their infrastructure.
         This is frequently provided by corporate services outside the
         information system, e.g. centralized security operation centers may
         host an enterprise logging solution. A successful control response
         will indicate who is responsible for hosting such capabilities, and
         what technology and processes are in place to support near-realtime
-        analysis of events.
-        */'
+        analysis of events.'
 
 - control_key: SI-4 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for identifying how and where
+        'The customer will be responsible for identifying how and where
         network traffic is continuously monitored. Frequently this control
         is inherited from network and Infrastructure as a Service providers,
         such as Microsoft Azure. A successful control response will indicate
         if this control is inherited from infrastructure providers, and if
-        not, how network traffic is continuously monitored.
-        */'
+        not, how network traffic is continuously monitored.'
 
 - control_key: SI-4 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for automatic notification of
+        'The customer will be responsible for automatic notification of
         appropriate staff when indicators of compromise are detected.
         Frequently this is accomplished by automatic alerting to Security
         Operations Center staff. A successful control response will indicate
         who is notified, by name or position title(s), and the mechanism of
-        the notification.
-        */'
+        the notification.'
 
 - control_key: SI-4 (14)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
     - text: |
         'An OpenShift infrastructure does not have wireless capabilities. This
-        control is Not Applicable.
-        */'
+        control is Not Applicable.'
 
 - control_key: SI-4 (16)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for aggregating and correlating
+        'The customer will be responsible for aggregating and correlating
         information from monitoring tools, for multiple system components.
         This is frequently accomplished with centralized audit reduction
-        tools.
-        */'
+        tools.'
 
 - control_key: SI-4 (23)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for installing host-based monitoring
+        'The customer will be responsible for installing host-based monitoring
         mechanisms. A successful control response will need to discuss how
-        various elements of the OpenShift infrastructure are monitored.
-        */'
+        various elements of the OpenShift infrastructure are monitored.'
 
 - control_key: SI-5
   standard_key: NIST-800-53
@@ -281,127 +263,107 @@
 - control_key: SI-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        The customer will be responsible for verifying the correct operation
+        'The customer will be responsible for verifying the correct operation
         of security functions within customer-controlled operating systems and
         software. A successful control response will need to discuss the
         security functions deemed necessary to verify, as well as the means
-        for testing the correct operation and resolving any issues found.
-        */'
+        for testing the correct operation and resolving any issues found.'
     - key: b
       text: |
-        '//*
-        The customer will be responsible for performing security function
+        'The customer will be responsible for performing security function
         verification at customer-specified frequencies and under
         customer-specified circumstances (to include the requirements stated
         by FedRAMP). A successful control response will need to address the
         rationale for selection of the specific frequency and circumstances
-        of security function verification.
-        */'
+        of security function verification.'
     - key: c
       text: |
-        '//*
-        The customer will be responsible for notifying appropriate personnel
+        'The customer will be responsible for notifying appropriate personnel
         of failed security verification tests. A successful control response
         will need to outline the personnel or roles selected (to include
-        system administrators and security personnel as required by FedRAMP).
-        */'
+        system administrators and security personnel as required by FedRAMP).'
     - key: d
       text: |
-        '//*
-        The customer will be responsible for performing appropriate actions
+        'The customer will be responsible for performing appropriate actions
         in response to anomalies in security unction verifiation. A successful
         control response will need to discuss the actions taken (to include
         notification of system administrators and security personnel as
         required by FedRAMP) as well as the rationale for selecting these
-        actions.
-        */'
+        actions.'
 
 - control_key: SI-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for employing integrity verification
+        'The customer will be responsible for employing integrity verification
         tools for customer-controlled operating systems and software. A
         successful control response will need to discuss the tools in use and
-        the integrity-checking mechanisms these tools employ.
-        */'
+        the integrity-checking mechanisms these tools employ.'
 
 - control_key: SI-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for performing integrity checks at
+        'The customer will be responsible for performing integrity checks at
         customer-specific frequencies and under customer-specified
         circumstances (including frequencies and circumstances specified by
         FedRAMP). A successful control response will need to identify the
         criteria for performing integrity checking, as well as the rationale
-        for selecting those criteria.
-        */'
+        for selecting those criteria.'
 
 - control_key: SI-7 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for incorporating the detection of
+        'The customer will be responsible for incorporating the detection of
         customer-defined security-relevant changes into the customers incident
         response capability. A successful control response will need to
         outline the process for deeming particular changes as
         security-relevant and the means by which the incident response
-        capability is invoked when needed.
-        */'
+        capability is invoked when needed.'
 
 - control_key: SI-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for checking the validity of
+        'The customer will be responsible for checking the validity of
         information inputs to customer-controlled operating systems and
         software. A successful control response will need to discuss the
         specific inputs for which the validity is checked, the rationale
         for selecting those inputs for validity checking, and the response
-        taken by the system to invalid inputs.
-        */'
+        taken by the system to invalid inputs.'
 
 - control_key: SI-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        The customer will be responsible for generating error messages in
+        'The customer will be responsible for generating error messages in
         cusomer-controlled operating systems and software that provide
         information necessary for corrective actions without revealing
         information that could be exploited by adversaries. A successful
         control response will need to discuss the process by which error
-        messages are created, analyzed, and corrected when necessary.
-        */'
+        messages are created, analyzed, and corrected when necessary.'
     - key: b
       text: |
-        '//*
-        The customer will be responsible for revealing error messages only to
+        'The customer will be responsible for revealing error messages only to
         authorized personnel. A successful control response will need to
         address how error messages are displayed and the means by which access
-        to error messages is controlled.
-        */'
+        to error messages is controlled.'
 
 - control_key: SI-12
   standard_key: NIST-800-53

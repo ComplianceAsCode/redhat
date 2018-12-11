@@ -15,27 +15,23 @@
 - control_key: SC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer is responsible for separating user functionality
+        'The customer is responsible for separating user functionality
         including user interface services) from information system management
         functionality. A successful control response will indicate how user
-        and management functionality access is separated.
-        */'
+        and management functionality access is separated.'
 
 - control_key: SC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer is responsible for preventing unauthorized and
+        'The customer is responsible for preventing unauthorized and
         unintended information transfer via shared system resources. A
-        successful control response will discuss how this is prevented.
-        */'
+        successful control response will discuss how this is prevented.'
 
 - control_key: SC-5
   standard_key: NIST-800-53
@@ -49,15 +45,13 @@
 - control_key: SC-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer is responsible to protect the availability of
+        'The customer is responsible to protect the availability of
         resources by allocating processor and memory resources by process
         priority and resource availability. A successful control response will
-        discuss how resource availability is protected.
-        */'
+        discuss how resource availability is protected.'
 
 - control_key: SC-7
   standard_key: NIST-800-53
@@ -89,20 +83,18 @@
 - control_key: SC-7 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer is responsible for limiting the number of external
+        'The customer is responsible for limiting the number of external
         network connetions to the information system. A successful control
         response will indicate the rate limiting procedures and technical
-        enforcement.
-        */'
+        enforcement.'
 
 - control_key: SC-7 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -123,58 +115,50 @@
 - control_key: SC-7 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for ensuring managed interfaces deny
+        'The customer will be responsible for ensuring managed interfaces deny
         network traffic by default and allow network communications traffic
-        by exception (i.e. deny all, permit by exception).
-        */'
+        by exception (i.e. deny all, permit by exception).'
 
 - control_key: SC-7 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for implementing mechanisms to
+        'The customer will be responsible for implementing mechanisms to
         ensure OpenShift nodes to not act as proxy or relay servers between
-        internal and external networks.
-        */'
+        internal and external networks.'
 
 - control_key: SC-7 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for implementing host-based
+        'The customer will be responsible for implementing host-based
         boundary protection mechanisms. This is often through configuration of
-        local firewalld and SELinux policies.
-        */'
+        local firewalld and SELinux policies.'
 
 - control_key: SC-7 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for ensuring that OpenShift is
+        'The customer will be responsible for ensuring that OpenShift is
         isolated from other internal information system components by
         implementing physically separate subnetworks with managed
         interfaces to other components of the system. A successful control
         response will discuss the networking configuration to satisfy this
-        control.
-        */'
+        control.'
 
 - control_key: SC-7 (18)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control is inherited through organizational network services.'
@@ -182,44 +166,34 @@
 - control_key: SC-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        Customers are responsible for configuring their web browsers, mobile
-        devices, etc., to enable communications through FIPS 140-2 validated
-        encryption. Customers who enforce FDCC/USGCB settings will achieve
-        FIPS 140-2 encryption as part of that baseline. Strong encryption
-        with FIPS-approved ciphers is still possible when hosts are not
-        operating in FIPS mode.
-        */'
+        'The customer will be responsible for configuring TLS for transmitted
+        information.'
 
 - control_key: SC-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for implimenting cryptographic
+        'The customer will be responsible for implimenting cryptographic
         mechanisms to prevent unauthorized disclosure of information and
         detect changes to information during transmission. A successful
         control response will detail how encryption is used for all
-        network communications that carry customer data.
-        */'
+        network communications that carry customer data.'
 
 - control_key: SC-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for terminating network connections
+        'The customer will be responsible for terminating network connections
         at the end of the session or after no longer than 30 minutes of
         inactivity. A successful control response will document the technical
-        means on how this is established.
-        */'
+        means on how this is established.'
 
 - control_key: SC-12
   standard_key: NIST-800-53
@@ -272,28 +246,24 @@
 - control_key: SC-18
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: c
       text: |
-        '//*
-        The customer will be responsible for authorizing, monitoring, and
+        'The customer will be responsible for authorizing, monitoring, and
         controlling the use of mobile code within the system in accordance
-        with organizational policies defined in SC-18(a) and SC-18(b).
-        */'
+        with organizational policies defined in SC-18(a) and SC-18(b).'
 
 - control_key: SC-19
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: b
       text: |
-        '//*
-        The customer will be responsible for authorizing, monitoring, and
+        'The customer will be responsible for authorizing, monitoring, and
         controlling the use of VoIP within the system in accordance with
-        organizational policies defined in SC-19(a)..
-        */'
+        organizational policies defined in SC-19(a).'
 
 - control_key: SC-20
   standard_key: NIST-800-53
@@ -380,11 +350,10 @@
 - control_key: SC-23
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for guarding against, for
+        'The customer will be responsible for guarding against, for
         example, man in the middle or session hijacking attacks for
         connections to the customer application, for example via the
         use of TLS. A successful control response will address the
@@ -392,28 +361,24 @@
         mechanisms used to protect against those attacks.
 
         OpenShift uses various TLS algorithms and ciphers to protect
-        the authenticity of communications sessions.
-        */'
+        the authenticity of communications sessions.'
 
 - control_key: SC-28
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        A successful control response will need to address the means by
-        which data at rest is protected.
-        */'
+        'A successful control response will need to address the means by
+        which data at rest is protected.'
 
 - control_key: SC-28 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer is responsible for implementing cryptographic
+        'The customer is responsible for implementing cryptographic
         mechanisms to prevent unauthorzed disclosure and modification of
         customer data. A successful control response will outline how
         cryptography is used to ensure integrity of data in rest and
@@ -422,8 +387,7 @@
         When running on Red Hat Enterprise Linux, full disk encryption
         is possible for data at rest on the OpenShift nodes. For data
         in transport, OpenShift uses cryptographic algorithms and ciphers to
-        protect confidentiality and integrity of data in transport.
-        */'
+        protect confidentiality and integrity of data in transport.'
 
 - control_key: SC-39
   standard_key: NIST-800-53
