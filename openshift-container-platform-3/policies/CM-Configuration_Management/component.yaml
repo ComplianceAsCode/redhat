@@ -36,17 +36,15 @@
 - control_key: CM-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: c
       text: |
-        '//*
-        The customer will be responsible for reviewing and updating the
+        'The customer will be responsible for reviewing and updating the
         baseline configuration of the information system as a part of
         information system component installations and upgrades. A
         successful control response will need to address updates to the baseline
-        configuration as a part of installations and upgrades.
-        */'
+        configuration as a part of installations and upgrades.'
 
 # ADMINISTRATORS NOTE ON CM-2(2):
 #       Implimentation of this control varies between customers. Some create
@@ -68,30 +66,26 @@
 - control_key: CM-2(2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for employing automated mechanisms to
+        'The customer will be responsible for employing automated mechanisms to
         maintain an up-to-date, completed, accurate, and readily available
         baseline configuration of the information system. A successful control
         response will need to address what automated mechanisms are in use to
-        help maintain the baseline configurations of the information system.
-        */'
+        help maintain the baseline configurations of the information system.'
 
 - control_key: CM-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for retaining previous versions of
+        'The customer will be responsible for retaining previous versions of
         baseline configurations to support rollback. A successful control
         response will need to address how previous versions of baseline
         configurations will be retained in order to roll back to a previous
-        version.
-        */'
+        version.'
 
 # ADMINISTRATORS NOTE ON CM-2(7):
 #       This control relates to organizations issuing equipment, e.g. laptops,
@@ -101,7 +95,7 @@
 - control_key: CM-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -113,17 +107,15 @@
 - control_key: CM-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: d
       text: |
-        '//*
-        The customer will be responsible for implementing approved
+        'The customer will be responsible for implementing approved
         configuration-controlled changes to the system. A successful control
         response will need to address how changes are implemented after being
         approved. This can include tools used to ensure that changes are
-        implemented after approval.
-        */'
+        implemented after approval.'
 
 - control_key: CM-4
   standard_key: NIST-800-53
@@ -137,20 +129,18 @@
 - control_key: CM-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for enforcing access restrictions,
+        'The customer will be responsible for enforcing access restrictions,
         and supporting auditing of the enforcement actions. A successful
         control response will explain how access restrictions are enforced, and
-        how this access is audited.
-        */'
+        how this access is audited.'
 
 - control_key: CM-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: complete
   narrative:
     - text: |
         'To ensure the system can cryptographically verify base software
@@ -193,30 +183,25 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
-        */'
 
 - control_key: CM-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        '//*
-        The customer will be responsible for reviewing the information system
+        'The customer will be responsible for reviewing the information system
         at least monthly to identify unnecessary or nonsecure functions, ports,
         protocols, and services. A successful control response will describe
-        how often functions, ports, protocols, and services are reviewed.
-        */'
+        how often functions, ports, protocols, and services are reviewed.'
     - key: b
       text: |
-        '//*
-        The customer will be responsible for disabling functions, ports,
+        'The customer will be responsible for disabling functions, ports,
         protocols, and services that have been deemed to be unnecessary or
         nonsecure. A successful control response will explain that these
         functions, ports, protocols, and services found during the review
-        process are disabled.
-        */'
+        process are disabled.'
 
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
