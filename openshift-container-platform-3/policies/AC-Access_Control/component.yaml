@@ -567,6 +567,19 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: d
+      text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
