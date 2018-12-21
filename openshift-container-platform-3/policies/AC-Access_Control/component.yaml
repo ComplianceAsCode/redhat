@@ -56,7 +56,12 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text:
+        'OpenShift does not have the capability to create
+        guest/anonymous accounts or temporary accounts. Any
+        external emergency or temporary accounts will be
+        inherited from, and managed by, an external
+        identity service (e.g. LDAP).'
 
 #
 # AC-2(3) NOTES:
