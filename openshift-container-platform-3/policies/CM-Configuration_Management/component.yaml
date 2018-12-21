@@ -278,16 +278,11 @@
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: not applicable
   narrative:
     - text: |
-        '//*
-        The customer will be responsible updating the inventory of information
-        system components and an integral part of installations, removals, and
-        information system updates. A successful control response will include
-        a description of how the inventory is updated when any of the above
-        events change the inventory.
-        */'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: CM-8 (3)
   standard_key: NIST-800-53
