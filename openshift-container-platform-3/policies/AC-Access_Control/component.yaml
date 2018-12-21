@@ -138,6 +138,20 @@
         'This control is applicable to the identity service provider,
         and outside the scope of OpenShift configuration.'
 
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
