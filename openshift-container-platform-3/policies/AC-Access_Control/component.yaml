@@ -347,7 +347,6 @@
         default behavior of OpenShift is to disconnect the idle users
         from the management console after 15 minutes.'
 
-
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -369,6 +368,25 @@
         terminating the session when those events or conditions arise. A
         successful control response will need to outline the qualifying events
         or conditions.'
+
+
+- control_key: AC-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: implemented
+  narrative:
+    - key: a
+      text: |
+        'Whether user-initiated communication sessions originate
+        through the OpenShift web console or through command line,
+        users are given explicit logout capabilities. This is
+        default, non-configurable behavior of the OpenShift Container
+        Platform.'
+    - key: b
+      text: |
+        'OpenShift displays an explicit logout message upon user
+        session terminiations. This is default, non-configurable
+        behavior.'
 
 - control_key: AC-14
   standard_key: NIST-800-53
@@ -488,6 +506,20 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope
+        of OpenShift configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope
+        of OpenShift configuration.'
 
 - control_key: AC-22
   standard_key: NIST-800-53
