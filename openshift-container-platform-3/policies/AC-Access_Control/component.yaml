@@ -117,6 +117,15 @@
         period of inactivity.
         */'
 
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
   covered_by: []
@@ -149,6 +158,15 @@
         and outside the scope of OpenShift configuration.'
     - key: b
       text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
         'This control is applicable to the identity service provider,
         and outside the scope of OpenShift configuration.'
 
