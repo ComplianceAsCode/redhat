@@ -79,7 +79,12 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 
+        'OpenShift's end-user account management is inherited from
+        the hosting environment.Automatic disabling of these
+        accounts must happen at the centralized account
+        management level; for example, within LDAP, Red Hat
+        IdM, or Active Directory.'
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
