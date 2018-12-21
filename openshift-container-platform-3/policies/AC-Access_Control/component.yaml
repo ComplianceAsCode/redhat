@@ -15,15 +15,34 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'AC-1 is an organizational control outside the scope of
+             configuring OpenShift. Implementing AC-1 falls under
+             technical controls, such as AC-2 (3) which disables
+             inactive accounts.'
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'AC-2 is an organizational control outside the scope
+             of configuring OpenShift.'
 
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text:
+        'OpenShift components of the system support automated
+        management through monitoring of accounts and system
+        activity by logging of related information.
+
+        While OpenShift can generate audit data, and securely
+        transport the data to a SIEM, OpenShift does not provide
+        automated mechanisms (e.g. email, text messages) after
+        system events. This functionality would fall to third
+        party software.'
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
