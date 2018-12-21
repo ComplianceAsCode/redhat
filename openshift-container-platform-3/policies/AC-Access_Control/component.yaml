@@ -539,6 +539,29 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
 
+- control_key: AC-20 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
