@@ -101,6 +101,10 @@
         also the responsibility of the centralized authentication
         service.'
 
+##
+## Ref: https://access.redhat.com/solutions/2191161
+## "How to modify console session timeouts in Openshift 3"
+##
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -116,15 +120,14 @@
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'The customer will be responsible for terminating or changing
-        credentials for shared or group accounts when membership to those
-        groups changes. A successful control response will need to discuss how
-        group membership change is detected and reported, the peronnel or roles
-        responsible for changing the affected credentials, and the process or
-        mechanism used to perform the change.'
+        'OpenShift does not have the concept of group accounts.
+
+        Should the organization allow shared credentials, the
+        creation and management of such would fall under the scope
+        of operating the shared identity service and not OpenShift.'
 
 - control_key: AC-3
   standard_key: NIST-800-53
