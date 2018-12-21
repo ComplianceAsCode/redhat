@@ -332,11 +332,10 @@
         security-relevant and the means by which the incident response
         capability is invoked when needed.'
 
-
 - control_key: SI-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -344,6 +343,33 @@
         are not applicable to the configuration of OpenShift.'
     - key: b
       text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+
+- control_key: SI-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+
+- control_key: SI-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+
+- control_key: SI-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
         'This control reflects organizational procedures/policies that
         are not applicable to the configuration of OpenShift.'
 
