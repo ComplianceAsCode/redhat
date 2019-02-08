@@ -108,7 +108,7 @@
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implementation_status: complete
   narrative:
     - text: |
         'Within OpenShift, the sessionMaxAgeSeconds variable in the
@@ -359,7 +359,12 @@
         'The customer will be responsible for limiting the number of
         concurrent sessions to the customer application as required.
         A successful control implemented will need to address the technical
-        mechanism used to enforce this limit.'
+        mechanism used to enforce this limit.
+
+        Documentation on configuring this capability is being tracked in
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/616'
 
 - control_key: AC-11
   standard_key: NIST-800-53
@@ -384,8 +389,9 @@
   narrative:
     - text: |
         'Not applicable. When AC-2(5) is implemented, the non-configurable
-        default behavior of OpenShift is to disconnect idle users from the
-        management console after 15 minutes.'
+        default behavior of OpenShift is to logout idle users from the
+        management console. Once logged out the only information available
+        will be the OpenShift logon screen.'
 
 - control_key: AC-12
   standard_key: NIST-800-53
@@ -403,7 +409,7 @@
 - control_key: AC-12 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implementation_status: complete
   narrative:
     - key: a
       text: |
