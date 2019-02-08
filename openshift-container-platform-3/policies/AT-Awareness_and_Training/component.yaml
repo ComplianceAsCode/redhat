@@ -107,7 +107,7 @@
       text: |
         'This control reflects organizational procedure/policy and is not
         applicable to component-level configuration.'
-        
+
 - control_key: AT-5
   standard_key: NIST-800-53
   covered_by: []
