@@ -115,6 +115,30 @@
         master-config.yaml file controls when/if users must logout after a
         period of inactivity.'
 
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        'OpenShift roles can be used to grant various levels of access both
+        cluster-wide as well as at the project scope. Users and gruops can be
+        associated with, or bound to, multiple roles at the same time.
+
+        Documentation regarding the management of Role-based Access Control
+        can be found in the OpenShift Cluster Administration guide:
+
+        https://docs.openshift.com/container-platform/3.11/admin_guide/manage_rbac.html'
+    - key: b
+      text: |
+        'This is an organizational control and not applicble to the configuration
+        of OpenShift.'
+    - key: c
+      text: |
+        'This is an organizational control and not applicble to the configuration
+        of OpenShift.'
+
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
   covered_by: []
