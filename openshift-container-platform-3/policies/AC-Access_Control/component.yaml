@@ -435,6 +435,16 @@
         system use notifications (as defined in AC-8) and login prompt. This is
         non-confiurable behavior.'
 
+- control_key: AC-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Data release markings, such as NATO or NOFORN, is the responsibility
+        of application and data owners running workload on the OpenShift platform.
+        This control is not applicable to the configuration of OpenShift itself.'
+
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
