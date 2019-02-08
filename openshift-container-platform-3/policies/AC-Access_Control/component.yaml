@@ -79,7 +79,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 
+    - text:
         'OpenShift's end-user account management is inherited from
         the hosting environment.Automatic disabling of these
         accounts must happen at the centralized account
@@ -111,11 +111,9 @@
   implementation_status: implemented
   narrative:
     - text: |
-        '//*
-        Within OpenShift, the sessionMaxAgeSeconds variable in the
+        'Within OpenShift, the sessionMaxAgeSeconds variable in the
         master-config.yaml file controls when/if users must logout after a
-        period of inactivity.
-        */'
+        period of inactivity.'
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -456,8 +454,16 @@
   implementation_status: complete
   narrative:
     - text: |
-        'OpenShift uses the following cryptographic algorithms and ciphers to
-        protect the confidentiality and integrity of remote access sessions:
+        'Beginning with OpenShift 3.11, when OpenShift is deployed on Red Hat Enterprise
+        Linux, and FIPS is enabled as a kernel setting, OpenShift will use OpenSSL
+        libraries instead of the native Golang crypto. The system operator will need to
+        verify that OpenShift is being deployed on a version of Red Hat Enterprise Linux
+        that has been FIPS validated.
+
+        Prior to OpenShift 3.11, remote sessions were encrypted using Golang-provided
+        cryptography. While not FIPS validated, this included the following
+        cryptographic algorithms and ciphers to protect the confidentiality
+        and integrity of remote access sessions:
                 - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
                 - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
                 - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
