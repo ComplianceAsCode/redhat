@@ -248,16 +248,77 @@
         the separation of information flows, and the mechanisms and
         techniques used to accomplish this separation.'
 
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
 - control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational/procedural control outside the scope of
+        OpenShift configuration.
+
+        The customer will be responsible for requiring users to use the
+        lowest level of access required to perform any given function. In
+        terms of OpenShift, this may require creation of multiple logon
+        accounts per user. When users require access to privileged functions
+        or capability, they will need to logout from the unprivileged account
+        and login with an account that has received appropriate RBAC rights.
+
+        Note OpenShift does not have privilege escalation capabilities similar
+        to sudo in Linux. Users will have to completely logout/login when
+        requiring privilege escalation between accounts.'
+
+- control_key: AC-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (7)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
     - text: |
-        'The customer will be responsible for requiring users to use the
-        lowest level of access required to perform any given function. A
-        successful control response will need to discuss how the level of
-        access in use is monitored and enforced.'
+        'Satisfaction of this control is inherited from configuration
+        of the underlying operating system. When OpenShift is deployed
+        on Red Hat Enterprise Linux, or Red Hat CoreOS, and SELinux is
+        enforcing, this control is satisfied.'
 
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
