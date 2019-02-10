@@ -140,20 +140,13 @@
 - control_key: CM-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |
         'To ensure the system can cryptographically verify base software
         packages of OpenShift, the yum gpgcheck option must be enabled in the
-        underlying Red Hat Enterprise Linux. This is accomplished by applying
-        the following Red Hat CCEs:
-
-                - CCE-26989-4: Ensure gpgcheck Enabled in Main Yum Configuration
-                - CCE-26957-1: Ensure Red Hat GPG Key Installed
-                - CCE-26876-3: Ensure gpgcheck Enabled for All Yum Package
-                               Repositories
-                - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages
-                - CCE-80348-6: Ensure gpgcheck Enabled for Repository Metadata'
+        underlying Red Hat Enterprise Linux. This is outside the scope
+        of OpenShift configuration.'
 
 - control_key: CM-6
   standard_key: NIST-800-53
@@ -206,7 +199,7 @@
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
         '//*
@@ -225,7 +218,7 @@
 - control_key: CM-7 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: a
       text: |
@@ -285,16 +278,11 @@
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: not applicable
   narrative:
     - text: |
-        '//*
-        The customer will be responsible updating the inventory of information
-        system components and an integral part of installations, removals, and
-        information system updates. A successful control response will include
-        a description of how the inventory is updated when any of the above
-        events change the inventory.
-        */'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: CM-8 (3)
   standard_key: NIST-800-53

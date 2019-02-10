@@ -57,7 +57,6 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
 
-
 - control_key: CA-7
   standard_key: NIST-800-53
   covered_by: []
@@ -66,7 +65,6 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
-
 
 - control_key: CA-9
   standard_key: NIST-800-53

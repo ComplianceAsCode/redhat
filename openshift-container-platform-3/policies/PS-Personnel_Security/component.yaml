@@ -22,7 +22,6 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
 
-
 - control_key: PS-3
   standard_key: NIST-800-53
   covered_by: []
@@ -32,7 +31,57 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
 
+- control_key: PS-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
 - control_key: PS-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: PS-4 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
@@ -59,6 +108,38 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
 
+- control_key: PS-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: c
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: PS-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
 - control_key: PS-7
   standard_key: NIST-800-53
   covered_by: []
@@ -67,7 +148,6 @@
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
-
 
 - control_key: PS-8
   standard_key: NIST-800-53
