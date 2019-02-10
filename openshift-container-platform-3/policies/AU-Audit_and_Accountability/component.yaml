@@ -3,7 +3,6 @@
 ## AUDIT AND ACCOUNTABILITY
 ##
 
-
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
@@ -26,7 +25,6 @@
         NOTE: The organization-defined auditable events are configured in
         OpenShift through actions specified in AU-12.'
 
-
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []
@@ -35,7 +33,6 @@
     - text: |
         'OpenShift audit records contain this information by default. No
         additional configuration is required.'
-
 
 - control_key: AU-4
   standard_key: NIST-800-53

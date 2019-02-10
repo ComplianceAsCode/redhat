@@ -199,7 +199,7 @@
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - text: |
         '//*
@@ -218,7 +218,7 @@
 - control_key: CM-7 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: planned
   narrative:
     - key: a
       text: |
