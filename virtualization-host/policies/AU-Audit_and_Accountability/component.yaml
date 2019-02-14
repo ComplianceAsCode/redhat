@@ -39,7 +39,7 @@
     - key: a
       text: |
         'The selection of organization-defined auditable events is not applicable
-        to the configuration of Red Hat Virtualization Host (RHVH). 
+        to the configuration of Red Hat Virtualization Host (RHVH).
 
         However, as supplementary information, RHVH was designed to audit events
         identified in Intelligence Community Standard Number 500-27 (ICS 500-27).
