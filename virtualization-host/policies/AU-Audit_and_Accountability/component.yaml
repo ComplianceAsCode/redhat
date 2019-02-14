@@ -2,84 +2,164 @@
 ## BEGINNING OF:
 ## AUDIT AND ACCOUNTABILITY
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Control selections based off
+## https://nvd.nist.gov/800-53/Rev4/family/Audit%20and%20Accountability
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-1
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-2
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'The selection of organization-defined auditable events is not applicable
+        to the configuration of Red Hat Virtualization Host (RHVH). 
 
+        However, as supplementary information, RHVH was designed to audit events
+        identified in Intelligence Community Standard Number 500-27 (ICS 500-27).
+        The following set of auditable events represent a minimal set of events
+        suggested to be audited:
+
+            - Authentication Events
+              * Logons (Success/Failure)
+              * Logoffs (Success/Failure)
+            - File & Object Events
+              * Create (Success/Failure)
+              * Access (Success/Failure)
+              * Delete (Success/Failure)
+              * Modify (Success/Failure)
+              * Permission Modifications (Success/Failure)
+              * Ownership Modifications (Success/Failure)
+            - User & Group Management Events
+              * User add, delete, modify, suspend, lock (Success/Failure)
+              * Group/Role add, delete, modify (Success/Failure)
+            - Use of Privileged/Special Rights Events
+              * Security or audit policy changes (Success/Failure)
+              * Configuration Changes (Success/Failure)
+            - Admin or root-level access (Success/Failure)
+            - Privilege/Role escalation (Success/Failure)
+            - Audit and log data access (Success/Failure)
+            - System Reboot, Restart & Shutdown (Success/Failure)'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'The frequency (or situation requiring) the audit of events identified
+        in AU-2(a) is not applicable to the configuration of Red Hat
+        Virtualization Host (RHVH).
+
+        As supplementary information, RHVH is capable of auditing the success and
+        failure, in realtime, of events identified in AU-2(a).'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-3
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'Red Hat Virtualization Host (RHVH) audit records contain
+    the required information and cannot be configured to be out of
+    compliance with this control.'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-4
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-5
 - control_key: AU-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        ''
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-6
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-8
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
-
+        ''
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-9
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-11
 - control_key: AU-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-12
 - control_key: AU-12
   standard_key: NIST-800-53
   covered_by: []
