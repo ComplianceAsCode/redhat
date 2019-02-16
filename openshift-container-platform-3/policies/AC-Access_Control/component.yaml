@@ -80,7 +80,7 @@
   implementation_status: not applicable
   narrative:
     - text:
-        'OpenShift's end-user account management is inherited from
+        'OpenShift end-user account management is inherited from
         the hosting environment.Automatic disabling of these
         accounts must happen at the centralized account
         management level; for example, within LDAP, Red Hat
