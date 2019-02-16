@@ -210,7 +210,7 @@
         However, once an organization-defined time period record retention is
         created, and audit logs are being kept locally on the system, it
         is important to ensure the audit logs will not automatically be rotated
-        or discarded after exceeding a certain file size. 
+        or discarded after exceeding a certain file size.
 
         To tailor log retention (based on log size, not age), the following
         configuration check may be helpful:
