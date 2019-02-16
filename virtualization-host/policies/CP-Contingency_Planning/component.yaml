@@ -2,95 +2,78 @@
 ## BEGINNING OF:
 ## CONTINGENCY PLANNING
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Contingency%20Planning
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-1
 - control_key: CP-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-2
 - control_key: CP-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-3
 - control_key: CP-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-4
 - control_key: CP-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: ''
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-9
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - key: a
       text: |
-        'The customer will be responsible for conducting daily incremental and
-        weekly full backups of user-level information contained in the
-        information system. Additional FedRAMP requirements and guidance include
-        maintaining at least three backup copies of user-level information (at
-        least one of which is available online) or provides an equivalent
-        alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
-        maintained.
-
-        Documentation/guidance on satisfying this control is planned.'
+        ''
     - key: b
       text: |
-        'The customer will be responsible for conducting daily incremental and
-        weekly full backups of system-level information contained in the
-        information system. Additional FedRAMP requirements and guidance include
-        maintaining at least three backup copies of user-level information (at
-        least one of which is available online) or provides an equivalent
-        alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
-        maintained.
-
-        Documentation/guidance on satisfying this control is planned.'
+        ''
     - key: c
       text: |
-        'The customer will be responsible for conducting daily incremental and
-        weekly full backups of information system documentation including
-        security-related documentation. Additional FedRAMP requirements and
-        guidance include maintaining at least three backup copies of user-level
-        information (at least one of which is available online) or provides an
-        equivalent alternative. A successful control response will detail how
-        backups of user-level information occures, and how three backup copies
-        are maintained.
-
-        Documentation/guidance on satisfying this control is planned.'
+        ''
     - key: d
       text: |
-        'The customer will be responsible for protecting the confidentiality,
-        integrity, and available of backup information at storage locations.
-        Additional FedRAMP requirements and guidance include determining
-        what elements of the cloud environment require the Information System
-        Backup control. The customer will determine how Information System
-        Backup is going to be verified and appropriate periodicity of the
-        check.
+        ''
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-10
 - control_key: CP-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
-    - text: |
-        'The customer will be responsible for documenting how to reconstitute
-        their environment. A successful control
-        response will detail
-        processes used to fully recover/restore the system component.'
+    - text: ''

@@ -2,31 +2,67 @@
 ## BEGINNING OF:
 ## MEDIA PROTECTION
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Media%20Protection
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-1
 - control_key: MP-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-2
 - control_key: MP-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-6
 - control_key: MP-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-7
 - control_key: MP-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: ''
+    - text: 'To prohibit the use of USB storage devices on Red Hat Virtualization
+    Host (RHVH) nodes, the following configuration check must be enabled:
+
+    CCE-27277-3: Disable Modprobe Loading of USB Storage Driver'

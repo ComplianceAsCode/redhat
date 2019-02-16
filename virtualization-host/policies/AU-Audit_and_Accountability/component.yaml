@@ -2,84 +2,223 @@
 ## BEGINNING OF:
 ## AUDIT AND ACCOUNTABILITY
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Control selections based off
+## https://nvd.nist.gov/800-53/Rev4/family/Audit%20and%20Accountability
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-1
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-2
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'The selection of organization-defined auditable events is not applicable
+        to the configuration of Red Hat Virtualization Host (RHVH).
 
+        However, as supplementary information, RHVH was designed to audit events
+        identified in Intelligence Community Standard Number 500-27 (ICS 500-27).
+        The following set of auditable events represent a minimal set of events
+        suggested to be audited:
+
+            - Authentication Events
+              * Logons (Success/Failure)
+              * Logoffs (Success/Failure)
+            - File & Object Events
+              * Create (Success/Failure)
+              * Access (Success/Failure)
+              * Delete (Success/Failure)
+              * Modify (Success/Failure)
+              * Permission Modifications (Success/Failure)
+              * Ownership Modifications (Success/Failure)
+            - User & Group Management Events
+              * User add, delete, modify, suspend, lock (Success/Failure)
+              * Group/Role add, delete, modify (Success/Failure)
+            - Use of Privileged/Special Rights Events
+              * Security or audit policy changes (Success/Failure)
+              * Configuration Changes (Success/Failure)
+            - Admin or root-level access (Success/Failure)
+            - Privilege/Role escalation (Success/Failure)
+            - Audit and log data access (Success/Failure)
+            - System Reboot, Restart & Shutdown (Success/Failure)'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'The frequency (or situation requiring) the audit of events identified
+        in AU-2(a) is not applicable to the configuration of Red Hat
+        Virtualization Host (RHVH).
+
+        As supplementary information, RHVH is capable of auditing the success and
+        failure, in realtime, of events identified in AU-2(a).'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-3
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'Red Hat Virtualization Host (RHVH) audit records contain
+    the required information and cannot be configured to be out of
+    compliance with this control.'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-4
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-5
 - control_key: AU-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'The audit subsystem was designed to uniquely identify multiple causes
+        of audit processing failures. Configuring the audit subsystem to alert,
+        or take alternative actions such as shutdown, is detailed in AC-5(b). '
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To shutdown a Red Hat Virtualization Host (RHVH) node upon
+        an audit processing failure, which includes software/hardware errors,
+        failures in audit capturing mechanisms, or audit storage capacity being
+        reached or exceeded, the following configuration check must
+        be enabled:
 
+        CCE-80381-7: Shutdown System When Auditing Failures Occur
+
+        To configure the system to take action upon detecting a disk error,
+        such as errors writing to disk or rotating audit logs, the following
+        configuration check must be enabled:
+
+        CCE-80501-0: Configure auditd Disk Error Action on Disk Error'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-6
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-8
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
-
+        'By default the audit subsystem utilizes the system clock and cannot be
+        configured to be out of compliance with this control.'
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'The audit subsystem is hard coded to only accept internationally recognized
+        timezone settings. This ensures audit log timestamps can be mapped to
+        Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).
 
+        To ensure the underlying system clocks are accurate within an
+        organization-defined granularity of time measurement, the system must be
+        configured to synchronize with an authoritative time source. Such
+        configuration is detailed in AU-8(1).'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-9
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'The following configuration checks ensure the audit records are
+    protected by appropriate file permission, user, and group ownership settings:
 
+    CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
+    CCE-80125-8: System Audit Logs Must Be Owned By Root
+
+    The /var/log/audit/ directory is provided by the audit subsystem
+    packaging. The following configuration checks ensure
+    /var/log/audit/ directory permissions, as well as permissions of
+    audit tooling, have not deviated from the secure defaults:
+
+    CCE-27209-6: Verify and Correct File Permissions with RPM
+    CCE-80545-7: Verify and Correct Ownership with RPM
+
+    The following configuration check is required to cryptographically
+    verify the audit subsystem binaries and associated tooling has not
+    been modified/tampered with:
+
+    CCE-27157-7: Verify File Hashes with RPM'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-11
 - control_key: AU-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
+        However, once an organization-defined time period record retention is
+        created, and audit logs are being kept locally on the system, it
+        is important to ensure the audit logs will not automatically be rotated
+        or discarded after exceeding a certain file size.
+
+        To tailor log retention (based on log size, not age), the following
+        configuration check may be helpful:
+
+        CCE-27348-2: Configure auditd Number of Logs Retained'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-12
 - control_key: AU-12
   standard_key: NIST-800-53
   covered_by: []
@@ -87,28 +226,41 @@
   narrative:
     - key: a
       text: |
-        'Customers are required to provide record generation capability for the
-        events defined in AU-2a at all information system components where audit
-        capability is available. A successful control response will discuss the
-        coniguration of all system components to capture the events that were
-        defined in AU-2.
+        'To ensure Red Hat Virtualization Host (RHVH) nodes provide audit
+        record generation capability, the underlying audit subsystem
+        must be enabled through the following configuration checks:
 
-        Documentation/guidance on satisfying this control is planned.'
+        CCE-27407-6: Enable auditd Service
+        CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
     - key: b
       text: |
-        'Customers are required to allow defined personnel or roles to select
-        which auditable events are to be audited by specific components of the
-        information system. A successful control response will discuss how
-        audit generation is implemented, and who selects and configures
-        auditable events on the information system. Approved personnel or
-        roles are defined in AU-9(4).
-
-        Documentation/guidance on satisfying this control is planned.'
+        'System administrators may customize audit rules by editing the
+        appropriate files under /etc/audit/audit.d/.'
     - key: c
       text: |
-        'Customers are required to generate audit records for the events
-        defined in AU-2d with the content defined in AU-3. A successful control
-        response will discuss how audit records are generated, and how they meet
-        the requirements defined in AU-2 and AU-3.
+        'The following configuration checks correlate to recommended
+        audit events:
 
-        Documentation/guidance on satisfying this control is planned.'
+            - Authentication Events
+              * Logons (Success/Failure)
+              * Logoffs (Success/Failure)
+            - File & Object Events
+              * Create (Success/Failure)
+              * Access (Success/Failure)
+              * Delete (Success/Failure)
+              * Modify (Success/Failure)
+              * Permission Modifications (Success/Failure)
+              * Ownership Modifications (Success/Failure)
+            - User & Group Management Events
+              * User add, delete, modify, suspend, lock (Success/Failure)
+              * Group/Role add, delete, modify (Success/Failure)
+            - Use of Privileged/Special Rights Events
+              * Security or audit policy changes (Success/Failure)
+              * Configuration Changes (Success/Failure)
+            - Admin or root-level access (Success/Failure)
+            - Privilege/Role escalation (Success/Failure)
+            - Audit and log data access (Success/Failure)
+            - System Reboot, Restart & Shutdown (Success/Failure)
+
+            A complete control response is being planned through GitHub:
+            https://github.com/ComplianceAsCode/redhat/issues/505'

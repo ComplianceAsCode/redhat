@@ -11,103 +11,286 @@
 ##  - implementation_status: none
 ##
 
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-1
 - control_key: AC-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: f
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: g
+      text: |
+        'The audit subsystem must be enabled to ensure audit and monitoring
+        of Red Hat Virtualization Host (RHVH) information system accounts.
 
+        The following configuration checks must be satisfied to meet AC-2(g):
+
+        CCE-27407-6: Enable auditd Service
+
+        Additional controls, such as AU-2, provide organizational-defined
+        events that the audit subsystem will be responsible for capturing.'
+    - key: h
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: i
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: j
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: k
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'Documentation/guidance for satisfying this control is planned.'
+        'The following configuration checks are required to ensure
+        Red Hat Virtualization Host (RHVH) is capable of enforcing
+        approved authorizations for logical access:
 
+        CCE-27334-2: Ensure SELinux State is Enforcing
+        CCE-26961-3: Ensure SELinux Not Disabled in /etc/default/grub
+        CCE-27279-9: Configure SELinux Policy
+        CCE-27309-4: Set Boot Loader Password in grub2
+        CCE-80354-4: Set the EUFI Boot Loader Password
+        CCE-27335-9: Verify that Interactive Boot is Disabled
+        CCE-27413-4: Disable Host-Based Authentication
+        CCE-27377-1: Disable SSH Support for .rhosts Files
+        CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+        CCE-27445-6: Disable SSH Root Login
+        CCE-27471-2: Disable SSH Access via Empty Passwords
+        CCE-80219-9: Limit Users SSH Access'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-7
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'The following configuration checks are required to ensure
+        Red Hat Virtualization Host (RHVH) enforces an organization-defined
+        number of consecutive logon attempts during an organization-defined
+        time period:
+
+        CCE-27350-8: Set Deny for Failed Password Attempts
+        CCE-27297-1: Set Interval for Counting Failed Password Attempts
+        CCE-80353-6: Configure the root Account for Failed Password Attempts'
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'The following configuration checks are required to automatically
+        lock an account for an organization-defined time period, or to lock
+        the account until released by an administrator:
 
+        CCE-26884-7: Set Lockout Time for Failed Password Attempts
+
+        Currently it is not possible to delay logon prompts according to
+        an organization-defined time period when the maximum number of
+        unsuccessful attempts is exceeded. However, it is possible to delay
+        sequential logon prompts after a failed login (regardless of number
+        of attempts). If that behavior is desired, the following configuration
+        checks are required:
+
+        CCE-80352-8: Ensure the Logon Failure Delay is Set Correctly in login.defs'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-8
 - control_key: AC-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'The following configuration checks are required to display an
+        organization-defined system use notification message or banner before
+        granting access to the system:
+
+        CCE-27303-7: Modify the System Login Banner
+        CCE-27314-4: Enable SSH Warning Banner'
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'When CCE-27303-7 and CCE-27314-4 are implemented, Red Hat
+        Virtualization Host (RHVH) will retain the notification message
+        on the screen until users take explicit action to log on. This
+        is non-configurable default behavior.'
     - key: c
       text: |
-        'The banner text, as identified in AC-8(a), and banner acknowledgement,
-        as defined in AC-8(b), will be the same regardless of what network(s)
-        the system component console is accessed from. This control
-        is not applicable.'
+        'When CCE-27303-7 and CCE-27314-4 are implemented, Red Hat
+        Virtualization Host (RHVH) will display system use information
+        before granting further access. Exact wording of the system use
+        message is defined through CCE-27303-7.'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-14
 - control_key: AC-14
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
     - text: |
-        'Regardless of access mechanism, such as component management
-        console, unauthenticated users will only be shown the
-        system use notifications (as defined in AC-8) and login prompt. This is
-        non-configurable behavior.
+        'There are no user actions that can be performed on
+        Red Hat Virtualization Host (RHVH) without identification
+        or authentication. This is non-configurable default
+        behavior.'
 
-        External service APIs also require authentication
-        prior to granting resource access.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: ''
+    - text: 'Administrative connections to Red Hat Virtualization Host (RHVH)
+    are performed over SSH. The following configuration checks are highly
+    encouraged to harden remote access over SSH:
 
+    CCE-27485-2: Verify Permissions on SSH Server Private *_key Key Files
+    CCE-27311-0: Verify Permissions on SSH Server Public *.pub Key Files
+    CCE-27413-4: Disable Host-based Authentication
+    CCE-80361-9: Enable SSH Server firewalld Firewall Exception
+    CCE-27320-1: Allow Only SSH Protocol 2
+    CCE-80224-9: Disable Compression Or Set Compression to delayed
+    CCE-27471-2: Disable SSH Access via Empty Passwords
+    CCE-80220-7: Disable GSSAPI Authentication
+    CCE-80221-5: Disable Kerberos Authentication
+    CCE-27377-1: Disable SSH Support for .rhost Files
+    CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+    CCE-27445-6: Disable SSH Root Login
+    CCE-80372-6: Disable SSH Support for User Known Hosts
+    CCE-27363-1: Do Not Allow SSH Environment Options
+    CCE-80222-3: Enable Use of Strict Mode Checking
+    CCE-27314-4: Enable SSH Warning Banner
+    CCE-80225-6: Enable SSH PrintLastLog
+    CCE-27433-2: Enable SSH Idle Timeout Interval
+    CCE-27082-7: Set SSH ClientAliveMaxCount
+    CCE-80645-5: Set LogLevel to INFO
+    CCE-27295-5: Use Only FIPS 140-2 Validated Ciphers
+    CCE-27455-5: Use Only FIPS 140-2 Validated Ciphers
+    CCE-80223-1: Enable Use of Privilege Separation'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-19
 - control_key: AC-19
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20
 - control_key: AC-20
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-22
 - control_key: AC-22
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
