@@ -29,7 +29,6 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/PL-2
 - control_key: PL-2
