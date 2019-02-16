@@ -260,4 +260,7 @@
             - Admin or root-level access (Success/Failure)
             - Privilege/Role escalation (Success/Failure)
             - Audit and log data access (Success/Failure)
-            - System Reboot, Restart & Shutdown (Success/Failure)'
+            - System Reboot, Restart & Shutdown (Success/Failure)
+
+            A complete control response is being planned through GitHub:
+            https://github.com/ComplianceAsCode/redhat/issues/505'
