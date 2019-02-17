@@ -71,7 +71,7 @@ satisfies:
 
         The following configuration checks must be satisfied to meet AC-2(g):
 
-        CCE-27407-6: Enable auditd Service
+        - CCE-27407-6: Enable auditd Service
 
         Additional controls, such as AU-2, provide organizational-defined
         events that the audit subsystem will be responsible for capturing.'
@@ -105,18 +105,18 @@ satisfies:
         Red Hat Virtualization Host (RHVH) is capable of enforcing
         approved authorizations for logical access:
 
-        CCE-27334-2: Ensure SELinux State is Enforcing
-        CCE-26961-3: Ensure SELinux Not Disabled in /etc/default/grub
-        CCE-27279-9: Configure SELinux Policy
-        CCE-27309-4: Set Boot Loader Password in grub2
-        CCE-80354-4: Set the EUFI Boot Loader Password
-        CCE-27335-9: Verify that Interactive Boot is Disabled
-        CCE-27413-4: Disable Host-Based Authentication
-        CCE-27377-1: Disable SSH Support for .rhosts Files
-        CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
-        CCE-27445-6: Disable SSH Root Login
-        CCE-27471-2: Disable SSH Access via Empty Passwords
-        CCE-80219-9: Limit Users SSH Access'
+        - CCE-27334-2: Ensure SELinux State is Enforcing
+        - CCE-26961-3: Ensure SELinux Not Disabled in /etc/default/grub
+        - CCE-27279-9: Configure SELinux Policy
+        - CCE-27309-4: Set Boot Loader Password in grub2
+        - CCE-80354-4: Set the EUFI Boot Loader Password
+        - CCE-27335-9: Verify that Interactive Boot is Disabled
+        - CCE-27413-4: Disable Host-Based Authentication
+        - CCE-27377-1: Disable SSH Support for .rhosts Files
+        - CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+        - CCE-27445-6: Disable SSH Root Login
+        - CCE-27471-2: Disable SSH Access via Empty Passwords
+        - CCE-80219-9: Limit Users SSH Access'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-7
