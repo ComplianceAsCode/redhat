@@ -131,7 +131,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
-   narrative:
+  narrative:
     - key: a
       text: |
         'It is highly uncommon to deploy additional software on Red Hat
@@ -139,7 +139,7 @@
         policies to govern the installation of software by users:
 
         - All software packages must be cryptographically signed
-        by a third party the organization trusts (such as 
+        by a third party the organization trusts (such as
         Red Hat GPG keys);
 
         - All software repositories configured on the system
