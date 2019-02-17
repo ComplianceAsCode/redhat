@@ -2,1214 +2,182 @@
 ## BEGINNING OF:
 ## SYSTEM AND SERVICES ACQUISITION
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/System%20and%20Services%20Acquisition
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-1
 - control_key: SA-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-2
 - control_key: SA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-3
 - control_key: SA-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4
 - control_key: SA-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: f
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: g
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-##
-## Developers note on SA-4 (1):
-##  This control requires that developers of system components, e.g.
-##  application servers, to provide a description of the functional
-##  properties of the security controls to be deployed.
-##
-##  A a generally accepted control response is to provide a security
-##  configuration guide, such as a NIST National Checklist or DoD
-##  STIG, for the component.
-##
-##  In absense of an approved government configuration baseline,
-##  note this requirement is satisfied by a *description* of
-##  functional properties. Implimentation details are offered in
-##  SA-4(2).
-##
-- control_key: SA-4 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (1) is planned.'
-
-##
-## Developers note on SA-4 (2):
-##  This control differs from SA-4 (1) in that implementation
-##  details are now required. 
-##
-##  The majority of FedRAMP and FISMA Moderate systems refine this control
-##  with the following:
-##    - Provide design and implementation regarding security-relevant
-##      external system interfaces and high-level design;
-##    - Provide design and implementation information required by the
-##      SDL process;
-##    - Above should be provided with a level of detail sufficient for
-##      secure deployment.
-##
-- control_key: SA-4 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (2) is planned.'
-
-##
-## Developers note on SA-4 (3):
-##  This is most frequently satisfied by demonstrating common criteria
-##  certification.
-##
-##  Lacking Common Criteria certification a detailed outline of SDLC practices
-##  is required.
-##
-- control_key: SA-4 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (3) is planned.'
-
-- control_key: SA-4 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-8 (9).'
-
-##
-## Developers note on SA-4 (4):
-##  Note: For software components, such as operating systems, NIST considers it
-##  sufficient to provide install-time configuration. For example in RHEL7 a
-##  "Security Profile" menu is presented that installs Linux into known government
-##  baselines.
-##
-- control_key: SA-4 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (5) is planned.'
-
-##
-## Developers note on SA-4 (6):
-##  Note this is only applicable "when the networks used to transmit
-##  the information are at a lower classification than the information
-##  being transmitted."
-##
-##  If this component is not intended to enable cross domain infrastructure,
-##  this control potentially could be 'not applicable'.
-##
-- control_key: SA-4 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (6) is planned.'
-
-##
-## Developers note on SA-4 (7):
-##  As of 2018, protection profiles recognized by NIAP and those recognized
-##  by the broader Common Criteria effort have diverged. A listing of NIAP-
-##  recognized protection profiles can be found here:
-##
-##  https://www.niap-ccevs.org/Profile/PP.cfm
-##
-- control_key: SA-4 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (7) is planned.'
-
-##
-## Developers note on SA-4 (8):
-##  A successful control response will document how to achieve continuous
-##  monitoring of control/standards as identified in CA-7.
-##
-- control_key: SA-4 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (8) is planned.'
-
-##
-## Developers note on SA-4 (9):
-##  A successful control response will document all network
-##  information. Take care to document internal network usage,
-##  including loopback devices, as it is customary to block all
-##  traffic not explicitly outlined in this control.
-##
-- control_key: SA-4 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (9) is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4?baseline=low#enhancement-10
 - control_key: SA-4 (10)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-5
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'Administrator documentation for Red Hat Virtualization Host (RHVH)
+        can be found on the Red Hat Documentation website:
 
-- control_key: SA-5 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (1).'
+        https://access.redhat.com/documentation/en-us/
 
-- control_key: SA-5 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (2).'
+        SA-5(a) Part 1 and Part 2: Secure configuration guides are provided through the
+        NIST National Checklist Program (NIST NCP). A direct link to Red Hat
+        technology submissions to the NIST NCP is below:
 
-- control_key: SA-5 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (3).'
+        https://nvd.nist.gov/ncp/repository?authority=Red+Hat&startIndex=0
 
-- control_key: SA-5 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (4).'
+        SA-5(a) Part 3: Any known vulnerabilities of Red Hat
+        Virtualization Host (RHVH) are listed on the Red Hat Product
+        Errata website:
 
-- control_key: SA-5 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (5).'
+        https://access.redhat.com/errata/'
+    - key: b
+      text: |
+        'Requested topics, such as user-accessible security functions, have been
+        incorporated into the documentation provided in SA-5(a).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: SA-6
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-10 and SI-7.'
-
-- control_key: SA-7
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-11 and SI-7.'
-
-- control_key: SA-8
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-9
 - control_key: SA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-10
-##  A successful control response will document all network
-##  information. Take care to document internal network usage,
-##  including loopback devices, as it is customary to block all
-##  traffic not explicitly outlined in this control.
-##
-- control_key: SA-10
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    ## A successful control response will document performance of configuration
-    ## management. Processes and mechanisms involved in configuration management
-    ## will need to be addressed.
     - key: a
       text: |
-        'A control response to SA-10 (a) is planned.'
-
-    ## A successful control response will need to address the processes
-    ## and mechanisms involved in documenting, managing, and controlling the
-    ## integrity of chances.
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'A control response to SA-10 (b) is planned.'
-
-    ## A successful control response will need to address the approval process
-    ## and safeguards in place to ensure only approved changes are implemented.
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
-        'A control response to SA-10 (c) is planned.'
-
-    ## A successful control response will need to discuss the process for
-    ## documentation.
-    - key: d
-      text: |
-        'A control response to SA-10 (d) is planned.'
-
-    ## A successful control response will need to discuss the process
-    ## and tools used for tracking, resolution, and reporting.
-    - key: e
-      text: |
-        'A control response to SA-10 (e) is planned.'
-
-##
-## Developers note on SA-10 (1)
-##  A successful controlr response will need to address the process and
-##  mechanisms involved in integrity verification.
-##
-##  For example, TPM+TXT for hardware and operating systems.
-##
-- control_key: SA-10 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (1) is planned.'
-
-- control_key: SA-10 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-10 (3)
-##  This control differs from SA-10 (1) by focusing on hardware
-##  (vs software and firmware).
-##
-##  This control may not be applicable if the component being documented
-##  is not involved in the system boot process.
-##
-- control_key: SA-10 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (1) is planned.'
-
-##
-## Developers note on SA-10 (4)
-##  This control may not be applicable if the component being documented
-##  is not involved in the system boot process.
-##
-- control_key: SA-10 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (4) is planned.'
-
-##
-## Developers note on SA-10 (4)
-##  tbd
-##
-- control_key: SA-10 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (5) is planned.'
-
-##
-## Developers note on SA-10 (4)
-##  tbd
-##
-- control_key: SA-10 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (6) is planned.'
-
-##
-## Developers note on SA-11
-##  tbd
-##
-- control_key: SA-11
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    ## A successful control response will need to outline the security
-    ## assessment plan.
-    - key: a
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to address the types of
-    ## testing performed and the depth required.
-    - key: b
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to address the process by
-    ## which the customer obtains and reviews the evidence and results of
-    ## testing.
-    - key: c
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to outline the means by which
-    ## flaws are identified and addressed.
-    - key: d
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to discuss the procedure for
-    ## identifying flaws, alerting appropriate personnel to correct flaws, and
-    ## verifying the success of the correction.
-    - key: e
-      text: |
-        'A control response to SA-11 is planned.'
-
-##
-## Developers note on SA-11 (1)
-##  A successful control response will document how static code analysis
-##  tools are used on this compont to identify of common flaws,
-##  and how the results of the analysis are integrated into actions.
-##
-- control_key: SA-11 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (1) is planned.'
-
-##
-## Developers note on SA-11 (2)
-##  A successful control response will need to address the analysis
-##  of how the as-built system differs from the initial design, as well
-##  as how any new vulnerabilities created as a result of these differences
-##  are reviewed and mitigated.
-##
-- control_key: SA-11 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (2) is planned.'
-
-- control_key: SA-11 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-11 (4)
-##  A successful control response will address how manual code reviews
-##  are performed, and what section(s) of components/code are reviewed.
-##
-- control_key: SA-11 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (4) is planned.'
-
-##
-## Developers note on SA-11 (5)
-##  A successful control response will address the frequency and scope
-##  of penetration testing.
-##
-- control_key: SA-11 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (5) is planned.'
-
-##
-## Developers note on SA-11 (6)
-##  A successful control response will address the process and findings of
-##  performing attack surface reviews.
-##
-- control_key: SA-11 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (6) is planned.'
-
-##
-## Developers note on SA-11 (7)
-##  tbd
-##
-- control_key: SA-11 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (7) is planned.'
-
-##
-## Developers note on SA-11 (8)
-##  A successful control response will need to discuss the tools in use,
-##  the means by which the tools are used to identify common flaws, and the
-##  process for documenting results of testing.
-##
-- control_key: SA-11 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (8) is planned.'
-
-##
-## Developers note on SA-12
-##  tbd
-##
-- control_key: SA-12
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-12 is planned.'
-
-- control_key: SA-12 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (1).'
-
-- control_key: SA-12 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (13).'
-
-- control_key: SA-12 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (1).'
-
-- control_key: SA-12 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-12:
-##  While this is an organizational control and not applicable
-##  to component configuration, consider how customers may validate
-##  the system component. For example, in software, usage of gpg keys
-##  on installation media.
-##
-- control_key: SA-12 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (11)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (12)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (13)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (14)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (15)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-13
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-14
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-14 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-20.'
-
-##
-## Developers note on SA-11
-##  tbd
-##
-- control_key: SA-15
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-15 (a) is planned.'
-
-    ## A successful control response will need to address the types of
-    ## testing performed and the depth required.
-    - key: b
-      text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-15 (1)
-##  tbd
-##
-- control_key: SA-15 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (1) is planned.'
-
-##
-## Developers note on SA-15 (2)
-##  tbd
-##
-- control_key: SA-15 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (2) is planned.'
-
-##
-## Developers note on SA-15 (2)
-##  tbd
-##
-- control_key: SA-15 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (3) is planned.'
-
-- control_key: SA-15 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-15 (5)
-##  tbd
-##
-- control_key: SA-15 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (5) is planned.'
-
-##
-## Developers note on SA-15 (6)
-##  tbd
-##
-- control_key: SA-15 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (6) is planned.'
-
-##
-## Developers note on SA-15 (7)
-##  tbd
-##
-- control_key: SA-15 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-15(7)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-15(7)(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-15(7)(c) is planned.'
-    - key: d
-      text: |
-        'A control response to SA-15(7)(d) is planned.'
-
-##
-## Developers note on SA-15 (8)
-##  tbd
-##
-- control_key: SA-15 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (8) is planned.'
-
-- control_key: SA-15 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-15 (10)
-##  tbd
-##
-- control_key: SA-15 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (10) is planned.'
-
-##
-## Developers note on SA-15 (11)
-##  tbd
-##
-- control_key: SA-15 (11)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (11) is planned.'
-
-##
-## Developers note on SA-16
-##  tbd
-##
-- control_key: SA-16
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-16 is planned.'
-
-##
-## Developers note on SA-17
-##  tbd
-##
-- control_key: SA-17
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-17(c) is planned.'
-
-##
-## Developers note on SA-17 (1)
-##  tbd
-##
-- control_key: SA-17 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(1)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(1)(b) is planned.'
-
-##
-## Developers note on SA-17 (2)
-##  tbd
-##
-- control_key: SA-17 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(2)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(2)(b) is planned.'
-
-##
-## Developers note on SA-17 (3)
-##  tbd
-##
-- control_key: SA-17 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(3)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(3)(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-17(3)(c) is planned.'
-    - key: d
-      text: |
-        'A control response to SA-17(3)(d) is planned.'
-    - key: e
-      text: |
-        'A control response to SA-17(3)(e) is planned.'
-
-##
-## Developers note on SA-17 (4)
-##  tbd
-##
-- control_key: SA-17 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(4)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(4)(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-17(4)(c) is planned.'
-    - key: d
-      text: |
-        'A control response to SA-17(4)(d) is planned.'
-    - key: e
-      text: |
-        'A control response to SA-17(4)(e) is planned.'
-
-##
-## Developers note on SA-17 (5)
-##  tbd
-##
-- control_key: SA-17 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(5)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(5)(b) is planned.'
-
-##
-## Developers note on SA-17 (6)
-##  tbd
-##
-- control_key: SA-17 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-17 (6) is planned.'
-
-##
-## Developers note on SA-17 (7)
-##  tbd
-##
-- control_key: SA-17 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-17 (7) is planned.'
-
-##
-## Developers note on SA-18
-##  tbd
-##
-- control_key: SA-18
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-18 is planned.'
-
-- control_key: SA-18 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-18 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-20
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-21
-##  tbd
-##
-- control_key: SA-21
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-21(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-21(b) is planned.'
-
-##
-## Developers note on SA-21 (1)
-##  tbd
-##
-- control_key: SA-21 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-21 (1) is planned.'
-
-- control_key: SA-22
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-22 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'

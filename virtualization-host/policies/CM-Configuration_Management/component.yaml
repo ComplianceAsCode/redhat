@@ -2,41 +2,55 @@
 ## BEGINNING OF:
 ## CONFIGURATION MANAGEMENT
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Configuration%20Management
 
-# ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
-#       want centralized config management, while others expect component
-#       administrators to handle this (e.g. maintain custom Ansible scripts).
-#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
-#       however it's best to double check with the Information System owner
-#       on expectations (component vs central CM).
-#
-#       In case the customer desires components (e.g. Red Hat Identity
-#       Management Admins) to handle configuration management the
-#       lines below can be uncommented:
-#
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-1
 - control_key: CM-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-2
 - control_key: CM-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-4
 - control_key: CM-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-6
 - control_key: CM-6
   standard_key: NIST-800-53
   covered_by: []
@@ -44,56 +58,103 @@
   narrative:
     - key: a
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component. Use of the NIST National Checklist
-        for this system component is suggested as a supported,
-        US Government recognized, vendor supported, baseline.'
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/516'
     - key: b
       text: |
-        'The customer will be responsible for implementing configuration
-        settings as defined in CM-6(a). A successful control response will
-        describe how mandatory configuration settings are implemented. This can
-        include the process or documentation followed.
-
-        Documentation/guidance on satisfying this control is planned.'
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/516'
     - key: c
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: d
       text: |
-        'The customer will be responsible for monitoring and controlling
-        changes to the configuration settings in accordance with organization
-        policies and procedures. A successful control response will describe
-        how changes are controlled and monitored. This can include limitations
-        to privileges, how these changes are audited, and any tools in place to
-        track and approve changes.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-7
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - key: a
+      text: |
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/517'
+    - key: b
+      text: |
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/517'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-8
 - control_key: CM-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-10
 - control_key: CM-10
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-11
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'It is highly uncommon to deploy additional software on Red Hat
+        Virtualization Host (RHVH) nodes. The following are suggested
+        policies to govern the installation of software by users:
+
+        - All software packages must be cryptographically signed
+        by a third party the organization trusts (such as
+        Red Hat GPG keys);
+
+        - All software repositories configured on the system
+        must enforce GPG key verification prior to software
+        installation.'
+    - key: b
+      text: |
+        'The following configuration checks enforce the policies identified
+        in CM-11(a):
+
+        CCE-26957-1: Ensure Red Hat GPG Key Installed
+        CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
+        CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
+        CCE-80347-8: Ensure gpgcheck Enabled for Local Packages'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
