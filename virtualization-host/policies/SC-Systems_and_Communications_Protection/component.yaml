@@ -85,17 +85,17 @@
   narrative:
     - text: |
         'The Federal Information Security Management
-    Act (FISMA) requires the use of FIPS 140 evaluated cryptography.
-    Red Hat Virtualization Host (RHVH) carries several FIPS validations,
-    however it is imperitive the system have FIPS enabled.
+        Act (FISMA) requires the use of FIPS 140 evaluated cryptography.
+        Red Hat Virtualization Host (RHVH) carries several FIPS validations,
+        however it is imperitive the system have FIPS enabled.
 
-    To ensure the version of Red Hat Virtualization Host (RHVH) deployed
-    carries FIPS validations, the following configuration check must
-    be enabled:
+        To ensure the version of Red Hat Virtualization Host (RHVH) deployed
+        carries FIPS validations, the following configuration check must
+        be enabled:
 
-    CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
-    CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
-    CCE-80359-3: Enable FIPS Mode in GRUB2'
+            CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+            CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+            CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-15
