@@ -132,16 +132,16 @@ satisfies:
         number of consecutive logon attempts during an organization-defined
         time period:
 
-        CCE-27350-8: Set Deny for Failed Password Attempts
-        CCE-27297-1: Set Interval for Counting Failed Password Attempts
-        CCE-80353-6: Configure the root Account for Failed Password Attempts'
+        - CCE-27350-8: Set Deny for Failed Password Attempts
+        - CCE-27297-1: Set Interval for Counting Failed Password Attempts
+        - CCE-80353-6: Configure the root Account for Failed Password Attempts'
     - key: b
       text: |
         'The following configuration checks are required to automatically
         lock an account for an organization-defined time period, or to lock
         the account until released by an administrator:
 
-        CCE-26884-7: Set Lockout Time for Failed Password Attempts
+        - CCE-26884-7: Set Lockout Time for Failed Password Attempts
 
         Currently it is not possible to delay logon prompts according to
         an organization-defined time period when the maximum number of
@@ -150,7 +150,7 @@ satisfies:
         of attempts). If that behavior is desired, the following configuration
         checks are required:
 
-        CCE-80352-8: Ensure the Logon Failure Delay is Set Correctly in login.defs'
+        - CCE-80352-8: Ensure the Logon Failure Delay is Set Correctly in login.defs'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-8
@@ -165,8 +165,8 @@ satisfies:
         organization-defined system use notification message or banner before
         granting access to the system:
 
-        CCE-27303-7: Modify the System Login Banner
-        CCE-27314-4: Enable SSH Warning Banner'
+        - CCE-27303-7: Modify the System Login Banner
+        - CCE-27314-4: Enable SSH Warning Banner'
     - key: b
       text: |
         'When CCE-27303-7 and CCE-27314-4 are implemented, Red Hat
@@ -204,29 +204,29 @@ satisfies:
     are performed over SSH. The following configuration checks are highly
     encouraged to harden remote access over SSH:
 
-    CCE-27485-2: Verify Permissions on SSH Server Private *_key Key Files
-    CCE-27311-0: Verify Permissions on SSH Server Public *.pub Key Files
-    CCE-27413-4: Disable Host-based Authentication
-    CCE-80361-9: Enable SSH Server firewalld Firewall Exception
-    CCE-27320-1: Allow Only SSH Protocol 2
-    CCE-80224-9: Disable Compression Or Set Compression to delayed
-    CCE-27471-2: Disable SSH Access via Empty Passwords
-    CCE-80220-7: Disable GSSAPI Authentication
-    CCE-80221-5: Disable Kerberos Authentication
-    CCE-27377-1: Disable SSH Support for .rhost Files
-    CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
-    CCE-27445-6: Disable SSH Root Login
-    CCE-80372-6: Disable SSH Support for User Known Hosts
-    CCE-27363-1: Do Not Allow SSH Environment Options
-    CCE-80222-3: Enable Use of Strict Mode Checking
-    CCE-27314-4: Enable SSH Warning Banner
-    CCE-80225-6: Enable SSH PrintLastLog
-    CCE-27433-2: Enable SSH Idle Timeout Interval
-    CCE-27082-7: Set SSH ClientAliveMaxCount
-    CCE-80645-5: Set LogLevel to INFO
-    CCE-27295-5: Use Only FIPS 140-2 Validated Ciphers
-    CCE-27455-5: Use Only FIPS 140-2 Validated Ciphers
-    CCE-80223-1: Enable Use of Privilege Separation'
+    - CCE-27485-2: Verify Permissions on SSH Server Private *_key Key Files
+    - CCE-27311-0: Verify Permissions on SSH Server Public *.pub Key Files
+    - CCE-27413-4: Disable Host-based Authentication
+    - CCE-80361-9: Enable SSH Server firewalld Firewall Exception
+    - CCE-27320-1: Allow Only SSH Protocol 2
+    - CCE-80224-9: Disable Compression Or Set Compression to delayed
+    - CCE-27471-2: Disable SSH Access via Empty Passwords
+    - CCE-80220-7: Disable GSSAPI Authentication
+    - CCE-80221-5: Disable Kerberos Authentication
+    - CCE-27377-1: Disable SSH Support for .rhost Files
+    - CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+    - CCE-27445-6: Disable SSH Root Login
+    - CCE-80372-6: Disable SSH Support for User Known Hosts
+    - CCE-27363-1: Do Not Allow SSH Environment Options
+    - CCE-80222-3: Enable Use of Strict Mode Checking
+    - CCE-27314-4: Enable SSH Warning Banner
+    - CCE-80225-6: Enable SSH PrintLastLog
+    - CCE-27433-2: Enable SSH Idle Timeout Interval
+    - CCE-27082-7: Set SSH ClientAliveMaxCount
+    - CCE-80645-5: Set LogLevel to INFO
+    - CCE-27295-5: Use Only FIPS 140-2 Validated Ciphers
+    - CCE-27455-5: Use Only FIPS 140-2 Validated Ciphers
+    - CCE-80223-1: Enable Use of Privilege Separation'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-18
@@ -547,13 +547,13 @@ satisfies:
         reached or exceeded, the following configuration check must
         be enabled:
 
-        CCE-80381-7: Shutdown System When Auditing Failures Occur
+        - CCE-80381-7: Shutdown System When Auditing Failures Occur
 
         To configure the system to take action upon detecting a disk error,
         such as errors writing to disk or rotating audit logs, the following
         configuration check must be enabled:
 
-        CCE-80501-0: Configure auditd Disk Error Action on Disk Error'
+        - CCE-80501-0: Configure auditd Disk Error Action on Disk Error'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AU-6
@@ -603,22 +603,22 @@ satisfies:
     - text: 'The following configuration checks ensure the audit records are
     protected by appropriate file permission, user, and group ownership settings:
 
-    CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
-    CCE-80125-8: System Audit Logs Must Be Owned By Root
+    - CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
+    - CCE-80125-8: System Audit Logs Must Be Owned By Root
 
     The /var/log/audit/ directory is provided by the audit subsystem
     packaging. The following configuration checks ensure
     /var/log/audit/ directory permissions, as well as permissions of
     audit tooling, have not deviated from the secure defaults:
 
-    CCE-27209-6: Verify and Correct File Permissions with RPM
-    CCE-80545-7: Verify and Correct Ownership with RPM
+    - CCE-27209-6: Verify and Correct File Permissions with RPM
+    - CCE-80545-7: Verify and Correct Ownership with RPM
 
     The following configuration check is required to cryptographically
     verify the audit subsystem binaries and associated tooling has not
     been modified/tampered with:
 
-    CCE-27157-7: Verify File Hashes with RPM'
+    - CCE-27157-7: Verify File Hashes with RPM'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AU-11
@@ -638,7 +638,7 @@ satisfies:
         To tailor log retention (based on log size, not age), the following
         configuration check may be helpful:
 
-        CCE-27348-2: Configure auditd Number of Logs Retained'
+        - CCE-27348-2: Configure auditd Number of Logs Retained'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AU-12
@@ -653,8 +653,8 @@ satisfies:
         record generation capability, the underlying audit subsystem
         must be enabled through the following configuration checks:
 
-        CCE-27407-6: Enable auditd Service
-        CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
+        - CCE-27407-6: Enable auditd Service
+        - CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
     - key: b
       text: |
         'System administrators may customize audit rules by editing the
@@ -989,10 +989,10 @@ satisfies:
         'The following configuration checks enforce the policies identified
         in CM-11(a):
 
-        CCE-26957-1: Ensure Red Hat GPG Key Installed
-        CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
-        CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
-        CCE-80347-8: Ensure gpgcheck Enabled for Local Packages'
+        - CCE-26957-1: Ensure Red Hat GPG Key Installed
+        - CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
+        - CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
+        - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1175,15 +1175,15 @@ satisfies:
     Red Hat Virtualization Host (RHVH) uniquely identifies organizational
     users:
 
-    CCE-27309-4: Set Boot Loader Password in grub2
-    CCE-80354-4: Set EUFI Boot Loader Password
-    CCE-27287-2: Require Authentication for Single User Mode
-    CCE-27175-9: Verify Only Root Has UID 0
-    CCE-27294-8: Direct root Logins Not Allowed
-    CCE-80650-5: Ensure that System Accounts are Locked
-    CCE-27268-2: Restrict Serial Port Root Logins
-    CCE-2731805: Restrict Virtual Console Root Logins
-    CCE-27445-6: Disable SSH Root Login'
+    - CCE-27309-4: Set Boot Loader Password in grub2
+    - CCE-80354-4: Set EUFI Boot Loader Password
+    - CCE-27287-2: Require Authentication for Single User Mode
+    - CCE-27175-9: Verify Only Root Has UID 0
+    - CCE-27294-8: Direct root Logins Not Allowed
+    - CCE-80650-5: Ensure that System Accounts are Locked
+    - CCE-27268-2: Restrict Serial Port Root Logins
+    - CCE-2731805: Restrict Virtual Console Root Logins
+    - CCE-27445-6: Disable SSH Root Login'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-1
@@ -1196,7 +1196,7 @@ satisfies:
     Red Hat Virtualization Host (RHVH) implements multifactor authentication
     for network access to privileged accounts:
 
-    CCE-80207-4: Enable Smart Card Login'
+    - CCE-80207-4: Enable Smart Card Login'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-12
@@ -1209,7 +1209,7 @@ satisfies:
     Red Hat Virtualization Host (RHVH) accepts Personal Identity
     Verification (PIV) credentials:
 
-    CCE-80207-4: Enable Smart Card Login'
+    - CCE-80207-4: Enable Smart Card Login'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-4
@@ -1242,7 +1242,7 @@ satisfies:
         'To disable identifiers after an organization-defined time period
         of inactivity, the following configuration checks must be enforced:
 
-        CCE-27355-7: Set Account Expiration Following Inactivity'
+        - CCE-27355-7: Set Account Expiration Following Inactivity'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-5
@@ -1304,50 +1304,50 @@ satisfies:
         'To prevent logins to accounts with no password, the following
         configuration checks must be enabled:
 
-        CCE-27286-4: Prevent Login to Accounts with Empty Password
+        - CCE-27286-4: Prevent Login to Accounts with Empty Password
 
         To enforce a minimum password length, the following configuration
         check must be enabled:
 
-        CCE-27293-0: Set Password Minimum Length
-        CCE-27123-9: Set Password Minimum Length in login.defs
+        - CCE-27293-0: Set Password Minimum Length
+        - CCE-27123-9: Set Password Minimum Length in login.defs
 
         To enforce a minimum amount of uppercase characters, the following
         configuration check must be enabled:
 
-        CCE-27200-5: Set Password Strength Minimum Uppercase Characters
+        - CCE-27200-5: Set Password Strength Minimum Uppercase Characters
 
         To enforce a minimum amount of lowercase characters, the following
         configuration check must be enabled:
 
-        CCE-27345-8: Set Password Strength Minimum Lowercase Characters
+        - CCE-27345-8: Set Password Strength Minimum Lowercase Characters
 
         To enforce a minimum amount of number characters, the following
         configuration check must be enabled:
 
-        CCE-27214-6: Set Password Strength Minimum Digit Characters
+        - CCE-27214-6: Set Password Strength Minimum Digit Characters
 
         To enforce a minimum amount of special characters, the following
         configuration check must be enabled:
 
-        CCE-27360-7: Set Password Strength Minimum Special Characters
+        - CCE-27360-7: Set Password Strength Minimum Special Characters
 
         To enforce a restriction on consecutive repeating characters from
         the same character class, the following configuration check must
         be enabled:
 
-        CCE-27512-3: Set Password to Maximum of Consecutive Repeating
+        - CCE-27512-3: Set Password to Maximum of Consecutive Repeating
         Characters from Same Character Class
 
         To enforce a restriction on consecutive repeating characters, the
         following configuration check must be enabled:
 
-        CCE-27333-4: Set Password Maximum Consecutive Repeating Characters
+        - CCE-27333-4: Set Password Maximum Consecutive Repeating Characters
 
         To enforce the usage of a minimum number of character classes, the
         following configuration check must be enabled:
 
-        CCE-27115-5: Set Password Strength Minimum Different Categories
+        - CCE-27115-5: Set Password Strength Minimum Different Categories
         '
     - key: b
       text: |
@@ -1355,33 +1355,33 @@ satisfies:
         new passwords are created, the following configuration checks must
         be enabled:
 
-        CCE-26631-2: Set Password Strength Minimum Different Characters'
+        - CCE-26631-2: Set Password Strength Minimum Different Characters'
     - key: c
       text: |
         'To ensure passwords are stored with appropriate cryptographic protections,
         the following configuration checks must be enabled:
 
-        CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
-        CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
-        CCE-27104-9: Set PAM Password Hashing Algorithm'
+        - CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
+        - CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
+        - CCE-27104-9: Set PAM Password Hashing Algorithm'
     - key: d
       text: |
         'To enforce a password minimum lifetime restriction, the following
         configuration checks must be enabled:
 
-        CCE-27002-5: Set Password Minimum Age
+        - CCE-27002-5: Set Password Minimum Age
 
         To enforce a password maximum lifetime restriction, the following
         configuration checks must be enabled:
 
-        CCE-27051-2: Set Password Maximum Age'
+        - CCE-27051-2: Set Password Maximum Age'
     - key: e
       text: |
         'To prohibit password reuse for an organization-defined number
         of generations, the following configuration check must
         be enabled:
 
-        CCE-26923-3: Limit Password Reuse'
+        - CCE-26923-3: Limit Password Reuse'
     - key: f
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1429,9 +1429,9 @@ satisfies:
     carries FIPS validations, the following configuration check must
     be enabled:
 
-    CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
-    CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
-    CCE-80359-3: Enable FIPS Mode in GRUB2'
+    - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+    - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+    - CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-8
@@ -1801,7 +1801,7 @@ satisfies:
     - text: 'To prohibit the use of USB storage devices on Red Hat Virtualization
     Host (RHVH) nodes, the following configuration check must be enabled:
 
-    CCE-27277-3: Disable Modprobe Loading of USB Storage Driver'
+    - CCE-27277-3: Disable Modprobe Loading of USB Storage Driver'
 ##
 ## BEGINNING OF:
 ## PHYSICAL AND ENVIRONMENTAL PROTECTION
@@ -2629,10 +2629,9 @@ satisfies:
         carries FIPS validations, the following configuration check must
         be enabled:
 
-          CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
-          CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
-          CCE-80359-3: Enable FIPS Mode in GRUB2
-        '
+        - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+        - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+        - CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-15
@@ -2698,10 +2697,9 @@ satisfies:
     - text: |
         'The following configuration checks must be enabled to satisfy this control:
 
-            CCE-27211-2: Enable ExecShield via sysctl
-            CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
-            CCE-27127-0: Enable Randomized Layout of Virtual Address Space
-        '
+        - CCE-27211-2: Enable ExecShield via sysctl
+        - CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
+        - CCE-27127-0: Enable Randomized Layout of Virtual Address Space'
 ##
 ## BEGINNING OF:
 ## SYSTEM AND INFORMATION INTEGRITY
