@@ -841,41 +841,55 @@ satisfies:
 ## BEGINNING OF:
 ## CONFIGURATION MANAGEMENT
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Configuration%20Management
 
-# ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
-#       want centralized config management, while others expect component
-#       administrators to handle this (e.g. maintain custom Ansible scripts).
-#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
-#       however it's best to double check with the Information System owner
-#       on expectations (component vs central CM).
-#
-#       In case the customer desires components (e.g. Red Hat Identity
-#       Management Admins) to handle configuration management the
-#       lines below can be uncommented:
-#
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-1
 - control_key: CM-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-2
 - control_key: CM-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-4
 - control_key: CM-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-6
 - control_key: CM-6
   standard_key: NIST-800-53
   covered_by: []
@@ -883,59 +897,106 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component. Use of the NIST National Checklist
-        for this system component is suggested as a supported,
-        US Government recognized, vendor supported, baseline.'
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/516'
     - key: b
       text: |
-        'The customer will be responsible for implementing configuration
-        settings as defined in CM-6(a). A successful control response will
-        describe how mandatory configuration settings are implemented. This can
-        include the process or documentation followed.
-
-        Documentation/guidance on satisfying this control is planned.'
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/516'
     - key: c
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: d
       text: |
-        'The customer will be responsible for monitoring and controlling
-        changes to the configuration settings in accordance with organization
-        policies and procedures. A successful control response will describe
-        how changes are controlled and monitored. This can include limitations
-        to privileges, how these changes are audited, and any tools in place to
-        track and approve changes.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-7
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - key: a
+      text: |
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/517'
+    - key: b
+      text: |
+        'A complete control response is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat/issues/517'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-8
 - control_key: CM-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-10
 - control_key: CM-10
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-11
 - control_key: CM-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'It is highly uncommon to deploy additional software on Red Hat
+        Virtualization Host (RHVH) nodes. The following are suggested
+        policies to govern the installation of software by users:
+
+        - All software packages must be cryptographically signed
+        by a third party the organization trusts (such as
+        Red Hat GPG keys);
+
+        - All software repositories configured on the system
+        must enforce GPG key verification prior to software
+        installation.'
+    - key: b
+      text: |
+        'The following configuration checks enforce the policies identified
+        in CM-11(a):
+
+        CCE-26957-1: Ensure Red Hat GPG Key Installed
+        CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
+        CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
+        CCE-80347-8: Ensure gpgcheck Enabled for Local Packages'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## CONTINGENCY PLANNING
@@ -956,679 +1017,723 @@ satisfies:
 - control_key: CP-1
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/CP-2
 - control_key: CP-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: f
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: g
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/CP-3
 - control_key: CP-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/CP-4
 - control_key: CP-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/CP-9
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        ''
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        ''
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
-        ''
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: d
       text: |
-        ''
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/CP-10
 - control_key: CP-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## IDENTIFICATION AND AUTHENTICATION
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Identification%20and%20Authentication
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-1
 - control_key: IA-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'The following configuration checks are required to ensure
+    Red Hat Virtualization Host (RHVH) uniquely identifies organizational
+    users:
 
+    CCE-27309-4: Set Boot Loader Password in grub2
+    CCE-80354-4: Set EUFI Boot Loader Password
+    CCE-27287-2: Require Authentication for Single User Mode
+    CCE-27175-9: Verify Only Root Has UID 0
+    CCE-27294-8: Direct root Logins Not Allowed
+    CCE-80650-5: Ensure that System Accounts are Locked
+    CCE-27268-2: Restrict Serial Port Root Logins
+    CCE-2731805: Restrict Virtual Console Root Logins
+    CCE-27445-6: Disable SSH Root Login'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-1
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'The customer will be responsible for implementing multifactor
-        authentication for network access to privileged accounts.
+    - text: 'The following configuration checks are required to ensure
+    Red Hat Virtualization Host (RHVH) implements multifactor authentication
+    for network access to privileged accounts:
 
-        A successful control response will need to address all network-
-        accessible privileged account types and the means by which
-        multifactor authentication is enforced for each.
+    CCE-80207-4: Enable Smart Card Login'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-12
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Personal Identity Verification (PIV) credentials are those credentials
-        issued by federal agencies that conform to FIPS Publication 201 and
-        supporting guidance documents. Customers will not be expected to perform
-        this credential verification for government agencies. A mechanism for
-        allowing government agencies to perform credential verification in a way
-        that can be trusted by the customer system is through Active Directory
-        Federation Services (ADFS).
+    - text: 'The following configuration checks are required to ensure
+    Red Hat Virtualization Host (RHVH) accepts Personal Identity
+    Verification (PIV) credentials:
 
-        Documentation/guidance on satisfying this control is planned.'
+    CCE-80207-4: Enable Smart Card Login'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-4
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: d
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'Red Hat Virtualization Host (RHVH) is not capable of preventing
+        the reuse of identifiers for an organization-defined time period.
+
+        To satisfy this control, an external identity provider must be
+        used (e.g. Red Hat Identity Management or Microsoft Active Directory).'
     - key: e
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To disable identifiers after an organization-defined time period
+        of inactivity, the following configuration checks must be enforced:
 
+        CCE-27355-7: Set Account Expiration Following Inactivity'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        'This is an organizational control outside the scope of configuring
-        Red Hat Identity Management.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: d
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: e
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: f
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: g
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: h
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: i
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: j
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-1
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To prevent logins to accounts with no password, the following
+        configuration checks must be enabled:
+
+        CCE-27286-4: Prevent Login to Accounts with Empty Password
+
+        To enforce a minimum password length, the following configuration
+        check must be enabled:
+
+        CCE-27293-0: Set Password Minimum Length
+        CCE-27123-9: Set Password Minimum Length in login.defs
+
+        To enforce a minimum amount of uppercase characters, the following
+        configuration check must be enabled:
+
+        CCE-27200-5: Set Password Strength Minimum Uppercase Characters
+
+        To enforce a minimum amount of lowercase characters, the following
+        configuration check must be enabled:
+
+        CCE-27345-8: Set Password Strength Minimum Lowercase Characters
+
+        To enforce a minimum amount of number characters, the following
+        configuration check must be enabled:
+
+        CCE-27214-6: Set Password Strength Minimum Digit Characters
+
+        To enforce a minimum amount of special characters, the following
+        configuration check must be enabled:
+
+        CCE-27360-7: Set Password Strength Minimum Special Characters
+
+        To enforce a restriction on consecutive repeating characters from
+        the same character class, the following configuration check must
+        be enabled:
+
+        CCE-27512-3: Set Password to Maximum of Consecutive Repeating
+        Characters from Same Character Class
+
+        To enforce a restriction on consecutive repeating characters, the
+        following configuration check must be enabled:
+
+        CCE-27333-4: Set Password Maximum Consecutive Repeating Characters
+
+        To enforce the usage of a minimum number of character classes, the
+        following configuration check must be enabled:
+
+        CCE-27115-5: Set Password Strength Minimum Different Categories
+        '
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To enforce an organization-defined number of changed characters when
+        new passwords are created, the following configuration checks must
+        be enabled:
+
+        CCE-26631-2: Set Password Strength Minimum Different Characters'
     - key: c
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To ensure passwords are stored with appropriate cryptographic protections,
+        the following configuration checks must be enabled:
+
+        CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
+        CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
+        CCE-27104-9: Set PAM Password Hashing Algorithm'
     - key: d
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To enforce a password minimum lifetime restriction, the following
+        configuration checks must be enabled:
+
+        CCE-27002-5: Set Password Minimum Age
+
+        To enforce a password maximum lifetime restriction, the following
+        configuration checks must be enabled:
+
+        CCE-27051-2: Set Password Maximum Age'
     - key: e
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To prohibit password reuse for an organization-defined number
+        of generations, the following configuration check must
+        be enabled:
+
+        CCE-26923-3: Limit Password Reuse'
     - key: f
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
+        However, to force a user to change their password upon next logon,
+        a system administrator can expire a users current password:
+
+             $ sudo passwd --expire <<user>>'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-11
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH)'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-6
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
-        'The system component natively obscures such information and cannot be
-        configured to be out of compliance with this requirement.'
+    - text: 'Red Hat Virtualization Host (RHVH) automatically obscures
+    feedback of authentication information and cannot be configured
+    to be out of compliance with this control.'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-7
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'The Federal Information Security Management
+    Act (FISMA) requires the use of FIPS 140 evaluated cryptography.
+    Red Hat Virtualization Host (RHVH) carries several FIPS validations,
+    however it is imperitive the system have FIPS enabled.
 
+    To ensure the version of Red Hat Virtualization Host (RHVH) deployed
+    carries FIPS validations, the following configuration check must
+    be enabled:
+
+    CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+    CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+    CCE-80359-3: Enable FIPS Mode in GRUB2'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'The customer will be responsible for identifying and authenticating
-        non-organizational users accessing the customer application. A
-        successful control response will need to address how non-organizational
-        users are defined and the process by which identification
-        and authentication takes place, including any differences from
-        identification and authentication for organizational users.
+    - text: 'All information system users, regardless of organizational
+    or non-organizational, receive unique system identifiers. This is
+    non-configurable default behavior. Any attempts to alter
+    user identifiers is audited through events defined in AU-2.'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-1
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'Personal Identity Verificiation (PIV) credentials are those
-        credentials issued by federal agencies that conform to FIPS Publication
-        201 and supporting guidance documents. Customers will not be expected
-        to perform this credential verification for government agencies. A
-        mechanism for allowing government agencies to perform credential
-        verification in a way that can be trusted by the customer system is
-        through Active Directory Federation Services (ADFS) or Red Hat IdM.
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-2
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'FICAM approved credentials are those credentials issued by nonfederal
-        government entities approved by the Federal Identity, Credential, and
-        Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
-        government agencies. A mechanism for allowing government agencies to
-        perform credential verification in a way that can be trusted by the
-        customer system is through Active Directory Federation Services
-        (ADFS) or Red Hat IdM.
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-3
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'FICAM approved credentials are those credentials issued by nonfederal
-        government entities approved by the Federal Identity, Credential, and
-        Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
-        government agencies. A mechanism for allowing government agencies to
-        perform credential verification in a way that can be trusted by the
-        customer system is through Active Directory Federation Services
-        (ADFS) or Red Hat IdM.
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-4
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'FICAM approved credentials are those credentials issued by nonfederal
-        government entities approved by the Federal Identity, Credential, and
-        Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
-        government agencies. A mechanism for allowing government agencies to
-        perform credential verification in a way that can be trusted by the
-        customer system is through Active Directory Federation Services
-        (ADFS) or Red Hat IdM.
-
-        Documentation/guidance on satisfying this control is planned.'
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## INCIDENT RESPONSE
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Incident%20Response
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-1
 - control_key: IR-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-2
 - control_key: IR-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-##
-## Note to content authors:
-##  IR-2 (1) relates to creating simulated events/scenarios
-##  relating to incident response. While this is an organizational
-##  control, consider creating component-specific incident
-##  response simulations as appropriate (e.g. if a virtualization
-##  product, what happens after a VM escape?).
-##
-- control_key: IR-2 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-2 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-3
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-3 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-3 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-4
 - control_key: IR-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: IR-4 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Note to content authors:
-##  IR-4 (2) is *technically* an organizational control, however
-##  many accreditors/auditors will want to understand how the
-##  system component integrates with dynamic reconfiguration capabilities.
-##  Lacking formal guidance from the government, some auditors expect a
-##  response to this control at the component level.
-##
-- control_key: IR-4 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-4 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-5
 - control_key: IR-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-##
-## Note to content authors:
-##  Often 3rd party auditors will incorrectly state satisfaction of IR-5 (1)
-##  relates to centralized audit logging of security events.
-##
-##  Central audit logging is covered under other controls, namely:
-##  - AU-6 (3) - Correlate Audit Repositories
-##  - AU-6 (4) - Central Review and Analysis
-##  - AU-12 - Audit Generation
-##
-- control_key: IR-5 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-6
 - control_key: IR-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: IR-6 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-6 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-6 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-7
 - control_key: IR-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: IR-7 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-7 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-8
 - control_key: IR-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-9
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-9 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-9 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-9 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-9 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: IR-10
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: f
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## MAINTENANCE
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Maintenance
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-1
 - control_key: MA-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-2
 - control_key: MA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: f
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-4
 - control_key: MA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'From the perspective of Red Hat Virtualization Host (RHVH), all
+        maintenance and diagnostic activities are monitored regardless
+        of local (e.g. physical console) or nonlocal (e.g. over SSH)
+        access mechanism.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'From the perspective of Red Hat Virtualization Host (RHVH), both
+        local and nonlocal maintenance and diagnostic sessions will require
+        the same authenticators (as configured to controls in the AC section).'
+    - key: d
+      text: |
+        'From the perspective of Red Hat Virtualization Host (RHVH), session
+        and network connections terminate in the same manner (e.g. once user logs out)
+        regardless of local or nonlocal access mechanism used.'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-5
 - control_key: MA-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## MEDIA PROTECTION
@@ -1883,141 +1988,85 @@ satisfies:
 ## BEGINNING OF:
 ## PLANNING
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Planning
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-1
 - control_key: PL-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-2
 - control_key: PL-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: PL-2 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into PL-7.'
 
-- control_key: PL-2 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into PL-8.'
-
-- control_key: PL-2 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: PL-3
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into PL-2.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-4
 - control_key: PL-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: PL-4 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: PL-5
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into Appendix J, AR-2.'
-
-- control_key: PL-6
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into PL-2.'
-
-- control_key: PL-7
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: PL-8
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: PL-8 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: PL-8 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: PL-9
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## PERSONNEL SECURITY
@@ -2208,2500 +2257,550 @@ satisfies:
 ## BEGINNING OF:
 ## RISK ASSESSMENT
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Risk%20Assessment
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-1
 - control_key: RA-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-2
 - control_key: RA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-3
 - control_key: RA-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-5
 - control_key: RA-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## SYSTEM AND SERVICES ACQUISITION
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/System%20and%20Services%20Acquisition
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-1
 - control_key: SA-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-2
 - control_key: SA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-3
 - control_key: SA-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4
 - control_key: SA-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: f
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: g
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-##
-## Developers note on SA-4 (1):
-##  This control requires that developers of system components, e.g.
-##  application servers, to provide a description of the functional
-##  properties of the security controls to be deployed.
-##
-##  A a generally accepted control response is to provide a security
-##  configuration guide, such as a NIST National Checklist or DoD
-##  STIG, for the component.
-##
-##  In absense of an approved government configuration baseline,
-##  note this requirement is satisfied by a *description* of
-##  functional properties. Implimentation details are offered in
-##  SA-4(2).
-##
-- control_key: SA-4 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (1) is planned.'
-
-##
-## Developers note on SA-4 (2):
-##  This control differs from SA-4 (1) in that implementation
-##  details are now required. 
-##
-##  The majority of FedRAMP and FISMA Moderate systems refine this control
-##  with the following:
-##    - Provide design and implementation regarding security-relevant
-##      external system interfaces and high-level design;
-##    - Provide design and implementation information required by the
-##      SDL process;
-##    - Above should be provided with a level of detail sufficient for
-##      secure deployment.
-##
-- control_key: SA-4 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (2) is planned.'
-
-##
-## Developers note on SA-4 (3):
-##  This is most frequently satisfied by demonstrating common criteria
-##  certification.
-##
-##  Lacking Common Criteria certification a detailed outline of SDLC practices
-##  is required.
-##
-- control_key: SA-4 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (3) is planned.'
-
-- control_key: SA-4 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-8 (9).'
-
-##
-## Developers note on SA-4 (4):
-##  Note: For software components, such as operating systems, NIST considers it
-##  sufficient to provide install-time configuration. For example in RHEL7 a
-##  "Security Profile" menu is presented that installs Linux into known government
-##  baselines.
-##
-- control_key: SA-4 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (5) is planned.'
-
-##
-## Developers note on SA-4 (6):
-##  Note this is only applicable "when the networks used to transmit
-##  the information are at a lower classification than the information
-##  being transmitted."
-##
-##  If this component is not intended to enable cross domain infrastructure,
-##  this control potentially could be 'not applicable'.
-##
-- control_key: SA-4 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (6) is planned.'
-
-##
-## Developers note on SA-4 (7):
-##  As of 2018, protection profiles recognized by NIAP and those recognized
-##  by the broader Common Criteria effort have diverged. A listing of NIAP-
-##  recognized protection profiles can be found here:
-##
-##  https://www.niap-ccevs.org/Profile/PP.cfm
-##
-- control_key: SA-4 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (7) is planned.'
-
-##
-## Developers note on SA-4 (8):
-##  A successful control response will document how to achieve continuous
-##  monitoring of control/standards as identified in CA-7.
-##
-- control_key: SA-4 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (8) is planned.'
-
-##
-## Developers note on SA-4 (9):
-##  A successful control response will document all network
-##  information. Take care to document internal network usage,
-##  including loopback devices, as it is customary to block all
-##  traffic not explicitly outlined in this control.
-##
-- control_key: SA-4 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-4 (9) is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4?baseline=low#enhancement-10
 - control_key: SA-4 (10)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-5
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'Administrator documentation for Red Hat Virtualization Host (RHVH)
+        can be found on the Red Hat Documentation website:
 
-- control_key: SA-5 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (1).'
+        https://access.redhat.com/documentation/en-us/
 
-- control_key: SA-5 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (2).'
+        SA-5(a) Part 1 and Part 2: Secure configuration guides are provided through the
+        NIST National Checklist Program (NIST NCP). A direct link to Red Hat
+        technology submissions to the NIST NCP is below:
 
-- control_key: SA-5 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (3).'
+        https://nvd.nist.gov/ncp/repository?authority=Red+Hat&startIndex=0
 
-- control_key: SA-5 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (4).'
+        SA-5(a) Part 3: Any known vulnerabilities of Red Hat
+        Virtualization Host (RHVH) are listed on the Red Hat Product
+        Errata website:
 
-- control_key: SA-5 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (5).'
+        https://access.redhat.com/errata/'
+    - key: b
+      text: |
+        'Requested topics, such as user-accessible security functions, have been
+        incorporated into the documentation provided in SA-5(a).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: SA-6
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-10 and SI-7.'
-
-- control_key: SA-7
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-11 and SI-7.'
-
-- control_key: SA-8
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-9
 - control_key: SA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-9 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-10
-##  A successful control response will document all network
-##  information. Take care to document internal network usage,
-##  including loopback devices, as it is customary to block all
-##  traffic not explicitly outlined in this control.
-##
-- control_key: SA-10
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    ## A successful control response will document performance of configuration
-    ## management. Processes and mechanisms involved in configuration management
-    ## will need to be addressed.
     - key: a
       text: |
-        'A control response to SA-10 (a) is planned.'
-
-    ## A successful control response will need to address the processes
-    ## and mechanisms involved in documenting, managing, and controlling the
-    ## integrity of chances.
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'A control response to SA-10 (b) is planned.'
-
-    ## A successful control response will need to address the approval process
-    ## and safeguards in place to ensure only approved changes are implemented.
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
-        'A control response to SA-10 (c) is planned.'
-
-    ## A successful control response will need to discuss the process for
-    ## documentation.
-    - key: d
-      text: |
-        'A control response to SA-10 (d) is planned.'
-
-    ## A successful control response will need to discuss the process
-    ## and tools used for tracking, resolution, and reporting.
-    - key: e
-      text: |
-        'A control response to SA-10 (e) is planned.'
-
-##
-## Developers note on SA-10 (1)
-##  A successful controlr response will need to address the process and
-##  mechanisms involved in integrity verification.
-##
-##  For example, TPM+TXT for hardware and operating systems.
-##
-- control_key: SA-10 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (1) is planned.'
-
-- control_key: SA-10 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-10 (3)
-##  This control differs from SA-10 (1) by focusing on hardware
-##  (vs software and firmware).
-##
-##  This control may not be applicable if the component being documented
-##  is not involved in the system boot process.
-##
-- control_key: SA-10 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (1) is planned.'
-
-##
-## Developers note on SA-10 (4)
-##  This control may not be applicable if the component being documented
-##  is not involved in the system boot process.
-##
-- control_key: SA-10 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (4) is planned.'
-
-##
-## Developers note on SA-10 (4)
-##  tbd
-##
-- control_key: SA-10 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (5) is planned.'
-
-##
-## Developers note on SA-10 (4)
-##  tbd
-##
-- control_key: SA-10 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-10 (6) is planned.'
-
-##
-## Developers note on SA-11
-##  tbd
-##
-- control_key: SA-11
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    ## A successful control response will need to outline the security
-    ## assessment plan.
-    - key: a
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to address the types of
-    ## testing performed and the depth required.
-    - key: b
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to address the process by
-    ## which the customer obtains and reviews the evidence and results of
-    ## testing.
-    - key: c
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to outline the means by which
-    ## flaws are identified and addressed.
-    - key: d
-      text: |
-        'A control response to SA-11 is planned.'
-
-    ## A successful control response will need to discuss the procedure for
-    ## identifying flaws, alerting appropriate personnel to correct flaws, and
-    ## verifying the success of the correction.
-    - key: e
-      text: |
-        'A control response to SA-11 is planned.'
-
-##
-## Developers note on SA-11 (1)
-##  A successful control response will document how static code analysis
-##  tools are used on this compont to identify of common flaws,
-##  and how the results of the analysis are integrated into actions.
-##
-- control_key: SA-11 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (1) is planned.'
-
-##
-## Developers note on SA-11 (2)
-##  A successful control response will need to address the analysis
-##  of how the as-built system differs from the initial design, as well
-##  as how any new vulnerabilities created as a result of these differences
-##  are reviewed and mitigated.
-##
-- control_key: SA-11 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (2) is planned.'
-
-- control_key: SA-11 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-11 (4)
-##  A successful control response will address how manual code reviews
-##  are performed, and what section(s) of components/code are reviewed.
-##
-- control_key: SA-11 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (4) is planned.'
-
-##
-## Developers note on SA-11 (5)
-##  A successful control response will address the frequency and scope
-##  of penetration testing.
-##
-- control_key: SA-11 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (5) is planned.'
-
-##
-## Developers note on SA-11 (6)
-##  A successful control response will address the process and findings of
-##  performing attack surface reviews.
-##
-- control_key: SA-11 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (6) is planned.'
-
-##
-## Developers note on SA-11 (7)
-##  tbd
-##
-- control_key: SA-11 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (7) is planned.'
-
-##
-## Developers note on SA-11 (8)
-##  A successful control response will need to discuss the tools in use,
-##  the means by which the tools are used to identify common flaws, and the
-##  process for documenting results of testing.
-##
-- control_key: SA-11 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-11 (8) is planned.'
-
-##
-## Developers note on SA-12
-##  tbd
-##
-- control_key: SA-12
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-12 is planned.'
-
-- control_key: SA-12 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (1).'
-
-- control_key: SA-12 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (13).'
-
-- control_key: SA-12 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (1).'
-
-- control_key: SA-12 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-12:
-##  While this is an organizational control and not applicable
-##  to component configuration, consider how customers may validate
-##  the system component. For example, in software, usage of gpg keys
-##  on installation media.
-##
-- control_key: SA-12 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (11)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (12)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (13)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (14)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-12 (15)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-13
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-14
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-14 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-20.'
-
-##
-## Developers note on SA-11
-##  tbd
-##
-- control_key: SA-15
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-15 (a) is planned.'
-
-    ## A successful control response will need to address the types of
-    ## testing performed and the depth required.
-    - key: b
-      text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-15 (1)
-##  tbd
-##
-- control_key: SA-15 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (1) is planned.'
-
-##
-## Developers note on SA-15 (2)
-##  tbd
-##
-- control_key: SA-15 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (2) is planned.'
-
-##
-## Developers note on SA-15 (2)
-##  tbd
-##
-- control_key: SA-15 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (3) is planned.'
-
-- control_key: SA-15 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-15 (5)
-##  tbd
-##
-- control_key: SA-15 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (5) is planned.'
-
-##
-## Developers note on SA-15 (6)
-##  tbd
-##
-- control_key: SA-15 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (6) is planned.'
-
-##
-## Developers note on SA-15 (7)
-##  tbd
-##
-- control_key: SA-15 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-15(7)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-15(7)(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-15(7)(c) is planned.'
-    - key: d
-      text: |
-        'A control response to SA-15(7)(d) is planned.'
-
-##
-## Developers note on SA-15 (8)
-##  tbd
-##
-- control_key: SA-15 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (8) is planned.'
-
-- control_key: SA-15 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-15 (10)
-##  tbd
-##
-- control_key: SA-15 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (10) is planned.'
-
-##
-## Developers note on SA-15 (11)
-##  tbd
-##
-- control_key: SA-15 (11)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-15 (11) is planned.'
-
-##
-## Developers note on SA-16
-##  tbd
-##
-- control_key: SA-16
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-16 is planned.'
-
-##
-## Developers note on SA-17
-##  tbd
-##
-- control_key: SA-17
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-17(c) is planned.'
-
-##
-## Developers note on SA-17 (1)
-##  tbd
-##
-- control_key: SA-17 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(1)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(1)(b) is planned.'
-
-##
-## Developers note on SA-17 (2)
-##  tbd
-##
-- control_key: SA-17 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(2)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(2)(b) is planned.'
-
-##
-## Developers note on SA-17 (3)
-##  tbd
-##
-- control_key: SA-17 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(3)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(3)(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-17(3)(c) is planned.'
-    - key: d
-      text: |
-        'A control response to SA-17(3)(d) is planned.'
-    - key: e
-      text: |
-        'A control response to SA-17(3)(e) is planned.'
-
-##
-## Developers note on SA-17 (4)
-##  tbd
-##
-- control_key: SA-17 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(4)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(4)(b) is planned.'
-    - key: c
-      text: |
-        'A control response to SA-17(4)(c) is planned.'
-    - key: d
-      text: |
-        'A control response to SA-17(4)(d) is planned.'
-    - key: e
-      text: |
-        'A control response to SA-17(4)(e) is planned.'
-
-##
-## Developers note on SA-17 (5)
-##  tbd
-##
-- control_key: SA-17 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-17(5)(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-17(5)(b) is planned.'
-
-##
-## Developers note on SA-17 (6)
-##  tbd
-##
-- control_key: SA-17 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-17 (6) is planned.'
-
-##
-## Developers note on SA-17 (7)
-##  tbd
-##
-- control_key: SA-17 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-17 (7) is planned.'
-
-##
-## Developers note on SA-18
-##  tbd
-##
-- control_key: SA-18
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-18 is planned.'
-
-- control_key: SA-18 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-18 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-19 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-20
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SA-21
-##  tbd
-##
-- control_key: SA-21
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - key: a
-      text: |
-        'A control response to SA-21(a) is planned.'
-    - key: b
-      text: |
-        'A control response to SA-21(b) is planned.'
-
-##
-## Developers note on SA-21 (1)
-##  tbd
-##
-- control_key: SA-21 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SA-21 (1) is planned.'
-
-- control_key: SA-22
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SA-22 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 ##
 ## BEGINNING OF:
 ## SYSTEMS AND COMMUNICATIONS PROTECTION
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/System%20and%20Communications%20Protection
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-1
 - control_key: SC-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: SC-2
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-2 is planned.'
 
-- control_key: SC-2 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-2 (1) is planned.'
-
-- control_key: SC-3
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-3 is planned.'
-
-- control_key: SC-3 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SC-3 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-3 (2) is planned.'
-
-- control_key: SC-3 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-3 (3) is planned.'
-
-- control_key: SC-3 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-3 (4) is planned.'
-
-- control_key: SC-3 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SC-4
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-4 is planned.'
-
-- control_key: SC-4 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SC-4.'
-
-- control_key: SC-4 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-4 (2) is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-5
 - control_key: SC-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - text: |
-        'A control response to SC-5 is planned.'
+        ''
 
-- control_key: SC-5 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-5 (1) is planned.'
-
-- control_key: SC-5 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-5 (2) is planned.'
-
-- control_key: SC-5 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SC-6
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-6 is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-7
 - control_key: SC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - text: |
-        'A control response to SC-7 is planned.'
+        ''
 
-- control_key: SC-7 (1)
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-12
+- control_key: SC-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SC-7.'
+        ''
 
-- control_key: SC-7 (2)
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-13
+- control_key: SC-13
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SC-7.'
+        ''
 
-- control_key: SC-7 (3)
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-15
+- control_key: SC-15
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - text: |
-        'A control response to SC-7 (3) is planned.'
+        ''
 
-- control_key: SC-7 (4)
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-20
+- control_key: SC-20
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        ''
 
-- control_key: SC-7 (5)
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-21
+- control_key: SC-21
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - text: |
-        'A control response to SC-7 (5) is planned.'
+        ''
 
-- control_key: SC-7 (6)
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-22
+- control_key: SC-22
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: unknown
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SC-7 (18).'
+        ''
 
-- control_key: SC-7 (7)
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-39
+- control_key: SC-39
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - text: |
-        'A control response to SC-7 (7) is planned.'
-
-- control_key: SC-7 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SC-7 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SC-7 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SC-7 (11)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (11) is planned.'
-
-- control_key: SC-7 (12)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (12) is planned.'
-
-- control_key: SC-7 (13)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (13) is planned.'
-
-- control_key: SC-7 (14)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (14) is planned.'
-
-- control_key: SC-7 (15)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (15) is planned.'
-
-- control_key: SC-7 (16)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (16) is planned.'
-
-- control_key: SC-7 (17)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (17) is planned.'
-
-- control_key: SC-7 (18)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SC-7 (19)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (19) is planned.'
-
-- control_key: SC-7 (20)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (20) is planned.'
-
-- control_key: SC-7 (21)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (21) is planned.'
-
-- control_key: SC-7 (22)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (22) is planned.'
-
-- control_key: SC-7 (23)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-7 (23) is planned.'
-
-- control_key: SC-8
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-8 is planned.'
-
-- control_key: SC-8 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-8 (1) is planned.'
-
-- control_key: SC-8 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-8 (2) is planned.'
-
-- control_key: SC-8 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-8 (3) is planned.'
-
-- control_key: SC-8 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-8 (4) is planned.'
-
-- control_key: SC-9
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SC-8.'
-
-- control_key: SC-10
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-10 is planned.'
-
-- control_key: SC-11
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-11 is planned.'
-
-- control_key: SC-11 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SC-11 (1) is planned.'
+        ''
 ##
 ## BEGINNING OF:
 ## SYSTEM AND INFORMATION INTEGRITY
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/System%20and%20Information%20Integrity
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-1
 - control_key: SI-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-2
 - control_key: SI-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: SI-2 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SI-2 (2):
-##  Some auditors will request documentation outlining how the component
-##  is configured to connect with organizational automated systems for
-##  flaw remediation.
-##
-- control_key: SI-2 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-2 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-2 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SI-2.'
-
-##
-## Developers note on SI-2 (5):
-##  Some auditors will request documentation outlining how the component
-##  is configured to connect with organizational automated systems for
-##  software updates.
-##
-##  For example, managing softare through Red Hat Satellite and configuring
-##  host operating systems to automatically update components as needed.
-##
-- control_key: SI-2 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-## Developers note on SI-2 (6):
-##  Some auditors will request documentation outlining how the component
-##  is configured to remove old software/firmware versions.
-##
-##  For example, software installed on Enterprise Linux distributions
-##  generally use the package management of the operating system (e.g. RPM).
-##  In such cases, removal of outdated software is handled by the operating
-##  system and not the software component itself.
-##
-- control_key: SI-2 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-3
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: SI-3 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-3 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-3 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into AC-6 (10).'
-
-- control_key: SI-3 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-3 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into MP-7.'
-
-- control_key: SI-3 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-3 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-3 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-3 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-3 (9) is planned.'
-
-- control_key: SI-3 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-4
 - control_key: SI-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: e
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: f
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: g
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: SI-4 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-4 (5) is planned.'
-
-- control_key: SI-4 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into AC-6 (10).'
-
-- control_key: SI-4 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SI-4.'
-
-- control_key: SI-4 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-4 (10) is planned.'
-
-- control_key: SI-4 (11)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (12)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-4 (12) is planned.'
-
-- control_key: SI-4 (13)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (14)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (15)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (16)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (17)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (18)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (19)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-4 (19) is planned.'
-
-- control_key: SI-4 (20)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-4 (20) is planned.'
-
-- control_key: SI-4 (21)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-4 (21) is planned.'
-
-- control_key: SI-4 (22)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (23)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-4 (24)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-4 (24) is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-5
 - control_key: SI-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-- control_key: SI-5 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-6
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-6 is planned.'
-
-- control_key: SI-6 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SI-4.'
-
-- control_key: SI-6 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-6 (2) is planned.'
-
-- control_key: SI-6 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (1) is planned.'
-
-- control_key: SI-7 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12.'
-
-- control_key: SI-7 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (5) is planned.'
-
-- control_key: SI-7 (6)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (6) is planned.'
-
-- control_key: SI-7 (7)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (8)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (8) is planned.'
-
-##
-## Note: This control regards the boot of *devices*, not
-## initialization of software (e.g. Middleware server on
-## an operating system).
-##
-- control_key: SI-7 (9)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (11)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (11) is planned.'
-
-- control_key: SI-7 (12)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (12) is planned.'
-
-- control_key: SI-7 (13)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (14)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-7 (15)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (15) is planned.'
-
-- control_key: SI-7 (16)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-7 (16) is planned.'
-
-- control_key: SI-8
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-8 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-8 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-8 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-9
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into AC-2, AC-3, AC-5, AC-6.'
-
-- control_key: SI-10
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-10 is planned.'
-
-- control_key: SI-10 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-10 (1) is planned.'
-
-- control_key: SI-10 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-10 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-10 (3) is planned.'
-
-- control_key: SI-10 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-10 (4) is planned.'
-
-- control_key: SI-10 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-11
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'A control response to SI-11 is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-12
 - control_key: SI-12
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-13
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-13 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-13 (2)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SI-7 (16).'
-
-- control_key: SI-13 (3)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-13 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-13 (5)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-14
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-14 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-15
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-##
-##  Developers note on SI-15:
-##    This control most frequently is applicable to to
-##    operating systems and virtualization platforms. If the component falls
-##    into such categories a control response is likely required.
-##
-- control_key: SI-16
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
-- control_key: SI-17
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
