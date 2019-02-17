@@ -66,7 +66,7 @@
 
         The following configuration checks must be satisfied to meet AC-2(g):
 
-        CCE-27407-6: Enable auditd Service
+        - CCE-27407-6: Enable auditd Service
 
         Additional controls, such as AU-2, provide organizational-defined
         events that the audit subsystem will be responsible for capturing.'
@@ -100,18 +100,18 @@
         Red Hat Virtualization Host (RHVH) is capable of enforcing
         approved authorizations for logical access:
 
-        CCE-27334-2: Ensure SELinux State is Enforcing
-        CCE-26961-3: Ensure SELinux Not Disabled in /etc/default/grub
-        CCE-27279-9: Configure SELinux Policy
-        CCE-27309-4: Set Boot Loader Password in grub2
-        CCE-80354-4: Set the EUFI Boot Loader Password
-        CCE-27335-9: Verify that Interactive Boot is Disabled
-        CCE-27413-4: Disable Host-Based Authentication
-        CCE-27377-1: Disable SSH Support for .rhosts Files
-        CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
-        CCE-27445-6: Disable SSH Root Login
-        CCE-27471-2: Disable SSH Access via Empty Passwords
-        CCE-80219-9: Limit Users SSH Access'
+        - CCE-27334-2: Ensure SELinux State is Enforcing
+        - CCE-26961-3: Ensure SELinux Not Disabled in /etc/default/grub
+        - CCE-27279-9: Configure SELinux Policy
+        - CCE-27309-4: Set Boot Loader Password in grub2
+        - CCE-80354-4: Set the EUFI Boot Loader Password
+        - CCE-27335-9: Verify that Interactive Boot is Disabled
+        - CCE-27413-4: Disable Host-Based Authentication
+        - CCE-27377-1: Disable SSH Support for .rhosts Files
+        - CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+        - CCE-27445-6: Disable SSH Root Login
+        - CCE-27471-2: Disable SSH Access via Empty Passwords
+        - CCE-80219-9: Limit Users SSH Access'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-7
@@ -127,16 +127,16 @@
         number of consecutive logon attempts during an organization-defined
         time period:
 
-        CCE-27350-8: Set Deny for Failed Password Attempts
-        CCE-27297-1: Set Interval for Counting Failed Password Attempts
-        CCE-80353-6: Configure the root Account for Failed Password Attempts'
+        - CCE-27350-8: Set Deny for Failed Password Attempts
+        - CCE-27297-1: Set Interval for Counting Failed Password Attempts
+        - CCE-80353-6: Configure the root Account for Failed Password Attempts'
     - key: b
       text: |
         'The following configuration checks are required to automatically
         lock an account for an organization-defined time period, or to lock
         the account until released by an administrator:
 
-        CCE-26884-7: Set Lockout Time for Failed Password Attempts
+        - CCE-26884-7: Set Lockout Time for Failed Password Attempts
 
         Currently it is not possible to delay logon prompts according to
         an organization-defined time period when the maximum number of
@@ -145,7 +145,7 @@
         of attempts). If that behavior is desired, the following configuration
         checks are required:
 
-        CCE-80352-8: Ensure the Logon Failure Delay is Set Correctly in login.defs'
+        - CCE-80352-8: Ensure the Logon Failure Delay is Set Correctly in login.defs'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-8
@@ -160,8 +160,8 @@
         organization-defined system use notification message or banner before
         granting access to the system:
 
-        CCE-27303-7: Modify the System Login Banner
-        CCE-27314-4: Enable SSH Warning Banner'
+        - CCE-27303-7: Modify the System Login Banner
+        - CCE-27314-4: Enable SSH Warning Banner'
     - key: b
       text: |
         'When CCE-27303-7 and CCE-27314-4 are implemented, Red Hat
@@ -199,29 +199,29 @@
     are performed over SSH. The following configuration checks are highly
     encouraged to harden remote access over SSH:
 
-    CCE-27485-2: Verify Permissions on SSH Server Private *_key Key Files
-    CCE-27311-0: Verify Permissions on SSH Server Public *.pub Key Files
-    CCE-27413-4: Disable Host-based Authentication
-    CCE-80361-9: Enable SSH Server firewalld Firewall Exception
-    CCE-27320-1: Allow Only SSH Protocol 2
-    CCE-80224-9: Disable Compression Or Set Compression to delayed
-    CCE-27471-2: Disable SSH Access via Empty Passwords
-    CCE-80220-7: Disable GSSAPI Authentication
-    CCE-80221-5: Disable Kerberos Authentication
-    CCE-27377-1: Disable SSH Support for .rhost Files
-    CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
-    CCE-27445-6: Disable SSH Root Login
-    CCE-80372-6: Disable SSH Support for User Known Hosts
-    CCE-27363-1: Do Not Allow SSH Environment Options
-    CCE-80222-3: Enable Use of Strict Mode Checking
-    CCE-27314-4: Enable SSH Warning Banner
-    CCE-80225-6: Enable SSH PrintLastLog
-    CCE-27433-2: Enable SSH Idle Timeout Interval
-    CCE-27082-7: Set SSH ClientAliveMaxCount
-    CCE-80645-5: Set LogLevel to INFO
-    CCE-27295-5: Use Only FIPS 140-2 Validated Ciphers
-    CCE-27455-5: Use Only FIPS 140-2 Validated Ciphers
-    CCE-80223-1: Enable Use of Privilege Separation'
+    - CCE-27485-2: Verify Permissions on SSH Server Private *_key Key Files
+    - CCE-27311-0: Verify Permissions on SSH Server Public *.pub Key Files
+    - CCE-27413-4: Disable Host-based Authentication
+    - CCE-80361-9: Enable SSH Server firewalld Firewall Exception
+    - CCE-27320-1: Allow Only SSH Protocol 2
+    - CCE-80224-9: Disable Compression Or Set Compression to delayed
+    - CCE-27471-2: Disable SSH Access via Empty Passwords
+    - CCE-80220-7: Disable GSSAPI Authentication
+    - CCE-80221-5: Disable Kerberos Authentication
+    - CCE-27377-1: Disable SSH Support for .rhost Files
+    - CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+    - CCE-27445-6: Disable SSH Root Login
+    - CCE-80372-6: Disable SSH Support for User Known Hosts
+    - CCE-27363-1: Do Not Allow SSH Environment Options
+    - CCE-80222-3: Enable Use of Strict Mode Checking
+    - CCE-27314-4: Enable SSH Warning Banner
+    - CCE-80225-6: Enable SSH PrintLastLog
+    - CCE-27433-2: Enable SSH Idle Timeout Interval
+    - CCE-27082-7: Set SSH ClientAliveMaxCount
+    - CCE-80645-5: Set LogLevel to INFO
+    - CCE-27295-5: Use Only FIPS 140-2 Validated Ciphers
+    - CCE-27455-5: Use Only FIPS 140-2 Validated Ciphers
+    - CCE-80223-1: Enable Use of Privilege Separation'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-18

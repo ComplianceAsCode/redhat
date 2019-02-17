@@ -65,4 +65,4 @@
     - text: 'To prohibit the use of USB storage devices on Red Hat Virtualization
     Host (RHVH) nodes, the following configuration check must be enabled:
 
-    CCE-27277-3: Disable Modprobe Loading of USB Storage Driver'
+    - CCE-27277-3: Disable Modprobe Loading of USB Storage Driver'

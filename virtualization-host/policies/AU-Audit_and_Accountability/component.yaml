@@ -124,13 +124,13 @@
         reached or exceeded, the following configuration check must
         be enabled:
 
-        CCE-80381-7: Shutdown System When Auditing Failures Occur
+        - CCE-80381-7: Shutdown System When Auditing Failures Occur
 
         To configure the system to take action upon detecting a disk error,
         such as errors writing to disk or rotating audit logs, the following
         configuration check must be enabled:
 
-        CCE-80501-0: Configure auditd Disk Error Action on Disk Error'
+        - CCE-80501-0: Configure auditd Disk Error Action on Disk Error'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AU-6
@@ -180,22 +180,22 @@
     - text: 'The following configuration checks ensure the audit records are
     protected by appropriate file permission, user, and group ownership settings:
 
-    CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
-    CCE-80125-8: System Audit Logs Must Be Owned By Root
+    - CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
+    - CCE-80125-8: System Audit Logs Must Be Owned By Root
 
     The /var/log/audit/ directory is provided by the audit subsystem
     packaging. The following configuration checks ensure
     /var/log/audit/ directory permissions, as well as permissions of
     audit tooling, have not deviated from the secure defaults:
 
-    CCE-27209-6: Verify and Correct File Permissions with RPM
-    CCE-80545-7: Verify and Correct Ownership with RPM
+    - CCE-27209-6: Verify and Correct File Permissions with RPM
+    - CCE-80545-7: Verify and Correct Ownership with RPM
 
     The following configuration check is required to cryptographically
     verify the audit subsystem binaries and associated tooling has not
     been modified/tampered with:
 
-    CCE-27157-7: Verify File Hashes with RPM'
+    - CCE-27157-7: Verify File Hashes with RPM'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AU-11
@@ -215,7 +215,7 @@
         To tailor log retention (based on log size, not age), the following
         configuration check may be helpful:
 
-        CCE-27348-2: Configure auditd Number of Logs Retained'
+        - CCE-27348-2: Configure auditd Number of Logs Retained'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AU-12
@@ -230,8 +230,8 @@
         record generation capability, the underlying audit subsystem
         must be enabled through the following configuration checks:
 
-        CCE-27407-6: Enable auditd Service
-        CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
+        - CCE-27407-6: Enable auditd Service
+        - CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
     - key: b
       text: |
         'System administrators may customize audit rules by editing the
