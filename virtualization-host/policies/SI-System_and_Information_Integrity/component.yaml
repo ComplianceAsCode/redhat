@@ -82,7 +82,7 @@
 - control_key: SI-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -118,7 +118,7 @@
 - control_key: SI-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -142,7 +142,7 @@
 - control_key: SI-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
