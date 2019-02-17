@@ -40,15 +40,15 @@
     Red Hat Virtualization Host (RHVH) uniquely identifies organizational
     users:
 
-    CCE-27309-4: Set Boot Loader Password in grub2
-    CCE-80354-4: Set EUFI Boot Loader Password
-    CCE-27287-2: Require Authentication for Single User Mode
-    CCE-27175-9: Verify Only Root Has UID 0
-    CCE-27294-8: Direct root Logins Not Allowed
-    CCE-80650-5: Ensure that System Accounts are Locked
-    CCE-27268-2: Restrict Serial Port Root Logins
-    CCE-2731805: Restrict Virtual Console Root Logins
-    CCE-27445-6: Disable SSH Root Login'
+    - CCE-27309-4: Set Boot Loader Password in grub2
+    - CCE-80354-4: Set EUFI Boot Loader Password
+    - CCE-27287-2: Require Authentication for Single User Mode
+    - CCE-27175-9: Verify Only Root Has UID 0
+    - CCE-27294-8: Direct root Logins Not Allowed
+    - CCE-80650-5: Ensure that System Accounts are Locked
+    - CCE-27268-2: Restrict Serial Port Root Logins
+    - CCE-2731805: Restrict Virtual Console Root Logins
+    - CCE-27445-6: Disable SSH Root Login'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-1
@@ -61,7 +61,7 @@
     Red Hat Virtualization Host (RHVH) implements multifactor authentication
     for network access to privileged accounts:
 
-    CCE-80207-4: Enable Smart Card Login'
+    - CCE-80207-4: Enable Smart Card Login'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-12
@@ -74,7 +74,7 @@
     Red Hat Virtualization Host (RHVH) accepts Personal Identity
     Verification (PIV) credentials:
 
-    CCE-80207-4: Enable Smart Card Login'
+    - CCE-80207-4: Enable Smart Card Login'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-4
@@ -107,7 +107,7 @@
         'To disable identifiers after an organization-defined time period
         of inactivity, the following configuration checks must be enforced:
 
-        CCE-27355-7: Set Account Expiration Following Inactivity'
+        - CCE-27355-7: Set Account Expiration Following Inactivity'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-5
@@ -169,50 +169,50 @@
         'To prevent logins to accounts with no password, the following
         configuration checks must be enabled:
 
-        CCE-27286-4: Prevent Login to Accounts with Empty Password
+        - CCE-27286-4: Prevent Login to Accounts with Empty Password
 
         To enforce a minimum password length, the following configuration
         check must be enabled:
 
-        CCE-27293-0: Set Password Minimum Length
-        CCE-27123-9: Set Password Minimum Length in login.defs
+        - CCE-27293-0: Set Password Minimum Length
+        - CCE-27123-9: Set Password Minimum Length in login.defs
 
         To enforce a minimum amount of uppercase characters, the following
         configuration check must be enabled:
 
-        CCE-27200-5: Set Password Strength Minimum Uppercase Characters
+        - CCE-27200-5: Set Password Strength Minimum Uppercase Characters
 
         To enforce a minimum amount of lowercase characters, the following
         configuration check must be enabled:
 
-        CCE-27345-8: Set Password Strength Minimum Lowercase Characters
+        - CCE-27345-8: Set Password Strength Minimum Lowercase Characters
 
         To enforce a minimum amount of number characters, the following
         configuration check must be enabled:
 
-        CCE-27214-6: Set Password Strength Minimum Digit Characters
+        - CCE-27214-6: Set Password Strength Minimum Digit Characters
 
         To enforce a minimum amount of special characters, the following
         configuration check must be enabled:
 
-        CCE-27360-7: Set Password Strength Minimum Special Characters
+        - CCE-27360-7: Set Password Strength Minimum Special Characters
 
         To enforce a restriction on consecutive repeating characters from
         the same character class, the following configuration check must
         be enabled:
 
-        CCE-27512-3: Set Password to Maximum of Consecutive Repeating
+        - CCE-27512-3: Set Password to Maximum of Consecutive Repeating
         Characters from Same Character Class
 
         To enforce a restriction on consecutive repeating characters, the
         following configuration check must be enabled:
 
-        CCE-27333-4: Set Password Maximum Consecutive Repeating Characters
+        - CCE-27333-4: Set Password Maximum Consecutive Repeating Characters
 
         To enforce the usage of a minimum number of character classes, the
         following configuration check must be enabled:
 
-        CCE-27115-5: Set Password Strength Minimum Different Categories
+        - CCE-27115-5: Set Password Strength Minimum Different Categories
         '
     - key: b
       text: |
@@ -220,33 +220,33 @@
         new passwords are created, the following configuration checks must
         be enabled:
 
-        CCE-26631-2: Set Password Strength Minimum Different Characters'
+        - CCE-26631-2: Set Password Strength Minimum Different Characters'
     - key: c
       text: |
         'To ensure passwords are stored with appropriate cryptographic protections,
         the following configuration checks must be enabled:
 
-        CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
-        CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
-        CCE-27104-9: Set PAM Password Hashing Algorithm'
+        - CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
+        - CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
+        - CCE-27104-9: Set PAM Password Hashing Algorithm'
     - key: d
       text: |
         'To enforce a password minimum lifetime restriction, the following
         configuration checks must be enabled:
 
-        CCE-27002-5: Set Password Minimum Age
+        - CCE-27002-5: Set Password Minimum Age
 
         To enforce a password maximum lifetime restriction, the following
         configuration checks must be enabled:
 
-        CCE-27051-2: Set Password Maximum Age'
+        - CCE-27051-2: Set Password Maximum Age'
     - key: e
       text: |
         'To prohibit password reuse for an organization-defined number
         of generations, the following configuration check must
         be enabled:
 
-        CCE-26923-3: Limit Password Reuse'
+        - CCE-26923-3: Limit Password Reuse'
     - key: f
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -294,9 +294,9 @@
     carries FIPS validations, the following configuration check must
     be enabled:
 
-    CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
-    CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
-    CCE-80359-3: Enable FIPS Mode in GRUB2'
+    - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+    - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+    - CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/IA-8

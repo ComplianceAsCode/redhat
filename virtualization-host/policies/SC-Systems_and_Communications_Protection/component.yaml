@@ -93,10 +93,9 @@
         carries FIPS validations, the following configuration check must
         be enabled:
 
-          CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
-          CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
-          CCE-80359-3: Enable FIPS Mode in GRUB2
-        '
+        - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+        - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+        - CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-15
@@ -162,7 +161,6 @@
     - text: |
         'The following configuration checks must be enabled to satisfy this control:
 
-            CCE-27211-2: Enable ExecShield via sysctl
-            CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
-            CCE-27127-0: Enable Randomized Layout of Virtual Address Space
-        '
+        - CCE-27211-2: Enable ExecShield via sysctl
+        - CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
+        - CCE-27127-0: Enable Randomized Layout of Virtual Address Space'
