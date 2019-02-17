@@ -29,7 +29,6 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-5
 - control_key: SC-5
@@ -45,77 +44,123 @@
 - control_key: SC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: |
-        ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-12
 - control_key: SC-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: complete
   narrative:
     - text: |
-        ''
+        'Red Hat Virtualization Host (RHVH) utilizes FIPS 140 evaluated
+        OpenSSL libraries for the generation of cryptographic keys. This
+        behavior is coded into RHVH and cannot be misconfigured by users
+        or system administrators.
+
+        Management of cryptographic keys (e.g. rotation) reflects
+        organizational procedures/policies, and is not applicable to
+        the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-13
 - control_key: SC-13
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: complete
   narrative:
     - text: |
-        ''
+        'The Federal Information Security Management
+    Act (FISMA) requires the use of FIPS 140 evaluated cryptography.
+    Red Hat Virtualization Host (RHVH) carries several FIPS validations,
+    however it is imperitive the system have FIPS enabled.
+
+    To ensure the version of Red Hat Virtualization Host (RHVH) deployed
+    carries FIPS validations, the following configuration check must
+    be enabled:
+
+    CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+    CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+    CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-15
 - control_key: SC-15
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: |
-        ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-20
 - control_key: SC-20
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
-    - text: |
-        ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-21
 - control_key: SC-21
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        ''
+        'Control response text is being planned/developed through:
+        https://github.com/ComplianceAsCode/redhat/issues/592'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-22
 - control_key: SC-22
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
     - text: |
-        ''
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-39
 - control_key: SC-39
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: complete
   narrative:
     - text: |
-        ''
+        'The following configuration checks must be enabled to satisfy this control:
+
+        CCE-27211-2: Enable ExecShield via sysctl
+        CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
+        CCE-27127-0: Enable Randomized Layout of Virtual Address Space'
