@@ -2,237 +2,350 @@
 ## BEGINNING OF:
 ## IDENTIFICATION AND AUTHENTICATION
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Identification%20and%20Authentication
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-1
 - control_key: IA-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'The following configuration checks are required to ensure
+    Red Hat Virtualization Host (RHVH) uniquely identifies organizational
+    users:
 
+    CCE-27309-4: Set Boot Loader Password in grub2
+    CCE-80354-4: Set EUFI Boot Loader Password
+    CCE-27287-2: Require Authentication for Single User Mode
+    CCE-27175-9: Verify Only Root Has UID 0
+    CCE-27294-8: Direct root Logins Not Allowed
+    CCE-80650-5: Ensure that System Accounts are Locked
+    CCE-27268-2: Restrict Serial Port Root Logins
+    CCE-2731805: Restrict Virtual Console Root Logins
+    CCE-27445-6: Disable SSH Root Login'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-1
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'The customer will be responsible for implementing multifactor
-        authentication for network access to privileged accounts.
+    - text: 'The following configuration checks are required to ensure
+    Red Hat Virtualization Host (RHVH) implements multifactor authentication
+    for network access to privileged accounts:
 
-        A successful control response will need to address all network-
-        accessible privileged account types and the means by which
-        multifactor authentication is enforced for each.
+    CCE-80207-4: Enable Smart Card Login'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-12
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Personal Identity Verification (PIV) credentials are those credentials
-        issued by federal agencies that conform to FIPS Publication 201 and
-        supporting guidance documents. Customers will not be expected to perform
-        this credential verification for government agencies. A mechanism for
-        allowing government agencies to perform credential verification in a way
-        that can be trusted by the customer system is through Active Directory
-        Federation Services (ADFS).
+    - text: 'The following configuration checks are required to ensure
+    Red Hat Virtualization Host (RHVH) accepts Personal Identity
+    Verification (PIV) credentials:
 
-        Documentation/guidance on satisfying this control is planned.'
+    CCE-80207-4: Enable Smart Card Login'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-4
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: d
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'Red Hat Virtualization Host (RHVH) is not capable of preventing
+        the reuse of identifiers for an organization-defined time period.
+
+        To satisfy this control, an external identity provider must be
+        used (e.g. Red Hat Identity Management or Microsoft Active Directory).'
     - key: e
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To disable identifiers after an organization-defined time period
+        of inactivity, the following configuration checks must be enforced:
 
+        CCE-27355-7: Set Account Expiration Following Inactivity'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        'This is an organizational control outside the scope of configuring
-        Red Hat Identity Management.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: d
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: e
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: f
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: g
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: h
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: i
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: j
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-1
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To prevent logins to accounts with no password, the following
+        configuration checks must be enabled:
+
+        CCE-27286-4: Prevent Login to Accounts with Empty Password
+
+        To enforce a minimum password length, the following configuration
+        check must be enabled:
+
+        CCE-27293-0: Set Password Minimum Length
+        CCE-27123-9: Set Password Minimum Length in login.defs
+
+        To enforce a minimum amount of uppercase characters, the following
+        configuration check must be enabled:
+
+        CCE-27200-5: Set Password Strength Minimum Uppercase Characters
+
+        To enforce a minimum amount of lowercase characters, the following
+        configuration check must be enabled:
+
+        CCE-27345-8: Set Password Strength Minimum Lowercase Characters
+
+        To enforce a minimum amount of number characters, the following
+        configuration check must be enabled:
+
+        CCE-27214-6: Set Password Strength Minimum Digit Characters
+
+        To enforce a minimum amount of special characters, the following
+        configuration check must be enabled:
+
+        CCE-27360-7: Set Password Strength Minimum Special Characters
+
+        To enforce a restriction on consecutive repeating characters from
+        the same character class, the following configuration check must
+        be enabled:
+
+        CCE-27512-3: Set Password to Maximum of Consecutive Repeating
+        Characters from Same Character Class
+
+        To enforce a restriction on consecutive repeating characters, the
+        following configuration check must be enabled:
+
+        CCE-27333-4: Set Password Maximum Consecutive Repeating Characters
+
+        To enforce the usage of a minimum number of character classes, the
+        following configuration check must be enabled:
+
+        CCE-27115-5: Set Password Strength Minimum Different Categories
+        '
     - key: b
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To enforce an organization-defined number of changed characters when
+        new passwords are created, the following configuration checks must
+        be enabled:
+
+        CCE-26631-2: Set Password Strength Minimum Different Characters'
     - key: c
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To ensure passwords are stored with appropriate cryptographic protections,
+        the following configuration checks must be enabled:
+
+        CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
+        CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
+        CCE-27104-9: Set PAM Password Hashing Algorithm'
     - key: d
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To enforce a password minimum lifetime restriction, the following
+        configuration checks must be enabled:
+
+        CCE-27002-5: Set Password Minimum Age
+
+        To enforce a password maximum lifetime restriction, the following
+        configuration checks must be enabled:
+
+        CCE-27051-2: Set Password Maximum Age'
     - key: e
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'To prohibit password reuse for an organization-defined number
+        of generations, the following configuration check must
+        be enabled:
+
+        CCE-26923-3: Limit Password Reuse'
     - key: f
       text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
+        However, to force a user to change their password upon next logon,
+        a system administrator can expire a users current password:
+
+             $ sudo passwd --expire <<user>>'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-11
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH)'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-6
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
-        'The system component natively obscures such information and cannot be
-        configured to be out of compliance with this requirement.'
+    - text: 'Red Hat Virtualization Host (RHVH) automatically obscures
+    feedback of authentication information and cannot be configured
+    to be out of compliance with this control.'
 
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-7
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+    - text: 'The Federal Information Security Management
+    Act (FISMA) requires the use of FIPS 140 evaluated cryptography.
+    Red Hat Virtualization Host (RHVH) carries several FIPS validations,
+    however it is imperitive the system have FIPS enabled.
 
+    To ensure the version of Red Hat Virtualization Host (RHVH) deployed
+    carries FIPS validations, the following configuration check must
+    be enabled:
+
+    CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+    CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+    CCE-80359-3: Enable FIPS Mode in GRUB2'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        'The customer will be responsible for identifying and authenticating
-        non-organizational users accessing the customer application. A
-        successful control response will need to address how non-organizational
-        users are defined and the process by which identification
-        and authentication takes place, including any differences from
-        identification and authentication for organizational users.
+    - text: 'All information system users, regardless of organizational
+    or non-organizational, receive unique system identifiers. This is
+    non-configurable default behavior. Any attempts to alter
+    user identifiers is audited through events defined in AU-2.'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-1
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'Personal Identity Verificiation (PIV) credentials are those
-        credentials issued by federal agencies that conform to FIPS Publication
-        201 and supporting guidance documents. Customers will not be expected
-        to perform this credential verification for government agencies. A
-        mechanism for allowing government agencies to perform credential
-        verification in a way that can be trusted by the customer system is
-        through Active Directory Federation Services (ADFS) or Red Hat IdM.
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-2
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'FICAM approved credentials are those credentials issued by nonfederal
-        government entities approved by the Federal Identity, Credential, and
-        Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
-        government agencies. A mechanism for allowing government agencies to
-        perform credential verification in a way that can be trusted by the
-        customer system is through Active Directory Federation Services
-        (ADFS) or Red Hat IdM.
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-3
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'FICAM approved credentials are those credentials issued by nonfederal
-        government entities approved by the Federal Identity, Credential, and
-        Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
-        government agencies. A mechanism for allowing government agencies to
-        perform credential verification in a way that can be trusted by the
-        customer system is through Active Directory Federation Services
-        (ADFS) or Red Hat IdM.
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
-        Documentation/guidance on satisfying this control is planned.'
-
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-4
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'FICAM approved credentials are those credentials issued by nonfederal
-        government entities approved by the Federal Identity, Credential, and
-        Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
-        government agencies. A mechanism for allowing government agencies to
-        perform credential verification in a way that can be trusted by the
-        customer system is through Active Directory Federation Services
-        (ADFS) or Red Hat IdM.
-
-        Documentation/guidance on satisfying this control is planned.'
+    - text: 'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
