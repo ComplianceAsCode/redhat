@@ -161,6 +161,6 @@
     - text: |
         'The following configuration checks must be enabled to satisfy this control:
 
-        CCE-27211-2: Enable ExecShield via sysctl
-        CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
-        CCE-27127-0: Enable Randomized Layout of Virtual Address Space'
+            CCE-27211-2: Enable ExecShield via sysctl
+            CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
+            CCE-27127-0: Enable Randomized Layout of Virtual Address Space'
