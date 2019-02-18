@@ -181,6 +181,7 @@
     protected by appropriate file permission, user, and group ownership settings:
 
     - CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
+
     - CCE-80125-8: System Audit Logs Must Be Owned By Root
 
     The /var/log/audit/ directory is provided by the audit subsystem
@@ -189,6 +190,7 @@
     audit tooling, have not deviated from the secure defaults:
 
     - CCE-27209-6: Verify and Correct File Permissions with RPM
+
     - CCE-80545-7: Verify and Correct Ownership with RPM
 
     The following configuration check is required to cryptographically
@@ -231,6 +233,7 @@
         must be enabled through the following configuration checks:
 
         - CCE-27407-6: Enable auditd Service
+
         - CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
     - key: b
       text: |
