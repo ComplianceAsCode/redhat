@@ -106,16 +106,27 @@ satisfies:
         approved authorizations for logical access:
 
         - CCE-27334-2: Ensure SELinux State is Enforcing
+
         - CCE-26961-3: Ensure SELinux Not Disabled in /etc/default/grub
+
         - CCE-27279-9: Configure SELinux Policy
+
         - CCE-27309-4: Set Boot Loader Password in grub2
+
         - CCE-80354-4: Set the EUFI Boot Loader Password
+
         - CCE-27335-9: Verify that Interactive Boot is Disabled
+
         - CCE-27413-4: Disable Host-Based Authentication
+
         - CCE-27377-1: Disable SSH Support for .rhosts Files
+
         - CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+
         - CCE-27445-6: Disable SSH Root Login
+
         - CCE-27471-2: Disable SSH Access via Empty Passwords
+
         - CCE-80219-9: Limit Users SSH Access'
 
 # NIST Control URL:
@@ -133,7 +144,9 @@ satisfies:
         time period:
 
         - CCE-27350-8: Set Deny for Failed Password Attempts
+
         - CCE-27297-1: Set Interval for Counting Failed Password Attempts
+
         - CCE-80353-6: Configure the root Account for Failed Password Attempts'
     - key: b
       text: |
@@ -166,6 +179,7 @@ satisfies:
         granting access to the system:
 
         - CCE-27303-7: Modify the System Login Banner
+
         - CCE-27314-4: Enable SSH Warning Banner'
     - key: b
       text: |
@@ -205,27 +219,49 @@ satisfies:
     encouraged to harden remote access over SSH:
 
     - CCE-27485-2: Verify Permissions on SSH Server Private *_key Key Files
+
     - CCE-27311-0: Verify Permissions on SSH Server Public *.pub Key Files
+
     - CCE-27413-4: Disable Host-based Authentication
+
     - CCE-80361-9: Enable SSH Server firewalld Firewall Exception
+
     - CCE-27320-1: Allow Only SSH Protocol 2
+
     - CCE-80224-9: Disable Compression Or Set Compression to delayed
+
     - CCE-27471-2: Disable SSH Access via Empty Passwords
+
     - CCE-80220-7: Disable GSSAPI Authentication
+
     - CCE-80221-5: Disable Kerberos Authentication
+
     - CCE-27377-1: Disable SSH Support for .rhost Files
+
     - CCE-80373-4: Disable SSH Support for Rhosts RSA Authentication
+
     - CCE-27445-6: Disable SSH Root Login
+
     - CCE-80372-6: Disable SSH Support for User Known Hosts
+
     - CCE-27363-1: Do Not Allow SSH Environment Options
+
     - CCE-80222-3: Enable Use of Strict Mode Checking
+
     - CCE-27314-4: Enable SSH Warning Banner
+
     - CCE-80225-6: Enable SSH PrintLastLog
+
     - CCE-27433-2: Enable SSH Idle Timeout Interval
+
     - CCE-27082-7: Set SSH ClientAliveMaxCount
+
     - CCE-80645-5: Set LogLevel to INFO
+
     - CCE-27295-5: Use Only FIPS 140-2 Validated Ciphers
+
     - CCE-27455-5: Use Only FIPS 140-2 Validated Ciphers
+
     - CCE-80223-1: Enable Use of Privilege Separation'
 
 # NIST Control URL:
@@ -604,6 +640,7 @@ satisfies:
     protected by appropriate file permission, user, and group ownership settings:
 
     - CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
+
     - CCE-80125-8: System Audit Logs Must Be Owned By Root
 
     The /var/log/audit/ directory is provided by the audit subsystem
@@ -612,6 +649,7 @@ satisfies:
     audit tooling, have not deviated from the secure defaults:
 
     - CCE-27209-6: Verify and Correct File Permissions with RPM
+
     - CCE-80545-7: Verify and Correct Ownership with RPM
 
     The following configuration check is required to cryptographically
@@ -654,6 +692,7 @@ satisfies:
         must be enabled through the following configuration checks:
 
         - CCE-27407-6: Enable auditd Service
+
         - CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
     - key: b
       text: |
@@ -1122,10 +1161,14 @@ satisfies:
         in CM-11(a):
 
         - CCE-26957-1: Ensure Red Hat GPG Key Installed
+
         - CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
+
         - CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
+
         - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages
-        - CCE-80346-0: Ensure YUM Removes Previous Package Versionss'
+
+        - CCE-80346-0: Ensure YUM Removes Previous Package Versions'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1309,13 +1352,21 @@ satisfies:
     users:
 
     - CCE-27309-4: Set Boot Loader Password in grub2
+
     - CCE-80354-4: Set EUFI Boot Loader Password
+
     - CCE-27287-2: Require Authentication for Single User Mode
+
     - CCE-27175-9: Verify Only Root Has UID 0
+
     - CCE-27294-8: Direct root Logins Not Allowed
+
     - CCE-80650-5: Ensure that System Accounts are Locked
+
     - CCE-27268-2: Restrict Serial Port Root Logins
+
     - CCE-2731805: Restrict Virtual Console Root Logins
+
     - CCE-27445-6: Disable SSH Root Login'
 
 # NIST Control URL:
@@ -1443,6 +1494,7 @@ satisfies:
         check must be enabled:
 
         - CCE-27293-0: Set Password Minimum Length
+
         - CCE-27123-9: Set Password Minimum Length in login.defs
 
         To enforce a minimum amount of uppercase characters, the following
@@ -1495,7 +1547,9 @@ satisfies:
         the following configuration checks must be enabled:
 
         - CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
+
         - CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
+
         - CCE-27104-9: Set PAM Password Hashing Algorithm'
     - key: d
       text: |
@@ -1563,7 +1617,9 @@ satisfies:
     be enabled:
 
     - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+
     - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+
     - CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
@@ -1940,6 +1996,7 @@ satisfies:
     configuration checks must be enabled:
 
     - CCE-27327-6: Disable Bluetooth Kenrel Modules
+
     - CCE-27328-4: Disable Bluetooth Service'
 ##
 ## BEGINNING OF:
@@ -2771,7 +2828,9 @@ satisfies:
         be enabled:
 
         - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+
         - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+
         - CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
@@ -2841,9 +2900,13 @@ satisfies:
         'The following configuration checks must be enabled to satisfy this control:
 
         - CCE-27211-2: Enable ExecShield via sysctl
+
         - CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
+
         - CCE-27127-0: Enable Randomized Layout of Virtual Address Space
+
         - CCE-27288-0: Ensure No Daemons are Unconfined by SELinux
+
         - CCE-80418-7: Enable the fips_mode SELinux Boolean'
 ##
 ## BEGINNING OF:
