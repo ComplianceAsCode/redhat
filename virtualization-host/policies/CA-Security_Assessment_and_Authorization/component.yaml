@@ -50,7 +50,7 @@
 - control_key: CA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
@@ -58,8 +58,16 @@
         applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'An answer to this control is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/508'
+        'Red Hat Enterprise Linux hosts and Red Hat Virtualization Hosts (RHVH)
+        require a number of ports to be opened to allow network traffic through
+        the system firewall. The firewall rules are automatically configured
+        by default when adding a new host to the Manager, overwriting any
+        pre-existing firewall configuration.
+
+        Documentation on RHVH interconnections is available in the
+        Red Hat Virtualization Installation Guide available at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_virtualization/'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -138,13 +146,29 @@
 - control_key: CA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'An answer to this control is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/512'
+        'Red Hat Enterprise Linux hosts and Red Hat Virtualization Hosts (RHVH)
+        require a number of ports to be opened to allow network traffic through
+        the system firewall. The firewall rules are automatically configured
+        by default when adding a new host to the Manager, overwriting any
+        pre-existing firewall configuration.
+
+        Documentation on RHVH interconnections is available in the
+        Red Hat Virtualization Installation Guide available at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_virtualization/'
     - key: b
       text: |
-        'An answer to this control is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/512'
+        'Red Hat Enterprise Linux hosts and Red Hat Virtualization Hosts (RHVH)
+        require a number of ports to be opened to allow network traffic through
+        the system firewall. The firewall rules are automatically configured
+        by default when adding a new host to the Manager, overwriting any
+        pre-existing firewall configuration.
+
+        Documentation on RHVH interconnections is available in the
+        Red Hat Virtualization Installation Guide available at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_virtualization/'

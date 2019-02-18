@@ -241,26 +241,130 @@
         'The following configuration checks correlate to recommended
         audit events:
 
-            - Authentication Events
-              * Logons (Success/Failure)
-              * Logoffs (Success/Failure)
-            - File & Object Events
-              * Create (Success/Failure)
-              * Access (Success/Failure)
-              * Delete (Success/Failure)
-              * Modify (Success/Failure)
-              * Permission Modifications (Success/Failure)
-              * Ownership Modifications (Success/Failure)
-            - User & Group Management Events
-              * User add, delete, modify, suspend, lock (Success/Failure)
-              * Group/Role add, delete, modify (Success/Failure)
-            - Use of Privileged/Special Rights Events
-              * Security or audit policy changes (Success/Failure)
-              * Configuration Changes (Success/Failure)
-            - Admin or root-level access (Success/Failure)
-            - Privilege/Role escalation (Success/Failure)
-            - Audit and log data access (Success/Failure)
-            - System Reboot, Restart & Shutdown (Success/Failure)
+        - CCE-27212-0: Enable Auditing for Processes Which Start Prior to the Audit Daemon
 
-            A complete control response is being planned through GitHub:
-            https://github.com/ComplianceAsCode/redhat/issues/505'
+        - CCE-80433-6: Record Events that Modify User/Group Information - /etc/group
+
+        - CCE-80432-8: Record Events that Modify User/Group Information - /etc/gshadow
+
+        - CCE-80431-0: Record Events that Modify User/Group Information - /etc/shadow
+
+        - CCE-80430-2: Record Events that Modify User/Group Information - /etc/security/opasswd
+
+        - CCE-80435-1: Record Events that Modify User/Group Information - /etc/passwd
+
+        - CCE-27437-3: Ensure auditd Collects Information on the Use of Privileged Commands
+
+        - CCE-27364-9: Record Events that Modify the System Discretionary Access Controls - chown
+
+        - CCE-27356-5: Record Events that Modify the System Discretionary Access Controls - fchown
+
+        - CCE-27083-5: Record Events that Modify the System Discretionary Access Controls - lchown
+
+        - CCE-27387-0: Record Events that Modify the System Discretionary Access Controls - fchownat
+
+        - CCE-27339-1: Record Events that Modify the System Discretionary Access Controls - chmod
+
+        - CCE-27393-8: Record Events that Modify the System Discretionary Access Control - fchmod
+
+        - CCE-27388-8: Record Events that Modify the System Discretionary Access Control - fchmodat
+
+        - CCE-27213-8: Record Events that Modify the System Discretionary Access Control - setxattr
+
+        - CCE-27389-6: Record Events that Modify the System Discretionary Access Control - fsetxattr
+
+        - CCE-27280-7: Record Events that Modify the System Discretionary Access Control - lsetxattr
+
+        - CCE-27367-2: Record Events that Modify the System Discretionary Access Control - removexattr
+
+        - CCE-27353-2: Record Events that Modify the System Discretionary Access Control - fremovexattr
+
+        - CCE-27410-0: Record Events that Modify the System Discretionary Access Control - lremovexattr
+
+        - CCE-80385-8: Record Unauthorized Access Attempts to Files (unsuccessful) - creat
+
+        - CCE-80386-6: Record Unauthorized Access Attempts to Files (unsuccessful) - open
+
+        - CCE-80387-4: Record Unauthorized Access Attempts to Files (unsuccessful) - openat
+
+        - CCE-80388-2: Record Unauthorized Access Attempts to Files (unsuccessful) - open_by_handle_at
+
+        - CCE-80389-0: Record Unauthorized Access Attempts to Files (unsuccessful) - truncate
+
+        - CCE-80390-8: Record Unauthorized Access Attempts to Files (unsuccessful) - ftruncate
+
+        - CCE-80391-6: Record Any Attempts to Run semanage
+
+        - CCE-80392-4: Record Any Attempts to Run setsebool
+
+        - CCE-80393-2: Record Any Attempts to Run chcon
+
+        - CCE-80660-4: Record Any Attempts to Run setfiles
+
+        - CCE-80382-5: Record Attempts to Alter Logon and Logout Events - tallylog
+
+        - CCE-80383-3: Record Attempts to Alter Logon and Logout Events - faillock
+
+        - CCE-80384-1: Record Attempts to Alter Logon and Logout Events - lastlog
+
+        - CCE-80395-7: Ensure auditd Collects Information on the Use of Privileged Commands - passwd
+
+        - CCE-80396-5: Ensure auditd Collects Information on the Use of Privileged Commands - unix_chkpwd
+
+        - CCE-80397-3: Ensure auditd Collects Information on the Use of Privileged Commands - gpasswd
+
+        - CCE-80398-1: Ensure auditd Collects Information on the Use of Privileged Commands - chage
+
+        - CCE-80399-9: Ensure auditd Collects Information on the Use of Privileged Commands - userhelper
+
+        - CCE-80400-5: Ensure auditd Collects Information on the Use of Privileged Commands - su
+
+        - CCE-80401-3: Ensure auditd Collects Information on the Use of Privileged Commands - sudo
+
+        - CCE-80403-9: Ensure auditd Collects Information on the Use of Privileged Commands - newgrp
+
+        - CCE-80404-7: Ensure auditd Collects Information on the Use of Privileged Commands - chsh
+
+        - CCE-80402-1: Ensure auditd Collects Information on the Use of Privileged Commands - sudoedit
+
+        - CCE-80405-4: Ensure auditd Collects Information on the Use of Privileged Commands - umount
+
+        - CCE-80406-2: Ensure auditd Collects Information on the Use of Privileged Commands - postdrop
+
+        - CCE-80407-0: Ensure auditd Collects Information on the Use of Privileged Commands - postqueue
+
+        - CCE-80408-8: Ensure auditd Collects Information on the Use of Privileged Commands - ssh_keysign
+
+        - CCE-80410-4: Ensure auditd Collects Information on the Use of Privileged Commands - crontab
+
+        - CCE-80411-2: Ensure auditd Collects Information on the Use of Privileged Commands - pam_timestamp_check
+
+        - CCE-80661-2: Ensure auditd Collects Information on Kernel Module Loading - create_module
+
+        - CCE-80414-6: Ensure auditd Collects Information on Kernel Module Loading - init_module
+
+        - CCE-80547-3: Ensure auditd Collects Information on Kernel Module Loading - finit_module
+
+        - CCE-80415-3: Ensure auditd Collects Information on Kernel Module Loading - delete_module
+
+        - CCE-80446-8: Ensure auditd Collects Information on Kernel Module Loading - insmod
+
+        - CCE-80416-1: Ensure auditd Collects Information on Kernel Module Loading - rmmod
+
+        - CCE-80417-9: Ensure auditd Collects Information on Kernel Module Loading - modprobe
+
+        - CCE-27206-2: Ensure auditd Collects File Deletion Events by User - rename
+
+        - CCE-80413-8: Ensure auditd Collects File Deletion Events by User - renameat
+
+        - CCE-80412-0: Ensure auditd Collects File Deletion Events by User - rmdir
+
+        - CCE-27206-2: Ensure auditd Collects File Deletion Events by User - unlink
+
+        - CCE-27206-2: Ensure auditd Collects File Deletion Events by User - unlinkat
+
+        - CCE-80381-7: Shutdown System When Auditing Failures Occur
+
+        - CCE-27447-2: Ensure auditd Collects Information on Exporting to Media (successful)
+
+        - CCE-27461-3: Ensure auditd Collects System Administrator Actions'
