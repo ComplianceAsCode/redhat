@@ -54,16 +54,16 @@
 - control_key: CM-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/516'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/516'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -78,16 +78,17 @@
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/517'
+        'Red Hat Virtualization Host (RHVH) is a purpose-built operating
+        system baseline which only provides minimal/required functionality.
+        No additional configuration is required for this control.'
     - key: b
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/517'
+        'The default firewall configuration is a deny-all allow-by-exception
+        policy. No additional configuration is required for this control.'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/CM-8
@@ -144,7 +145,10 @@
 
         - All software repositories configured on the system
         must enforce GPG key verification prior to software
-        installation.'
+        installation;
+
+        - Previous versions of software should be removed after newer
+        versions have been installed.'
     - key: b
       text: |
         'The following configuration checks enforce the policies identified
@@ -153,7 +157,8 @@
         - CCE-26957-1: Ensure Red Hat GPG Key Installed
         - CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
         - CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
-        - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages'
+        - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages
+        - CCE-80346-0: Ensure YUM Removes Previous Package Versionss'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
