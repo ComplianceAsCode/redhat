@@ -41,13 +41,21 @@
     users:
 
     - CCE-27309-4: Set Boot Loader Password in grub2
+
     - CCE-80354-4: Set EUFI Boot Loader Password
+
     - CCE-27287-2: Require Authentication for Single User Mode
+
     - CCE-27175-9: Verify Only Root Has UID 0
+
     - CCE-27294-8: Direct root Logins Not Allowed
+
     - CCE-80650-5: Ensure that System Accounts are Locked
+
     - CCE-27268-2: Restrict Serial Port Root Logins
+
     - CCE-2731805: Restrict Virtual Console Root Logins
+
     - CCE-27445-6: Disable SSH Root Login'
 
 # NIST Control URL:
@@ -175,6 +183,7 @@
         check must be enabled:
 
         - CCE-27293-0: Set Password Minimum Length
+
         - CCE-27123-9: Set Password Minimum Length in login.defs
 
         To enforce a minimum amount of uppercase characters, the following
@@ -227,7 +236,9 @@
         the following configuration checks must be enabled:
 
         - CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
+
         - CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
+
         - CCE-27104-9: Set PAM Password Hashing Algorithm'
     - key: d
       text: |
@@ -295,7 +306,9 @@
     be enabled:
 
     - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+
     - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+
     - CCE-80359-3: Enable FIPS Mode in GRUB2'
 
 # NIST Control URL:
