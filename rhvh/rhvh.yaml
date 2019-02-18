@@ -664,29 +664,133 @@ satisfies:
         'The following configuration checks correlate to recommended
         audit events:
 
-            - Authentication Events
-              * Logons (Success/Failure)
-              * Logoffs (Success/Failure)
-            - File & Object Events
-              * Create (Success/Failure)
-              * Access (Success/Failure)
-              * Delete (Success/Failure)
-              * Modify (Success/Failure)
-              * Permission Modifications (Success/Failure)
-              * Ownership Modifications (Success/Failure)
-            - User & Group Management Events
-              * User add, delete, modify, suspend, lock (Success/Failure)
-              * Group/Role add, delete, modify (Success/Failure)
-            - Use of Privileged/Special Rights Events
-              * Security or audit policy changes (Success/Failure)
-              * Configuration Changes (Success/Failure)
-            - Admin or root-level access (Success/Failure)
-            - Privilege/Role escalation (Success/Failure)
-            - Audit and log data access (Success/Failure)
-            - System Reboot, Restart & Shutdown (Success/Failure)
+        - CCE-27212-0: Enable Auditing for Processes Which Start Prior to the Audit Daemon
 
-            A complete control response is being planned through GitHub:
-            https://github.com/ComplianceAsCode/redhat/issues/505'
+        - CCE-80433-6: Record Events that Modify User/Group Information - /etc/group
+
+        - CCE-80432-8: Record Events that Modify User/Group Information - /etc/gshadow
+
+        - CCE-80431-0: Record Events that Modify User/Group Information - /etc/shadow
+
+        - CCE-80430-2: Record Events that Modify User/Group Information - /etc/security/opasswd
+
+        - CCE-80435-1: Record Events that Modify User/Group Information - /etc/passwd
+
+        - CCE-27437-3: Ensure auditd Collects Information on the Use of Privileged Commands
+
+        - CCE-27364-9: Record Events that Modify the System Discretionary Access Controls - chown
+
+        - CCE-27356-5: Record Events that Modify the System Discretionary Access Controls - fchown
+
+        - CCE-27083-5: Record Events that Modify the System Discretionary Access Controls - lchown
+
+        - CCE-27387-0: Record Events that Modify the System Discretionary Access Controls - fchownat
+
+        - CCE-27339-1: Record Events that Modify the System Discretionary Access Controls - chmod
+
+        - CCE-27393-8: Record Events that Modify the System Discretionary Access Control - fchmod
+
+        - CCE-27388-8: Record Events that Modify the System Discretionary Access Control - fchmodat
+
+        - CCE-27213-8: Record Events that Modify the System Discretionary Access Control - setxattr
+
+        - CCE-27389-6: Record Events that Modify the System Discretionary Access Control - fsetxattr
+
+        - CCE-27280-7: Record Events that Modify the System Discretionary Access Control - lsetxattr
+
+        - CCE-27367-2: Record Events that Modify the System Discretionary Access Control - removexattr
+
+        - CCE-27353-2: Record Events that Modify the System Discretionary Access Control - fremovexattr
+
+        - CCE-27410-0: Record Events that Modify the System Discretionary Access Control - lremovexattr
+
+        - CCE-80385-8: Record Unauthorized Access Attempts to Files (unsuccessful) - creat
+
+        - CCE-80386-6: Record Unauthorized Access Attempts to Files (unsuccessful) - open
+
+        - CCE-80387-4: Record Unauthorized Access Attempts to Files (unsuccessful) - openat
+
+        - CCE-80388-2: Record Unauthorized Access Attempts to Files (unsuccessful) - open_by_handle_at
+
+        - CCE-80389-0: Record Unauthorized Access Attempts to Files (unsuccessful) - truncate
+
+        - CCE-80390-8: Record Unauthorized Access Attempts to Files (unsuccessful) - ftruncate
+
+        - CCE-80391-6: Record Any Attempts to Run semanage
+
+        - CCE-80392-4: Record Any Attempts to Run setsebool
+
+        - CCE-80393-2: Record Any Attempts to Run chcon
+
+        - CCE-80660-4: Record Any Attempts to Run setfiles
+
+        - CCE-80382-5: Record Attempts to Alter Logon and Logout Events - tallylog
+
+        - CCE-80383-3: Record Attempts to Alter Logon and Logout Events - faillock
+
+        - CCE-80384-1: Record Attempts to Alter Logon and Logout Events - lastlog
+
+        - CCE-80395-7: Ensure auditd Collects Information on the Use of Privileged Commands - passwd
+
+        - CCE-80396-5: Ensure auditd Collects Information on the Use of Privileged Commands - unix_chkpwd
+
+        - CCE-80397-3: Ensure auditd Collects Information on the Use of Privileged Commands - gpasswd
+
+        - CCE-80398-1: Ensure auditd Collects Information on the Use of Privileged Commands - chage
+
+        - CCE-80399-9: Ensure auditd Collects Information on the Use of Privileged Commands - userhelper
+
+        - CCE-80400-5: Ensure auditd Collects Information on the Use of Privileged Commands - su
+
+        - CCE-80401-3: Ensure auditd Collects Information on the Use of Privileged Commands - sudo
+
+        - CCE-80403-9: Ensure auditd Collects Information on the Use of Privileged Commands - newgrp
+
+        - CCE-80404-7: Ensure auditd Collects Information on the Use of Privileged Commands - chsh
+
+        - CCE-80402-1: Ensure auditd Collects Information on the Use of Privileged Commands - sudoedit
+
+        - CCE-80405-4: Ensure auditd Collects Information on the Use of Privileged Commands - umount
+
+        - CCE-80406-2: Ensure auditd Collects Information on the Use of Privileged Commands - postdrop
+
+        - CCE-80407-0: Ensure auditd Collects Information on the Use of Privileged Commands - postqueue
+
+        - CCE-80408-8: Ensure auditd Collects Information on the Use of Privileged Commands - ssh_keysign
+
+        - CCE-80410-4: Ensure auditd Collects Information on the Use of Privileged Commands - crontab
+
+        - CCE-80411-2: Ensure auditd Collects Information on the Use of Privileged Commands - pam_timestamp_check
+
+        - CCE-80661-2: Ensure auditd Collects Information on Kernel Module Loading - create_module
+
+        - CCE-80414-6: Ensure auditd Collects Information on Kernel Module Loading - init_module
+
+        - CCE-80547-3: Ensure auditd Collects Information on Kernel Module Loading - finit_module
+
+        - CCE-80415-3: Ensure auditd Collects Information on Kernel Module Loading - delete_module
+
+        - CCE-80446-8: Ensure auditd Collects Information on Kernel Module Loading - insmod
+
+        - CCE-80416-1: Ensure auditd Collects Information on Kernel Module Loading - rmmod
+
+        - CCE-80417-9: Ensure auditd Collects Information on Kernel Module Loading - modprobe
+
+        - CCE-27206-2: Ensure auditd Collects File Deletion Events by User - rename
+
+        - CCE-80413-8: Ensure auditd Collects File Deletion Events by User - renameat
+
+        - CCE-80412-0: Ensure auditd Collects File Deletion Events by User - rmdir
+
+        - CCE-27206-2: Ensure auditd Collects File Deletion Events by User - unlink
+
+        - CCE-27206-2: Ensure auditd Collects File Deletion Events by User - unlinkat
+
+        - CCE-80381-7: Shutdown System When Auditing Failures Occur
+
+        - CCE-27447-2: Ensure auditd Collects Information on Exporting to Media (successful)
+
+        - CCE-27461-3: Ensure auditd Collects System Administrator Actions'
 ##
 ## BEGINNING OF:
 ## SECURITY ASSESSMENT AND AUTHORIZATION
@@ -739,7 +843,7 @@ satisfies:
 - control_key: CA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
@@ -747,8 +851,16 @@ satisfies:
         applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'An answer to this control is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/508'
+        'Red Hat Enterprise Linux hosts and Red Hat Virtualization Hosts (RHVH)
+        require a number of ports to be opened to allow network traffic through
+        the system firewall. The firewall rules are automatically configured
+        by default when adding a new host to the Manager, overwriting any
+        pre-existing firewall configuration.
+
+        Documentation on RHVH interconnections is available in the
+        Red Hat Virtualization Installation Guide available at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_virtualization/'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -827,16 +939,32 @@ satisfies:
 - control_key: CA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'An answer to this control is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/512'
+        'Red Hat Enterprise Linux hosts and Red Hat Virtualization Hosts (RHVH)
+        require a number of ports to be opened to allow network traffic through
+        the system firewall. The firewall rules are automatically configured
+        by default when adding a new host to the Manager, overwriting any
+        pre-existing firewall configuration.
+
+        Documentation on RHVH interconnections is available in the
+        Red Hat Virtualization Installation Guide available at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_virtualization/'
     - key: b
       text: |
-        'An answer to this control is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/512'
+        'Red Hat Enterprise Linux hosts and Red Hat Virtualization Hosts (RHVH)
+        require a number of ports to be opened to allow network traffic through
+        the system firewall. The firewall rules are automatically configured
+        by default when adding a new host to the Manager, overwriting any
+        pre-existing firewall configuration.
+
+        Documentation on RHVH interconnections is available in the
+        Red Hat Virtualization Installation Guide available at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_virtualization/'
 ##
 ## BEGINNING OF:
 ## CONFIGURATION MANAGEMENT
@@ -893,16 +1021,16 @@ satisfies:
 - control_key: CM-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/516'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: b
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/516'
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -917,16 +1045,17 @@ satisfies:
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/517'
+        'Red Hat Virtualization Host (RHVH) is a purpose-built operating
+        system baseline which only provides minimal/required functionality.
+        No additional configuration is required for this control.'
     - key: b
       text: |
-        'A complete control response is being tracked through GitHub:
-        https://github.com/ComplianceAsCode/redhat/issues/517'
+        'The default firewall configuration is a deny-all allow-by-exception
+        policy. No additional configuration is required for this control.'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/CM-8
@@ -983,7 +1112,10 @@ satisfies:
 
         - All software repositories configured on the system
         must enforce GPG key verification prior to software
-        installation.'
+        installation;
+
+        - Previous versions of software should be removed after newer
+        versions have been installed.'
     - key: b
       text: |
         'The following configuration checks enforce the policies identified
@@ -992,7 +1124,8 @@ satisfies:
         - CCE-26957-1: Ensure Red Hat GPG Key Installed
         - CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
         - CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
-        - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages'
+        - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages
+        - CCE-80346-0: Ensure YUM Removes Previous Package Versionss'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
@@ -1801,7 +1934,13 @@ satisfies:
     - text: 'To prohibit the use of USB storage devices on Red Hat Virtualization
     Host (RHVH) nodes, the following configuration check must be enabled:
 
-    - CCE-27277-3: Disable Modprobe Loading of USB Storage Driver'
+    - CCE-27277-3: Disable Modprobe Loading of USB Storage Driver
+
+    To disable support for bluetooth connections, the following
+    configuration checks must be enabled:
+
+    - CCE-27327-6: Disable Bluetooth Kenrel Modules
+    - CCE-27328-4: Disable Bluetooth Service'
 ##
 ## BEGINNING OF:
 ## PHYSICAL AND ENVIRONMENTAL PROTECTION
@@ -2567,13 +2706,15 @@ satisfies:
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-5
+# Maybe someday add rules https://javapipe.com/blog/iptables-ddos-protection/
 - control_key: SC-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
   narrative:
     - text: |
-        ''
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-7
@@ -2670,11 +2811,13 @@ satisfies:
 - control_key: SC-21
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'Control response text is being planned/developed through:
-        https://github.com/ComplianceAsCode/redhat/issues/592'
+        'Documentation to configure DNSSEC is provided in the Red Hat
+        Security Guide:
+
+        https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-securing_dns_traffic_with_dnssec#sec-Security_Guide-Installing_DNSSEC'
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/SC-22
@@ -2699,7 +2842,9 @@ satisfies:
 
         - CCE-27211-2: Enable ExecShield via sysctl
         - CCE-80659-6: Restrict Exposed Kernel Pointer Addresses Access
-        - CCE-27127-0: Enable Randomized Layout of Virtual Address Space'
+        - CCE-27127-0: Enable Randomized Layout of Virtual Address Space
+        - CCE-27288-0: Ensure No Daemons are Unconfined by SELinux
+        - CCE-80418-7: Enable the fips_mode SELinux Boolean'
 ##
 ## BEGINNING OF:
 ## SYSTEM AND INFORMATION INTEGRITY
