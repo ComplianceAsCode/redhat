@@ -1,9 +1,9 @@
 schema_version: "1.0.0"
-name: Red Hat Identity Management
+name: Red Hat Insights
 metadata:
-  description: Red Hat Identity Management
+  description: Red Hat Insights
   maintainers:
     - Shawn Wells <shawn@redhat.com>
 
 components:
-  - ./idm.yaml
+  - ./insights.yaml

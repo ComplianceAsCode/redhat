@@ -1,9 +1,0 @@
-schema_version: "1.0.0"
-name: Red Hat OpenStack Platform 13
-metadata:
-  description: Red Hat OpenStack Platform 13
-  maintainers:
-    - Shawn Wells <shawn@redhat.com>
-
-components:
-  - ./osp13.yaml
