@@ -1,0 +1,2727 @@
+---
+documentation_complete: false
+name: Red Hat Identity Management
+schema_version: 3.0.0
+satisfies:
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance for satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/2'
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/3'
+    - key: b
+      text: |
+        'Documentation/guiodance for this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/4'
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation/guidance for this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/5'
+    - key: b
+      text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/6'
+    - key: c
+      text: |
+        'The banner text, as identified in AC-8(a), and banner acknowledgement,
+        as defined in AC-8(b), will be the same regardless of what network(s)
+        the Red Hat Identity Management console is accessed from. This control
+        is not applicable.'
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Regardless of access mechanism, such as the Red Hat Identity Management
+        console, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-configurable behavior.
+
+        External service APIs also require authentication
+        prior to granting resource access.'
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## AWARENESS AND TRAINING CONTROLS
+##
+
+- control_key: AT-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PM-15.'
+##
+## BEGINNING OF:
+## AUDIT AND ACCOUNTABILITY
+##
+
+- control_key: AU-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Red Hat Identity Management audit records contain this information
+        by default. No additional configuration is required.'
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Red Hat Identity Management Administrators  are responsible for
+        alerting personnel or roles in the event of an audit processing
+        failure. A successful
+        control response will outline the process taken to alert personnel
+        when an auditing failure occurs.
+
+        Documentation/guidance on alerting administrators is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/19'
+    - key: b
+      text: |
+        'In the event of an audit processing failure, Red Hat Identity
+        Management Administrators
+        are responsible for: overwriting the oldest audit records for low
+        impact systems and shutting down moderate impact systems. A successful
+        control response will outline the actions taken when an auditing
+        failure occurs.
+
+        Documentation/guidance on achieving this control is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/20'
+
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: AU-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'Red Hat Identity Management time keeping relies on the time services
+        provided by the underlying operating system. This control is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+    - key: b
+      text: |
+        'Red Hat Identity Management time keeping relies on the time
+        services provided by the
+        underlying operating system. This control is not applicable to the
+        configuration of Red Hat Identity Management.'
+
+- control_key: AU-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Customers are required to protect the audit information and audit
+        tools from unauthorized access, modification, and deletion. A successful
+        control response will discuss the way that audit information and tools
+        are protected. This can include how access is controlled to audit
+        information and tools.
+
+        Documentation/instructions on protecting Red Hat
+        Identity Management audit information
+        is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/21'
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/instructions on audit retention is being tracked
+        in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/22'
+
+- control_key: AU-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Customers are required to provide record generation capability for the
+        events defined in AU-2a at all information system components where audit
+        capability is available. A successful control response will discuss the
+        coniguration of all system components to capture the events that were
+        defined in AU-2.
+
+        Documentation/guidance on configuring auditable events is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/23'
+    - key: b
+      text: |
+        '//*
+        Customers are required to allow defined personnel or roles to select
+        which auditable events are to be audited by specific components of the
+        information system. A successful control response will discuss how
+        audit generation is implemented, and who selects and configures
+        auditable events on the information system. Approved personnel or
+        roles are defined in AU-9(4).
+
+        Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/24'
+    - key: c
+      text: |
+        'Customers are required to generate audit records for the events
+        defined in AU-2d with the content defined in AU-3. A successful control
+        response will discuss how audit records are generated, and how they meet
+        the requirements defined in AU-2 and AU-3.
+
+        Documentation/guidance on satisfying this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/25'
+##
+## BEGINNING OF:
+## SECURITY ASSESSMENT AND AUTHORIZATION
+##
+
+- control_key: CA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
+
+# ADMINISTRATORS NOTE ON CM-2:
+#       Implimentation of this control varies greatly between customers. Some
+#       want centralized config management, while others expect component
+#       administrators to handle this (e.g. maintain custom Ansible scripts).
+#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
+#       however it's best to double check with the Information System owner
+#       on expectations (component vs central CM).
+#
+#       In case the customer desires components (e.g. Red Hat Identity
+#       Management Admins) to handle configuration management the
+#       lines below can be uncommented:
+#
+
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management. Use of the NIST National Checklist
+        for Red Hat Identity Management is suggested as a supported,
+        US Government recognized, vendor supported, baseline.'
+    - key: b
+      text: |
+        'The customer will be responsible for implementing configuration
+        settings as defined in CM-6(a). A successful control response will
+        describe how mandatory configuration settings are implemented. This can
+        include the process or documentation followed.
+
+        Creation of a Red Hat Identity Management configuration baseline
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/40'
+    - key: c
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: d
+      text: |
+        'The customer will be responsible for monitoring and controlling
+        changes to the configuration settings in accordance with organization
+        policies and procedures. A successful control response will describe
+        how changes are controlled and monitored. This can include limitations
+        to privileges, how these changes are audited, and any tools in place to
+        track and approve changes.'
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Red Hat Identity Management provides many capabilities, including
+        user authentication, DNS integration, and several APIs. A successful
+        control response will outline which services are enabled
+        and their mission purpose.'
+
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## CONTINGENCY PLANNING
+##
+
+- control_key: CP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: CP-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of user-level information contained in the
+        information system. Additional FedRAMP requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/51'
+    - key: b
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of system-level information contained in the
+        information system. Additional FedRAMP requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/52'
+    - key: c
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of information system documentation including
+        security-related documentation. Additional FedRAMP requirements and
+        guidance include maintaining at least three backup copies of user-level
+        information (at least one of which is available online) or provides an
+        equivalent alternative. A successful control response will detail how
+        backups of user-level information occures, and how three backup copies
+        are maintained.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/53'
+    - key: d
+      text: |
+        'The customer will be responsible for protecting the confidentiality,
+        integrity, and available of backup information at storage locations.
+        Additional FedRAMP requirements and guidance include determining
+        what elements of the cloud environment require the Information System
+        Backup control. The customer will determine how Information System
+        Backup is going to be verified and appropriate periodicity of the
+        check.
+
+        Guidance on establishing such backups is being tracked in GitHub:
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/54'
+
+- control_key: CP-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for documenting how to reconstitute
+        their Red Hat Identity Management environment. A successful control
+        response will detail
+        processes used to fully recover/restore the Red Hat Identity
+        Management environment.'
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: IA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/guidance on configuring Red Hat
+        Identity Management against
+        this requirement is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/61'
+
+- control_key: IA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for network access to privileged accounts.
+
+        A successful control response will need to address all network-
+        accessible privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        Documentation/guidance is being tracked through GitHub:
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/62
+
+        NOTE:
+        Many customers are accepting password-enabled SSH keys as multi-
+        factor authentication. The SSH key (something they have) and the
+        decryption password (something they know). Prior to enabling CAC
+        and PIV cards, it is recommended to seek guidance from the
+        Information Security Officer responsible for authorization of
+        Red Hat Identity Management.'
+
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verification (PIV) credentials are those credentials
+        issued by federal agencies that conform to FIPS Publication 201 and
+        supporting guidance documents. Customers will not be expected to perform
+        this credential verification for government agencies. A mechanism for
+        allowing government agencies to perform credential verification in a way
+        that can be trusted by the customer system is through Active Directory
+        Federation Services (ADFS).
+
+        Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/63'
+
+- control_key: IA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: c
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: d
+      text: |
+        'Documentation/guidance on preventing the reuse of identifiers is
+        being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/64'
+    - key: e
+      text: |
+        'Documentation/guidance on disabling idle accounts is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/65'
+
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+    - key: b
+      text: |
+        'Documentation/guidance on how to configure initial authenticator
+        metadata is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/66'
+    - key: c
+      text: |
+        'Documentation/guidance on ensuring authenticators have sufficient
+        strenth of mechanism for their purpose is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/67'
+    - key: d
+      text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/68'
+    - key: e
+      text: |
+        'Documentation/guidance for this control is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/69'
+    - key: f
+      text: |
+        'Guidance/documentation for establishing minimum/maximum lifetime
+        restrictions and reuse conditions for authenticators is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/70'
+    - key: g
+      text: |
+        'Guidance on changing/refreshing authenticators after an
+        organizationally-defined time period is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/71'
+    - key: h
+      text: |
+        'Documentation/guidance for this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/72'
+    - key: i
+      text: |
+        'Documentation/guidance for this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/73'
+    - key: j
+      text: |
+        'This is an organizational control outside the scope of configuring
+        Red Hat Identity Management.'
+
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation/guidance on implementing password complexity
+        is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/74'
+    - key: b
+      text: |
+        'Documentation/guidance on implementing changed characters during
+        password creation is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/75'
+    - key: c
+      text: |
+        'Documentation/guidance on storing and transmitting only
+        cryptographically-protected passwords is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/76'
+    - key: d
+      text: |
+        'Documentation/guidance on enforcing password minimum and maximum
+        lifetime restrictions is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/77'
+    - key: e
+      text: |
+        'Documentation/guidance on enforcing password minimum and maximum
+        lifetime restrictions is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/78'
+    - key: f
+      text: |
+        'Documentation/guidance on enforcing an immediate change to temporary
+        passwords is being tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/79'
+
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: IA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Red Hat Identity Management natively obscures such information.
+        Red Hat Identity Management cannot be
+        configured to be out of compliance with this requirement.'
+
+- control_key: IA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for configuring Red Hat Identity
+        Management to use
+        appropriate cryptographic modules. A successful control response will
+        document what modules are in use, how to attest the configuration is
+        in place, and references to supporing documentation outlining the
+        FIPS 140-2 certification for enabled modules.
+
+        Documentation to satisfy this control is being tracked on GitHub:
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/81'
+
+- control_key: IA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for identifying and authenticating
+        non-organizational users accessing the customer application. A
+        successful control response will need to address how non-organizational
+        users are defined and the process by which identification
+        and authentication takes place, including any differences from
+        identification and authentication for organizational users.
+
+        Documentation on how to satisfy this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/82'
+
+- control_key: IA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verificiation (PIV) credentials are those
+        credentials issued by federal agencies that conform to FIPS Publication
+        201 and supporting guidance documents. Customers will not be expected
+        to perform this credential verification for government agencies. A
+        mechanism for allowing government agencies to perform credential
+        verification in a way that can be trusted by the customer system is
+        through Active Directory Federation Services (ADFS) or Red Hat IdM.
+
+        Documentation on satisfying this control is being tracked on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/82'
+
+- control_key: IA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.
+
+        Documentation/guidance for this control is being tracked
+        on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/84'
+
+- control_key: IA-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.
+
+        Documentation/guidance for this control is being tracked via
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/85'
+
+- control_key: IA-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.
+
+        Documentation/guidance for this control is being developed on
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/86'
+##
+## BEGINNING OF:
+## INCIDENT RESPONSE
+##
+- control_key: IR-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  IR-2 (1) relates to creating simulated events/scenarios
+##  relating to incident response. While this is an organizational
+##  control, consider creating component-specific incident
+##  response simulations as appropriate (e.g. if a virtualization
+##  product, what happens after a VM escape?).
+##
+- control_key: IR-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  IR-4 (2) is *technically* an organizational control, however
+##  many accreditors/auditors will want to understand how the
+##  system component integrates with dynamic reconfiguration capabilities.
+##  Lacking formal guidance from the government, some auditors expect a
+##  response to this control at the component level.
+##
+- control_key: IR-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  Often 3rd party auditors will incorrectly state satisfaction of IR-5 (1)
+##  relates to centralized audit logging of security events.
+##
+##  Central audit logging is covered under other controls, namely:
+##  - AU-6 (3) - Correlate Audit Repositories
+##  - AU-6 (4) - Central Review and Analysis
+##  - AU-12 - Audit Generation
+##
+- control_key: IR-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+##
+## BEGINNING OF:
+## MAINTENANCE
+##
+
+- control_key: MA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: MA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: MA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: MA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## MEDIA PROTECTION
+##
+
+- control_key: MP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: MP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: MP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: MP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## PHYSICAL AND ENVIRONMENTAL PROTECTION
+##
+
+- control_key: PE-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-13 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-13 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-15 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-19 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+
+- control_key: PE-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of Red Hat IdM configuration.'
+##
+## BEGINNING OF:
+## PLANNING
+##
+
+- control_key: PL-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-7.'
+
+- control_key: PL-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-8.'
+
+- control_key: PL-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-2.'
+
+- control_key: PL-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into Appendix J, AR-2.'
+
+- control_key: PL-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-2.'
+
+- control_key: PL-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+##
+## BEGINNING OF:
+## PERSONNEL SECURITY
+##
+
+- control_key: PS-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PS-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PS-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PS-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PS-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PS-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PS-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: PS-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## RISK ASSESSMENT
+##
+
+- control_key: RA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: RA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: RA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: RA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## SYSTEM AND SERVICES ACQUISITION
+##
+
+- control_key: SA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Developers note on SA-4 (1):
+##  This control requires that developers of system components, e.g.
+##  application servers, to provide a description of the functional
+##  properties of the security controls to be deployed.
+##
+##  A a generally accepted control response is to provide a security
+##  configuration guide, such as a NIST National Checklist or DoD
+##  STIG, for the component.
+##
+##  In absense of an approved government configuration baseline,
+##  note this requirement is satisfied by a *description* of
+##  functional properties. Implimentation details are offered in
+##  SA-4(2).
+##
+- control_key: SA-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (1) is planned.'
+
+##
+## Developers note on SA-4 (2):
+##  This control differs from SA-4 (1) in that implementation
+##  details are now required.
+##
+##  The majority of FedRAMP and FISMA Moderate systems refine this control
+##  with the following:
+##    - Provide design and implementation regarding security-relevant
+##      external system interfaces and high-level design;
+##    - Provide design and implementation information required by the
+##      SDL process;
+##    - Above should be provided with a level of detail sufficient for
+##      secure deployment.
+##
+- control_key: SA-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (2) is planned.'
+
+##
+## Developers note on SA-4 (3):
+##  This is most frequently satisfied by demonstrating common criteria
+##  certification.
+##
+##  Lacking Common Criteria certification a detailed outline of SDLC practices
+##  is required.
+##
+- control_key: SA-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (3) is planned.'
+
+- control_key: SA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-8 (9).'
+
+##
+## Developers note on SA-4 (4):
+##  Note: For software components, such as operating systems, NIST considers it
+##  sufficient to provide install-time configuration. For example in RHEL7 a
+##  "Security Profile" menu is presented that installs Linux into known government
+##  baselines.
+##
+- control_key: SA-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (5) is planned.'
+
+##
+## Developers note on SA-4 (6):
+##  Note this is only applicable "when the networks used to transmit
+##  the information are at a lower classification than the information
+##  being transmitted."
+##
+##  If this component is not intended to enable cross domain infrastructure,
+##  this control potentially could be 'not applicable'.
+##
+- control_key: SA-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (6) is planned.'
+
+##
+## Developers note on SA-4 (7):
+##  As of 2018, protection profiles recognized by NIAP and those recognized
+##  by the broader Common Criteria effort have diverged. A listing of NIAP-
+##  recognized protection profiles can be found here:
+##
+##  https://www.niap-ccevs.org/Profile/PP.cfm
+##
+- control_key: SA-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (7) is planned.'
+
+##
+## Developers note on SA-4 (8):
+##  A successful control response will document how to achieve continuous
+##  monitoring of control/standards as identified in CA-7.
+##
+- control_key: SA-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (8) is planned.'
+
+##
+## Developers note on SA-4 (9):
+##  A successful control response will document all network
+##  information. Take care to document internal network usage,
+##  including loopback devices, as it is customary to block all
+##  traffic not explicitly outlined in this control.
+##
+- control_key: SA-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (9) is planned.'
+
+- control_key: SA-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (1).'
+
+- control_key: SA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (2).'
+
+- control_key: SA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (3).'
+
+- control_key: SA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (4).'
+
+- control_key: SA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (5).'
+
+- control_key: SA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-10 and SI-7.'
+
+- control_key: SA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-11 and SI-7.'
+
+- control_key: SA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Developers note on SA-10
+##  A successful control response will document all network
+##  information. Take care to document internal network usage,
+##  including loopback devices, as it is customary to block all
+##  traffic not explicitly outlined in this control.
+##
+- control_key: SA-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    ## A successful control response will document performance of configuration
+    ## management. Processes and mechanisms involved in configuration management
+    ## will need to be addressed.
+    - key: a
+      text: |
+        'A control response to SA-10 (a) is planned.'
+
+    ## A successful control response will need to address the processes
+    ## and mechanisms involved in documenting, managing, and controlling the
+    ## integrity of chances.
+    - key: b
+      text: |
+        'A control response to SA-10 (b) is planned.'
+
+    ## A successful control response will need to address the approval process
+    ## and safeguards in place to ensure only approved changes are implemented.
+    - key: c
+      text: |
+        'A control response to SA-10 (c) is planned.'
+
+    ## A successful control response will need to discuss the process for
+    ## documentation.
+    - key: d
+      text: |
+        'A control response to SA-10 (d) is planned.'
+
+    ## A successful control response will need to discuss the process
+    ## and tools used for tracking, resolution, and reporting.
+    - key: e
+      text: |
+        'A control response to SA-10 (e) is planned.'
+
+##
+## Developers note on SA-10 (1)
+##  A successful controlr response will need to address the process and
+##  mechanisms involved in integrity verification.
+##
+##  For example, TPM+TXT for hardware and operating systems.
+##
+- control_key: SA-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (1) is planned.'
+
+- control_key: SA-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Developers note on SA-10 (3)
+##  This control differs from SA-10 (1) by focusing on hardware
+##  (vs software and firmware).
+##
+##  This control may not be applicable if the component being documented
+##  is not involved in the system boot process.
+##
+- control_key: SA-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (1) is planned.'
+
+##
+## Developers note on SA-10 (4)
+##  This control may not be applicable if the component being documented
+##  is not involved in the system boot process.
+##
+- control_key: SA-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (4) is planned.'
+
+##
+## Developers note on SA-10 (4)
+##  tbd
+##
+- control_key: SA-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (5) is planned.'
+
+##
+## Developers note on SA-10 (4)
+##  tbd
+##
+- control_key: SA-10 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (6) is planned.'
+##
+## BEGINNING OF:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
+
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicableß
+  narrative:
+    - text: ''
+
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation on how communications at key internal boundaries of
+        Red Hat Identity Management can be monitored is forthcoming.
+        This activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/142'
+    - key: b
+      text: |
+        'Documentation regarding how Red Hat Identity Management can
+        implement subnetworks
+        for publicly accessible system components is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/143'
+    - key: c
+      text: |
+        'Documentation regarding how Red Hat Identity Management can route
+        connections to external
+        systems through a managed interface is forthcoming. This
+        activity is being trackedin GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/144'
+
+- control_key: SC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding how Red Hat Identity Management generates,
+        distributes, stores,
+        accesses, and desctructs, cryptographic keys is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/145'
+
+- control_key: SC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding Red Hat Identity Management's usage of
+        cryptography and applicability to Federal laws is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/146'
+
+- control_key: SC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: SC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation on how to configure Red Hat Identity Management DNS services to provide
+        data origin authentication and integrity verification is forthcoming.
+        That activity is being tracked GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/147'
+    - key: b
+      text: |
+        'Documentation on how to configure this functionality within
+        Red Hat Identity Management is forthcoming. This activity is being tracked in
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/148'
+
+- control_key: SC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation on enabling DNSSEC within Red Hat Identity Management is forthcoming. This
+        activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/149'
+
+- control_key: SC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation on creating fault-tolerant DNS configurations within
+        Red Hat Identity Management is forthcoming. This activity is being
+        tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/150'
+
+- control_key: SC-39
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'When Red Hat Identity Management runs on Red Hat Enterprise Linux,
+        Red Hat Identity Management maintains separate execution domains for
+        each executing process by
+        assigning a private virtual address space to each process.
+
+        Documentation on ensuring this functionality is configured is forthcoming.
+        This activity is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/151'
+##
+## BEGINNING OF:
+## SYSTEM AND INFORMATION INTEGRITY
+##
+- control_key: SI-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SI-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for analyzing their
+        Red Hat Identity Management deployment for
+        flaws, reporting on those flaws, and correcting them. A successful
+        control response will include a discussion of the process by which
+        flaws are discovered and remediated, as well as tools that are used to
+        assist in detection and remediation.
+
+        Documentation of the overall process of vulnerability identification to
+        patching is forthcoming. This work is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/155'
+    - key: b
+      text: |
+        'The customer will be responsible for testing
+        Red Hat Identity Management updates
+        related to flaw remediation prior to installation. A successful
+        control response will discuss the testing process (e.g. the
+        nature of the test environment, the types of testing performed,
+        the tools in testing, etc.).
+
+        Documentation regarding suggested testing procedures is forthcoming.
+        This work is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/156'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SI-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer is responsible for ensuring that they employ malicious
+        code protection at information system entry, and exit points to detect
+        and eradicate malicious code. A successful control response will need
+        to address use of code protection mechanisms to protect assets from
+        malicious software (i.e. Viruses, malware, rootkits, worms, and
+        scripts). In regards to Red Hat Identity Management,
+        this is generally through
+        integrating third party tools into CI/CD pipelines.
+
+        Documentation and suggested integration procedures are forthcoming.
+        This work is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/158'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+    - key: c
+      text: |
+        'In the scope of Red Hat Identity Management, this control is
+        duplicative of SI-3(a).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Identity Management.'
+
+- control_key: SI-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: SI-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''
+
+- control_key: SI-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for handling and retaining
+        information within, or hosted by, Red Hat Identity Management in
+        accordance with applicable federal laws, Executive Orders,
+        directives, policies, regulations, standards, and operational
+        requirements. A successful control response will need to outline
+        the specific requirements applicable to customer information
+        handling and retention, and the means by which those requirements
+        are met.
+
+        Documentation and suggestions on protecting customer information
+        hosted within the Red Hat Identity Management environment
+        is forthcoming. This activity
+        is being tracked in GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-identity-management/issues/159'
+
+- control_key: SI-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Red Hat Red Hat Identity Management Container Platform
+        inherits memory protections
+        provided by the underlying operating system. This control is not
+        applicable to Red Hat Red Hat Identity Management Container Platform.'

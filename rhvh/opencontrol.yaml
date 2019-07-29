@@ -1,0 +1,20 @@
+schema_version: "1.0.0"
+name: Red Hat Virtualization Host
+metadata:
+  description: |
+    'Red Hat Virtualization Host (RHVH) is a minimal operating system based
+    on Red Hat Enterprise Linux that is designed to provide a simple method for
+    setting up a physical machine to act as a hypervisor in a Red Hat
+    Virtualization environment. The minimal operating system contains only the
+    packages required for the machine to act as a hypervisor, and features
+    a Cockpit user interface for monitoring the host and performing
+    administrative tasks.'
+
+  maintainers:
+    - Shawn Wells <shawn@redhat.com>
+    - Gabriel Alford <ralford@redhat.com>
+    - Ryan Barry <rbarry@redhat.com>
+
+components:
+  - ./rhvh.yaml
+
