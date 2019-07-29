@@ -2,10 +2,13 @@
 #
 #
 
-all: clean ansible openshift openstack idm rhvh rhvm
+all: ansible openshift openstack idm rhvh rhvm
 
 ansible:
 	cd ansible-tower && make && cd -
+
+coreos:
+	cd coreos-4 && make && cd -
 
 openshift:
 	cd openshift-container-platform-3 && make && cd -
