@@ -41,9 +41,9 @@ dependencies:
     - url: https://github.com/ComplianceAsCode/redhat
       contextdir: coreos4
       revision: opencontrol
-    - url: https://github.com/RedHatGov/fedramp-opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
       contextdir: insights
       revision: opencontrol
-    - url: https://github.com/RedHatGov/fedramp-opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
       contextdir: openshift-dedicated
       revision: opencontrol
