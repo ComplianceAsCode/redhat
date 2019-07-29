@@ -103,7 +103,7 @@
 
 ##
 ## Ref: https://access.redhat.com/solutions/2191161
-## "How to modify console session timeouts in Openshift 3"
+## "How to modify console session timeouts in CoreOS 3"
 ##
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
@@ -125,11 +125,11 @@
     - key: b
       text: |
         'This is an organizational control and not applicble to the configuration
-        of OpenShift.'
+        of CoreOS.'
     - key: c
       text: |
         'This is an organizational control and not applicble to the configuration
-        of OpenShift.'
+        of CoreOS.'
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -459,8 +459,8 @@
   narrative:
     - text: |
         'Data release markings, such as NATO or NOFORN, is the responsibility
-        of application and data owners running workload on the OpenShift platform.
-        This control is not applicable to the configuration of OpenShift itself.'
+        of application and data owners running workload on the CoreOS platform.
+        This control is not applicable to the configuration of CoreOS itself.'
 
 - control_key: AC-17
   standard_key: NIST-800-53
@@ -469,7 +469,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
@@ -478,7 +478,7 @@
   narrative:
     - text: |
         'All system events, regardless of local or remote, are captured through
-        the OpenShift and underlying Red Hat Enterprise Linux audit subsystem.
+        the CoreOS and underlying Red Hat Enterprise Linux audit subsystem.
         This control is inherently met when auditing is enabled.'
 
 - control_key: AC-17 (2)
@@ -512,7 +512,7 @@
         distribution. This technology, named firewalld, allows a system
         administrator to configure host-based rules which take effect
         immediately. This gives an CoreOS operator the ability to immediately
-        drop all remote connections. 
+        drop all remote connections.
 
         Additionally, CoreOS nodes may be placed into Maintenance Mode. This
         designation will migrate applications from a given cluster node to
@@ -526,7 +526,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
-  narrative: 
+  narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of CoreOS.'
