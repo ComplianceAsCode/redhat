@@ -15,51 +15,18 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - key: a
-      text: |
-        'AC-1(a) is an organizational control outside the scope of OpenShift configuration.'
-    - key: b
-      text: |
-        'AC-1(b) is an organizational control outside the scope of OpenShift configuration.'
+    - text: 'AC-1 is an organizational control outside the scope of
+             configuring CoreOS. Implementing AC-1 falls under
+             technical controls, such as AC-2 (3) which disables
+             inactive accounts.'
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - key: a
-      text: |
-        'AC-2(a) is an organizational control outside the scope of OpenShift configuration.'
-    - key: b
-      text: |
-        'AC-2(b) is an organizational control outside the scope of OpenShift configuration.'
-    - key: c
-      text: |
-        'AC-2(c) is an organizational control outside the scope of OpenShift configuration.'
-    - key: d
-      text: |
-        'AC-2(d) is an organizational control outside the scope of OpenShift configuration.'
-    - key: e
-      text: |
-        'AC-2(e) is an organizational control outside the scope of OpenShift configuration.'
-    - key: f
-      text: |
-        'AC-2(f) is an organizational control outside the scope of OpenShift configuration.'
-    - key: g
-      text: |
-        'AC-2(g) is an organizational control outside the scope of OpenShift configuration.'
-    - key: h
-      text: |
-        'AC-2(h) is an organizational control outside the scope of OpenShift configuration.'
-    - key: i
-      text: |
-        'AC-2(i) is an organizational control outside the scope of OpenShift configuration.'
-    - key: j
-      text: |
-        'AC-2(j) is an organizational control outside the scope of OpenShift configuration.'
-    - key: k
-      text: |
-        'AC-2(k) is an organizational control outside the scope of OpenShift configuration.'
+    - text: 'AC-2 is an organizational control outside the scope
+             of configuring CoreOS.'
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
@@ -67,12 +34,12 @@
   implementation_status: not applicable
   narrative:
     - text:
-        'OpenShift components of the system support automated
+        'CoreOS components of the system support automated
         management through monitoring of accounts and system
         activity by logging of related information.
 
-        While OpenShift can generate audit data, and securely
-        transport the data to a SIEM, OpenShift does not provide
+        While CoreOS can generate audit data, and securely
+        transport the data to a SIEM, CoreOS does not provide
         automated mechanisms (e.g. email, text messages) after
         system events. This functionality would fall to third
         party software.'
@@ -90,7 +57,7 @@
   implementation_status: not applicable
   narrative:
     - text:
-        'OpenShift does not have the capability to create
+        'CoreOS does not have the capability to create
         guest/anonymous accounts or temporary accounts. Any
         external emergency or temporary accounts will be
         inherited from, and managed by, an external
@@ -113,7 +80,7 @@
   implementation_status: not applicable
   narrative:
     - text:
-        'OpenShift end-user account management is inherited from
+        'CoreOS end-user account management is inherited from
         the hosting environment.Automatic disabling of these
         accounts must happen at the centralized account
         management level; for example, within LDAP, Red Hat
@@ -125,7 +92,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'To meet FISMA requirements, OpenShift must be configured
+        'To meet FISMA requirements, CoreOS must be configured
         to use centralized authentication (e.g. LDAP, Red Hat IdM,
         Active Directory). The audit of account creation,
         modification, enabling, disabling, and removal actions is
@@ -136,17 +103,16 @@
 
 ##
 ## Ref: https://access.redhat.com/solutions/2191161
-## "How to modify console session timeouts in Openshift 3"
+## "How to modify console session timeouts in CoreOS 3"
 ##
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: unknown
   narrative:
     - text: |
-        'Within OpenShift, the sessionMaxAgeSeconds variable in the
-        master-config.yaml file controls when/if users must logout after a
-        period of inactivity.'
+        'This control has not been evaluated in the context of
+        CoreOS.'
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
@@ -155,22 +121,15 @@
   narrative:
     - key: a
       text: |
-        'OpenShift roles can be used to grant various levels of access both
-        cluster-wide as well as at the project scope. Users and gruops can be
-        associated with, or bound to, multiple roles at the same time.
-
-        Documentation regarding the management of Role-based Access Control
-        can be found in the OpenShift Cluster Administration guide:
-
-        https://docs.openshift.com/container-platform/3.11/admin_guide/manage_rbac.html'
+        'This control has not been evaluated in the context of CoreOS.'
     - key: b
       text: |
         'This is an organizational control and not applicble to the configuration
-        of OpenShift.'
+        of CoreOS.'
     - key: c
       text: |
         'This is an organizational control and not applicble to the configuration
-        of OpenShift.'
+        of CoreOS.'
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -179,7 +138,7 @@
   narrative:
     - text: |
         'This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.'
+        and outside the scope of CoreOS configuration.'
 
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
@@ -187,11 +146,11 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'OpenShift does not have the concept of group accounts.
+        'CoreOS does not have the concept of group accounts.
 
         Should the organization allow shared credentials, the
         creation and management of such would fall under the scope
-        of operating the shared identity service and not OpenShift.'
+        of operating the shared identity service and not CoreOS.'
 
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
@@ -200,7 +159,7 @@
   narrative:
     - text: |
         'This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.'
+        and outside the scope of CoreOS configuration.'
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
@@ -210,11 +169,11 @@
     - key: a
       text: |
         'This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.'
+        and outside the scope of CoreOS configuration.'
     - key: b
       text: |
         'This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.'
+        and outside the scope of CoreOS configuration.'
 
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
@@ -223,51 +182,25 @@
   narrative:
     - text: |
         'This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.'
+        and outside the scope of CoreOS configuration.'
 
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - text: |
-        'Authorization policies determine whether a user is allowed to perform
-        a given action within an OpenShift project. This allows platform
-        administrators to use policy to control who has various access levels
-        to the OpenShift Container Platform itself and all projects. It also
-        allows developers to use local policy to control who has access to
-        their projects. Note that authorization is a separate step from
-        authentication, which is more about determining the identity of who
-        is taking the action.
-
-        Documentation of OpenShift authorization frameworks and policies 
-        can be found in the OpenShift Architecture documentation:
-
-        https://docs.openshift.com/container-platform/3.3/architecture/
-        additional_concepts/authorization.html
-
-        Each OpenShift deployment is unique in their rules, roles,
-        policy bindings. This section should be updated with deployment
-        specific details on how the authorization policy has been
-        configured.'
+        'This control has not been evaluated in the context of
+        CoreOS.'
 
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unknown
   narrative:
     - text: |
-        'The customer will be responsible for controlling the flow of
-        information within the customer application, and between the customer
-        application and external systems. A successful control response will
-        need to address the customer information flow control policies,
-        as well as mechanisms in place to enforce those policies.>
-
-        <A review of OpenShift v3 networking can be found in the OpenShift
-        Architecture guide:
-
-        https://docs.openshift.com/container-platform/3.3/architecture/
-        additional_concepts/networking.html'
+        'This control has not been evaluated in the context of
+        CoreOS.'
 
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
@@ -287,7 +220,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This is an organizational control outside the scope of OpenShift
+        'This is an organizational control outside the scope of CoreOS
         configuration.'
 
 - control_key: AC-6 (2)
@@ -297,16 +230,16 @@
   narrative:
     - text: |
         'This is an organizational/procedural control outside the scope of
-        OpenShift configuration.
+        CoreOS configuration.
 
         The customer will be responsible for requiring users to use the
         lowest level of access required to perform any given function. In
-        terms of OpenShift, this may require creation of multiple logon
+        terms of CoreOS, this may require creation of multiple logon
         accounts per user. When users require access to privileged functions
         or capability, they will need to logout from the unprivileged account
         and login with an account that has received appropriate RBAC rights.
 
-        Note OpenShift does not have privilege escalation capabilities similar
+        Note CoreOS does not have privilege escalation capabilities similar
         to sudo in Linux. Users will have to completely logout/login when
         requiring privilege escalation between accounts.'
 
@@ -316,7 +249,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This is an organizational control outside the scope of OpenShift
+        'This is an organizational control outside the scope of CoreOS
         configuration.'
 
 - control_key: AC-6 (5)
@@ -325,7 +258,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This is an organizational control outside the scope of OpenShift
+        'This is an organizational control outside the scope of CoreOS
         configuration.'
 
 - control_key: AC-6 (7)
@@ -335,23 +268,20 @@
   narrative:
     - key: a
       text: |
-        'This is an organizational control outside the scope of OpenShift
+        'This is an organizational control outside the scope of CoreOS
         configuration.'
     - key: b
       text: |
-        'This is an organizational control outside the scope of OpenShift
+        'This is an organizational control outside the scope of CoreOS
         configuration.'
 
 - control_key: AC-6 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: unknown
   narrative:
     - text: |
-        'Satisfaction of this control is inherited from configuration
-        of the underlying operating system. When OpenShift is deployed
-        on Red Hat Enterprise Linux, or Red Hat OpenShift, and SELinux is
-        enforcing, this control is satisfied.'
+        'This control has not been evaluated in the context of CoreOS.'
 
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
@@ -384,19 +314,11 @@
     - key: a
       text: |
         'The customer will be responsible for enforcing a limit on consecutive
-        failed login attempts.
-
-        Documentation/implementation guidance for this control is being tracked
-        through Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-1'
+        failed login attempts.'
     - key: b
       text: |
         'The customer will be responsible for taking the FedRAMP required
-        actions defined by the customer, upon account lockout.
-
-        Documentation/implementation guidance for this control is being tracked
-        through Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-2'
+        actions defined by the customer, upon account lockout.'
 
 - control_key: AC-8
   standard_key: NIST-800-53
@@ -412,61 +334,44 @@
         notification banner may not be appropriate), as well as the contents
         of the nofication message.
 
-        In context of OpenShift, a banner must be displayed for all means
-        of accessing OpenShift itself (e.g. service consoles, remote access
-        through SSH, etc).
-
-        Documentation/implementation guidance for this control is being tracked
-        through Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-3'
+        In context of CoreOS, a banner must be displayed for all means
+        of accessing CoreOS itself (e.g. service consoles, remote access
+        through SSH, etc).'
     - key: b
       text: |
         'The customer will be responsible for displaying the use notification
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.
-
-        Documentation/implementation guidance for this control is being tracked
-        through Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-4'
+        acknowlegement and move forward.'
     - key: c
       text: |
-        '
-        '//*
-        The customer will be responsible for displaying a system use
+        'The customer will be responsible for displaying a system use
         information message to users. A successful control response will need
         to address the conditions under which the message will be
         displayed (if a non-government user accesses the system, the system
         use information message may not be appropriate), as well as the
         contents of the notification message, including references to
         applicable monitoring, recording, or auditing, and authorized usage
-        of the system.
-        */'
+        of the system.'
     - key: 'Req. 1'
       text: |
-        '//*
-        The customer will be responsible for determining the conditions
+        'The customer will be responsible for determining the conditions
         under which the system use notification will be displayed. These
-        conditions must be reviewed and accepted by the FedRAMP JAB.
-        */'
+        conditions must be reviewed and accepted by the FedRAMP JAB.'
     - key: 'Req. 2'
       text: |
-        '//*
-        The customer will be responsible for how the system use notification
+        'The customer will be responsible for how the system use notification
         will be verified and how often it should be re-displayed and
         re-verified. These conditions must be reviewed an accepted by the
-        FedRAMP JAB.
-        */'
+        FedRAMP JAB.'
     - key: 'Req. 3'
       text: |
-        '//*
-        The customer will be responsible for verifying that the system use
+        'The customer will be responsible for verifying that the system use
         notification is being displayed as required, either through a
         configuration baseline check or via other means. If this verification
         does not happen through a configuration baseline check, the JAB must
-        review and accept the process used to perform the verification.
-        */'
+        review and accept the process used to perform the verification.'
 
 - control_key: AC-10
   standard_key: NIST-800-53
@@ -477,12 +382,7 @@
         'The customer will be responsible for limiting the number of
         concurrent sessions to the customer application as required.
         A successful control implemented will need to address the technical
-        mechanism used to enforce this limit.
-
-        Documentation on configuring this capability is being tracked in
-        GitHub:
-
-        https://github.com/ComplianceAsCode/redhat/issues/616'
+        mechanism used to enforce this limit.'
 
 - control_key: AC-11
   standard_key: NIST-800-53
@@ -492,12 +392,12 @@
     - key: a
       text: |
         'Not applicable. When AC-2(5) is implemented, the non-configurable
-        default behavior of OpenShift is to disconnect the idle users
+        default behavior of CoreOS is to disconnect the idle users
         from the management console after 15 minutes.'
     - key: b
       text: |
         'Not applicable. When AC-2(5) is implemented, the non-configurable
-        default behavior of OpenShift is to disconnect the idle users
+        default behavior of CoreOS is to disconnect the idle users
         from the management console after 15 minutes.'
 
 - control_key: AC-11 (1)
@@ -507,9 +407,9 @@
   narrative:
     - text: |
         'Not applicable. When AC-2(5) is implemented, the non-configurable
-        default behavior of OpenShift is to logout idle users from the
+        default behavior of CoreOS is to logout idle users from the
         management console. Once logged out the only information available
-        will be the OpenShift logon screen.'
+        will be the CoreOS logon screen.'
 
 - control_key: AC-12
   standard_key: NIST-800-53
@@ -531,13 +431,13 @@
     - key: a
       text: |
         'Whether user-initiated communication sessions originate
-        through the OpenShift web console or through command line,
+        through the CoreOS web console or through command line,
         users are given explicit logout capabilities. This is
-        default, non-configurable behavior of the OpenShift Container
+        default, non-configurable behavior of the CoreOS Container
         Platform.'
     - key: b
       text: |
-        'OpenShift displays an explicit logout message upon user
+        'CoreOS displays an explicit logout message upon user
         session terminiations. This is default, non-configurable
         behavior.'
 
@@ -547,7 +447,7 @@
   implementation_status: complete
   narrative:
     - text: |
-        'Regardless of access mechanism, such as the OpenShift Console or remote
+        'Regardless of access mechanism, such as the CoreOS Console or remote
         access attempts through SSH, unauthenticated users will only be shown the
         system use notifications (as defined in AC-8) and login prompt. This is
         non-confiurable behavior.'
@@ -559,8 +459,8 @@
   narrative:
     - text: |
         'Data release markings, such as NATO or NOFORN, is the responsibility
-        of application and data owners running workload on the OpenShift platform.
-        This control is not applicable to the configuration of OpenShift itself.'
+        of application and data owners running workload on the CoreOS platform.
+        This control is not applicable to the configuration of CoreOS itself.'
 
 - control_key: AC-17
   standard_key: NIST-800-53
@@ -569,7 +469,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
@@ -578,37 +478,16 @@
   narrative:
     - text: |
         'All system events, regardless of local or remote, are captured through
-        the OpenShift and underlying Red Hat Enterprise Linux audit subsystem.
+        the CoreOS and underlying Red Hat Enterprise Linux audit subsystem.
         This control is inherently met when auditing is enabled.'
 
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: unknown
   narrative:
     - text: |
-        'Beginning with OpenShift 3.11, when OpenShift is deployed on Red Hat Enterprise
-        Linux, and FIPS is enabled as a kernel setting, OpenShift will use OpenSSL
-        libraries instead of the native Golang crypto. The system operator will need to
-        verify that OpenShift is being deployed on a version of Red Hat Enterprise Linux
-        that has been FIPS validated.
-
-        Prior to OpenShift 3.11, remote sessions were encrypted using Golang-provided
-        cryptography. While not FIPS validated, this included the following
-        cryptographic algorithms and ciphers to protect the confidentiality
-        and integrity of remote access sessions:
-                - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-                - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-                - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-                - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-                - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-                - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-                - TLS_RSA_WITH_AES_128_CBC_SHA
-                - TLS_RSA_WITH_AES_256_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-                - TLS_RSA_WITH_3DES_EDE_CBC_SHA'
+        'This control has not been evaluated in the context of CoreOS.'
 
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
@@ -629,13 +508,13 @@
   implementation_status: complete
   narrative:
     - text: |
-        'OpenShift utilizes the firewall technology embedded into Red Hat
-        Enterprise Linux. This technology, named firewalld, allows a system
+        'CoreOS utilizes the firewall technology embedded into the
+        distribution. This technology, named firewalld, allows a system
         administrator to configure host-based rules which take effect
-        immediately. This gives an OpenShift operator the ability to immediately
-        drop all remote connections. 
+        immediately. This gives an CoreOS operator the ability to immediately
+        drop all remote connections.
 
-        Additionally, OpenShift nodes may be placed into Maintenance Mode. This
+        Additionally, CoreOS nodes may be placed into Maintenance Mode. This
         designation will migrate applications from a given cluster node to
         another, disconnecting any active sessions to a given cluster node.
 
@@ -647,10 +526,10 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
-  narrative: 
+  narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-18 (1)
   standard_key: NIST-800-53
@@ -667,7 +546,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-20
   standard_key: NIST-800-53
@@ -677,11 +556,11 @@
     - key: a
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
     - key: b
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-20 (1)
   standard_key: NIST-800-53
@@ -691,11 +570,11 @@
     - key: a
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
     - key: b
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-20 (2)
   standard_key: NIST-800-53
@@ -704,7 +583,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-20 (3)
   standard_key: NIST-800-53
@@ -713,7 +592,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-20 (4)
   standard_key: NIST-800-53
@@ -722,7 +601,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-21
   standard_key: NIST-800-53
@@ -732,11 +611,11 @@
     - key: a
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
     - key: b
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-21 (1)
   standard_key: NIST-800-53
@@ -745,7 +624,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-21 (2)
   standard_key: NIST-800-53
@@ -754,7 +633,7 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-22
   standard_key: NIST-800-53
@@ -764,19 +643,19 @@
     - key: a
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
     - key: b
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
     - key: c
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
     - key: d
       text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
 
 - control_key: AC-23
   standard_key: NIST-800-53
@@ -785,4 +664,4 @@
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        applicable to the configuration of CoreOS.'
