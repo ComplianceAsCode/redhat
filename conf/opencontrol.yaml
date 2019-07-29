@@ -38,3 +38,12 @@ dependencies:
     - url: https://github.com/ComplianceAsCode/redhat
       contextdir: rhvh
       revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: coreos4
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: insights
+      revision: opencontrol
+    - url: https://github.com/ComplianceAsCode/redhat
+      contextdir: openshift-dedicated
+      revision: opencontrol

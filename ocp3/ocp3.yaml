@@ -20,18 +20,51 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'AC-1 is an organizational control outside the scope of
-             configuring OpenShift. Implementing AC-1 falls under
-             technical controls, such as AC-2 (3) which disables
-             inactive accounts.'
+    - key: a
+      text: |
+        'AC-1(a) is an organizational control outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'AC-1(b) is an organizational control outside the scope of OpenShift configuration.'
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'AC-2 is an organizational control outside the scope
-             of configuring OpenShift.'
+    - key: a
+      text: |
+        'AC-2(a) is an organizational control outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'AC-2(b) is an organizational control outside the scope of OpenShift configuration.'
+    - key: c
+      text: |
+        'AC-2(c) is an organizational control outside the scope of OpenShift configuration.'
+    - key: d
+      text: |
+        'AC-2(d) is an organizational control outside the scope of OpenShift configuration.'
+    - key: e
+      text: |
+        'AC-2(e) is an organizational control outside the scope of OpenShift configuration.'
+    - key: f
+      text: |
+        'AC-2(f) is an organizational control outside the scope of OpenShift configuration.'
+    - key: g
+      text: |
+        'AC-2(g) is an organizational control outside the scope of OpenShift configuration.'
+    - key: h
+      text: |
+        'AC-2(h) is an organizational control outside the scope of OpenShift configuration.'
+    - key: i
+      text: |
+        'AC-2(i) is an organizational control outside the scope of OpenShift configuration.'
+    - key: j
+      text: |
+        'AC-2(j) is an organizational control outside the scope of OpenShift configuration.'
+    - key: k
+      text: |
+        'AC-2(k) is an organizational control outside the scope of OpenShift configuration.'
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
@@ -322,7 +355,7 @@ satisfies:
     - text: |
         'Satisfaction of this control is inherited from configuration
         of the underlying operating system. When OpenShift is deployed
-        on Red Hat Enterprise Linux, or Red Hat CoreOS, and SELinux is
+        on Red Hat Enterprise Linux, or Red Hat OpenShift, and SELinux is
         enforcing, this control is satisfied.'
 
 - control_key: AC-6 (9)

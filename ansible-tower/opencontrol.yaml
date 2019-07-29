@@ -7,3 +7,4 @@ metadat:
 
 components:
   - ./ansible-tower.yaml
+
