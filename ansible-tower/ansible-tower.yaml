@@ -13,33 +13,171 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
- #   - text: |
- #       'AC-1 is an organizational control outside the scope of
- #       Ansible Tower.'
+    - key: a
+      text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+    - key: b
+      text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
-    - text: ''
-#    - text: |
-#        'AC-2 is an organizational control outside the scope of
-#        Ansible Tower configuration. Technical enablement of
-#        the organizational processes are covered in AC-2 subcontrols,
-#        such as AC-2(2) and AC-2(3).'
+    - key: a
+      text: |
+        Ansible Tower's Role-based Access Control (RBAC) implementation
+        offers multiple types of information system accounts, each
+        with differing access and administrative roles.
+
+        - "Normal User," an individual would have read and write
+        access limited to the resources (such as inventory, projects, and
+        job templates) for which that user has been granted appropriate
+        roles and privileges.
+
+        - "System Auditor," an individual would implicitly inherit
+        the read-only capability for all objects within the Ansible Tower
+        environment.
+
+        - "System Administrator," also known as a Superuser, an
+        individual has full system administration privileges for Tower -- with full
+        read and write privileges over the entire Ansible Tower installation. A
+        System Administrator is typically responsible for managing all aspects of
+        Ansible Tower and delegating responsibilities for day-to-day work to various
+        Users. Assign with caution!
+
+        Role-based Access Controls (RBAC) are built into Ansible Tower and allow
+        Ansible Tower administrators to delegate access to server inventories, organizations,
+        and more. Administrators can also centralize the management of various credentials,
+        allowing end users to leverage a needed secret without ever exposing that secret to the
+        end user. RBAC controls allow Ansible Tower to help you increase security and streamline
+        management.
+
+        Documentation of Ansible Tower's RBAC system is available in the Ansible Tower User Guide:
+        https://docs.ansible.com/ansible-tower/latest/html/userguide/security.html#role-based-access-controls
+
+    - key: b
+      text: |
+        Assigning Ansible Tower account managers is an organizational
+        process outside the scope of Ansible Tower configuration.
+    - key: c
+      text: |
+        Establishing conditions for group and role membership is an
+        organizational process outside the scope of Ansible Tower
+        configuration.
+    - key: d
+      text: |
+        To specify authorized users of Ansible Tower, group and role
+        membership, and access authorizations, refer to the
+        Ansible Tower User Guide:
+
+        https://docs.ansible.com/ansible-tower/latest/html/userguide/users.html
+    - key: e
+      text: |
+        Organizational processes regarding account creation requests
+        are outside the scope of Ansible Tower configuration.
+    - key: f
+      text: |
+        Organizational processes regarding administration of Ansible Tower
+        accounts are outside the scope of Ansible Tower configuration.
+    - key: g
+      text: |
+        The Ansible Tower logging subsystems can assist with monitoring the use of Ansible Tower
+        accounts. Logging is a standalone feature introduced in Ansible Tower that provides
+        the capability to send detailed logs to several kinds of 3rd party external log
+        aggregation services.
+
+        For full details of the logging subsystem, including technical documentation and
+        data schema details, refer to the "Tower Logging and Aggregation" chapter of the
+        Ansible Tower Administration Guide:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/logging.html
+    - key: h
+      text: |
+        Organizational processes regarding account termination or need-to-know
+        changes are outside the scope of Ansible Tower configuration.
+    - key: i
+      text: |
+        Organizational processes regarding access authorization are outside
+        the scope of Ansible Tower configuration.
+    - key: j
+      text: |
+        Organizational processes regarding the review of account management policies
+        are outside the scope of Ansible Tower configuration.
+    - key: k
+      text: |
+        Organizational processes for reissuing shared/group account credentials
+        are outside the scope of Ansible Tower configuration.
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'Documentation for this requirement is being tracked on
-        GitHub:
+        Ansible Tower offers supported integrations with many account management
+        systems, such as Kerberos, Azure Active Directory, LDAP, RADIUS, SAML, TACACS+,
+        and many others.
 
-        https://github.com/ComplianceAsCode/redhat/issues/465'
+        Refer to the Ansible Tower Administration Guide for guidance on connecting
+        Ansible Tower into an automated account management system:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/ent_auth.html
+
+        NOTE: To meet many account management requirements, such as those dealing with
+        password complexity, an external account management system MUST be used!
+
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        Ansible Tower does not natively have the capability to automatically
+        remove or disable temporary and emergency accounts.
+
+        When Ansible Tower is configured to authenticate users against an external
+        authentication service (e.g. Red Hat IdM), the external provider would be
+        responsible for removal and disablement of temporary and emergency accounts.
+        In such scenarios, Ansible Tower would inherit satisfaction of this control
+        from the external authentication service.
+
+        A fringe case does exist in which an organizational user is temporarily
+        given access to Ansible Tower (e.g. temporary team member joining for a
+        sprint). In such cases, Ansible Tower does not have the ability to automatically
+        remove or disable the account after an organizationally-defined time period. An
+        Ansible Tower administrator would need to manually remove
+        or disable the account.
+
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        Ansible Tower does not natively have the capability to automatically
+        disable inactive accounts after an organization-defined time period.
+
+        When Ansible Tower is configured to authenticate users against an external
+        authentication service (e.g. Red Hat IdM), the external provider would be
+        responsible for automatic disablement of accounts. In such scenarios,
+        Ansible Tower would inherit satisfaction of this control from the
+        external authentication service.
+
+        However, a fringe case does exist when:
+        - Ansible Tower is configured to use an external authentication service, such as
+        a corporate Red Hat IdM or Active Directory instance; and,
+        - An organizational user is added to Ansible Tower however does not login
+        for a time period that exceeds the organization-defined threshhold; and,
+        - During that time period the user logins to other corporate services, thus
+        the external authentication provider shows the account is being actively used.
+
+        In such a scenario, Ansible Tower does not currently have the capability to
+        automatically disable the account. An Ansible Tower administrator would need to manually
+        remove or disable the account.
 
 - control_key: AC-3
   standard_key: NIST-800-53
@@ -949,42 +1087,360 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 
 - control_key: CP-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        The Ansible Tower capacity system determines how many jobs can run on an instance
+        given the amount of resources available to the instance and the size of the jobs that
+        are running.
+
+        The "Ansible Tower Capacity Determination and Job Impact" section of the
+        Ansible Tower User's Guide outlines resource determination factors relevant
+        to capacity planning. That document can be found online at:
+
+        https://docs.ansible.com/ansible-tower/latest/html/userguide/jobs.html#at-capacity-determination-and-job-impact
+
+- control_key: CP-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Ansible Tower installations can occur in a High Availabiltiy (HA) configuration.
+        In this configuration, Tower runs with a single active node, called the Primary
+        Instance, and any number of inactive nodes, called Secondary Instances.
+
+        Secondary Instances can become Primary Instances at any time, with certain
+        caveats. Running in a high-availability setup requires any database that
+        Ansible Tower uses to be external -- Postgres and MongoDB must be installed
+        on a machine that is not one of the primary or secondary Ansible Tower nodes.
+
+        Ansible Tower's HA mode offers a standby Ansible Tower infrastructure that
+        can become active in case of infrastructure failure -- avoiding single points of
+        failure. HA mode is not meant to run in an active/passive or multi-master mode, and
+        is not a mechanism for horizontally scaling the Ansible Tower service. Further,
+        failover to a secondary instance is not automatic and must be user triggered.
+
+        For instructions on how to install Ansible Tower into an HA configuration,
+        refer to the Ansible Tower Installation and Reference Guide:
+
+        https://docs.ansible.com/ansible-tower/
+
+- control_key: CP-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 
 - control_key: CP-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 
 - control_key: CP-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 
-- control_key: CP-9
+- control_key: CP-4 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is control was withdrawn by NIST.
+
+- control_key: CP-7 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
     - key: a
       text: |
-        'As a procedural control, the process of backing up Ansible Tower
+        As a procedural control, the process of backing up Ansible Tower
         is outside the scope of a configuration guide.
 
         The customer will be responsible for conducting daily incremental and
-        weekly full backups of user-level information contained in the
-        information system. Additional FedRAMP requirements and guidance include
+        weekly full backups of user-level information contained in
+        Ansible Tower. Additional FISMA requirements and guidance include
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
@@ -994,15 +1450,15 @@ satisfies:
         Documentation on backing up and restoring Ansible Tower data
         can be found in the Ansible Tower Administration guide:
 
-        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
     - key: b
       text: |
-        'As a procedural control, the process of backing up Ansible Tower
+        As a procedural control, the process of backing up Ansible Tower
         is outside the scope of a configuration guide.
 
         The customer will be responsible for conducting daily incremental and
-        weekly full backups of system-level information contained in the
-        information system. Additional FedRAMP requirements and guidance include
+        weekly full backups of user-level information contained in
+        Ansible Tower. Additional FISMA requirements and guidance include
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
@@ -1012,42 +1468,108 @@ satisfies:
         Documentation on backing up and restoring Ansible Tower data
         can be found in the Ansible Tower Administration guide:
 
-        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
     - key: c
       text: |
-        'As a procedural control, the process of backing up Ansible Tower
+        As a procedural control, the process of backing up Ansible Tower
         is outside the scope of a configuration guide.
 
         The customer will be responsible for conducting daily incremental and
-        weekly full backups of information system documentation including
-        security-related documentation. Additional FedRAMP requirements and
-        guidance include maintaining at least three backup copies of user-level
-        information (at least one of which is available online) or provides an
-        equivalent alternative. A successful control response will detail how
-        backups of user-level information occures, and how three backup copies
-        are maintained.
+        weekly full backups of user-level information contained in
+        Ansible Tower. Additional FISMA requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
 
         Documentation on backing up and restoring Ansible Tower data
         can be found in the Ansible Tower Administration guide:
 
-        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
     - key: d
       text: |
-        'As a procedural control, the process of backing up Ansible Tower
-        is outside the scope of a configuration guide.
+        This is an organizational control outside the scope of
+        component-level configuration.
 
-        The customer will be responsible for protecting the confidentiality,
-        integrity, and available of backup information at storage locations.
-        Additional FedRAMP requirements and guidance include determining
-        what elements of the cloud environment require the Information System
-        Backup control. The customer will determine how Information System
-        Backup is going to be verified and appropriate periodicity of the
-        check.
+- control_key: CP-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 
-        Documentation on backing up and restoring Ansible Tower data
-        can be found in the Ansible Tower Administration guide:
+- control_key: CP-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        The ability to backup and restore Ansible Tower systems has been integrated into the
+        Tower setup playbook.
 
-        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html'
+        For further details on testing Ansible Tower backups,
+        refer to the "Backing Up and Restoring Tower"
+        section of the Ansible Tower Administration Guide:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
+
+- control_key: CP-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-9 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Ansible Tower introduced Clustering as an alternate approach to redundancy,
+        replacing the redundancy solution configured with the active-passive nodes
+        that involves primary and secondary instances.
+
+        Clustering is sharing load between hosts. Each instance should be able to act
+        as an entry point for UI and API access. This should enable Ansible Tower
+        administrators to use load balancers in front of as many instances of Ansible Tower
+        as desired and maintain good data visibility.
+
+        Details of this approach are documented in the "Clustering" section of the
+        Ansible Tower Administration Guide:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/clustering.html
+
+- control_key: CP-9 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 
 - control_key: CP-10
   standard_key: NIST-800-53
@@ -1062,6 +1584,90 @@ satisfies:
 
         Note that backup of the Ansible Tower database and Ansible Tower playbooks
         reflects two distinct processes.'
+
+- control_key: CP-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        The ability to backup and restore Ansible Tower systems has been integrated into the
+        Tower setup playbook.
+
+        For further details on testing Ansible Tower backups,
+        refer to the "Backing Up and Restoring Tower"
+        section of the Ansible Tower Administration Guide:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/backup_restore.html
+
+- control_key: CP-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
+
+- control_key: CP-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        component-level configuration.
 ##
 ## BEGINNING OF:
 ## IDENTIFICATION AND AUTHENTICATION
