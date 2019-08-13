@@ -179,6 +179,88 @@ satisfies:
         automatically disable the account. An Ansible Tower administrator would need to manually
         remove or disable the account.
 
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Introduced in Ansible Tower 2.4 is a feature which adds an Auth-Token-Timeout
+        to every response that includes a valid user-supplied token. This setting
+        changed to Session-Timeout in Ansible Tower 3.3. The value of Session-Timeout
+        is determined by the configuration (time expressed in seconds) of the
+        SESSION_COOKIE_AGE.
+
+        The value of Session-Timeout indicates the length of time, in seconds,
+        that the supplied token is valid, from the moment the request was initiated.
+        Starting in Ansible Tower 3.2, this setting can be changed as documented in
+        the "Changing Default Timeout for Authentication" section of the
+        Ansible Tower Administration documentation:
+
+        https://docs.ansible.com/ansible-tower/latest/html/administration/authentication_timeout.html
+
+- control_key: AC-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        This control has not been evaluated in the context of
+        Ansible Tower.
+
+        The following ticket is being used to track control
+        response status:
+
+        https://github.com/ComplianceAsCode/redhat/issues/727
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        Ansible Tower's Role-based Access Control (RBAC) implementation
+        offers multiple types of information system accounts, each
+        with differing access and administrative roles.
+
+        - "Normal User," an individual would have read and write
+        access limited to the resources (such as inventory, projects, and
+        job templates) for which that user has been granted appropriate
+        roles and privileges.
+
+        - "System Auditor," an individual would implicitly inherit
+        the read-only capability for all objects within the Ansible Tower
+        environment.
+
+        - "System Administrator," also known as a Superuser, an
+        individual has full system administration privileges for Tower -- with full
+        read and write privileges over the entire Ansible Tower installation. A
+        System Administrator is typically responsible for managing all aspects of
+        Ansible Tower and delegating responsibilities for day-to-day work to various
+        Users. Assign with caution!
+
+        Role-based Access Controls (RBAC) are built into Ansible Tower and allow
+        Ansible Tower administrators to delegate access to server inventories, organizations,
+        and more. Administrators can also centralize the management of various credentials,
+        allowing end users to leverage a needed secret without ever exposing that secret to the
+        end user. RBAC controls allow Ansible Tower to help you increase security and streamline
+        management.
+
+        Documentation of Ansible Tower's RBAC system is available in the Ansible Tower User Guide:
+        https://docs.ansible.com/ansible-tower/latest/html/userguide/security.html#role-based-access-controls
+
+    - key: b
+      text: |
+        Ansible Tower automatically logs creation, modification,
+        and removal of Role-based Access Control (RBAC) privileges.
+        This is non-configurable default behavior.
+
+    - key: c
+      text: |
+        This is an organizational process control
+        outside the scope of Ansible Tower configuration.
+
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
@@ -211,6 +293,30 @@ satisfies:
         Additional detail can be found in the Ansible Tower documentation:
 
         https://docs.ansible.com/ansible-tower/latest/html/userguide/users.html'
+
+- control_key: AC-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-4 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
 
 - control_key: AC-7
   standard_key: NIST-800-53
@@ -245,6 +351,14 @@ satisfies:
         this functionality; delay of further logon prompts is a permanent
         finding.'
 
+- control_key: AC-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
 - control_key: AC-8
   standard_key: NIST-800-53
   covered_by: []
@@ -277,6 +391,14 @@ satisfies:
         publicly accessible instances. Custom system use notifications
         for publicly accessible systems can be implemented using the
         procedures from AC-8(a).'
+
+- control_key: AC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
 
 - control_key: AC-14
   standard_key: NIST-800-53
