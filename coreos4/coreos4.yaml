@@ -794,56 +794,274 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Establishing organizational security assessment and
+        authorization policy and procedures is outside
+        the scope of CoreOS configuration guidance.
 
 - control_key: CA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Development of an organizational security assessment plan
+        is outside the scope of CoreOS configuration guidance.
+
+        As supplemental comments, the <i>NIST National Checklist for
+        CoreOS</i> is recommended as the source of configuration guidance
+        for US Government deployments. NIST National Checklists applicable
+        to Red Hat technologies can be found on nist.gov:
+
+        https://nvd.nist.gov/ncp/repository?authority=Red+Hat&startIndex=0
+
+        The NIST National Checklist for CoreOS provides SCAP-formatted
+        automation content which could be used in satisfaction of
+        CA-2(b), and is interoperable with any NIST SCAP Validated Product
+        and Module.
+
+        Additionally, SCAP scanners will generate a compliance report which
+        could be used to satisfy CA-2(c).
 
 - control_key: CA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Employment of independent assessors or assessment teams
+        is outside the scope of CoreOS configuration guidance.
+
+- control_key: CA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Specialized security assessments are outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CA-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Establishment of organizational system interconnection
+        agreements is outside the scope of CoreOS configuration
+        guidance.
 
-- control_key: CA-5
+- control_key: CA-3 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This is an organizational control outside the scope of
+        CoreOS configuration guidance.
+
+- control_key: CA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        CoreOS configuration guidance.
+
+- control_key: CA-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        CoreOS configuration guidance.
+
+- control_key: CA-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        CoreOS configuration guidance.
+
+- control_key: CA-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        This control is applicable to CoreOS and applicable
+        through host-level firewall rules.
+
+        Creation of configuration guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/729
+
+- control_key: CA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        Creating an information system-level Plan of Action
+        and Milestones (POA&M) is outside the scope of CoreOS
+        configuration processes.
+
+        However, to aid in remediating or
+        mitigating any known weaknesses or deficiencies in
+        CoreOS, Red Hat is planning to make public a POA&M specific
+        to CoreOS. This is currently in progress. If you would like to
+        monitor or collaborate in the creation of the CoreOS POA&M, the
+        work is tracked in the following ticket:
+
+        https://github.com/ComplianceAsCode/redhat/issues/730
+    - key: b
+      text: |
+        Organizational processes relating to updating and the maintenance
+        of an information system-level Plan of Action and Milestones (POA&M)
+        is outside the scope of CoreOS configuration processes.
+
+- control_key: CA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Updates and maintenance of an information system-level
+        Plan of Action and Milestones (POA&M) document outside the
+        scope of CoreOS configuration.
 
 - control_key: CA-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        CA-6 reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Establishment of continuous monitoring metrics is
+        outside the scope of CoreOS configuration guidance.
 
-- control_key: CA-9
+        The CoreOS Prometheus Operator may assist in identification
+        of all the parts required to start monitoring a Kubernetes
+        cluster. For further details, visit
+        the "Cluster Monitoring" section of the
+        Prometheus documentation:
+
+        https://coreos.com/operators/prometheus/docs/latest/user-guides/cluster-monitoring.html
+    - key: b
+      text: |
+        Establishment of organizationally-defined frequencies for monitoring
+        assessments is outside the scope of CoreOS configuration guidance.
+    - key: c
+      text: |
+        Red Hat is developing documentation regarding ongoing security control
+        assessments of CoreOS. That work can be tracked in the following
+        ticket:
+
+        https://github.com/ComplianceAsCode/redhat/issues/732
+
+- control_key: CA-7 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Employment of assessors or assessment teams is outside the
+        scope of CoreOS configuration guidance.
+
+- control_key: CA-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CA-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational trend analyses processes are
+        outside the scope of CoreOS configuration guidance.
+
+- control_key: CA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Penetration testing is outside the scope of
+        CoreOS configuration guidance.
+
+- control_key: CA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of independent penetration testers
+        is out of scope for CoreOS configuration
+        guidance.
+
+- control_key: CA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Team Exercises are out of scope for
+        CoreOS configuration guidance.
+
+- control_key: CA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Creation of supporting documentation regarding
+        CoreOS' internal connections, interface
+        characteristics, security requirements, and the nature
+        of the information communicated, is being created.
+
+        That work is being tracked in the following
+        ticket:
+
+        https://github.com/ComplianceAsCode/redhat/issues/734
+
+- control_key: CA-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to CA-9 (1) is planned, and
+        being tracked through the following ticket:
+
+        https://github.com/ComplianceAsCode/redhat/issues/735
 ##
 ## BEGINNING OF:
 ## CONFIGURATION MANAGEMENT
