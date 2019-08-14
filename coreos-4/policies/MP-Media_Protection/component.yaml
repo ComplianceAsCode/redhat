@@ -8,25 +8,312 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: MP-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: d
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: MP-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
-- control_key: MP-7
+- control_key: MP-6 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        CoreOS System administrators, regardless of local or remote access,
+        have access to command line tools to remove data from CoreOS system
+        components. Examples include removing a local file (e.g. through
+        the "rm" command) or remotely purging/wiping CoreOS nodes and
+        reinstalling them through processes such as Terraform Bare
+        Metal (re)installation.
+
+        This capability is an intrinsic property of being a
+        CoreOS System Administrator with remote access
+        credentials.
+
+- control_key: MP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        This control is applicable to CoreOS configuration through such
+        actions as kernel module blacklisting. A full control
+        response is planned.
+
+        The following ticket can be used to track progres:
+        https://github.com/ComplianceAsCode/redhat/issues/738
+
+- control_key: MP-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: d
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: MP-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
