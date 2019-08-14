@@ -108,28 +108,55 @@
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        'This control has not been evaluated in the context of
-        CoreOS.'
+        A control response for AC-2 (5) is planned. Progress
+        can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/739
+
+- control_key: AC-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for AC-2 (6) is planned. Progress
+        can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/740
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        'This control has not been evaluated in the context of CoreOS.'
+        A control response to AC-2(7)(a) is planned. Progress
+        can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/741
     - key: b
       text: |
-        'This is an organizational control and not applicble to the configuration
-        of CoreOS.'
+        This is an organizational control and not applicble to the configuration
+        of CoreOS.
     - key: c
       text: |
-        'This is an organizational control and not applicble to the configuration
-        of CoreOS.'
+        This is an organizational control and not applicble to the configuration
+        of CoreOS.
+
+- control_key: AC-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for AC-2 (6) is planned. Progress
+        can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/742
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -137,8 +164,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control is applicable to the identity service provider,
-        and outside the scope of CoreOS configuration.'
+        This control is applicable to the identity service provider
+        and outside the scope of CoreOS configuration.
 
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
@@ -146,11 +173,11 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'CoreOS does not have the concept of group accounts.
+        CoreOS does not have the concept of group accounts.
 
         Should the organization allow shared credentials, the
-        creation and management of such would fall under the scope
-        of operating the shared identity service and not CoreOS.'
+        creation and management of such accounts would be the
+        responsibility of the shared identity service and not CoreOS.
 
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
@@ -158,8 +185,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control is applicable to the identity service provider,
-        and outside the scope of CoreOS configuration.'
+        This control is applicable to the identity service provider
+        and outside the scope of CoreOS configuration.
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
@@ -168,12 +195,12 @@
   narrative:
     - key: a
       text: |
-        'This control is applicable to the identity service provider,
-        and outside the scope of CoreOS configuration.'
+        This control is applicable to the identity service provider
+        and outside the scope of CoreOS configuration.
     - key: b
       text: |
-        'This control is applicable to the identity service provider,
-        and outside the scope of CoreOS configuration.'
+        This control is applicable to the identity service provider
+        and outside the scope of CoreOS configuration.
 
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
@@ -181,26 +208,268 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control is applicable to the identity service provider,
-        and outside the scope of CoreOS configuration.'
+        This control is applicable to the identity service provider,
+        and outside the scope of CoreOS configuration.
 
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        'This control has not been evaluated in the context of
-        CoreOS.'
+        A response to AC-3 is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/743
+
+- control_key: AC-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into
+        AC-6:
+
+        http://atopathways.redhatgov.io/product-documents/coreos4/nist-800-53/ac/#AC-6
+
+- control_key: AC-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unsatisfied
+  narrative:
+    - text: |
+        CoreOS does not support the capability for dual authorization
+        of commands. Authenticated users will be able to issue
+        any command(s) they are authorized for.
+
+        It is recommended only organizationally trusted individuals
+        receive authentication and authorization privileges to
+        CoreOS systems.
+
+- control_key: AC-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A response to AC-3 (3) is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/744
+
+- control_key: AC-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A response to AC-3 (4) is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/745
+
+- control_key: AC-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A response to AC-3 (5) is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/746
+
+- control_key: AC-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-3 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A response to AC-3 (7) is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/747
+
+- control_key: AC-3 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A response to AC-3 (8) is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/748
+
+- control_key: AC-3 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A response to AC-3 (9) is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/749
+
+- control_key: AC-3 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        CoreOS was not designed to allow an override of access control
+        mechanisms.
+
+        There may be scenarios where authenticated user was given authorization
+        to escalate privileges to root (e.g. "sudo access"). In such scenarios
+        CoreOS will continue to audit events as defined in AU-2 and AU-12.
 
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        'This control has not been evaluated in the context of
-        CoreOS.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/750
+
+- control_key: AC-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/751
+
+- control_key: AC-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/752
+
+- control_key: AC-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/753
+
+- control_key: AC-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Interception of information system communications is out
+        of scope of CoreOS configuration guidance.
+
+- control_key: AC-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Enforcement of organization-defined limitations on
+        embedding data types within other data types is outside
+        the scope of CoreOS configuration.
+
+- control_key: AC-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/754
+
+- control_key: AC-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Enforcement of organization-defined one-way information flows
+        using hardware mechanisms is outside the scope of CoreOS
+        configuration.
+
+- control_key: AC-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/755
+
+- control_key: AC-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unsatisfied
+  narrative:
+    - text: |
+        Changes to CoreOS information flows take effect immediately. It is assumed
+        that all information flow modifications have undergone organizational
+        approval processes prior to being implemented in CoreOS.
+
+        CoreOS cannot protect against authenticated users who were
+        given authorization to execute administrative commands (such as
+        information flow modifications).
+
+- control_key: AC-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Privileged Administrators are defined as authenticated users who
+        were given authorization to execute privileged commands on CoreOS
+        systems (e.g. "sudo access").
+
+        To modify security policies users must first authenticate with
+        standard credentials (e.g. username/password or username/key).
+        Once authenticated users must elevate privileges to root access
+        through usage of "sudo", which will require users to re-authenticate
+        themselves.
+
+- control_key: AC-4 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Privileged Administrators are defined as authenticated users who
+        were given authorization to execute privileged commands on CoreOS
+        systems (e.g. "sudo access").
+
+        The default system behavior allows Privileged Administrators
+        to (re)configure security policy filters. For example,
+        to reflect changes in network security policies, Privileged
+        Administrators can dynamically change the allowed network
+        ports and protocols that security policy mechanisms (such
+        as firewalld) check in accordance with the definitions
+        provided by organizations.
 
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
