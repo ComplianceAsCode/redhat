@@ -20,18 +20,20 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'AC-1 is an organizational control outside the scope of
-             configuring CoreOS. Implementing AC-1 falls under
-             technical controls, such as AC-2 (3) which disables
-             inactive accounts.'
+    - text: |
+        AC-1 is an organizational control outside the scope of
+        configuring CoreOS. Implementing AC-1 falls under
+        technical controls, such as AC-2 (3) which disables
+        inactive accounts.'
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'AC-2 is an organizational control outside the scope
-             of configuring CoreOS.'
+    - text: |
+        AC-2 is an organizational control outside the scope
+        of configuring CoreOS.'
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
@@ -39,7 +41,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text:
-        'CoreOS components of the system support automated
+        CoreOS components of the system support automated
         management through monitoring of accounts and system
         activity by logging of related information.
 
@@ -47,7 +49,7 @@ satisfies:
         transport the data to a SIEM, CoreOS does not provide
         automated mechanisms (e.g. email, text messages) after
         system events. This functionality would fall to third
-        party software.'
+        party software.
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -62,11 +64,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text:
-        'CoreOS does not have the capability to create
+        CoreOS does not have the capability to create
         guest/anonymous accounts or temporary accounts. Any
         external emergency or temporary accounts will be
         inherited from, and managed by, an external
-        identity service (e.g. LDAP).'
+        identity service (e.g. LDAP).
 
 #
 # AC-2(3) NOTES:
@@ -85,11 +87,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text:
-        'CoreOS end-user account management is inherited from
+        CoreOS end-user account management is inherited from
         the hosting environment.Automatic disabling of these
         accounts must happen at the centralized account
         management level; for example, within LDAP, Red Hat
-        IdM, or Active Directory.'
+        IdM, or Active Directory.
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
@@ -97,14 +99,14 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'To meet FISMA requirements, CoreOS must be configured
+        To meet FISMA requirements, CoreOS must be configured
         to use centralized authentication (e.g. LDAP, Red Hat IdM,
         Active Directory). The audit of account creation,
         modification, enabling, disabling, and removal actions is
         the respinsibility of the centralized service. Additionally,
         notification of organization-defined personnel or roles is
         also the responsibility of the centralized authentication
-        service.'
+        service.
 
 ##
 ## Ref: https://access.redhat.com/solutions/2191161
@@ -379,7 +381,7 @@ satisfies:
 
         https://github.com/ComplianceAsCode/redhat/issues/753
 
-- control_key: AC-4 (3)
+- control_key: AC-4 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
@@ -476,17 +478,145 @@ satisfies:
         as firewalld) check in accordance with the definitions
         provided by organizations.
 
+- control_key: AC-4 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/790
+
+- control_key: AC-4 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/791
+
+- control_key: AC-4 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/792
+
+- control_key: AC-4 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/793
+
+- control_key: AC-4 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-4 (17)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/794
+
+- control_key: AC-4 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/795
+
+- control_key: AC-4 (19)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/796
+
+- control_key: AC-4 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/797
+
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for separating information flows
+        The customer will be responsible for separating information flows
         within the customer application. A successful control response will
         need to address the customer organizational requirements for
         the separation of information flows, and the mechanisms and
-        techniques used to accomplish this separation.'
+        techniques used to accomplish this separation.
+
+- control_key: AC-4 (22)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/799
+
+- control_key: AC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Separation of duties is an organizational process outside the
+        scope of CoreOS configuration.
+    - key: b
+      text: |
+        Documentation of the seperation of duties of individuals
+        is an organizational control outside the scope of CoreOS
+        configuration.
+    - key: c
+      text: |
+        Organizational processes which define information system access
+        authorizations to support separation of duties is outside
+        the scope of CoreOS configuration.
+
+- control_key: AC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/800
 
 - control_key: AC-6 (1)
   standard_key: NIST-800-53
@@ -494,8 +624,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This is an organizational control outside the scope of CoreOS
-        configuration.'
+        This is an organizational control outside the scope of CoreOS
+        configuration.
 
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
@@ -503,7 +633,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This is an organizational/procedural control outside the scope of
+        This is an organizational/procedural control outside the scope of
         CoreOS configuration.
 
         The customer will be responsible for requiring users to use the
@@ -515,25 +645,47 @@ satisfies:
 
         Note CoreOS does not have privilege escalation capabilities similar
         to sudo in Linux. Users will have to completely logout/login when
-        requiring privilege escalation between accounts.'
+        requiring privilege escalation between accounts.
 
 - control_key: AC-6 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This is an organizational control outside the scope of CoreOS
-        configuration.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/802
+
+- control_key: AC-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/803
 
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This is an organizational control outside the scope of CoreOS
-        configuration.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/804
+
+- control_key: AC-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/805
 
 - control_key: AC-6 (7)
   standard_key: NIST-800-53
@@ -542,20 +694,24 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This is an organizational control outside the scope of CoreOS
-        configuration.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/806
     - key: b
       text: |
-        'This is an organizational control outside the scope of CoreOS
-        configuration.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/806
 
 - control_key: AC-6 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        'This control has not been evaluated in the context of CoreOS.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/807
 
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
@@ -563,10 +719,14 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for auditing the execution of
+        The customer will be responsible for auditing the execution of
         privileged functions. A successful control response will need
         to relate this requirement to the general auditing requirements
-        of the AU control family.'
+        of the AU control family.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/808
 
 - control_key: AC-6 (10)
   standard_key: NIST-800-53
@@ -574,11 +734,15 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for ensuring that non-privileged
+        The customer will be responsible for ensuring that non-privileged
         users cannot execute privileged functions. A successful control
         response will need to discuss the use of centralized authentication
         and authorization and any other means of enforcement of privilege
-        levels.'
+        levels.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/809
 
 - control_key: AC-7
   standard_key: NIST-800-53
@@ -587,12 +751,37 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'The customer will be responsible for enforcing a limit on consecutive
-        failed login attempts.'
+        The customer will be responsible for enforcing a limit on consecutive
+        failed login attempts.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/810
     - key: b
       text: |
-        'The customer will be responsible for taking the FedRAMP required
-        actions defined by the customer, upon account lockout.'
+        The customer will be responsible for taking required
+        actions defined by the customer, upon account lockout.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/810
+
+- control_key: AC-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Management of mobile devices is outside the scope
+        of CoreOS configuration.
 
 - control_key: AC-8
   standard_key: NIST-800-53
@@ -601,7 +790,7 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'The customer will be responsible for displaying a system use
+        The customer will be responsible for displaying a system use
         notification banner to users. A successful control response will need
         to address the conditions under which the banner will be displayed
         (if a non-government user accesses the system, the system use
@@ -610,42 +799,122 @@ satisfies:
 
         In context of CoreOS, a banner must be displayed for all means
         of accessing CoreOS itself (e.g. service consoles, remote access
-        through SSH, etc).'
+        through SSH, etc).
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/811
     - key: b
       text: |
-        'The customer will be responsible for displaying the use notification
+        The customer will be responsible for displaying the use notification
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.'
+        acknowlegement and move forward.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/811
     - key: c
       text: |
-        'The customer will be responsible for displaying a system use
+        The customer will be responsible for displaying a system use
         information message to users. A successful control response will need
         to address the conditions under which the message will be
         displayed (if a non-government user accesses the system, the system
         use information message may not be appropriate), as well as the
         contents of the notification message, including references to
         applicable monitoring, recording, or auditing, and authorized usage
-        of the system.'
+        of the system.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/811
     - key: 'Req. 1'
       text: |
-        'The customer will be responsible for determining the conditions
+        The customer will be responsible for determining the conditions
         under which the system use notification will be displayed. These
-        conditions must be reviewed and accepted by the FedRAMP JAB.'
+        conditions must be reviewed and accepted by the FedRAMP JAB.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/811
     - key: 'Req. 2'
       text: |
-        'The customer will be responsible for how the system use notification
+        The customer will be responsible for how the system use notification
         will be verified and how often it should be re-displayed and
         re-verified. These conditions must be reviewed an accepted by the
-        FedRAMP JAB.'
+        FedRAMP JAB.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/811
     - key: 'Req. 3'
       text: |
-        'The customer will be responsible for verifying that the system use
+        The customer will be responsible for verifying that the system use
         notification is being displayed as required, either through a
         configuration baseline check or via other means. If this verification
         does not happen through a configuration baseline check, the JAB must
-        review and accept the process used to perform the verification.'
+        review and accept the process used to perform the verification.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/811
+
+- control_key: AC-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/812
+
+- control_key: AC-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/813
+
+- control_key: AC-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/814
+
+- control_key: AC-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/815
+
+- control_key: AC-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/816
 
 - control_key: AC-10
   standard_key: NIST-800-53
@@ -653,37 +922,43 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for limiting the number of
+        The customer will be responsible for limiting the number of
         concurrent sessions to the customer application as required.
         A successful control implemented will need to address the technical
-        mechanism used to enforce this limit.'
+        mechanism used to enforce this limit.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/817
 
 - control_key: AC-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        When AC-2(5) is implemented, the non-configurable
         default behavior of CoreOS is to disconnect the idle users
-        from the management console after 15 minutes.'
+        from the management console after the organization-defined
+        time period.
     - key: b
       text: |
-        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        Not applicable. When AC-2(5) is implemented, the non-configurable
         default behavior of CoreOS is to disconnect the idle users
-        from the management console after 15 minutes.'
+        from the management console after the organization-defined
+        time period.
 
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - text: |
-        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        When AC-2(5) is implemented, the non-configurable
         default behavior of CoreOS is to logout idle users from the
         management console. Once logged out the only information available
-        will be the CoreOS logon screen.'
+        will be the CoreOS logon screen.
 
 - control_key: AC-12
   standard_key: NIST-800-53
@@ -691,11 +966,15 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for defining events or conditions
+        The customer will be responsible for defining events or conditions
         requiring disconnection (for example, user requesting logout), and for
         terminating the session when those events or conditions arise. A
         successful control response will need to outline the qualifying events
-        or conditions.'
+        or conditions.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/818
 
 - control_key: AC-12 (1)
   standard_key: NIST-800-53
@@ -704,16 +983,24 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'Whether user-initiated communication sessions originate
+        Whether user-initiated communication sessions originate
         through the CoreOS web console or through command line,
-        users are given explicit logout capabilities. This is
+        all users are given explicit logout capabilities. This is
         default, non-configurable behavior of the CoreOS Container
-        Platform.'
+        Platform.
     - key: b
       text: |
-        'CoreOS displays an explicit logout message upon user
+        CoreOS displays an explicit logout message upon user
         session terminiations. This is default, non-configurable
-        behavior.'
+        behavior.
+
+- control_key: AC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
 
 - control_key: AC-14
   standard_key: NIST-800-53
@@ -721,10 +1008,26 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        'Regardless of access mechanism, such as the CoreOS Console or remote
+        Regardless of access mechanism, such as the CoreOS Console or remote
         access attempts through SSH, unauthenticated users will only be shown the
         system use notifications (as defined in AC-8) and login prompt. This is
-        non-confiurable behavior.'
+        non-confiurable behavior.
+
+- control_key: AC-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
 
 - control_key: AC-16
   standard_key: NIST-800-53
@@ -732,18 +1035,119 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'Data release markings, such as NATO or NOFORN, is the responsibility
+        Data release markings, such as NATO or NOFORN, are the responsibility
         of application and data owners running workload on the CoreOS platform.
-        This control is not applicable to the configuration of CoreOS itself.'
+        This control is not applicable to the configuration of CoreOS itself.
+
+- control_key: AC-16 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/819
+
+- control_key: AC-16 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/820
+
+- control_key: AC-16 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/821
+
+- control_key: AC-16 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/822
+
+- control_key: AC-16 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/823
+
+- control_key: AC-16 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/824
+
+- control_key: AC-16 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/825
+
+- control_key: AC-16 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/826
+
+- control_key: AC-16 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/827
+
+- control_key: AC-16 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/828
 
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/829
 
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
@@ -751,17 +1155,19 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        'All system events, regardless of local or remote, are captured through
-        the CoreOS and underlying Red Hat Enterprise Linux audit subsystem.
-        This control is inherently met when auditing is enabled.'
+        All system access, regardless of local or remote, is captured through
+        the CoreOS audit subsystem. This control is inherently met when
+        auditing is enabled.
 
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: planned
   narrative:
     - text: |
-        'This control has not been evaluated in the context of CoreOS.'
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/830
 
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
@@ -769,12 +1175,60 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for requiring remote access
+        The customer will be responsible for requiring remote access
         connections to the customer application to be routed through
         customer-defined network access control points. A successful control
         response will need to address the nature, number, and location of
         such access control points, as well as the security controls in place
-        to protect those access control points.'
+        to protect those access control points.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/831
+
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/832
+
+- control_key: AC-17 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-17 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/833
+
+- control_key: AC-17 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-17 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
 
 - control_key: AC-17 (9)
   standard_key: NIST-800-53
@@ -782,7 +1236,7 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        'CoreOS utilizes the firewall technology embedded into the
+        CoreOS utilizes the firewall technology embedded into the
         distribution. This technology, named firewalld, allows a system
         administrator to configure host-based rules which take effect
         immediately. This gives an CoreOS operator the ability to immediately
@@ -794,16 +1248,21 @@ satisfies:
 
         If immediate disconnect of all hosted applications are desired,
         individual containers may be halted. This will disconnect user sessions
-        for tenant applications immediately.'
+        for tenant applications immediately.
 
 - control_key: AC-18
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+    - key: a
+      text: |
+        Organizational processes regarding the establishment of wireless
+        access usage restrictions are outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes regarding wireless access to the information
+        system are outside the scope of CoreOS configuration.
 
 - control_key: AC-18 (1)
   standard_key: NIST-800-53
@@ -811,16 +1270,111 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control is confired by the host operating system.'
+        Configuration of wireless networking is outside the scope of
+        CoreOS configuration.
+
+- control_key: AC-18 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-18 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/834
+
+- control_key: AC-18 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/835
+
+- control_key: AC-18 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Radio antenna selection and calibration is outside the scope
+        of CoreOS configuration.
 
 - control_key: AC-19
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
+    - key: a
+      text: |
+        Establishing organizational usage restrictions for mobile devices is outside
+        the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Authorization of mobile devices is outside the scope of CoreOS
+        configuration.
+
+- control_key: AC-19 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        This control was withdrawn by NIST.
+
+- control_key: AC-19 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-19 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-19 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational restrictions on the use of mobile devices is outside
+        the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Enforcement of organizational restrictions of mobile devices is
+        outside the scope of CoreOS configuration.
+    - key: c
+      text: |
+        Restricting the connection of classified mobile devices to
+        classified information systems is outside the scope of CoreOS
+        configuration.
+
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Encryption strategies for mobile devices is outside
+        the scope of CoreOS configuration.
 
 - control_key: AC-20
   standard_key: NIST-800-53
@@ -829,12 +1383,15 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Organizational processes for establishing terms and conditions
+        for accessing the information system from external information
+        systems is outside the scope of CoreOS configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Organizational processes for establishing terms and conditions
+        for the processing, storage, or transmission of organization-controlled
+        information using external information systems is outside the scope
+        of CoreOS configuration.
 
 - control_key: AC-20 (1)
   standard_key: NIST-800-53
@@ -843,12 +1400,13 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Verification of security control implementation on external systems
+        is outside the scope of CoreOS configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Retention of approved information system connection or processing
+        agreements with organizational entities hosting the external
+        information system is outside the scope of CoreOS configuration.
 
 - control_key: AC-20 (2)
   standard_key: NIST-800-53
@@ -856,8 +1414,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Organizational processes regarding the restriction or
+        prohibiting of the use of organization-controled portable
+        storage devices by authorized individuals on external information
+        systems is outside the scope of CoreOS configuration.
 
 - control_key: AC-20 (3)
   standard_key: NIST-800-53
@@ -865,8 +1425,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Organizational processes regarding the restriction or
+        prohibiting of the use of non-organizationally owned
+        information systems, system components, or devices to process,
+        store, or transmit organizational information, is
+        outside the scope of CoreOS configuration.
 
 - control_key: AC-20 (4)
   standard_key: NIST-800-53
@@ -874,8 +1437,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Organizational processes regarding prohibiting the use of
+        organization-defined network accessible storage devices in
+        external information systems is beyond the scope of CoreOS
+        configuration.
 
 - control_key: AC-21
   standard_key: NIST-800-53
@@ -884,12 +1449,13 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Facilitation of information sharing is outside the scope
+        of CoreOS configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Employment of technology or processes to assist users in making
+        information sharing/collaboration decisions is outside
+        the scope of CoreOS configuration.
 
 - control_key: AC-21 (1)
   standard_key: NIST-800-53
@@ -897,8 +1463,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Enforcement of information-sharing decisions is outside
+        the scope of CoreOS configuration.
 
 - control_key: AC-21 (2)
   standard_key: NIST-800-53
@@ -906,8 +1472,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Implementation of information search and retrieval services
+        that enforce organization-defined information sharing restrictions
+        is outside the scope of CoreOS configuration.
 
 - control_key: AC-22
   standard_key: NIST-800-53
@@ -916,20 +1483,26 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Organizational processes regarding the designation of individuals
+        authorized to post information onto a publicly accessible information
+        system is outside the scope of CoreOS configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Training authorized individuals to ensure that publicly accessible
+        information does not contain nonpublic information is outside the
+        scope of CoreOS configuration.
     - key: c
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Reviewing the proposed content of information prior to posting onto
+        the publicly accessible information system to ensure that nonpublic
+        information is not included is outside the scope of CoreOS
+        configuration.
     - key: d
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Reviewing content on the publicly accessible information system
+        for nonpublic information at an organization-defined frequency and
+        removal of such information, if discovered, is outside the scope of
+        CoreOS configuration.
 
 - control_key: AC-23
   standard_key: NIST-800-53
@@ -937,8 +1510,49 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.'
+        Organizational employment of organization-defined data mining
+        prevension and detection techniques for organization-defined data
+        storage objects is outside the scope of CoreOS configuration.
+
+- control_key: AC-24
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/836
+
+- control_key: AC-24 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/837
+
+- control_key: AC-24 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/838
+
+- control_key: AC-25
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/839
 ##
 ## BEGINNING OF:
 ## AWARENESS AND TRAINING CONTROLS
@@ -2589,13 +3203,25 @@ satisfies:
 ## BEGINNING OF:
 ## PERSONNEL SECURITY
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+##     AC-2 is an organizational control outside the scope
+##     of configuring CoreOS.
 
 - control_key: PS-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Development of personnel security policy and procedures
+        is outside the scope of CoreOS configuration.
 
 - control_key: PS-2
   standard_key: NIST-800-53
