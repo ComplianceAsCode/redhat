@@ -2,10 +2,476 @@
 ## BEGINNING OF:
 ## AUDIT AND ACCOUNTABILITY
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
 
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Developing an organization-level audit and accountability
+        policy is outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Review and updating an organizational-level audit and
+        accountability policy is outside the scope of CoreOS
+        configuration.
+
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        CoreOS was designed to satisfy the audit requirements outlined
+        in the Configuration Annex to the Protection Profile for General
+        Purpose Operating Systems available at https://www.niap-ccevs.org/Profile/PP.cfm.
+
+        It is possible to extend CoreOS auditing beyond the events
+        outlined in the Configuration Annex. A control response
+        outlining the events CoreOS is capable of auditing is planned.
+        Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/841
+    - key: b
+      text: |
+        Coordinating the security audit function with other
+        organizational entities is outside the scope of
+        CoreOS configuration.
+    - key: c
+      text: |
+        For rationale regarding why the auditable events are deemed to be
+        adequate to support after-the-fact investigations of security incidents,
+        please contact your countries Common Criteria representative:
+
+        https://www.commoncriteriaportal.org/ccra/members/
+    - key: d
+      text: |
+        CoreOS was designed to satisfy the audit requirements outlined
+        in the Configuration Annex to the Protection Profile for General
+        Purpose Operating Systems available at https://www.niap-ccevs.org/Profile/PP.cfm.
+
+        It is possible to extend CoreOS auditing beyond the events
+        outlined in the Configuration Annex. A control response
+        outlining the events CoreOS is capable of auditing is planned.
+        Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/841
+
+- control_key: AU-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational review and updates to the audited events are
+        outside the scope of CoreOS configuration.
+
+- control_key: AU-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/842
+
+- control_key: AU-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        CoreOS offers a robust audit subsystem capable of generating
+        audit records containing very detailed information. Satisfaction
+        of this control will be deployment specific, determined by
+        organization-defined additional, more detailed information.
+
+- control_key: AU-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS provides centralized management and configuration of the
+        content to be captured in audit records. A complete control
+        response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/843
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS can be configured to allocate dedicated audit storage
+        capacity for audit record storage (e.g. /var/log/audit partition).
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/844
+
+- control_key: AU-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS can be configured to off-load audit records onto
+        a different system or media than the system being audited.
+        Progress towards a complete control response can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/845
+
+- control_key: AU-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        CoreOS can be configured to alert organization-defined
+        personnel or roles in the event of an audit processing
+        failure. A complete control response is planned. Progress
+        can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/846
+    - key: b
+      text: |
+        CoreOS can be configured to take an organization-defined
+        action (e.g. shut down) upon an audit processing failure.
+        A complete control response is planned. Progress
+        can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/846
+
+- control_key: AU-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS can be configured to provide a warning to
+        organization-defined personnel, roles, and/or locations
+        within an organization-defined time period when allocated
+        audit record storate volume reaches an organization-defined
+        threshold of repository maximum audit record storage
+        capacity.
+
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/847
+
+- control_key: AU-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS can be configured to provide an alert when audit
+        failure events occure.
+
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/848
+
+- control_key: AU-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS can be configured to enforce configurable network
+        communications traffic volume thresholds reflecting limits
+        on auditing capacity and reject or delay network traffic
+        above those thresholds.
+
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/849
+
+- control_key: AU-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS can be configured to shutdown on failure of the
+        audit subsystem.
+
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/850
+
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational review and analysis of information system
+        audit records for indications of organization-defined
+        inappropriate or unusual activity is outside the scope
+        of CoreOS configuration.
+    - key: b
+      text: |
+        Reporting findings of organization-defined inappropriate or
+        unusual activity to organization-defined personnel or roles is
+        outside the scope of CoreOS configuration.
+
+- control_key: AU-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS can be configured to enhance organizational
+        capabilities regarding automated mechanisms to integrate
+        audit review, analysis, and reporting processes to support
+        organizational processes for investigation and response
+        to suspicious activities.
+
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/851
+
+- control_key: AU-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational analysis and correlation of audit records across
+        different repositories to gain organization-wide
+        situational awareness is outside the scope
+        of CoreOS configuration.
+
+- control_key: AU-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to centrally review and analyze
+        audit records from multiple components within the system
+        is outside the scope of CoreOS configuration.
+
+        Note: When AU-4 (1) is enforced CoreOS will be configured
+        to off-load audit records onto a different system
+        or media than the system being audited. In practice this correlates
+        to offloading audit records to a SIEM (e.g. Elastic). However,
+        this control is specifically about centralized review and analysis,
+        and not offloading records, thus AU-6 (4) is marked as not
+        applicable.
+
+- control_key: AU-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to integrate analysis or audit
+        records with analysis of additional organization-defined
+        data/information collected from other sources to further
+        enhance the ability to identify inappropriate or unusual
+        activity is outside the scope of CoreOS configuration.
+
+- control_key: AU-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to correlate information from
+        CoreOS audit records with information obtained from monitoring
+        physical access to further enhanced the ability to identify
+        suspicious, inappropriate, unusual, or malevolent activity
+        is outside the scope of CoreOS configuration.
+
+- control_key: AU-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational specification of permitted actions for
+        information system processes, roles, and/or users, associated
+        with the review, analysis, and reporting of audit
+        information is outside the scope of CoreOS configuration.
+
+- control_key: AU-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to perform full text analysis or audited
+        privileged commands in a physically distinct component or subsystem
+        of the information system, or other information system that is
+        dedicated to that analysis, is outside the scope of CoreOS
+        configuration.
+
+- control_key: AU-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to correlate information
+        from nontechnical sources with audit information to enhance
+        organization-wide situational awareness is outside
+        the scope of CoreOS configuration.
+
+- control_key: AU-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational adjustment of the level of audit review, analysis, and
+        reporting within the information system when there is a change in risk
+        based on law enforcement information, intelligence information, or other
+        credible sources of information, is outside the scope of CoreOS
+        configuration.
+
+- control_key: AU-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/852
+    - key: b
+      text: |
+        A control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/852
+
+- control_key: AU-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS does provide the capability to process audit records for
+        events of interest based on organization-defined audit fields within
+        audit records.
+
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/853
+
+- control_key: AU-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        CoreOS does provide the capability to sort and search audit records for
+        events of interest based on the content of organization-defined audit
+        fields within audit records.
+
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/854
+
+- control_key: AU-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        CoreOS uses internal system clocks to generate time stamps for
+        audit records. This is non-configurable, default behavior.
+    - key: b
+      text: |
+        CoreOS records time stamps for audit records that can be mapped to
+        Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and can
+        be configured to an organization-defined granularity of time measurement.
+
+        A complete control response is planned. Progress can be tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/855
+
+- control_key: AU-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        CoreOS can be configured to compare the internal system clock(s)
+        at an organization-defined frequency with an organization-defined
+        authoritative time source.
+
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/856
+    - key: b
+      text: |
+        CoreOS can be configured to synchronize the internal system
+        clock(s) to the authoritative time source when the time difference is
+        greated than an organization-defined time period.
+
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/856
