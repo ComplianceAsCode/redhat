@@ -55,6 +55,15 @@
         Specialized security assessments are outside the scope
         of CoreOS configuration guidance.
 
+- control_key: CA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational acceptance of the results of an assessment
+        is outside the scope of CoreOS configuration.
+
 - control_key: CA-3
   standard_key: NIST-800-53
   covered_by: []

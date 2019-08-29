@@ -19,7 +19,7 @@
         AC-1 is an organizational control outside the scope of
         configuring CoreOS. Implementing AC-1 falls under
         technical controls, such as AC-2 (3) which disables
-        inactive accounts.'
+        inactive accounts.
 
 - control_key: AC-2
   standard_key: NIST-800-53
