@@ -2782,7 +2782,599 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Developing, documenting, and disseminating an organizational configuration
+        management policy is outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Review and update procedures to the organizational configuration
+        management policy is outside the scope of CoreOS configuration.
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/884
+
+- control_key: CM-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/885
+
+- control_key: CM-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/886
+
+- control_key: CM-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/887
+
+- control_key: CM-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/888
+
+- control_key: CM-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational issuance of organization-defined information
+        systems, system components, or devices with organizational-defined
+        configurations to indivudals traveling to locations that the
+        organization deems to be of significant risk is outside the scope
+        of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes to apply organization-defined security
+        safeguards to the devices when the individuals return is
+        outside the scope of CoreOS configuration.
+
+- control_key: CM-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/889
+
+- control_key: CM-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/890
+
+- control_key: CM-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/891
+
+- control_key: CM-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/892
+
+- control_key: CM-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        The requirement for an information security representative to be
+        a member of the organization-defined configuration change
+        control element is outside the scope of CoreOS configuration.
+
+- control_key: CM-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/893
+
+- control_key: CM-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/894
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational analysis of changes to the information system to
+        determine potential security impacts prior to change implementation
+        is outside the scope of CoreOS configuration.
+
+- control_key: CM-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational requirements for separate test environments is outside
+        the scope of CoreOS configuration.
+
+- control_key: CM-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/895
+
+- control_key: CM-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/896
+
+- control_key: CM-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/897
+
+- control_key: CM-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/898
+
+- control_key: CM-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/899
+
+- control_key: CM-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/900
+
+- control_key: CM-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/901
+
+- control_key: CM-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/902
+
+- control_key: CM-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/903
+
+- control_key: CM-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/904
+
+- control_key: CM-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/905
+
+- control_key: CM-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/906
+
+- control_key: CM-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/907
+
+- control_key: CM-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/908
+
+- control_key: CM-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Ensuring compliance with organization-defined registration
+        requirements for functions, ports, protocols, and services,
+        is outside the scope of CoreOS configuration.
+
+- control_key: CM-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/909
+
+- control_key: CM-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/910
+
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/911
+
+- control_key: CM-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/912
+
+- control_key: CM-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/913
+
+- control_key: CM-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/914
+
+- control_key: CM-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to include in the information system
+        component inventory information, a means for identifying
+        by name, position, and/or role, individuals responsible/accountable
+        for administering those components, is outside the scope
+        of CoreOS configuration.
+
+- control_key: CM-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational verification that all components within the
+        authorization boundary of the information system are not
+        duplicated in other information system component
+        inventories is outside the scope of CoreOS configuration.
+
+- control_key: CM-8 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/915
+
+- control_key: CM-8 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/916
+
+- control_key: CM-8 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/917
+
+- control_key: CM-8 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational assignment of organization-defined aquired information
+        system components to an information system is outside the scope
+        of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes to receive an acknowledgement from the
+        information system owner of the assignment in CM-8(8)(a) is outside
+        the scope of CoreOS configuration.
+
+- control_key: CM-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/918
+
+- control_key: CM-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to assign responsibility for developing the
+        configuration management process to organizational personnel that are
+        not directly involved in information system development are outside
+        the scope of CoreOS configuration.
+
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/919
+
+- control_key: CM-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Establishment of organizational restrictions on open source software
+        is outside the scope of CoreOS configuration.
+
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/920
+
+- control_key: CM-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/921
+
+- control_key: CM-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/922
 ##
 ## BEGINNING OF:
 ## CONTINGENCY PLANNING
