@@ -475,3 +475,342 @@
         via:
 
         https://github.com/ComplianceAsCode/redhat/issues/856
+
+- control_key: AU-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/859
+
+- control_key: AU-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/860
+
+- control_key: AU-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Writing audit trails to hardware enforced, write-once media,
+        is outside the scope of CoreOS configuration.
+
+- control_key: AU-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Backup of audit records onto a physically different system or
+        system component than the component being audited is the
+        responsibility of the centralized audit facility defined in
+        AU-4 (1), "Transfer to Alternate Storage," and outside
+        the scope of CoreOS configuration.
+
+- control_key: AU-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/862
+
+- control_key: AU-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/863
+
+- control_key: AU-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Per AU-4 (1), CoreOS will be configured to offload audit records
+        to a centralized audit facility. Enforcement of dual authorization
+        for movement and/or deletion of organization-defined audit
+        information is the responsibility of the centralized audit
+        facility, and outside the scope of CoreOS configuration.
+
+- control_key: AU-9 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/864
+
+- control_key: AU-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/865
+
+- control_key: AU-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/866
+
+- control_key: AU-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/867
+
+- control_key: AU-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/868
+
+- control_key: AU-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/869
+
+- control_key: AU-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/870
+
+- control_key: AU-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/871
+
+- control_key: AU-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/872
+
+- control_key: AU-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/873
+
+- control_key: AU-12 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/874
+
+- control_key: AU-12 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/875
+
+- control_key: AU-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Monitoring of organization-defined open source information
+        and/or information sites at an organization-defined frequency for
+        evidence of unauthorized disclosure of organizational information
+        is outside the scope of CoreOS configuration.
+
+- control_key: AU-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of automated mechanisms to determine if
+        organizational information has been disclosed in an
+        unauthorized manner is outside the scope of
+        CoreOS configuration.
+
+- control_key: AU-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Reviews of the open source information sites being monitored
+        at an organization-defined frequency is outside the scope
+        of CoreOS configuration.
+
+- control_key: AU-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/876
+
+- control_key: AU-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/877
+
+- control_key: AU-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/878
+
+- control_key: AU-14 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/879
+
+- control_key: AU-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/880
+
+- control_key: AU-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of organization-defined methods for coordinating
+        organization-defined audit information among external
+        organizations when audit information is transmitted
+        across organizational boundaries is outside the scope
+        of CoreOS configuration.
+
+- control_key: AU-16 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be tracked
+        via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/881
+
+- control_key: AU-16 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Providing cross-organizational audit information to
+        organization-defined organizations based on
+        organization-defined cross-organizational sharing
+        agreements is outside the scope of CoreOS
+        configuration.
