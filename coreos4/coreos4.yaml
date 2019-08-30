@@ -3595,7 +3595,7 @@ satisfies:
         elements responsible for related plans is outside the scope
         of CoreOS configuration.
 
-- control_key: CP-4
+- control_key: CP-4 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
