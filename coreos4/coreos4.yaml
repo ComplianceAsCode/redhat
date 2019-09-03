@@ -4654,6 +4654,17 @@ satisfies:
         organization-defined supplemental authentication techniques or
         mechanisms under specific organization-defined circumstances or
         situations is outside the scope of CoreOS configuration.
+
+- control_key: IA-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/989
 ##
 ## BEGINNING OF:
 ## INCIDENT RESPONSE
