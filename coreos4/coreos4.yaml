@@ -5224,6 +5224,149 @@ satisfies:
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/1005
+
+- control_key: MA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Establishing a process for maintenance personnel authorization and
+        maintaining a list of authorized maintenance organizations or personnel
+        is outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Ensuring that non-escorted personnel performing maintenance on
+        the information system have required access authorizations is
+        outside the scope of CoreOS configuration.
+    - key: c
+      text: |
+        Designating organizational personnel with required access
+        authorizations and technical competence to supervise the
+        maintenance activities of personnel who do not possess
+        the required access authorizations is outside the
+        scope of CoreOS configuration.
+
+- control_key: MA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Implementing organizational procedures for the use of maintenance
+        personnel that lack appropriate security clearances or are not U.S.
+        citizens is outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Development and implementation of  alternate security safeguards
+        in the event an information system component cannot be sanitized,
+        removed, or disconnected from the system, is outside the scope
+        of CoreOS configuration.
+
+- control_key: MA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes ensuring that personnel performing
+        maintenance and diagnostic activities on an information system
+        processing, storing, or transmitting classified information
+        possess security clearances and formal access approvals for at
+        least the highest classification level and for all compartments
+        of information on the system, is outside the scope of CoreOS
+        configuration.
+
+- control_key: MA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes ensuring that personnel performing
+        maintenance and diagnostic activities on an information system
+        processing, storing, or transmitting classified information are
+        U.S. citizens, is outside the scope of CoreOS configuration.
+
+- control_key: MA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes that ensure cleared foreign nationals (i.e.
+        foreign nationals with appropriate security clearances), are used
+        to conduct maintenance and diagnostic activities on classified
+        information systems only when the systems are jointly owned and
+        operated by the United States and foreign allied governments, or
+        owned and operated solely by foreign allied governments, is outside
+        the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes that ensure approvals, consents, and detailed
+        operational conditions regarding the use of foreign nationals to
+        conduct maintenance and diagnostic activities on classified information
+        systems are fully documented within Memoranda of Agreements, is outside
+        the scope of CoreOS configuration.
+
+- control_key: MA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes ensuring that non-escorted personnel
+        performing maintenance activities not directly associated with
+        the information system but in the physical proximity of the
+        system, have required access authorizations, is outside the
+        scope of CoreOS configuration.
+
+- control_key: MA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1010
+
+- control_key: MA-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1011
+
+- control_key: MA-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1012
+
+- control_key: MA-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1013
 ##
 ## BEGINNING OF:
 ## MEDIA PROTECTION
@@ -6069,16 +6212,20 @@ satisfies:
 ##  - implementation_status: complete
 ##  - implementation_status: none
 
-##     AC-2 is an organizational control outside the scope
-##     of configuring CoreOS.
-
 - control_key: PS-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        Development of personnel security policy and procedures
+    - key: a
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational reviews and updates to the personnel security policy
+        and personnel security procedures at an organization-defined frequency
         is outside the scope of CoreOS configuration.
 
 - control_key: PS-2
@@ -6086,49 +6233,303 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational assignment of a risk designation to all organizational
+        positions is outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational establishment of screening criteria for individuals
+        filling those positions is outside the scope of CoreOS
+        configuration.
+    - key: c
+      text: |
+        Organizational review and updating of position risk
+        designations at an organization-defined frequency is outside the scope
+        of CoreOS configuration.
 
 - control_key: PS-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational screening of individuals prior to authorizing access
+        to the information system is outside the scope of CoreOS
+        configuration.
+    - key: b
+      text: |
+        Organizational processes to rescreen individuals according to
+        organization-defined conditions requiring rescreening and,
+        where rescreening is so indicated, the frequency of such
+        rescreening, is outside the scope of CoreOS
+        configuration.
+
+- control_key: PS-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting classified
+        information are cleared and indoctrinated to the highest classification
+        level of the information to which they have access on the system,
+        are outside the scope of CoreOS configuration.
+
+- control_key: PS-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting types of
+        classified information which require formal indoctrination, are
+        formally indoctrinated for all of the relevant types of information
+        to which they have access on the system, are outside the scope
+        of CoreOS configuration.
+
+- control_key: PS-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting information
+        requiring special protection have valid access authorizations that are
+        demonstrated by assigned official government dutues, are outside the
+        scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting information
+        requiring special protection satisgy organization-defined additional
+        personnel screening criteria, are outside the scope of CoreOS
+        configuration.
 
 - control_key: PS-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, information system access is disabled within an
+        organization-defined time period, are outside the scope of
+        CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, any authenticators/credentials associated with the individual
+        are terminated/revoked, are outside the scope of
+        CoreOS configuration.
+    - key: c
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, exit interviews are conducted that include a discussion of
+        organization-defined information security topics, are outside the scope
+        of CoreOS configuration.
+    - key: d
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, all security-related organizational information
+        system-related property is retrieved, are outside the scope
+        of CoreOS configuration.
+    - key: e
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, the organization retains access to organizational
+        information systems formerly controlled by the terminated individual,
+        are outside the scope of CoreOS configuration.
+    - key: f
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, the organization notifies organization-defined personnel
+        or roles within an organization-defined time period, are outside
+        the scope of CoreOS configuration.
+
+- control_key: PS-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes which notify terminated individuals of
+        applicable, legally binding post-employment requirements for
+        the protection of organizational information are outside
+        the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes requiring terminated individuals
+        to sign an acknowledgement of post-employment requirements
+        as part of the organizational termination process
+        are outside the scope of CoreOS configuration.
+
+- control_key: PS-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational employment of automated mechanisms to notify
+        organization-defined personnel or roles upon termination of
+        an individual, is outside the scope of
+        CoreOS configuration.
 
 - control_key: PS-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational processes to review and confirm ongoing operational
+        need for current logical and physical access authorizations to
+        information systems/facilities when individuals are reassigned or
+        transferred to other positions within the organization are
+        outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes to initiate organization-defined transfer
+        or reassignment actions within organization-defined time period
+        following the formal transfer action are outside the scope of
+        CoreOS configuration.
+    - key: c
+      text: |
+        Organizational processes to modify access authorizations as needed to
+        correspond with any changes in oeprational need due to reassignment
+        or transfer are outside the scope of CoreOS configuration.
+    - key: d
+      text: |
+        Organizational notifications of organization-defined personnel
+        or roles within an organization-defined time period are outside
+        the scope of CoreOS configuration.
 
 - control_key: PS-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational process to develop and document access agreements for
+        organizational information systems are outside the scope of
+        CoreOS configuration.
+    - key: b
+      text: |
+        Organizational reviews and updates to the access agreements at an
+        organization-defined frequency are outside the scope of
+        CoreOS configuration.
+    - key: c
+      text: |
+        Organizational processes that ensure individuals requiring access to
+        organizational information and information systems sign and re-sign
+        access agreements are outside the scope of CoreOS configuration.
+
+- control_key: PS-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: PS-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes that ensure access to classified information
+        requiring special protection is granted only to individuals who
+        have a valid access authorization that is demonstrated by assigned
+        official government duties are outside the scope of CoreOS
+        configuration.
+    - key: b
+      text: |
+        Organizational processes that ensure access to classified information
+        requiring special protection is granted only to individuals who
+        satisfy associated personnel security criteria are outside
+        the scope of CoreOS configuration.
+    - key: c
+      text: |
+        Organizational processes that ensure access to classified information
+        requiring special protection is granted only to individuals who
+        have read, understood, and signed a nondisclosure agreement are
+        outside the scope of CoreOS configuration.
+
+- control_key: PS-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes to notify individuals of applicable, legally
+        binding post-employment requirements for protection of organizational
+        information are outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes which require individuals to sign
+        an acknowledgement of these requirements, if applicable, as
+        part of granting initial access to covered information, are
+        outside the scope of CoreOS configuration.
 
 - control_key: PS-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational processes to establish security requirements including
+        security roles and responsibilities for third-party providers are
+        outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes requiring third-party providers to comply
+        with personnel security polocies and procedures established by
+        the organization are outside the scope of CoreOS configuration.
+    - key: c
+      text: |
+        Organizational processes to document presonnel security requirements
+        are outside the scope of CoreOS configuration.
+    - key: d
+      text: |
+        Organizational processes to require third-party providers to notify
+        organization-defined personnel or roles of any personnel transfers or
+        terminations of third-party personnel who possess organizational
+        credentials and/or badges, or who have information system privileges
+        within an organization-defined time period, are outside the
+        scope of CoreOS configuration.
+    - key: e
+      text: |
+        Organizational monitoring of provider compliance is outside
+        the scope of CoreOS configuration.
 
-- control_key: PS-8
+- control_key: PS-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational employment of a formal sanctions process for individuals
+        failing to comply with established information security policies
+        and procedures is outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational notification of organization-defined personnel
+        or roles within an organization-defined time period when a formal
+        employee santions process is initiated, identifying the individual
+        sanctioned and the reason for the sanction.
 ##
 ## BEGINNING OF:
 ## RISK ASSESSMENT
