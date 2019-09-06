@@ -6514,7 +6514,7 @@ satisfies:
         Organizational monitoring of provider compliance is outside
         the scope of CoreOS configuration.
 
-- control_key: PS-7
+- control_key: PS-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
