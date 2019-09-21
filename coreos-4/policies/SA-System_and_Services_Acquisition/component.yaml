@@ -2,42 +2,123 @@
 ## BEGINNING OF:
 ## SYSTEM AND SERVICES ACQUISITION
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
 
 - control_key: SA-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to develop, document, and disseminate to
+        organization-defined personnel or roles a system and services
+        acquisition policy is outside the scope of
+        CoreOS configuration.
+    - key: b
+      text: |
+        Organizational review and updates to the current system and services
+        acquisition policy and procedures at an organization-defined frequency
+        is outside the scope of CoreOS configuration.
 
 - control_key: SA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to determine information security requirements
+        for the information system or information system service in
+        mission/business process planning are outside the scope of
+        CoreOS configuration.        
+    - key: b
+      text: |
+        Organizational processes to determine, document, and allocate the
+        resources required to protect the information system or information
+        system service as part of its capital planning and investment
+        control process are outside the scope of
+        CoreOS configuration.
+    - key: c
+      text: |
+        Organizational processes to establish a discrete line item for
+        information security in organizational programming and budgeting
+        documentation are outside the scope of CoreOS configuration.
 
 - control_key: SA-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to manage the information system using
+        organization-defined system development life cycle that incorporates
+        information security considerations are outside the scope
+        of CoreOS configuration.
+    - key: b
+      text: |
+        Organizational processes to define and document information security
+        roles and responsibilities throughout the system development
+        life cycle are outside the scope of CoreOS configuration.
+    - key: c
+      text: |
+        Organizational processes to identify individuals having information
+        security roles and responsibilities are outside the scope of
+        CoreOS configuration.
+    - key: d
+      text: |
+        Organizational processes to integrate the organizational information
+        security risk management process into system development life cycle
+        activities are outside the scope of CoreOS configuration.
 
 - control_key: SA-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to include security functional requirements
+        in acquisition contracts are outside the scope of CoreOS
+        configuration.
+    - key: b
+      text: |
+        Organizational processes to include security strength requirements
+        in acquisition contracts are outside the scope of CoreOS
+        configuration.
+    - key: c
+      text: |
+        Organizational processes to include security assurance requirements
+        in acquisition contracts are outside the scope of
+        CoreOS configuration.
+    - key: d
+      text: |
+        Organizational processes to include security-related documentation
+        requirements in acquisition contracts are outside the scope of
+        CoreOS configuration.
+    - key: e
+      text: |
+        Organizational processes to include requirements for protecting
+        security-related documentation in acquisition contracts
+        are outside the scope of CoreOS configuration.
+    - key: f
+      text: |
+        Organizational processes to include a description of the information
+        system development environment and environment in which the system is
+        intended to operate in acqusition contracts are outside the scope of
+        CoreOS configuration.
+    - key: g
+      text: |
+        Organizational processes to include acceptance criteria in
+        acqusition contracts are outside the scope of CoreOS
+        configuration.
 
 ##
 ## Developers note on SA-4 (1):
