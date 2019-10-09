@@ -139,7 +139,7 @@
 - control_key: AU-6 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicablee
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
