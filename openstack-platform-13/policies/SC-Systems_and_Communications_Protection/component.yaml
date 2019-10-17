@@ -176,16 +176,6 @@
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/456'
 
-- control_key: SC-7 (20)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'Documentation/guidance on this control is being developed on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/457'
-
 - control_key: SC-8
   standard_key: NIST-800-53
   covered_by: []
