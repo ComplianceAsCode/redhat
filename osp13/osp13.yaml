@@ -2556,15 +2556,6 @@ satisfies:
         'This control reflects organizational procedure/policy and is not
         applicable to component-level configuration.'
 
-- control_key: IR-4 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
 - control_key: IR-5
   standard_key: NIST-800-53
   covered_by: []
@@ -4288,16 +4279,6 @@ satisfies:
         'Documentation/guidance on this control is being developed on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/456'
-
-- control_key: SC-7 (20)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'Documentation/guidance on this control is being developed on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/457'
 
 - control_key: SC-8
   standard_key: NIST-800-53

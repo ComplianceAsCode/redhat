@@ -4847,15 +4847,6 @@ satisfies:
         'This control reflects organizational procedure/policy and is not
         applicable to component-level configuration.'
 
-- control_key: IR-4 (10)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
-
 - control_key: IR-5
   standard_key: NIST-800-53
   covered_by: []
