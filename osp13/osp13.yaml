@@ -821,7 +821,7 @@ satisfies:
 - control_key: AU-6 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicablee
+  implementation_status: not applicable
   narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
@@ -4560,7 +4560,8 @@ satisfies:
         Documentation on ensuring this functionality is configured is forthcoming.
         This activity is being tracked in GitHub:
 
-        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'##
+        https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'
+##
 ## BEGINNING OF:
 ## SYSTEM AND INFORMATION INTEGRITY
 ##
