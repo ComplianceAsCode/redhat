@@ -248,8 +248,7 @@ satisfies:
         Documentation of OpenShift authorization frameworks and policies 
         can be found in the OpenShift Architecture documentation:
 
-        https://docs.openshift.com/container-platform/3.3/architecture/
-        additional_concepts/authorization.html
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/authorization.html
 
         Each OpenShift deployment is unique in their rules, roles,
         policy bindings. This section should be updated with deployment
@@ -266,13 +265,13 @@ satisfies:
         information within the customer application, and between the customer
         application and external systems. A successful control response will
         need to address the customer information flow control policies,
-        as well as mechanisms in place to enforce those policies.>
+        as well as mechanisms in place to enforce those policies.
 
-        <A review of OpenShift v3 networking can be found in the OpenShift
+        A review of OpenShift v3 networking can be found in the OpenShift
         Architecture guide:
 
-        https://docs.openshift.com/container-platform/3.3/architecture/
-        additional_concepts/networking.html'
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/networking.html
+        '
 
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
