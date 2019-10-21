@@ -2851,6 +2851,17 @@ satisfies:
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/435'
 
+- control_key: MA-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Documentation/guidance for this control is being
+        tracked on GitHub:
+
+        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/436
+
 - control_key: MA-5
   standard_key: NIST-800-53
   covered_by: []
@@ -2879,17 +2890,6 @@ satisfies:
         on GitHub:
 
         https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/275'
-
-- control_key: MA-6 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: planned
-  narrative:
-    - text: |
-        'Documentation/guidance for this control is being
-        tracked on GitHub:
-
-        https://github.com/ComplianceAsCode/redhat-openstack-platform-13/issues/436'
 ##
 ## BEGINNING OF:
 ## MEDIA PROTECTION
