@@ -1,29 +1,14 @@
-#
-#
-#
+TARGETS = ansible-tower coreos-4 identity-management openshift-container-platform-3 openshift-dedicated openstack-platform-13 virtualization-host virtualization-manager
+TARGET_FILES = $(TARGETS:%=build/%/component.yaml)
 
-all: ansible openshift openstack idm rhvh rhvm
-
-ansible:
-	cd ansible-tower && make && cd -
-
-coreos:
-	cd coreos-4 && make && cd -
-
-openshift:
-	cd openshift-container-platform-3 && make && cd -
-
-openstack:
-	cd openstack-platform-13 && make && cd -
-
-idm:
-	cd identity-management && make && cd -
-
-rhvh:
-	cd virtualization-host && make && cd -
-
-rhvm:
-	cd virtualization-manager && make && cd -
+.PHONY: clean
+all: $(TARGET_FILES)
 
 clean:
-	rm {ansible-tower,openshift-container-platform-3,openstack-platform-13,identity-management,virtualization-host,virtualization-manager}/component.yaml
+	rm -f $(TARGET_FILES)
+
+build/%/component.yaml: %/header_opencontrol.yaml %/policies/**/*
+	mkdir -p $(@:%/component.yaml=%)
+	cat $(sort $^) > $@
+
+%: build/%/component.yaml
