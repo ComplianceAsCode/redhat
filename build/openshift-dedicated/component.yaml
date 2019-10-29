@@ -1,0 +1,2942 @@
+---
+documentation_complete: false
+name: Red Hat OpenShift Dedicated
+schema_version: 3.0.0
+satisfies:
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-1
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'AC-1(a) is an organizational control outside the scope of component-level configuration.'
+    - key: b
+      text: |
+        'AC-1(b) is an organizational control outside the scope of component-level configuration.'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'AC-2(a) is an organizational control outside the scope of component-level configuration.'
+    - key: b
+      text: |
+        'AC-2(b) is an organizational control outside the scope of component-level configuration.'
+    - key: c
+      text: |
+        'AC-2(c) is an organizational control outside the scope of component-level configuration.'
+    - key: d
+      text: |
+        'AC-2(d) is an organizational control outside the scope of component-level configuration.'
+    - key: e
+      text: |
+        'AC-2(e) is an organizational control outside the scope of component-level configuration.'
+    - key: f
+      text: |
+        'AC-2(f) is an organizational control outside the scope of component-level configuration.'
+    - key: g
+      text: |
+        'AC-2(g) is an organizational control outside the scope of component-level configuration.'
+    - key: h
+      text: |
+        'AC-2(h) is an organizational control outside the scope of component-level configuration.'
+    - key: i
+      text: |
+        'AC-2(i) is an organizational control outside the scope of component-level configuration.'
+    - key: j
+      text: |
+        'AC-2(j) is an organizational control outside the scope of component-level configuration.'
+    - key: k
+      text: |
+        'AC-2(k) is an organizational control outside the scope of component-level configuration.'
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-1
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-2
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-3
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-4
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-5
+- control_key: AC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6
+- control_key: AC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-1
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-2
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-5
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-9
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-10
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-7
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-8
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+    - key: c
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-11
+- control_key: AC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-11?baseline=moderate#enhancement-1
+- control_key: AC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-12
+- control_key: AC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-14
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-1
+- control_key: AC-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-2
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-3
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-4
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18?baseline=moderate#enhancement-1
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-19
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-19?baseline=moderate#enhancement-5
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20?baseline=moderate#enhancement-1
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20?baseline=moderate#enhancement-2
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-21
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-22
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## AWARENESS AND TRAINING CONTROLS
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AT-1
+- control_key: AT-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AT-2
+- control_key: AT-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AT-2?baseline=moderate#enhancement-2
+- control_key: AT-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AT-3
+- control_key: AT-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AT-4
+- control_key: AT-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''##
+## BEGINNING OF:
+## AUDIT AND ACCOUNTABILITY
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Control selections based off
+## https://nvd.nist.gov/800-53/Rev4/family/Audit%20and%20Accountability
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-1
+- control_key: AU-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-2
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-2?baseline=moderate#enhancement-3
+- control_key: AU-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-3
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-3?baseline=moderate#enhancement-1
+- control_key: AU-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-4
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-5
+- control_key: AU-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-6
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-6?baseline=moderate#enhancement-1
+- control_key: AU-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-6?baseline=moderate#enhancement-3
+- control_key: AU-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-7
+- control_key: AU-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-7?baseline=moderate#enhancement-1
+- control_key: AU-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-8
+- control_key: AU-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-8?baseline=moderate#enhancement-1
+- control_key: AU-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-9
+- control_key: AU-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-9?baseline=moderate#enhancement-4
+- control_key: AU-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-11
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AU-12
+- control_key: AU-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+    - key: c
+      text: |
+        ''##
+## BEGINNING OF:
+## SECURITY ASSESSMENT AND AUTHORIZATION
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security controls from:
+## https://nvd.nist.gov/800-53/Rev4/family/Security%20Assessment%20and%20Authorization
+
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-1
+- control_key: CA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-2
+- control_key: CA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-2?baseline=moderate#enhancement-1
+- control_key: CA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-3
+- control_key: CA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-3?baseline=moderate#enhancement-5
+- control_key: CA-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-5
+- control_key: CA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-6
+- control_key: CA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-7
+- control_key: CA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-7?baseline=moderate#enhancement-1
+- control_key: CA-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CA-9
+- control_key: CA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Configuration%20Management
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-1
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-2
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-2?baseline=moderate#enhancement-1
+- control_key: CM-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-2?baseline=moderate#enhancement-3
+- control_key: CM-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-2?baseline=moderate#enhancement-7
+- control_key: CM-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-3
+- control_key: CM-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-3?baseline=moderate#enhancement-2
+- control_key: CM-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-4
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-5
+- control_key: CM-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-6
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+    - key: c
+      text: |
+        ''
+    - key: d
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-7
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-7?baseline=moderate#enhancement-1
+- control_key: CM-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-7?baseline=moderate#enhancement-2
+- control_key: CM-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-7?baseline=moderate#enhancement-4
+- control_key: CM-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-8
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-8?baseline=moderate#enhancement-1
+- control_key: CM-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-8?baseline=moderate#enhancement-3
+- control_key: CM-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-8?baseline=moderate#enhancement-5
+- control_key: CM-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-9
+- control_key: CM-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-10
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CM-11
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## CONTINGENCY PLANNING
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Contingency%20Planning
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-1
+- control_key: CP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-2
+- control_key: CP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-2?baseline=moderate#enhancement-1
+- control_key: CP-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-2?baseline=moderate#enhancement-3
+- control_key: CP-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-2?baseline=moderate#enhancement-8
+- control_key: CP-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-3
+- control_key: CP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-4
+- control_key: CP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-4?baseline=moderate#enhancement-1
+- control_key: CP-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-6
+- control_key: CP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-6?baseline=moderate#enhancement-1
+- control_key: CP-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-6?baseline=moderate#enhancement-3
+- control_key: CP-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-7
+- control_key: CP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-7?baseline=moderate#enhancement-1
+- control_key: CP-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-7?baseline=moderate#enhancement-2
+- control_key: CP-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-7?baseline=moderate#enhancement-3
+- control_key: CP-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-8
+- control_key: CP-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-8?baseline=moderate#enhancement-1
+- control_key: CP-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-8?baseline=moderate#enhancement-2
+- control_key: CP-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-9
+- control_key: CP-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+    - key: c
+      text: |
+        ''
+    - key: d
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-9?baseline=moderate#enhancement-1
+- control_key: CP-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-10
+- control_key: CP-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/CP-10?baseline=moderate#enhancement-2
+- control_key: CP-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Identification%20and%20Authentication
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-1
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2
+- control_key: IA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-1
+- control_key: IA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=moderate#enhancement-2
+- control_key: IA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=moderate#enhancement-3
+- control_key: IA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=moderate#enhancement-8
+- control_key: IA-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=moderate#enhancement-11
+- control_key: IA-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-12
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-3
+- control_key: IA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-4
+- control_key: IA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+    - key: c
+      text: |
+        ''
+    - key: d
+      text: |
+        ''
+    - key: e
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+    - key: c
+      text: |
+        ''
+    - key: d
+      text: |
+        ''
+    - key: e
+      text: |
+        ''
+    - key: f
+      text: |
+        ''
+    - key: g
+      text: |
+        ''
+    - key: h
+      text: |
+        ''
+    - key: i
+      text: |
+        ''
+    - key: j
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-1
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |
+        ''
+    - key: b
+      text: |
+        ''
+    - key: c
+      text: |
+        ''
+    - key: d
+      text: |
+        ''
+    - key: e
+      text: |
+        ''
+    - key: f
+      text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=moderate#enhancement-2
+- control_key: IA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=moderate#enhancement-3
+- control_key: IA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-11
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-6
+- control_key: IA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-7
+- control_key: IA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8
+- control_key: IA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-1
+- control_key: IA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-2
+- control_key: IA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-3
+- control_key: IA-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-4
+- control_key: IA-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## MAINTENANCE
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Maintenance
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-1
+- control_key: MA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-2
+- control_key: MA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-3
+- control_key: MA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-3?baseline=moderate#enhancement-1
+- control_key: MA-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-3?baseline=moderate#enhancement-2
+- control_key: MA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-4
+- control_key: MA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-4?baseline=moderate#enhancement-2
+- control_key: MA-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-5
+- control_key: MA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-6
+- control_key: MA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## MAINTENANCE
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Maintenance
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-1
+- control_key: MA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-2
+- control_key: MA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-3
+- control_key: MA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-3?baseline=moderate#enhancement-1
+- control_key: MA-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-3?baseline=moderate#enhancement-2
+- control_key: MA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-4
+- control_key: MA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-4?baseline=moderate#enhancement-2
+- control_key: MA-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-5
+- control_key: MA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MA-6
+- control_key: MA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## MEDIA PROTECTION
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Media%20Protection
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-1
+- control_key: MP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-2
+- control_key: MP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-3
+- control_key: MP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-4
+- control_key: MP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-5
+- control_key: MP-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-5?baseline=moderate#enhancement-4
+- control_key: MP-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-6
+- control_key: MP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-7
+- control_key: MP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/MP-7?baseline=moderate#enhancement-1
+- control_key: MP-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## PHYSICAL AND ENVIRONMENTAL PROTECTION
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Physical%20and%20Environmental%20Protection
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-1
+- control_key: PE-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked
+        via:
+
+        [https://github.com/ComplianceAsCode/redhat/issues/762](https://github.com/ComplianceAsCode/redhat/issues/762)
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-2
+- control_key: PE-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: b
+      text: |
+        OpenShift Dedicated staff do not have physical access
+        to the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: c
+      text: |
+        OpenShift Dedicated staff do not have physical access
+        to the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: d
+      text: |
+        OpenShift Dedicated staff do not have physical access
+        to the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-3
+- control_key: PE-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: b
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: c
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: d
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: e
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: f
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: g
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-4
+- control_key: PE-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        OpenShift Dedicated staff do not have physical access to
+        the information system distribution and transmission lines.
+
+        This control is inherited from Amazon Web Services.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-5
+- control_key: PE-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        OpenShift Dedicated staff do not have physical access to
+        information system output devices.
+
+        This control is inherited from Amazon Web Services.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-6
+- control_key: PE-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: b
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+    - key: c
+      text: |
+        OpenShift Dedicated staff do not have physical access to
+        the facility where the information system resides.
+
+        This control is inherited from Amazon Web Services.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-6?baseline=moderate#enhancement-1
+- control_key: PE-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        OpenShift Dedicated staff do not monitor physical
+        intrusion alarms and surveillance equipment.
+
+        This control is inherited from Amazon Web Services.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-8
+- control_key: PE-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+    - key: b
+      text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-9
+- control_key: PE-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-10
+- control_key: PE-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+    - key: b
+      text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+    - key: c
+      text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-11
+- control_key: PE-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-12
+- control_key: PE-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-13
+- control_key: PE-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-13?baseline=moderate#enhancement-2
+- control_key: PE-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-13?baseline=moderate#enhancement-3
+- control_key: PE-13 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-14
+- control_key: PE-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+    - key: b
+      text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-14?baseline=moderate#enhancement-2
+- control_key: PE-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-15
+- control_key: PE-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-16
+- control_key: PE-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PE-17
+- control_key: PE-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is inherited from Amazon Web Services, who own
+        and operate the facility where the information system
+        resides.
+##
+## BEGINNING OF:
+## PLANNING
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Planning
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-1
+- control_key: PL-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-2
+- control_key: PL-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-2?baseline=moderate#enhancement-3
+- control_key: PL-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-4
+- control_key: PL-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-4?baseline=moderate#enhancement-1
+- control_key: PL-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PL-8
+- control_key: PL-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+##
+## BEGINNING OF:
+## PERSONNEL SECURITY
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Personnel%20Security
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-1
+- control_key: PS-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-2
+- control_key: PS-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-3
+- control_key: PS-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-4
+- control_key: PS-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-5
+- control_key: PS-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-6
+- control_key: PS-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-7
+- control_key: PS-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/PS-8
+- control_key: PS-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+##
+## BEGINNING OF:
+## RISK ASSESSMENT
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/Risk%20Assessment
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-1
+- control_key: RA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-2
+- control_key: RA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-3
+- control_key: RA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-5
+- control_key: RA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-5?baseline=moderate#enhancement-1
+- control_key: RA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-5?baseline=moderate#enhancement-2
+- control_key: RA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/RA-5?baseline=moderate#enhancement-5
+- control_key: RA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: ''##
+## BEGINNING OF:
+## SYSTEM AND SERVICES ACQUISITION
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/System%20and%20Services%20Acquisition
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-1
+- control_key: SA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-2
+- control_key: SA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-3
+- control_key: SA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4
+- control_key: SA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4?baseline=moderate#enhancement-1
+- control_key: SA-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4?baseline=moderate#enhancement-2
+- control_key: SA-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4?baseline=moderate#enhancement-9
+- control_key: SA-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-4?baseline=low#enhancement-10
+- control_key: SA-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-5
+- control_key: SA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-9
+- control_key: SA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-9?baseline=moderate#enhancement-2
+- control_key: SA-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-10
+- control_key: SA-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SA-11
+- control_key: SA-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''##
+## BEGINNING OF:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/System%20and%20Communications%20Protection
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-1
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-2
+- control_key: SC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-4
+- control_key: SC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-5
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-7
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-7?baseline=moderate#enhancement-3
+- control_key: SC-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-7?baseline=moderate#enhancement-4
+- control_key: SC-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-7?baseline=moderate#enhancement-5
+- control_key: SC-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-7?baseline=moderate#enhancement-7
+- control_key: SC-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-8
+- control_key: SC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-8?baseline=moderate#enhancement-1
+- control_key: SC-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-10
+- control_key: SC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-12
+- control_key: SC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-13
+- control_key: SC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-15
+- control_key: SC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-13
+- control_key: SC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-13
+- control_key: SC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-13
+- control_key: SC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-20
+- control_key: SC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-21
+- control_key: SC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-22
+- control_key: SC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-23
+- control_key: SC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SC-39
+- control_key: SC-39
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''##
+## BEGINNING OF:
+## SYSTEM AND INFORMATION INTEGRITY
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+##
+## Based off security control selections from
+## https://nvd.nist.gov/800-53/Rev4/family/System%20and%20Information%20Integrity
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-1
+- control_key: SI-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-2
+- control_key: SI-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-2?baseline=moderate#enhancement-2
+- control_key: SI-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-3
+- control_key: SI-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-3?baseline=moderate#enhancement-1
+- control_key: SI-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-3?baseline=moderate#enhancement-2
+- control_key: SI-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-4
+- control_key: SI-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-4?baseline=moderate#enhancement-2
+- control_key: SI-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-4?baseline=moderate#enhancement-4
+- control_key: SI-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-4?baseline=moderate#enhancement-5
+- control_key: SI-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-5
+- control_key: SI-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-7
+- control_key: SI-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-7?baseline=moderate#enhancement-1
+- control_key: SI-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-7?baseline=moderate#enhancement-7
+- control_key: SI-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-8
+- control_key: SI-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-8?baseline=moderate#enhancement-1
+- control_key: SI-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-8?baseline=moderate#enhancement-2
+- control_key: SI-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-10
+- control_key: SI-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-11
+- control_key: SI-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-12
+- control_key: SI-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/SI-16
+- control_key: SI-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |
+        ''
