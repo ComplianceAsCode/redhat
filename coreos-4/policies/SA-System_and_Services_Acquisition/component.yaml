@@ -141,7 +141,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (1) is planned.'
+        A control response to SA-4 (1) is planned. Progress
+        can be tracked at:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1027
 
 ##
 ## Developers note on SA-4 (2):
@@ -163,7 +166,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (2) is planned.'
+        A control response to SA-4 (2) is planned. Progress
+        can be tracked at:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1030
 
 ##
 ## Developers note on SA-4 (3):
@@ -179,7 +185,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (3) is planned.'
+        A control response to SA-4 (3) is planned. Progress
+        can be tracked at:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1031
 
 - control_key: SA-4 (4)
   standard_key: NIST-800-53
@@ -187,8 +196,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-8 (9).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-8 (9).
 
 ##
 ## Developers note on SA-4 (4):
@@ -203,7 +212,11 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (5) is planned.'
+        A control response to SA-4(5) is planned. Progress
+        can be tracked at:
+
+        http://atopathways.redhatgov.io/product-documents/coreos4/nist-800-53/sa/#SA-4%20(4)
+
 
 ##
 ## Developers note on SA-4 (6):
@@ -217,10 +230,28 @@
 - control_key: SA-4 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: unsatisfied
   narrative:
-    - text: |
-        'A control response to SA-4 (6) is planned.'
+    - key: a
+      text: |
+        Organizational employment of only government off-the-shelf
+        (GOTS) or commercial off-the-shelf (COTS) information assurance
+        (IA) and IA-enabled information technology products that compose
+        an NSA-approved solution to protect classified information when
+        the networks used to transmit the information are at a lower
+        classificiation level than the information transmitted, is
+        an organizational control outside the scope of
+        CoreOS configuration.
+    - key: b
+      text: |
+        Organizational assurance that these products have been evaluated
+        and/or validated by NSA or in accordance with NSA-approved
+        procedures is an organizational control outside the scope
+        of CoreOS configuration.
+
+        NOTE: As of September 2019, CoreOS has not undergone formal NSA
+        evaluation for the inclusion in cross domain information
+        systems.
 
 ##
 ## Developers note on SA-4 (7):
