@@ -1,0 +1,335 @@
+##
+## BEGINNING OF:
+## INCIDENT RESPONSE
+##
+- control_key: IR-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  IR-2 (1) relates to creating simulated events/scenarios
+##  relating to incident response. While this is an organizational
+##  control, consider creating component-specific incident
+##  response simulations as appropriate (e.g. if a virtualization
+##  product, what happens after a VM escape?).
+##
+- control_key: IR-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  IR-4 (2) is *technically* an organizational control, however
+##  many accreditors/auditors will want to understand how the
+##  system component integrates with dynamic reconfiguration capabilities.
+##  Lacking formal guidance from the government, some auditors expect a
+##  response to this control at the component level.
+##
+- control_key: IR-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  Often 3rd party auditors will incorrectly state satisfaction of IR-5 (1)
+##  relates to centralized audit logging of security events.
+##
+##  Central audit logging is covered under other controls, namely:
+##  - AU-6 (3) - Correlate Audit Repositories
+##  - AU-6 (4) - Central Review and Analysis
+##  - AU-12 - Audit Generation
+##
+- control_key: IR-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'

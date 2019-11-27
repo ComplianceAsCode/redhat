@@ -1,0 +1,375 @@
+##
+## BEGINNING OF:
+## PHYSICAL AND ENVIRONMENTAL PROTECTION
+##
+
+- control_key: PE-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-15 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-19 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'

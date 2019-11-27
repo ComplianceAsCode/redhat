@@ -1,0 +1,71 @@
+##
+## BEGINNING OF:
+## MAINTENANCE
+##
+
+- control_key: MA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: MA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: MA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: c
+      text: |
+        'This control is not applicable to OpenShift.
+
+        With the exception of access established through physical presense 
+        at the hardware and underlying operating system layers, connections to
+        OpenShift are treated as remote connections. Authorization and
+        authentication controls selected and verified from the IA family apply
+        to this control; no independant control response is required.'
+    - key: d
+      text: |
+        'With the exception of access established through physical presense 
+        at the hardware and underlying operating system layers, connections to
+        OpenShift are treated as remote connections. Authorization and
+        authentication controls selected and verified from the IA family apply
+        to this control; no independant control response is required.'
+    - key: e
+      text: |
+        'The customer will be responsible for terminating the session and
+        network connections when non-local maintenance and diagnostic activities
+        are completed. A successful control response will need to address
+        monitoring and enforcement of the disconnection requirement.
+
+        This is frequently accomplished by automatic logon timeouts from the
+        OpenShift web console, and SSH connection timeouts provided by the
+        underlying operating system.'
+
+- control_key: MA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
