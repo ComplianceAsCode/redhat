@@ -1,0 +1,783 @@
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'AC-1(a) is an organizational control outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'AC-1(b) is an organizational control outside the scope of OpenShift configuration.'
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'AC-2(a) is an organizational control outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'AC-2(b) is an organizational control outside the scope of OpenShift configuration.'
+    - key: c
+      text: |
+        'AC-2(c) is an organizational control outside the scope of OpenShift configuration.'
+    - key: d
+      text: |
+        'AC-2(d) is an organizational control outside the scope of OpenShift configuration.'
+    - key: e
+      text: |
+        'AC-2(e) is an organizational control outside the scope of OpenShift configuration.'
+    - key: f
+      text: |
+        'AC-2(f) is an organizational control outside the scope of OpenShift configuration.'
+    - key: g
+      text: |
+        'AC-2(g) is an organizational control outside the scope of OpenShift configuration.'
+    - key: h
+      text: |
+        'AC-2(h) is an organizational control outside the scope of OpenShift configuration.'
+    - key: i
+      text: |
+        'AC-2(i) is an organizational control outside the scope of OpenShift configuration.'
+    - key: j
+      text: |
+        'AC-2(j) is an organizational control outside the scope of OpenShift configuration.'
+    - key: k
+      text: |
+        'AC-2(k) is an organizational control outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text:
+        'OpenShift components of the system support automated
+        management through monitoring of accounts and system
+        activity by logging of related information.
+
+        While OpenShift can generate audit data, and securely
+        transport the data to a SIEM, OpenShift does not provide
+        automated mechanisms (e.g. email, text messages) after
+        system events. This functionality would fall to third
+        party software.'
+
+# AC-2(2) NOTES:
+#       The customer will be responsible for automatically removing or
+#       disabling emergency and temporary accounts within the required
+#       timeframe. A successful control response will need to address
+#       all of the procedures and mechanisms involved in disabling these
+#       accounts.
+#
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text:
+        'OpenShift does not have the capability to create
+        guest/anonymous accounts or temporary accounts. Any
+        external emergency or temporary accounts will be
+        inherited from, and managed by, an external
+        identity service (e.g. LDAP).'
+
+#
+# AC-2(3) NOTES:
+#       The customer will be responsible for automatically disabling user
+#       accounts after the specified period of inactivity. A successful
+#       control response will need to address all automated mechanisms
+#       involved in disabling inactive accounts.
+#
+# ADMIN NOTE:
+#       AC-2(2) disables temp/emergency accounts after period of time.
+#       AC-2(3) differs by disabling *every other* account type
+#
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text:
+        'OpenShift end-user account management is inherited from
+        the hosting environment.Automatic disabling of these
+        accounts must happen at the centralized account
+        management level; for example, within LDAP, Red Hat
+        IdM, or Active Directory.'
+
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To meet FISMA requirements, OpenShift must be configured
+        to use centralized authentication (e.g. LDAP, Red Hat IdM,
+        Active Directory). The audit of account creation,
+        modification, enabling, disabling, and removal actions is
+        the respinsibility of the centralized service. Additionally,
+        notification of organization-defined personnel or roles is
+        also the responsibility of the centralized authentication
+        service.'
+
+##
+## Ref: https://access.redhat.com/solutions/2191161
+## "How to modify console session timeouts in Openshift 3"
+##
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Within OpenShift, the sessionMaxAgeSeconds variable in the
+        master-config.yaml file controls when/if users must logout after a
+        period of inactivity.'
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        'OpenShift roles can be used to grant various levels of access both
+        cluster-wide as well as at the project scope. Users and gruops can be
+        associated with, or bound to, multiple roles at the same time.'
+
+    - key: b
+      text: |
+        'This is an organizational control and not applicble to the configuration
+        of OpenShift.'
+    - key: c
+      text: |
+        'This is an organizational control and not applicble to the configuration
+        of OpenShift.'
+
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'OpenShift does not have the concept of group accounts.
+
+        Should the organization allow shared credentials, the
+        creation and management of such would fall under the scope
+        of operating the shared identity service and not OpenShift.'
+
+- control_key: AC-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Authorization policies determine whether a user is allowed to perform
+        a given action within an OpenShift project. This allows platform
+        administrators to use policy to control who has various access levels
+        to the OpenShift Container Platform itself and all projects. It also
+        allows developers to use local policy to control who has access to
+        their projects. Note that authorization is a separate step from
+        authentication, which is more about determining the identity of who
+        is taking the action.
+
+        Documentation of OpenShift authorization frameworks and policies
+        can be found in the OpenShift Architecture documentation:
+
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/authorization.html
+
+        Each OpenShift deployment is unique in their rules, roles,
+        policy bindings. This section should be updated with deployment
+        specific details on how the authorization policy has been
+        configured.'
+
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for controlling the flow of
+        information within the customer application, and between the customer
+        application and external systems. A successful control response will
+        need to address the customer information flow control policies,
+        as well as mechanisms in place to enforce those policies.
+
+        A review of OpenShift v3 networking can be found in the OpenShift
+        Architecture guide:
+
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/networking.html
+        '
+
+- control_key: AC-4 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for separating information flows
+        within the customer application. A successful control response will
+        need to address the customer organizational requirements for
+        the separation of information flows, and the mechanisms and
+        techniques used to accomplish this separation.'
+
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational/procedural control outside the scope of
+        OpenShift configuration.
+
+        The customer will be responsible for requiring users to use the
+        lowest level of access required to perform any given function. In
+        terms of OpenShift, this may require creation of multiple logon
+        accounts per user. When users require access to privileged functions
+        or capability, they will need to logout from the unprivileged account
+        and login with an account that has received appropriate RBAC rights.
+
+        Note OpenShift does not have privilege escalation capabilities similar
+        to sudo in Linux. Users will have to completely logout/login when
+        requiring privilege escalation between accounts.'
+
+- control_key: AC-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Satisfaction of this control is inherited from configuration
+        of the underlying operating system. When OpenShift is deployed
+        on Red Hat Enterprise Linux, or Red Hat OpenShift, and SELinux is
+        enforcing, this control is satisfied.'
+
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for auditing the execution of
+        privileged functions. A successful control response will need
+        to relate this requirement to the general auditing requirements
+        of the AU control family.'
+
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for ensuring that non-privileged
+        users cannot execute privileged functions. A successful control
+        response will need to discuss the use of centralized authentication
+        and authorization and any other means of enforcement of privilege
+        levels.'
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for enforcing a limit on consecutive
+        failed login attempts.
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-1'
+    - key: b
+      text: |
+        'The customer will be responsible for taking the FedRAMP required
+        actions defined by the customer, upon account lockout.
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-2'
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for displaying a system use
+        notification banner to users. A successful control response will need
+        to address the conditions under which the banner will be displayed
+        (if a non-government user accesses the system, the system use
+        notification banner may not be appropriate), as well as the contents
+        of the nofication message.
+
+        In context of OpenShift, a banner must be displayed for all means
+        of accessing OpenShift itself (e.g. service consoles, remote access
+        through SSH, etc).
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-3'
+    - key: b
+      text: |
+        'The customer will be responsible for displaying the use notification
+        banner until the user acknowledges the usage condition and takes
+        explicit actions to further access the system. A successful control
+        response will need to address the means by which the user will indicate
+        acknowlegement and move forward.
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-4'
+    - key: c
+      text: |
+        '
+        '//*
+        The customer will be responsible for displaying a system use
+        information message to users. A successful control response will need
+        to address the conditions under which the message will be
+        displayed (if a non-government user accesses the system, the system
+        use information message may not be appropriate), as well as the
+        contents of the notification message, including references to
+        applicable monitoring, recording, or auditing, and authorized usage
+        of the system.
+        */'
+    - key: 'Req. 1'
+      text: |
+        '//*
+        The customer will be responsible for determining the conditions
+        under which the system use notification will be displayed. These
+        conditions must be reviewed and accepted by the FedRAMP JAB.
+        */'
+    - key: 'Req. 2'
+      text: |
+        '//*
+        The customer will be responsible for how the system use notification
+        will be verified and how often it should be re-displayed and
+        re-verified. These conditions must be reviewed an accepted by the
+        FedRAMP JAB.
+        */'
+    - key: 'Req. 3'
+      text: |
+        '//*
+        The customer will be responsible for verifying that the system use
+        notification is being displayed as required, either through a
+        configuration baseline check or via other means. If this verification
+        does not happen through a configuration baseline check, the JAB must
+        review and accept the process used to perform the verification.
+        */'
+
+- control_key: AC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for limiting the number of
+        concurrent sessions to the customer application as required.
+        A successful control implemented will need to address the technical
+        mechanism used to enforce this limit.
+
+        Documentation on configuring this capability is being tracked in
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/616'
+
+- control_key: AC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to disconnect the idle users
+        from the management console after 15 minutes.'
+    - key: b
+      text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to disconnect the idle users
+        from the management console after 15 minutes.'
+
+- control_key: AC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to logout idle users from the
+        management console. Once logged out the only information available
+        will be the OpenShift logon screen.'
+
+- control_key: AC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for defining events or conditions
+        requiring disconnection (for example, user requesting logout), and for
+        terminating the session when those events or conditions arise. A
+        successful control response will need to outline the qualifying events
+        or conditions.'
+
+- control_key: AC-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'Whether user-initiated communication sessions originate
+        through the OpenShift web console or through command line,
+        users are given explicit logout capabilities. This is
+        default, non-configurable behavior of the OpenShift Container
+        Platform.'
+    - key: b
+      text: |
+        'OpenShift displays an explicit logout message upon user
+        session terminiations. This is default, non-configurable
+        behavior.'
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Regardless of access mechanism, such as the OpenShift Console or remote
+        access attempts through SSH, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-confiurable behavior.'
+
+- control_key: AC-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Data release markings, such as NATO or NOFORN, is the responsibility
+        of application and data owners running workload on the OpenShift platform.
+        This control is not applicable to the configuration of OpenShift itself.'
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'All system events, regardless of local or remote, are captured through
+        the OpenShift and underlying Red Hat Enterprise Linux audit subsystem.
+        This control is inherently met when auditing is enabled.'
+
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Beginning with OpenShift 4.3, when OpenShift is deployed on Red Hat Enterprise
+        Linux, and FIPS is enabled as a kernel setting, OpenShift will use OpenSSL
+        libraries instead of the native Golang crypto. The system operator will need to
+        verify that OpenShift is being deployed on a version of Red Hat Enterprise Linux
+        that has been FIPS validated.
+
+        Prior to OpenShift 4.3, remote sessions were encrypted using Golang-provided
+        cryptography. While not FIPS validated, this included the following
+        cryptographic algorithms and ciphers to protect the confidentiality
+        and integrity of remote access sessions:
+                - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+                - TLS_RSA_WITH_AES_128_CBC_SHA
+                - TLS_RSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+                - TLS_RSA_WITH_3DES_EDE_CBC_SHA'
+
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for requiring remote access
+        connections to the customer application to be routed through
+        customer-defined network access control points. A successful control
+        response will need to address the nature, number, and location of
+        such access control points, as well as the security controls in place
+        to protect those access control points.'
+
+- control_key: AC-17 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift utilizes the firewall technology embedded into Red Hat
+        Enterprise Linux. This technology, named firewalld, allows a system
+        administrator to configure host-based rules which take effect
+        immediately. This gives an OpenShift operator the ability to immediately
+        drop all remote connections.
+
+        Additionally, OpenShift nodes may be placed into Maintenance Mode. This
+        designation will migrate applications from a given cluster node to
+        another, disconnecting any active sessions to a given cluster node.
+
+        If immediate disconnect of all hosted applications are desired,
+        individual containers may be halted. This will disconnect user sessions
+        for tenant applications immediately.'
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is confired by the host operating system.'
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-21 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-21 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'

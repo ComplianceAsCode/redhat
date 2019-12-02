@@ -1,0 +1,5 @@
+---
+documentation_complete: false
+name: Red Hat OpenShift Container Platform 4.x
+schema_version: 3.0.0
+satisfies:
