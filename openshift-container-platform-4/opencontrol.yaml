@@ -4,6 +4,7 @@ metadata:
   description: OpenShift Container Platform 4.x
   maintainers:
     - Shawn Wells <shawn@redhat.com>
+    - Gabe Alford <galford@redhat.com>
 
 components:
   - ./policies/AC-Access_Control
