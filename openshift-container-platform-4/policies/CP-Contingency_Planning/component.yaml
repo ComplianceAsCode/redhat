@@ -431,7 +431,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for documenting how to reconstitute 
+        'The customer will be responsible for documenting how to reconstitute
         their OpenShift environment. A successful control response will detail
         processes used to fully recover/restore the OpenShift environment.'
 

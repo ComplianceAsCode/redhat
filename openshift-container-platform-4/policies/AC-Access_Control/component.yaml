@@ -236,7 +236,7 @@
         authentication, which is more about determining the identity of who
         is taking the action.
 
-        Documentation of OpenShift authorization frameworks and policies 
+        Documentation of OpenShift authorization frameworks and policies
         can be found in the OpenShift Architecture documentation:
 
         https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/authorization.html
@@ -628,7 +628,7 @@
         Enterprise Linux. This technology, named firewalld, allows a system
         administrator to configure host-based rules which take effect
         immediately. This gives an OpenShift operator the ability to immediately
-        drop all remote connections. 
+        drop all remote connections.
 
         Additionally, OpenShift nodes may be placed into Maintenance Mode. This
         designation will migrate applications from a given cluster node to
@@ -642,7 +642,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
-  narrative: 
+  narrative:
     - text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'

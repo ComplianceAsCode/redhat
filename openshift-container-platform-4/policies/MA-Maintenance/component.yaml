@@ -38,14 +38,14 @@
       text: |
         'This control is not applicable to OpenShift.
 
-        With the exception of access established through physical presense 
+        With the exception of access established through physical presense
         at the hardware and underlying operating system layers, connections to
         OpenShift are treated as remote connections. Authorization and
         authentication controls selected and verified from the IA family apply
         to this control; no independant control response is required.'
     - key: d
       text: |
-        'With the exception of access established through physical presense 
+        'With the exception of access established through physical presense
         at the hardware and underlying operating system layers, connections to
         OpenShift are treated as remote connections. Authorization and
         authentication controls selected and verified from the IA family apply

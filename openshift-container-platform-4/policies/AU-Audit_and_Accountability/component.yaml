@@ -191,10 +191,10 @@
   covered_by: []
   implementation_status: complete
   narrative:
-  #  Customers are responsible for comparing the internal information
-  #  system clocks at least hourly with an authoritative time source. A
-  #  successful control response will discuss the time source that system
-  #  clocks are synced with.
+#  Customers are responsible for comparing the internal information
+#  system clocks at least hourly with an authoritative time source. A
+#  successful control response will discuss the time source that system
+#  clocks are synced with.
     - key: a
       text: |
         'OpenShift utilizes the time services of the underlying operating
@@ -279,7 +279,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
-  narrative: 
+  narrative:
     - text: |
         'Documentation/instructions on audit retention is being tracked
         in Jira:

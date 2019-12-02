@@ -275,7 +275,7 @@
         'OpenShift has a built-in DNS so that services can be reached by
         the service DNS as well as the service IP/port. OpenShift supports
         split DNS by running SkyDNS on the master that answers DNS queries
-        for services. 
+        for services.
 
         OpenShift administrators are responsible for providing
         origin authentication and integrity verification artifacts along
@@ -300,7 +300,7 @@
         enable verification of a chain of trust among parent and child domains.
         A successful control response will discuss the technical means used to
         accomplish this.
-        
+
         Documentation on how to configure this functionality within
         OpenShift is forthcoming. This activity is being tracked in
         Jira:
@@ -395,7 +395,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        'When OpenShift runs on Red Hat Enterprise Linux, 
+        'When OpenShift runs on Red Hat Enterprise Linux,
         OpenShift maintains separate execution domains for each executing process by
         assigning a private virtual address space to each process.
 

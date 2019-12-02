@@ -44,7 +44,7 @@
 
         https://docs.openshift.com/container-platform/3.3/install_config/
         configuring_authentication.html#RequestHeaderIdentityProvider
-        
+
         Many customers are accepting password-enabled SSH keys as multi-
         factor authentication. The SSH key (something they have) and the
         decryption password (something they know). Prior to enabling CAC
@@ -386,4 +386,3 @@
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
         (ADFS) or Red Hat IdM.'
-
