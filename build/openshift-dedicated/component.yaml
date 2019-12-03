@@ -1458,9 +1458,8 @@ satisfies:
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''##
-## BEGINNING OF:
-## MAINTENANCE
+    - text: ''## BEGINNING OF:
+## INCIDENT RESPONSE
 ##
 ## Reminder of "implementation_status" codes:
 ##  - implementation_status: unsatisfied
@@ -1471,88 +1470,78 @@ satisfies:
 ##  - implementation_status: none
 ##
 ## Based off security control selections from
-## https://nvd.nist.gov/800-53/Rev4/family/Maintenance
+## https://nvd.nist.gov/800-53/Rev4/family/Incident%20Response
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-1
-- control_key: MA-1
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-1
+- control_key: IR-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''
+    - text: |
+        ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-2
-- control_key: MA-2
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-2
+- control_key: IR-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''
+    - text: |
+        ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-3
-- control_key: MA-3
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-4
+- control_key: IR-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''
+    - text: |
+        ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-3?baseline=moderate#enhancement-1
-- control_key: MA-3 (1)
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-5
+- control_key: IR-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''
+    - text: |
+        ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-3?baseline=moderate#enhancement-2
-- control_key: MA-3 (2)
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-6
+- control_key: IR-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''
+    - text: |
+        ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-4
-- control_key: MA-4
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-7
+- control_key: IR-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''
+    - text: |
+        ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-4?baseline=moderate#enhancement-2
-- control_key: MA-4 (2)
+#   https://nvd.nist.gov/800-53/Rev4/control/IR-8
+- control_key: IR-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: unknown
   narrative:
-    - text: ''
-
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-5
-- control_key: MA-5
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: unknown
-  narrative:
-    - text: ''
-
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/MA-6
-- control_key: MA-6
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: unknown
-  narrative:
-    - text: ''##
+    - text: |
+        ''
+##
 ## BEGINNING OF:
 ## MAINTENANCE
 ##
