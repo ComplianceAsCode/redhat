@@ -33,7 +33,7 @@
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text:
         CoreOS components of the system support automated
@@ -44,7 +44,17 @@
         transport the data to a SIEM, CoreOS does not provide
         automated mechanisms (e.g. email, text messages) after
         system events. This functionality would fall to third
-        party software.
+        party software, and therefore, this control is partial,
+        and will only be met as partial when implemented by
+        third party software such as an Identity Provider (IdP),
+        Active Directory (MSAD), LDAP, etc.
+
+        The ability to use Ignition scripts to configure CoreOS
+        to add local users means that this control needs to be
+        addressed for the case that a local user was added.
+
+        See https://jira.coreos.com/browse/CMP-199 for local
+        user account handling in CoreOS.
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -56,7 +66,7 @@
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text:
         CoreOS does not have the capability to create
@@ -64,6 +74,13 @@
         external emergency or temporary accounts will be
         inherited from, and managed by, an external
         identity service (e.g. LDAP).
+
+        The ability to use Ignition scripts to configure CoreOS
+        to add local users means that this control needs to be
+        addressed for the case that a local user was added.
+
+        See https://jira.coreos.com/browse/CMP-200 for local
+        user account handling in CoreOS.
 
 #
 # AC-2(3) NOTES:
