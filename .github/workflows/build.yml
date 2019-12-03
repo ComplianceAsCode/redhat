@@ -1,0 +1,24 @@
+name: Build
+on: push
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Make
+        run: |
+          make clean all
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v1.5.4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_MESSAGE: Automated content rebuild
+          COMMIT_AUTHOR_EMAIL: isimluk@fedorapeople.org
+          COMMIT_AUTHOR_NAME: Github Actions Automation
+          PULL_REQUEST_TITLE: 'Automated build of opencontrol data'
+          PULL_REQUEST_BODY: |
+            Automated content re-build.
+          PULL_REQUEST_BRANCH: opencontrol-build
+          BRANCH_SUFFIX: short-commit-hash
+      - name: Check output environment variable
+        run: echo "Pull Request Number - $PULL_REQUEST_NUMBER"
