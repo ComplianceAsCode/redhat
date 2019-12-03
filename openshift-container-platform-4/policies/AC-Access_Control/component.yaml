@@ -64,7 +64,7 @@
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text:
         'OpenShift components of the system support automated
@@ -75,7 +75,10 @@
         transport the data to a SIEM, OpenShift does not provide
         automated mechanisms (e.g. email, text messages) after
         system events. This functionality would fall to third
-        party software.'
+        party software, and therefore, this control will only
+        be met as partial when implemented by third party
+        software such as an Identity Provider (IdP),
+        Active Directory (MSAD), LDAP, etc.'
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -87,14 +90,16 @@
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text:
         'OpenShift does not have the capability to create
         guest/anonymous accounts or temporary accounts. Any
         external emergency or temporary accounts will be
         inherited from, and managed by, an external
-        identity service (e.g. LDAP).'
+        identity service (e.g. Active Directory, LDAP, etc.)
+        This control is partial because OpenShift has to be
+        configured to connect to an Identity Provider (IdP).'
 
 #
 # AC-2(3) NOTES:
