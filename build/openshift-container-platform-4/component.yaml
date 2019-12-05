@@ -1,0 +1,4943 @@
+---
+documentation_complete: false
+name: Red Hat OpenShift Container Platform 4.x
+schema_version: 3.0.0
+satisfies:
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'AC-1(a) is an organizational control outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'AC-1(b) is an organizational control outside the scope of OpenShift configuration.'
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'AC-2(a) is an organizational control outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'AC-2(b) is an organizational control outside the scope of OpenShift configuration.'
+    - key: c
+      text: |
+        'AC-2(c) is an organizational control outside the scope of OpenShift configuration.'
+    - key: d
+      text: |
+        'AC-2(d) is an organizational control outside the scope of OpenShift configuration.'
+    - key: e
+      text: |
+        'AC-2(e) is an organizational control outside the scope of OpenShift configuration.'
+    - key: f
+      text: |
+        'AC-2(f) is an organizational control outside the scope of OpenShift configuration.'
+    - key: g
+      text: |
+        'AC-2(g) is an organizational control outside the scope of OpenShift configuration.'
+    - key: h
+      text: |
+        'AC-2(h) is an organizational control outside the scope of OpenShift configuration.'
+    - key: i
+      text: |
+        'AC-2(i) is an organizational control outside the scope of OpenShift configuration.'
+    - key: j
+      text: |
+        'AC-2(j) is an organizational control outside the scope of OpenShift configuration.'
+    - key: k
+      text: |
+        'AC-2(k) is an organizational control outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text:
+        'OpenShift components of the system support automated
+        management through monitoring of accounts and system
+        activity by logging of related information.
+
+        While OpenShift can generate audit data, and securely
+        transport the data to a SIEM, OpenShift does not provide
+        automated mechanisms (e.g. email, text messages) after
+        system events. This functionality would fall to third
+        party software, and therefore, this control will only
+        be met as partial when implemented by third party
+        software such as an Identity Provider (IdP),
+        Active Directory (MSAD), LDAP, etc.'
+
+# AC-2(2) NOTES:
+#       The customer will be responsible for automatically removing or
+#       disabling emergency and temporary accounts within the required
+#       timeframe. A successful control response will need to address
+#       all of the procedures and mechanisms involved in disabling these
+#       accounts.
+#
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text:
+        'OpenShift does not have the capability to create
+        guest/anonymous accounts or temporary accounts. Any
+        external emergency or temporary accounts will be
+        inherited from, and managed by, an external
+        identity service (e.g. Active Directory, LDAP, etc.)
+        This control is partial because OpenShift has to be
+        configured to connect to an Identity Provider (IdP).'
+
+#
+# AC-2(3) NOTES:
+#       The customer will be responsible for automatically disabling user
+#       accounts after the specified period of inactivity. A successful
+#       control response will need to address all automated mechanisms
+#       involved in disabling inactive accounts.
+#
+# ADMIN NOTE:
+#       AC-2(2) disables temp/emergency accounts after period of time.
+#       AC-2(3) differs by disabling *every other* account type
+#
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text:
+        'OpenShift end-user account management is inherited from
+        the hosting environment.Automatic disabling of these
+        accounts must happen at the centralized account
+        management level; for example, within LDAP, Red Hat
+        IdM, or Active Directory.'
+
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To meet FISMA requirements, OpenShift must be configured
+        to use centralized authentication (e.g. LDAP, Red Hat IdM,
+        Active Directory). The audit of account creation,
+        modification, enabling, disabling, and removal actions is
+        the respinsibility of the centralized service. Additionally,
+        notification of organization-defined personnel or roles is
+        also the responsibility of the centralized authentication
+        service.'
+
+##
+## Ref: https://access.redhat.com/solutions/2191161
+## "How to modify console session timeouts in Openshift 3"
+##
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Within OpenShift, the sessionMaxAgeSeconds variable in the
+        master-config.yaml file controls when/if users must logout after a
+        period of inactivity.'
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        'OpenShift roles can be used to grant various levels of access both
+        cluster-wide as well as at the project scope. Users and gruops can be
+        associated with, or bound to, multiple roles at the same time.'
+
+    - key: b
+      text: |
+        'This is an organizational control and not applicble to the configuration
+        of OpenShift.'
+    - key: c
+      text: |
+        'This is an organizational control and not applicble to the configuration
+        of OpenShift.'
+
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'OpenShift does not have the concept of group accounts.
+
+        Should the organization allow shared credentials, the
+        creation and management of such would fall under the scope
+        of operating the shared identity service and not OpenShift.'
+
+- control_key: AC-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+    - key: b
+      text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.'
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Authorization policies determine whether a user is allowed to perform
+        a given action within an OpenShift project. This allows platform
+        administrators to use policy to control who has various access levels
+        to the OpenShift Container Platform itself and all projects. It also
+        allows developers to use local policy to control who has access to
+        their projects. Note that authorization is a separate step from
+        authentication, which is more about determining the identity of who
+        is taking the action.
+
+        Documentation of OpenShift authorization frameworks and policies
+        can be found in the OpenShift Architecture documentation:
+
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/authorization.html
+
+        Each OpenShift deployment is unique in their rules, roles,
+        policy bindings. This section should be updated with deployment
+        specific details on how the authorization policy has been
+        configured.'
+
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for controlling the flow of
+        information within the customer application, and between the customer
+        application and external systems. A successful control response will
+        need to address the customer information flow control policies,
+        as well as mechanisms in place to enforce those policies.
+
+        A review of OpenShift v3 networking can be found in the OpenShift
+        Architecture guide:
+
+        https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/networking.html
+        '
+
+- control_key: AC-4 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for separating information flows
+        within the customer application. A successful control response will
+        need to address the customer organizational requirements for
+        the separation of information flows, and the mechanisms and
+        techniques used to accomplish this separation.'
+
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational/procedural control outside the scope of
+        OpenShift configuration.
+
+        The customer will be responsible for requiring users to use the
+        lowest level of access required to perform any given function. In
+        terms of OpenShift, this may require creation of multiple logon
+        accounts per user. When users require access to privileged functions
+        or capability, they will need to logout from the unprivileged account
+        and login with an account that has received appropriate RBAC rights.
+
+        Note OpenShift does not have privilege escalation capabilities similar
+        to sudo in Linux. Users will have to completely logout/login when
+        requiring privilege escalation between accounts.'
+
+- control_key: AC-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: AC-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Satisfaction of this control is inherited from configuration
+        of the underlying operating system. When OpenShift is deployed
+        on Red Hat Enterprise Linux, or Red Hat OpenShift, and SELinux is
+        enforcing, this control is satisfied.'
+
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for auditing the execution of
+        privileged functions. A successful control response will need
+        to relate this requirement to the general auditing requirements
+        of the AU control family.'
+
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for ensuring that non-privileged
+        users cannot execute privileged functions. A successful control
+        response will need to discuss the use of centralized authentication
+        and authorization and any other means of enforcement of privilege
+        levels.'
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for enforcing a limit on consecutive
+        failed login attempts.
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-1'
+    - key: b
+      text: |
+        'The customer will be responsible for taking the FedRAMP required
+        actions defined by the customer, upon account lockout.
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-2'
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for displaying a system use
+        notification banner to users. A successful control response will need
+        to address the conditions under which the banner will be displayed
+        (if a non-government user accesses the system, the system use
+        notification banner may not be appropriate), as well as the contents
+        of the nofication message.
+
+        In context of OpenShift, a banner must be displayed for all means
+        of accessing OpenShift itself (e.g. service consoles, remote access
+        through SSH, etc).
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-3'
+    - key: b
+      text: |
+        'The customer will be responsible for displaying the use notification
+        banner until the user acknowledges the usage condition and takes
+        explicit actions to further access the system. A successful control
+        response will need to address the means by which the user will indicate
+        acknowlegement and move forward.
+
+        Documentation/implementation guidance for this control is being tracked
+        through Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-4'
+    - key: c
+      text: |
+        '
+        '//*
+        The customer will be responsible for displaying a system use
+        information message to users. A successful control response will need
+        to address the conditions under which the message will be
+        displayed (if a non-government user accesses the system, the system
+        use information message may not be appropriate), as well as the
+        contents of the notification message, including references to
+        applicable monitoring, recording, or auditing, and authorized usage
+        of the system.
+        */'
+    - key: 'Req. 1'
+      text: |
+        '//*
+        The customer will be responsible for determining the conditions
+        under which the system use notification will be displayed. These
+        conditions must be reviewed and accepted by the FedRAMP JAB.
+        */'
+    - key: 'Req. 2'
+      text: |
+        '//*
+        The customer will be responsible for how the system use notification
+        will be verified and how often it should be re-displayed and
+        re-verified. These conditions must be reviewed an accepted by the
+        FedRAMP JAB.
+        */'
+    - key: 'Req. 3'
+      text: |
+        '//*
+        The customer will be responsible for verifying that the system use
+        notification is being displayed as required, either through a
+        configuration baseline check or via other means. If this verification
+        does not happen through a configuration baseline check, the JAB must
+        review and accept the process used to perform the verification.
+        */'
+
+- control_key: AC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for limiting the number of
+        concurrent sessions to the customer application as required.
+        A successful control implemented will need to address the technical
+        mechanism used to enforce this limit.
+
+        Documentation on configuring this capability is being tracked in
+        GitHub:
+
+        https://github.com/ComplianceAsCode/redhat/issues/616'
+
+- control_key: AC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to disconnect the idle users
+        from the management console after 15 minutes.'
+    - key: b
+      text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to disconnect the idle users
+        from the management console after 15 minutes.'
+
+- control_key: AC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Not applicable. When AC-2(5) is implemented, the non-configurable
+        default behavior of OpenShift is to logout idle users from the
+        management console. Once logged out the only information available
+        will be the OpenShift logon screen.'
+
+- control_key: AC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for defining events or conditions
+        requiring disconnection (for example, user requesting logout), and for
+        terminating the session when those events or conditions arise. A
+        successful control response will need to outline the qualifying events
+        or conditions.'
+
+- control_key: AC-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'Whether user-initiated communication sessions originate
+        through the OpenShift web console or through command line,
+        users are given explicit logout capabilities. This is
+        default, non-configurable behavior of the OpenShift Container
+        Platform.'
+    - key: b
+      text: |
+        'OpenShift displays an explicit logout message upon user
+        session terminiations. This is default, non-configurable
+        behavior.'
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Regardless of access mechanism, such as the OpenShift Console or remote
+        access attempts through SSH, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-confiurable behavior.'
+
+- control_key: AC-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Data release markings, such as NATO or NOFORN, is the responsibility
+        of application and data owners running workload on the OpenShift platform.
+        This control is not applicable to the configuration of OpenShift itself.'
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'All system events, regardless of local or remote, are captured through
+        the OpenShift and underlying Red Hat Enterprise Linux audit subsystem.
+        This control is inherently met when auditing is enabled.'
+
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'Beginning with OpenShift 4.3, when OpenShift is deployed on Red Hat Enterprise
+        Linux, and FIPS is enabled as a kernel setting, OpenShift will use OpenSSL
+        libraries instead of the native Golang crypto. The system operator will need to
+        verify that OpenShift is being deployed on a version of Red Hat Enterprise Linux
+        that has been FIPS validated.
+
+        Prior to OpenShift 4.3, remote sessions were encrypted using Golang-provided
+        cryptography. While not FIPS validated, this included the following
+        cryptographic algorithms and ciphers to protect the confidentiality
+        and integrity of remote access sessions:
+                - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+                - TLS_RSA_WITH_AES_128_CBC_SHA
+                - TLS_RSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+                - TLS_RSA_WITH_3DES_EDE_CBC_SHA'
+
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for requiring remote access
+        connections to the customer application to be routed through
+        customer-defined network access control points. A successful control
+        response will need to address the nature, number, and location of
+        such access control points, as well as the security controls in place
+        to protect those access control points.'
+
+- control_key: AC-17 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift utilizes the firewall technology embedded into Red Hat
+        Enterprise Linux. This technology, named firewalld, allows a system
+        administrator to configure host-based rules which take effect
+        immediately. This gives an OpenShift operator the ability to immediately
+        drop all remote connections.
+
+        Additionally, OpenShift nodes may be placed into Maintenance Mode. This
+        designation will migrate applications from a given cluster node to
+        another, disconnecting any active sessions to a given cluster node.
+
+        If immediate disconnect of all hosted applications are desired,
+        individual containers may be halted. This will disconnect user sessions
+        for tenant applications immediately.'
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is confired by the host operating system.'
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-20 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-21 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-21 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+##
+## BEGINNING OF:
+## AWARENESS AND TRAINING CONTROLS
+##
+
+- control_key: AT-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+    - key: b
+      text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+    - key: c
+      text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+
+- control_key: AT-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+    - key: b
+      text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: AT-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PM-15.'
+##
+## BEGINNING OF:
+## AUDIT AND ACCOUNTABILITY
+##
+
+- control_key: AU-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+        NOTE: The organization-defined auditable events are configured in
+        OpenShift through actions specified in AU-12.'
+
+
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift audit records contain this information by default. No
+        additional configuration is required.'
+
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift. This control is reflected
+        in proper disk partitioning of the underlying Operating System.
+
+        Within OpenShift, the Elasticsearch, Fluentd, and Kibana (EFK) stack
+        aggregates logs from nodes and applications running inside your OpenShift
+        Enterprise installation. Once deployed it uses Fluentd to aggregate logs
+        from all nodes, projects, and pods into Elasticsearch. OpenShift also
+        provides a centralized Kibana web UI where users and administrators can
+        create rich visualizations and dashboards with aggregated data.
+
+        To properly plan for audit log retention, refer to "Storage Considerations"
+        of the OpenShift installation and configuration guide. Production
+        installations often generate in excess of 50GB/day of audit information.
+
+        OpenShift Documentation:
+
+        https://docs.openshift.com/enterprise/3.2/install_config/aggregate_logging_sizing.html#install-config-aggregate-logging-sizing-guidelines-storage'
+
+- control_key: AU-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'OpenShift Administrators are responsible for configuring the
+        offloading of audit records to a central facility. A successful
+        control response will outline how audit records are dispatched
+        to aggregation points.'
+
+- control_key: AU-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'OpenShift Administrators  are responsible for alerting personnel
+        or roles in the event of an audit processing failure. A successful
+        control response will outline the process taken to alert personnel
+        when an auditing failure occures.'
+    - key: b
+      text: |
+        'In the event of an audit processing failure, OpenShift Administrators
+        are responsible for: overwriting the oldest audit records for low
+        impact systems and shutting down moderate impact systems. A successful
+        control response will outline the actions taken when an auditing
+        failure occurs.'
+
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: AU-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'OpenShift embeds the Elasticsearch, Fluentd, and Kibana (EFK) stack.
+        This pre-integrated audit reduction capability aggregates logs from
+        nodes and applications running inside your OpenShift Container Platform.
+        Once deployed it uses Fluentd to aggregate log events from all the
+        nodes, projects, and pods into Elasticsearch (ES). It also provides a
+        centralized Kibana web UI where users and administrators can create
+        rich visualizations and dashboards with the aggregated data. Triggers
+        may be setup to detect atypical use.'
+
+#        ADMINISTRATORS NOTE FOR AU-7(a):
+#        For aggregate log sizing information, refer to the Aggregate Logging
+#        Sizing Guidelines of the Installation and Configuration guide:
+#
+#        https://docs.openshift.com/container-platform/3.3/install_config/
+#        aggregate_logging_sizing.html
+#
+#        For instructions on how to configure aggregate logging, refer to the
+#        Aggregating Container Logs section of the Installation and
+#        Configuration guide:
+#
+#        https://docs.openshift.com/container-platform/3.3/install_config/
+#        aggregate_logging.html
+
+    - key: b
+      text: |
+        'OpenShift logging subsystems do not alter the original contents
+        or time ordering of audit records.'
+
+#       ADMINISTRATORS NOTE FOR AU-7(b):
+#       OpenShift can be configured to rely upon the underlying audit subsystem
+#       of Red Hat Enterprise Linux. This subsystem has undergone Common
+#       Criteria certification testing which verified log integrity during
+#       remote transmittal. Certification documents can be found publicly at:
+#
+#       https://www.redhat.com/en/technologies/industries/government/standards
+
+- control_key: AU-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Customers are responsible for ensuring that the information system
+        provides the capability to process audit records for events of interest
+        based on defined fields within audit records. Those fields are generally
+        defined at an organizational level through AU-3.  A successful control
+        response will discuss how audit records can be queried based on these
+        fields.'
+
+- control_key: AU-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        'OpenShift logs are generated using the internal system clock by
+        default. This is non-configurable behavior.'
+
+    - key: b
+      text: |
+        'OpenShift time keeping relies on the time services provided by the
+        underlying operating system. When running on Red Hat Enterprise Linux,
+        the system time is always kept in Coordinated Universal Time (UTC) and
+        converted in applications to local time as needed. Local time is the
+        actual time on your current time zone, taking into account daylight
+        savings time.
+
+        OpenShift hosts are configured to use UTC by default. To manually
+        verify this, the timedatectl command may be used:
+
+        $ timedatectl set-local-rtc no
+
+        ADMINISTRATORS NOTE FOR AU-8(b)
+
+        Refer to the RHEL7 Administrators Guide for additional information on
+        configuring time on OpenShift nodes:
+
+        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/System_Administrators_Guide/chap-Configuring_the_Date_and_Time.html#sect-Configuring_the_Date_and_Time-timedatectl-Time_Zone'
+
+- control_key: AU-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+#  Customers are responsible for comparing the internal information
+#  system clocks at least hourly with an authoritative time source. A
+#  successful control response will discuss the time source that system
+#  clocks are synced with.
+    - key: a
+      text: |
+        'OpenShift utilizes the time services of the underlying operating
+        system. This control is not applicable to OpenShift.'
+
+#  Customers are responsible for synchonizing internal system clocks to
+#  the authoritative time source when the time difference is greater than
+#  the organization has defined. A successful control response will
+#  discuss how system clocks are synced.
+    - key: b
+      text: |
+        'OpenShift utilizes the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.'
+
+#       ADMINISTATIVE NOTE ON AU-8(1)(b):
+#       To configure network time protocol (NTP) daemon to synchronize
+#       against NIST time sources, edit the /etc/ntp.conf file (or create one
+#       if it does not existing already). The proper format:
+#
+#        server <<time source>> iburst
+#
+#        For detailed NTP configuration, reference the Red Hat Enterprise Linux
+#        7 System Administrators guide:
+#
+#        https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/
+#        7/html/System_Administrators_Guide/s1-Configure_NTP.html
+
+
+#   Req. 1: Customers are responsible for selecting primary and secondary time
+#   servers used by the NIST internet time services and ensuring that the
+#   secondary server is selected from a different region than the primary.
+#   A successful control response will discuss which internet time services
+#   are used by the system.
+    - key: 'Req. 1'
+      text: |
+        'OpenShift utilizes the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.'
+
+#   Req. 2: Customers are responsible for syncronizing the system clocks of
+#   network computers that run operating systems other than Windows to the
+#   Windows Domain Controler emulator, or the same time source for that
+#   server. A successful conttrol response will discuss which Internet time
+#   services are for non-Windows systems.
+    - key: 'Req. 2'
+      text: |
+        'OpenShift utilizes the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.'
+
+- control_key: AU-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Customers are required to protect the audit information and audit
+        tools from unauthorized access, modification, and deletion. A successful
+        control response will discuss the way that audit information and tools
+        are protected. This can include how access is controlled to audit
+        information and tools.
+
+        Documentation/instructions on protecting OpenShift audit information
+        is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-6'
+
+- control_key: AU-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Customers are required to back up audit records at least weekly to a
+        physically different system or component than the system being audited.
+        A successful control response will discuss the way that audit records
+        are backed up to a system other than the one being audited. This can
+        include a centralized repository for all audit records.
+
+        To satisfy this control, many information system components offload
+        audit records to a central service via AU-4(1).'
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation/instructions on audit retention is being tracked
+        in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-7'
+
+- control_key: AU-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        '//*
+        Customers are required to provide record generation capability for the
+        events defined in AU-2a at all information system components where audit
+        capability is available. A successful control response will discuss the
+        coniguration of all system components to capture the events that were
+        defined in AU-2.
+        */'
+    - key: b
+      text: |
+        '//*
+        Customers are required to allow defined personnel or roles to select
+        which auditable events are to be audited by specific components of the
+        information system. A successful control response will discuss how
+        audit generation is implemented, and who selects and configures
+        auditable events on the information system. Approved personnel or
+        roles are defined in AU-9(4).
+
+        Audit rules may be added/removed through modifying the
+        /etc/audit/audit.rules or applicable file under /etc/audit/rules.d/. It
+        is recommended that OpenShift specific audit rules be added to
+        /etc/audit/rules.d/openshift.rules.
+        */'
+    - key: c
+      text: |
+        '//*
+        Customers are required to generate audit records for the events
+        defined in AU-2d with the content defined in AU-3. A successful control
+        response will discuss how audit records are generated, and how they meet
+        the requirements defined in AU-2 and AU-3.
+        */'
+##
+## BEGINNING OF:
+## SECURITY ASSESSMENT AND AUTHORIZATION
+##
+
+- control_key: CA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
+
+# ADMINISTRATORS NOTE ON CM-2:
+#       Implimentation of this control varies greatly between customers. Some
+#       want centralized config management, while others expect component
+#       administrators to handle this (e.g. maintain custom Ansible scripts).
+#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
+#       however it's best to double check with the Information System owner
+#       on expectations (component vs central CM).
+#
+#       In case the customer desires components (e.g. OpenShift Admins) to
+#       handle configuration management the lines below can be uncommented:
+#
+
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CM-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: c
+      text: |
+        'The customer will be responsible for reviewing and updating the
+        baseline configuration of the information system as a part of
+        information system component installations and upgrades. A
+        successful control response will need to address updates to the baseline
+        configuration as a part of installations and upgrades.'
+
+# ADMINISTRATORS NOTE ON CM-2(2):
+#       Implimentation of this control varies between customers. Some create
+#       a central configuration management system, while others expect
+#       information system components (e.g. OpenShift Adminstrators)
+#       to create their own playbooks and store them in the centralized
+#       service. Other customers delegate this control entirely to
+#       system component administrators.
+#
+#       If CM-6(1) is selected, which is mandatory for FISMA Moderate and
+#       FedRAMP systems, the organization must centrally employ automated
+#       mechanisms for configuration management (e.g. Ansible Tower).
+#
+#       In such cases, a proper response would illistrate how OpenShift
+#       administrators will provide configuration management content
+#       (e.g. Ansible Playbooks) to the central service (e.g. Ansible
+#       Tower).
+#
+- control_key: CM-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for employing automated mechanisms to
+        maintain an up-to-date, completed, accurate, and readily available
+        baseline configuration of the information system. A successful control
+        response will need to address what automated mechanisms are in use to
+        help maintain the baseline configurations of the information system.'
+
+- control_key: CM-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for retaining previous versions of
+        baseline configurations to support rollback. A successful control
+        response will need to address how previous versions of baseline
+        configurations will be retained in order to roll back to a previous
+        version.'
+
+# ADMINISTRATORS NOTE ON CM-2(7):
+#       This control relates to organizations issuing equipment, e.g. laptops,
+#       to employees. Unless OpenShift is being deployed on mobile equipment
+#       this control is not applicable.
+#
+- control_key: CM-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control is not applicable to OpenShift.'
+    - key: b
+      text: |
+        'This control is not applicable to OpenShift.'
+
+- control_key: CM-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: d
+      text: |
+        'The customer will be responsible for implementing approved
+        configuration-controlled changes to the system. A successful control
+        response will need to address how changes are implemented after being
+        approved. This can include tools used to ensure that changes are
+        implemented after approval.'
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CM-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for enforcing access restrictions,
+        and supporting auditing of the enforcement actions. A successful
+        control response will explain how access restrictions are enforced, and
+        how this access is audited.'
+
+- control_key: CM-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To ensure the system can cryptographically verify base software
+        packages of OpenShift, the yum gpgcheck option must be enabled in the
+        underlying Red Hat Enterprise Linux. This is outside the scope
+        of OpenShift configuration.'
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: b
+      text: |
+        'The customer will be responsible for implementing configuration
+        settings as defined in CM-6(a). A successful control response will
+        describe how mandatory configuration settings are implemented. This can
+        include the process or documentation followed.'
+    - key: d
+      text: |
+        'The customer will be responsible for monitoring and controlling
+        changes to the configuration settings in accordance with organization
+        policies and procedures. A successful control response will describe
+        how changes are controlled and monitored. This can include limitations
+        to privileges, how these changes are audited, and any tools in place to
+        track and approve changes.'
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CM-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for reviewing the information system
+        at least monthly to identify unnecessary or nonsecure functions, ports,
+        protocols, and services. A successful control response will describe
+        how often functions, ports, protocols, and services are reviewed.'
+    - key: b
+      text: |
+        'The customer will be responsible for disabling functions, ports,
+        protocols, and services that have been deemed to be unnecessary or
+        nonsecure. A successful control response will explain that these
+        functions, ports, protocols, and services found during the review
+        process are disabled.'
+
+- control_key: CM-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for preventing program execution
+        in accordance with organizational defined policies regarding software
+        program usage and restrictions. A successful control response will
+        explain the process used to ensure that policies followed. This can
+        include processes used to detect unauthorized software, or any
+        whitelisting used.
+
+        OpenShift utilizes trusted container registries to house white-listed
+        container images. The organization should define process for managing
+        said trusted registries to satisfy this control.
+        */'
+
+- control_key: CM-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for identifying software programs
+        authorized to execute on the information system. A successful control
+        response will explain the process used to identify authorized
+        software programs.
+
+        Red Hat container image signing provides a path to ensure authorship,
+        integrity and nonrepudiation. Refer to the Container Image Signing
+        Integration Guide for procedures on how to setup and maintain container
+        signing:
+
+        https://access.redhat.com/articles/2750891
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for employing a deny-all,
+        permit-by-exception policy to allow the execution of authorized software
+        programs on the information system. A successful control response will
+        explain the process to allow the execution of software on the
+        information system.
+        */'
+    - key: c
+      text: |
+        '//*
+        The customer will be responsible for reviewing and updating the list
+        of authorized software programs at least annually or when there is a
+        change. A successful control response will outline how often the
+        authorized software list is reviewed and updated. This should be done at
+        least annually and when changes are made.
+        */'
+
+#       ADMINISTRATORS NOTE ON CM-8:
+#       Implimentation of this control varies between customers. Some agencies
+#       maintain an inventory that state "OpenShift 4.x," whereas others want
+#       named RPMs installed on the OpenShift components. The vast majority
+#       follow the "OpenShift 4.x" listings. For those that do not, and want
+#       complete listings of underlying RPMs, the following section should be
+#       uncommented and updated.
+#
+#       If Satellite is managing the OpenShift nodes, documenting how OpenShift
+#       components integrate into Satellite for centralized inventory management
+#       is perfectly acceptable.
+#
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CM-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CM-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer will be responsible for employing automated mechanisms
+        continuously to detect the presence of unauthorized software within
+        the information system. A successful control response will describe
+        automated systems that are in place to detect unauthorized software
+        on the information system.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for actions taken when unauthorized
+        software is detected. A successful control response will describe the
+        actions taken when unauthorized software is detected. This can include
+        notifying personnel, isolating the system, and disabling network access
+        to that system.
+        */'
+
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+# ADMINISTRATORS NOTE ON CM-11:
+#       This would be a good place to demarcate installation of software
+#       on the OSE nodes vs installation of software in trusted registries.
+#
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+##
+## BEGINNING OF:
+## CONTINGENCY PLANNING
+##
+
+- control_key: CP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: CP-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-7 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of user-level information contained in the
+        information system. Additional FedRAMP requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Guidance on establishing such backups is being tracked in Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-11'
+    - key: b
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of system-level information contained in the
+        information system. Additional FedRAMP requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Guidance on establishing such backups is being tracked in Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-12'
+    - key: c
+      text: |
+        'The customer will be responsible for conducting daily incremental and
+        weekly full backups of information system documentation including
+        security-related documentation. Additional FedRAMP requirements and
+        guidance include maintaining at least three backup copies of user-level
+        information (at least one of which is available online) or provides an
+        equivalent alternative. A successful control response will detail how
+        backups of user-level information occures, and how three backup copies
+        are maintained.
+
+        Guidance on establishing such backups is being tracked in Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-13'
+    - key: d
+      text: |
+        'The customer will be responsible for protecting the confidentiality,
+        integrity, and available of backup information at storage locations.
+        Additional FedRAMP requirements and guidance include determining
+        what elements of the cloud environment require the Information System
+        Backup control. The customer will determine how Information System
+        Backup is going to be verified and appropriate periodicity of the
+        check.
+
+        Guidance on establishing such backups is being tracked in Jira:
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-14'
+
+- control_key: CP-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-9 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-9 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: CP-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for documenting how to reconstitute
+        their OpenShift environment. A successful control response will detail
+        processes used to fully recover/restore the OpenShift environment.'
+
+- control_key: CP-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |
+        '//*
+        The customer will be responsible for implementing transaction
+        recovery within the customer application. A successful control response
+        will need to address how transactions are performed and what occurs in
+        the case of failed or conflicting transactions.
+        */'
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: IA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift assigns unique identifies to users, groups, and processes
+        acting on behalf of these categories. This is non-configurable behavior.'
+
+- control_key: IA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for network access to privileged accounts.
+
+        A successful control response will need to address all network-
+        accessible privileged account types and the means by which
+        multifactor authentication is enforced for each.
+
+        OpenShift provides a plugable authentication architecture that can
+        utilize 3rd party authentication schemes that include multi-factor
+        authentication. The authentication subsystem in OpenShift relies on
+        OAuth 2.0 and any system that can interact with the OAuth token service
+        over HTTPS can recieve authentication tokens. Typically this is
+        implemented using OpenShift-provided RequestHeaderIdentityProvider as
+        described in Section 12.3.8, Request Header, of the OpenShift v3.3
+        Installation and Configuration Guide:
+
+        https://docs.openshift.com/container-platform/3.3/install_config/
+        configuring_authentication.html#RequestHeaderIdentityProvider
+
+        Many customers are accepting password-enabled SSH keys as multi-
+        factor authentication. The SSH key (something they have) and the
+        decryption password (something they know). Prior to enabling CAC
+        and PIV cards, it is recommended to seek guidance from the
+        Information Security Officer responsible for authorization of
+        OpenShift.'
+
+- control_key: IA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication for network access to non-privileged accounts.
+        A successful control response will need to address all network-
+        accessible non-privileged account types and the means by which
+        multifactor authentication is enforced for each.'
+
+- control_key: IA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is not applicable to tenants of cloud computing
+        platforms, such as OpenShift administrators.'
+
+- control_key: IA-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'OpenShift requires individuals to be authenticated with an individual
+        authenticator prior to any group authenticators being employed. This is
+        default, non-configurable behavior of the OpenShift container
+        platform. All users, remote or local, administrative or non-privileged,
+        first authenticate via an individual authenticator. Once individually
+        authenticated, group access/privileges will be granted as applicable.'
+
+- control_key: IA-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing replay-resistant
+        authentication for access to privileged accounts. Microsoft AAD and MFA
+        solutions may be used for this purpose. A successful control response
+        will need to address all user types and the means by which
+        replay-resistant authentication is required for each.'
+
+- control_key: IA-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing multifactor
+        authentication such that one of the factors is provided by a device
+        separate from the system gaining access. Examples are CAC and PIV
+        cards.
+
+        A successful control response will need to address all user
+        types and the means by which multifactor authentication is enforced
+        for each, as well as the strength of mechanism required by the MFA
+        solution.'
+
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verification (PIV) credentials are those credentials
+        issued by federal agencies that conform to FIPS Publication 201 and
+        supporting guidance documents. Customers will not be expected to perform
+        this credential verification for government agencies. A mechanism for
+        allowing government agencies to perform credential verification in a way
+        that can be trusted by the customer system is through Active Directory
+        Federation Services (ADFS).'
+
+- control_key: IA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for ensuring that customer-owned
+        infrastructure is  properly authenticated prior to establishing a
+        connection to the rest of the customer system. A successful control
+        response will need to address the type of infrastructure in use
+        (e.g. bare metal, virtual machines, etc) and the mechanism by which
+        each is authenticated.
+
+        OpenShift nodes can be configured with x509/PKI certificates, which
+        will provide identity of the machines.'
+
+- control_key: IA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+- control_key: IA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for including contractor or foreign
+        national status as a part of individual identifiers. Microsoft AAD
+        solution may be used for this purpose. A successful control response
+        will need to address how contractors and foreign nationals are
+        identified by the customer and how that information is incorporated
+        into the individual identifier.'
+
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+- control_key: IA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for validating certificates used
+        within the customer application. Active Directory Certificate Services
+        may be used for this purpose. A successful control response will need
+        to address the mechanism used to validate certificates.'
+    - key: b
+      text: |
+        'The customer will be responsible for the enforcement of authorized
+        access to private keys associated with certificates used within the
+        customer application. Active Directory Certificate Services may be
+        used for this purpose. A successful control response will need to
+        address the mechanism used to restrict access to private keys.'
+    - key: c
+      text: |
+        'The customer will be responsible for mapping the identity
+        authenticated by a certificate to the account of the individual or
+        group associated with that identity. Active Directory Certificate
+        Services may be used for this purpose. A successful control response
+        will need to address the mechanism used to map identities between
+        certificates and accounts.'
+    - key: d
+      text: |
+        'The customer will be responsible for implementing a local (i.e. within
+        their subscription) cache of revocation data. Active Directory
+        Certificate Serices may be used for this purpose. A successful control
+        response will need to address the mechanism used to establish and
+        populate the revocation data.'
+
+- control_key: IA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for distributing
+        authenticators in person with proper authorizations in place. A
+        successful control response will need to discuss the
+        authenticators in use, the personnel or roles serving as the
+        registration authority, and the personnel or roles providing
+        authorization for distribution of the authenticators.'
+
+- control_key: IA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for employing automated tools to
+        ensure that password authenticators meet strength requirements.
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address the automated mechanism used to
+        enforce password strength requirements.'
+
+- control_key: IA-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for protecting authenticators.
+        Microsoft AAD solution may be used for this purpose. A successful
+        control response will need to address the mechanisms, processes, or
+        tools used to protect authenticators.'
+
+- control_key: IA-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift does not embed or store unencrypted static authenticators.
+        OpenShift cannot be configured to be out of compliance with this
+        requirement.'
+
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'To meet NIST 800-53 identity and authorization requirements, OpenShift
+        must be configured to use an external identity system (such as Red Hat
+        IdM or Microsoft Active Directory). This control is applicable to the
+        identity provider, not OpenShift.'
+
+- control_key: IA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        'OpenShift natively obscures such information. OpenShift cannot be
+        configured to be out of compliance with this requirement.'
+
+- control_key: IA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Administrative access to OpenShift nodes is performed over SSH. To
+        limit SSH ciphers to those algorithms which are FIPS-approved, update
+        the following line in /etc/ssh/sshd_config:
+
+        Ciphers aes128,aes192-ctr,aes256-ctr
+
+        The OpenShift Console, which is the web interface to the system,
+        automatically converts incoming authentication requests to HTTPS.
+        The underlying web server can be configured to use U.S. Government
+        PKI certificates for authentication and authorization.
+
+        The customer will be responsible for configuring OpenShift to use
+        appropriate cryptographic modules. A successful control response will
+        document what modules are in use, how to attest the configuration is
+        in place, and references to supporing documentation outlining the
+        FIPS 140-2 certification for enabled modules.'
+
+- control_key: IA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for identifying and authenticating
+        non-organizational users accessing the customer application. A
+        successful control response will need to address how non-organizational
+        users are defined and the process by which identification
+        and authentication takes place, including any differences from
+        identification and authentication for organizational users.'
+
+- control_key: IA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Personal Identity Verificiation (PIV) credentials are those
+        credentials issued by federal agencies that conform to FIPS Publication
+        201 and supporting guidance documents. Customers will not be expected
+        to perform this credential verification for government agencies. A
+        mechanism for allowing government agencies to perform credential
+        verification in a way that can be trusted by the customer system is
+        through Active Directory Federation Services (ADFS) or Red Hat IdM.'
+
+- control_key: IA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
+- control_key: IA-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+
+
+- control_key: IA-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'FICAM approved credentials are those credentials issued by nonfederal
+        government entities approved by the Federal Identity, Credential, and
+        Access Management (FICAM) Trust Framework Solutions Initiative.
+        Customers iwill not be expected to perform credential veritification for
+        government agencies. A mechanism for allowing government agencies to
+        perform credential verification in a way that can be trusted by the
+        customer system is through Active Directory Federation Services
+        (ADFS) or Red Hat IdM.'
+##
+## BEGINNING OF:
+## INCIDENT RESPONSE
+##
+- control_key: IR-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  IR-2 (1) relates to creating simulated events/scenarios
+##  relating to incident response. While this is an organizational
+##  control, consider creating component-specific incident
+##  response simulations as appropriate (e.g. if a virtualization
+##  product, what happens after a VM escape?).
+##
+- control_key: IR-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  IR-4 (2) is *technically* an organizational control, however
+##  many accreditors/auditors will want to understand how the
+##  system component integrates with dynamic reconfiguration capabilities.
+##  Lacking formal guidance from the government, some auditors expect a
+##  response to this control at the component level.
+##
+- control_key: IR-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Note to content authors:
+##  Often 3rd party auditors will incorrectly state satisfaction of IR-5 (1)
+##  relates to centralized audit logging of security events.
+##
+##  Central audit logging is covered under other controls, namely:
+##  - AU-6 (3) - Correlate Audit Repositories
+##  - AU-6 (4) - Central Review and Analysis
+##  - AU-12 - Audit Generation
+##
+- control_key: IR-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: IR-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+##
+## BEGINNING OF:
+## MAINTENANCE
+##
+
+- control_key: MA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: MA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: MA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: c
+      text: |
+        'This control is not applicable to OpenShift.
+
+        With the exception of access established through physical presense
+        at the hardware and underlying operating system layers, connections to
+        OpenShift are treated as remote connections. Authorization and
+        authentication controls selected and verified from the IA family apply
+        to this control; no independant control response is required.'
+    - key: d
+      text: |
+        'With the exception of access established through physical presense
+        at the hardware and underlying operating system layers, connections to
+        OpenShift are treated as remote connections. Authorization and
+        authentication controls selected and verified from the IA family apply
+        to this control; no independant control response is required.'
+    - key: e
+      text: |
+        'The customer will be responsible for terminating the session and
+        network connections when non-local maintenance and diagnostic activities
+        are completed. A successful control response will need to address
+        monitoring and enforcement of the disconnection requirement.
+
+        This is frequently accomplished by automatic logon timeouts from the
+        OpenShift web console, and SSH connection timeouts provided by the
+        underlying operating system.'
+
+- control_key: MA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+##
+## BEGINNING OF:
+## MEDIA PROTECTION
+##
+
+# - control_key: MP-1
+#   standard_key: NIST-800-53
+#   covered_by: []
+#   implementation_status: none
+#   narrative:
+#   - text: |
+#        Narrative text on how product can be configured against MP-1.
+#
+#        This answer can be multi-line.
+
+- control_key: MP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: MP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: MP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: MP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+##
+## BEGINNING OF:
+## PHYSICAL AND ENVIRONMENTAL PROTECTION
+##
+
+- control_key: PE-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-13 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-15 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-19 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+
+- control_key: PE-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: 'This control is outside the scope of OpenShift configuration.'
+##
+## BEGINNING OF:
+## PLANNING
+##
+
+- control_key: PL-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-7.'
+
+- control_key: PL-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-8.'
+
+- control_key: PL-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-2.'
+
+- control_key: PL-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into Appendix J, AR-2.'
+
+- control_key: PL-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-2.'
+
+- control_key: PL-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: PL-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+##
+## BEGINNING OF:
+## PERSONNEL SECURITY
+##
+
+- control_key: PS-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+
+- control_key: PS-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: PS-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: c
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: PS-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+    - key: b
+      text: |
+        'This is an organizational control outside the scope of OpenShift
+        configuration.'
+
+- control_key: PS-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: PS-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+##
+## BEGINNING OF:
+## RISK ASSESSMENT
+##
+
+- control_key: RA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: RA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: RA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: RA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+##
+## BEGINNING OF:
+## SYSTEM AND SERVICES ACQUISITION
+##
+
+- control_key: SA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Developers note on SA-4 (1):
+##  This control requires that developers of system components, e.g.
+##  application servers, to provide a description of the functional
+##  properties of the security controls to be deployed.
+##
+##  A a generally accepted control response is to provide a security
+##  configuration guide, such as a NIST National Checklist or DoD
+##  STIG, for the component.
+##
+##  In absense of an approved government configuration baseline,
+##  note this requirement is satisfied by a *description* of
+##  functional properties. Implimentation details are offered in
+##  SA-4(2).
+##
+- control_key: SA-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (1) is planned.'
+
+##
+## Developers note on SA-4 (2):
+##  This control differs from SA-4 (1) in that implementation
+##  details are now required.
+##
+##  The majority of FedRAMP and FISMA Moderate systems refine this control
+##  with the following:
+##    - Provide design and implementation regarding security-relevant
+##      external system interfaces and high-level design;
+##    - Provide design and implementation information required by the
+##      SDL process;
+##    - Above should be provided with a level of detail sufficient for
+##      secure deployment.
+##
+- control_key: SA-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (2) is planned.'
+
+##
+## Developers note on SA-4 (3):
+##  This is most frequently satisfied by demonstrating common criteria
+##  certification.
+##
+##  Lacking Common Criteria certification a detailed outline of SDLC practices
+##  is required.
+##
+- control_key: SA-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (3) is planned.'
+
+- control_key: SA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-8 (9).'
+
+##
+## Developers note on SA-4 (4):
+##  Note: For software components, such as operating systems, NIST considers it
+##  sufficient to provide install-time configuration. For example in RHEL7 a
+##  "Security Profile" menu is presented that installs Linux into known government
+##  baselines.
+##
+- control_key: SA-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (5) is planned.'
+
+##
+## Developers note on SA-4 (6):
+##  Note this is only applicable "when the networks used to transmit
+##  the information are at a lower classification than the information
+##  being transmitted."
+##
+##  If this component is not intended to enable cross domain infrastructure,
+##  this control potentially could be 'not applicable'.
+##
+- control_key: SA-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (6) is planned.'
+
+##
+## Developers note on SA-4 (7):
+##  As of 2018, protection profiles recognized by NIAP and those recognized
+##  by the broader Common Criteria effort have diverged. A listing of NIAP-
+##  recognized protection profiles can be found here:
+##
+##  https://www.niap-ccevs.org/Profile/PP.cfm
+##
+- control_key: SA-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (7) is planned.'
+
+##
+## Developers note on SA-4 (8):
+##  A successful control response will document how to achieve continuous
+##  monitoring of control/standards as identified in CA-7.
+##
+- control_key: SA-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (8) is planned.'
+
+##
+## Developers note on SA-4 (9):
+##  A successful control response will document all network
+##  information. Take care to document internal network usage,
+##  including loopback devices, as it is customary to block all
+##  traffic not explicitly outlined in this control.
+##
+- control_key: SA-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-4 (9) is planned.'
+
+- control_key: SA-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (1).'
+
+- control_key: SA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (2).'
+
+- control_key: SA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (3).'
+
+- control_key: SA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (4).'
+
+- control_key: SA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (5).'
+
+- control_key: SA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-10 and SI-7.'
+
+- control_key: SA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-11 and SI-7.'
+
+- control_key: SA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+- control_key: SA-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Developers note on SA-10
+##  A successful control response will document all network
+##  information. Take care to document internal network usage,
+##  including loopback devices, as it is customary to block all
+##  traffic not explicitly outlined in this control.
+##
+- control_key: SA-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    ## A successful control response will document performance of configuration
+    ## management. Processes and mechanisms involved in configuration management
+    ## will need to be addressed.
+    - key: a
+      text: |
+        'A control response to SA-10 (a) is planned.'
+
+    ## A successful control response will need to address the processes
+    ## and mechanisms involved in documenting, managing, and controlling the
+    ## integrity of chances.
+    - key: b
+      text: |
+        'A control response to SA-10 (b) is planned.'
+
+    ## A successful control response will need to address the approval process
+    ## and safeguards in place to ensure only approved changes are implemented.
+    - key: c
+      text: |
+        'A control response to SA-10 (c) is planned.'
+
+    ## A successful control response will need to discuss the process for
+    ## documentation.
+    - key: d
+      text: |
+        'A control response to SA-10 (d) is planned.'
+
+    ## A successful control response will need to discuss the process
+    ## and tools used for tracking, resolution, and reporting.
+    - key: e
+      text: |
+        'A control response to SA-10 (e) is planned.'
+
+##
+## Developers note on SA-10 (1)
+##  A successful controlr response will need to address the process and
+##  mechanisms involved in integrity verification.
+##
+##  For example, TPM+TXT for hardware and operating systems.
+##
+- control_key: SA-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (1) is planned.'
+
+- control_key: SA-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.'
+
+##
+## Developers note on SA-10 (3)
+##  This control differs from SA-10 (1) by focusing on hardware
+##  (vs software and firmware).
+##
+##  This control may not be applicable if the component being documented
+##  is not involved in the system boot process.
+##
+- control_key: SA-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (1) is planned.'
+
+##
+## Developers note on SA-10 (4)
+##  This control may not be applicable if the component being documented
+##  is not involved in the system boot process.
+##
+- control_key: SA-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (4) is planned.'
+
+##
+## Developers note on SA-10 (4)
+##  tbd
+##
+- control_key: SA-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (5) is planned.'
+
+##
+## Developers note on SA-10 (4)
+##  tbd
+##
+- control_key: SA-10 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A control response to SA-10 (6) is planned.'
+##
+## BEGINNING OF:
+## SYSTEMS AND COMMUNICATIONS PROTECTION
+##
+
+- control_key: SC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer is responsible for separating user functionality
+        including user interface services) from information system management
+        functionality. A successful control response will indicate how user
+        and management functionality access is separated.'
+
+- control_key: SC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer is responsible for preventing unauthorized and
+        unintended information transfer via shared system resources. A
+        successful control response will discuss how this is prevented.'
+
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer is responsible to protect the availability of
+        resources by allocating processor and memory resources by process
+        priority and resource availability. A successful control response will
+        discuss how resource availability is protected.'
+
+- control_key: SC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'Documentation on how communications at key internal boundaries of
+        Openshift can be monitored is forthcoming. This activity is being
+        tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-21'
+    - key: b
+      text: |
+        'Documentation regarding how OpenShift can implement subnetworks
+        for publicly accessible system components is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-22'
+    - key: c
+      text: |
+        'Documentation regarding how OpenShift can route connections to external
+        systems through a managed interface is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-23'
+
+- control_key: SC-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer is responsible for limiting the number of external
+        network connetions to the information system. A successful control
+        response will indicate the rate limiting procedures and technical
+        enforcement.'
+
+- control_key: SC-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: b
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: c
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: d
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+    - key: e
+      text: |
+        'This control is inherited from the network and IaaS provider.'
+
+- control_key: SC-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for ensuring managed interfaces deny
+        network traffic by default and allow network communications traffic
+        by exception (i.e. deny all, permit by exception).'
+
+- control_key: SC-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing mechanisms to
+        ensure OpenShift nodes to not act as proxy or relay servers between
+        internal and external networks.'
+
+- control_key: SC-7 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implementing host-based
+        boundary protection mechanisms. This is often through configuration of
+        local firewalld and SELinux policies.'
+
+- control_key: SC-7 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for ensuring that OpenShift is
+        isolated from other internal information system components by
+        implementing physically separate subnetworks with managed
+        interfaces to other components of the system. A successful control
+        response will discuss the networking configuration to satisfy this
+        control.'
+
+- control_key: SC-7 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control is inherited through organizational network services.'
+
+- control_key: SC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for configuring TLS for transmitted
+        information.'
+
+- control_key: SC-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for implimenting cryptographic
+        mechanisms to prevent unauthorized disclosure of information and
+        detect changes to information during transmission. A successful
+        control response will detail how encryption is used for all
+        network communications that carry customer data.'
+
+- control_key: SC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for terminating network connections
+        at the end of the session or after no longer than 30 minutes of
+        inactivity. A successful control response will document the technical
+        means on how this is established.'
+
+- control_key: SC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding how OpenShift generates, distributes, stores,
+        accesses, and desctructs, cryptographic keys is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-24'
+
+- control_key: SC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'Documentation regarding OpenShift's usage of cryptography
+        and applicability to Federal laws is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-25'
+
+- control_key: SC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat OpenShift Container Platform is not
+        a collaborative computing device.'
+    - key: b
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat OpenShift Container Platform is not
+        a collaborative computing device.'
+    - key: Req. 1
+      text: |
+        'Examples of collaborative computing devices include networked white
+        boards, TV conference cameras, and remote video systems. This control
+        is not applicable because Red Hat OpenShift Container Platform is not
+        a collaborative computing device.'
+
+- control_key: SC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: c
+      text: |
+        'The customer will be responsible for authorizing, monitoring, and
+        controlling the use of mobile code within the system in accordance
+        with organizational policies defined in SC-18(a) and SC-18(b).'
+
+- control_key: SC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: b
+      text: |
+        'The customer will be responsible for authorizing, monitoring, and
+        controlling the use of VoIP within the system in accordance with
+        organizational policies defined in SC-19(a).'
+
+- control_key: SC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        OpenShift administrators are responsible for providing
+        origin authentication and integrity verification artifacts along
+        with authoritative name resolution data returns in response. A
+        successful control response will discuss the technical means used to
+        accomplish this
+
+        Documentation on how to configure OpenShift DNS services to provide
+        data origin authentication and integrity veridication is forthcoming.
+        That activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-26'
+    - key: b
+      text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        OpenShift administrators are responsible for
+        providing means to indicate the security status of child zones and
+        enable verification of a chain of trust among parent and child domains.
+        A successful control response will discuss the technical means used to
+        accomplish this.
+
+        Documentation on how to configure this functionality within
+        OpenShift is forthcoming. This activity is being tracked in
+        Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-27'
+
+- control_key: SC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        OpenShift administrators are responsible for configuring DNSSEC. A successful
+        control response will document how DNSSEC is configured on applicable
+        endpoints.
+
+        Documentation on enabling DNSSEC within OpenShift is forthcoming. This
+        activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-28'
+
+- control_key: SC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'OpenShift has a built-in DNS so that services can be reached by
+        the service DNS as well as the service IP/port. OpenShift supports
+        split DNS by running SkyDNS on the master that answers DNS queries
+        for services.
+
+        OpenShift administrators are responsible for ensuring
+        services are fault-tolerant and implement internal/external role
+        separation.
+
+        Documentation on creating fault-tolerant DNS configurations within
+        OpenShift is forthcoming. This activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-29'
+
+- control_key: SC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for guarding against, for
+        example, man in the middle or session hijacking attacks for
+        connections to the customer application, for example via the
+        use of TLS. A successful control response will address the
+        various types of attacks against session authenticity and the
+        mechanisms used to protect against those attacks.
+
+        OpenShift uses various TLS algorithms and ciphers to protect
+        the authenticity of communications sessions.'
+
+- control_key: SC-28
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'A successful control response will need to address the means by
+        which data at rest is protected.'
+
+- control_key: SC-28 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer is responsible for implementing cryptographic
+        mechanisms to prevent unauthorzed disclosure and modification of
+        customer data. A successful control response will outline how
+        cryptography is used to ensure integrity of data in rest and
+        transport.
+
+        When running on Red Hat Enterprise Linux, full disk encryption
+        is possible for data at rest on the OpenShift nodes. For data
+        in transport, OpenShift uses cryptographic algorithms and ciphers to
+        protect confidentiality and integrity of data in transport.'
+
+- control_key: SC-39
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'When OpenShift runs on Red Hat Enterprise Linux,
+        OpenShift maintains separate execution domains for each executing process by
+        assigning a private virtual address space to each process.
+
+        Documentation on ensuring this functionality is configured is forthcoming.
+        This activity is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-30'
+##
+## BEGINNING OF:
+## SYSTEM AND INFORMATION INTEGRITY
+##
+- control_key: SI-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SI-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for analyzing their OpenShift deployment for
+        flaws, reporting on those flaws, and correcting them. A successful
+        control response will include a discussion of the process by which
+        flaws are discovered and remediated, as well as tools that are used to
+        assist in detection and remediation.
+
+        Documentation of the overall process of vulnerability identification to
+        patching is forthcoming. This work is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-31'
+    - key: b
+      text: |
+        'The customer will be responsible for testing OpenShift updates
+        related to flaw remediation prior to installation. A successful
+        control response will discuss the testing process (e.g. the
+        nature of the test environment, the types of testing performed,
+        the tools in testing, etc.).
+
+        Documentation regarding suggested testing procedures is forthcoming.
+        This work is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-32'
+    - key: c
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SI-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        '//*
+        The customer will be required to employ automated mechanisms on a
+        monthly basis to determine the stat of information system components
+        with regard to flaw remediation on their information systems as
+        required by their organizations policy. A successful control response
+        will address the customers use of automated tools such as Nessus to
+        perform periodic and on-demand scans through their system to determine
+        the state of system components with regard to flaw remediation.
+        */'
+- control_key: SI-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        '//*
+        The customer is responsible for scanning for flaws in their
+        information systems and for measuring the time between flaw
+        identification and flaw remediation. A successful control response
+        will need to address the time between flaw identification and
+        remediation using timestamps and calculates the time elapsed
+        difference.
+        */'
+    - key: b
+      text: |
+        '//*
+        The customer will be responsible for scanning for flaws in their
+        information systems and for establishing benchmarks for taking
+        correctie actions according to their organizational policies. A
+        successful control response will need to address the use of
+        benchmarks to remediate high, and moderate risk flaws within a
+        customer defined period after a flaws discovery.
+        */'
+- control_key: SI-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer is responsible for ensuring that they employ malicious
+        code protection at information system entry, and exit points to detect
+        and eradicate malicious code. A successful control response will need
+        to address use of code protection mechanisms to protect assets from
+        malicious software (i.e. Viruses, malware, rootkits, worms, and
+        scripts). In regards to OpenShift, this is generally through
+        integrating third party tools into CI/CD pipelines.
+
+        Documentation and suggested integration procedures are forthcoming.
+        This work is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-33'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+    - key: c
+      text: |
+        'In the scope of OpenShift, this control is duplicative of SI-3(a).'
+    - key: d
+      text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SI-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+       'The customer is responsible for ensuring that their malicious code
+       protection mechanisms are centrally managed. A successful control
+       response will need to address that the planning, implementing,
+       assessing, authorizing and monitoring of their malicious code
+       protection mechanism is centered in one location.'
+
+- control_key: SI-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer is responsible for ensuring that they update their
+        malicious code protection mechanisms automatically when new versions/
+        definitions become available. A successful control response will need
+        to address that the employed malicious code protection
+        mechanisms definitions are configured to be updated automatically.'
+
+- control_key: SI-3 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer is responsible for ensuring that they implement a
+        nonsignature-based malicious code detection mechanism on their
+        information system. A successful control response will need to address
+        a nonsignature based detection mechanism that can detect, analyze and
+        describe the characteristics or behavior of malicious code and
+        could provide safeguards against malicious code for which signatures
+        do not yet exist.'
+
+- control_key: SI-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SI-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for integrating intrusion detection
+        tools into the OpenShift environment, and documenting how this
+        capability is integrated into enterprise-wide intrusion detection
+        systems when applicable. A successful control response will address
+        the workflow between local and enterprise intrusion detection
+        systems.'
+
+- control_key: SI-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for deploying automated tools to
+        support near real-time analysis of events in their infrastructure.
+        This is frequently provided by corporate services outside the
+        information system, e.g. centralized security operation centers may
+        host an enterprise logging solution. A successful control response
+        will indicate who is responsible for hosting such capabilities, and
+        what technology and processes are in place to support near-realtime
+        analysis of events.'
+
+- control_key: SI-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for identifying how and where
+        network traffic is continuously monitored. Frequently this control
+        is inherited from network and Infrastructure as a Service providers,
+        such as Microsoft Azure. A successful control response will indicate
+        if this control is inherited from infrastructure providers, and if
+        not, how network traffic is continuously monitored.'
+
+- control_key: SI-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for automatic notification of
+        appropriate staff when indicators of compromise are detected.
+        Frequently this is accomplished by automatic alerting to Security
+        Operations Center staff. A successful control response will indicate
+        who is notified, by name or position title(s), and the mechanism of
+        the notification.'
+
+- control_key: SI-4 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'An OpenShift infrastructure does not have wireless capabilities. This
+        control is Not Applicable.'
+
+- control_key: SI-4 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for aggregating and correlating
+        information from monitoring tools, for multiple system components.
+        This is frequently accomplished with centralized audit reduction
+        tools.'
+
+- control_key: SI-4 (23)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for installing host-based monitoring
+        mechanisms. A successful control response will need to discuss how
+        various elements of the OpenShift infrastructure are monitored.'
+
+- control_key: SI-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SI-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for verifying the correct operation
+        of security functions within customer-controlled operating systems and
+        software. A successful control response will need to discuss the
+        security functions deemed necessary to verify, as well as the means
+        for testing the correct operation and resolving any issues found.'
+    - key: b
+      text: |
+        'The customer will be responsible for performing security function
+        verification at customer-specified frequencies and under
+        customer-specified circumstances (to include the requirements stated
+        by FedRAMP). A successful control response will need to address the
+        rationale for selection of the specific frequency and circumstances
+        of security function verification.'
+    - key: c
+      text: |
+        'The customer will be responsible for notifying appropriate personnel
+        of failed security verification tests. A successful control response
+        will need to outline the personnel or roles selected (to include
+        system administrators and security personnel as required by FedRAMP).'
+    - key: d
+      text: |
+        'The customer will be responsible for performing appropriate actions
+        in response to anomalies in security unction verifiation. A successful
+        control response will need to discuss the actions taken (to include
+        notification of system administrators and security personnel as
+        required by FedRAMP) as well as the rationale for selecting these
+        actions.'
+
+- control_key: SI-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for employing integrity verification
+        tools for customer-controlled operating systems and software. A
+        successful control response will need to discuss the tools in use and
+        the integrity-checking mechanisms these tools employ.'
+
+- control_key: SI-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for performing integrity checks at
+        customer-specific frequencies and under customer-specified
+        circumstances (including frequencies and circumstances specified by
+        FedRAMP). A successful control response will need to identify the
+        criteria for performing integrity checking, as well as the rationale
+        for selecting those criteria.'
+
+- control_key: SI-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for incorporating the detection of
+        customer-defined security-relevant changes into the customers incident
+        response capability. A successful control response will need to
+        outline the process for deeming particular changes as
+        security-relevant and the means by which the incident response
+        capability is invoked when needed.'
+
+- control_key: SI-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+    - key: b
+      text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+
+- control_key: SI-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+
+- control_key: SI-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+
+- control_key: SI-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies that
+        are not applicable to the configuration of OpenShift.'
+
+- control_key: SI-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for checking the validity of
+        information inputs to customer-controlled operating systems and
+        software. A successful control response will need to discuss the
+        specific inputs for which the validity is checked, the rationale
+        for selecting those inputs for validity checking, and the response
+        taken by the system to invalid inputs.'
+
+- control_key: SI-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        'The customer will be responsible for generating error messages in
+        cusomer-controlled operating systems and software that provide
+        information necessary for corrective actions without revealing
+        information that could be exploited by adversaries. A successful
+        control response will need to discuss the process by which error
+        messages are created, analyzed, and corrected when necessary.'
+    - key: b
+      text: |
+        'The customer will be responsible for revealing error messages only to
+        authorized personnel. A successful control response will need to
+        address how error messages are displayed and the means by which access
+        to error messages is controlled.'
+
+- control_key: SI-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        'The customer will be responsible for handling and retaining
+        information within, or hosted by, OpenShift in
+        accordance with applicable federal laws, Executive Orders,
+        directives, policies, regulations, standards, and operational
+        requirements. A successful control response will need to outline
+        the specific requirements applicable to customer information
+        handling and retention, and the means by which those requirements
+        are met.
+
+        Documentation and suggestions on protecting customer information
+        hosted within the OpenShift environment is forthcoming. This activity
+        is being tracked in Jira:
+
+        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-34'
+
+- control_key: SI-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'Red Hat OpenShift Container Platform inherits memory protections
+        provided by the underlying operating system. This control is not
+        applicable to Red Hat OpenShift Container Platform.'
