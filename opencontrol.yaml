@@ -11,6 +11,7 @@ components:
   - build/coreos-4
   - build/identity-management
   - build/openshift-container-platform-3
+  - build/openshift-container-platform-4
   - build/openshift-dedicated
   - build/openstack-platform-13
   - build/virtualization-host
