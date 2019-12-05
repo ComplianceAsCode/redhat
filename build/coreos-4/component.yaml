@@ -20,27 +20,57 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        AC-1 is an organizational control outside the scope of
-        configuring CoreOS. Implementing AC-1 falls under
-        technical controls, such as AC-2 (3) which disables
-        inactive accounts.
+    - key: a
+      text: |
+        AC-1(a) is an organizational control outside the scope of CoreOS configuration.
+    - key: b
+        AC-1(b) is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        AC-2 is an organizational control outside the scope
-        of configuring CoreOS.'
+    - key: a
+      text: |
+        AC-2(a) is an organizational control outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        AC-2(b) is an organizational control outside the scope of CoreOS configuration.
+    - key: c
+      text: |
+        AC-2(c) is an organizational control outside the scope of CoreOS configuration.
+    - key: d
+      text: |
+        AC-2(d) is an organizational control outside the scope of CoreOS configuration.
+    - key: e
+      text: |
+        AC-2(e) is an organizational control outside the scope of CoreOS configuration.
+    - key: f
+      text: |
+        AC-2(f) is an organizational control outside the scope of CoreOS configuration.
+    - key: g
+      text: |
+        AC-2(g) is an organizational control outside the scope of CoreOS configuration.
+    - key: h
+      text: |
+        AC-2(h) is an organizational control outside the scope of CoreOS configuration.
+    - key: i
+      text: |
+        AC-2(i) is an organizational control outside the scope of CoreOS configuration.
+    - key: j
+      text: |
+        AC-2(j) is an organizational control outside the scope of CoreOS configuration.
+    - key: k
+      text: |
+        AC-2(k) is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text:
+    - text: |-
         CoreOS components of the system support automated
         management through monitoring of accounts and system
         activity by logging of related information.
@@ -50,7 +80,7 @@ satisfies:
         automated mechanisms (e.g. email, text messages) after
         system events. This functionality would fall to third
         party software, and therefore, this control is partial,
-        and will only be met as partial when implemented by
+        and will only be partially satisfied when implemented by
         third party software such as an Identity Provider (IdP),
         Active Directory (MSAD), LDAP, etc.
 
@@ -73,7 +103,7 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text:
+    - text: |-
         CoreOS does not have the capability to create
         guest/anonymous accounts or temporary accounts. Any
         external emergency or temporary accounts will be
@@ -101,21 +131,28 @@ satisfies:
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text:
+    - text: |-
         CoreOS end-user account management is inherited from
-        the hosting environment.Automatic disabling of these
+        the hosting environment. Automatic disabling of these
         accounts must happen at the centralized account
         management level; for example, within LDAP, Red Hat
         IdM, or Active Directory.
+
+        The ability to use Ignition scripts to configure CoreOS
+        to add local users means that this control needs to be
+        addressed for the case that a local user was added.
+
+        See https://jira.coreos.com/browse/CMP-201 for local
+        user account handling in CoreOS.
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         To meet FISMA requirements, CoreOS must be configured
         to use centralized authentication (e.g. LDAP, Red Hat IdM,
         Active Directory). The audit of account creation,
@@ -125,31 +162,52 @@ satisfies:
         also the responsibility of the centralized authentication
         service.
 
+        The ability to use Ignition scripts to configure CoreOS
+        to add local users means that this control needs to be
+        addressed for the case that a local user was added.
+
+        See https://jira.coreos.com/browse/CMP-202 for local
+        user account handling in CoreOS.
+
 ##
 ## Ref: https://access.redhat.com/solutions/2191161
-## "How to modify console session timeouts in CoreOS 3"
+## "How to modify console session timeouts in CoreOS 4"
 ##
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A control response for AC-2 (5) is planned. Progress
-        can be tracked via:
+    - text: |-
+        A control response for AC-2 (5) is planned. Engineering
+        progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/739
+        See https://jira.coreos.com/browse/CMP-82
+
+        The ability to use Ignition scripts to configure CoreOS
+        to add local users means that this control needs to be
+        addressed for the case that a local user was added.
+
+        See https://jira.coreos.com/browse/CMP-82 for local
+        user account handling in CoreOS.
 
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A control response for AC-2 (6) is planned. Progress
-        can be tracked via:
+    - text: |-
+        A control response for AC-2 (6) is planned. Engineering
+        progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/740
+        https://jira.coreos.com/browse/CMP-83
+
+        The ability to use Ignition scripts to configure CoreOS
+        to add local users means that this control needs to be
+        addressed for the case that a local user was added.
+
+        See https://jira.coreos.com/browse/CMP-83 for local
+        user account handling in CoreOS.
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
@@ -157,37 +215,43 @@ satisfies:
   implementation_status: planned
   narrative:
     - key: a
-      text: |
+      text: |-
         A control response to AC-2(7)(a) is planned. Progress
         can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/741
+        https://jira.coreos.com/browse/CMP-84
+
+        The ability to use Ignition scripts to configure CoreOS
+        to add local users means that this control needs to be
+        addressed for the case that a local user was added.
+
+        See https://jira.coreos.com/browse/CMP-84 for local
+        user account handling in CoreOS.
+
     - key: b
-      text: |
+      text: |-
         This is an organizational control and not applicble to the configuration
         of CoreOS.
     - key: c
-      text: |
+      text: |-
         This is an organizational control and not applicble to the configuration
         of CoreOS.
 
 - control_key: AC-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        A control response for AC-2 (6) is planned. Progress
-        can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/742
+    - text: |-
+        This control is applicable to the identity service provider,
+        and outside the scope of OpenShift configuration.
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This control is applicable to the identity service provider
         and outside the scope of CoreOS configuration.
 
@@ -196,7 +260,7 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         CoreOS does not have the concept of group accounts.
 
         Should the organization allow shared credentials, the
@@ -208,7 +272,7 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This control is applicable to the identity service provider
         and outside the scope of CoreOS configuration.
 
@@ -218,11 +282,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
+      text: |-
         This control is applicable to the identity service provider
         and outside the scope of CoreOS configuration.
     - key: b
-      text: |
+      text: |-
         This control is applicable to the identity service provider
         and outside the scope of CoreOS configuration.
 
@@ -231,56 +295,47 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This control is applicable to the identity service provider,
         and outside the scope of CoreOS configuration.
 
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: implemented
   narrative:
-    - text: |
-        A response to AC-3 is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/743
+    - text: |-
+        This control is met by CoreOS when SELinux is in Enforcing mode
+        and configured against the SELinux Targeted policy.
 
 - control_key: AC-3 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This control was withdrawn by NIST, and incorporated into
-        AC-6:
-
-        http://atopathways.redhatgov.io/product-documents/coreos4/nist-800-53/ac/#AC-6
+        AC-6
 
 - control_key: AC-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unsatisfied
+  implementation_status: planned
   narrative:
-    - text: |
-        CoreOS does not support the capability for dual authorization
-        of commands. Authenticated users will be able to issue
-        any command(s) they are authorized for.
+    - text: |-
+        A control response for AC-3 (2) is planned. Engineering
+        progress can be tracked via:
 
-        It is recommended only organizationally trusted individuals
-        receive authentication and authorization privileges to
-        CoreOS systems.
+        https://jira.coreos.com/browse/CMP-88
 
 - control_key: AC-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: implemented
   narrative:
     - text: |
-        A response to AC-3 (3) is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/744
+       This control is met by CoreOS when SELinux is in Enforcing mode
+       and configured against the SELinux Targeted policy.
 
 - control_key: AC-3 (4)
   standard_key: NIST-800-53
@@ -288,15 +343,15 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A response to AC-3 (4) is planned. Progress can be tracked
-        via:
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/745
+        https://jira.coreos.com/browse/CMP-90
 
 - control_key: AC-3 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: implemented
   narrative:
     - text: |
         A response to AC-3 (5) is planned. Progress can be tracked
@@ -315,42 +370,40 @@ satisfies:
 - control_key: AC-3 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: implemented
   narrative:
-    - text: |
-        A response to AC-3 (7) is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/747
+    - text: |-
+        This control is met through the enablement of SELinux and
+        default MAC/DAC controls inherent in CoreOS.
 
 - control_key: AC-3 (8)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A response to AC-3 (8) is planned. Progress can be tracked
+    - text: |-
+        A response to AC-3 (8) is planned. Engineering progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/748
+        https://jira.coreos.com/browse/CMP-96
 
 - control_key: AC-3 (9)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A response to AC-3 (9) is planned. Progress can be tracked
+    - text: |-
+        A response to AC-3 (9) is planned. Engineering progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/749
+        https://jira.coreos.com/browse/CMP-97
 
 - control_key: AC-3 (10)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         CoreOS was not designed to allow an override of access control
         mechanisms.
 
@@ -363,7 +416,7 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Progress can be tracked via:
 
         https://github.com/ComplianceAsCode/redhat/issues/750
@@ -588,7 +641,7 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         The customer will be responsible for separating information flows
         within the customer application. A successful control response will
         need to address the customer organizational requirements for
