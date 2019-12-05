@@ -1,4 +1,4 @@
-TARGETS = ansible-tower coreos-4 identity-management openshift-container-platform-3 openshift-dedicated openstack-platform-13 virtualization-host virtualization-manager
+TARGETS = ansible-tower coreos-4 identity-management openshift-container-platform-3 openshift-container-platform-4 openshift-dedicated openstack-platform-13 virtualization-host virtualization-manager
 TARGET_FILES = $(TARGETS:%=build/%/component.yaml)
 
 .PHONY: clean
