@@ -302,7 +302,7 @@ satisfies:
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implementation_status: complete
   narrative:
     - text: |-
         This control is met by CoreOS when SELinux is in Enforcing mode
@@ -331,7 +331,7 @@ satisfies:
 - control_key: AC-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implementation_status: complete
   narrative:
     - text: |
        This control is met by CoreOS when SELinux is in Enforcing mode
@@ -351,7 +351,7 @@ satisfies:
 - control_key: AC-3 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implementation_status: complete
   narrative:
     - text: |
         A response to AC-3 (5) is planned. Progress can be tracked
@@ -370,7 +370,7 @@ satisfies:
 - control_key: AC-3 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implementation_status: complete
   narrative:
     - text: |-
         This control is met through the enablement of SELinux and

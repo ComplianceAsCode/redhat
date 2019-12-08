@@ -279,7 +279,7 @@ satisfies:
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemented
+  implementation_status: complete
   narrative:
     - text: |-
         This control is met through the use of Role-based Access Control
@@ -350,7 +350,7 @@ satisfies:
 - control_key: AC-3 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: implemnted
+  implementation_status: complete
   narrative:
     - text: |-
         This control is met through a variety of OpenShift technologies:
