@@ -126,18 +126,32 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-2 (1)
   standard_key: NIST-800-53
@@ -145,8 +159,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-2 (2)
   standard_key: NIST-800-53
@@ -154,17 +168,26 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-3 (1)
   standard_key: NIST-800-53
@@ -172,8 +195,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-3 (2)
   standard_key: NIST-800-53
@@ -181,8 +204,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-3 (3)
   standard_key: NIST-800-53
@@ -190,8 +213,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-3 (4)
   standard_key: NIST-800-53
@@ -199,17 +222,22 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
 
 - control_key: AT-5
   standard_key: NIST-800-53
@@ -217,8 +245,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into PM-15.'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PM-15.
 ##
 ## BEGINNING OF:
 ## AUDIT AND ACCOUNTABILITY
