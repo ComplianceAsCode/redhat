@@ -1394,8 +1394,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Establishing organizational security assessment and
+        authorization policy and procedures is outside
+        the scope of OpenShift configuration guidance.
 
 - control_key: CA-2
   standard_key: NIST-800-53
@@ -1403,8 +1404,23 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Development of an organizational security assessment plan
+        is outside the scope of OpenShift configuration guidance.
+
+        As supplemental comments, the <i>NIST National Checklist for
+        OpenShift</i> is recommended as the source of configuration guidance
+        for US Government deployments. NIST National Checklists applicable
+        to Red Hat technologies can be found on nist.gov:
+
+        https://nvd.nist.gov/ncp/repository?authority=Red+Hat&startIndex=0
+
+        The NIST National Checklist for OpenShift provides SCAP-formatted
+        automation content which could be used in satisfaction of
+        CA-2(b), and is interoperable with any NIST SCAP Validated Product
+        and Module.
+
+        Additionally, SCAP scanners will generate a compliance report which
+        could be used to satisfy CA-2(c).
 
 - control_key: CA-2 (1)
   standard_key: NIST-800-53
@@ -1412,8 +1428,26 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Employment of independent assessors or assessment teams
+        is outside the scope of OpenShift configuration guidance.
+
+- control_key: CA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Specialized security assessments are outside the scope
+        of OpenShift configuration guidance.
+
+- control_key: CA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational acceptance of the results of an assessment
+        is outside the scope of OpenShift configuration.
 
 - control_key: CA-3
   standard_key: NIST-800-53
@@ -1421,17 +1455,106 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Establishment of organizational system interconnection
+        agreements is outside the scope of OpenShift configuration
+        guidance.
 
-- control_key: CA-5
+- control_key: CA-3 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This is an organizational control outside the scope of
+        OpenShift configuration guidance.
+
+- control_key: CA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        OpenShift configuration guidance.
+
+- control_key: CA-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        OpenShift configuration guidance.
+
+- control_key: CA-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of
+        OpenShift configuration guidance.
+
+- control_key: CA-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        This control is applicable to OpenShift and applicable
+        through host-level firewall rules.
+
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-253
+
+- control_key: CA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        Creating an information system-level Plan of Action
+        and Milestones (POA&M) is outside the scope of OpenShift
+        configuration processes.
+
+        However, to aid in remediating or
+        mitigating any known weaknesses or deficiencies in
+        OpenShift, Red Hat is planning to make public a POA&M specific
+        to OpenShift. This is currently in progress. If you would like to
+        monitor or collaborate in the creation of the OpenShift POA&M,
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-254
+    - key: b
+      text: |
+        Organizational processes relating to updating and the maintenance
+        of an information system-level Plan of Action and Milestones (POA&M)
+        is outside the scope of OpenShift configuration processes.
+
+        However, Red Hat will be evaluatng the self-assessment POA&M items specific
+        to OpenShift. Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-254
+
+- control_key: CA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Updates and maintenance of an information system-level
+        Plan of Action and Milestones (POA&M) document outside the
+        scope of OpenShift configuration.
 
 - control_key: CA-6
   standard_key: NIST-800-53
@@ -1439,26 +1562,128 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        CA-6 reflects organizational processes outside the scope
+        of OpenShift configuration guidance.
 
 - control_key: CA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Engineering progress can be tracked at:
 
-- control_key: CA-9
+        https://jira.coreos.com/browse/CMP-255
+    - key: b
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: c
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: d
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: e
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: f
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: g
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+
+- control_key: CA-7 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Employment of assessors or assessment teams is outside the
+        scope of OpenShift configuration guidance.
+
+- control_key: CA-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CA-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational trend analyses processes are
+        outside the scope of OpenShift configuration guidance.
+
+- control_key: CA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Penetration testing is outside the scope of
+        OpenShift configuration guidance.
+
+- control_key: CA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of independent penetration testers
+        is out of scope for OpenShift configuration
+        guidance.
+
+- control_key: CA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Team Exercises are out of scope for
+        OpenShift configuration guidance.
+
+- control_key: CA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-256
+    - key: b
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-256
+
+- control_key: CA-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        CA-9 (1) reflects organizational processes outside the scope
+        of OpenShift configuration guidance.
 ##
 ## BEGINNING OF:
 ## CONFIGURATION MANAGEMENT

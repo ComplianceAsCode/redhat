@@ -2691,10 +2691,9 @@ satisfies:
         This control is applicable to CoreOS and applicable
         through host-level firewall rules.
 
-        Creation of configuration guidance is being tracked in the
-        ComplianceAsCode backlog:
+        Engineering progress can be tracked at:
 
-        https://github.com/ComplianceAsCode/redhat/issues/729
+        https://jira.coreos.com/browse/CMP-253
 
 - control_key: CA-4
   standard_key: NIST-800-53
@@ -2707,7 +2706,7 @@ satisfies:
 - control_key: CA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - key: a
       text: |
@@ -2719,15 +2718,20 @@ satisfies:
         mitigating any known weaknesses or deficiencies in
         CoreOS, Red Hat is planning to make public a POA&M specific
         to CoreOS. This is currently in progress. If you would like to
-        monitor or collaborate in the creation of the CoreOS POA&M, the
-        work is tracked in the following ticket:
+        monitor or collaborate in the creation of the CoreOS POA&M,
+        Engineering progress can be tracked at:
 
-        https://github.com/ComplianceAsCode/redhat/issues/730
+        https://jira.coreos.com/browse/CMP-254
     - key: b
       text: |
         Organizational processes relating to updating and the maintenance
         of an information system-level Plan of Action and Milestones (POA&M)
         is outside the scope of CoreOS configuration processes.
+
+        However, Red Hat will be evaluatng the self-assessment POA&M items specific
+        to OpenShift. Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-254
 
 - control_key: CA-5 (1)
   standard_key: NIST-800-53
@@ -2755,27 +2759,39 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Establishment of continuous monitoring metrics is
-        outside the scope of CoreOS configuration guidance.
+        Engineering progress can be tracked at:
 
-        The CoreOS Prometheus Operator may assist in identification
-        of all the parts required to start monitoring a Kubernetes
-        cluster. For further details, visit
-        the "Cluster Monitoring" section of the
-        Prometheus documentation:
-
-        https://coreos.com/operators/prometheus/docs/latest/user-guides/cluster-monitoring.html
+        https://jira.coreos.com/browse/CMP-255
     - key: b
       text: |
-        Establishment of organizationally-defined frequencies for monitoring
-        assessments is outside the scope of CoreOS configuration guidance.
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
     - key: c
       text: |
-        Red Hat is developing documentation regarding ongoing security control
-        assessments of CoreOS. That work can be tracked in the following
-        ticket:
+        Engineering progress can be tracked at:
 
-        https://github.com/ComplianceAsCode/redhat/issues/732
+        https://jira.coreos.com/browse/CMP-255
+    - key: d
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: e
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: f
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
+    - key: g
+      text: |
+        Engineering progress can be tracked at:
+
+        https://jira.coreos.com/browse/CMP-255
 
 - control_key: CA-7 (1)
   standard_key: NIST-800-53
@@ -2834,29 +2850,27 @@ satisfies:
 - control_key: CA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
-        Creation of supporting documentation regarding
-        CoreOS' internal connections, interface
-        characteristics, security requirements, and the nature
-        of the information communicated, is being created.
+    - key: a
+      text: |
+        Engineering progress can be tracked at:
 
-        That work is being tracked in the following
-        ticket:
+        https://jira.coreos.com/browse/CMP-256
+    - key: b
+      text: |
+        Engineering progress can be tracked at:
 
-        https://github.com/ComplianceAsCode/redhat/issues/734
+        https://jira.coreos.com/browse/CMP-256
 
 - control_key: CA-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response to CA-9 (1) is planned, and
-        being tracked through the following ticket:
-
-        https://github.com/ComplianceAsCode/redhat/issues/735
+        CA-9 (1) reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 ##
 ## BEGINNING OF:
 ## CONFIGURATION MANAGEMENT
