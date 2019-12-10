@@ -97,13 +97,12 @@
 - control_key: RA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - key: a
       text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1018
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
     - key: b
       text: |
         A control response is planned. Progress can be tracked via:
@@ -111,9 +110,8 @@
         https://github.com/ComplianceAsCode/redhat/issues/1018
     - key: c
       text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1018
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
     - key: d
       text: |
         A control response is planned. Progress can be tracked via:
@@ -141,22 +139,20 @@
 - control_key: RA-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1020
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: RA-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1021
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: RA-5 (4)
   standard_key: NIST-800-53
@@ -181,7 +177,7 @@
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         A control response is planned. Progress can be tracked via:
