@@ -258,7 +258,6 @@
         from the device reflects organizational
         procedure/policy and is not applicable to component-level
         configuration.
-       
 - control_key: PE-5 (3)
   standard_key: NIST-800-53
   covered_by: []
@@ -275,7 +274,7 @@
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
-   narrative:
+  narrative:
     - key: a
       text: |
         Monitoring physical access to the facility where the information
