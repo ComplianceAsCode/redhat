@@ -8,7 +8,12 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |-
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
         This control reflects organizational procedure/policy and is not
         applicable to CoreOS configuration.
 
@@ -215,19 +220,11 @@
 - control_key: MP-6 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |-
-        CoreOS System administrators, regardless of local or remote access,
-        have access to command line tools to remove data from CoreOS system
-        components. Examples include removing a local file (e.g. through
-        the "rm" command) or remotely purging/wiping CoreOS nodes and
-        reinstalling them through processes such as Terraform Bare
-        Metal (re)installation.
-
-        This capability is an intrinsic property of being a
-        CoreOS System Administrator with remote access
-        credentials.
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: MP-7
   standard_key: NIST-800-53
