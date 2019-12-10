@@ -15,20 +15,44 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This is an organizational procedural requirement
-        outside the scope of CoreOS configuration.
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/993
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: d
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: e
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: f
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-2 (1)
   standard_key: NIST-800-53
@@ -41,9 +65,16 @@
 - control_key: MA-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/994
+    - key: b
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -52,24 +83,20 @@
 - control_key: MA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/995
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/996
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-3 (2)
   standard_key: NIST-800-53
@@ -113,20 +140,43 @@
 - control_key: MA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/997
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/998
+    - key: b
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/998
+    - key: c
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/998
+    - key: d
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/998
+    - key: e
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -135,31 +185,39 @@
 - control_key: MA-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/999
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1000
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-4 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: b
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -170,7 +228,14 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - key: a
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1002
+    - key: b
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -206,7 +271,7 @@
 - control_key: MA-4 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -249,7 +314,7 @@
         citizens is outside the scope of CoreOS configuration.
     - key: b
       text: |
-        Development and implementation of  alternate security safeguards
+        Development and implementation of alternate security safeguards
         in the event an information system component cannot be sanitized,
         removed, or disconnected from the system, is outside the scope
         of CoreOS configuration.
@@ -316,43 +381,35 @@
 - control_key: MA-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1010
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1011
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-6 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1012
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: MA-6 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/1013
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
