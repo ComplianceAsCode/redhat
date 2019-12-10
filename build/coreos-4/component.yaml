@@ -3547,13 +3547,11 @@ satisfies:
 - control_key: CP-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/925
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-2 (3)
   standard_key: NIST-800-53
@@ -3590,13 +3588,11 @@ satisfies:
 - control_key: CP-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/926
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-2 (7)
   standard_key: NIST-800-53
@@ -3612,13 +3608,11 @@ satisfies:
 - control_key: CP-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/927
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-3
   standard_key: NIST-800-53
@@ -3714,24 +3708,20 @@ satisfies:
 - control_key: CP-4 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/929
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-4 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/930
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-5
   standard_key: NIST-800-53
@@ -3772,13 +3762,11 @@ satisfies:
 - control_key: CP-6 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/931
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-6 (3)
   standard_key: NIST-800-53
@@ -3794,13 +3782,23 @@ satisfies:
 - control_key: CP-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: b
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/931
+        https://github.com/ComplianceAsCode/redhat/issues/932
+
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-7 (1)
   standard_key: NIST-800-53
@@ -3838,13 +3836,11 @@ satisfies:
 - control_key: CP-7 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/932
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-7 (5)
   standard_key: NIST-800-53
@@ -3948,9 +3944,66 @@ satisfies:
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        The customer will be responsible for conducting daily incremental and
+        weekly full backups of user-level information contained in the
+        information system. Additional requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/934
+
+    - key: b
+      text: |
+        The customer will be responsible for conducting daily incremental and
+        weekly full backups of system-level information contained in the
+        information system. Additional requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occures, and how three backup copies are
+        maintained.
+
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/934
+
+    - key: c
+      text: |
+        The customer will be responsible for conducting daily incremental and
+        weekly full backups of information system documentation including
+        security-related documentation. Additional requirements and
+        guidance include maintaining at least three backup copies of user-level
+        information (at least one of which is available online) or provides an
+        equivalent alternative. A successful control response will detail how
+        backups of user-level information occures, and how three backup copies
+        are maintained.
+
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/934
+
+    - key: d
+      text: |
+        The customer will be responsible for protecting the confidentiality,
+        integrity, and available of backup information at storage locations.
+        Additional requirements and guidance include determining
+        what elements of the cloud environment require the Information System
+        Backup control. The customer will determine how Information System
+        Backup is going to be verified and appropriate periodicity of the
+        check.
+
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -3959,7 +4012,7 @@ satisfies:
 - control_key: CP-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -3967,10 +4020,11 @@ satisfies:
 
         https://github.com/ComplianceAsCode/redhat/issues/935
 
+
 - control_key: CP-9 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4000,46 +4054,39 @@ satisfies:
 - control_key: CP-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/937
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-9 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/938
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-9 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/939
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: CP-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/940
+        The customer will be responsible for documenting how to reconstitute
+        their CoreOS environment. A successful control response will detail
+        processes used to fully recover/restore the CoreOS environment.
 
 - control_key: CP-10 (1)
   standard_key: NIST-800-53
@@ -4052,13 +4099,11 @@ satisfies:
 - control_key: CP-10 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/941
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-10 (3)
   standard_key: NIST-800-53
@@ -4071,13 +4116,11 @@ satisfies:
 - control_key: CP-10 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/942
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-10 (5)
   standard_key: NIST-800-53
@@ -4090,13 +4133,11 @@ satisfies:
 - control_key: CP-10 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/943
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-11
   standard_key: NIST-800-53
@@ -4112,7 +4153,7 @@ satisfies:
 - control_key: CP-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4123,15 +4164,20 @@ satisfies:
 - control_key: CP-13
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
         Employment of organization-defined alternative or
         supplemental security mechanisms for satisfying
         organization-defined security functions when the primary
-        means of implemeting CoreOS' security function is
+        means of implementing CoreOS security function is
         unavailable or compromised is outside the scope of
         CoreOS configuration guidance.
+
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1056
 ##
 ## BEGINNING OF:
 ## IDENTIFICATION AND AUTHENTICATION

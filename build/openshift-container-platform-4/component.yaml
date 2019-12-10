@@ -1794,24 +1794,62 @@ satisfies:
 ## BEGINNING OF:
 ## CONTINGENCY PLANNING
 ##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
 
 - control_key: CP-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Developing an organization-level contingency planning policy is
+        outside the scope of OpenShift configuration.
+    - key: b
+      text: |
+        Review and updating an organizational-level contingency planning
+        policy is outside the scope of OpenShift configuration.
 
 - control_key: CP-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Developing an organization-level contingency planning policy is
+        outside the scope of OpenShift configuration.
+    - key: b
+      text: |
+        Distribution of an organizational-level contingency planning
+        policy is outside the scope of OpenShift configuration.
+    - key: c
+      text: |
+        Coordinating contingency planning activities with incident handling
+        activities is outside the scope of OpenShift configuration.
+    - key: d
+      text: |
+        Reviewing organizational contingency plans for the information system
+        at an organization-defined frequency is outside the scope of
+        OpenShift configuration.
+    - key: e
+      text: |
+        Organizational processes to update the contingency plan are outside the
+        scope of OpenShift configuration.
+    - key: f
+      text: |
+        Organizational communication plans regarding the contingency plan are outside
+        the scope of OpenShift configuration.
+    - key: g
+      text: |
+        Protection of the contingency plan from unauthorized disclosure and
+        modification is outside the scope of OpenShift configuration.
 
 - control_key: CP-2 (1)
   standard_key: NIST-800-53
@@ -1819,8 +1857,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Coordinating contingency plan development with organizational elements
+        responsible for related plans is outside the scope of OpenShift
+        configuration.
 
 - control_key: CP-2 (2)
   standard_key: NIST-800-53
@@ -1828,8 +1867,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-2 (3)
   standard_key: NIST-800-53
@@ -1837,8 +1876,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Planning for the resumption of essential missions and business
+        functions within an organization-defined time period of contingency
+        plan activation is outside the scope of OpenShift configuration.
 
 - control_key: CP-2 (4)
   standard_key: NIST-800-53
@@ -1846,8 +1886,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Planning for the resumption of all missions and business
+        functions within an organization-defined time period of contingency
+        plan activation is outside the scope of OpenShift configuration.
 
 - control_key: CP-2 (5)
   standard_key: NIST-800-53
@@ -1855,8 +1896,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Planning for the continuance of essential missions and business
+        functions with little or no loss of operational continuity and
+        sustainment of that continuity until full information system
+        restoration at primary processing and/or storage sites
+        is outside the scope fo OpenShift configuration.
 
 - control_key: CP-2 (6)
   standard_key: NIST-800-53
@@ -1864,8 +1908,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-2 (7)
   standard_key: NIST-800-53
@@ -1873,8 +1917,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Coordination of organizational contingency plans with the
+        contingency plans of external service providers to ensure that
+        contingency requirements can be satisfied is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-2 (8)
   standard_key: NIST-800-53
@@ -1882,17 +1928,30 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Providing contingency training to information system users consistent
+        with assigned roles and responsibilities within an organization-defined
+        time period of assuming a contingency role or responsibility is outside
+        the scope of OpenShift configuration.
+    - key: b
+      text: |
+        Providing contingency training to information system users consistent
+        with assigned roles and responsibilities when required by information
+        system changes is outside the scope of OpenShift configuration.
+    - key: c
+      text: |
+        Providing contingency training to information system users consistent
+        with assigned roles and responsibilities at an organization-defined
+        frequency is outside the scope of OpenShift configuration.
 
 - control_key: CP-3 (1)
   standard_key: NIST-800-53
@@ -1900,8 +1959,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Incorporating simulated events into contingency training to
+        facilitate effective response by personnel in crisis
+        situations is outside the scope of OpenShift configuration.
 
 - control_key: CP-3 (2)
   standard_key: NIST-800-53
@@ -1909,17 +1969,30 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Employment of automated mechanisms to provide a more thorough and
+        realistic contingency training environment is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Testing the contingency plan for the information system at an
+        organization-defined frequency using organization-defined tests
+        to determine the effectiveness of the plan and the organizational
+        readiness to execute the plan is outside the scope of
+        OpenShift configuration.
+    - key: b
+      text: |
+        Organizational reviews of the contingency plan test results is outside
+        the scope of OpenShift configuration.
+    - key: c
+      text: |
+        Organizational process to intiate corrective actions, if needed,
+        are outside the scope of OpenShift configuration.
 
 - control_key: CP-4 (1)
   standard_key: NIST-800-53
@@ -1927,8 +2000,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Coordinating contingency plan testing with organizational
+        elements responsible for related plans is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-4 (2)
   standard_key: NIST-800-53
@@ -1937,12 +2011,16 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Organizational testing of the contingency plan at the alternate
+        processing site to familiarize contingency personnel with the
+        facility and available resources is outside the scope of
+        OpenShift configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        Organizational testing of the contingency plan at the alternate
+        processing site to evaluate the capabilities of the alternate
+        processing site to support contingency operations is outside
+        the scope of OpenShift configuration.
 
 - control_key: CP-4 (3)
   standard_key: NIST-800-53
@@ -1950,8 +2028,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-4 (4)
   standard_key: NIST-800-53
@@ -1959,17 +2037,33 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: CP-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
 
 - control_key: CP-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Establishment of an alternative storate site including
+        necessary agreements to permit the storage and retrieval
+        of information system backup information is outside
+        the scope of OpenShift configuration.
+    - key: b
+      text: |
+        Ensuring that the alternative storage site provides information
+        security safeguards equivalent to that of the primary site
+        is outside the scope of OpenShift configuration.
 
 - control_key: CP-6 (1)
   standard_key: NIST-800-53
@@ -1977,8 +2071,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Identification of an alternate storage site that is
+        separated from the primary storage site to reduce
+        susceptibility to the same threats is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-6 (2)
   standard_key: NIST-800-53
@@ -1986,8 +2082,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-6 (3)
   standard_key: NIST-800-53
@@ -1995,17 +2091,31 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Identification of potential accessibility problems to the alternate
+        storage site in an event of an area-wide disruption or disaster and
+        the outline of explicit mitigation actions is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/932
+
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-7 (1)
   standard_key: NIST-800-53
@@ -2013,8 +2123,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Identification of an alternate processing site that is
+        separated from the primary processing site to reduce
+        susceptibility to the same threats is outside the
+        scope of OpenShift configuration.
 
 - control_key: CP-7 (2)
   standard_key: NIST-800-53
@@ -2022,8 +2134,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Identification of potential accessibility problems to the
+        alternate processing site in the event of an area-wide
+        disruption or disaster and outline of explicit mitigation
+        actions is outside the scope of OpenShift configuration.
 
 - control_key: CP-7 (3)
   standard_key: NIST-800-53
@@ -2031,8 +2145,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Development of alternate processing site agreements that contain
+        priority-of-service provisions in accordance with organizational
+        availability requirements (including recovery time objectives)
+        is outside the scope of OpenShift configuration.
 
 - control_key: CP-7 (4)
   standard_key: NIST-800-53
@@ -2040,8 +2156,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-7 (5)
   standard_key: NIST-800-53
@@ -2049,8 +2165,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control was withdrawn by NIST.
 
 - control_key: CP-7 (6)
   standard_key: NIST-800-53
@@ -2058,8 +2173,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Organizational planning and preparation for circumstances
+        that preclude returning to the primary processing site
+        is outside the scope of OpenShift configuration.
 
 - control_key: CP-8
   standard_key: NIST-800-53
@@ -2067,17 +2183,27 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Establishment of alternate telecommunications services
+        is outside the scope of OpenShift configuration.
 
 - control_key: CP-8 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Development of primary and alternate telecommunications service
+        agreements that contain priority-of-service provisions in accordance
+        with organizational availability requirements (including recovery
+        time objectives) is outside the scope of OpenShift configuration.
+    - key: b
+      text: |
+        Requests for Telecommunications Service Priority for all
+        telecommunucations services used for national security emergency
+        preparedness in the event that the primary and/or alternate
+        telecommunications services are provided by a common carrier
+        are outside the scope of OpenShift configuration.
 
 - control_key: CP-8 (2)
   standard_key: NIST-800-53
@@ -2085,8 +2211,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Obtaining alternate telecommunications services to reduce
+        the likelihood of sharing a single point of failure with
+        primary telecommunications services is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-8 (3)
   standard_key: NIST-800-53
@@ -2094,17 +2222,31 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Obtaining alternate telecommunications services from providers
+        that are separated from primary service providers to reduce
+        susceptibility to the same threats is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-8 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        Requiring primary and alternate telecommunications service
+        providers to have contingency plans is outside the scope
+        of OpenShift configuration.
+    - key: b
+      text: |
+        Reviewing provider contingency plans to ensure that the plans
+        meet organizational contingecny requirements is outside
+        the scope of OpenShift configuration.
+    - key: c
+      text: |
+        Obtaining evidence of contingency testing/training by providers
+        at an organization-defined frequency is outside the plannedscope
+        of OpenShift configuration.
 
 - control_key: CP-8 (5)
   standard_key: NIST-800-53
@@ -2112,74 +2254,100 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Testing alternate telecommunication services at
+        an organization-defined frequency is outside the scope
+        of OpenShift configuration.
 
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - key: a
       text: |
-        'The customer will be responsible for conducting daily incremental and
+        The customer will be responsible for conducting daily incremental and
         weekly full backups of user-level information contained in the
-        information system. Additional FedRAMP requirements and guidance include
+        information system. Additional requirements and guidance include
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
         user-level information occures, and how three backup copies are
         maintained.
 
-        Guidance on establishing such backups is being tracked in Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-11'
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/934
+
     - key: b
       text: |
-        'The customer will be responsible for conducting daily incremental and
+        The customer will be responsible for conducting daily incremental and
         weekly full backups of system-level information contained in the
-        information system. Additional FedRAMP requirements and guidance include
+        information system. Additional requirements and guidance include
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
         user-level information occures, and how three backup copies are
         maintained.
 
-        Guidance on establishing such backups is being tracked in Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-12'
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/934
+
     - key: c
       text: |
-        'The customer will be responsible for conducting daily incremental and
+        The customer will be responsible for conducting daily incremental and
         weekly full backups of information system documentation including
-        security-related documentation. Additional FedRAMP requirements and
+        security-related documentation. Additional requirements and
         guidance include maintaining at least three backup copies of user-level
         information (at least one of which is available online) or provides an
         equivalent alternative. A successful control response will detail how
         backups of user-level information occures, and how three backup copies
         are maintained.
 
-        Guidance on establishing such backups is being tracked in Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-13'
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/934
+
     - key: d
       text: |
-        'The customer will be responsible for protecting the confidentiality,
+        The customer will be responsible for protecting the confidentiality,
         integrity, and available of backup information at storage locations.
-        Additional FedRAMP requirements and guidance include determining
+        Additional requirements and guidance include determining
         what elements of the cloud environment require the Information System
         Backup control. The customer will determine how Information System
         Backup is going to be verified and appropriate periodicity of the
         check.
 
-        Guidance on establishing such backups is being tracked in Jira:
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-14'
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/934
 
 - control_key: CP-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/935
+
+
+- control_key: CP-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/936
 
 - control_key: CP-9 (3)
   standard_key: NIST-800-53
@@ -2187,8 +2355,18 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        Storing backup copies of organization-defined critical information
+        system software and other security-related information in a separate
+        facility or in a fire-rated container that is not collocated with the
+        operational system is outside the scope of OpenShift configuration.
+
+- control_key: CP-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
 
 - control_key: CP-9 (5)
   standard_key: NIST-800-53
@@ -2196,17 +2374,17 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-9 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-9 (7)
   standard_key: NIST-800-53
@@ -2214,31 +2392,109 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: CP-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        The customer will be responsible for documenting how to reconstitute
+        their OpenShift environment. A successful control response will detail
+        processes used to fully recover/restore the OpenShift environment.
+
+- control_key: CP-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: CP-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: CP-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: CP-11
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for documenting how to reconstitute
-        their OpenShift environment. A successful control response will detail
-        processes used to fully recover/restore the OpenShift environment.'
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
 
-- control_key: CP-10 (2)
+        https://github.com/ComplianceAsCode/redhat/issues/944
+
+- control_key: CP-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: none
+  implementation_status: partial
   narrative:
     - text: |
-        '//*
-        The customer will be responsible for implementing transaction
-        recovery within the customer application. A successful control response
-        will need to address how transactions are performed and what occurs in
-        the case of failed or conflicting transactions.
-        */'
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/945
+
+- control_key: CP-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        Employment of organization-defined alternative or
+        supplemental security mechanisms for satisfying
+        organization-defined security functions when the primary
+        means of implementing OpenShift security function is
+        unavailable or compromised is outside the scope of
+        OpenShift configuration guidance.
+
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1056
 ##
 ## BEGINNING OF:
 ## IDENTIFICATION AND AUTHENTICATION
