@@ -2580,7 +2580,13 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - key: a
+      text: |
+        Establishing organizational security assessment and
+        authorization policy and procedures is outside
+        the scope of CoreOS configuration guidance.
+    - key: b
+      text: |
         Establishing organizational security assessment and
         authorization policy and procedures is outside
         the scope of CoreOS configuration guidance.
@@ -2590,24 +2596,22 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - key: a
+      text: |
         Development of an organizational security assessment plan
         is outside the scope of CoreOS configuration guidance.
-
-        As supplemental comments, the <i>NIST National Checklist for
-        CoreOS</i> is recommended as the source of configuration guidance
-        for US Government deployments. NIST National Checklists applicable
-        to Red Hat technologies can be found on nist.gov:
-
-        https://nvd.nist.gov/ncp/repository?authority=Red+Hat&startIndex=0
-
-        The NIST National Checklist for CoreOS provides SCAP-formatted
-        automation content which could be used in satisfaction of
-        CA-2(b), and is interoperable with any NIST SCAP Validated Product
-        and Module.
-
-        Additionally, SCAP scanners will generate a compliance report which
-        could be used to satisfy CA-2(c).
+    - key: b
+      text: |
+        Development of an organizational security assessment plan
+        is outside the scope of CoreOS configuration guidance.
+    - key: c
+      text: |
+        Development of an organizational security assessment plan
+        is outside the scope of CoreOS configuration guidance.
+    - key: d
+      text: |
+        Development of an organizational security assessment plan
+        is outside the scope of CoreOS configuration guidance.
 
 - control_key: CA-2 (1)
   standard_key: NIST-800-53
@@ -2641,7 +2645,18 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - key: a
+      text: |
+        Establishment of organizational system interconnection
+        agreements is outside the scope of CoreOS configuration
+        guidance.
+    - key: b
+      text: |
+        Establishment of organizational system interconnection
+        agreements is outside the scope of CoreOS configuration
+        guidance.
+    - key: c
+      text: |
         Establishment of organizational system interconnection
         agreements is outside the scope of CoreOS configuration
         guidance.
@@ -2729,7 +2744,7 @@ satisfies:
         is outside the scope of CoreOS configuration processes.
 
         However, Red Hat will be evaluatng the self-assessment POA&M items specific
-        to OpenShift. Engineering progress can be tracked at:
+        to CoreOS. Engineering progress can be tracked at:
 
         https://jira.coreos.com/browse/CMP-254
 
@@ -2748,8 +2763,17 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        CA-6 reflects organizational processes outside the scope
+    - key: a
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
         of CoreOS configuration guidance.
 
 - control_key: CA-7
