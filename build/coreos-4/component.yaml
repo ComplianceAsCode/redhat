@@ -2908,10 +2908,6 @@ satisfies:
 #       however it's best to double check with the Information System owner
 #       on expectations (component vs central CM).
 #
-#       In case the customer desires components (e.g. Red Hat Identity
-#       Management Admins) to handle configuration management the
-#       lines below can be uncommented:
-#
 
 - control_key: CM-1
   standard_key: NIST-800-53
@@ -2933,21 +2929,34 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/884
+        https://jira.coreos.com/browse/CMP-260
 
 - control_key: CM-2 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/885
+        https://jira.coreos.com/browse/CMP-261
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-261
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-261
 
 - control_key: CM-2 (2)
   standard_key: NIST-800-53
@@ -2955,10 +2964,10 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/886
+        https://jira.coreos.com/browse/CMP-262
 
 - control_key: CM-2 (3)
   standard_key: NIST-800-53
@@ -2966,10 +2975,10 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/887
+        https://jira.coreos.com/browse/CMP-263
 
 - control_key: CM-2 (4)
   standard_key: NIST-800-53
@@ -2990,13 +2999,13 @@ satisfies:
 - control_key: CM-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/888
+        https://jira.coreos.com/browse/CMP-264
 
 - control_key: CM-2 (7)
   standard_key: NIST-800-53
@@ -3019,46 +3028,99 @@ satisfies:
 - control_key: CM-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/889
+        https://jira.coreos.com/browse/CMP-265
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-265
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-265
+    - key: d
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-265
+    - key: e
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-265
+    - key: f
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-265
+    - key: g
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+
 
 - control_key: CM-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/890
+    - key: a
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: d
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: e
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: f
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/891
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/892
+        https://jira.coreos.com/browse/CMP-266
 
 - control_key: CM-3 (4)
   standard_key: NIST-800-53
@@ -3073,24 +3135,24 @@ satisfies:
 - control_key: CM-3 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/893
+        https://jira.coreos.com/browse/CMP-267
 
 - control_key: CM-3 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/894
+        https://jira.coreos.com/browse/CMP-268
 
 - control_key: CM-4
   standard_key: NIST-800-53
@@ -3105,27 +3167,29 @@ satisfies:
 - control_key: CM-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
-        Organizational requirements for separate test environments is outside
-        the scope of CoreOS configuration.
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-269
 
 - control_key: CM-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/895
+        https://jira.coreos.com/browse/CMP-270
 
 - control_key: CM-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         A complete control response is planned. Progress can be
@@ -3136,7 +3200,7 @@ satisfies:
 - control_key: CM-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         A complete control response is planned. Progress can be
@@ -3147,13 +3211,11 @@ satisfies:
 - control_key: CM-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/898
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-5 (3)
   standard_key: NIST-800-53
@@ -3161,10 +3223,10 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/899
+        https://jira.coreos.com/browse/CMP-187
 
 - control_key: CM-5 (4)
   standard_key: NIST-800-53
@@ -3172,32 +3234,35 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/900
+        https://jira.coreos.com/browse/CMP-271
 
 - control_key: CM-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
         A complete control response is planned. Progress can be
         tracked via:
 
         https://github.com/ComplianceAsCode/redhat/issues/901
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-5 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/902
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-5 (7)
   standard_key: NIST-800-53
@@ -3210,13 +3275,32 @@ satisfies:
 - control_key: CM-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/903
+        https://jira.coreos.com/browse/CMP-188
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-188
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-188
+    - key: d
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-188
 
 - control_key: CM-6 (1)
   standard_key: NIST-800-53
@@ -3224,21 +3308,19 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/904
+        https://jira.coreos.com/browse/CMP-272
 
 - control_key: CM-6 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/905
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-6 (3)
   standard_key: NIST-800-53
@@ -3261,22 +3343,36 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/906
+        https://jira.coreos.com/browse/CMP-273
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-273
 
 - control_key: CM-7 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/907
+        https://jira.coreos.com/browse/CMP-274
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-274
 
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
@@ -3284,86 +3380,127 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/908
+        https://jira.coreos.com/browse/CMP-275
 
 - control_key: CM-7 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Ensuring compliance with organization-defined registration
-        requirements for functions, ports, protocols, and services,
-        is outside the scope of CoreOS configuration.
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-276
 
 - control_key: CM-7 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/909
+        https://jira.coreos.com/browse/CMP-204
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-204
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-204
 
 - control_key: CM-7 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/910
+        https://jira.coreos.com/browse/CMP-205
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-205
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-205
 
 - control_key: CM-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/911
+        https://jira.coreos.com/browse/CMP-277
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-277
 
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/912
+        https://jira.coreos.com/browse/CMP-278
 
 - control_key: CM-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/913
+        https://jira.coreos.com/browse/CMP-279
 
 - control_key: CM-8 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/914
+        https://jira.coreos.com/browse/CMP-280
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://jira.coreos.com/browse/CMP-280
 
 - control_key: CM-8 (4)
   standard_key: NIST-800-53
@@ -3394,15 +3531,15 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
+        A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/915
+        https://jira.coreos.com/browse/CMP-282
 
 - control_key: CM-8 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         A complete control response is planned. Progress can be
@@ -3413,13 +3550,11 @@ satisfies:
 - control_key: CM-8 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/917
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-8 (9)
   standard_key: NIST-800-53
@@ -3440,13 +3575,24 @@ satisfies:
 - control_key: CM-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/918
+    - key: a
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
+    - key: d
+      text: |
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-9 (1)
   standard_key: NIST-800-53
@@ -3464,7 +3610,20 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - key: a
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/919
+    - key: b
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/919
+    - key: c
+      text: |
         A complete control response is planned. Progress can be
         tracked via:
 
@@ -3484,7 +3643,20 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - key: a
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/920
+    - key: b
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/920
+    - key: c
+      text: |
         A complete control response is planned. Progress can be
         tracked via:
 
@@ -3493,24 +3665,20 @@ satisfies:
 - control_key: CM-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/921
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 
 - control_key: CM-11 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/922
+        This control reflects organizational processes outside the scope
+        of CoreOS configuration guidance.
 ##
 ## BEGINNING OF:
 ## CONTINGENCY PLANNING
@@ -4235,17 +4403,17 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Developing an organization-level contingency planning policy is
-        outside the scope of CoreOS configuration.
+        Developing organization-level identification and authentication
+        policy and procedures are outside the scope of CoreOS configuration.
     - key: b
       text: |
-        Review and updating an organizational-level contingency planning
-        policy is outside the scope of CoreOS configuration.
+        Review and updating an organizational-level identification and authentication
+        policy and procedures are outside the scope of CoreOS configuration.
 
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4256,7 +4424,7 @@ satisfies:
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4267,7 +4435,7 @@ satisfies:
 - control_key: IA-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4278,7 +4446,7 @@ satisfies:
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4289,7 +4457,7 @@ satisfies:
 - control_key: IA-2 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4300,18 +4468,18 @@ satisfies:
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: partial
   narrative:
     - text: |
-        CoreOS requires indivuduals to be first authenticated with an
-        individual authenticator (user name). This is default
-        non-configurable behavior, and CoreOS cannot be configured
-        to be out of compliance with this control.
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/954
 
 - control_key: IA-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4322,7 +4490,7 @@ satisfies:
 - control_key: IA-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4333,7 +4501,7 @@ satisfies:
 - control_key: IA-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4344,7 +4512,7 @@ satisfies:
 - control_key: IA-2 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4355,7 +4523,7 @@ satisfies:
 - control_key: IA-2 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4366,18 +4534,19 @@ satisfies:
 - control_key: IA-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/960
+        Implementing a separate device from the system
+        gaining access to the information system using multifactor
+        authentication for remote access to privileged and non-privileged
+        accounts is an organizational control outside the configuration
+        guidance of CoreOS.
 
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4388,18 +4557,16 @@ satisfies:
 - control_key: IA-2 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/962
+        Implementing out-of-band authentication methods is an organizational
+        control outside the configuration guidance of CoreOS.
 
 - control_key: IA-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4410,7 +4577,7 @@ satisfies:
 - control_key: IA-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4429,14 +4596,20 @@ satisfies:
 - control_key: IA-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/965
+    - key: b
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
 
+        https://github.com/ComplianceAsCode/redhat/issues/965
 - control_key: IA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -4451,9 +4624,28 @@ satisfies:
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
+    - key: b
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
+    - key: c
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
+    - key: d
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/967
+    - key: e
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -4476,10 +4668,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        Implementation of this control is the responsibility
-        of organizational identity and authorization services
-        (e.g. Red Hat IdM or Active Directory), and outside the
-        scope of CoreOS configuration.
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
 
 - control_key: IA-4 (3)
   standard_key: NIST-800-53
@@ -4493,13 +4683,11 @@ satisfies:
 - control_key: IA-4 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/969
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
 
 - control_key: IA-4 (5)
   standard_key: NIST-800-53
@@ -4537,31 +4725,125 @@ satisfies:
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
+    - key: b
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/971
+    - key: c
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/971
+    - key: d
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
+    - key: e
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/971
+    - key: f
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/971
+    - key: g
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/971
+    - key: h
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/971
+    - key: i
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
+    - key: j
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
 
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
-    - text: |
+    - key: a
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
+    - key: b
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/972
+    - key: c
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
 
+        https://github.com/ComplianceAsCode/redhat/issues/972
+    - key: d
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/972
+    - key: e
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/972
+    - key: f
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/972
 - control_key: IA-5 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - key: a
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/973
+    - key: b
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/973
+    - key: c
+      text: |
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/973
+    - key: d
+      text: |
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -4594,29 +4876,25 @@ satisfies:
 - control_key: IA-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/975
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
 
 - control_key: IA-5 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/976
+        This is an organizational procedural requirement
+        outside the scope of CoreOS configuration.
 
 - control_key: IA-5 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4648,7 +4926,7 @@ satisfies:
 - control_key: IA-5 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4679,7 +4957,7 @@ satisfies:
 - control_key: IA-5 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4701,17 +4979,18 @@ satisfies:
 - control_key: IA-5 (15)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
-        Ensuring organizational use of only FICAM-approved
-        path discovery and validation products and services
-        is outside the scope of CoreOS configuration.
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/980
 
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4722,7 +5001,7 @@ satisfies:
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4733,7 +5012,7 @@ satisfies:
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4744,13 +5023,13 @@ satisfies:
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Acceptance and electronic verification of Personal
-        Identity Verification (PIV) credentials from other
-        federal agencies is outside the scope of CoreOS
-        configuration.
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1077
 
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
@@ -4776,16 +5055,18 @@ satisfies:
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
-        Conformance to FICAM-issued profiles is outside the scope of
-        CoreOS configuration.
+        Creation of control response/guidance is being tracked in the
+        ComplianceAsCode backlog:
+
+        https://github.com/ComplianceAsCode/redhat/issues/1079
 
 - control_key: IA-8 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4796,7 +5077,7 @@ satisfies:
 - control_key: IA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4807,7 +5088,7 @@ satisfies:
 - control_key: IA-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
@@ -4818,7 +5099,7 @@ satisfies:
 - control_key: IA-9 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         Creation of control response/guidance is being tracked in the
