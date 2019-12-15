@@ -787,8 +787,10 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational processes outside the scope
-        of OpenShift configuration guidance.
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/921
 
 - control_key: CM-11 (2)
   standard_key: NIST-800-53
@@ -796,5 +798,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational processes outside the scope
-        of OpenShift configuration guidance.
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/922
