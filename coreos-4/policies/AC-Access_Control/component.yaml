@@ -17,9 +17,13 @@
   narrative:
     - key: a
       text: |
-        AC-1(a) is an organizational control outside the scope of CoreOS configuration.
+        Development, documentation, and dissemination of organizational
+        access control policy and procedures is outside the scope
+        of information system component-level configuration guidance.
     - key: b
-        AC-1(b) is an organizational control outside the scope of CoreOS configuration.
+        Reviews and updates to the organizational access control policy
+        and procedures is outsie the scope of information system
+        component-level configuration guidance.
 
 - control_key: AC-2
   standard_key: NIST-800-53
@@ -28,63 +32,98 @@
   narrative:
     - key: a
       text: |
-        AC-2(a) is an organizational control outside the scope of CoreOS configuration.
+        Identification and selection of information system account types to support
+        organizational missions/business functions reflects organizational
+        procedures/process. AC-2(a) is outside the scope of information system
+        component-level configuration guidance.
     - key: b
       text: |
-        AC-2(b) is an organizational control outside the scope of CoreOS configuration.
+        Assignment of account managers for information system accounts reflects
+        organizational procedures/process. AC-2(b) is outside the scope of
+        information system component-level configuration guidance.
     - key: c
       text: |
-        AC-2(c) is an organizational control outside the scope of CoreOS configuration.
+        Establishing conditions for group and role membership reflects organizational
+        procedures/process. AC-2(c) is outside the scope of information system
+        component-level configuration guidance.
     - key: d
       text: |
-        AC-2(d) is an organizational control outside the scope of CoreOS configuration.
+        Specifying authorized users of the information system, group and role membership,
+        and access authorizations (i.e., privileges) and other attributes (as required)
+        for each account reflect organizational procedures/processes. AC-2(d) is outside
+        the scope of information system component-level configuration guidance.
     - key: e
       text: |
-        AC-2(e) is an organizational control outside the scope of CoreOS configuration.
+        Requiring approvals by organization-defined personnel or roles for requests
+        to create information system accounts reflects organizational process/procedures.
+        AC-2(e) is outside the scope of information system component-level
+        configuration guidance.
     - key: f
       text: |
-        AC-2(f) is an organizational control outside the scope of CoreOS configuration.
+        Creation, enablement, modification, disablement, and removal of information system
+        accounts in accordance with organization-defined procedures or conditions reflects
+        organizational process/procedures. AC-2(f) is outside the scope of information
+        system component-level configuration guidance.
     - key: g
       text: |
-        AC-2(g) is an organizational control outside the scope of CoreOS configuration.
+        Monitoring the use of information system accounts reflects organizational
+        process/procedures. AC-2(g) is outside the scope of information system
+        component-level configuration guidance.
     - key: h
       text: |
-        AC-2(h) is an organizational control outside the scope of CoreOS configuration.
+        Account manager notifications when accounts are no longer required, when users
+        are terminated or transferred, or when individual information system usage
+        or need-to-know changes, reflect organizational process/procedures. AC-2(h)
+        is outside the scope of information system component-level configuration
+        guidance.
     - key: i
       text: |
-        AC-2(i) is an organizational control outside the scope of CoreOS configuration.
+        Authorizing access to the information system based on a valid access
+        authorization, intended system usage, and other attributes as required by
+        the organization or associated mission/business functions reflects
+        organizational process/procedures. AC-2(i) is outside the scope of
+        information system component-level configuration guidance.
     - key: j
       text: |
-        AC-2(j) is an organizational control outside the scope of CoreOS configuration.
+        Reviewing accounts for compliance with account management requirements at
+        an organization-defined frequency reflects organizational process/procedures.
+        AC-2(j) is outside the scope of information system component-level
+        configuration guidance.
     - key: k
       text: |
-        AC-2(k) is an organizational control outside the scope of CoreOS configuration.
+        Establishment of a process for reissuing shared/group account credentials
+        (if deployed) when individuals are removed from the group reflects
+        organizational process/procedures. AC-2(k) is outside the scope
+        of information system component-level configuration guidance.
 
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
-        CoreOS components of the system support automated
-        management through monitoring of accounts and system
-        activity by logging of related information.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy NIST 800-53
+        controls related to account management.
 
-        While CoreOS can generate audit data, and securely
-        transport the data to a SIEM, CoreOS does not provide
-        automated mechanisms (e.g. email, text messages) after
-        system events. This functionality would fall to third
-        party software, and therefore, this control is partial,
-        and will only be partially satisfied when implemented by
-        third party software such as an Identity Provider (IdP),
-        Active Directory (MSAD), LDAP, etc.
+        AC-2(1) will be inherited when CoreOS is configured to a centralized
+        identity service. Automated mechanisms to support the management of
+        information system accountsare the responsibility of the
+        centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(1) should be considered
+        complete/satisfied.
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
+        There may be deployment scenarios which prevent CoreOS from
+        being configured against a centralized identity service, thus deviating
+        from the recommended NIST 800-53 configuration settings.
 
-        See https://jira.coreos.com/browse/CMP-199 for local
-        user account handling in CoreOS.
+        In such cases, CoreOS functionality to address AC-2(1) for local
+        user management is under active development. Refer to the CoreOS
+        Jira for up-to-date development progress.
+
+        https://jira.coreos.com/browse/CMP-199
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -96,21 +135,30 @@
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
-        CoreOS does not have the capability to create
-        guest/anonymous accounts or temporary accounts. Any
-        external emergency or temporary accounts will be
-        inherited from, and managed by, an external
-        identity service (e.g. LDAP).
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy NIST 800-53
+        controls related to account management.
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
+        AC-2(2) will be inherited when CoreOS is configured to a centralized
+        identity service. Automatic removal or disablement of temporary and
+        emergency accounts after an organization-defined time period for each
+        type of account is the responsibility of the centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(2) should be considered
+        complete/satisfied.
 
-        See https://jira.coreos.com/browse/CMP-200 for local
-        user account handling in CoreOS.
+        There may be deployment scenarios which prevent CoreOS from
+        being configured against a centralized identity service, thus deviating
+        from the recommended NIST 800-53 configuration settings.
+
+        In such cases, CoreOS functionality to address AC-2(2) for local
+        user management is under active development. Refer to the CoreOS
+        Jira for up-to-date development progress.
+        https://jira.coreos.com/browse/CMP-200
 
 #
 # AC-2(3) NOTES:
@@ -126,21 +174,30 @@
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
-        CoreOS end-user account management is inherited from
-        the hosting environment. Automatic disabling of these
-        accounts must happen at the centralized account
-        management level; for example, within LDAP, Red Hat
-        IdM, or Active Directory.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy NIST 800-53
+        controls related to account management.
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
+        AC-2(3) will be inherited when CoreOS is configured to a centralized
+        identity service. Automaticlly disabling inactive accounts after
+        an organization-defined time period is the responsibility of the
+        centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(3) should be considered
+        complete/satisfied.
 
-        See https://jira.coreos.com/browse/CMP-201 for local
-        user account handling in CoreOS.
+        There may be deployment scenarios which prevent CoreOS from
+        being configured against a centralized identity service, thus deviating
+        from the recommended NIST 800-53 configuration settings.
+
+        In such cases, CoreOS functionality to address AC-2(3) for local
+        user management is under active development. Refer to the CoreOS
+        Jira for up-to-date development progress.
+        https://jira.coreos.com/browse/CMP-201
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
@@ -148,21 +205,29 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        To meet FISMA requirements, CoreOS must be configured
-        to use centralized authentication (e.g. LDAP, Red Hat IdM,
-        Active Directory). The audit of account creation,
-        modification, enabling, disabling, and removal actions is
-        the respinsibility of the centralized service. Additionally,
-        notification of organization-defined personnel or roles is
-        also the responsibility of the centralized authentication
-        service.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy NIST 800-53
+        controls related to account management.
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
+        AC-2(4) will be inherited when CoreOS is configured to a centralized
+        identity service. Automatically auditing account creation, modification,
+        enabling, disabling, and removal actions, and notification of
+        organization-defined personnel or roles, is the responsibility of the
+        centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(4) should be considered
+        complete/satisfied.
 
-        See https://jira.coreos.com/browse/CMP-202 for local
-        user account handling in CoreOS.
+        There may be deployment scenarios which prevent CoreOS from
+        being configured against a centralized identity service, thus deviating
+        from the recommended NIST 800-53 configuration settings.
+
+        In such cases, CoreOS functionality to address AC-2(4) for local
+        user management is under active development. Refer to the CoreOS
+        Jira for up-to-date development progress.
+
+        https://jira.coreos.com/browse/CMP-202
 
 ##
 ## Ref: https://access.redhat.com/solutions/2191161
@@ -174,17 +239,11 @@
   implementation_status: planned
   narrative:
     - text: |-
-        A control response for AC-2 (5) is planned. Engineering
-        progress can be tracked via:
+        AC-2(5) has been identified as applicable to CoreOS. A control
+        response for AC-2 (5) is planned. Engineering progress can be
+        tracked via:
 
-        See https://jira.coreos.com/browse/CMP-82
-
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
-
-        See https://jira.coreos.com/browse/CMP-82 for local
-        user account handling in CoreOS.
+        https://jira.coreos.com/browse/CMP-82
 
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
@@ -192,45 +251,42 @@
   implementation_status: planned
   narrative:
     - text: |-
-        A control response for AC-2 (6) is planned. Engineering
-        progress can be tracked via:
+        AC-2(6) has been identified as applicable to CoreOS. A control
+        response for AC-2 (6) is planned. Engineering progress can be
+        tracked via:
 
         https://jira.coreos.com/browse/CMP-83
-
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
-
-        See https://jira.coreos.com/browse/CMP-83 for local
-        user account handling in CoreOS.
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |-
-        A control response to AC-2(7)(a) is planned. Progress
+        Organizational establishment and administration of privileged user accounts
+        in accordance with a role-based access scheme that organizes allowed
+        information system access and privileges into roles reflects
+        organizational process/procedures. AC-2(7) is outside the scope of
+        component-level configuration guidane.
+        However, to assist customers in developing CoreOS-specific role-based
+        access control schemes, a control response to AC-2(7)(a) is planned. Progress
         can be tracked via:
 
         https://jira.coreos.com/browse/CMP-84
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
-
-        See https://jira.coreos.com/browse/CMP-84 for local
-        user account handling in CoreOS.
-
     - key: b
       text: |-
-        This is an organizational control and not applicble to the configuration
-        of CoreOS.
+        Organizational monitoring of privileged role assignments reflects
+        organizational process/procedures. AC-2(7)(b) is outside the scope
+        of information system component-level configuration guidance.
+
     - key: c
       text: |-
-        This is an organizational control and not applicble to the configuration
-        of CoreOS.
+        Taking organizational-defined actions when privileged role assignments
+        are no longer appropriate reflects organizational process/procedures.
+        AC-2(7)(c) is outside the scope of information system component-level
+        configuration guidance.
 
 - control_key: AC-2 (8)
   standard_key: NIST-800-53
@@ -238,8 +294,17 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy AC-2(8).
+
+        AC-2(8) will be inherited when CoreOS is configured to a centralized
+        identity service. Creation of organization-defined information
+        system accounts dynamically is the responsibility of the
+        centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(8) should be considered
+        complete/satisfied.
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -247,8 +312,19 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of CoreOS configuration.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy AC-2(9).
+
+        AC-2(9) will be inherited when CoreOS is configured to a centralized
+        identity service. While permitting the use of shared/group accounts
+        that meet organization-defined conditions for establishing shared/group
+        accounts reflects organizational process/procedures, technical
+        implementation of such restrictions is the responsibility of the
+        centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(9) should be considered
+        complete/satisfied.
 
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
@@ -256,11 +332,17 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        CoreOS does not have the concept of group accounts.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy AC-2(10).
 
-        Should the organization allow shared credentials, the
-        creation and management of such accounts would be the
-        responsibility of the shared identity service and not CoreOS.
+        AC-2(10) will be inherited when CoreOS is configured to a centralized
+        identity service. Terminating shared/group account credentials
+        when members leave the group is the responsibility of the
+        centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(10) should be considered
+        complete/satisfied.
 
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
@@ -268,8 +350,19 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of CoreOS configuration.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy AC-2(11).
+
+        AC-2(11) will be inherited when CoreOS is configured to a centralized
+        identity service. While establishing organization-defined
+        circumstances and/or usage conditions for organization-defined
+        information system accounts reflects organizational process/procedures, technical
+        enforcement of such restrictions is the responsibility of the
+        centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(11) should be considered
+        complete/satisfied.
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
@@ -278,12 +371,23 @@
   narrative:
     - key: a
       text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of CoreOS configuration.
+        Configuring CoreOS nodes to a centralized identity service, such as
+        LDAP, is currently required in order for CoreOS to satisfy AC-2(12).
+
+        AC-2(12) will be inherited when CoreOS is configured to a centralized
+        identity service. While monitoring information system accounts for
+        organization-defined atypical usage reflects organizational
+        process/procedures, technical implementation of such restrictions is
+        the responsibility of the centralized identity service.
+        To verify control inheritance, CoreOS system operators must demonstrate
+        that CoreOS has been configured against a centralized identity service.
+        When such evidence is validated, AC-2(9) should be considered
+        complete/satisfied.
     - key: b
       text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of CoreOS configuration.
+        Reporting atypical usage of information system accounts to
+        organization-defined entities is outside the scope of
+        CoreOS configuration.
 
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
