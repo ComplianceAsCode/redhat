@@ -88,7 +88,7 @@ satisfies:
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-199 for local
+        See https://issues.redhat.com/browse/CMP-199 for local
         user account handling in CoreOS.
 
 # AC-2(2) NOTES:
@@ -114,7 +114,7 @@ satisfies:
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-200 for local
+        See https://issues.redhat.com/browse/CMP-200 for local
         user account handling in CoreOS.
 
 #
@@ -144,7 +144,7 @@ satisfies:
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-201 for local
+        See https://issues.redhat.com/browse/CMP-201 for local
         user account handling in CoreOS.
 
 - control_key: AC-2 (4)
@@ -166,7 +166,7 @@ satisfies:
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-202 for local
+        See https://issues.redhat.com/browse/CMP-202 for local
         user account handling in CoreOS.
 
 ##
@@ -182,13 +182,13 @@ satisfies:
         A control response for AC-2 (5) is planned. Engineering
         progress can be tracked via:
 
-        See https://jira.coreos.com/browse/CMP-82
+        See https://issues.redhat.com/browse/CMP-82
 
         The ability to use Ignition scripts to configure CoreOS
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-82 for local
+        See https://issues.redhat.com/browse/CMP-82 for local
         user account handling in CoreOS.
 
 - control_key: AC-2 (6)
@@ -200,13 +200,13 @@ satisfies:
         A control response for AC-2 (6) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-83
+        https://issues.redhat.com/browse/CMP-83
 
         The ability to use Ignition scripts to configure CoreOS
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-83 for local
+        See https://issues.redhat.com/browse/CMP-83 for local
         user account handling in CoreOS.
 
 - control_key: AC-2 (7)
@@ -219,13 +219,13 @@ satisfies:
         A control response to AC-2(7)(a) is planned. Progress
         can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-84
+        https://issues.redhat.com/browse/CMP-84
 
         The ability to use Ignition scripts to configure CoreOS
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-84 for local
+        See https://issues.redhat.com/browse/CMP-84 for local
         user account handling in CoreOS.
 
     - key: b
@@ -326,7 +326,7 @@ satisfies:
         A control response for AC-3 (2) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-88
+        https://issues.redhat.com/browse/CMP-88
 
 - control_key: AC-3 (3)
   standard_key: NIST-800-53
@@ -346,7 +346,7 @@ satisfies:
         A response to AC-3 (4) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-90
+        https://issues.redhat.com/browse/CMP-90
 
 - control_key: AC-3 (5)
   standard_key: NIST-800-53
@@ -385,7 +385,7 @@ satisfies:
         A response to AC-3 (8) is planned. Engineering progress can be tracked
         via:
 
-        https://jira.coreos.com/browse/CMP-96
+        https://issues.redhat.com/browse/CMP-96
 
 - control_key: AC-3 (9)
   standard_key: NIST-800-53
@@ -396,7 +396,7 @@ satisfies:
         A response to AC-3 (9) is planned. Engineering progress can be tracked
         via:
 
-        https://jira.coreos.com/browse/CMP-97
+        https://issues.redhat.com/browse/CMP-97
 
 - control_key: AC-3 (10)
   standard_key: NIST-800-53
@@ -2708,7 +2708,7 @@ satisfies:
 
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-253
+        https://issues.redhat.com/browse/CMP-253
 
 - control_key: CA-4
   standard_key: NIST-800-53
@@ -2736,7 +2736,7 @@ satisfies:
         monitor or collaborate in the creation of the CoreOS POA&M,
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-254
+        https://issues.redhat.com/browse/CMP-254
     - key: b
       text: |
         Organizational processes relating to updating and the maintenance
@@ -2746,7 +2746,7 @@ satisfies:
         However, Red Hat will be evaluatng the self-assessment POA&M items specific
         to CoreOS. Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-254
+        https://issues.redhat.com/browse/CMP-254
 
 - control_key: CA-5 (1)
   standard_key: NIST-800-53
@@ -2785,37 +2785,37 @@ satisfies:
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: b
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: c
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: d
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: e
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: f
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: g
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
 
 - control_key: CA-7 (1)
   standard_key: NIST-800-53
@@ -2880,12 +2880,12 @@ satisfies:
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-256
+        https://issues.redhat.com/browse/CMP-256
     - key: b
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-256
+        https://issues.redhat.com/browse/CMP-256
 
 - control_key: CA-9 (1)
   standard_key: NIST-800-53
@@ -2932,7 +2932,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-260
+        https://issues.redhat.com/browse/CMP-260
 
 - control_key: CM-2 (1)
   standard_key: NIST-800-53
@@ -2944,19 +2944,19 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-261
+        https://issues.redhat.com/browse/CMP-261
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-261
+        https://issues.redhat.com/browse/CMP-261
     - key: c
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-261
+        https://issues.redhat.com/browse/CMP-261
 
 - control_key: CM-2 (2)
   standard_key: NIST-800-53
@@ -2967,7 +2967,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-262
+        https://issues.redhat.com/browse/CMP-262
 
 - control_key: CM-2 (3)
   standard_key: NIST-800-53
@@ -2978,7 +2978,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-263
+        https://issues.redhat.com/browse/CMP-263
 
 - control_key: CM-2 (4)
   standard_key: NIST-800-53
@@ -3005,7 +3005,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-264
+        https://issues.redhat.com/browse/CMP-264
 
 - control_key: CM-2 (7)
   standard_key: NIST-800-53
@@ -3035,37 +3035,37 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-265
+        https://issues.redhat.com/browse/CMP-265
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-265
+        https://issues.redhat.com/browse/CMP-265
     - key: c
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-265
+        https://issues.redhat.com/browse/CMP-265
     - key: d
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-265
+        https://issues.redhat.com/browse/CMP-265
     - key: e
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-265
+        https://issues.redhat.com/browse/CMP-265
     - key: f
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-265
+        https://issues.redhat.com/browse/CMP-265
     - key: g
       text: |
         This control reflects organizational processes outside the scope
@@ -3120,7 +3120,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-266
+        https://issues.redhat.com/browse/CMP-266
 
 - control_key: CM-3 (4)
   standard_key: NIST-800-53
@@ -3141,7 +3141,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-267
+        https://issues.redhat.com/browse/CMP-267
 
 - control_key: CM-3 (6)
   standard_key: NIST-800-53
@@ -3152,7 +3152,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-268
+        https://issues.redhat.com/browse/CMP-268
 
 - control_key: CM-4
   standard_key: NIST-800-53
@@ -3173,7 +3173,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-269
+        https://issues.redhat.com/browse/CMP-269
 
 - control_key: CM-4 (2)
   standard_key: NIST-800-53
@@ -3184,7 +3184,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-270
+        https://issues.redhat.com/browse/CMP-270
 
 - control_key: CM-5
   standard_key: NIST-800-53
@@ -3226,7 +3226,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-187
+        https://issues.redhat.com/browse/CMP-187
 
 - control_key: CM-5 (4)
   standard_key: NIST-800-53
@@ -3237,7 +3237,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-271
+        https://issues.redhat.com/browse/CMP-271
 
 - control_key: CM-5 (5)
   standard_key: NIST-800-53
@@ -3282,25 +3282,25 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-188
+        https://issues.redhat.com/browse/CMP-188
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-188
+        https://issues.redhat.com/browse/CMP-188
     - key: c
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-188
+        https://issues.redhat.com/browse/CMP-188
     - key: d
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-188
+        https://issues.redhat.com/browse/CMP-188
 
 - control_key: CM-6 (1)
   standard_key: NIST-800-53
@@ -3311,7 +3311,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-272
+        https://issues.redhat.com/browse/CMP-272
 
 - control_key: CM-6 (2)
   standard_key: NIST-800-53
@@ -3348,13 +3348,13 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-273
+        https://issues.redhat.com/browse/CMP-273
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-273
+        https://issues.redhat.com/browse/CMP-273
 
 - control_key: CM-7 (1)
   standard_key: NIST-800-53
@@ -3366,13 +3366,13 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-274
+        https://issues.redhat.com/browse/CMP-274
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-274
+        https://issues.redhat.com/browse/CMP-274
 
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
@@ -3383,7 +3383,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-275
+        https://issues.redhat.com/browse/CMP-275
 
 - control_key: CM-7 (3)
   standard_key: NIST-800-53
@@ -3394,7 +3394,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-276
+        https://issues.redhat.com/browse/CMP-276
 
 - control_key: CM-7 (4)
   standard_key: NIST-800-53
@@ -3406,19 +3406,19 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-204
+        https://issues.redhat.com/browse/CMP-204
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-204
+        https://issues.redhat.com/browse/CMP-204
     - key: c
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-204
+        https://issues.redhat.com/browse/CMP-204
 
 - control_key: CM-7 (5)
   standard_key: NIST-800-53
@@ -3430,19 +3430,19 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-205
+        https://issues.redhat.com/browse/CMP-205
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-205
+        https://issues.redhat.com/browse/CMP-205
     - key: c
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-205
+        https://issues.redhat.com/browse/CMP-205
 
 - control_key: CM-8
   standard_key: NIST-800-53
@@ -3454,13 +3454,13 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-277
+        https://issues.redhat.com/browse/CMP-277
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-277
+        https://issues.redhat.com/browse/CMP-277
 
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
@@ -3471,7 +3471,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-278
+        https://issues.redhat.com/browse/CMP-278
 
 - control_key: CM-8 (2)
   standard_key: NIST-800-53
@@ -3482,7 +3482,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-279
+        https://issues.redhat.com/browse/CMP-279
 
 - control_key: CM-8 (3)
   standard_key: NIST-800-53
@@ -3494,13 +3494,13 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-280
+        https://issues.redhat.com/browse/CMP-280
     - key: b
       text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-280
+        https://issues.redhat.com/browse/CMP-280
 
 - control_key: CM-8 (4)
   standard_key: NIST-800-53
@@ -3534,7 +3534,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-282
+        https://issues.redhat.com/browse/CMP-282
 
 - control_key: CM-8 (7)
   standard_key: NIST-800-53
