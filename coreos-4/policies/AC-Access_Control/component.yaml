@@ -83,7 +83,7 @@
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-199 for local
+        See https://issues.redhat.com/browse/CMP-199 for local
         user account handling in CoreOS.
 
 # AC-2(2) NOTES:
@@ -109,7 +109,7 @@
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-200 for local
+        See https://issues.redhat.com/browse/CMP-200 for local
         user account handling in CoreOS.
 
 #
@@ -139,7 +139,7 @@
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-201 for local
+        See https://issues.redhat.com/browse/CMP-201 for local
         user account handling in CoreOS.
 
 - control_key: AC-2 (4)
@@ -161,7 +161,7 @@
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-202 for local
+        See https://issues.redhat.com/browse/CMP-202 for local
         user account handling in CoreOS.
 
 ##
@@ -177,13 +177,13 @@
         A control response for AC-2 (5) is planned. Engineering
         progress can be tracked via:
 
-        See https://jira.coreos.com/browse/CMP-82
+        See https://issues.redhat.com/browse/CMP-82
 
         The ability to use Ignition scripts to configure CoreOS
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-82 for local
+        See https://issues.redhat.com/browse/CMP-82 for local
         user account handling in CoreOS.
 
 - control_key: AC-2 (6)
@@ -195,13 +195,13 @@
         A control response for AC-2 (6) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-83
+        https://issues.redhat.com/browse/CMP-83
 
         The ability to use Ignition scripts to configure CoreOS
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-83 for local
+        See https://issues.redhat.com/browse/CMP-83 for local
         user account handling in CoreOS.
 
 - control_key: AC-2 (7)
@@ -214,13 +214,13 @@
         A control response to AC-2(7)(a) is planned. Progress
         can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-84
+        https://issues.redhat.com/browse/CMP-84
 
         The ability to use Ignition scripts to configure CoreOS
         to add local users means that this control needs to be
         addressed for the case that a local user was added.
 
-        See https://jira.coreos.com/browse/CMP-84 for local
+        See https://issues.redhat.com/browse/CMP-84 for local
         user account handling in CoreOS.
 
     - key: b
@@ -321,7 +321,7 @@
         A control response for AC-3 (2) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-88
+        https://issues.redhat.com/browse/CMP-88
 
 - control_key: AC-3 (3)
   standard_key: NIST-800-53
@@ -341,7 +341,7 @@
         A response to AC-3 (4) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-90
+        https://issues.redhat.com/browse/CMP-90
 
 - control_key: AC-3 (5)
   standard_key: NIST-800-53
@@ -380,7 +380,7 @@
         A response to AC-3 (8) is planned. Engineering progress can be tracked
         via:
 
-        https://jira.coreos.com/browse/CMP-96
+        https://issues.redhat.com/browse/CMP-96
 
 - control_key: AC-3 (9)
   standard_key: NIST-800-53
@@ -391,7 +391,7 @@
         A response to AC-3 (9) is planned. Engineering progress can be tracked
         via:
 
-        https://jira.coreos.com/browse/CMP-97
+        https://issues.redhat.com/browse/CMP-97
 
 - control_key: AC-3 (10)
   standard_key: NIST-800-53

@@ -136,7 +136,7 @@
 
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-253
+        https://issues.redhat.com/browse/CMP-253
 
 - control_key: CA-4
   standard_key: NIST-800-53
@@ -164,7 +164,7 @@
         monitor or collaborate in the creation of the CoreOS POA&M,
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-254
+        https://issues.redhat.com/browse/CMP-254
     - key: b
       text: |
         Organizational processes relating to updating and the maintenance
@@ -174,7 +174,7 @@
         However, Red Hat will be evaluatng the self-assessment POA&M items specific
         to CoreOS. Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-254
+        https://issues.redhat.com/browse/CMP-254
 
 - control_key: CA-5 (1)
   standard_key: NIST-800-53
@@ -213,37 +213,37 @@
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: b
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: c
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: d
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: e
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: f
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
     - key: g
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-255
+        https://issues.redhat.com/browse/CMP-255
 
 - control_key: CA-7 (1)
   standard_key: NIST-800-53
@@ -308,12 +308,12 @@
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-256
+        https://issues.redhat.com/browse/CMP-256
     - key: b
       text: |
         Engineering progress can be tracked at:
 
-        https://jira.coreos.com/browse/CMP-256
+        https://issues.redhat.com/browse/CMP-256
 
 - control_key: CA-9 (1)
   standard_key: NIST-800-53

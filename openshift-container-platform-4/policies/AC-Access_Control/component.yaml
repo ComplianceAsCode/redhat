@@ -152,7 +152,7 @@
         A control response for AC-2 (5) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-82
+        https://issues.redhat.com/browse/CMP-82
 
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
@@ -163,7 +163,7 @@
         A control response for AC-2 (6) is planned. Engineering
         progress can be tracked via:
 
-        See https://jira.coreos.com/browse/CMP-83 for local
+        See https://issues.redhat.com/browse/CMP-83 for local
         user account handling in CoreOS.
 
 - control_key: AC-2 (7)
@@ -187,7 +187,7 @@
         More work is being done to address this control. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-84
+        https://issues.redhat.com/browse/CMP-84
 
     - key: b
       text: |-
@@ -240,7 +240,7 @@
         More work is being done to address this control. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-210
+        https://issues.redhat.com/browse/CMP-210
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
@@ -269,7 +269,7 @@
         More work is being done to address this control. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-211
+        https://issues.redhat.com/browse/CMP-211
 
 - control_key: AC-3
   standard_key: NIST-800-53
@@ -299,7 +299,7 @@
         A control response for AC-3 (2) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-88
+        https://issues.redhat.com/browse/CMP-88
 
 - control_key: AC-3 (3)
   standard_key: NIST-800-53
@@ -310,7 +310,7 @@
         A response to AC-3 (3) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-212
+        https://issues.redhat.com/browse/CMP-212
 
 - control_key: AC-3 (4)
   standard_key: NIST-800-53
@@ -321,7 +321,7 @@
         A response to AC-3 (4) is planned. Engineering
         progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-90
+        https://issues.redhat.com/browse/CMP-90
 
 - control_key: AC-3 (5)
   standard_key: NIST-800-53
@@ -364,7 +364,7 @@
         A response to AC-3 (8) is planned. Engineering progress can be tracked
         via:
 
-        https://jira.coreos.com/browse/CMP-96
+        https://issues.redhat.com/browse/CMP-96
 
 - control_key: AC-3 (9)
   standard_key: NIST-800-53
@@ -375,7 +375,7 @@
         A response to AC-3 (9) is planned. Engineering progress can be tracked
         via:
 
-        https://jira.coreos.com/browse/CMP-97
+        https://issues.redhat.com/browse/CMP-97
 
 - control_key: AC-3 (10)
   standard_key: NIST-800-53
@@ -386,7 +386,7 @@
         A response to AC-3 (10) is planned. Engineering progress can be tracked
         via:
 
-        https://jira.coreos.com/browse/CMP-213
+        https://issues.redhat.com/browse/CMP-213
 
 - control_key: AC-4
   standard_key: NIST-800-53
