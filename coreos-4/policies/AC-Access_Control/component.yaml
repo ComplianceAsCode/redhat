@@ -19,6 +19,7 @@
       text: |
         AC-1(a) is an organizational control outside the scope of CoreOS configuration.
     - key: b
+      text: |
         AC-1(b) is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-2
