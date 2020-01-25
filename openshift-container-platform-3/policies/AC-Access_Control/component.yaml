@@ -442,14 +442,14 @@
         applicable monitoring, recording, or auditing, and authorized usage
         of the system.
         */'
-    - key: 'Req. 1'
+    - key: c.1
       text: |
         '//*
         The customer will be responsible for determining the conditions
         under which the system use notification will be displayed. These
         conditions must be reviewed and accepted by the FedRAMP JAB.
         */'
-    - key: 'Req. 2'
+    - key: c.2
       text: |
         '//*
         The customer will be responsible for how the system use notification
@@ -457,7 +457,7 @@
         re-verified. These conditions must be reviewed an accepted by the
         FedRAMP JAB.
         */'
-    - key: 'Req. 3'
+    - key: c.3
       text: |
         '//*
         The customer will be responsible for verifying that the system use

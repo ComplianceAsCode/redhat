@@ -228,7 +228,7 @@
 #   secondary server is selected from a different region than the primary.
 #   A successful control response will discuss which internet time services
 #   are used by the system.
-    - key: 'Req. 1'
+    - key: b.1
       text: |
         'OpenShift utilizes the time services of the underyling operating
         operating system. This control is not applicable to OpenShift.'
@@ -238,7 +238,7 @@
 #   Windows Domain Controler emulator, or the same time source for that
 #   server. A successful conttrol response will discuss which Internet time
 #   services are for non-Windows systems.
-    - key: 'Req. 2'
+    - key: b.2
       text: |
         'OpenShift utilizes the time services of the underyling operating
         operating system. This control is not applicable to OpenShift.'
