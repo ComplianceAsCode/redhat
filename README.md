@@ -1,4 +1,8 @@
-OpenControl content for Red Hat technologies. Work in progress!
+# Open Controls for Red Hat technologies
+
+This repository contains control responses to NIST-800-53 security controls. Human readable overview is available at http://atopathways.redhatgov.io/ato/products/select/NIST-800-53
+
+Some of the content is still work in progress!
 
 ## Developer Prep
 Instructions on how to prepare your development host:
