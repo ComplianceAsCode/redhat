@@ -24,6 +24,7 @@ satisfies:
       text: |
         AC-1(a) is an organizational control outside the scope of OpenShift configuration.
     - key: b
+      text: |
         AC-1(b) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AC-2
