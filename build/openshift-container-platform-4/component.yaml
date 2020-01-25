@@ -584,14 +584,14 @@ satisfies:
         applicable monitoring, recording, or auditing, and authorized usage
         of the system.
         */'
-    - key: 'Req. 1'
+    - key: c.1
       text: |
         '//*
         The customer will be responsible for determining the conditions
         under which the system use notification will be displayed. These
         conditions must be reviewed and accepted by the FedRAMP JAB.
         */'
-    - key: 'Req. 2'
+    - key: c.2
       text: |
         '//*
         The customer will be responsible for how the system use notification
@@ -599,7 +599,7 @@ satisfies:
         re-verified. These conditions must be reviewed an accepted by the
         FedRAMP JAB.
         */'
-    - key: 'Req. 3'
+    - key: c.3
       text: |
         '//*
         The customer will be responsible for verifying that the system use
@@ -1288,7 +1288,7 @@ satisfies:
 #   secondary server is selected from a different region than the primary.
 #   A successful control response will discuss which internet time services
 #   are used by the system.
-    - key: 'Req. 1'
+    - key: b.1
       text: |
         'OpenShift utilizes the time services of the underyling operating
         operating system. This control is not applicable to OpenShift.'
@@ -1298,7 +1298,7 @@ satisfies:
 #   Windows Domain Controler emulator, or the same time source for that
 #   server. A successful conttrol response will discuss which Internet time
 #   services are for non-Windows systems.
-    - key: 'Req. 2'
+    - key: b.2
       text: |
         'OpenShift utilizes the time services of the underyling operating
         operating system. This control is not applicable to OpenShift.'
@@ -6789,7 +6789,7 @@ satisfies:
         boards, TV conference cameras, and remote video systems. This control
         is not applicable because Red Hat OpenShift Container Platform is not
         a collaborative computing device.'
-    - key: Req. 1
+    - key: b.1
       text: |
         'Examples of collaborative computing devices include networked white
         boards, TV conference cameras, and remote video systems. This control
