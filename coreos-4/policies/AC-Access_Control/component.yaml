@@ -898,7 +898,7 @@
         via:
 
         https://github.com/ComplianceAsCode/redhat/issues/811
-    - key: 'Req. 1'
+    - key: c.1
       text: |
         The customer will be responsible for determining the conditions
         under which the system use notification will be displayed. These
@@ -908,7 +908,7 @@
         via:
 
         https://github.com/ComplianceAsCode/redhat/issues/811
-    - key: 'Req. 2'
+    - key: c.2
       text: |
         The customer will be responsible for how the system use notification
         will be verified and how often it should be re-displayed and
@@ -919,7 +919,7 @@
         via:
 
         https://github.com/ComplianceAsCode/redhat/issues/811
-    - key: 'Req. 3'
+    - key: c.3
       text: |
         The customer will be responsible for verifying that the system use
         notification is being displayed as required, either through a

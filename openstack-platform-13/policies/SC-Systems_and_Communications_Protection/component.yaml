@@ -277,7 +277,7 @@
         boards, TV conference cameras, and remote video systems. This control
         is not applicable because Red Hat Red Hat OpenStack Platform Container Platform is not
         a collaborative computing device.'
-    - key: Req. 1
+    - key: b.1
       text: |
         'Examples of collaborative computing devices include networked white
         boards, TV conference cameras, and remote video systems. This control
