@@ -967,10 +967,6 @@ satisfies:
       text: |
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: c
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
     - key: e
       text: |
         'This control reflects organizational procedures/policies, and is not
