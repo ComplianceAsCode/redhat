@@ -1860,12 +1860,15 @@ satisfies:
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
+        AU-3 is satisfied when the following configuration checks have been
+        implemented:
+           * CCE-82463-1: Enable auditd Service
 
-        https://github.com/ComplianceAsCode/redhat/issues/842
+        These configuration checks are enabled in the NIST National Checklist
+        for OpenShift 4.x.
 
 - control_key: AU-3 (1)
   standard_key: NIST-800-53
