@@ -17,8 +17,9 @@
   narrative:
     - key: a
       text: |
-        Developing an organization-level audit and accountability
-        policy is outside the scope of CoreOS configuration.
+        Developing, documenting, and disseminating an organization-level
+        audit and accountability policy is outside the scope of CoreOS
+        configuration.
     - key: b
       text: |
         Review and updating an organizational-level audit and
@@ -28,20 +29,58 @@
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
         CoreOS was designed to satisfy the audit requirements outlined
         in the Configuration Annex to the Protection Profile for General
-        Purpose Operating Systems available at https://www.niap-ccevs.org/Profile/PP.cfm.
+        Purpose Operating Systems available at
+        https://www.niap-ccevs.org/Profile/PP.cfm.
 
-        It is possible to extend CoreOS auditing beyond the events
-        outlined in the Configuration Annex. A control response
-        outlining the events CoreOS is capable of auditing is planned.
-        Progress can be tracked via:
+        Specifically, the minimum auditable events included:
 
-        https://github.com/ComplianceAsCode/redhat/issues/841
+        | Configuration Action | CNSSI 1253 Value or DoD-specific Value | NIAP Reference |
+        | Audit All Logons (Success/Failure) and Logoffs (Successful) | Authentication events: (1) Logons (Success/Failure); (2) Logoffs (Success) | FAU_GEN.1.1.c |
+        | Audit File and Object Events (Unsuccessful) | File and Objects events: (1) Create (Success/Failure); (2) Access (Success/Failure); (3) Delete (Success/Failure); (4) Modify (Success/Failure); (5) Permission Modification (Success/Failure); (6) Ownership Modification (Success/Failure) | FAU_GEN.1.1.c |
+        | Audit User and Group Management Events (Success/Failure) | User and Group Management events: (1) User add, delete, modify, disable, enable (Success/Failure); (2) Group/Role add, delete, modify (Success/Failure) | FAU_GEN.1.1.c |
+        | Audit Privilege or Role Escalation Events (Success/Failure) | Privilege/Role escalation (Success/Failure) | FAU_GEN.1.1.c |
+        | Audit All Audit and Log Data Accesses (Success/Failure) | Audit and log data access (Success/Failure) | FAU_GEN.1.1.c |
+        | Audit Cryptographic Verification of Software (Success/Failure) | - | FAU_GEN.1.1.c |
+        | Audit Program Initiations (Success/Failure) | Application (e.g., Firefox, Internet Explorer, MS Office Suite, etc.) initialization (Success/Failure) | FAU_GEN.1.1.c |
+        | Audit System Reboot, Restart, and Shutdown Events (Success/Failure) | System reboot, restart and shutdown (Success/Failure) | FAU_GEN.1.1.c |
+        | Audit Kernel Module Loading and Unloading Events (Success/Failure) | - | FAU_GEN.1.1.c |
+
+        Additionally, CoreOS was designed to satisfy the audit requirements
+        outlined in Intelligence Community Standard Number 500-27, "Collection
+        and Sharing of Audit Data" (ICS 500-27) that were found to be applicable
+        to operating systems performing as a container host. A copy of ICS 500-27
+        can be found at
+        https://www.dni.gov/files/documents/FOIA/DF-2016-00213.pdf
+
+        Selected audit events from ICS 500-27 include:
+          * Authentication events
+            * Logons (Success/Failure)
+            * Logoffs (Success)
+          * File & Object Events
+            * Create (Success/Failure)
+            * Access (Success/Failure)
+            * Delete (Success/Failure)
+            * Modify (Success/Failure)
+            * Permission Modifications (Success/Failure)
+            * Ownership Modifications (Success/Failure)
+          * User & Group Management events
+            * User add, delete, modify, suspend, lock (Success/Failure)
+            * Group/Role add, delete, modify (Success/Failure)
+          * Use of Privileged/Special Rights events
+            * Security or audit policy changes (Success/Failure)
+            * Configuration changes (Success/Failure)
+          * Admin or root-level access (Success/Failure)
+          * Privilege/Role escalation (Success/Failure)
+          * Audit and log data accesses (Success/Failure)
+          * System Reboot, Restart & Shutdown (Success/Failure)
+          * Application (e.g. Netscape, IE, Lotus Notes, etc) initialization
+            (Success/Failure)
     - key: b
       text: |
         Coordinating the security audit function with other
@@ -49,23 +88,30 @@
         CoreOS configuration.
     - key: c
       text: |
+        Red Hat did not express judgement in the rationale for why auditable
+        events are deemed to be adequate to support after-the-fact
+        investigations of security incidents.
+        
         For rationale regarding why the auditable events are deemed to be
-        adequate to support after-the-fact investigations of security incidents,
-        please contact your countries Common Criteria representative:
+        adequate to support after-the-fact investigations of security
+        incidents, please contact your countries Common Criteria
+        representative:
 
         https://www.commoncriteriaportal.org/ccra/members/
     - key: d
       text: |
-        CoreOS was designed to satisfy the audit requirements outlined
-        in the Configuration Annex to the Protection Profile for General
-        Purpose Operating Systems available at https://www.niap-ccevs.org/Profile/PP.cfm.
+        Determination of which events are to be audited within CoreOS from
+        the subset of auditable events defined in AU-2(a) is an organizational
+        control outside the scope of CoreOS configuration guidance.
 
-        It is possible to extend CoreOS auditing beyond the events
-        outlined in the Configuration Annex. A control response
-        outlining the events CoreOS is capable of auditing is planned.
-        Progress can be tracked via:
+        Should system operators decide to use the NIST National Checklist for
+        OpenShift 4.x, all events identified in AU-2(c) are selected to be
+        audited.
 
-        https://github.com/ComplianceAsCode/redhat/issues/841
+        Additionally, in regards to the AU-2(d) requirement of defining
+        "the frequency" of auditing for each identified event, it should be
+        noted that the CoreOS audit subsystem generates audit events in
+        realtime (eg immediately upon an audited event occuring).
 
 - control_key: AU-2 (1)
   standard_key: NIST-800-53
