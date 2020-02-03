@@ -1842,7 +1842,7 @@ satisfies:
       text: |
         Coordinating the security audit function with other
         organizational entities is outside the scope of
-        CoreOS configuration.
+        system configuration.
     - key: c
       text: |
         Red Hat did not express judgement in the rationale for why auditable
@@ -1919,38 +1919,32 @@ satisfies:
 - control_key: AU-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        CoreOS offers a robust audit subsystem capable of generating
-        audit records containing very detailed information. Satisfaction
-        of this control will be deployment specific, determined by
-        organization-defined additional, more detailed information.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-157
 
 - control_key: AU-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        CoreOS provides centralized management and configuration of the
-        content to be captured in audit records. A complete control
-        response is planned. Progress can be tracked via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/843
+        https://issues.redhat.com/browse/CMP-158
 
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        CoreOS can be configured to allocate dedicated audit storage
-        capacity for audit record storage (e.g. /var/log/audit partition).
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/844
+        https://issues.redhat.com/browse/CMP-159
 
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
@@ -1958,11 +1952,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        CoreOS can be configured to off-load audit records onto
-        a different system or media than the system being audited.
-        Progress towards a complete control response can be tracked via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/845
+        https://issues.redhat.com/browse/CMP-160
 
 - control_key: AU-5
   standard_key: NIST-800-53
@@ -1971,68 +1963,44 @@ satisfies:
   narrative:
     - key: a
       text: |
-        CoreOS can be configured to alert organization-defined
-        personnel or roles in the event of an audit processing
-        failure. A complete control response is planned. Progress
-        can be tracked via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/846
+        https://issues.redhat.com/browse/CMP-161
     - key: b
       text: |
-        CoreOS can be configured to take an organization-defined
-        action (e.g. shut down) upon an audit processing failure.
-        A complete control response is planned. Progress
-        can be tracked via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/846
+        https://issues.redhat.com/browse/CMP-161
 
 - control_key: AU-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        CoreOS can be configured to provide a warning to
-        organization-defined personnel, roles, and/or locations
-        within an organization-defined time period when allocated
-        audit record storate volume reaches an organization-defined
-        threshold of repository maximum audit record storage
-        capacity.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/847
+        https://issues.redhat.com/browse/CMP-162
 
 - control_key: AU-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        CoreOS can be configured to provide an alert when audit
-        failure events occure.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/848
+        https://issues.redhat.com/browse/CMP-163
 
 - control_key: AU-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        CoreOS can be configured to enforce configurable network
-        communications traffic volume thresholds reflecting limits
-        on auditing capacity and reject or delay network traffic
-        above those thresholds.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/849
+        https://issues.redhat.com/browse/CMP-164
 
 - control_key: AU-5 (4)
   standard_key: NIST-800-53
@@ -2040,13 +2008,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        CoreOS can be configured to shutdown on failure of the
-        audit subsystem.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/850
+        https://issues.redhat.com/browse/CMP-165
 
 - control_key: AU-6
   standard_key: NIST-800-53
@@ -2071,16 +2035,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        CoreOS can be configured to enhance organizational
-        capabilities regarding automated mechanisms to integrate
-        audit review, analysis, and reporting processes to support
-        organizational processes for investigation and response
-        to suspicious activities.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/851
+        https://issues.redhat.com/browse/CMP-167
 
 - control_key: AU-6 (2)
   standard_key: NIST-800-53
@@ -2196,16 +2153,14 @@ satisfies:
   narrative:
     - key: a
       text: |
-        A control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/852
+        https://issues.redhat.com/browse/CMP-227
     - key: b
       text: |
-        A control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/852
+        https://issues.redhat.com/browse/CMP-227
 
 - control_key: AU-7 (1)
   standard_key: NIST-800-53
@@ -2213,29 +2168,19 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        CoreOS does provide the capability to process audit records for
-        events of interest based on organization-defined audit fields within
-        audit records.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/853
+        https://issues.redhat.com/browse/CMP-228
 
 - control_key: AU-7 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        CoreOS does provide the capability to sort and search audit records for
-        events of interest based on the content of organization-defined audit
-        fields within audit records.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/854
+        https://issues.redhat.com/browse/CMP-229
 
 - control_key: AU-8
   standard_key: NIST-800-53
@@ -2244,17 +2189,14 @@ satisfies:
   narrative:
     - key: a
       text: |
-        CoreOS uses internal system clocks to generate time stamps for
-        audit records. This is non-configurable, default behavior.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-230
     - key: b
       text: |
-        CoreOS records time stamps for audit records that can be mapped to
-        Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and can
-        be configured to an organization-defined granularity of time measurement.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/855
+        https://issues.redhat.com/browse/CMP-230
 
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
@@ -2263,29 +2205,19 @@ satisfies:
   narrative:
     - key: a
       text: |
-        CoreOS can be configured to compare the internal system clock(s)
-        at an organization-defined frequency with an organization-defined
-        authoritative time source.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/856
+        https://issues.redhat.com/browse/CMP-232
     - key: b
       text: |
-        CoreOS can be configured to synchronize the internal system
-        clock(s) to the authoritative time source when the time difference is
-        greated than an organization-defined time period.
+        A control response is planned. Engineering progress can be tracked via:
 
-        A complete control response is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/856
+        https://issues.redhat.com/browse/CMP-232
 
 - control_key: AU-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         A complete control response is planned. Progress can be tracked
@@ -2299,10 +2231,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/860
+        https://issues.redhat.com/browse/CMP-232
 
 - control_key: AU-9 (1)
   standard_key: NIST-800-53
@@ -2328,18 +2259,17 @@ satisfies:
 - control_key: AU-9 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/862
+        https://issues.redhat.com/browse/CMP-236
 
 - control_key: AU-9 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         A complete control response is planned. Progress can be tracked
@@ -2350,7 +2280,7 @@ satisfies:
 - control_key: AU-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - text: |
         Per AU-4 (1), CoreOS will be configured to offload audit records
@@ -2362,13 +2292,12 @@ satisfies:
 - control_key: AU-9 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/864
+        https://issues.redhat.com/browse/CMP-237
 
 - control_key: AU-10
   standard_key: NIST-800-53
@@ -2376,32 +2305,41 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/865
+        https://issues.redhat.com/browse/CMP-232
 
 - control_key: AU-10 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/866
+        https://issues.redhat.com/browse/CMP-239
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-239
 
 - control_key: AU-10 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/867
+        https://issues.redhat.com/browse/CMP-240
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-240
 
 - control_key: AU-10 (3)
   standard_key: NIST-800-53
@@ -2409,21 +2347,25 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/868
+        https://issues.redhat.com/browse/CMP-241
 
 - control_key: AU-10 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/869
+        https://issues.redhat.com/browse/CMP-242
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-242
 
 - control_key: AU-10 (5)
   standard_key: NIST-800-53
@@ -2439,10 +2381,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/870
+        https://issues.redhat.com/browse/CMP-243
 
 - control_key: AU-11 (1)
   standard_key: NIST-800-53
@@ -2450,21 +2391,30 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/871
+        https://issues.redhat.com/browse/CMP-244
 
 - control_key: AU-12
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/872
+        https://issues.redhat.com/browse/CMP-245
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-245
+    - key: c
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-245
 
 - control_key: AU-12 (1)
   standard_key: NIST-800-53
@@ -2472,10 +2422,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/873
+        https://issues.redhat.com/browse/CMP-181
 
 - control_key: AU-12 (2)
   standard_key: NIST-800-53
@@ -2483,10 +2432,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/874
+        https://issues.redhat.com/browse/CMP-246
 
 - control_key: AU-12 (3)
   standard_key: NIST-800-53
@@ -2494,10 +2442,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/875
+        https://issues.redhat.com/browse/CMP-247
 
 - control_key: AU-13
   standard_key: NIST-800-53
@@ -2537,10 +2484,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/876
+        https://issues.redhat.com/browse/CMP-248
 
 - control_key: AU-14 (1)
   standard_key: NIST-800-53
@@ -2548,15 +2494,14 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/877
+        https://issues.redhat.com/browse/CMP-249
 
 - control_key: AU-14 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         A complete control response is planned. Progress can be tracked
@@ -2570,10 +2515,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/879
+        https://issues.redhat.com/browse/CMP-250
 
 - control_key: AU-15
   standard_key: NIST-800-53
@@ -2581,10 +2525,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/880
+        https://issues.redhat.com/browse/CMP-251
 
 - control_key: AU-16
   standard_key: NIST-800-53
@@ -2604,10 +2547,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/881
+        https://issues.redhat.com/browse/CMP-2252
 
 - control_key: AU-16 (2)
   standard_key: NIST-800-53
