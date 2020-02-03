@@ -91,7 +91,7 @@
         Red Hat did not express judgement in the rationale for why auditable
         events are deemed to be adequate to support after-the-fact
         investigations of security incidents.
-        
+
         For rationale regarding why the auditable events are deemed to be
         adequate to support after-the-fact investigations of security
         incidents, please contact your countries Common Criteria
@@ -111,7 +111,7 @@
         Additionally, in regards to the AU-2(d) requirement of defining
         "the frequency" of auditing for each identified event, it should be
         noted that the CoreOS audit subsystem generates audit events in
-        realtime (eg immediately upon an audited event occuring).
+        realtime (e.g. immediately upon an audited event occuring).
 
 - control_key: AU-2 (1)
   standard_key: NIST-800-53
