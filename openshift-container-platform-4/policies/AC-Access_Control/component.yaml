@@ -90,7 +90,7 @@
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - text: |-
         OpenShift does not have the capability to create
@@ -98,8 +98,8 @@
         external emergency or temporary accounts will be
         inherited from, and managed by, an external
         identity service (e.g. Active Directory, LDAP, etc.)
-        This control will only be partially satisfied when
-        OpenShift is configured to connect to an Identity Provider (IdP).
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 #
 # AC-2(3) NOTES:
