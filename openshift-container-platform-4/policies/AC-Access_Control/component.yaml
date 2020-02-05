@@ -99,6 +99,8 @@
         inherited from, and managed by, an external
         identity service (e.g. Active Directory, LDAP, etc.)
 
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
 #
 # AC-2(3) NOTES:
 #       The customer will be responsible for automatically disabling user
