@@ -114,7 +114,7 @@
     - text: |
         When enabled the OpenShift API audit logs can be consumed by an external
         centralized management system.
-        
+
         The configuration of the OpenSHift API audit log system can be driven by
         an external configuraiton managment system through the use of OpenShift API.
 
