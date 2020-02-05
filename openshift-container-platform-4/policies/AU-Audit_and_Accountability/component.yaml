@@ -28,13 +28,12 @@
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-155
+        OpenShift has an API audit system which would need to be enabled
+        and configured for the organizational requirmennts.
     - key: b
       text: |
         Coordinating the security audit function with other
@@ -42,15 +41,18 @@
         system configuration.
     - key: c
       text: |
+        Coordinating the security audit function with other
+        organizational entities is outside the scope of
+        system configuration.
+        
         For rationale regarding why the auditable events are deemed to be
         adequate to support after-the-fact investigations of security incidents,
         please contact your countries Common Criteria representative:
         https://www.commoncriteriaportal.org/ccra/members/
     - key: d
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-155
+        OpenShift has an API audit system which would need to be enabled
+        and configured for the organizational requirmennts.
 
 - control_key: AU-2 (1)
   standard_key: NIST-800-53
