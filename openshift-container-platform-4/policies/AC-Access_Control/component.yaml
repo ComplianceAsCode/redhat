@@ -75,7 +75,8 @@
         transport the data to a SIEM, OpenShift does not provide
         automated mechanisms (e.g. email, text messages) after
         system events. This functionality would fall to third
-        party software.
+        party software such as an Identity Provider (IdP),
+        Active Directory (MSAD), LDAP, etc.
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
