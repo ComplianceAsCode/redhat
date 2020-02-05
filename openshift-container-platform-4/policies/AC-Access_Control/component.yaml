@@ -64,7 +64,7 @@
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - text: |-
         OpenShift components of the system support automated
@@ -75,10 +75,10 @@
         transport the data to a SIEM, OpenShift does not provide
         automated mechanisms (e.g. email, text messages) after
         system events. This functionality would fall to third
-        party software, and therefore, this control is partial,
-        and will only be partially satisfied when implemented by
-        third party software such as an Identity Provider (IdP),
+        party software such as an Identity Provider (IdP),
         Active Directory (MSAD), LDAP, etc.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
