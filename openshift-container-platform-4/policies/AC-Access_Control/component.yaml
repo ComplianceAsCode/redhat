@@ -232,16 +232,11 @@
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |-
-        This control will only be partially satisfied when OpenShift is
-        configured to connect to an Identity Provider (IdP).
-
-        More work is being done to address this control. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-210
+       This control is applicable to the identity service provider,
+       and outside the scope of OpenShift configuration.
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
