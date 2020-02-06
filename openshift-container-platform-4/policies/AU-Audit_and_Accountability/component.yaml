@@ -118,22 +118,32 @@
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        OpenShift does not control the storage capacity for the
+        OpenShift API audit logs when they are generated.
 
-        https://issues.redhat.com/browse/CMP-159
+        Either the OpenShift API audit logs need to be consumed
+        by an external SEIM and the storage capacity managed there
+        as per organization policy requirments or the operating system on
+        which OpenShift is running needs to have /var/log/audit storage
+        capacity configured to meet organization policy requirments.
 
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        OpenShift does not control the storage capacity for the
+        OpenShift API audit logs when they are generated.
 
-        https://issues.redhat.com/browse/CMP-160
+        Either the OpenShift API audit logs need to be consumed
+        by an external SEIM and the storage medium managed there
+        as per organization policy requirments or the operating system on
+        which OpenShift is running needs to have /var/log/audit storage
+        medium configured to meet organization policy requirments.
 
 - control_key: AU-5
   standard_key: NIST-800-53
