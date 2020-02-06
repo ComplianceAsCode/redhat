@@ -232,11 +232,23 @@
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - text: |-
-       This control is applicable to the identity service provider,
-       and outside the scope of OpenShift configuration.
+       This functionality would fall to third
+       party software such as an Identity Provider (IdP),
+       Active Directory (MSAD), LDAP, etc.
+
+       To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+       For active alerting on auditable events then then
+       OpneShift audit log system (https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-audit-log.html)
+       would need to be enabled
+       and the OpenShift Elasticsearch, Kibarana,
+       and FluentD (EFK) stack configured to alert on the
+       organizational specified audit events, or a third party
+       tool configured to consume the OpenShift audit log and
+       alert on the organizational defined audit events.
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
