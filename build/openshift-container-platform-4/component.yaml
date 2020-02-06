@@ -266,17 +266,10 @@ satisfies:
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |-
-        This control is partially satisfied when OpenShift is configured
-        authenticate to a identity service provider, or example, within LDAP,
-        Red Hat IdM, or Active Directory.
-
-        More work is being done to address this control. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-211
+        This is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AC-3
   standard_key: NIST-800-53
