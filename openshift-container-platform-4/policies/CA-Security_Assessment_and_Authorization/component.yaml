@@ -302,18 +302,16 @@
 - control_key: CA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        Engineering progress can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-256
+        CA-9 is an organizational control outside the scope
+        of OpenShift configuration.
     - key: b
       text: |
-        Engineering progress can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-256
+        CA-9 is an organizational control outside the scope
+        of OpenShift configuration.
 
 - control_key: CA-9 (1)
   standard_key: NIST-800-53
