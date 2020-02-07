@@ -198,25 +198,36 @@
   narrative:
     - key: a
       text: |
-        Organizational review and analysis of information system
-        audit records for indications of organization-defined
-        inappropriate or unusual activity is outside the scope
-        of OpenShift configuration.
+        While OpenShift can generate audit data, and securely transport
+        the data to a SIEM, OpenShift does not provide automated mechanisms
+        (e.g. email, text messages) after system events. This functionality
+        would fall to third party software such as Splunk, Elastic, etc.
+        
+        To configure an IdP, see:
+        https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
     - key: b
       text: |
-        Reporting findings of organization-defined inappropriate or
-        unusual activity to organization-defined personnel or roles is
-        outside the scope of OpenShift configuration.
+        While OpenShift can generate audit data, and securely transport
+        the data to a SIEM, OpenShift does not provide automated mechanisms
+        (e.g. email, text messages) after system events. This functionality
+        would fall to third party software such as Splunk, Elastic, etc.
+        
+        To configure an IdP, see:
+        https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 - control_key: AU-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-167
+        While OpenShift can generate audit data, and securely transport
+        the data to a SIEM, OpenShift does not provide automated mechanisms
+        (e.g. email, text messages) after system events. This functionality
+        would fall to third party software such as Splunk, Elastic, etc.
+        
+        To configure an IdP, see:
+        https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 - control_key: AU-6 (2)
   standard_key: NIST-800-53
@@ -232,10 +243,13 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational analysis and correlation of audit records across
-        different repositories to gain organization-wide
-        situational awareness is outside the scope
-        of OpenShift configuration.
+        While OpenShift can generate audit data, and securely transport
+        the data to a SIEM, OpenShift does not provide automated mechanisms
+        (e.g. email, text messages) after system events. This functionality
+        would fall to third party software such as Splunk, Elastic, etc.
+        
+        To configure an IdP, see:
+        https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 - control_key: AU-6 (4)
   standard_key: NIST-800-53
@@ -243,17 +257,13 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational capability to centrally review and analyze
-        audit records from multiple components within the system
-        is outside the scope of OpenShift configuration.
-
-        Note: When AU-4 (1) is enforced OpenShift will be configured
-        to off-load audit records onto a different system
-        or media than the system being audited. In practice this correlates
-        to offloading audit records to a SIEM (e.g. Elastic). However,
-        this control is specifically about centralized review and analysis,
-        and not offloading records, thus AU-6 (4) is marked as not
-        applicable.
+        While OpenShift can generate audit data, and securely transport
+        the data to a SIEM, OpenShift does not provide automated mechanisms
+        (e.g. email, text messages) after system events. This functionality
+        would fall to third party software such as Splunk, Elastic, etc.
+        
+        To configure an IdP, see:
+        https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 - control_key: AU-6 (5)
   standard_key: NIST-800-53
@@ -261,34 +271,35 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational capability to integrate analysis or audit
-        records with analysis of additional organization-defined
-        data/information collected from other sources to further
-        enhance the ability to identify inappropriate or unusual
-        activity is outside the scope of OpenShift configuration.
-
+        While OpenShift can generate audit data, and securely transport
+        the data to a SIEM, OpenShift does not provide automated mechanisms
+        (e.g. email, text messages) after system events. This functionality
+        would fall to third party software such as Splunk, Elastic, etc.
+        
+        To configure an IdP, see:
+        https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        
 - control_key: AU-6 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational capability to correlate information from
-        OpenShift audit records with information obtained from monitoring
-        physical access to further enhanced the ability to identify
-        suspicious, inappropriate, unusual, or malevolent activity
-        is outside the scope of OpenShift configuration.
-
+        While OpenShift can generate audit data, and securely transport
+        the data to a SIEM, OpenShift does not provide automated mechanisms
+        (e.g. email, text messages) after system events. This functionality
+        would fall to third party software such as Splunk, Elastic, etc.
+        
+        To configure an IdP, see:
+        https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        
 - control_key: AU-6 (7)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational specification of permitted actions for
-        information system processes, roles, and/or users, associated
-        with the review, analysis, and reporting of audit
-        information is outside the scope of OpenShift configuration.
+        AU-6 (7) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AU-6 (8)
   standard_key: NIST-800-53
@@ -296,11 +307,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational processes to perform full text analysis or audited
-        privileged commands in a physically distinct component or subsystem
-        of the information system, or other information system that is
-        dedicated to that analysis, is outside the scope of OpenShift
-        configuration.
+        AU-6 (8) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AU-6 (9)
   standard_key: NIST-800-53
@@ -308,10 +315,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational processes to correlate information
-        from nontechnical sources with audit information to enhance
-        organization-wide situational awareness is outside
-        the scope of OpenShift configuration.
+        AU-6 (9) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AU-6 (10)
   standard_key: NIST-800-53
@@ -319,11 +323,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational adjustment of the level of audit review, analysis, and
-        reporting within the information system when there is a change in risk
-        based on law enforcement information, intelligence information, or other
-        credible sources of information, is outside the scope of OpenShift
-        configuration.
+        AU-6 (10) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AU-7
   standard_key: NIST-800-53
