@@ -48,7 +48,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible to protect the availability of
+        'The customer is responsible for the protection and availability of
         resources by allocating processor and memory resources by process
         priority and resource availability. A successful control response will
         discuss how resource availability is protected.'
