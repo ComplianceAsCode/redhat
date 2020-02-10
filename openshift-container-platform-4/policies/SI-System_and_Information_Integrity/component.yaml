@@ -96,7 +96,7 @@
   implementation_status: complete
   narrative:
     - text: |-
-        Withdrawn
+        This control was withdrawn by NIST and incorporated into SI-2.
 
 - control_key: SI-2(5)
   standard_key: NIST-800-53
