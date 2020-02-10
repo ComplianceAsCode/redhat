@@ -49,6 +49,14 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
 
+- control_key: SI-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        SI-2(1) is an organizational control outside the scope of OpenShift configuration.
+
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
   covered_by: []
