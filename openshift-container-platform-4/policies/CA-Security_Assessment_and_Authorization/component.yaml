@@ -318,8 +318,7 @@
 - control_key: CA-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        CA-9 (1) reflects organizational processes outside the scope
-        of OpenShift configuration guidance.
+        Internal discussion are ongoing on how to implement this control.
