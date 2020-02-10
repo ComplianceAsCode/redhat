@@ -95,7 +95,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - key: a
+    - text: |-
       text: |
         Withdrawn
 
