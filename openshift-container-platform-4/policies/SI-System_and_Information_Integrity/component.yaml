@@ -72,7 +72,6 @@
         perform periodic and on-demand scans through their system to determine
         the state of system components with regard to flaw remediation.
         */'
-        
 - control_key: SI-2 (3)
   standard_key: NIST-800-53
   covered_by: []
