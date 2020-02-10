@@ -49,6 +49,14 @@
         'This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.'
 
+- control_key: SI-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        SI-2(1) is an organizational control outside the scope of OpenShift configuration.
+
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -64,6 +72,7 @@
         perform periodic and on-demand scans through their system to determine
         the state of system components with regard to flaw remediation.
         */'
+        
 - control_key: SI-2 (3)
   standard_key: NIST-800-53
   covered_by: []
@@ -89,6 +98,7 @@
         benchmarks to remediate high, and moderate risk flaws within a
         customer defined period after a flaws discovery.
         */'
+        
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
