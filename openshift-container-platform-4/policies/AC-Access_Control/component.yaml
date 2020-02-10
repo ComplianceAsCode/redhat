@@ -417,14 +417,36 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        AC-5 is an organizational control outside the scope of OpenShift
+    - key: a
+      text: |
+        AC-5(a) is an organizational control outside the scope of OpenShift
         configuration.
         
-        Note OpenShift has authorization mechanisms within the product to
-        support the organizational controls.
+        However, to aide in such processes, note that OpenShift provides the capability to
+        implement Role-based access control (RBAC) objects which determine whether a
+        user is allowed to perform a given action. Documentation on the OpenShift RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+    - key: b
+      text: |
+        AC-5(b) is an organizational control outside the scope of OpenShift
+        configuration.
         
-        https://docs.openshift.com/container-platform/4.3/authentication/understanding-authentication.html
+        However, to aide in such processes, note that OpenShift provides the capability to
+        implement Role-based access control (RBAC) objects which determine whether a
+        user is allowed to perform a given action. Documentation on the OpenShift RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+    - key: c
+      text: |
+        AC-5(c) is an organizational control outside the scope of OpenShift
+        configuration.
+        
+        However, to aide in such processes, note that OpenShift provides the capability to
+        implement Role-based access control (RBAC) objects which determine whether a
+        user is allowed to perform a given action. Documentation on the OpenShift RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
 
 - control_key: AC-6 (1)
   standard_key: NIST-800-53
