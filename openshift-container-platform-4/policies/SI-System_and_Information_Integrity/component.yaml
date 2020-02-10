@@ -89,6 +89,25 @@
         benchmarks to remediate high, and moderate risk flaws within a
         customer defined period after a flaws discovery.
         */'
+
+- control_key: SI-2(4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        Withdrawn
+
+- control_key: SI-2(5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        SI-2(5) is an organizational control outside the scope of OpenShift configuration.
+      
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
