@@ -411,7 +411,7 @@
 - control_key: AC-4 (17)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
         OpenShift v4 support implementation of authentication support uniquely identified source and 
