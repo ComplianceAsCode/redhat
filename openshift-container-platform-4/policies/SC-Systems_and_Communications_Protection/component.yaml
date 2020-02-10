@@ -128,7 +128,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control enhancement addresses configuration settings in remote devices such as notebooks and not OpenShift itself.  '
+        'This control enhancement addresses configuration settings in remote devices 
+        such as notebooks and not OpenShift itself.  '
 
 - control_key: SC-7 (8)
   standard_key: NIST-800-53
