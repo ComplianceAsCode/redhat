@@ -1,0 +1,32 @@
+name: Validate content
+on: pull_request
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install Go
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.13
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Get compliance-masonry
+        run: |
+          go get -u -v github.com/opencontrol/compliance-masonry/cmd/masonry
+
+          # Until https://github.com/opencontrol/compliance-masonry/pull/347 is merged
+          pushd ~/go/src/github.com/opencontrol/compliance-masonry/
+          git remote add patch https://github.com/GoComply/compliance-masonry
+          git fetch patch
+          git checkout opencontrol-validate
+          go build ./cmd/masonry/masonry.go
+          popd
+          cp ~/go/src/github.com/opencontrol/compliance-masonry/masonry ./
+      - name: Make
+        run: |
+          make clean all
+      - name: Masonry Validate
+        run: |
+          ./masonry get
+          ./masonry validate
