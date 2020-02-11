@@ -54,6 +54,7 @@
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
         from non-security functions.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -69,6 +70,7 @@
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
         from non-security functions.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -84,6 +86,7 @@
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
         from non-security functions.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -313,6 +316,7 @@
         The customer will be responsible for ensuring managed interfaces deny
         network traffic by default and allow network communications traffic
         by exception (i.e. deny all, permit by exception).
+
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
@@ -335,6 +339,7 @@
         The customer will be responsible for implementing mechanisms to
         ensure CoreOS nodes to not act as proxy or relay servers between
         internal and external networks.
+
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
@@ -421,6 +426,7 @@
         interfaces to other components of the system. A successful control
         response will discuss the networking configuration to satisfy this
         control.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 

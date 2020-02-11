@@ -54,6 +54,7 @@
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
         from non-security functions.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -69,6 +70,7 @@
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
         from non-security functions.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -84,6 +86,7 @@
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
         from non-security functions.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -318,6 +321,7 @@
         The customer will be responsible for ensuring managed interfaces deny
         network traffic by default and allow network communications traffic
         by exception (i.e. deny all, permit by exception).
+
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
@@ -340,6 +344,7 @@
         The customer will be responsible for implementing mechanisms to
         ensure OpenShift nodes to not act as proxy or relay servers between
         internal and external networks.
+
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
@@ -426,6 +431,7 @@
         interfaces to other components of the system. A successful control
         response will discuss the networking configuration to satisfy this
         control.
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -926,11 +932,6 @@
   narrative:
     - key: a
       text: |
-        OpenShift has a built-in DNS so that services can be reached by
-        the service DNS as well as the service IP/port. OpenShift supports
-        split DNS by running SkyDNS on the master that answers DNS queries
-        for services.
-
         OpenShift administrators are responsible for providing
         origin authentication and integrity verification artifacts along
         with authoritative name resolution data returns in response. A
@@ -943,11 +944,6 @@
         https://issues.redhat.com/browse/CMP-417
     - key: b
       text: |
-        OpenShift has a built-in DNS so that services can be reached by
-        the service DNS as well as the service IP/port. OpenShift supports
-        split DNS by running SkyDNS on the master that answers DNS queries
-        for services.
-
         OpenShift administrators are responsible for
         providing means to indicate the security status of child zones and
         enable verification of a chain of trust among parent and child domains.
@@ -1003,11 +999,6 @@
   implementation_status: planned
   narrative:
     - text: |
-        OpenShift has a built-in DNS so that services can be reached by
-        the service DNS as well as the service IP/port. OpenShift supports
-        split DNS by running SkyDNS on the master that answers DNS queries
-        for services.
-
         OpenShift administrators are responsible for ensuring
         services are fault-tolerant and implement internal/external role
         separation.
