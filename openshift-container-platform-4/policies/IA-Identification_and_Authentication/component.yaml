@@ -30,10 +30,11 @@
   implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/950
+        IA-2 is partially satisfied by OpenShift configuration. Sub-
+        controls for resistant replay mechanisms must be implemented
+        by OpenShift configuration to prevent un-authorized access
+        of console via network. All other subcontrols are out of
+        scope.
 
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
@@ -41,109 +42,106 @@
   implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/951
+        IA-2(1) is an organizational control out of scope for OpenShift configuration.
+        Multifactor authentication is not a service that OpenShift configuration 
+        provides to an organization.
 
 - control_key: IA-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/952
+        IA-2(2) is an organizational control out of scope for OpenShift configuration.
+        Multifactor authentication is not a service that OpenShift configuration 
+        provides to an organization.
 
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/953
+        IA-2(3) is an organizational control out of scope for OpenShift configuration.
+        Multifactor authentication is not a service that OpenShift configuration 
+        provides to an organization.
 
 - control_key: IA-2 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/954
+        IA-2(4) is an organizational control out of scope for OpenShift configuration.
+        Multifactor authentication is not a service that OpenShift configuration 
+        provides to an organization.
 
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/954
+        IA-2(5) is an organizational control out of scope for OpenShift configuration. 
+        An Individual authenticator requirement when a group authenticator is
+        implemented is not provided by OpenShift configuration.
 
 - control_key: IA-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/955
+        IA-2(6) is an organizational control out of scope for 
+        OpenShift configuration. Separate device multifactor authentication policy and 
+        management is not performed by OpenShift.
 
 - control_key: IA-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/956
+        IA-2(7) is an organizational control out of scope for 
+        OpenShift configuration. Multifactor authentication policy and 
+        management is not performed by OpenShift.
 
 - control_key: IA-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/957
+        IA-(8)OpenShift offers support for replay-resistant authentication
+        mechanisms, both for OpenShift console and 3rd party 
+        authentication. Third party identity providers configured for
+        modern TLS is supported by OpenShift.
+        Please see the specific identity provider documentation:
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
 
 - control_key: IA-2 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/958
-
+        OpenShift offers support for replay-resistant authentication
+        mechanisms, both for OpenShift console and 3rd party 
+        authentication. 
+        Please see the specific identity provider documentation:
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
+        
 - control_key: IA-2 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/959
+        IA-2 (10) is an organizational control outside the scope of 
+        OpenShift configuration. Single Sign On (SSO) use and manage-
+        ment is determined by the organization. OpenShift documentation
+        regarding SSO can be found at:
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
 
 - control_key: IA-2 (11)
   standard_key: NIST-800-53
@@ -151,8 +149,9 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Implementing a separate device from the system
-        gaining access to the information system using multifactor
+        IA-2 (11) is an organizational control outside the scope of 
+        OpenShift configuration. Implementing a separate device from the 
+        system gaining access to the information system using multifactor
         authentication for remote access to privileged and non-privileged
         accounts is an organizational control outside the configuration
         guidance of OpenShift.
@@ -160,13 +159,16 @@
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/961
+        IA-2 (12) is an organizational control outside the scope of 
+        OpenShift configuration. Issuance of PIV credentials is
+        outside the scope of OpenShift configuration. Authentication of
+        PIV credentials is outside the scope of OpenShift configuration.
+        This functionality would be provided by third party software
+        such as Identity Provider (IdP), Active Directory (MSAD), LDAP,
+        et al.
 
 - control_key: IA-2 (13)
   standard_key: NIST-800-53
