@@ -3555,7 +3555,7 @@ satisfies:
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-283
+        https://issues.redhat.com/browse/CMP-283
 
 - control_key: CM-8 (8)
   standard_key: NIST-800-53
@@ -3625,19 +3625,19 @@ satisfies:
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-284
+        https://issues.redhat.com/browse/CMP-284
     - key: b
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-284
+        https://issues.redhat.com/browse/CMP-284
     - key: c
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-284
+        https://issues.redhat.com/browse/CMP-284
 
 - control_key: CM-10 (1)
   standard_key: NIST-800-53
@@ -3662,19 +3662,19 @@ satisfies:
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-285
+        https://issues.redhat.com/browse/CMP-285
     - key: b
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-285
+        https://issues.redhat.com/browse/CMP-285
     - key: c
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-285
+        https://issues.redhat.com/browse/CMP-285
 
 - control_key: CM-11 (1)
   standard_key: NIST-800-53
@@ -8953,6 +8953,66 @@ satisfies:
         including user interface services) from information system management
         functionality. A successful control response will indicate how user
         and management functionality access is separated.'
+
+- control_key: SC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        'The customer is responsible for deployment utilizing namespaces,
+        host roles and other features as well as policies and procedures
+        to implement and ensure continued isolation of security functions
+        from non-security functions.'
+
+- control_key: SC-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        'The customer is responsible for deployment utilizing namespaces,
+        host roles and hosting platform features as well as policies and
+        procedures to implement hardware separation of security functions
+        from non-security functions.'
+
+- control_key: SC-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        'The customer is responsible for deployment utilizing namespaces,
+        host roles, and hosting platform features as well as policies and
+        procedures to ensure separation of security functions
+        from non-security functions.'
+        
+- control_key: SC-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SC-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
+
+- control_key: SC-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        'This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.'
 
 - control_key: SC-4
   standard_key: NIST-800-53
