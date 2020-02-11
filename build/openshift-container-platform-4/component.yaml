@@ -4006,7 +4006,7 @@ satisfies:
 - control_key: CP-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -4014,11 +4014,10 @@ satisfies:
         applicable to the configuration of OpenShift.
     - key: b
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/932
-
+        https://issues.redhat.com/browse/CMP-294
     - key: c
       text: |
         This control reflects organizational procedures/policies, and is not
@@ -4168,7 +4167,7 @@ satisfies:
 - control_key: CP-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -4181,11 +4180,10 @@ satisfies:
         user-level information occures, and how three backup copies are
         maintained.
 
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/934
-
+        https://issues.redhat.com/browse/CMP-291
     - key: b
       text: |
         The customer will be responsible for conducting daily incremental and
@@ -4197,11 +4195,10 @@ satisfies:
         user-level information occures, and how three backup copies are
         maintained.
 
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/934
-
+        https://issues.redhat.com/browse/CMP-291
     - key: c
       text: |
         The customer will be responsible for conducting daily incremental and
@@ -4213,11 +4210,10 @@ satisfies:
         backups of user-level information occures, and how three backup copies
         are maintained.
 
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/934
-
+        https://issues.redhat.com/browse/CMP-291
     - key: d
       text: |
         The customer will be responsible for protecting the confidentiality,
@@ -4228,33 +4224,32 @@ satisfies:
         Backup is going to be verified and appropriate periodicity of the
         check.
 
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/934
+        https://issues.redhat.com/browse/CMP-294
 
 - control_key: CP-9 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/935
-
+        https://issues.redhat.com/browse/CMP-292
 
 - control_key: CP-9 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/936
+        https://issues.redhat.com/browse/CMP-293
 
 - control_key: CP-9 (3)
   standard_key: NIST-800-53
@@ -4287,7 +4282,7 @@ satisfies:
 - control_key: CP-9 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
@@ -4305,7 +4300,7 @@ satisfies:
 - control_key: CP-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
         The customer will be responsible for documenting how to reconstitute
@@ -4369,26 +4364,24 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A complete control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/944
+        https://issues.redhat.com/browse/CMP-296
 
 - control_key: CP-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A complete control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/945
+        https://issues.redhat.com/browse/CMP-297
 
 - control_key: CP-13
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
         Employment of organization-defined alternative or
@@ -4398,10 +4391,9 @@ satisfies:
         unavailable or compromised is outside the scope of
         OpenShift configuration guidance.
 
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A complete control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1056
+        https://issues.redhat.com/browse/CMP-298
 ##
 ## BEGINNING OF:
 ## IDENTIFICATION AND AUTHENTICATION
