@@ -236,8 +236,9 @@
         actions as kernel module blacklisting. A full control
         response is planned.
 
-        The following ticket can be used to track progres:
-        https://github.com/ComplianceAsCode/redhat/issues/738
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-351
 
 - control_key: MP-7 (1)
   standard_key: NIST-800-53
