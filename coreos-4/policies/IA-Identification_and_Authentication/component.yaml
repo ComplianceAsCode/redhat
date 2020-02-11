@@ -110,7 +110,9 @@
   implementation_status: complete
   narrative:
     - text: |
-        A control response for IA-2(8) is planned.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-573
 
 - control_key: IA-2 (9)
   standard_key: NIST-800-53
@@ -118,7 +120,9 @@
   implementation_status: complete
   narrative:
     - text: |
-        A control response for IA-2(9) is planned.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-574
 
 - control_key: IA-2 (10)
   standard_key: NIST-800-53
