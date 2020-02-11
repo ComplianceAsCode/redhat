@@ -71,14 +71,6 @@
 
         https://issues.redhat.com/browse/CMP-526
 
-- control_key: SI-2 (1)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
-        SI-2(1) is an organizational control outside the scope of OpenShift configuration.
-
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -887,7 +879,7 @@
 
         https://issues.redhat.com/browse/CMP-548
 
-- control_key: SI-7 (11)
+- control_key: SI-7 (13)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable

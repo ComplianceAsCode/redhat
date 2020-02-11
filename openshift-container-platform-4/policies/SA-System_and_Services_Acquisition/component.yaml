@@ -513,7 +513,7 @@
       text: |
         This control reflects organizational procedure/policy and is not
         applicable to OpenShift configuration.
-    - key: a
+    - key: b
       text: |
         This control reflects organizational procedure/policy and is not
         applicable to OpenShift configuration.
@@ -1095,15 +1095,6 @@
         applicable to OpenShift configuration.
     - key: c
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to OpenShift configuration.
-
-- control_key: SA-15 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
         This control reflects organizational procedure/policy and is not
         applicable to OpenShift configuration.
 

@@ -879,7 +879,7 @@
 
         https://issues.redhat.com/browse/CMP-548
 
-- control_key: SI-7 (11)
+- control_key: SI-7 (13)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
