@@ -8069,7 +8069,7 @@ satisfies:
       text: |
         This control reflects organizational procedure/policy and is not
         applicable to CoreOS configuration.
-    - key: a
+    - key: b
       text: |
         This control reflects organizational procedure/policy and is not
         applicable to CoreOS configuration.
@@ -8651,15 +8651,6 @@ satisfies:
         applicable to CoreOS configuration.
     - key: c
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to CoreOS configuration.
-
-- control_key: SA-15 (4)
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: |
         This control reflects organizational procedure/policy and is not
         applicable to CoreOS configuration.
 
@@ -9956,7 +9947,7 @@ satisfies:
 
         https://issues.redhat.com/browse/CMP-548
 
-- control_key: SI-7 (11)
+- control_key: SI-7 (13)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
