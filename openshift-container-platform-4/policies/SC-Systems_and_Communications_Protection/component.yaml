@@ -841,13 +841,13 @@
   covered_by: []
   implementation_status: planned
   narrative:
-     - key: a
+    - key: a
       text: |
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-418
-    - key: a
+    - key: b
       text: |
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
@@ -1291,7 +1291,7 @@
         This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.
 
-- control_key: SC-30 (2)
+- control_key: SC-31 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
