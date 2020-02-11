@@ -151,7 +151,7 @@ satisfies:
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |-
         To meet FISMA requirements, CoreOS must be configured
@@ -228,7 +228,6 @@ satisfies:
 
         See https://issues.redhat.com/browse/CMP-84 for local
         user account handling in CoreOS.
-
     - key: b
       text: |-
         This is an organizational control and not applicble to the configuration
@@ -245,7 +244,7 @@ satisfies:
   narrative:
     - text: |-
         This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.
+        and outside the scope of CoreOS configuration.
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -271,34 +270,42 @@ satisfies:
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of CoreOS configuration.
+        A control response for AC-3 (2) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-210
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - key: a
       text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of CoreOS configuration.
+        A control response for AC-2(12)(a) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-259
     - key: b
       text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of CoreOS configuration.
+        A control response for AC-2(12)(b) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-259
 
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |-
-        This control is applicable to the identity service provider,
-        and outside the scope of CoreOS configuration.
+        A control response for AC-2(13) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-211
 
 - control_key: AC-3
   standard_key: NIST-800-53
@@ -334,7 +341,16 @@ satisfies:
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - key: a
+      text: |-
+       This control is met by CoreOS when SELinux is in Enforcing mode
+       and configured against the SELinux Targeted policy.
+    - key: b
+      text: |-
+       This control is met by CoreOS when SELinux is in Enforcing mode
+       and configured against the SELinux Targeted policy.
+    - key: c
+      text: |-
        This control is met by CoreOS when SELinux is in Enforcing mode
        and configured against the SELinux Targeted policy.
 
@@ -343,7 +359,32 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - key: a
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: b
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: c
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: d
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: e
+      text: |-
         A response to AC-3 (4) is planned. Engineering
         progress can be tracked via:
 
@@ -352,13 +393,13 @@ satisfies:
 - control_key: AC-3 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - text: |
         A response to AC-3 (5) is planned. Progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/746
+        https://issues.redhat.com/browse/CMP-91
 
 - control_key: AC-3 (6)
   standard_key: NIST-800-53
@@ -393,7 +434,14 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |-
+    - key: a
+      text: |-
+        A response to AC-3 (9) is planned. Engineering progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-97
+    - key: b
+      text: |-
         A response to AC-3 (9) is planned. Engineering progress can be tracked
         via:
 
@@ -412,6 +460,11 @@ satisfies:
         to escalate privileges to root (e.g. "sudo access"). In such scenarios
         CoreOS will continue to audit events as defined in AU-2 and AU-12.
 
+        A response to AC-3 (10) is planned. Engineering progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-213
+
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
@@ -420,7 +473,7 @@ satisfies:
     - text: |-
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/750
+        https://issues.redhat.com/browse/CMP-98
 
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
@@ -430,7 +483,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/751
+        https://issues.redhat.com/browse/CMP-99
 
 - control_key: AC-4 (2)
   standard_key: NIST-800-53
@@ -440,7 +493,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/752
+        https://issues.redhat.com/browse/CMP-100
 
 - control_key: AC-4 (3)
   standard_key: NIST-800-53
@@ -450,26 +503,27 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/753
+        https://issues.redhat.com/browse/CMP-101
 
 - control_key: AC-4 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Interception of information system communications is out
-        of scope of CoreOS configuration guidance.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-214
 
 - control_key: AC-4 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Enforcement of organization-defined limitations on
-        embedding data types within other data types is outside
-        the scope of CoreOS configuration.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-215
 
 - control_key: AC-4 (6)
   standard_key: NIST-800-53
@@ -479,17 +533,17 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/754
+        https://issues.redhat.com/browse/CMP-102
 
 - control_key: AC-4 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        Enforcement of organization-defined one-way information flows
-        using hardware mechanisms is outside the scope of CoreOS
-        configuration.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-216
 
 - control_key: AC-4 (8)
   standard_key: NIST-800-53
@@ -499,12 +553,12 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/755
+        https://issues.redhat.com/browse/CMP-103
 
 - control_key: AC-4 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unsatisfied
+  implementation_status: planned
   narrative:
     - text: |
         Changes to CoreOS information flows take effect immediately. It is assumed
@@ -514,6 +568,10 @@ satisfies:
         CoreOS cannot protect against authenticated users who were
         given authorization to execute administrative commands (such as
         information flow modifications).
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-104
 
 - control_key: AC-4 (10)
   standard_key: NIST-800-53
@@ -530,6 +588,10 @@ satisfies:
         Once authenticated users must elevate privileges to root access
         through usage of "sudo", which will require users to re-authenticate
         themselves.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-217
 
 - control_key: AC-4 (11)
   standard_key: NIST-800-53
@@ -549,6 +611,10 @@ satisfies:
         as firewalld) check in accordance with the definitions
         provided by organizations.
 
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-218
+
 - control_key: AC-4 (12)
   standard_key: NIST-800-53
   covered_by: []
@@ -557,7 +623,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/790
+        https://issues.redhat.com/browse/CMP-105
 
 - control_key: AC-4 (13)
   standard_key: NIST-800-53
@@ -567,7 +633,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/791
+        https://issues.redhat.com/browse/CMP-106
 
 - control_key: AC-4 (14)
   standard_key: NIST-800-53
@@ -577,7 +643,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/792
+        https://issues.redhat.com/browse/CMP-107
 
 - control_key: AC-4 (15)
   standard_key: NIST-800-53
@@ -587,7 +653,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/793
+        https://issues.redhat.com/browse/CMP-108
 
 - control_key: AC-4 (16)
   standard_key: NIST-800-53
@@ -605,7 +671,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/794
+        https://issues.redhat.com/browse/CMP-107
 
 - control_key: AC-4 (18)
   standard_key: NIST-800-53
@@ -615,7 +681,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/795
+        https://issues.redhat.com/browse/CMP-110
 
 - control_key: AC-4 (19)
   standard_key: NIST-800-53
@@ -625,7 +691,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/796
+        https://issues.redhat.com/browse/CMP-111
 
 - control_key: AC-4 (20)
   standard_key: NIST-800-53
@@ -635,7 +701,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/797
+        https://issues.redhat.com/browse/CMP-112
 
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
@@ -649,6 +715,10 @@ satisfies:
         the separation of information flows, and the mechanisms and
         techniques used to accomplish this separation.
 
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-113
+
 - control_key: AC-4 (22)
   standard_key: NIST-800-53
   covered_by: []
@@ -657,7 +727,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/799
+        https://issues.redhat.com/browse/CMP-114
 
 - control_key: AC-5
   standard_key: NIST-800-53
@@ -687,21 +757,22 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/800
+        https://issues.redhat.com/browse/CMP-115
 
 - control_key: AC-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        This is an organizational control outside the scope of CoreOS
-        configuration.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-219
 
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
         This is an organizational/procedural control outside the scope of
@@ -710,13 +781,10 @@ satisfies:
         The customer will be responsible for requiring users to use the
         lowest level of access required to perform any given function. In
         terms of CoreOS, this may require creation of multiple logon
-        accounts per user. When users require access to privileged functions
-        or capability, they will need to logout from the unprivileged account
-        and login with an account that has received appropriate RBAC rights.
+        accounts per user. A control response is planned. Progress can
+        be tracked via:
 
-        Note CoreOS does not have privilege escalation capabilities similar
-        to sudo in Linux. Users will have to completely logout/login when
-        requiring privilege escalation between accounts.
+        https://issues.redhat.com/browse/CMP-220
 
 - control_key: AC-6 (3)
   standard_key: NIST-800-53
@@ -726,7 +794,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/802
+        https://issues.redhat.com/browse/CMP-116
 
 - control_key: AC-6 (4)
   standard_key: NIST-800-53
@@ -736,7 +804,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/803
+        https://issues.redhat.com/browse/CMP-117
 
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
@@ -746,7 +814,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/804
+        https://issues.redhat.com/browse/CMP-118
 
 - control_key: AC-6 (6)
   standard_key: NIST-800-53
@@ -756,7 +824,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/805
+        https://issues.redhat.com/browse/CMP-119
 
 - control_key: AC-6 (7)
   standard_key: NIST-800-53
@@ -767,12 +835,12 @@ satisfies:
       text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/806
+        https://issues.redhat.com/browse/CMP-120
     - key: b
       text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/806
+        https://issues.redhat.com/browse/CMP-120
 
 - control_key: AC-6 (8)
   standard_key: NIST-800-53
@@ -782,7 +850,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/807
+        https://issues.redhat.com/browse/CMP-121
 
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
@@ -797,7 +865,7 @@ satisfies:
 
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/808
+        https://issues.redhat.com/browse/CMP-122
 
 - control_key: AC-6 (10)
   standard_key: NIST-800-53
@@ -813,7 +881,7 @@ satisfies:
 
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/809
+        https://issues.redhat.com/browse/CMP-123
 
 - control_key: AC-7
   standard_key: NIST-800-53
@@ -827,7 +895,7 @@ satisfies:
 
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/810
+        https://issues.redhat.com/browse/CMP-124
     - key: b
       text: |
         The customer will be responsible for taking required
@@ -835,7 +903,7 @@ satisfies:
 
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/810
+        https://issues.redhat.com/browse/CMP-124
 
 - control_key: AC-7 (1)
   standard_key: NIST-800-53
@@ -875,7 +943,7 @@ satisfies:
         A control response to AC-8 is planned. Progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/811
+        https://issues.redhat.com/browse/CMP-125
     - key: b
       text: |
         The customer will be responsible for displaying the use notification
@@ -887,7 +955,7 @@ satisfies:
         A control response to AC-8 is planned. Progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/811
+        https://issues.redhat.com/browse/CMP-125
     - key: c
       text: |
         The customer will be responsible for displaying a system use
@@ -902,7 +970,7 @@ satisfies:
         A control response to AC-8 is planned. Progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/811
+        https://issues.redhat.com/browse/CMP-125
     - key: c.1
       text: |
         The customer will be responsible for determining the conditions
@@ -912,7 +980,7 @@ satisfies:
         A control response to AC-8 is planned. Progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/811
+        https://issues.redhat.com/browse/CMP-125
     - key: c.2
       text: |
         The customer will be responsible for how the system use notification
@@ -923,7 +991,7 @@ satisfies:
         A control response to AC-8 is planned. Progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/811
+        https://issues.redhat.com/browse/CMP-125
     - key: c.3
       text: |
         The customer will be responsible for verifying that the system use
@@ -935,7 +1003,7 @@ satisfies:
         A control response to AC-8 is planned. Progress can be tracked
         via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/811
+        https://issues.redhat.com/browse/CMP-125
 
 - control_key: AC-9
   standard_key: NIST-800-53
@@ -945,7 +1013,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/812
+        https://issues.redhat.com/browse/CMP-126
 
 - control_key: AC-9 (1)
   standard_key: NIST-800-53
@@ -955,7 +1023,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/813
+        https://issues.redhat.com/browse/CMP-127
 
 - control_key: AC-9 (2)
   standard_key: NIST-800-53
@@ -965,7 +1033,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/814
+        https://issues.redhat.com/browse/CMP-128
 
 - control_key: AC-9 (3)
   standard_key: NIST-800-53
@@ -975,7 +1043,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/815
+        https://issues.redhat.com/browse/CMP-129
 
 - control_key: AC-9 (4)
   standard_key: NIST-800-53
@@ -985,7 +1053,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/816
+        https://issues.redhat.com/browse/CMP-130
 
 - control_key: AC-10
   standard_key: NIST-800-53
@@ -1000,36 +1068,33 @@ satisfies:
 
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/817
+        https://issues.redhat.com/browse/CMP-131
 
 - control_key: AC-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        When AC-2(5) is implemented, the non-configurable
-        default behavior of CoreOS is to disconnect the idle users
-        from the management console after the organization-defined
-        time period.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-222
     - key: b
       text: |
-        Not applicable. When AC-2(5) is implemented, the non-configurable
-        default behavior of CoreOS is to disconnect the idle users
-        from the management console after the organization-defined
-        time period.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-222
 
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - text: |
-        When AC-2(5) is implemented, the non-configurable
-        default behavior of CoreOS is to logout idle users from the
-        management console. Once logged out the only information available
-        will be the CoreOS logon screen.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-221
 
 - control_key: AC-12
   standard_key: NIST-800-53
@@ -1045,25 +1110,23 @@ satisfies:
 
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/818
+        https://issues.redhat.com/browse/CMP-132
 
 - control_key: AC-12 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        Whether user-initiated communication sessions originate
-        through the CoreOS web console or through command line,
-        all users are given explicit logout capabilities. This is
-        default, non-configurable behavior of the CoreOS Container
-        Platform.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-223
     - key: b
       text: |
-        CoreOS displays an explicit logout message upon user
-        session terminiations. This is default, non-configurable
-        behavior.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-223
 
 - control_key: AC-13
   standard_key: NIST-800-53
@@ -1076,7 +1139,7 @@ satisfies:
 - control_key: AC-14
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |
         Regardless of access mechanism, such as the CoreOS Console or remote
@@ -1105,7 +1168,23 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - key: a
+      text: |
+        Data release markings, such as NATO or NOFORN, are the responsibility
+        of application and data owners running workload on the CoreOS platform.
+        This control is not applicable to the configuration of CoreOS itself.
+    - key: b
+      text: |
+        Data release markings, such as NATO or NOFORN, are the responsibility
+        of application and data owners running workload on the CoreOS platform.
+        This control is not applicable to the configuration of CoreOS itself.
+    - key: c
+      text: |
+        Data release markings, such as NATO or NOFORN, are the responsibility
+        of application and data owners running workload on the CoreOS platform.
+        This control is not applicable to the configuration of CoreOS itself.
+    - key: d
+      text: |
         Data release markings, such as NATO or NOFORN, are the responsibility
         of application and data owners running workload on the CoreOS platform.
         This control is not applicable to the configuration of CoreOS itself.
@@ -1113,122 +1192,104 @@ satisfies:
 - control_key: AC-16 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/819
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/820
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/821
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/822
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/823
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/824
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/825
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/826
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/827
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-16 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/828
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-17
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/829
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of CoreOS.
 
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |
-        All system access, regardless of local or remote, is captured through
-        the CoreOS audit subsystem. This control is inherently met when
-        auditing is enabled.
+        This is an organizational control outside the scope of CoreOS configuration.
 
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
@@ -1238,7 +1299,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/830
+        https://issues.redhat.com/browse/CMP-144
 
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
@@ -1255,17 +1316,23 @@ satisfies:
 
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/831
+        https://issues.redhat.com/browse/CMP-145
 
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - key: a
+      text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/832
+        https://issues.redhat.com/browse/CMP-146
+    - key: b
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-146
 
 - control_key: AC-17 (5)
   standard_key: NIST-800-53
@@ -1283,7 +1350,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/833
+        https://issues.redhat.com/browse/CMP-147
 
 - control_key: AC-17 (7)
   standard_key: NIST-800-53
@@ -1360,7 +1427,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/834
+        https://issues.redhat.com/browse/CMP-148
 
 - control_key: AC-18 (4)
   standard_key: NIST-800-53
@@ -1370,12 +1437,12 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/835
+        https://issues.redhat.com/browse/CMP-149
 
 - control_key: AC-18 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         Radio antenna selection and calibration is outside the scope
@@ -1593,7 +1660,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/836
+        https://issues.redhat.com/browse/CMP-151
 
 - control_key: AC-24 (1)
   standard_key: NIST-800-53
@@ -1603,7 +1670,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/837
+        https://issues.redhat.com/browse/CMP-152
 
 - control_key: AC-24 (2)
   standard_key: NIST-800-53
@@ -1613,7 +1680,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/838
+        https://issues.redhat.com/browse/CMP-153
 
 - control_key: AC-25
   standard_key: NIST-800-53
@@ -1623,7 +1690,7 @@ satisfies:
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/839
+        https://issues.redhat.com/browse/CMP-154
 ##
 ## BEGINNING OF:
 ## AWARENESS AND TRAINING CONTROLS
