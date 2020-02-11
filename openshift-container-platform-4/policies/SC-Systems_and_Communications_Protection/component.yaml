@@ -51,9 +51,9 @@
   implementation_status: partial
   narrative:
     - text: |
-        'The customer is responsible for deployment utilizing namespaces, 
-        host roles, and hosting platform features as well as policies and 
-        procedures to ensure separation of security functions 
+        'The customer is responsible for deployment utilizing namespaces,
+        host roles, and hosting platform features as well as policies and
+        procedures to ensure separation of security functions
         from non-security functions.'
         
 - control_key: SC-3 (3)
