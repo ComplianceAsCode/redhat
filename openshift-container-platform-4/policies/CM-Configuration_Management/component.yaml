@@ -660,7 +660,7 @@
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-283
+        https://issues.redhat.com/browse/CMP-283
 
 - control_key: CM-8 (8)
   standard_key: NIST-800-53
@@ -730,19 +730,19 @@
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-284
+        https://issues.redhat.com/browse/CMP-284
     - key: b
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-284
+        https://issues.redhat.com/browse/CMP-284
     - key: c
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-284
+        https://issues.redhat.com/browse/CMP-284
 
 - control_key: CM-10 (1)
   standard_key: NIST-800-53
@@ -767,19 +767,19 @@
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-285
+        https://issues.redhat.com/browse/CMP-285
     - key: b
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-285
+        https://issues.redhat.com/browse/CMP-285
     - key: c
       text: |
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://jira.coreos.com/browse/CMP-285
+        https://issues.redhat.com/browse/CMP-285
 
 - control_key: CM-11 (1)
   standard_key: NIST-800-53
