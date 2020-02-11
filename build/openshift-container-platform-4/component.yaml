@@ -8939,9 +8939,14 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: SC-2
   standard_key: NIST-800-53
@@ -8949,52 +8954,85 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible for separating user functionality
+        The customer is responsible for separating user functionality
         including user interface services) from information system management
         functionality. A successful control response will indicate how user
-        and management functionality access is separated.'
+        and management functionality access is separated.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-429
+
+- control_key: SC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-466
 
 - control_key: SC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible for deployment utilizing namespaces,
+        The customer is responsible for deployment utilizing namespaces,
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
-        from non-security functions.'
+        from non-security functions.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-467
 
 - control_key: SC-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible for deployment utilizing namespaces,
-        host roles and hosting platform features as well as policies and
-        procedures to implement hardware separation of security functions
-        from non-security functions.'
+        The customer is responsible for deployment utilizing namespaces,
+        host roles and other features as well as policies and procedures
+        to implement and ensure continued isolation of security functions
+        from non-security functions.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-468
 
 - control_key: SC-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible for deployment utilizing namespaces,
-        host roles, and hosting platform features as well as policies and
-        procedures to ensure separation of security functions
-        from non-security functions.'
-        
+        The customer is responsible for deployment utilizing namespaces,
+        host roles and other features as well as policies and procedures
+        to implement and ensure continued isolation of security functions
+        from non-security functions.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-469
+
 - control_key: SC-3 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-470
 
 - control_key: SC-3 (4)
   standard_key: NIST-800-53
@@ -9002,8 +9040,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-471
 
 - control_key: SC-3 (5)
   standard_key: NIST-800-53
@@ -9011,8 +9051,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-472
 
 - control_key: SC-4
   standard_key: NIST-800-53
@@ -9020,18 +9062,78 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible for preventing unauthorized and
+        The customer is responsible for preventing unauthorized and
         unintended information transfer via shared system resources. A
-        successful control response will discuss how this is prevented.'
+        successful control response will discuss how this is prevented.
 
-- control_key: SC-5
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-428
+
+- control_key: SC-4 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.'
+        This control was withdrawn by NIST, and incorporated into SC-4.
+
+- control_key: SC-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        This control is met when SELinux is enabled and enforced and through
+        the use of SELinux MCS Levels.
+
+- control_key: SC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-427
+
+- control_key: SC-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-474
+
+- control_key: SC-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-475
+
+- control_key: SC-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: SC-6
   standard_key: NIST-800-53
@@ -9039,10 +9141,15 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible for the protection and availability of
+        The customer is responsible for the protection and availability of
         resources by allocating processor and memory resources by process
         priority and resource availability. A successful control response will
-        discuss how resource availability is protected.'
+        discuss how resource availability is protected.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-476
 
 - control_key: SC-7
   standard_key: NIST-800-53
@@ -9051,36 +9158,49 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'Documentation on how communications at key internal boundaries of
-        Openshift can be monitored is forthcoming. This activity is being
-        tracked in Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-21'
+        https://issues.redhat.com/browse/CMP-426
     - key: b
       text: |
-        'Documentation regarding how OpenShift can implement subnetworks
-        for publicly accessible system components is forthcoming. This
-        activity is being tracked in Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-22'
+        https://issues.redhat.com/browse/CMP-426
     - key: c
       text: |
-        'Documentation regarding how OpenShift can route connections to external
-        systems through a managed interface is forthcoming. This
-        activity is being tracked in Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-23'
+        https://issues.redhat.com/browse/CMP-426
+
+- control_key: SC-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-7.
+
+- control_key: SC-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-7.
 
 - control_key: SC-7 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'The customer is responsible for limiting the number of external
+        The customer is responsible for limiting the number of external
         network connetions to the information system. A successful control
         response will indicate the rate limiting procedures and technical
-        enforcement.'
+        enforcement.
 
 - control_key: SC-7 (4)
   standard_key: NIST-800-53
@@ -9089,48 +9209,131 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'This control is inherited from the network and IaaS provider.'
+        This control is inherited from the network and IaaS provider.
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-425
     - key: b
       text: |
-        'This control is inherited from the network and IaaS provider.'
+        This control is inherited from the network and IaaS provider.
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-425
     - key: c
       text: |
-        'This control is inherited from the network and IaaS provider.'
+        This control is inherited from the network and IaaS provider.
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-425
     - key: d
       text: |
-        'This control is inherited from the network and IaaS provider.'
+        This control is inherited from the network and IaaS provider.
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-425
     - key: e
       text: |
-        'This control is inherited from the network and IaaS provider.'
+        This control is inherited from the network and IaaS provider.
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-425
 
 - control_key: SC-7 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'The customer will be responsible for ensuring managed interfaces deny
+        The customer will be responsible for ensuring managed interfaces deny
         network traffic by default and allow network communications traffic
-        by exception (i.e. deny all, permit by exception).'
+        by exception (i.e. deny all, permit by exception).
 
-- control_key: SC-7 (7)
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-424
+
+- control_key: SC-7 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control enhancement addresses configuration settings in remote devices 
-        such as notebooks and not OpenShift itself.'
+        This control was withdrawn by NIST, and incorporated into SC-7(18).
+
+- control_key: SC-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        The customer will be responsible for implementing mechanisms to
+        ensure OpenShift nodes to not act as proxy or relay servers between
+        internal and external networks.
+
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-423
 
 - control_key: SC-7 (8)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'The customer will be responsible for implementing mechanisms to
-        ensure OpenShift nodes do not act as proxy or relay servers between
-        internal and external networks.'
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-477
+
+- control_key: SC-7 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-478
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-478
+
+- control_key: SC-7 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-482
+
+- control_key: SC-7 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - key: a
+      text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-482
 
 - control_key: SC-7 (12)
   standard_key: NIST-800-53
@@ -9138,9 +9341,14 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for implementing host-based
+        The customer will be responsible for implementing host-based
         boundary protection mechanisms. This is often through configuration of
-        local firewalld and SELinux policies.'
+        local firewalld and SELinux policies.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-483
 
 - control_key: SC-7 (13)
   standard_key: NIST-800-53
@@ -9148,41 +9356,185 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for ensuring that OpenShift is
+        The customer will be responsible for ensuring that OpenShift is
         isolated from other internal information system components by
         implementing physically separate subnetworks with managed
         interfaces to other components of the system. A successful control
         response will discuss the networking configuration to satisfy this
-        control.'
+        control.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-484
+
+- control_key: SC-7 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/GRPA-1352
+
+- control_key: SC-7 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-485
+
+- control_key: SC-7 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-486
+
+- control_key: SC-7 (17)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-487
 
 - control_key: SC-7 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-488
+
+- control_key: SC-7 (19)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control is inherited through organizational network services.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-7 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        This control is met when SELinux is enabled and configured properly
+        with namespaces being used as well.
+
+- control_key: SC-7 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-489
+
+- control_key: SC-7 (22)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-490
+
+- control_key: SC-7 (23)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-491
 
 - control_key: SC-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        'The customer will be responsible for configuring TLS for transmitted
-        information.'
+        The customer will be responsible for configuring TLS for transmitted
+        information.
 
 - control_key: SC-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        The customer will be responsible for implimenting cryptographic
+        mechanisms to prevent unauthorized disclosure of information and
+        detect changes to information during transmission. A successful
+        control response will detail how encryption is used for all
+        network communications that carry customer data.
+
+- control_key: SC-8 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for implimenting cryptographic
-        mechanisms to prevent unauthorized disclosure of information and
-        detect changes to information during transmission. A successful
-        control response will detail how encryption is used for all
-        network communications that carry customer data.'
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-492
+
+- control_key: SC-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-493
+
+- control_key: SC-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-494
+
+- control_key: SC-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-8.
 
 - control_key: SC-10
   standard_key: NIST-800-53
@@ -9190,10 +9542,37 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for terminating network connections
+        The customer will be responsible for terminating network connections
         at the end of the session or after no longer than 30 minutes of
         inactivity. A successful control response will document the technical
-        means on how this is established.'
+        means on how this is established.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-422
+
+- control_key: SC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-495
+
+- control_key: SC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-496
 
 - control_key: SC-12
   standard_key: NIST-800-53
@@ -9201,11 +9580,59 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation regarding how OpenShift generates, distributes, stores,
-        accesses, and desctructs, cryptographic keys is forthcoming. This
-        activity is being tracked in Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-24'
+        https://issues.redhat.com/browse/CMP-421
+
+- control_key: SC-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-497
+
+- control_key: SC-12 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-498
+
+- control_key: SC-12 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-499
+
+- control_key: SC-12 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-12.
+
+- control_key: SC-12 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-12.
 
 - control_key: SC-13
   standard_key: NIST-800-53
@@ -9213,11 +9640,51 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation regarding OpenShift's usage of cryptography
-        and applicability to Federal laws is forthcoming. This
-        activity is being tracked in Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-25'
+        https://issues.redhat.com/browse/CMP-420
+
+- control_key: SC-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-13.
+
+- control_key: SC-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-13.
+
+- control_key: SC-13 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-13.
+
+- control_key: SC-13 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-13.
+
+- control_key: SC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into AC-2,
+        AC-3, AC-5, AC-6, SI-3, SI-4, SI-5, SI-7, SI-10.
 
 - control_key: SC-15
   standard_key: NIST-800-53
@@ -9226,44 +9693,168 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'Examples of collaborative computing devices include networked white
+        Examples of collaborative computing devices include networked white
         boards, TV conference cameras, and remote video systems. This control
         is not applicable because Red Hat OpenShift Container Platform is not
-        a collaborative computing device.'
+        a collaborative computing device.
     - key: b
       text: |
-        'Examples of collaborative computing devices include networked white
+        Examples of collaborative computing devices include networked white
         boards, TV conference cameras, and remote video systems. This control
         is not applicable because Red Hat OpenShift Container Platform is not
-        a collaborative computing device.'
-    - key: b.1
-      text: |
-        'Examples of collaborative computing devices include networked white
-        boards, TV conference cameras, and remote video systems. This control
-        is not applicable because Red Hat OpenShift Container Platform is not
-        a collaborative computing device.'
+        a collaborative computing device.
+
+- control_key: SC-15 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-15 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-15 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-15 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-500
+
+- control_key: SC-16 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-501
+
+- control_key: SC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-419
 
 - control_key: SC-18
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
+    - key: a
+      text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-418
+    - key: b
+      text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-418
     - key: c
       text: |
-        'The customer will be responsible for authorizing, monitoring, and
+        The customer will be responsible for authorizing, monitoring, and
         controlling the use of mobile code within the system in accordance
-        with organizational policies defined in SC-18(a) and SC-18(b).'
+        with organizational policies defined in SC-18(a) and SC-18(b).
+
+- control_key: SC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-18 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-18 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-18 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-18 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 
 - control_key: SC-19
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
     - key: b
       text: |
-        'The customer will be responsible for authorizing, monitoring, and
+        The customer will be responsible for authorizing, monitoring, and
         controlling the use of VoIP within the system in accordance with
-        organizational policies defined in SC-19(a).'
+        organizational policies defined in SC-19(a).
 
 - control_key: SC-20
   standard_key: NIST-800-53
@@ -9272,40 +9863,47 @@ satisfies:
   narrative:
     - key: a
       text: |
-        'OpenShift has a built-in DNS so that services can be reached by
-        the service DNS as well as the service IP/port. OpenShift supports
-        split DNS by running SkyDNS on the master that answers DNS queries
-        for services.
-
         OpenShift administrators are responsible for providing
         origin authentication and integrity verification artifacts along
         with authoritative name resolution data returns in response. A
         successful control response will discuss the technical means used to
-        accomplish this
+        accomplish this.
 
-        Documentation on how to configure OpenShift DNS services to provide
-        data origin authentication and integrity veridication is forthcoming.
-        That activity is being tracked in Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-26'
+        https://issues.redhat.com/browse/CMP-417
     - key: b
       text: |
-        'OpenShift has a built-in DNS so that services can be reached by
-        the service DNS as well as the service IP/port. OpenShift supports
-        split DNS by running SkyDNS on the master that answers DNS queries
-        for services.
-
         OpenShift administrators are responsible for
         providing means to indicate the security status of child zones and
         enable verification of a chain of trust among parent and child domains.
         A successful control response will discuss the technical means used to
         accomplish this.
 
-        Documentation on how to configure this functionality within
-        OpenShift is forthcoming. This activity is being tracked in
-        Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-27'
+        https://issues.redhat.com/browse/CMP-417
+
+- control_key: SC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-20.
+
+- control_key: SC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-502
 
 - control_key: SC-21
   standard_key: NIST-800-53
@@ -9313,19 +9911,18 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'OpenShift has a built-in DNS so that services can be reached by
-        the service DNS as well as the service IP/port. OpenShift supports
-        split DNS by running SkyDNS on the master that answers DNS queries
-        for services.
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        OpenShift administrators are responsible for configuring DNSSEC. A successful
-        control response will document how DNSSEC is configured on applicable
-        endpoints.
+        https://issues.redhat.com/browse/CMP-410
 
-        Documentation on enabling DNSSEC within OpenShift is forthcoming. This
-        activity is being tracked in Jira:
-
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-28'
+- control_key: SC-21 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-21.
 
 - control_key: SC-22
   standard_key: NIST-800-53
@@ -9333,19 +9930,14 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'OpenShift has a built-in DNS so that services can be reached by
-        the service DNS as well as the service IP/port. OpenShift supports
-        split DNS by running SkyDNS on the master that answers DNS queries
-        for services.
-
         OpenShift administrators are responsible for ensuring
         services are fault-tolerant and implement internal/external role
         separation.
 
-        Documentation on creating fault-tolerant DNS configurations within
-        OpenShift is forthcoming. This activity is being tracked in Jira:
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-29'
+        https://issues.redhat.com/browse/CMP-409
 
 - control_key: SC-23
   standard_key: NIST-800-53
@@ -9353,7 +9945,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer will be responsible for guarding against, for
+        The customer will be responsible for guarding against, for
         example, man in the middle or session hijacking attacks for
         connections to the customer application, for example via the
         use of TLS. A successful control response will address the
@@ -9361,7 +9953,112 @@ satisfies:
         mechanisms used to protect against those attacks.
 
         OpenShift uses various TLS algorithms and ciphers to protect
-        the authenticity of communications sessions.'
+        the authenticity of communications sessions.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-408
+
+- control_key: SC-23 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-503
+
+- control_key: SC-23 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into AC-12 (1).
+
+- control_key: SC-23 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-504
+
+- control_key: SC-23 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-23 (3).
+
+- control_key: SC-23 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-505
+
+- control_key: SC-24
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-506
+
+- control_key: SC-25
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-507
+
+- control_key: SC-26
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-26 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-27
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-508
 
 - control_key: SC-28
   standard_key: NIST-800-53
@@ -9369,8 +10066,10 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'A successful control response will need to address the means by
-        which data at rest is protected.'
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-407
 
 - control_key: SC-28 (1)
   standard_key: NIST-800-53
@@ -9378,7 +10077,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'The customer is responsible for implementing cryptographic
+        The customer is responsible for implementing cryptographic
         mechanisms to prevent unauthorzed disclosure and modification of
         customer data. A successful control response will outline how
         cryptography is used to ensure integrity of data in rest and
@@ -9387,22 +10086,419 @@ satisfies:
         When running on Red Hat Enterprise Linux, full disk encryption
         is possible for data at rest on the OpenShift nodes. For data
         in transport, OpenShift uses cryptographic algorithms and ciphers to
-        protect confidentiality and integrity of data in transport.'
+        protect confidentiality and integrity of data in transport.
 
-- control_key: SC-39
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-509
+
+- control_key: SC-28 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-510
+
+- control_key: SC-29
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-511
+
+- control_key: SC-29 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-512
+
+- control_key: SC-30
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-513
+
+- control_key: SC-30 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-30 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-30 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-514
+
+- control_key: SC-30 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-515
+
+- control_key: SC-30 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'When OpenShift runs on Red Hat Enterprise Linux,
-        OpenShift maintains separate execution domains for each executing process by
-        assigning a private virtual address space to each process.
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        Documentation on ensuring this functionality is configured is forthcoming.
-        This activity is being tracked in Jira:
+        https://issues.redhat.com/browse/CMP-516
 
-        https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-30'
+- control_key: SC-31
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-517
+
+- control_key: SC-31 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-31 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-518
+
+- control_key: SC-31 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-32
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-33
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST, and incorporated into SC-8.
+
+- control_key: SC-34
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-34 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-34 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-34 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-35
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-36
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-36 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-523
+
+- control_key: SC-37
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-508
+
+- control_key: SC-37 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-38
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-39
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        The control is met when SELinux and namespaces are enabled and used.
+
+- control_key: SC-39 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-39 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-525
+
+- control_key: SC-40
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-40 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-40 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-40 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-40 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-41
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-42
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-42 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-42 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-42 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-43
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SC-44
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
 ##
 ## BEGINNING OF:
 ## SYSTEM AND INFORMATION INTEGRITY
