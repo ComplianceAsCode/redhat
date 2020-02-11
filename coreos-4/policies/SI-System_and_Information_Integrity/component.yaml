@@ -120,6 +120,28 @@
     - text: |
         This control was withdrawn by NIST, and incorporated into SI-2.
 
+- control_key: SI-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for SI-2(5) is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-527
+
+- control_key: SI-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for SI-2(6) is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-528
+
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
@@ -727,6 +749,37 @@
 
         https://issues.redhat.com/browse/CMP-542
 
+- control_key: SI-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of OpenShift.
+
+- control_key: SI-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for SI-6(2) is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-543
+
+- control_key: SI-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for SI-6(3) is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-544
+
 - control_key: SI-7
   standard_key: NIST-800-53
   covered_by: []
@@ -877,7 +930,7 @@
         A control response for SI-7(12) is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/CMP-548
+        https://issues.redhat.com/browse/CMP-552
 
 - control_key: SI-7 (13)
   standard_key: NIST-800-53
@@ -901,6 +954,28 @@
       text: |
         This control reflects organizational procedures/policies, and is not
         applicable to the configuration of CoreOS.
+
+- control_key: SI-7 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for SI-7(15) is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-553
+
+- control_key: SI-7 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response for SI-7(16) is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-554
 
 - control_key: SI-8
   standard_key: NIST-800-53
