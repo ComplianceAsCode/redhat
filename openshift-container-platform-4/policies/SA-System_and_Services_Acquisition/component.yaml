@@ -513,7 +513,7 @@
       text: |
         This control reflects organizational procedure/policy and is not
         applicable to OpenShift configuration.
-    - key: a
+    - key: b
       text: |
         This control reflects organizational procedure/policy and is not
         applicable to OpenShift configuration.
