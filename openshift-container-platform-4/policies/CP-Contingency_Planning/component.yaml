@@ -315,9 +315,10 @@
         applicable to the configuration of OpenShift.
     - key: b
       text: |
-        A complete control response is planned. Progress can be tracked via:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-294
+        https://issues.redhat.com/browse/CMP-294
     - key: c
       text: |
         This control reflects organizational procedures/policies, and is not
@@ -480,9 +481,10 @@
         user-level information occures, and how three backup copies are
         maintained.
 
-        A complete control response is planned. Progress can be tracked via:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-291
+        https://issues.redhat.com/browse/CMP-291
     - key: b
       text: |
         The customer will be responsible for conducting daily incremental and
@@ -494,9 +496,10 @@
         user-level information occures, and how three backup copies are
         maintained.
 
-        A complete control response is planned. Progress can be tracked via:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-291
+        https://issues.redhat.com/browse/CMP-291
     - key: c
       text: |
         The customer will be responsible for conducting daily incremental and
@@ -508,9 +511,10 @@
         backups of user-level information occures, and how three backup copies
         are maintained.
 
-        A complete control response is planned. Progress can be tracked via:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-291
+        https://issues.redhat.com/browse/CMP-291
     - key: d
       text: |
         The customer will be responsible for protecting the confidentiality,
@@ -521,9 +525,10 @@
         Backup is going to be verified and appropriate periodicity of the
         check.
 
-        A complete control response is planned. Progress can be tracked via:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-294
+        https://issues.redhat.com/browse/CMP-294
 
 - control_key: CP-9 (1)
   standard_key: NIST-800-53
@@ -531,9 +536,10 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked via:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-292
+        https://issues.redhat.com/browse/CMP-292
 
 - control_key: CP-9 (2)
   standard_key: NIST-800-53
@@ -541,9 +547,10 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked via:
+        To assist with this organizational control, documentation is being
+        planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-293
+        https://issues.redhat.com/browse/CMP-293
 
 - control_key: CP-9 (3)
   standard_key: NIST-800-53
@@ -660,7 +667,7 @@
     - text: |
         A complete control response is planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-296
+        https://issues.redhat.com/browse/CMP-296
 
 - control_key: CP-12
   standard_key: NIST-800-53
@@ -670,7 +677,7 @@
     - text: |
         A complete control response is planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-297
+        https://issues.redhat.com/browse/CMP-297
 
 - control_key: CP-13
   standard_key: NIST-800-53
@@ -687,4 +694,4 @@
 
         A complete control response is planned. Progress can be tracked via:
 
-        https://jira.coreos.com/browse/CMP-298
+        https://issues.redhat.com/browse/CMP-298
