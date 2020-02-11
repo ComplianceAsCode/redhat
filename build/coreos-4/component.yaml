@@ -5593,20 +5593,18 @@ satisfies:
 - control_key: MA-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/994
+        https://issues.redhat.com/browse/CMP-341
     - key: b
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/994
+        https://issues.redhat.com/browse/CMP-341
 
 - control_key: MA-3
   standard_key: NIST-800-53
@@ -5677,50 +5675,44 @@ satisfies:
 - control_key: MA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/998
+        https://issues.redhat.com/browse/CMP-343
     - key: b
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/998
+        https://issues.redhat.com/browse/CMP-343
     - key: c
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/998
+        https://issues.redhat.com/browse/CMP-343
     - key: d
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/998
+        https://issues.redhat.com/browse/CMP-343
     - key: e
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/998
+        https://issues.redhat.com/browse/CMP-343
 
 - control_key: MA-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/999
+        https://issues.redhat.com/browse/CMP-344
     - key: b
       text: |
         This control reflects organizational procedures/policies, and is not
@@ -5738,7 +5730,7 @@ satisfies:
 - control_key: MA-4 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - key: a
       text: |
@@ -5746,10 +5738,9 @@ satisfies:
         applicable to the configuration of CoreOS.
     - key: b
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1001
+        https://issues.redhat.com/browse/CMP-371
 
 - control_key: MA-4 (4)
   standard_key: NIST-800-53
@@ -5758,16 +5749,14 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1002
+        https://issues.redhat.com/browse/CMP-372
     - key: b
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1002
+        https://issues.redhat.com/browse/CMP-345
 
 - control_key: MA-4 (5)
   standard_key: NIST-800-53
@@ -5791,21 +5780,19 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1004
+        https://issues.redhat.com/browse/CMP-346
 
 - control_key: MA-4 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1005
+        https://issues.redhat.com/browse/CMP-347
 
 - control_key: MA-5
   standard_key: NIST-800-53
