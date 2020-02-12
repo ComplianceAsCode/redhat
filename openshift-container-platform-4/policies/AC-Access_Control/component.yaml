@@ -241,7 +241,7 @@
 
        To configure an Identity Provider (IdP), refer to the "Authentication" chapter of the OpenShift Container Platform documentation at https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
 
-       For active alerting on auditable events then then
+       For active alerting on auditable events then the
        OpneShift audit log system (https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-audit-log.html)
        would need to be enabled
        and the OpenShift Elasticsearch, Kibarana,
