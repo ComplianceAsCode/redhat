@@ -232,23 +232,17 @@
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |-
-       This functionality is the responsibility of third
-       party software such as Red Hat Identity Management (Red Hat IdM),
+       Enforcement of organization-defined circumstances and/or usage
+       conditions is the responsibility of third party identity
+       management software such as Red Hat Identity Management (Red Hat IdM),
        Active Directory (MSAD), LDAP, etc.
 
-       To configure an Identity Provider (IdP), refer to the "Authentication" chapter of the OpenShift Container Platform documentation at https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
-
-       For active alerting on auditable events then the
-       OpenShift audit log system (https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-audit-log.html)
-       would need to be enabled
-       and the OpenShift Elasticsearch, Kibarana,
-       and FluentD (EFK) stack configured to alert on the
-       organizational specified audit events, or a third party
-       tool configured to consume the OpenShift audit log and
-       alert on the organizational defined audit events.
+       To configure an Identity Provider (IdP), refer to the "Authentication"
+       chapter of the OpenShift Container Platform documentation at
+       https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
 
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
