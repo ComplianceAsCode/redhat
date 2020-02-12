@@ -19,6 +19,7 @@ components:
   - ./policies/MP-Media_Protection
   - ./policies/PE-Physical_and_Environmental_Protection
   - ./policies/PL-Planning
+  - ./policies/PM-Program_Management
   - ./policies/PS-Personnel_Security
   - ./policies/RA-Risk_Assessment
   - ./policies/SA-System_and_Services_Acquisition
