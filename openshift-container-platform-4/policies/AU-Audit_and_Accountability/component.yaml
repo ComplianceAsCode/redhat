@@ -284,7 +284,6 @@
         would fall to third party software such as Splunk, Elastic, etc.
         To configure an IdP, see:
         https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
-        
 - control_key: AU-6 (7)
   standard_key: NIST-800-53
   covered_by: []
