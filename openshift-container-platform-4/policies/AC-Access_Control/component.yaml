@@ -708,7 +708,7 @@
       text: |
         Separation of duties is an organizational process outside the
         scope of OpenShift configuration.
-        
+
         However, to aide in such processes, note that OpenShift provides the capability to
         implement Role-based Access Control (RBAC) which determine whether a
         user is allowed to perform a given action. Documentation on the OpenShift RBAC
@@ -719,7 +719,7 @@
         Documentation of the seperation of duties of individuals
         is an organizational control outside the scope of OpenShift
         configuration.
-        
+
         However, to aide in such processes, note that OpenShift provides the capability to
         implement Role-based access control (RBAC) objects which determine whether a
         user is allowed to perform a given action. Documentation on the OpenShift RBAC
@@ -730,7 +730,7 @@
         Organizational processes which define information system access
         authorizations to support separation of duties is outside
         the scope of OpenShift configuration.
-        
+
         However, to aide in such processes, note that OpenShift provides the capability to
         implement Role-based access control (RBAC) objects which determine whether a
         user is allowed to perform a given action. Documentation on the OpenShift RBAC
