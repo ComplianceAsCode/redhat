@@ -20,7 +20,27 @@
         Organizational development, documentation, and dissemination to
         organization-defined personnel or roles a risk assessment policy
         and procedures is outside the scope of CoreOS configuration.
+    - key: a.1
+      text: |
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of CoreOS configuration.
+    - key: a.2
+      text: |
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of CoreOS configuration.
     - key: b
+      text: |
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        CoreOS configuration.
+    - key: b.1
+      text: |
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        CoreOS configuration.
+    - key: b.2
       text: |
         Organizational review and updates to the risk assessment policy
         and risk assessment procedures is outside the scope of
@@ -107,7 +127,7 @@
       text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1018
+        https://issues.redhat.com/browse/CMP-352
     - key: c
       text: |
         This control reflects organizational procedures/policies, and is not
@@ -116,7 +136,7 @@
       text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1018
+        https://issues.redhat.com/browse/CMP-352
     - key: e
       text: |
         Organizational processes to share information obtained from the
@@ -134,7 +154,7 @@
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1019
+        https://issues.redhat.com/browse/CMP-353
 
 - control_key: RA-5 (2)
   standard_key: NIST-800-53
@@ -162,7 +182,7 @@
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1022
+        https://issues.redhat.com/browse/CMP-354
 
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
@@ -172,7 +192,7 @@
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1023
+        https://issues.redhat.com/browse/CMP-355
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
@@ -182,7 +202,7 @@
     - text: |
         A control response is planned. Progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1024
+        https://issues.redhat.com/browse/CMP-356
 
 - control_key: RA-5 (7)
   standard_key: NIST-800-53

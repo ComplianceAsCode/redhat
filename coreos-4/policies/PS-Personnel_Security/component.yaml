@@ -20,10 +20,30 @@
         Organizational development, documentation, and dissemination of
         a personnel security policy to organization-defined personnel
         is outside the scope of CoreOS configuration.
+    - key: a.1
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of CoreOS configuration.
+    - key: a.2
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of CoreOS configuration.
     - key: b
       text: |
         Organizational reviews and updates to the personnel security policy
         and personnel security procedures at an organization-defined frequency
+        is outside the scope of CoreOS configuration.
+    - key: b.1
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of CoreOS configuration.
+    - key: b.2
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
         is outside the scope of CoreOS configuration.
 
 - control_key: PS-2
@@ -225,6 +245,16 @@
         organization-defined frequency are outside the scope of
         CoreOS configuration.
     - key: c
+      text: |
+        Organizational processes that ensure individuals requiring access to
+        organizational information and information systems sign and re-sign
+        access agreements are outside the scope of CoreOS configuration.
+    - key: c.1
+      text: |
+        Organizational processes that ensure individuals requiring access to
+        organizational information and information systems sign and re-sign
+        access agreements are outside the scope of CoreOS configuration.
+    - key: c.2
       text: |
         Organizational processes that ensure individuals requiring access to
         organizational information and information systems sign and re-sign
