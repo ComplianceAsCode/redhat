@@ -223,7 +223,6 @@
         the data to a SIEM, OpenShift does not provide automated mechanisms
         (e.g. email, text messages) after system events. This functionality
         would fall to third party software such as Splunk, Elastic, etc.
-        
         To configure an IdP, see:
         https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
