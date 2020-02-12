@@ -239,7 +239,7 @@
        party software such as Red Hat Identity Management (Red Hat IdM),
        Active Directory (MSAD), LDAP, etc.
 
-       To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+       To configure an Identity Provider (IdP), refer to the "Authentication" chapter of the OpenShift Container Platform documentation at https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
 
        For active alerting on auditable events then then
        OpneShift audit log system (https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-audit-log.html)
