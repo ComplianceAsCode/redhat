@@ -128,7 +128,7 @@
 - control_key: SC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |
         The customer is responsible for preventing unauthorized and
@@ -151,11 +151,12 @@
 - control_key: SC-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: partial
   narrative:
     - text: |
-        This control is met when SELinux is enabled and enforced and through
-        the use of SELinux MCS Levels.
+        The customer is responsible for preventing the unauthorized transfer of
+        shared resources that may be beyond the controls of OpenShift.  Storage
+        choices and procedures related to persistent volumes must be addressed.'
 
 - control_key: SC-5
   standard_key: NIST-800-53
