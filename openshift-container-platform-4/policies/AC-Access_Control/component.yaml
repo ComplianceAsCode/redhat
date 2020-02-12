@@ -235,7 +235,7 @@
   implementation_status: complete
   narrative:
     - text: |-
-       This functionality would fall to third
+       This functionality is the responsibility of third
        party software such as an Identity Provider (IdP),
        Active Directory (MSAD), LDAP, etc.
 
