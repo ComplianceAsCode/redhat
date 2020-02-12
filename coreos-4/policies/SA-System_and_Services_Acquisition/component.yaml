@@ -21,7 +21,29 @@
         organization-defined personnel or roles a system and services
         acquisition policy is outside the scope of
         CoreOS configuration.
+    - key: a.1
+      text: |
+        Organizational processes to develop, document, and disseminate to
+        organization-defined personnel or roles a system and services
+        acquisition policy is outside the scope of
+        CoreOS configuration.
+    - key: a.2
+      text: |
+        Organizational processes to develop, document, and disseminate to
+        organization-defined personnel or roles a system and services
+        acquisition policy is outside the scope of
+        CoreOS configuration.
     - key: b
+      text: |
+        Organizational review and updates to the current system and services
+        acquisition policy and procedures at an organization-defined frequency
+        is outside the scope of CoreOS configuration.
+    - key: b.1
+      text: |
+        Organizational review and updates to the current system and services
+        acquisition policy and procedures at an organization-defined frequency
+        is outside the scope of CoreOS configuration.
+    - key: b.2
       text: |
         Organizational review and updates to the current system and services
         acquisition policy and procedures at an organization-defined frequency
@@ -144,7 +166,7 @@
         A control response to SA-4 (1) is planned. Progress
         can be tracked at:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1027
+        https://issues.redhat.com/browse/CMP-360
 
 ##
 ## Developers note on SA-4 (2):
@@ -169,7 +191,7 @@
         A control response to SA-4 (2) is planned. Progress
         can be tracked at:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1030
+        https://issues.redhat.com/browse/CMP-361
 
 ##
 ## Developers note on SA-4 (3):
@@ -188,7 +210,7 @@
         A control response to SA-4 (3) is planned. Progress
         can be tracked at:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1031
+        https://issues.redhat.com/browse/CMP-362
 
 - control_key: SA-4 (4)
   standard_key: NIST-800-53
@@ -211,12 +233,18 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A control response to SA-4(5) is planned. Progress
+    - key: a
+      text: |
+        A control response to SA-4(5)(a) is planned. Progress
         can be tracked at:
 
-        http://atopathways.redhatgov.io/product-documents/coreos4/nist-800-53/sa/#SA-4%20(4)
+        https://issues.redhat.com/browse/CMP-363
+    - key: b
+      text: |
+        A control response to SA-4(5)(b) is planned. Progress
+        can be tracked at:
 
+        https://issues.redhat.com/browse/CMP-363
 
 ##
 ## Developers note on SA-4 (6):
@@ -230,7 +258,7 @@
 - control_key: SA-4 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unsatisfied
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -266,8 +294,18 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'A control response to SA-4 (7) is planned.'
+    - key: a
+      text: |
+        A control response to SA-4(7)(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-364
+    - key: b
+      text: |
+        A control response to SA-4(7)(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-364
 
 ##
 ## Developers note on SA-4 (8):
@@ -280,7 +318,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (8) is planned.'
+        A control response to SA-4(8) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-365
 
 ##
 ## Developers note on SA-4 (9):
@@ -295,7 +336,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (9) is planned.'
+        A control response to SA-4(9) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-366
 
 - control_key: SA-4 (10)
   standard_key: NIST-800-53
@@ -303,17 +347,72 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        A control response to SA-5(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+    - key: a.1
+      text: |
+        A control response to SA-5(a)(1) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+    - key: a.2
+      text: |
+        A control response to SA-5(a)(2) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+    - key: a.3
+      text: |
+        A control response to SA-5(a)(3) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+    - key: b
+      text: |
+        A control response to SA-5(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+    - key: b.1
+      text: |
+        A control response to SA-5(b)(1) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+    - key: b.2
+      text: |
+        A control response to SA-5(b)(2) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+    - key: b.3
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: d
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: e
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-5 (1)
   standard_key: NIST-800-53
@@ -321,8 +420,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (1).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (1).
 
 - control_key: SA-5 (2)
   standard_key: NIST-800-53
@@ -330,8 +429,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (2).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (2).
 
 - control_key: SA-5 (3)
   standard_key: NIST-800-53
@@ -339,8 +438,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (3).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (3).
 
 - control_key: SA-5 (4)
   standard_key: NIST-800-53
@@ -348,8 +447,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (4).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (4).
 
 - control_key: SA-5 (5)
   standard_key: NIST-800-53
@@ -357,8 +456,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (5).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (5).
 
 - control_key: SA-6
   standard_key: NIST-800-53
@@ -366,8 +465,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-10 and SI-7.'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-10 and SI-7.
 
 - control_key: SA-7
   standard_key: NIST-800-53
@@ -375,8 +474,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-11 and SI-7.'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-11 and SI-7.
 
 - control_key: SA-8
   standard_key: NIST-800-53
@@ -384,26 +483,40 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-9
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-9 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-9 (2)
   standard_key: NIST-800-53
@@ -411,8 +524,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-9 (3)
   standard_key: NIST-800-53
@@ -420,8 +533,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-9 (4)
   standard_key: NIST-800-53
@@ -429,17 +542,19 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 - control_key: SA-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        A control response to SA-9(5) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-368
 
 ##
 ## Developers note on SA-10
@@ -458,32 +573,47 @@
     ## will need to be addressed.
     - key: a
       text: |
-        'A control response to SA-10 (a) is planned.'
+        A control response to SA-10(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-369
 
     ## A successful control response will need to address the processes
     ## and mechanisms involved in documenting, managing, and controlling the
     ## integrity of chances.
     - key: b
       text: |
-        'A control response to SA-10 (b) is planned.'
+        A control response to SA-10(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-369
 
     ## A successful control response will need to address the approval process
     ## and safeguards in place to ensure only approved changes are implemented.
     - key: c
       text: |
-        'A control response to SA-10 (c) is planned.'
+        A control response to SA-10(c) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-369
 
     ## A successful control response will need to discuss the process for
     ## documentation.
     - key: d
       text: |
-        'A control response to SA-10 (d) is planned.'
+        A control response to SA-10(d) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-369
 
     ## A successful control response will need to discuss the process
     ## and tools used for tracking, resolution, and reporting.
     - key: e
       text: |
-        'A control response to SA-10 (e) is planned.'
+        A control response to SA-10(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-369
 
 ##
 ## Developers note on SA-10 (1)
@@ -498,7 +628,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (1) is planned.'
+        A control response to SA-10(1) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-373
 
 - control_key: SA-10 (2)
   standard_key: NIST-800-53
@@ -506,8 +639,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 ##
 ## Developers note on SA-10 (3)
@@ -520,10 +653,11 @@
 - control_key: SA-10 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'A control response to SA-10 (1) is planned.'
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
 
 ##
 ## Developers note on SA-10 (4)
@@ -536,7 +670,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (4) is planned.'
+        A control response to SA-10 (4) is planned.
 
 ##
 ## Developers note on SA-10 (4)
@@ -548,7 +682,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (5) is planned.'
+        A control response to SA-10 (6) is planned.
 
 ##
 ## Developers note on SA-10 (4)
@@ -560,4 +694,808 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (6) is planned.'
+        A control response to SA-10 (6) is planned.
+
+- control_key: SA-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-11(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-374
+    - key: b
+      text: |
+        A control response to SA-11(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-374
+    - key: c
+      text: |
+        A control response to SA-11(c) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-374
+    - key: d
+      text: |
+        A control response to SA-11(d) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-374
+    - key: e
+      text: |
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-374
+
+- control_key: SA-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-375
+
+- control_key: SA-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-376
+
+- control_key: SA-11 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-11(3)(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-377
+    - key: b
+      text: |
+        A control response to SA-11(3)(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-377
+
+- control_key: SA-11 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-11(4) is planned.
+
+- control_key: SA-11 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-378
+
+- control_key: SA-11 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-379
+
+- control_key: SA-11 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-380
+
+- control_key: SA-11 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-381
+
+- control_key: SA-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-12 is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-382
+
+- control_key: SA-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-12(1).
+
+- control_key: SA-12 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-12(13).
+
+- control_key: SA-12 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-12(1).
+
+- control_key: SA-12 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-12(10) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-463
+
+- control_key: SA-12 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-12 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-20.
+
+- control_key: SA-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-15(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-383
+    - key: a.1
+      text: |
+        A control response to SA-15(a)(1) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-383
+    - key: a.2
+      text: |
+        A control response to SA-15(a)(2) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-383
+    - key: a.3
+      text: |
+        A control response to SA-15(a)(3) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-383
+    - key: a.4
+      text: |
+        A control response to SA-15(a)(4) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-382
+    - key: b
+      text: |
+        A control response to SA-15(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-382
+
+- control_key: SA-15 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-15(1)(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-384
+    - key: b
+      text: |
+        A control response to SA-15(1)(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-384
+
+- control_key: SA-15 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-15(2) is planned.
+
+- control_key: SA-15 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+         A control response to SA-15(3) is planned.
+
+- control_key: SA-15 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-15 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-15(5) is planned.
+
+- control_key: SA-15 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-15(6) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-385
+
+- control_key: SA-15 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-15(7)(a) is planned.
+    - key: b
+      text: |
+        A control response to SA-15(7)(b) is planned.
+    - key: c
+      text: |
+        A control response to SA-15(7)(c) is planned.
+    - key: d
+      text: |
+        A control response to SA-15(7)(d) is planned.
+
+- control_key: SA-15 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-15(8) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-386
+
+- control_key: SA-15 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-15 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-15(10) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-387
+
+- control_key: SA-15 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-15(11) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-388
+
+- control_key: SA-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-16 is planned.
+
+- control_key: SA-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-17(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-389
+    - key: b
+      text: |
+        A control response to SA-17(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-389
+    - key: c
+      text: |
+        A control response to SA-17(c) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-389
+
+- control_key: SA-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-17(2)(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-449
+    - key: b
+      text: |
+        A control response to SA-17(2)(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-449
+
+- control_key: SA-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-17(3)(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-450
+    - key: b
+      text: |
+        A control response to SA-17(3)(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-450
+    - key: c
+      text: |
+        A control response to SA-17(3)(c) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-450
+    - key: d
+      text: |
+        A control response to SA-17(3)(d) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-450
+    - key: e
+      text: |
+        A control response to SA-17(3)(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-450
+
+- control_key: SA-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-17(4)(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-451
+    - key: b
+      text: |
+        A control response to SA-17(4)(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-451
+    - key: c
+      text: |
+        A control response to SA-17(4)(c) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-451
+    - key: d
+      text: |
+        A control response to SA-17(4)(d) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-451
+    - key: e
+      text: |
+        A control response to SA-17(4)(e) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-451
+
+- control_key: SA-17 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-17(5)(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-452
+    - key: b
+      text: |
+        A control response to SA-17(5)(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-452
+
+- control_key: SA-17 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-17(6) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-453
+
+- control_key: SA-17 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-17(7) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-454
+
+- control_key: SA-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-18 is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-455
+
+- control_key: SA-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-18(1) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-456
+
+- control_key: SA-18 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response to SA-18(2) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-457
+
+- control_key: SA-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-19 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-19 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-19 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-19 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-21(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-460
+    - key: b
+      text: |
+        A control response to SA-21(b) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-460
+
+- control_key: SA-21 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-21 is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-464
+
+- control_key: SA-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response to SA-22(a) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-465
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.
+
+- control_key: SA-22 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to CoreOS configuration.

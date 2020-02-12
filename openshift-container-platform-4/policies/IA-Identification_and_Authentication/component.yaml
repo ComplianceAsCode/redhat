@@ -27,7 +27,7 @@
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
         IA-2 is partially satisfied by OpenShift configuration. Sub-
@@ -35,16 +35,21 @@
         by OpenShift configuration to prevent un-authorized access
         of console via network. All other subcontrols are out of
         scope.
+        A control response is planned. Engineering progress can be tracked via:
+        https://issues.redhat.com/browse/CMP-299
 
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
         IA-2(1) is an organizational control out of scope for OpenShift configuration.
         Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-300
 
 - control_key: IA-2 (2)
   standard_key: NIST-800-53
@@ -55,6 +60,9 @@
         IA-2(2) is an organizational control out of scope for OpenShift configuration.
         Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-301
 
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
@@ -65,6 +73,9 @@
         IA-2(3) is an organizational control out of scope for OpenShift configuration.
         Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-302
 
 - control_key: IA-2 (4)
   standard_key: NIST-800-53
@@ -75,6 +86,8 @@
         IA-2(4) is an organizational control out of scope for OpenShift configuration.
         Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
+        A control response is planned. Engineering progress can be tracked via:
+        https://issues.redhat.com/browse/CMP-303
 
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
@@ -85,6 +98,8 @@
         IA-2(5) is an organizational control out of scope for OpenShift configuration. 
         An Individual authenticator requirement when a group authenticator is
         implemented is not provided by OpenShift configuration.
+        A control response is planned. Engineering progress can be tracked via:
+        https://issues.redhat.com/browse/CMP-314
 
 - control_key: IA-2 (6)
   standard_key: NIST-800-53
@@ -95,6 +110,9 @@
         IA-2(6) is an organizational control out of scope for 
         OpenShift configuration. Separate device multifactor authentication policy and 
         management is not performed by OpenShift.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-315
 
 - control_key: IA-2 (7)
   standard_key: NIST-800-53
@@ -105,6 +123,9 @@
         IA-2(7) is an organizational control out of scope for 
         OpenShift configuration. Multifactor authentication policy and 
         management is not performed by OpenShift.
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-316
 
 - control_key: IA-2 (8)
   standard_key: NIST-800-53
@@ -118,6 +139,9 @@
         modern TLS is supported by OpenShift.
         Please see the specific identity provider documentation:
         https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-573
 
 - control_key: IA-2 (9)
   standard_key: NIST-800-53
@@ -130,7 +154,10 @@
         authentication. 
         Please see the specific identity provider documentation:
         https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
-        
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-574
+
 - control_key: IA-2 (10)
   standard_key: NIST-800-53
   covered_by: []
@@ -170,6 +197,10 @@
         such as Identity Provider (IdP), Active Directory (MSAD), LDAP,
         et al.
 
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-317
+
 - control_key: IA-2 (13)
   standard_key: NIST-800-53
   covered_by: []
@@ -185,15 +216,12 @@
   implementation_status: complete
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/963
+        A control response for IA-3 is planned.
 
 - control_key: IA-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
         OpenShift maintains an internal private network on the deployed 
@@ -207,6 +235,9 @@
 
         https://github.com/ComplianceAsCode/redhat/issues/964
         
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-318
 
 - control_key: IA-3 (2)
   standard_key: NIST-800-53
@@ -219,6 +250,7 @@
 - control_key: IA-3 (3)
   standard_key: NIST-800-53
   covered_by: []
+
   implementation_status: not applicable
   narrative:
     - key: a
@@ -227,17 +259,17 @@
         satisfied by organizational policies and procedures.
         b) Out of scope for OpenShift configuration, this control is
         satisfied by organizational policies and procedures.
-        
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/965
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-319
+        
     - key: b
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/965
+        https://issues.redhat.com/browse/CMP-319
+        
 - control_key: IA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -253,8 +285,10 @@
         
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
+        
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/966
+        https://issues.redhat.com/browse/CMP-320
 
 - control_key: IA-4
   standard_key: NIST-800-53
@@ -279,8 +313,9 @@
         outside the scope of OpenShift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/967
+        https://issues.redhat.com/browse/CMP-321
     - key: e
       text: |
         This is an organizational procedural requirement
@@ -288,8 +323,9 @@
 
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/967
+        https://issues.redhat.com/browse/CMP-321
 
 - control_key: IA-4 (1)
   standard_key: NIST-800-53
@@ -302,8 +338,9 @@
         configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/968
+        https://issues.redhat.com/browse/CMP-323
 
 - control_key: IA-4 (2)
   standard_key: NIST-800-53
@@ -348,7 +385,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/970
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-324
 
 - control_key: IA-4 (6)
   standard_key: NIST-800-53
@@ -375,7 +414,7 @@
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - key: a
       text: |
@@ -389,7 +428,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/971
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-325
     - key: c
       text: |
         Ensuring authenticator entropy is outside the scope of
@@ -397,7 +438,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/971
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-325
     - key: d
       text: |
         Organizational procedure for initial distribution
@@ -411,7 +454,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/971
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-325
     - key: f
       text: |
         Life-cycle definitions of authenticator use is outside the
@@ -419,7 +464,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/971
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-325
     - key: g
       text: |
         Refreshing and/or changing authenticators is outside the 
@@ -427,7 +474,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/971
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-325
     - key: h
       text: |
         Safeguarding authenticator from unauthorized disclosure and
@@ -435,7 +484,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/971
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-325
     - key: i
       text: |
         Requirements surrounding the specific security safeguards
@@ -463,7 +514,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/972
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-326
     - key: c
       text: |
         Storage and transmission of passwords that are crypto-
@@ -471,7 +524,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/972
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-326
     - key: d
       text: |
         Password aging and lifetime restriction enforcement is a 
@@ -480,7 +535,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/972
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-326
     - key: e
       text: |
         Password reuse prohibition is an organizational procedural
@@ -488,7 +545,9 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/972
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-326
     - key: f
       text: |
         Temporary password use requiring immediate change to permanent
@@ -497,7 +556,10 @@
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
-        https://github.com/ComplianceAsCode/redhat/issues/972
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-326
+
 - control_key: IA-5 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -505,28 +567,24 @@
   narrative:
     - key: a
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/973
+        https://issues.redhat.com/browse/CMP-327
     - key: b
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/973
+        https://issues.redhat.com/browse/CMP-327
     - key: c
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/973
+        https://issues.redhat.com/browse/CMP-327
     - key: d
       text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/973
+        https://issues.redhat.com/browse/CMP-327
 
 - control_key: IA-5 (3)
   standard_key: NIST-800-53
@@ -547,10 +605,9 @@
   implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/974
+        https://issues.redhat.com/browse/CMP-328
 
 - control_key: IA-5 (5)
   standard_key: NIST-800-53
@@ -576,10 +633,7 @@
   implementation_status: complete
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/977
+        A control response for IA-5(7) is planned.
 
 - control_key: IA-5 (8)
   standard_key: NIST-800-53
@@ -605,13 +659,12 @@
 - control_key: IA-5 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/978
+        https://issues.redhat.com/browse/CMP-330
 
 - control_key: IA-5 (11)
   standard_key: NIST-800-53
@@ -636,13 +689,12 @@
 - control_key: IA-5 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/979
+        https://issues.redhat.com/browse/CMP-331
 
 - control_key: IA-5 (14)
   standard_key: NIST-800-53
@@ -650,43 +702,39 @@
   implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/980
+        https://issues.redhat.com/browse/CMP-331
 
 - control_key: IA-5 (15)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/980
+        https://issues.redhat.com/browse/CMP-332
 
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/981
+        https://issues.redhat.com/browse/CMP-333
 
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/982
+        https://issues.redhat.com/browse/CMP-334
 
 - control_key: IA-8
   standard_key: NIST-800-53
@@ -694,10 +742,7 @@
   implementation_status: complete
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
-
-        https://github.com/ComplianceAsCode/redhat/issues/983
+        A control response for IA-8 is planned.
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
@@ -705,10 +750,9 @@
   implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1077
+        https://issues.redhat.com/browse/CMP-370
 
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
@@ -737,10 +781,9 @@
   implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/1079
+        https://issues.redhat.com/browse/CMP-335
 
 - control_key: IA-8 (5)
   standard_key: NIST-800-53
@@ -748,10 +791,9 @@
   implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/985
+        https://issues.redhat.com/browse/CMP-336
 
 - control_key: IA-9
   standard_key: NIST-800-53
@@ -759,10 +801,9 @@
   implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/986
+        https://issues.redhat.com/browse/CMP-337
 
 - control_key: IA-9 (1)
   standard_key: NIST-800-53
@@ -770,10 +811,9 @@
   implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/987
+        https://issues.redhat.com/browse/CMP-338
 
 - control_key: IA-9 (2)
   standard_key: NIST-800-53
@@ -781,10 +821,9 @@
   implementation_status: partial
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/988
+        https://issues.redhat.com/browse/CMP-339
 
 - control_key: IA-10
   standard_key: NIST-800-53
@@ -803,7 +842,6 @@
   implementation_status: planned
   narrative:
     - text: |
-        Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
+        A control response is planned. Engineering progress can be tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/989
+        https://issues.redhat.com/browse/CMP-340
