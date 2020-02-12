@@ -3730,7 +3730,7 @@ satisfies:
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/921
+        https://issues.redhat.com/browse/CMP-286
 
 - control_key: CM-11 (2)
   standard_key: NIST-800-53
@@ -3741,7 +3741,7 @@ satisfies:
         A complete control response is planned. Progress can be
         tracked via:
 
-        https://github.com/ComplianceAsCode/redhat/issues/922
+        https://issues.redhat.com/browse/CMP-287
 ##
 ## BEGINNING OF:
 ## CONTINGENCY PLANNING
