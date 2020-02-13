@@ -95,7 +95,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2(5) is an organizational control out of scope for OpenShift configuration. 
+        IA-2(5) is an organizational control out of scope for OpenShift configuration.
         An Individual authenticator requirement when a group authenticator is
         implemented is not provided by OpenShift configuration.
         A control response is planned. Engineering progress can be tracked via:
