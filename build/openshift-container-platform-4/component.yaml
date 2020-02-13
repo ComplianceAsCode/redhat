@@ -4765,7 +4765,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        Uniquely identifying each individual is an 
+        Uniquely identifying each individual is an
         organizational procedural requirement and is
         outside the scope of OpenShift configuration.
 
