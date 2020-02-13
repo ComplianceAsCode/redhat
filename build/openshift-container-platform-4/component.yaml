@@ -4665,14 +4665,13 @@ satisfies:
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
-        
 - control_key: IA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        While OpenShift does create an internal private network within 
+        While OpenShift does create an internal private network within
         the cluster infrastructure, no devices are created that would 
         fall into the domain of this control. The cluster nodes that 
         OpenShift is installed on, would require a non-OpenShift
