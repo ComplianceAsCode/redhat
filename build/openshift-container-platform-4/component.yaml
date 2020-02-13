@@ -4530,7 +4530,7 @@ satisfies:
   narrative:
     - text: |
         IA-(8)OpenShift offers support for replay-resistant authentication
-        mechanisms, both for OpenShift console and 3rd party 
+        mechanisms, both for OpenShift console and 3rd party
         authentication. Third party identity providers configured for
         modern TLS is supported by OpenShift.
         Please see the specific identity provider documentation:
@@ -4560,7 +4560,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2 (10) is an organizational control outside the scope of 
+        IA-2 (10) is an organizational control outside the scope of
         OpenShift configuration. Single Sign On (SSO) use and manage-
         ment is determined by the organization. OpenShift documentation
         regarding SSO can be found at:
