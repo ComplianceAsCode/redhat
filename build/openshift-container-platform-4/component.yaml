@@ -4441,7 +4441,7 @@ satisfies:
   narrative:
     - text: |
         IA-2(1) is an organizational control out of scope for OpenShift configuration.
-        Multifactor authentication is not a service that OpenShift configuration
+        Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
         A control response is planned. Engineering progress can be tracked via:
 
@@ -4454,7 +4454,7 @@ satisfies:
   narrative:
     - text: |
         IA-2(2) is an organizational control out of scope for OpenShift configuration.
-        Multifactor authentication is not a service that OpenShift configuration
+        Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
         A control response is planned. Engineering progress can be tracked via:
 
@@ -4467,7 +4467,7 @@ satisfies:
   narrative:
     - text: |
         IA-2(3) is an organizational control out of scope for OpenShift configuration.
-        Multifactor authentication is not a service that OpenShift configuration
+        Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
         A control response is planned. Engineering progress can be tracked via:
 
@@ -4480,7 +4480,7 @@ satisfies:
   narrative:
     - text: |
         IA-2(4) is an organizational control out of scope for OpenShift configuration.
-        Multifactor authentication is not a service that OpenShift configuration
+        Multifactor authentication is not a service that OpenShift configuration 
         provides to an organization.
         A control response is planned. Engineering progress can be tracked via:
         https://issues.redhat.com/browse/CMP-303
@@ -4491,7 +4491,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2(5) is an organizational control out of scope for OpenShift configuration.
+        IA-2(5) is an organizational control out of scope for OpenShift configuration. 
         An Individual authenticator requirement when a group authenticator is
         implemented is not provided by OpenShift configuration.
         A control response is planned. Engineering progress can be tracked via:
@@ -4503,7 +4503,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2(6) is an organizational control out of scope for
+        IA-2(6) is an organizational control out of scope for 
         OpenShift configuration. Separate device multifactor authentication policy and 
         management is not performed by OpenShift.
         A control response is planned. Engineering progress can be tracked via:
@@ -4516,7 +4516,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2(7) is an organizational control out of scope for
+        IA-2(7) is an organizational control out of scope for 
         OpenShift configuration. Multifactor authentication policy and 
         management is not performed by OpenShift.
         A control response is planned. Engineering progress can be tracked via:
@@ -4530,7 +4530,7 @@ satisfies:
   narrative:
     - text: |
         IA-(8)OpenShift offers support for replay-resistant authentication
-        mechanisms, both for OpenShift console and 3rd party
+        mechanisms, both for OpenShift console and 3rd party 
         authentication. Third party identity providers configured for
         modern TLS is supported by OpenShift.
         Please see the specific identity provider documentation:
@@ -4546,8 +4546,8 @@ satisfies:
   narrative:
     - text: |
         OpenShift offers support for replay-resistant authentication
-        mechanisms, both for OpenShift console and 3rd party
-        authentication.
+        mechanisms, both for OpenShift console and 3rd party 
+        authentication. 
         Please see the specific identity provider documentation:
         https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
         A control response is planned. Engineering progress can be tracked via:
@@ -4560,7 +4560,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2 (10) is an organizational control outside the scope of
+        IA-2 (10) is an organizational control outside the scope of 
         OpenShift configuration. Single Sign On (SSO) use and manage-
         ment is determined by the organization. OpenShift documentation
         regarding SSO can be found at:
@@ -4572,7 +4572,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2 (11) is an organizational control outside the scope of
+        IA-2 (11) is an organizational control outside the scope of 
         OpenShift configuration. Implementing a separate device from the 
         system gaining access to the information system using multifactor
         authentication for remote access to privileged and non-privileged
@@ -4585,7 +4585,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2 (12) is an organizational control outside the scope of
+        IA-2 (12) is an organizational control outside the scope of 
         OpenShift configuration. Issuance of PIV credentials is
         outside the scope of OpenShift configuration. Authentication of
         PIV credentials is outside the scope of OpenShift configuration.
@@ -4620,18 +4620,17 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        OpenShift maintains an internal private network on the deployed
+        OpenShift maintains an internal private network on the deployed 
         cluster that uniquely identifies internal nodes.
         The satisfaction of this control is only for nodes within the
         OpenShift private environment, and does not provide this
         functionality to the organization environment.
-        Further details can be found in the OpenShift documentation: 
-
-        https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
+        doc: https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/964
+        
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-318
@@ -4660,28 +4659,29 @@ satisfies:
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
+        
     - key: b
       text: |
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
+        
 - control_key: IA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-        While OpenShift does create an internal private network within
-        the cluster infrastructure, no devices are created that would
-        fall into the domain of this control. The cluster nodes that
+        While OpenShift does create an internal private network within 
+        the cluster infrastructure, no devices are created that would 
+        fall into the domain of this control. The cluster nodes that 
         OpenShift is installed on, would require a non-OpenShift
         organizational policy and procedure to satisfy this control.
+        doc: https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
         
-        Further details are provided in the OpenShift documentation:
-
-        https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
+        
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-320
@@ -4745,7 +4745,7 @@ satisfies:
   narrative:
     - text: |
         Receiving supervisor authorization to receive an
-        individual identifier is outside the scope of
+        individual identifier is outside the scope of 
         OpenShift configuration.
 
 - control_key: IA-4 (3)
@@ -4764,7 +4764,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        Uniquely identifying each individual is an
+        Uniquely identifying each individual is an 
         organizational procedural requirement and is
         outside the scope of OpenShift configuration.
 
@@ -4776,7 +4776,7 @@ satisfies:
     - text: |
         Dynamic management of identifiers is not a responsibility
         OpenShift is capable of fulfilling. This is an organiz-
-        ational procedural requirement outside the scope of
+        ational procedural requirement outside the scope of 
         Openshift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
@@ -4815,12 +4815,12 @@ satisfies:
     - key: a
       text: |
         Verifying identity of individual receiveing the authenticator
-        is an organizational procedural requirement outside the
+        is an organizational procedural requirement outside the 
         scope of OpenShift configuration.
     - key: b
       text: |
-        Initial authenticator content is outside the scope of
-        OpenShift configuration.
+        Initial authenticator content is outside the scope of 
+        OpenShift configuration.        
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -4865,7 +4865,7 @@ satisfies:
         https://issues.redhat.com/browse/CMP-325
     - key: g
       text: |
-        Refreshing and/or changing authenticators is outside the
+        Refreshing and/or changing authenticators is outside the 
         scope of OpenShift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
@@ -4897,7 +4897,7 @@ satisfies:
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - key: a
       text: |
@@ -4915,21 +4915,18 @@ satisfies:
         https://issues.redhat.com/browse/CMP-326
     - key: c
       text: |
-        Storage and transmission of passwords that are crypto-
-        protected is outside the scope of OpenShift configuration.
-        Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
+        https://github.com/ComplianceAsCode/redhat/issues/972
 
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-326
     - key: d
       text: |
-        Password aging and lifetime restriction enforcement is a
+        Password aging and lifetime restriction enforcement is a 
         control for organizational procedure and is outside the 
         scope of OpenShift configuration.
         Creation of control response/guidance is being tracked in the
-        ComplianceAsCode backlog:
 
         A control response is planned. Engineering progress can be tracked via:
 
@@ -4998,9 +4995,12 @@ satisfies:
 - control_key: IA-5 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
+        Determining if password authenticators are sufficiently strong is an 
+        organizational procedural control and is outside the scope of
+        OpenShift configuration.
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-328
@@ -5011,6 +5011,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
+        Organizational policies and procedures for changing system default
+        authentication configuration is out of scope for OpenShift
+        configuration.
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
@@ -5020,6 +5023,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
+        Organizational policies and procedures that scale protection
+        of authenticators commensurate to security category is out of
+        scope for OpenShift Configuration.
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
@@ -5029,7 +5035,10 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        A control response for IA-5(7) is planned.
+        Organizational policies and procedural controls ensuring
+        unencrypted static authenticators are not embedded in
+        applications, nor in access scripts, nor in function keys are
+        not in scope for OpenShift configuration.
 
 - control_key: IA-5 (8)
   standard_key: NIST-800-53
@@ -5055,9 +5064,14 @@ satisfies:
 - control_key: IA-5 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
+        Dynamic provisioning of identies is procedural control of the organization.
+        Identity provisioning is out of scope for OpenShift configuration. For
+        more information on identity provider configuration, see the OpenShift doc
+        at:
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-330
@@ -5095,9 +5109,11 @@ satisfies:
 - control_key: IA-5 (14)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
+        Managing PKI trust stores across the organization is a procedural control
+        that is out of scope for OpenShift configuration.
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-331
@@ -5105,9 +5121,12 @@ satisfies:
 - control_key: IA-5 (15)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
+        FICAM-approved path discovery and validation products and services are
+        organizational policy and procedural controls and are out of scope
+        for OpenShift configuration.
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-332
