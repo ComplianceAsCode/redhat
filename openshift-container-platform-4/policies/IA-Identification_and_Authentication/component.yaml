@@ -150,7 +150,7 @@
   narrative:
     - text: |
         OpenShift offers support for replay-resistant authentication
-        mechanisms, both for OpenShift console and 3rd party 
+        mechanisms, both for OpenShift console and 3rd party
         authentication. 
         Please see the specific identity provider documentation:
         https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
