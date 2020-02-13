@@ -149,7 +149,7 @@
 - control_key: CA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
