@@ -164,7 +164,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2 (10) is an organizational control outside the scope of 
+        IA-2 (10) is an organizational control outside the scope of
         OpenShift configuration. Single Sign On (SSO) use and manage-
         ment is determined by the organization. OpenShift documentation
         regarding SSO can be found at:
