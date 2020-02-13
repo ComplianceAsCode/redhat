@@ -1235,13 +1235,10 @@
 - control_key: SI-14 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response for SI-15 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-562
+        This is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: SI-15
   standard_key: NIST-800-53
