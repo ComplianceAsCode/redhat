@@ -4819,8 +4819,8 @@ satisfies:
         scope of OpenShift configuration.
     - key: b
       text: |
-        Initial authenticator content is outside the scope of 
-        OpenShift configuration.        
+        Initial authenticator content is outside the scope of
+        OpenShift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
@@ -4865,7 +4865,7 @@ satisfies:
         https://issues.redhat.com/browse/CMP-325
     - key: g
       text: |
-        Refreshing and/or changing authenticators is outside the 
+        Refreshing and/or changing authenticators is outside the
         scope of OpenShift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
