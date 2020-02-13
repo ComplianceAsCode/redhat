@@ -4503,7 +4503,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2(6) is an organizational control out of scope for 
+        IA-2(6) is an organizational control out of scope for
         OpenShift configuration. Separate device multifactor authentication policy and 
         management is not performed by OpenShift.
         A control response is planned. Engineering progress can be tracked via:
@@ -4516,7 +4516,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2(7) is an organizational control out of scope for 
+        IA-2(7) is an organizational control out of scope for
         OpenShift configuration. Multifactor authentication policy and 
         management is not performed by OpenShift.
         A control response is planned. Engineering progress can be tracked via:
