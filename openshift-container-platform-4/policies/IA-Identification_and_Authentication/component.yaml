@@ -419,7 +419,7 @@
     - key: a
       text: |
         Verifying identity of individual receiveing the authenticator
-        is an organizational procedural requirement outside the 
+        is an organizational procedural requirement outside the
         scope of OpenShift configuration.
     - key: b
       text: |
