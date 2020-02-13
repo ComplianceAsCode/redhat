@@ -224,7 +224,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        OpenShift maintains an internal private network on the deployed 
+        OpenShift maintains an internal private network on the deployed
         cluster that uniquely identifies internal nodes.
         The satisfaction of this control is only for nodes within the
         OpenShift private environment, and does not provide this
