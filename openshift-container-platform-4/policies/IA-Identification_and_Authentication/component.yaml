@@ -284,7 +284,6 @@
         Further details are provided in the OpenShift documentation:
 
         https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
-        
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
         
