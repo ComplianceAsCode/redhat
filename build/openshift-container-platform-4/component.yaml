@@ -4441,7 +4441,7 @@ satisfies:
   narrative:
     - text: |
         IA-2(1) is an organizational control out of scope for OpenShift configuration.
-        Multifactor authentication is not a service that OpenShift configuration 
+        Multifactor authentication is not a service that OpenShift configuration
         provides to an organization.
         A control response is planned. Engineering progress can be tracked via:
 
@@ -4620,7 +4620,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        OpenShift maintains an internal private network on the deployed 
+        OpenShift maintains an internal private network on the deployed
         cluster that uniquely identifies internal nodes.
         The satisfaction of this control is only for nodes within the
         OpenShift private environment, and does not provide this
