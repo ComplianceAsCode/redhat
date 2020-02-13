@@ -380,7 +380,7 @@
     - text: |
         Dynamic management of identifiers is not a responsibility
         OpenShift is capable of fulfilling. This is an organiz-
-        ational procedural requirement outside the scope of 
+        ational procedural requirement outside the scope of
         Openshift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
