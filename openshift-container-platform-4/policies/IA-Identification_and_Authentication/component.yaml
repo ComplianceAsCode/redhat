@@ -277,7 +277,7 @@
     - text: |
         While OpenShift does create an internal private network within
         the cluster infrastructure, no devices are created that would
-        fall into the domain of this control. The cluster nodes that 
+        fall into the domain of this control. The cluster nodes that
         OpenShift is installed on, would require a non-OpenShift
         organizational policy and procedure to satisfy this control.
         doc: https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
