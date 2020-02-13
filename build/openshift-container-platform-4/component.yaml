@@ -4682,7 +4682,6 @@ satisfies:
         https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
-        
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-320
@@ -4746,7 +4745,7 @@ satisfies:
   narrative:
     - text: |
         Receiving supervisor authorization to receive an
-        individual identifier is outside the scope of 
+        individual identifier is outside the scope of
         OpenShift configuration.
 
 - control_key: IA-4 (3)
