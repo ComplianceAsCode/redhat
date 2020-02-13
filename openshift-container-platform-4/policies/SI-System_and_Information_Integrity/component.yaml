@@ -106,7 +106,6 @@
     - key: a
       text: |
         SI-2(5) is an organizational control outside the scope of OpenShift configuration.
-      
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
