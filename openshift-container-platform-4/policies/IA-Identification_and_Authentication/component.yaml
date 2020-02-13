@@ -269,7 +269,6 @@
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
-        
 - control_key: IA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
