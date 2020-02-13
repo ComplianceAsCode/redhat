@@ -280,7 +280,10 @@
         fall into the domain of this control. The cluster nodes that
         OpenShift is installed on, would require a non-OpenShift
         organizational policy and procedure to satisfy this control.
-        doc: https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
+        
+        Further details are provided in the OpenShift documentation:
+
+        https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
         
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
