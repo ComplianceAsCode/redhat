@@ -134,7 +134,7 @@
   narrative:
     - text: |
         IA-(8)OpenShift offers support for replay-resistant authentication
-        mechanisms, both for OpenShift console and 3rd party 
+        mechanisms, both for OpenShift console and 3rd party
         authentication. Third party identity providers configured for
         modern TLS is supported by OpenShift.
         Please see the specific identity provider documentation:
