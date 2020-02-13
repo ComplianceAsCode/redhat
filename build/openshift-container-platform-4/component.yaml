@@ -4625,12 +4625,13 @@ satisfies:
         The satisfaction of this control is only for nodes within the
         OpenShift private environment, and does not provide this
         functionality to the organization environment.
-        doc: https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
+        Further details can be found in the OpenShift documentation: 
+
+        https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/964
-        
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-318
