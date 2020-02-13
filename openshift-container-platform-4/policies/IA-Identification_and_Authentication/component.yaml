@@ -424,7 +424,7 @@
     - key: b
       text: |
         Initial authenticator content is outside the scope of 
-        OpenShift configuration.        
+        OpenShift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
