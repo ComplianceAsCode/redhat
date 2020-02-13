@@ -189,7 +189,7 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2 (12) is an organizational control outside the scope of 
+        IA-2 (12) is an organizational control outside the scope of
         OpenShift configuration. Issuance of PIV credentials is
         outside the scope of OpenShift configuration. Authentication of
         PIV credentials is outside the scope of OpenShift configuration.
