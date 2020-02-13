@@ -350,7 +350,7 @@
   narrative:
     - text: |
         Receiving supervisor authorization to receive an
-        individual identifier is outside the scope of 
+        individual identifier is outside the scope of
         OpenShift configuration.
 
 - control_key: IA-4 (3)
