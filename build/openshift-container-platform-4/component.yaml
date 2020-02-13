@@ -4480,7 +4480,7 @@ satisfies:
   narrative:
     - text: |
         IA-2(4) is an organizational control out of scope for OpenShift configuration.
-        Multifactor authentication is not a service that OpenShift configuration 
+        Multifactor authentication is not a service that OpenShift configuration
         provides to an organization.
         A control response is planned. Engineering progress can be tracked via:
         https://issues.redhat.com/browse/CMP-303
@@ -4491,7 +4491,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        IA-2(5) is an organizational control out of scope for OpenShift configuration. 
+        IA-2(5) is an organizational control out of scope for OpenShift configuration.
         An Individual authenticator requirement when a group authenticator is
         implemented is not provided by OpenShift configuration.
         A control response is planned. Engineering progress can be tracked via:
@@ -4547,7 +4547,7 @@ satisfies:
     - text: |
         OpenShift offers support for replay-resistant authentication
         mechanisms, both for OpenShift console and 3rd party
-        authentication. 
+        authentication.
         Please see the specific identity provider documentation:
         https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
         A control response is planned. Engineering progress can be tracked via:
