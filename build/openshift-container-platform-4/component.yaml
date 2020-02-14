@@ -8174,50 +8174,57 @@ satisfies:
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A control response to SA-5(a) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        As this describes organizational requirements and policy, this
+        is not a control within the scope of functionality that OpenShift
+        can provide. To help satisfy client audit and documentation
+        requirements, assistance with documentation needs can be 
+        requested through normal Red Hat ticketing processes.
     - key: a.1
       text: |
-        A control response to SA-5(a)(1) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        As this describes organizational requirements and policy, this
+        is not a control within the scope of functionality that OpenShift
+        can provide. To help satisfy client audit and documentation
+        requirements, assistance with documentation needs can be 
+        requested through normal Red Hat ticketing processes.
     - key: a.2
       text: |
-        A control response to SA-5(a)(2) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        As this describes organizational requirements and policy, this
+        is not a control within the scope of functionality that OpenShift
+        can provide. To help satisfy client audit and documentation
+        requirements, assistance with documentation needs can be 
+        requested through normal Red Hat ticketing processes.
     - key: a.3
       text: |
-        A control response to SA-5(a)(3) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        As this describes organizational requirements and policy, this
+        is not a control within the scope of functionality that OpenShift
+        can provide. To help satisfy client audit and documentation
+        requirements, assistance with documentation needs can be 
+        requested through normal Red Hat ticketing processes.
     - key: b
       text: |
-        A control response to SA-5(b) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        As this describes organizational requirements and policy, this
+        is not a control within the scope of functionality that OpenShift
+        can provide. To help satisfy client audit and documentation
+        requirements, assistance with documentation needs can be 
+        requested through normal Red Hat ticketing processes.
     - key: b.1
       text: |
-        A control response to SA-5(b)(1) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        As this describes organizational requirements and policy, this
+        is not a control within the scope of functionality that OpenShift
+        can provide. To help satisfy client audit and documentation
+        requirements, assistance with documentation needs can be 
+        requested through normal Red Hat ticketing processes.
     - key: b.2
       text: |
-        A control response to SA-5(b)(2) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        As this describes organizational requirements and policy, this
+        is not a control within the scope of functionality that OpenShift
+        can provide. To help satisfy client audit and documentation
+        requirements, assistance with documentation needs can be 
+        requested through normal Red Hat ticketing processes.
     - key: b.3
       text: |
         This control reflects organizational procedure/policy and is not
