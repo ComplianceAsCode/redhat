@@ -1024,10 +1024,16 @@
         OpenShift uses various TLS algorithms and ciphers to protect
         the authenticity of communications sessions.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        HTTP Strict Transport Security (HSTS) policy is a security
+        enhancement, which ensures that only HTTPS traffic is
+        allowed on the host. Any HTTP requests are dropped by default.
+        This is useful for ensuring secure interactions with websites,
+        or to offer a secure application for the user’s benefit.
 
-        https://issues.redhat.com/browse/CMP-408
+        https://docs.openshift.com/container-platform/4.3/networking/routes/route-configuration.html#nw-enabling-hsts_route-configuration
+
+        In addition, all web based endpoints are configured
+        to use HTTPS by default.
 
 - control_key: SC-23 (1)
   standard_key: NIST-800-53
