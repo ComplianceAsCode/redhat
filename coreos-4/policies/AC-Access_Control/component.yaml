@@ -463,12 +463,10 @@
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-98
+        Flow control is not a function falls within the scope of Red Hat Core OS responsibility.
 
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
