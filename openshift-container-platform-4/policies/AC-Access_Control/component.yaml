@@ -437,12 +437,14 @@
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - text: |-
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-98
+        The OpenShift configuration of the internal NetworkPolicy manages available communication
+        between OpenShift objects that reside within the boundaries of the OpenShift environment.
+        This is in-scope for what a 'boundary flow control device' manages, note that the
+        NetworkPolicy configuration for OpenShift is not capable of performing this function for
+        an an organization data flow outside of the OpenShift environment.
 
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
