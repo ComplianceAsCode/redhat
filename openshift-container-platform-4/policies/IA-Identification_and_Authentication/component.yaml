@@ -234,7 +234,7 @@
         ComplianceAsCode backlog:
 
         https://github.com/ComplianceAsCode/redhat/issues/964
-        
+
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-318
@@ -263,13 +263,13 @@
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
-        
+
     - key: b
       text: |
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
-        
+
 - control_key: IA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -424,7 +424,7 @@
     - key: b
       text: |
         Initial authenticator content is outside the scope of
-        OpenShift configuration.        
+        OpenShift configuration.
         Creation of control response/guidance is being tracked in the
         ComplianceAsCode backlog:
 
