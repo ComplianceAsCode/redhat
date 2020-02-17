@@ -203,9 +203,11 @@
 
         The documentation may refer to logStore or Elasticsearch, visualization or Kibana,
         curation or Curator, collection or Fluentd, interchangeably.  The components can be
-        configured in different ways to store, search, format, include and exclude data.  Fluentd
-        ships any logs from systemd journal and /var/log/containers/ to Elasticsearch.  Full detail
-        on the components and configuration can be found in the documentation:
+        configured in different ways to store, search, format and include data.  The fields
+        and possible configuration items are in the documentation. Fluentd ships any logs
+        from systemd journal and /var/log/containers/ to Elasticsearch.  The Cluster Logging
+        Custom Resource (CR) allows custom configuration for modification to the default settings.
+        Full detail on the components and configuration can be found in the documentation:
 
         https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html/logging/cluster-logging
 
