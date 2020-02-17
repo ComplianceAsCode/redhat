@@ -93,9 +93,32 @@
     - text: |
         When the OpenShift API audit system is enabled and configured it generates
         audit records containing information that establishes the type of event that occurred,
-        when the event occurred, where the event occurred, the source of hte event,
+        when the event occurred, where the event occurred, the source of the event,
         the outcome of the event, and the idenity of the individuales or subjects associated
-        with the event.
+        with the event.  Note,  usage of - oc debug - does not create audit events.
+
+        OpenShift Container Platform cluster logging is designed to be used with the default
+        configuration, which is tuned for small to medium sized OpenShift Container Platform
+        clusters.  The installation instructions include a sample Cluster Logging
+        Custom Resource (CR), which can be used to create a cluster logging instance and
+        configure the default cluster logging deployment.  Changes to the CR can be done
+        for a customized deployment.  The detail for the CR can be found in the documentation:
+
+        https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html-single/logging/index#cluster-logging-configuring
+
+        Fluentd ships any logs from systemd journal and /var/log/containers/ to Elasticsearch. The
+        exported field detail is listed in the documentation:
+
+        https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html-single/logging/index#cluster-logging-exported-fields
+
+        If a pod with a given name and project is deleted before the log collector begins
+        processing its logs, information from the API server, such as labels and annotations,
+        might not be available. There might not be a way to distinguish the log messages from a
+        similarly named pod and project or trace the logs to their source. This limitation means
+        log collection and normalization is considered best effort.  More information can be found
+        in the documentation:
+
+        https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html-single/logging/index#cluster-logging-about_cluster-logging
 
 - control_key: AU-3 (1)
   standard_key: NIST-800-53
