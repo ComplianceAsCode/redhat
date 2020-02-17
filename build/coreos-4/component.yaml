@@ -468,22 +468,22 @@ satisfies:
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |-
-        Red Hat CoreOS is not a product that is intended to be used as a data flow control
-        manager. For all Kubernetes Container Network Interface documentation, refer to the
-        appropriate OpenShift networking documentation.
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-98
 
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-       
-        https://issues.redhat.com/browse/CMP-99
+        Red Hat CoreOS is not intended to fulfill any network-based data flow control.
+        Any networking piece that is associated with the internal workings of OpenShift
+        is not in scope for the host system of CoreOS.
 
 - control_key: AC-4 (2)
   standard_key: NIST-800-53

@@ -443,24 +443,22 @@ satisfies:
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: planned
   narrative:
-    - text: |
-        The OpenShift configuration of the internal NetworkPolicy object manages communication
-        between OpenShift objects that reside within the boundaries of the OpenShift environment.
-        This internal routing is in-scope for what is described as a 'boundary flow control
-        device', note that the NetworkPolicy configuration is not capable of performing flow
-        control for data that originates outside of the OpenShift logical environment boundary.
-      
+    - text: |-
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-98
+
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-       
-        https://issues.redhat.com/browse/CMP-99
+        Processing Domains are organizational policies and procedures that are then implemented to
+        specification. OpenShift configuration cannot satisfy the objective without client-
+        determined requirements.
 
 - control_key: AC-4 (2)
   standard_key: NIST-800-53
