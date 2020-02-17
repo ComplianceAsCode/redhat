@@ -151,15 +151,18 @@
 
         https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html/logging/cluster-logging#cluster-logging-about_cluster-logging
 
-        The process and considerations for deploying cluster Logging to OpenShift Container Platform involves:
+        The process and considerations for deploying cluster Logging to OpenShift
+        Container Platform involves:
         -Review the installation options in About deploying cluster logging.
         -Review the cluster logging storage considerations.
         -Install the Cluster Logging subscription using the web console.
 
-        There are six steps involved in configuring and installing the cluster logging as seen at a high level below:
+        There are six steps involved in configuring and installing the cluster logging
+        as seen at a high level below:
         1. Create Namespaces for the Elasticsearch Operator and Cluster Logging Operator.
         2. Install the Elasticsearch Operator by creating objects.
-        3. Install the Cluster Logging Operator using the OpenShift Container Platform web console for best results.
+        3. Install the Cluster Logging Operator using the OpenShift Container Platform web
+        console for best results.
         4. Verify the operator installations.
         5. Create a cluster logging instance.
         6. Verify the install.
@@ -167,6 +170,15 @@
         The detail for each of the steps can be found in the documentation at:
 
         https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html/logging/cluster-logging-deploying
+
+        OpenShift Container Platform cluster logging is designed to be used with the default
+        configuration, which is tuned for small to medium sized OpenShift Container Platform
+        clusters.  The installation instructions include a sample Cluster Logging
+        Custom Resource (CR), which can be used to create a cluster logging instance and
+        configure the default cluster logging deployment.  Changes to the CR can be done
+        for a customized deployment.  The detail for the CR can be found in the documentation:
+
+        https://access.redhat.com/documentation/en-us/openshift_container_platform/4.3/html-single/logging/index#cluster-logging-configuring
 
 - control_key: AU-3 (2)
   standard_key: NIST-800-53
