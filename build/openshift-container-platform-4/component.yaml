@@ -1195,10 +1195,6 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-<<<<<<< HEAD
-        A control response is planned. Engineering progress can be tracked via:
-        https://issues.redhat.com/browse/CMP-167
-=======
         This is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AC-16 (2)
@@ -1208,7 +1204,6 @@ satisfies:
   narrative:
     - text: |
         This is an organizational control outside the scope of OpenShift configuration.
->>>>>>> 984383fa9872c30be14f8df165ec814ce66cf0fd
 
 - control_key: AC-16 (3)
   standard_key: NIST-800-53
@@ -1226,46 +1221,15 @@ satisfies:
     - text: |
         This is an organizational control outside the scope of OpenShift configuration.
 
-<<<<<<< HEAD
-        To aide in such organizational processes, note that OpenShift's
-        cluster loggging "Log Forward" feature enables OpenShift
-        administrators to configure custom pipelines to send container
-        logs to remote destinations. These remote destinations, such as
-        Elastic or Splunk endpoints, could be used for information
-        system-wide correlation.
-
-        Documentation regarding how to forward cluster logs to specific
-        endpoints can be found at:
-
-        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
-        
-- control_key: AU-6 (4)
-=======
 - control_key: AC-16 (5)
->>>>>>> 984383fa9872c30be14f8df165ec814ce66cf0fd
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
     - text: |
-<<<<<<< HEAD
-        Organizational capability to centrally review and analyze
-        audit records from multiple components within the system
-        is outside the scope of OpenShift configuration.
-        Note: When AU-4 (1) is enforced OpenShift will be configured
-        to off-load audit records onto a different system
-        or media than the system being audited. In practice this correlates
-        to offloading audit records to a SIEM (e.g. Elastic). However,
-        this control is specifically about centralized review and analysis,
-        and not offloading records, thus AU-6 (4) is marked as not
-        applicable.
-
-- control_key: AU-6 (5)
-=======
         This is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AC-16 (6)
->>>>>>> 984383fa9872c30be14f8df165ec814ce66cf0fd
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
@@ -1273,23 +1237,7 @@ satisfies:
     - text: |
         This is an organizational control outside the scope of OpenShift configuration.
 
-<<<<<<< HEAD
-        To aide in such organizational processes, note that OpenShift's
-        cluster loggging "Log Forward" feature enables OpenShift
-        administrators to configure custom pipelines to send container
-        logs to remote destinations. These remote destinations, such as
-        Elastic or Splunk endpoints, could be used for information
-        system-wide correlation.
-
-        Documentation regarding how to forward cluster logs to specific
-        endpoints can be found at:
-
-        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
-
-- control_key: AU-6 (6)
-=======
 - control_key: AC-16 (7)
->>>>>>> 984383fa9872c30be14f8df165ec814ce66cf0fd
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
@@ -1297,23 +1245,7 @@ satisfies:
     - text: |
         This is an organizational control outside the scope of OpenShift configuration.
 
-<<<<<<< HEAD
-        To aide in such organizational processes, note that OpenShift's
-        cluster loggging "Log Forward" feature enables OpenShift
-        administrators to configure custom pipelines to send container
-        logs to remote destinations. These remote destinations, such as
-        Elastic or Splunk endpoints, could be used to correlate OpenShift
-        logs with physical access data.
-
-        Documentation regarding how to forward cluster logs to specific
-        endpoints can be found at:
-
-        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
-
-- control_key: AU-6 (7)
-=======
 - control_key: AC-16 (8)
->>>>>>> 984383fa9872c30be14f8df165ec814ce66cf0fd
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
