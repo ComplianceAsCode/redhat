@@ -67,7 +67,13 @@
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
+        Configuration management is enforced through Ansible playbooks. 
+        The configuration is documented on the the system [Repository] site.       
+        However, Openshift's Ignition and Operators can also be used in configuration management.
+        For additional information:
+        https://docs.openshift.com/container-platform/4.3/architecture/architecture-rhcos.html#rhcos-about-ignition_architecture-rhcos
+        https://docs.openshift.com/container-platform/4.3/operators/olm-what-operators-are.html
+        
         tracked via:
 
         https://issues.redhat.com/browse/CMP-262
