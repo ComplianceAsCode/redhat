@@ -473,9 +473,12 @@
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
+        Red Hat CoreOS partially satisfies access control using SELinux type enforcement.
+        File types, devices, and processes are assigned SELinux context types which determine
+        user and service account access permissions.
         Red Hat CoreOS is not intended to fulfill any network-based data flow control.
         Any networking piece that is associated with the internal workings of OpenShift
         is not in scope for the host system of CoreOS.
