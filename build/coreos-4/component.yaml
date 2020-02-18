@@ -482,7 +482,7 @@ satisfies:
   narrative:
     - text: |
         A control response is planned. Progress can be tracked via:
-       
+
         https://issues.redhat.com/browse/CMP-99
 
 - control_key: AC-4 (2)
