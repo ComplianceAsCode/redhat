@@ -117,26 +117,25 @@
 - control_key: RA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.
+        Organizational procedures to initially scan for vulnerabilities and to perform a scan
+        when new vulnerabilities are identified and reported are outside the scope of RHCOS
+        configuration.
     - key: b
       text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-352
+        Organizational procedures to facilitate interoperability and vulnerability management
+        process automation are outside the scope of RHCOS configuration.
     - key: c
       text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.
+        Organizational procedures to analyze vulnerability scan outputs from security controls
+        are outside the scope of RHCOS configuration.
     - key: d
       text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-352
+        Organizational procedures to remediate legitimate vulnerabilties within organization
+        determined response times is outside the scope of RHCOS configuration.
     - key: e
       text: |
         Organizational processes to share information obtained from the
@@ -144,7 +143,7 @@
         with organization-defined personnel or roles to help eliminate
         similar vulnerabilities in other information systems (i.e.,
         systemic weaknesses or deficiences) are outside the scope
-        of CoreOS configuration.
+        of RHCOS configuration.
 
 - control_key: RA-5 (1)
   standard_key: NIST-800-53
