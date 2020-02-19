@@ -128,6 +128,8 @@
       text: |
         Organizational procedures to facilitate interoperability and vulnerability management
         process automation are outside the scope of OpenShift configuration.
+        The Red Hat recommends that security-oriented products such as Clair and Atomic to to be
+        integrated into the organization CI/CD strategy.
     - key: c
       text: |
         Organizational procedures to analyze vulnerability scan outputs from security controls
@@ -136,6 +138,9 @@
       text: |
         Organizational procedures to remediate legitimate vulnerabilties within organization
         determined response times is outside the scope of OpenShift configuration.
+        Red Hat recommends integration of Atomic CLI with OpenSCAP, or Clair, to add limited
+        automation of remediation to the a CI build pipeline.
+
     - key: e
       text: |
         Organizational processes to share information obtained from the
