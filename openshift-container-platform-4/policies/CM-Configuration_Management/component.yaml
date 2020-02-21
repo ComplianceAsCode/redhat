@@ -32,9 +32,31 @@
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Configuration management is enforced through Ansible playbooks,
+        Ignition configurations and Operators.
 
+        Ansible features a state-driven resource model that describes
+        the desired state of computer systems and services, allowing
+        reliable and repeatable IT infrastructure configuration. The
+        configuration is documented on the the system [Repository] site.
+
+        Ignition is the utility that is used by Red Hat Enterprise Linux CoreOS(RHCOS)
+        to manipulate disks during initial configuration, confirming all new machines
+        meet the declared configuration.
+
+        Operators are a method of packaging, deploying, and managing a Kubernetes
+        application. Watching over the Kubernetes environment, using its current
+        state to make decisions in real time. The Machine Config Operator(MCO)
+        manages updates and configuration changes to essentially everything between
+        the kernel and kubelet.
+
+        For additional information:
+        https://docs.ansible.com/ansible/latest/user_guide/playbooks.html
+        https://docs.openshift.com/container-platform/latest/architecture/architecture-rhcos.html#rhcos-about-ignition_architecture-rhcos
+        https://docs.openshift.com/container-platform/latest/operators/olm-what-operators-are.html
+        https://github.com/openshift/machine-config-operator
+
+        tracked via:
         https://issues.redhat.com/browse/CMP-260
 
 - control_key: CM-2 (1)
