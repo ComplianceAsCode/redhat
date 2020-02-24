@@ -448,12 +448,17 @@
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - text: |
-        Processing Domains are organizational policies and procedures that are then implemented to
-        specification. OpenShift configuration cannot satisfy the objective without client-
-        determined requirements.
+        Processing Domains are dependent on organizational policies and procedures. OpenShift
+        configuration is capable of implementing namespace and pod level networking policy.
+        Documentation of NetworkPolicy sample configuration can be found at that are implemented
+        by the organization to their own specification.
+        OpenShift configuration is capable of satisfying the control enhancement, however this
+        satisfaction is dependent on management by the organization post install.
+        Documentation for NetworkPolicy configuration for the container platofrm can be found at
+        https://docs.openshift.com/container-platform/latest/networking/configuring-newtorkpolicy.html
 
 - control_key: AC-4 (2)
   standard_key: NIST-800-53

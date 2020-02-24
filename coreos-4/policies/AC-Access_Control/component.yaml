@@ -479,9 +479,17 @@
         Red Hat CoreOS partially satisfies access control using SELinux type enforcement.
         File types, devices, and processes are assigned SELinux context types which determine
         user and service account access permissions.
+        OpenShift requires that SELinux enforcement is enabled at the Operating
+        System layer prior to installation. This prevents data crossing container and process
+        boundaries within the OpenShift environment.
         Red Hat CoreOS is not intended to fulfill any network-based data flow control.
         Any networking piece that is associated with the internal workings of OpenShift
         is not in scope for the host system of CoreOS.
+        Documentation for management of CoreOS elements through the OpenShift Machine
+        Configuration Operator can be found at
+        https://docs.openshift.com/container-platform/4.1/architecture/architecture-rhcos.html#digging-into-machine-config_architecture-rhcos
+        SELinux for CoreOS documentation is at
+        https://coreos.com/os/docs/latest/selinux.html
 
 - control_key: AC-4 (2)
   standard_key: NIST-800-53
