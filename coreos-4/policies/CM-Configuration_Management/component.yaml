@@ -39,8 +39,8 @@
         to manipulate disks during initial configuration, confirming all new machines
         meet the declared configuration.
 
-        Ignition is meant to initialize systems, not change existing systems. After 
-        a machine initializes and the kernel is running from the installed system, the 
+        Ignition is meant to initialize systems, not change existing systems. After
+        a machine initializes and the kernel is running from the installed system, the
         Machine Config Operator from the OpenShift Container Platform cluster completes
         all future machine configuration.
 
