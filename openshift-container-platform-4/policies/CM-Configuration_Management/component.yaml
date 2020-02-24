@@ -32,7 +32,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        Configuration management is enforced through Ignition configurations 
+        Configuration management is enforced through Ignition configurations
         and Operators.
 
         Ignition is the utility that is used by Red Hat Enterprise Linux CoreOS (RHCOS)
