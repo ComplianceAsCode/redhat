@@ -134,13 +134,17 @@
 - control_key: SI-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response for SI-2(6) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-528
+        The customer will be responsible for removing previous versions of software
+        and firmware. This control is specific to organizational procedure, requiring
+        removal of software after an updated version has been installed.
+        OpenShift can assist the customer with this process, using strategies
+        such as Blue/Green deployments to assist with replacing and removing old versions
+        of containerized software applications.
+        Customer updates of OpenShift can be done through the `oc adm update --to=<version>'
+        command.
 
 - control_key: SI-3
   standard_key: NIST-800-53
