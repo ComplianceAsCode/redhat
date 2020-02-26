@@ -169,17 +169,15 @@
   implementation_status: complete
   narrative:
     - text: |
-        A control response for IA-3 is planned.
+        Default configuration of the system does not communicate as a client with external systems.
 
 - control_key: IA-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-318
+        PKI is employed for internal (intra-cluster) system connections between system components.
 
 - control_key: IA-3 (2)
   standard_key: NIST-800-53
@@ -192,27 +190,24 @@
 - control_key: IA-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: partial
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-319
+        The system does not provide addresses to devices.  However, it does utilize a private IP space for 
+        communicable endpoints.  Within this space address lease parameters are irrelevant because the endpoints
+        themselves are ephemeral.  A single endpoint instance cannot obtain multiple addresses.
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-319
+        Addresses are tied to deployed communicable endpoints, which are audited.
+        
 - control_key: IA-3 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-320
+        This is an organizational control and is not applicable to this system.
 
 - control_key: IA-4
   standard_key: NIST-800-53
