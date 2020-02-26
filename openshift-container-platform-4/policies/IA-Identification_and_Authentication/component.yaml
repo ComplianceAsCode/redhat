@@ -680,6 +680,8 @@
   implementation_status: planned
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        OpenShift offloads (via: https://access.redhat.com/documentation/en-us/
+        openshift_container_platform/4.3/html/authentication/
+        understanding-identity-provider) responsibility for authentication, session management, and OAuth
+        controls.  Rules for re-authentication are controlled by external systems.  OpenShift does not initiative re-authentication scenarios.
 
-        https://issues.redhat.com/browse/CMP-340
