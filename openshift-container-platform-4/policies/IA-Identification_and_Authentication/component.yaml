@@ -30,9 +30,17 @@
   implementation_status: planned
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-299
+        OCP offloads (via m: https://access.redhat.com/documentation/en-us/
+        openshift_container_platform/4.3/html/authentication/
+        understanding-identity-provider) 
+        responsibility for authentication, session management, and OAuth 
+        controls to the hosting environment’s LDAP and leverages CAC/PKI, 
+        FIPS 140-2 compliant ciphers, SSO and does not provide for group 
+        accounts.
+        
+        Organizational policy will identify the account specific requirements
+        such as "unique identification of individuals in group accounts"
+        
 
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
