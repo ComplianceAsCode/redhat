@@ -664,26 +664,8 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - key: a
-      text: |
-        A control response for SI-5(a) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-396
-    - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
-    - key: c
-      text: |
-        A control response for SI-5(c) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-396
-    - key: d
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+    - text: |
+        Red Hat publishes security notifications and advisories publicly here https://access.redhat.com/security/updates/advisory
 
 - control_key: SI-5 (1)
   standard_key: NIST-800-53
