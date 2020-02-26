@@ -245,13 +245,22 @@
 - control_key: IA-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-323
-
+        OCP offloads (via: https://access.redhat.com/documentation/en-us/
+        openshift_container_platform/4.3/html/authentication/
+        understanding-identity-provider)
+        responsibility for authentication, session management, and OAuth
+        controls to the hosting environment’s LDAP and leverages CAC/PKI,
+        FIPS 140-2 compliant ciphers, SSO and does not provide for group
+        accounts.
+        
+        This system should be used to preventing reuse of identifiers. DOD
+        systems currently support this capability with the CAC card
+        edipi. Identifiers for individuals are not the same as
+        electronic mail accounts.
+        
 - control_key: IA-4 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -282,12 +291,16 @@
 - control_key: IA-4 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-324
+        OCP offloads (via: https://access.redhat.com/documentation/en-us/
+        openshift_container_platform/4.3/html/authentication/
+        understanding-identity-provider)
+        responsibility for authentication, session management, and OAuth
+        controls to the hosting environment’s LDAP and leverages CAC/PKI,
+        FIPS 140-2 compliant ciphers, SSO and does not provide for group
+        accounts.
 
 - control_key: IA-4 (6)
   standard_key: NIST-800-53
