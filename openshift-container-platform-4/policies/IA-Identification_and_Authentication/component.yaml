@@ -366,63 +366,30 @@
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - key: a
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
-    - key: b
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-326
-    - key: c
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-326
-    - key: d
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-326
-    - key: e
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-326
-    - key: f
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-326
+    - text: | 
+        OCP offloads (via: https://access.redhat.com/documentation/en-us/
+        openshift_container_platform/4.3/html/authentication/
+        understanding-identity-provider)
+        responsibility for authentication, session management, and OAuth
+        controls to the hosting environment’s LDAP and leverages CAC/PKI,
+        FIPS 140-2 compliant ciphers, SSO and does not provide for group
+        accounts.
 
 - control_key: IA-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - key: a
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-327
-    - key: b
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-327
-    - key: c
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-327
-    - key: d
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-327
+    - text: |
+        OCP offloads (via: https://access.redhat.com/documentation/en-us/
+        openshift_container_platform/4.3/html/authentication/
+        understanding-identity-provider)
+        responsibility for authentication, session management, and OAuth
+        controls to the hosting environment’s LDAP and leverages CAC/PKI,
+        FIPS 140-2 compliant ciphers, SSO and does not provide for group
+        accounts.
 
 - control_key: IA-5 (3)
   standard_key: NIST-800-53
