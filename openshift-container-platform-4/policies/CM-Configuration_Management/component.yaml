@@ -44,21 +44,31 @@
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
+        Machine Config Operators (MCO) allow for periodic update to
+        its baseline configuration using MachineConfig objects.
+        for more information:
+        https://github.com/openshift/machine-config-operator
         tracked via:
-
         https://issues.redhat.com/browse/CMP-261
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
+        Updates can be made as needed through the use of MachineConfig
+        objects.
+        for more information:
+        https://github.com/openshift/machine-config-operator
         tracked via:
-
         https://issues.redhat.com/browse/CMP-261
     - key: c
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        After a machine initializes and the kernel is running from the installed system, the
+        Machine Config Operator from the OpenShift Container Platform cluster completes
+        all future machine configuration. The Machine Config Operator (MCO)
+        manages updates and configuration changes to essentially everything between
+        the kernel and kubelet.
 
+        for more information:
+        https://github.com/openshift/machine-config-operator
+        tracked via:
         https://issues.redhat.com/browse/CMP-261
 
 - control_key: CM-2 (2)
