@@ -33,7 +33,7 @@
         Unique identification and authentication of organizational users
         is deferred to the organizational identity provider (such as
         LDAP, Active Directory, Red Hat SSO, etc). This part of the control
-        is not applicable to OpenShift. 
+        is not applicable to OpenShift.
 
         To aid system administrators, documentation on
         supported authentication providers can be found in the
