@@ -368,7 +368,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: | 
+    - text: |
         OCP offloads (via: https://access.redhat.com/documentation/en-us/
         openshift_container_platform/4.3/html/authentication/
         understanding-identity-provider)
