@@ -57,12 +57,11 @@
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-302
+        The system does not provide access to privileged accounts because it is interacted with via a web app and APIs. 
+        Access to local privileged accounts on supporting systems is controlled by the organization.
 
 - control_key: IA-2 (4)
   standard_key: NIST-800-53
