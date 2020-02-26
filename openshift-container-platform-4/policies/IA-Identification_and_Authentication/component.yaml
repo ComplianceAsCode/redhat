@@ -37,7 +37,6 @@
         controls to the hosting environment’s LDAP and leverages CAC/PKI,
         FIPS 140-2 compliant ciphers, SSO and does not provide for group
         accounts.
-        
         Organizational policy will identify the account specific requirements
         such as "unique identification of individuals in group accounts"
 
