@@ -357,50 +357,94 @@
   narrative:
     - key: a
       text: |
-        A control response to SA-5(a) is planned. Progress
-        can be tracked at:
+        Obtaining admin docs are an organization policy and procedure control,
+        and are not applicable to OpenShift.
+        To assist with compliance efforts on behalf of organizations, documentation is
+        referenced below.
+        Documentation progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-367
+
     - key: a.1
       text: |
-        A control response to SA-5(a)(1) is planned. Progress
-        can be tracked at:
+        CoreOS installation documents:
+        https://coreos.com/docs/#tectonicInstallationHeader
+        CoreOS Hardening guide:
+        https://coreos.com/os/docs/latest/hardening-guide.html
+        Machine Config Operator documentation:
+        https://github.com/openshift/machine-config-operator/tree/master/docs
+
+        Documentation progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-367
+
     - key: a.2
       text: |
-        A control response to SA-5(a)(2) is planned. Progress
-        can be tracked at:
+        Documention of effective use and maintenance of security functions is
+        an organization policy and procedure control.
+        CoreOS uses SELinux to apply security contexts to files, devices, processes,
+        and containers.
+        The CoreOS hardening guide touches on the basics of effective security tool
+        use and maintenance:
+        https://github.com/coreos/docs/blob/master/os/hardening-guide.md
+        Additional control documentation and progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-367
+
     - key: a.3
       text: |
+        Obtaining documention of known vulnerabilities is an organizational policy and
+        procedure control. This is not applicable to CoreOS.
+        Official Red Hat CVE findings can be found at:
+        https://access.redhat.com/security/security-updates/#/cve
+
         A control response to SA-5(a)(3) is planned. Progress
         can be tracked at:
 
         https://issues.redhat.com/browse/CMP-367
+
     - key: b
       text: |
+        Obtaining user documentation about CoreOS is an organization policy and procedure
+        control. This is not applicable to CoreO because this is not an information system
+        control, and because CoreOS recommends that user-based interactions are not allowed.
+        All interaction with the system is done through the Machine Config Operator, not
+        through user interactions.
+        Machine Config Operator documentation can be found at:
+        https://github.com/openshift/machine-config-operator
+
         A control response to SA-5(b) is planned. Progress
         can be tracked at:
 
         https://issues.redhat.com/browse/CMP-367
     - key: b.1
       text: |
+        There are no user-acessible security functions. All security functions and
+        mechanisms are recommended to be used through the OpenShift Operator,
+        the Machine Config Operator.
+
         A control response to SA-5(b)(1) is planned. Progress
         can be tracked at:
 
         https://issues.redhat.com/browse/CMP-367
+
     - key: b.2
       text: |
+        There are no methods of user interaction, use of the system is through the
+        OpenShift console through the Machine Config Operator.
+
         A control response to SA-5(b)(2) is planned. Progress
         can be tracked at:
 
         https://issues.redhat.com/browse/CMP-367
+
     - key: b.3
       text: |
         This control reflects organizational procedure/policy and is not
         applicable to CoreOS configuration.
+
+        User responsibilities are not present. Maintenence of the system is
+        performed through the Machine Config Operator.
     - key: c
       text: |
         This control reflects organizational procedure/policy and is not

@@ -358,45 +358,82 @@
     - key: a
       text: |
         As this describes organizational requirements and policy, this
-        is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
-        requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        is a control that OpenShift can provide documentation for but cannot satisfy.
+        To help satisfy client audit and documentation requirements, assistance with
+        documentation needs can be requested through normal Red Hat ticketing processes.
+        The customer is responsible for acquiring documentation of applications that
+        are hosted by an OpenShift Container Platform deployment.
+        Additional documentation for in-scope deployments can be found at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: a.1
       text: |
         As this describes organizational requirements and policy, this
         is not a control within the scope of functionality that OpenShift
         can provide. To help satisfy client audit and documentation
         requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        requested through normal Red Hat processes.
+        Documentation for installation on a variety of platforms can be found at:
+        https://docs.openshift.com/container-platform/latest/installing/install_config/installation-types.html
+
+        For additional engineering needs (features, documentation) see the JIRA at:
+        https://issues.redhat.com/browse/CMP-367
+
     - key: a.2
       text: |
-        As this describes organizational requirements and policy, this
-        is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
-        requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        Documention of effective use and maintenance of security functions is
+        an organization policy and procedure control.
+        Additional documentation for in-scope deployments can be found at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: a.3
       text: |
         As this describes organizational requirements and policy, this
         is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
-        requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        can provide. Red Hat maintains a list of recognized vulnerabilities
+        along with CVE identifier, remediation status, and impact using the
+        CVE framework.
+        Identified CVEs for the OpenShift software can be found at
+        https://access.redhat.com/security/security-updates/#/cve?q=OpenShift
+        Additional documentation for in-scope deployments can be found at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: b
       text: |
         As this describes organizational requirements and policy, this
-        is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
+        is not a control within the scope of OpenShift configuration.
+        To help satisfy client audit and documentation
         requirements, assistance with documentation needs can be
         requested through normal Red Hat ticketing processes.
+        User interactions with applications and services hosted by OpenShift
+        is the sole resposibility of the customer to document.
+        Additional documentation for in-scope deployments can be found at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: b.1
       text: |
-        As this describes organizational requirements and policy, this
-        is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
-        requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        As this describes organizational requirements and policy, this control is not
+        applicable to OpenShift. OpenShift documentation may be used by the organization
+        to satisfy their ownership of this control.
+        'Admin' user interactions are the bulk of the documentation from
+        https://docs.openShift.com/container-platform/latest/.
+        The 'Developer' perspective has a reduced set of permissions, and does not allow
+        the full range of actions that the 'Admin' perspective does.
+        Developer perspective documentation can be found at:
+        web console: https://docs.openshift.com/container-platform/latest/web_console/odc-about-developer-perspective.html
+        CLI tool: https://docs.openshift.com/container-platform/latest/cli_reference/openshift_developer_cli/understanding-odo.html
+
+        Documentation for admin perspective:
+        https://docs.openshift.com/container-platform/latest/welcome/index.html
+
+        Additional documentation for in-scope deployments can be found at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: b.2
       text: |
         As this describes organizational requirements and policy, this
@@ -404,6 +441,18 @@
         can provide. To help satisfy client audit and documentation
         requirements, assistance with documentation needs can be
         requested through normal Red Hat ticketing processes.
+
+        Developer perspective documentation can be found at:
+        web console: https://docs.openshift.com/container-platform/latest/web_console/odc-about-developer-perspective.html
+        CLI tool: https://docs.openshift.com/container-platform/latest/cli_reference/openshift_developer_cli/understanding-odo.html
+
+        Documentation for admin perspective:
+        https://docs.openshift.com/container-platform/latest/welcome/index.html
+
+        Additional documentation for in-scope deployments can be found at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: b.3
       text: |
         As this describes organizational requirements and policy, this
@@ -411,27 +460,44 @@
         can provide. To help satisfy client audit and documentation
         requirements, assistance with documentation needs can be
         requested through normal Red Hat ticketing processes.
+        CLI maintenance commands:
+        https://docs.openshift.com/container-platform/latest/cli_reference/openshift_cli/administrator-cli-commands.html#cli-maintenance-commands_cli-administrator-commands
+        The `etcd` recommended maintenance is found under the 'Recommended etcd practices'
+        heading at the URI:
+        https://docs.openshift.com/container-platform/latest/scalability_and_performance/recommended-host-practices.html
+        Additional documentation for in-scope deployments can be found at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: c
       text: |
-        As this describes organizational requirements and policy, this
-        is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
-        requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        Documentation acquisition attempts when documentation is unavailable or
+        nonexistant is an organizational policy and procedure control, and is not
+        applicable to vendors.
+
+        Documentation update progress can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: d
       text: |
-        As this describes organizational requirements and policy, this
-        is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
-        requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        Protection of documents as required by risk management strategy is a
+        control determined by the organization policy and procedure.
+        Protection of documents is not applicable to the OpenShift product.
+
+        Documentation update progress can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
+
     - key: e
       text: |
-        As this describes organizational requirements and policy, this
-        is not a control within the scope of functionality that OpenShift
-        can provide. To help satisfy client audit and documentation
-        requirements, assistance with documentation needs can be
-        requested through normal Red Hat ticketing processes.
+        Distribution of documentation is the responsibility of the organization,
+        managed through organizational policy and procedure. This is not applicable
+        to OpenShift configuration nor to OpenShift documentation supplied by vendor.
+
+        Any documentation update progress an be tracked at:
+
+        https://issues.redhat.com/browse/CMP-367
 
 - control_key: SA-5 (1)
   standard_key: NIST-800-53
