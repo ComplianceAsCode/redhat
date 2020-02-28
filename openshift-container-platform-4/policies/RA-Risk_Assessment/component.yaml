@@ -149,12 +149,22 @@
 - control_key: RA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
+        Organizational policy and procedures to employ and update the organizational
+        scanning appliance is outside the scope of OpenShift configuration.
+        The Quay container registry that Red Hat recommends for container storage can be
+        integrated with the Clair vulnerability scanning tool
+        Documentation for adding a Clair container to perform scans:
+        https://access.redhat.com/documentation/en-us/red_hat_quay/2.9/html/manage_red_hat_quay/clair-initial-setup
 
-        https://issues.redhat.com/browse/CMP-353
+        Clair vulnerability scan data sources and drivers documentation:
+        https://github.com/quay/clair/blob/master/Documentation/drivers-and-data-sources.md
+
+        Documentation progress can be tracked at:
+
+        https://issues.redhat.com/CMP-353
 
 - control_key: RA-5 (2)
   standard_key: NIST-800-53
