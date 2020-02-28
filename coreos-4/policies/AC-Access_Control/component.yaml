@@ -463,12 +463,19 @@
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - text: |-
         Red Hat CoreOS is not a product that is intended to be used as a data flow control
         manager. For all Kubernetes Container Network Interface documentation, refer to the
         appropriate OpenShift networking documentation.
+
+        Within the information system, Red Hat CoreOS enforces data flow control between
+        information system elements by the enforcement of SELinux context types on files,
+        processes, and devices.
+
+        Documentation updates and control reponse progress can be tracked at:
+        https://issues.redhat.com/CMP-98
 
 - control_key: AC-4 (1)
   standard_key: NIST-800-53

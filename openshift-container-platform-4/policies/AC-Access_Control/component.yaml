@@ -438,15 +438,31 @@
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - text: |
+        The common scenario of flow control is typically where information crosses a secure
+        boundary across network segments.
         The OpenShift configuration of the internal NetworkPolicy object manages communication
         between OpenShift objects that reside within the boundaries of the OpenShift environment.
         This internal routing is in-scope for what is described as a 'boundary flow control
         device', note that the NetworkPolicy configuration is not capable of performing flow
         control for data that originates outside of the OpenShift logical environment boundary.
-      
+
+        Files owned by container applications hosted by OpenShift are not allowed to cross
+        application ownership boundaries, defined at the OS level and managed on the host
+        system by SELinux. Management of SELinux on the OpenShift host system is performed
+        through the use of the Machine Config Operator.
+
+        OpenShift configuration for NetworkPolicy:
+        https://docs.openshift.com/container-platform/latest/networking/understanding-networking.html
+
+        MachineConfigOperator:
+        https://github.com/openshift/machine-config-operator/tree/master/docs
+
+        Documentation updates and control response progress can be tracked at:
+        https://issues.redhat.com/CMP-98
+
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
   covered_by: []
