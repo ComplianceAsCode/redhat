@@ -44,7 +44,6 @@
         access to privileged accounts is deferred to the
         organizational identity provider (such as
         LDAP, Active Directory, Red Hat SSO, etc).
-        
         To aid system administrators, documentation on
         supported authentication providers can be found in the
         OpenShift product documentation:
