@@ -333,12 +333,12 @@
 - control_key: SC-7 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        The customer will be responsible for implementing mechanisms to
-        ensure CoreOS nodes to not act as proxy or relay servers between
-        internal and external networks.
+        CoreOS it not intended to be installed on remote devices. Preventing split tunneling
+        is an organizational responsibility, and not the responsibility of the CoreOS
+        Container Linux operating system.
 
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
