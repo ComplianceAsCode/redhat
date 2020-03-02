@@ -64,12 +64,19 @@
 - control_key: IA-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        Implementing multifactor authentication for network access
+        to non-privileged accounts is the responsibility of the
+        organizational identity provider (such as
+        LDAP, Active Directory, Red Hat SSO, etc).
 
-        https://issues.redhat.com/browse/CMP-301
+        To aid system administrators, documentation on
+        supported authentication providers can be found in the
+        OpenShift product documentation:
+
+        https://access.redhat.com/documentation/en-us/openshift_container_platform/latest/html/authentication/understanding-identity-provider
 
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
