@@ -315,12 +315,21 @@
 - control_key: SA-4 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response to SA-4(8) is planned. Progress
-        can be tracked at:
+        This is an organization procedural control out of scope for out-of-the-box CoreOS
+        configuration.
+        Recommended configuration of CoreOS is managed through the OpenShift Container Platform
+        cluster through the Machine Config Operator. Standard RHEL logging configuration for
+        log forwarding can be used by an organization to satisfy the documentation requirement
+        of the organization.
+        RHEL7 logging documentation:
+        https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/s1-basic_configuration_of_rsyslog
+        Machine Config Operator documentation:
+        https://github.com/openshift/machine-config-operator/tree/master/docs
 
+        Documentation updates and control progress can be tracked at:
         https://issues.redhat.com/browse/CMP-365
 
 ##
