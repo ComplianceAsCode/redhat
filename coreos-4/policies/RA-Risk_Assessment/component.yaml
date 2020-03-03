@@ -152,8 +152,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        Organizational policy and procedures to employ and update the organizational
-        scanning appliance is outside the scope of Red Hat CoreOS configuration.
+        Organizational policies and procedures to employ and an organizational
+        scanning tool are outside the scope of Red Hat CoreOS configuration.
 
 - control_key: RA-5 (2)
   standard_key: NIST-800-53
