@@ -137,14 +137,17 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        The customer will be responsible for removing previous versions of software
-        and firmware. This control is specific to organizational procedure, requiring
-        removal of software after an updated version has been installed.
+        Removal of previous versions of OpenShift an organization policy and procedure control
+        and is out of scope for direct application to OpenShift.
         OpenShift can assist the customer with this process, using strategies
         such as Blue/Green deployments to assist with replacing and removing old versions
         of containerized software applications.
         Customer updates of OpenShift can be done through the `oc adm update --to=<version>'
         command.
+
+        Documentation updates and control progress can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-358
 
 - control_key: SI-3
   standard_key: NIST-800-53
