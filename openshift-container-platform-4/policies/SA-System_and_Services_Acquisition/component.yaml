@@ -548,11 +548,18 @@
 - control_key: SA-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response to SA-9(5) is planned. Progress
-        can be tracked at:
+        Restricting location of information processing; data; information system services
+        is an organization policy and procedure control that is out of scope for OpenShift
+        configuration.
+
+        OpenShift pods can be scheduled to run on specific nodes using advanced pod scheduling.
+        Pod scheduling documentation:
+        https://docs.openshift.com/container-platform/4.3/nodes/scheduling/nodes-scheduler-about.html
+
+        Documentation updates and control response progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-368
 

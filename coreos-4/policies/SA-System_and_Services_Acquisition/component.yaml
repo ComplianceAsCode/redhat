@@ -548,9 +548,16 @@
 - control_key: SA-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
+        The organizational policy and procedure to restrict location of information processing;
+        data; information system services; is outside the scope of CoreOS configuration.
+        Scheduling of pods and containerized applicationss on CoreOS nodes is managed by
+        OpenShift. See the control response for OpenShift Container Platform 4.x SA-9 (5) to
+        understand the role OpenShift can play in satisfaction of this control for an
+        organization.
+
         A control response to SA-9(5) is planned. Progress
         can be tracked at:
 
