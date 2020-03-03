@@ -1224,13 +1224,12 @@
 - control_key: SI-14
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response for SI-15 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-561
+        Non-persistence of information system components and services are determined by
+        organizational policy and procedure controls. OpenShift configuration of hosted pods
+        and hosted applications can assist the organization with fulfillment.
 
 - control_key: SI-14 (1)
   standard_key: NIST-800-53
