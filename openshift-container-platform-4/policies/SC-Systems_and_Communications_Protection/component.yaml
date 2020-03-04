@@ -1241,9 +1241,17 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        The customer is solely responsible for implementing a strategy to mislead
+        adversarial actors with regard to the organizations securite state or posture.
+        This is an organizational policy and procedure control that OpenShift configuration
+        cannot satisfy, although use of the product could be part of the implementation strategy.
+        As part of a misleading strategy, the OpenShift Web Console Operator that supplies the
+        web console interface can be configured to supply different or reduced sets of HTTP
+        headers.
+        Console Operator documentation:
+        https://github.com/openshift/console-operator
 
+        Documentation updates and control progress can be tracked at:
         https://issues.redhat.com/browse/CMP-515
 
 - control_key: SC-30 (5)

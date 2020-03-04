@@ -1220,10 +1220,12 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-515
+        The customer is solely responsible for implementing a strategy to mislead
+        adversarial actors with regard to the organizations securite state or posture.
+        This is a control satisfied by organizational policies and procedures.
+        Deploying misleading information through CoreOS ports can be
+        configured using the OpenShift Machine Config Operator, including presented
+        SSH banners.
 
 - control_key: SC-30 (5)
   standard_key: NIST-800-53
