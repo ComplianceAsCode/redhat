@@ -60,8 +60,10 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        The system does not provide access to privileged accounts because it is interacted with via a web app and APIs. 
-        Access to local privileged accounts on supporting systems is controlled by the organization.
+        OpenShift, as a web application, is managed remotely through
+        a web console and/or API endpoints. The implementation
+        of multifactor authentication for local access to privileged accounts
+        is not applicable to OpenShift.
 
 - control_key: IA-2 (4)
   standard_key: NIST-800-53
