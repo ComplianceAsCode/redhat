@@ -217,9 +217,22 @@
 - control_key: CM-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
+        Employing automated mechanisms to implement changes to the current information
+        system baseline and deploy updated baseline across the installed base is an
+        organizational control for policies and procedures. CM-3(3) is out of scope for
+        OpenShift configuration.
+        OpenShift can assist an organization with satisfying this control by either
+        deploying Ansible Tower onto the OpenShift Platform, or by using the Openshift
+        Ansible Service Broker Operator to automate mechanisms for change management
+        with respect to hosted pods and containers.
+        Ansible Tower deployment to OpenShift documentation:
+        https://docs.ansible.com/ansible-tower/latest/html/administration/openshift_configuration.html
+        OpenShift Ansible Service Broker documentation:
+        https://docs.openshift.com/container-platform/4.3/applications/service_brokers/installing-ansible-service-broker.html
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 

@@ -217,9 +217,20 @@
 - control_key: CM-3 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
+        Employing automated mechanisms to implement changes to the current information
+        system baseline and deploy updated baseline across the installed base is an
+        organizational control for policies and procedures. CM-3(3) is out of scope for
+        CoreOS configuration.
+        In the case of a client organization defining scope of this control to include
+        CoreOS host systems, Ansible Tower using SSH is the Red Hat preferred
+        mechanism to perform automation of change management to the in-scope CoreOS
+        hosts.
+        Ansible Tower documentation:
+        https://docs.ansible.com/ansible-tower/latest/html/administration/index.html
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
