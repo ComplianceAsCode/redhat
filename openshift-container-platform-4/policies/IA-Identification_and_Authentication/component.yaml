@@ -70,13 +70,10 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        OCP offloads (via: https://access.redhat.com/documentation/en-us/
-        openshift_container_platform/4.3/html/authentication/
-        understanding-identity-provider)
-        responsibility for authentication, session management, and OAuth
-        controls to the hosting environment’s LDAP and leverages CAC/PKI,
-        FIPS 140-2 compliant ciphers, SSO and does not provide for group
-        accounts.
+        OpenShift, as a web application, is managed remotely through
+        a web console and/or API endpoints. The implementation
+        of multifactor authentication for local access to non-privileged
+        accounts is not applicable to OpenShift.
 
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
