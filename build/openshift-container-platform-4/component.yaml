@@ -4530,12 +4530,13 @@ satisfies:
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-302
+        OpenShift, as a web application, is managed remotely through
+        a web console and/or API endpoints. The implementation
+        of multifactor authentication for local access to privileged accounts
+        is not applicable to OpenShift.
 
 - control_key: IA-2 (4)
   standard_key: NIST-800-53
