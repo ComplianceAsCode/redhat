@@ -382,18 +382,21 @@
     - text: |
         This control reflects organizational procedures/policies, and is not
         applicable to the configuration of CoreOS.
+
         Preventative maintenance policy for a CoreOS system should include aspects
         such as log rotation, maximum log size, and possibly allocated disk space.
-        Hardware maintenance and tracking is not thee responsibility of CoreOS.
-        Ignition configuratino for CoreOS installation documentation:
+
+        Hardware maintenance and tracking is not the responsibility of CoreOS.
+
+        Ignition configuration for CoreOS installation documentation:
         https://github.com/coreos/ignition/tree/master/doc
+
         Post-install configuration change documentation:
         https://github.com/openshift/machine-config-operator/tree/master/docs
 
-        Documentation updates and controll progress can be tracked at:
+        Documentation updates and control progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-348
-
 
 - control_key: MA-6 (2)
   standard_key: NIST-800-53
