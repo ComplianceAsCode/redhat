@@ -383,6 +383,15 @@
         This control reflects organizational procedures/policies, and is not
         applicable to the configuration of OpenShift.
 
+        OpenShift logging and monitoring may occasionally require maintenance.
+
+        Documentation for configuring the native OpenShift Elasticsearch Kibana
+        FluentD logging stack can be found at:
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
+
+        Documentation updates and control progress can be tracked at:
+        https://issues.redhat.com/browse/CMP-348
+
 - control_key: MA-6 (2)
   standard_key: NIST-800-53
   covered_by: []
