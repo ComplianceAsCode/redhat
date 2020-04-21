@@ -863,18 +863,48 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.1
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.2
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b.1
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b.2
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 - control_key: IR-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 ##
 ## Note to content authors:
@@ -890,8 +920,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-2 (2)
   standard_key: NIST-800-53
@@ -899,8 +929,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-3
   standard_key: NIST-800-53
@@ -908,8 +938,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-3 (1)
   standard_key: NIST-800-53
@@ -917,8 +947,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-3 (2)
   standard_key: NIST-800-53
@@ -926,17 +956,26 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 - control_key: IR-4 (1)
   standard_key: NIST-800-53
@@ -944,8 +983,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 ##
 ## Note to content authors:
@@ -961,8 +1000,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (3)
   standard_key: NIST-800-53
@@ -970,8 +1009,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (4)
   standard_key: NIST-800-53
@@ -979,8 +1018,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (5)
   standard_key: NIST-800-53
@@ -988,8 +1027,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (6)
   standard_key: NIST-800-53
@@ -997,8 +1036,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (7)
   standard_key: NIST-800-53
@@ -1006,8 +1045,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (8)
   standard_key: NIST-800-53
@@ -1015,8 +1054,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (9)
   standard_key: NIST-800-53
@@ -1024,8 +1063,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-4 (10)
   standard_key: NIST-800-53
@@ -1033,8 +1072,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-5
   standard_key: NIST-800-53
@@ -1042,8 +1081,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 ##
 ## Note to content authors:
@@ -1061,17 +1100,22 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 - control_key: IR-6 (1)
   standard_key: NIST-800-53
@@ -1079,8 +1123,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-6 (2)
   standard_key: NIST-800-53
@@ -1088,8 +1132,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-6 (3)
   standard_key: NIST-800-53
@@ -1097,8 +1141,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-7
   standard_key: NIST-800-53
@@ -1106,8 +1150,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 - control_key: IR-7 (1)
   standard_key: NIST-800-53
@@ -1115,35 +1159,114 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-7 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 - control_key: IR-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.1
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.2
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.3
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.4
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.5
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.6
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.7
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: a.8
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: d
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: e
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: f
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 - control_key: IR-9
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: d
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: e
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: f
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
 
 - control_key: IR-9 (1)
   standard_key: NIST-800-53
@@ -1151,8 +1274,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-9 (2)
   standard_key: NIST-800-53
@@ -1160,8 +1283,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-9 (3)
   standard_key: NIST-800-53
@@ -1169,8 +1292,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-9 (4)
   standard_key: NIST-800-53
@@ -1178,8 +1301,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: IR-10
   standard_key: NIST-800-53
@@ -1187,8 +1310,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedures/policies and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 ##
 ## BEGINNING OF:
 ## MAINTENANCE
@@ -1263,189 +1386,608 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Development, documentation, and dissemination of a physical
+        and environmental protection policy reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
+    - key: b
+      text: |
+        Organizational review and updates to the physical and
+        environmental protection policy reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
 
 - control_key: PE-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Development, approval, and maintenance of a list
+        of individuals with authorized access to the facility
+        where the information system resides reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
+    - key: b
+      text: |
+        Issuing authorization credentials for facility access
+        reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: c
+      text: |
+        Reviewing the access list detailing authorized facility
+        access by individuals at an organization-defined frequency
+        reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+    - key: d
+      text: |
+        Removal of individuals from the facility access list when access
+        is no longer required reflects organizational procedure/policy
+        and is not applicable to component-level configuration.
+
+- control_key: PE-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Authorizing physical access to the facility where the information
+        system resides based on position or role reflects organizational
+        procedures/policy and is not applicable to component-level
+        configuration.
+
+- control_key: PE-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Requiring two forms of identification from an organization-defined
+        list of acceptable forms of identification for visitor access to
+        the facility where the information system resides reflects
+        organizational procedure/policy and is not applicable to
+        component-level configuration.
+
+- control_key: PE-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Restricting unescorted access to the facility where the
+        information system resides reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
 
 - control_key: PE-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Enforcing physical access authorizations at organization-defined
+        entry/exit points to the facility where the information system resides
+        reflects organizational procedure/policy and is not applicable to
+        component-level configuration.
+    - key: b
+      text: |
+        Maintaining physical access audit logs for organization-defined
+        entry/exit points reflects organizational procedure/policy and
+        is not applicable to component-level configuration.
+    - key: c
+      text: |
+        Providing organization-defined security safeguards to control access
+        to areas within the facility officially designated as publicly
+        accessible reflects organizational procedure/policy and
+        is not applicable to component-level configuration.
+    - key: d
+      text: |
+        Escorting visitors and monitoring visitor activity during
+        organization-defined circumstances requiring visitor escorts
+        and monitoring reflects organizational procedure/policy and
+        is not applicable to component-level configuration.
+    - key: e
+      text: |
+        Securing keys, combinations, and other physical access devices
+        reflects organizational procedure/policy and
+        is not applicable to component-level configuration.
+    - key: f
+      text: |
+        Inventory of organization-defined physical access devices
+        at an organization-defined frequency reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
+    - key: g
+      text: |
+        Changing combinations and keys at an organization-defined frequency
+        and/or when keys are lost, combinations are compromised, or individuals
+        are transferred or terminated, reflects organizational procedure/policy
+        and is not applicable to component-level configuration.
 
 - control_key: PE-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Enforcing physical access authorizations to the information system
+        in addition to the physical access controls for the facility at
+        organization-defined physical spaces containing one or more components
+        of the information system reflects organizational procedure/policy
+        and is not applicable to component-level configuration.
+
+- control_key: PE-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Performing security checks at an organization-defined
+        frequency at the physical boundary of the facility or information
+        system for unauthorized exfiltration of information or removal
+        of information system components reflects organizational
+        procedure/policy and is not applicable to
+        component-level configuration.
+
+- control_key: PE-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employing guards and/or alarms to monitor every physical access
+        point to the facility where the information system resides 24 hours
+        per day, 7 days per week, reflects organizational procedure/policy and
+        is not applicable to component-level configuration.
+
+- control_key: PE-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Using lockable physical casings to protect organization-defined
+        information system components from unauthorized physical access
+        reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+
+- control_key: PE-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employing organization-defined security safeguards to
+        detect and/or prevent physical tampering or alteration of
+        organization-defined hardware components within the information
+        system reflects organizational procedure/policy and is not
+        applicable to component-level configuration.
+
+- control_key: PE-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employing a penetration testing process that includes, at an
+        organization-defined frequency, unannounced attempts to bypass or
+        circumvent security controls associated with physical access points
+        to the facility reflects organizational procedure/policy and is
+        not applicable to component-level configuration.
 
 - control_key: PE-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Controlling physical access to organization-defined information
+        system distribution and transmission lines within organizational
+        facilities using organizaiton-defined security safeguards reflects
+        organizational procedure/policy and is not applicable to
+        component-level configuration.
 
 - control_key: PE-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Controlling physical access to information system output devices to
+        prevent unauthorized individuals from obtaining the output reflects
+        organizational policy/procedures and is not applicable to
+        component-level configuration.
+
+- control_key: PE-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Controlling physical access to output from organization-defined
+        output devices reflects organizational procedures/policy and
+        is outside the scope of component-level configuration.
+    - key: b
+      text: |
+        Ensuring that only authorized individuals receive output
+        from the device reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
+
+- control_key: PE-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Controlling physical access to output from organization-defined
+        output devices reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
+    - key: b
+      text: |
+        Linking individual identity to receipt of the output
+        from the device reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
+
+- control_key: PE-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Marking organization-defined information system output devices
+        indicating the appropriate security marking of the information
+        permitted to be output from the device reflects organizational
+        procedure/policy and is outside the scope of component-level
+        configuration.
 
 - control_key: PE-6
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Monitoring physical access to the facility where the information
+        system resides to detect and respond to physical security incidents
+        reflects organizational procedure/policy and is outside the scope
+        of component-level configuration.
+    - key: b
+      text: |
+        Reviewing physical access logs at an organization-defined
+        frequency and upon occurence of organization-defined events
+        or potential indications of events, reflects organizational
+        procedure/policy and is not applicable to component-level
+        configuration.
+    - key: c
+      text: |
+        Coordinating results of reviews and investigations with
+        the organizational incident response capability reflects
+        organizational procedure/policy and is not applicable to
+        component-level configuration.
 
 - control_key: PE-6 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Monitoring physical intrusion alarms and surveillance
+        equipment reflects organizational procedure/policy and is
+        not applicable to component-level configuration.
+
+- control_key: PE-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-6 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-8 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-9
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-10
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-11
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-11 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-12
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-13
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-13 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-13 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-13 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-13 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-14
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-14 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-15
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-15 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-16
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-17
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: PE-18
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-19 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PE-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 ##
 ## BEGINNING OF:
 ## PLANNING
@@ -1585,6 +2127,218 @@ satisfies:
     - text: |
         'This control reflects organizational procedure/policy and is not
         applicable to component-level configuration.'
+##
+## BEGINNING OF:
+## PROGRAM MANAGEMENT
+##
+
+- control_key: PM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: d
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: PM-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 ##
 ## BEGINNING OF:
 ## PERSONNEL SECURITY
