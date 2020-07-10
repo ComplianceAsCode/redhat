@@ -1133,7 +1133,7 @@
         A control response for SI-11(b) is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/CMP-293
+        https://issues.redhat.com/browse/CMP-392
 
 - control_key: SI-12
   standard_key: NIST-800-53
