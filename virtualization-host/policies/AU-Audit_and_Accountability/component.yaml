@@ -9,12 +9,7 @@
 ##  - implementation_status: partial
 ##  - implementation_status: complete
 ##  - implementation_status: none
-##
-## Control selections based off
-## https://nvd.nist.gov/800-53/Rev4/family/Audit%20and%20Accountability
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-1
 - control_key: AU-1
   standard_key: NIST-800-53
   covered_by: []
@@ -22,23 +17,22 @@
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        Developing an organization-level audit and accountability
+        policy is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        Review and updating an organizational-level audit and
+        accountability policy is outside the scope of Red Hat Virtualization Host (RHVH)
+        configuration.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-2
 - control_key: AU-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: partial
   narrative:
     - key: a
-      text: |
-        'The selection of organization-defined auditable events is not applicable
+      text: |-
+        The selection of organization-defined auditable events is not applicable
         to the configuration of Red Hat Virtualization Host (RHVH).
 
         However, as supplementary information, RHVH was designed to audit events
@@ -65,60 +59,127 @@
             - Admin or root-level access (Success/Failure)
             - Privilege/Role escalation (Success/Failure)
             - Audit and log data access (Success/Failure)
-            - System Reboot, Restart & Shutdown (Success/Failure)'
+            - System Reboot, Restart & Shutdown (Success/Failure)
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        Coordinating the security audit function with other
+        organizational entities is outside the scope of
+        system configuration.
     - key: c
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        For rationale regarding why the auditable events are deemed to be
+        adequate to support after-the-fact investigations of security incidents,
+        please contact your countries Common Criteria representative:
+        https://www.commoncriteriaportal.org/ccra/members/
     - key: d
       text: |
-        'The frequency (or situation requiring) the audit of events identified
+        The frequency (or situation requiring) the audit of events identified
         in AU-2(a) is not applicable to the configuration of Red Hat
         Virtualization Host (RHVH).
 
         As supplementary information, RHVH is capable of auditing the success and
-        failure, in realtime, of events identified in AU-2(a).'
+        failure, in realtime, of events identified in AU-2(a).
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-3
+- control_key: AU-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational review and updates to the audited events are
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: 'Red Hat Virtualization Host (RHVH) audit records contain
-    the required information and cannot be configured to be out of
-    compliance with this control.'
+    - text: |-
+        Red Hat Virtualization Host (RHVH) audit records contain
+        the required information and cannot be configured to be out of
+        compliance with this control.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-4
+- control_key: AU-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: AU-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - text: |-
+        A control response is planned. Engineering progress can be tracked via:
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-5
+        https://projects.engineering.redhat.com/browse/RHV-20419
+
+- control_key: AU-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: AU-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
     - key: a
-      text: |
-        'The audit subsystem was designed to uniquely identify multiple causes
+      text: |-
+        The audit subsystem was designed to uniquely identify multiple causes
         of audit processing failures. Configuring the audit subsystem to alert,
-        or take alternative actions such as shutdown, is detailed in AC-5(b). '
+        or take alternative actions such as shutdown, is detailed in AC-5(b).
+
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20421
     - key: b
-      text: |
-        'To shutdown a Red Hat Virtualization Host (RHVH) node upon
+      text: |-
+        To shutdown a Red Hat Virtualization Host (RHVH) node upon
         an audit processing failure, which includes software/hardware errors,
         failures in audit capturing mechanisms, or audit storage capacity being
         reached or exceeded, the following configuration check must
@@ -130,10 +191,52 @@
         such as errors writing to disk or rotating audit logs, the following
         configuration check must be enabled:
 
-        - CCE-80501-0: Configure auditd Disk Error Action on Disk Error'
+        - CCE-80501-0: Configure auditd Disk Error Action on Disk Error
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-6
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20421
+
+- control_key: AU-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20422
+
+- control_key: AU-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20423
+
+- control_key: AU-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: AU-6
   standard_key: NIST-800-53
   covered_by: []
@@ -141,15 +244,190 @@
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        Organizational review and analysis of information system
+        audit records for indications of organization-defined
+        inappropriate or unusual activity is outside the scope
+        of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        Reporting findings of organization-defined inappropriate or
+        unusual activity to organization-defined personnel or roles is
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-8
+- control_key: AU-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational use of automated mechanisms to integrate audit review,
+        analysis, and reporting processes to support organizational processes for
+        investigation and response to suspicious activities is outside the scope
+        of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational analysis and correlation of audit records across
+        different repositories to gain organization-wide
+        situational awareness is outside the scope
+        of Red Hat Virtualization Host (RHVH) configuration.
+
+        To aide in such organizational processes, note that Red Hat Virtualization Host (RHVH)'s
+        cluster loggging "Log Forward" feature enables Red Hat Virtualization Host (RHVH)
+        administrators to configure custom pipelines to send container
+        logs to remote destinations. These remote destinations, such as
+        Elastic or Splunk endpoints, could be used for information
+        system-wide correlation.
+
+- control_key: AU-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to centrally review and analyze
+        audit records from multiple components within the system
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+        Note: When AU-4 (1) is enforced Red Hat Virtualization Host (RHVH) will be configured
+        to off-load audit records onto a different system
+        or media than the system being audited. In practice this correlates
+        to offloading audit records to a SIEM (e.g. Elastic). However,
+        this control is specifically about centralized review and analysis,
+        and not offloading records, thus AU-6 (4) is marked as not
+        applicable.
+
+- control_key: AU-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to integrate analysis or audit
+        records with analysis of additional organization-defined
+        data/information collected from other sources to further
+        enhance the ability to identify inappropriate or unusual
+        activity is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+        To aide in such organizational processes, note that Red Hat Virtualization Host (RHVH)'s
+        cluster loggging "Log Forward" feature enables Red Hat Virtualization Host (RHVH)
+        administrators to configure custom pipelines to send container
+        logs to remote destinations. These remote destinations, such as
+        Elastic or Splunk endpoints, could be used for information
+        system-wide correlation.
+
+- control_key: AU-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to correlate information from
+        Red Hat Virtualization Host (RHVH) audit records with information obtained from monitoring
+        physical access to further enhanced the ability to identify
+        suspicious, inappropriate, unusual, or malevolent activity
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+        To aide in such organizational processes, note that Red Hat Virtualization Host (RHVH)'s
+        cluster loggging "Log Forward" feature enables Red Hat Virtualization Host (RHVH)
+        administrators to configure custom pipelines to send container
+        logs to remote destinations. These remote destinations, such as
+        Elastic or Splunk endpoints, could be used to correlate Red Hat Virtualization Host (RHVH)
+        logs with physical access data.
+
+- control_key: AU-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational specification of permitted actions for
+        information system processes, roles, and/or users, associated
+        with the review, analysis, and reporting of audit
+        information is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to perform full text analysis or audited
+        privileged commands in a physically distinct component or subsystem
+        of the information system, or other information system that is
+        dedicated to that analysis, is outside the scope of Red Hat Virtualization Host (RHVH)
+        configuration.
+
+- control_key: AU-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to correlate information
+        from nontechnical sources with audit information to enhance
+        organization-wide situational awareness is outside
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational adjustment of the level of audit review, analysis, and
+        reporting within the information system when there is a change in risk
+        based on law enforcement information, intelligence information, or other
+        credible sources of information, is outside the scope of Red Hat Virtualization Host (RHVH)
+        configuration.
+
+- control_key: AU-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20424
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20424
+
+- control_key: AU-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20425
+
+- control_key: AU-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
@@ -157,56 +435,229 @@
   narrative:
     - key: a
       text: |
-        'By default the audit subsystem utilizes the system clock and cannot be
-        configured to be out of compliance with this control.'
+        By default the audit subsystem utilizes the system clock and cannot be
+        configured to be out of compliance with this control.
     - key: b
       text: |
-        'The audit subsystem is hard coded to only accept internationally recognized
+        The audit subsystem is hard coded to only accept internationally recognized
         timezone settings. This ensures audit log timestamps can be mapped to
         Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT).
 
         To ensure the underlying system clocks are accurate within an
         organization-defined granularity of time measurement, the system must be
         configured to synchronize with an authoritative time source. Such
-        configuration is detailed in AU-8(1).'
+        configuration is detailed in AU-8(1).
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-9
+- control_key: AU-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        The following configuration checks ensure that the Red Hat Virtualization Host (RHVH) syncs time
+        with an authoritative time source:
+        - CCE-82875-6: The Chronyd service is enabled
+        - CCE-82873-1: A remote time server for Chrony is configured
+    - key: b
+      text: |
+        The following configuration checks ensure that the Red Hat Virtualization Host (RHVH) syncs time
+        with an authoritative time source at regular polling intervals:
+        - 80439-3: Configure Time Service Maxpoll Interval
+
+- control_key: AU-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        The following configuration checks ensure that the Red Hat Virtualization Host (RHVH) syncs time
+        with a secondary time source:
+        - CCE-82873-1: A remote time server for Chrony is configured
+
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: 'The following configuration checks ensure the audit records are
-    protected by appropriate file permission, user, and group ownership settings:
+    - text: |-
+        The following configuration checks ensure the audit records are
+        protected by appropriate file permission, user, and group ownership settings:
 
-    - CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
+        - CCE-27205-4: System Audit Logs Must Have Mode 0640 or Less Permissive
 
-    - CCE-80125-8: System Audit Logs Must Be Owned By Root
+        - CCE-80125-8: System Audit Logs Must Be Owned By Root
 
-    The /var/log/audit/ directory is provided by the audit subsystem
-    packaging. The following configuration checks ensure
-    /var/log/audit/ directory permissions, as well as permissions of
-    audit tooling, have not deviated from the secure defaults:
+        The /var/log/audit/ directory is provided by the audit subsystem
+        packaging. The following configuration checks ensure
+        /var/log/audit/ directory permissions, as well as permissions of
+        audit tooling, have not deviated from the secure defaults:
 
-    - CCE-27209-6: Verify and Correct File Permissions with RPM
+        - CCE-27209-6: Verify and Correct File Permissions with RPM
 
-    - CCE-80545-7: Verify and Correct Ownership with RPM
+        - CCE-80545-7: Verify and Correct Ownership with RPM
 
-    The following configuration check is required to cryptographically
-    verify the audit subsystem binaries and associated tooling has not
-    been modified/tampered with:
+        The following configuration check is required to cryptographically
+        verify the audit subsystem binaries and associated tooling has not
+        been modified/tampered with:
 
-    - CCE-27157-7: Verify File Hashes with RPM'
+        - CCE-27157-7: Verify File Hashes with RPM
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-11
-- control_key: AU-11
+- control_key: AU-9 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'This control reflects organizational procedures/policies, and is not
+    - text: |
+        Writing audit trails to hardware enforced, write-once media,
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Backup of audit records onto a physically different system or
+        system component than the component being audited is the
+        responsibility of the centralized audit facility defined in
+        AU-4 (1), "Transfer to Alternate Storage," and outside
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        Enforcement of cryptographic protectionm is the responsibility of the centralized audit
+        facility, and outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20506
+
+- control_key: AU-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Per AU-4 (1), Red Hat Virtualization Host (RHVH) will be configured to offload audit records
+        to a centralized audit facility. Enforcement of dual authorization
+        for movement and/or deletion of organization-defined audit
+        information is the responsibility of the centralized audit
+        facility, and outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-9 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22656
+
+- control_key: AU-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20507
+
+- control_key: AU-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-1
+
+- control_key: AU-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
         However, once an organization-defined time period record retention is
@@ -217,31 +668,55 @@
         To tailor log retention (based on log size, not age), the following
         configuration check may be helpful:
 
-        - CCE-27348-2: Configure auditd Number of Logs Retained'
+        - CCE-27348-2: Configure auditd Number of Logs Retained
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AU-12
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20509
+
+- control_key: AU-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: AU-12
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - key: a
-      text: |
-        'To ensure Red Hat Virtualization Host (RHVH) nodes provide audit
+      text: |-
+        To ensure Red Hat Virtualization Host (RHVH) nodes provide audit
         record generation capability, the underlying audit subsystem
         must be enabled through the following configuration checks:
 
         - CCE-27407-6: Enable auditd Service
 
-        - CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon'
+        - CCE-27212-0: Enable Auditing for Processes Which Start Priot to the Audit Daemon
+
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20513
     - key: b
-      text: |
-        'System administrators may customize audit rules by editing the
-        appropriate files under /etc/audit/audit.d/.'
+      text: |-
+        System administrators may customize audit rules by editing the
+        appropriate files under /etc/audit/audit.d/.
+
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20513
     - key: c
-      text: |
-        'The following configuration checks correlate to recommended
+      text: |-
+        The following configuration checks correlate to recommended
         audit events:
 
         - CCE-27212-0: Enable Auditing for Processes Which Start Prior to the Audit Daemon
@@ -370,4 +845,157 @@
 
         - CCE-27447-2: Ensure auditd Collects Information on Exporting to Media (successful)
 
-        - CCE-27461-3: Ensure auditd Collects System Administrator Actions'
+        - CCE-27461-3: Ensure auditd Collects System Administrator Actions
+
+- control_key: AU-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20514
+
+- control_key: AU-12 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-12 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20515
+
+- control_key: AU-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Monitoring of organization-defined open source information
+        and/or information sites at an organization-defined frequency for
+        evidence of unauthorized disclosure of organizational information
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of automated mechanisms to determine if
+        organizational information has been disclosed in an
+        unauthorized manner is outside the scope of
+        Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Reviews of the open source information sites being monitored
+        at an organization-defined frequency is outside the scope
+        of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-14 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Providing an alternate audit capability in the event of a failure in primary audit
+        capability is an organizational control outside of Red Hat Virtualization Host (RHVH).
+
+- control_key: AU-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of organization-defined methods for coordinating
+        organization-defined audit information among external
+        organizations when audit information is transmitted
+        across organizational boundaries is outside the scope
+        of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: AU-16 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Engineering progress can be tracked
+        via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: AU-16 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Providing cross-organizational audit information to
+        organization-defined organizations based on
+        organization-defined cross-organizational sharing
+        agreements is outside the scope of Red Hat Virtualization Host (RHVH)
+        configuration.
