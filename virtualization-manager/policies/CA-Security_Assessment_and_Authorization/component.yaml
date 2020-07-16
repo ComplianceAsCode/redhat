@@ -172,6 +172,16 @@
         of an information system-level Plan of Action and Milestones (POA&M)
         is outside the scope of Red Hat Virtualization Manager (RHVM) configuration processes.
 
+- control_key: CA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Updates and maintenance of an information system-level
+        Plan of Action and Milestones (POA&M) document outside the
+        scope of Red Hat Virtualization Manager (RHVM) configuration.
+
 - control_key: CA-6
   standard_key: NIST-800-53
   covered_by: []
