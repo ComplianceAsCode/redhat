@@ -3044,101 +3044,809 @@ satisfies:
 ## BEGINNING OF:
 ## CONFIGURATION MANAGEMENT
 ##
-
-# ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
-#       want centralized config management, while others expect component
-#       administrators to handle this (e.g. maintain custom Ansible scripts).
-#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
-#       however it's best to double check with the Information System owner
-#       on expectations (component vs central CM).
-#
-#       In case the customer desires components (e.g. Red Hat Identity
-#       Management Admins) to handle configuration management the
-#       lines below can be uncommented:
-#
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
 
 - control_key: CM-1
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Developing, documenting, and disseminating an organizational configuration
+        management policy is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Review and update procedures to the organizational configuration
+        management policy is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: CM-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: ''
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-- control_key: CM-4
-  standard_key: NIST-800-53
-  covered_by: []
-  implementation_status: not applicable
-  narrative:
-    - text: ''
+        https://projects.engineering.redhat.com/browse/RHV-20519
 
-- control_key: CM-6
+- control_key: CM-2 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - key: a
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component. Use of the NIST National Checklist
-        for this system component is suggested as a supported,
-        US Government recognized, vendor supported, baseline.'
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20520
     - key: b
       text: |
-        'The customer will be responsible for implementing configuration
-        settings as defined in CM-6(a). A successful control response will
-        describe how mandatory configuration settings are implemented. This can
-        include the process or documentation followed.
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-        Documentation/guidance on satisfying this control is planned.'
+        https://projects.engineering.redhat.com/browse/RHV-20520
     - key: c
       text: |
-        'This is an organizational control outside the scope of configuring
-        this system component.'
-    - key: d
-      text: |
-        'The customer will be responsible for monitoring and controlling
-        changes to the configuration settings in accordance with organization
-        policies and procedures. A successful control response will describe
-        how changes are controlled and monitored. This can include limitations
-        to privileges, how these changes are audited, and any tools in place to
-        track and approve changes.'
+        A complete control response is planned. Engineering progress can be
+        tracked via:
 
-- control_key: CM-7
+        https://projects.engineering.redhat.com/browse/RHV-20520
+
+- control_key: CM-2 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation/guidance on satisfying this control is planned.'
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20521
+
+- control_key: CM-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20522
+
+- control_key: CM-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20523
+
+- control_key: CM-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational issuance of organization-defined information
+        systems, system components, or devices with organizational-defined
+        configurations to indivudals traveling to locations that the
+        organization deems to be of significant risk is outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational processes to apply organization-defined security
+        safeguards to the devices when the individuals return is
+        outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: CM-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: d
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: e
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: f
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: g
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: d
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: e
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: f
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        The requirement for an information security representative to be
+        a member of the organization-defined configuration change
+        control element is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: CM-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational analysis of changes to the information system to
+        determine potential security impacts prior to change implementation
+        is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: CM-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/897
+
+- control_key: CM-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20591
+
+- control_key: CM-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22701
+
+- control_key: CM-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22703
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        This is an organizational control outside the scope of configuring
+        this system component. Use of the NIST National Checklist
+        for this system component is suggested as a supported,
+        US Government recognized, vendor supported, baseline.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20523
+    - key: b
+      text: |
+        The customer will be responsible for implementing configuration
+        settings as defined in CM-6(a). A successful control response will
+        describe how mandatory configuration settings are implemented. This can
+        include the process or documentation followed.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20523
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20523
+    - key: d
+      text: |
+        The customer will be responsible for monitoring and controlling
+        changes to the configuration settings in accordance with organization
+        policies and procedures. A successful control response will describe
+        how changes are controlled and monitored. This can include limitations
+        to privileges, how these changes are audited, and any tools in place to
+        track and approve changes.
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20523
+
+- control_key: CM-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20524
+
+- control_key: CM-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Virtualization Manager (RHVM) is a purpose-built operating
+        system baseline which only provides minimal/required functionality.
+        No additional configuration is required for this control.
+
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: b
+      text: |
+        The default firewall configuration is a deny-all allow-by-exception
+        policy. No additional configuration is required for this control.
+
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20525
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20525
+
+- control_key: CM-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20592
+
+- control_key: CM-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20593
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20593
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20593
+
+- control_key: CM-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20594
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20594
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
 
 - control_key: CM-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20779
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20779
+
+- control_key: CM-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20780
+
+- control_key: CM-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: CM-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20595
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20595
+
+- control_key: CM-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to include in the information system
+        component inventory information, a means for identifying
+        by name, position, and/or role, individuals responsible/accountable
+        for administering those components, is outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: CM-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational verification that all components within the
+        authorization boundary of the information system are not
+        duplicated in other information system component
+        inventories is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: CM-8 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22704
+
+- control_key: CM-8 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: CM-8 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-8 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational assignment of organization-defined aquired information
+        system components to an information system is outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational processes to receive an acknowledgement from the
+        information system owner of the assignment in CM-8(8)(a) is outside
+        the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: CM-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+    - key: d
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration guidance.
+
+- control_key: CM-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to assign responsibility for developing the
+        configuration management process to organizational personnel that are
+        not directly involved in information system development are outside
+        the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: CM-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
 
-- control_key: CM-11
+        https://projects.engineering.redhat.com/browse/RHV-20596
+    - key: b
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20596
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+
+- control_key: CM-10 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        Establishment of organizational restrictions on open source software
+        is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        It is highly uncommon to deploy additional software on Red Hat
+        Virtualization Manager (RHVM) nodes. The following are suggested
+        policies to govern the installation of software by users:
+
+        - All software packages must be cryptographically signed
+        by a third party the organization trusts (such as
+        Red Hat GPG keys);
+
+        - All software repositories configured on the system
+        must enforce GPG key verification prior to software
+        installation;
+
+        - Previous versions of software should be removed after newer
+        versions have been installed.
+    - key: b
+      text: |
+        The following configuration checks enforce the policies identified
+        in CM-11(a):
+
+        - CCE-26957-1: Ensure Red Hat GPG Key Installed
+
+        - CCE-26876-3: Ensure gpgcheck Enabled for All YUM Package Repositories
+
+        - CCE-26989-4: Ensure gpgcheck Enabled In Main YUM Configuration
+
+        - CCE-80347-8: Ensure gpgcheck Enabled for Local Packages
+
+        - CCE-80346-0: Ensure YUM Removes Previous Package Versions
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+
+- control_key: CM-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-222709
+
+- control_key: CM-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        By default, Red Hat Virtualization Manager (RHVM) nodes only allow software
+        installation with privileged access through the usage of sudo or the root user.
 ##
 ## BEGINNING OF:
 ## CONTINGENCY PLANNING
@@ -6620,28 +7328,244 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: a.1
+      text: |
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: a.2
+      text: |
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b.1
+      text: |
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b.2
+      text: |
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: RA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational processes to categorize information and information
+        systems in accordance with applicable federal laws, Executive
+        Orders, directives, policies, regulations, standards, and
+        guidance, are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational processes to document the security categorization
+        results (including supporting rationale) in the security plan for
+        the information system are outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        Organizational processes to ensure that the authorizing official
+        or authorizing official designated representative reviews and
+        approved the security categorization decision are outside
+        the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: RA-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - key: a
+      text: |
+        Organizational processes to conduct an assessment of risk,
+        including the likelihood and magnitude of harm, from the unauthorized
+        access, use, disclosure, disruption, modification, or desctruction of
+        the information system and the information it processes, stores, or
+        transmits, are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational processes to document risk assessment results in
+        security plans, risk assessment reports, or organization-defined
+        documents, are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        Organizational processes to review risk assessment results at
+        an organization-defined frequency are outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: d
+      text: |
+        Organizational processes to disseminate risk assessment results to
+        organization-defined personnel or roles are outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: e
+      text: |
+        Organizational processes to update the risk assessment at an
+        organization-defined frequency or whenever there are significant
+        changes to the information system or environment of operation
+        (including the identification of new threats and vulnerabilities),
+        or other conditions that may impact the security state of the system,
+        are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
-- control_key: RA-5
+- control_key: RA-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: ''
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: RA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+    - key: d
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: e
+      text: |
+        Organizational processes to share information obtained from the
+        vulnerability scanning process and security control assessments
+        with organization-defined personnel or roles to help eliminate
+        similar vulnerabilities in other information systems (i.e.,
+        systemic weaknesses or deficiences) are outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: RA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: RA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+
+- control_key: RA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Manager (RHVM).
+
+- control_key: RA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21056
+
+- control_key: RA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: RA-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: RA-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: RA-5 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational review of historic audit logs to determine if a
+        vulnerability identified in the information system has been
+        previously exploited is outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: RA-5 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: RA-5 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to correlate the output from vulnerability
+        scanning tools to determine the presence of
+        multi-vulnerability/multi-hop attack vectors are outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+
+- control_key: RA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational employment of a technical surveillance countermeasures
+        survey at organization-defined locations at an organization-defined
+        frequency or when organization-defeined events or indicators
+        occur is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 ##
 ## BEGINNING OF:
 ## SYSTEM AND SERVICES ACQUISITION
