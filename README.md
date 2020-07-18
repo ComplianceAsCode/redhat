@@ -4,6 +4,8 @@ This repository contains control responses to NIST-800-53 security controls. Hum
 
 Some of the content is still work in progress!
 
+![Validate content](https://github.com/ComplianceAsCode/redhat/workflows/Validate%20content/badge.svg)
+
 ## Developer Prep
 Instructions on how to prepare your development host:
 - [RHEL / Fedora / CentOS](https://github.com/opencontrol/RedHat/blob/master/README-hostprep.md#red-hat-enterprise-linux-centos-fedora)
