@@ -8,36 +8,132 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to develop, document, and disseminate to
+        organization-defined personnel or roles a system and services
+        acquisition policy is outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: a.1
+      text: |
+        Organizational processes to develop, document, and disseminate to
+        organization-defined personnel or roles a system and services
+        acquisition policy is outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: a.2
+      text: |
+        Organizational processes to develop, document, and disseminate to
+        organization-defined personnel or roles a system and services
+        acquisition policy is outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational review and updates to the current system and services
+        acquisition policy and procedures at an organization-defined frequency
+        is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b.1
+      text: |
+        Organizational review and updates to the current system and services
+        acquisition policy and procedures at an organization-defined frequency
+        is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b.2
+      text: |
+        Organizational review and updates to the current system and services
+        acquisition policy and procedures at an organization-defined frequency
+        is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-2
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to determine information security requirements
+        for the information system or information system service in
+        mission/business process planning are outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational processes to determine, document, and allocate the
+        resources required to protect the information system or information
+        system service as part of its capital planning and investment
+        control process are outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        Organizational processes to establish a discrete line item for
+        information security in organizational programming and budgeting
+        documentation are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to manage the information system using
+        organization-defined system development life cycle that incorporates
+        information security considerations are outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational processes to define and document information security
+        roles and responsibilities throughout the system development
+        life cycle are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        Organizational processes to identify individuals having information
+        security roles and responsibilities are outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: d
+      text: |
+        Organizational processes to integrate the organizational information
+        security risk management process into system development life cycle
+        activities are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-4
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Organizational processes to include security functional requirements
+        in acquisition contracts are outside the scope of Red Hat Virtualization Manager (RHVM)
+        configuration.
+    - key: b
+      text: |
+        Organizational processes to include security strength requirements
+        in acquisition contracts are outside the scope of Red Hat Virtualization Manager (RHVM)
+        configuration.
+    - key: c
+      text: |
+        Organizational processes to include security assurance requirements
+        in acquisition contracts are outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: d
+      text: |
+        Organizational processes to include security-related documentation
+        requirements in acquisition contracts are outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: e
+      text: |
+        Organizational processes to include requirements for protecting
+        security-related documentation in acquisition contracts
+        are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
+    - key: f
+      text: |
+        Organizational processes to include a description of the information
+        system development environment and environment in which the system is
+        intended to operate in acqusition contracts are outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: g
+      text: |
+        Organizational processes to include acceptance criteria in
+        acqusition contracts are outside the scope of Red Hat Virtualization Manager (RHVM)
+        configuration.
 
 ##
 ## Developers note on SA-4 (1):
@@ -60,7 +156,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (1) is planned.'
+        A control response to SA-4 (1) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-22638
 
 ##
 ## Developers note on SA-4 (2):
@@ -82,7 +181,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (2) is planned.'
+        A control response to SA-4 (2) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-22639
 
 ##
 ## Developers note on SA-4 (3):
@@ -98,7 +200,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (3) is planned.'
+        A control response to SA-4 (3) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 - control_key: SA-4 (4)
   standard_key: NIST-800-53
@@ -106,8 +211,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-8 (9).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-8 (9).
 
 ##
 ## Developers note on SA-4 (4):
@@ -121,8 +226,18 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'A control response to SA-4 (5) is planned.'
+    - key: a
+      text: |
+        A control response to SA-4(5)(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A control response to SA-4(5)(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 ##
 ## Developers note on SA-4 (6):
@@ -136,10 +251,28 @@
 - control_key: SA-4 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        'A control response to SA-4 (6) is planned.'
+    - key: a
+      text: |
+        Organizational employment of only government off-the-shelf
+        (GOTS) or commercial off-the-shelf (COTS) information assurance
+        (IA) and IA-enabled information technology products that compose
+        an NSA-approved solution to protect classified information when
+        the networks used to transmit the information are at a lower
+        classificiation level than the information transmitted, is
+        an organizational control outside the scope of
+        Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        Organizational assurance that these products have been evaluated
+        and/or validated by NSA or in accordance with NSA-approved
+        procedures is an organizational control outside the scope
+        of Red Hat Virtualization Manager (RHVM) configuration.
+
+        NOTE: As of September 2019, Red Hat Virtualization Manager (RHVM) has not undergone formal NSA
+        evaluation for the inclusion in cross domain information
+        systems.
 
 ##
 ## Developers note on SA-4 (7):
@@ -154,8 +287,18 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'A control response to SA-4 (7) is planned.'
+    - key: a
+      text: |
+        A control response to SA-4(7)(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A control response to SA-4(7)(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 ##
 ## Developers note on SA-4 (8):
@@ -168,7 +311,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (8) is planned.'
+        A control response to SA-4(8) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 ##
 ## Developers note on SA-4 (9):
@@ -183,7 +329,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-4 (9) is planned.'
+        A control response to SA-4(9) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 - control_key: SA-4 (10)
   standard_key: NIST-800-53
@@ -191,17 +340,58 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: a.1
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: a.2
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: a.3
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b.1
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b.2
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b.3
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: d
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: e
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-5 (1)
   standard_key: NIST-800-53
@@ -209,8 +399,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (1).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (1).
 
 - control_key: SA-5 (2)
   standard_key: NIST-800-53
@@ -218,8 +408,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (2).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (2).
 
 - control_key: SA-5 (3)
   standard_key: NIST-800-53
@@ -227,8 +417,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (3).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (3).
 
 - control_key: SA-5 (4)
   standard_key: NIST-800-53
@@ -236,8 +426,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (4).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (4).
 
 - control_key: SA-5 (5)
   standard_key: NIST-800-53
@@ -245,8 +435,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-4 (5).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-4 (5).
 
 - control_key: SA-6
   standard_key: NIST-800-53
@@ -254,8 +444,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-10 and SI-7.'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-10 and SI-7.
 
 - control_key: SA-7
   standard_key: NIST-800-53
@@ -263,8 +453,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into CM-11 and SI-7.'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into CM-11 and SI-7.
 
 - control_key: SA-8
   standard_key: NIST-800-53
@@ -272,26 +462,40 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-9
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-9 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-9 (2)
   standard_key: NIST-800-53
@@ -299,8 +503,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-9 (3)
   standard_key: NIST-800-53
@@ -308,8 +512,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-9 (4)
   standard_key: NIST-800-53
@@ -317,17 +521,19 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        A control response to SA-9(5) is planned. Progress
+        can be tracked at:
+
+        https://issues.redhat.com/browse/CMP-368
 
 ##
 ## Developers note on SA-10
@@ -346,32 +552,47 @@
     ## will need to be addressed.
     - key: a
       text: |
-        'A control response to SA-10 (a) is planned.'
+        A control response to SA-10(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21061
 
     ## A successful control response will need to address the processes
     ## and mechanisms involved in documenting, managing, and controlling the
     ## integrity of chances.
     - key: b
       text: |
-        'A control response to SA-10 (b) is planned.'
+        A control response to SA-10(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21061
 
     ## A successful control response will need to address the approval process
     ## and safeguards in place to ensure only approved changes are implemented.
     - key: c
       text: |
-        'A control response to SA-10 (c) is planned.'
+        A control response to SA-10(c) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21061
 
     ## A successful control response will need to discuss the process for
     ## documentation.
     - key: d
       text: |
-        'A control response to SA-10 (d) is planned.'
+        A control response to SA-10(d) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21061
 
     ## A successful control response will need to discuss the process
     ## and tools used for tracking, resolution, and reporting.
     - key: e
       text: |
-        'A control response to SA-10 (e) is planned.'
+        A control response to SA-10(e) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21061
 
 ##
 ## Developers note on SA-10 (1)
@@ -386,7 +607,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (1) is planned.'
+        A control response to SA-10(1) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 - control_key: SA-10 (2)
   standard_key: NIST-800-53
@@ -394,8 +618,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 ##
 ## Developers note on SA-10 (3)
@@ -408,10 +632,11 @@
 - control_key: SA-10 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'A control response to SA-10 (1) is planned.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 ##
 ## Developers note on SA-10 (4)
@@ -424,36 +649,33 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (4) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-10 (4)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-10 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (5) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-10 (4)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-10 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-10 (6) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-11
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-11
   standard_key: NIST-800-53
   covered_by: []
@@ -463,33 +685,45 @@
     ## assessment plan.
     - key: a
       text: |
-        'A control response to SA-11 is planned.'
+        A control response to SA-11(a) is planned. Progress
+        can be tracked at:
 
-    ## A successful control response will need to address the types of
-    ## testing performed and the depth required.
+        https://projects.engineering.redhat.com/browse/RHV-21062
     - key: b
       text: |
-        'A control response to SA-11 is planned.'
+        A control response to SA-11(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21062
 
     ## A successful control response will need to address the process by
     ## which the customer obtains and reviews the evidence and results of
     ## testing.
     - key: c
       text: |
-        'A control response to SA-11 is planned.'
+        A control response to SA-11(c) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21062
 
     ## A successful control response will need to outline the means by which
     ## flaws are identified and addressed.
     - key: d
       text: |
-        'A control response to SA-11 is planned.'
+        A control response to SA-11(d) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21062
 
     ## A successful control response will need to discuss the procedure for
     ## identifying flaws, alerting appropriate personnel to correct flaws, and
     ## verifying the success of the correction.
     - key: e
       text: |
-        'A control response to SA-11 is planned.'
+        A control response to SA-11(e) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21062
 
 ##
 ## Developers note on SA-11 (1)
@@ -503,7 +737,10 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-11 (1) is planned.'
+        A control response to SA-11(1) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 ##
 ## Developers note on SA-11 (2)
@@ -518,93 +755,92 @@
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-11 (2) is planned.'
+        A control response to SA-11(2) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 - control_key: SA-11 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        A control response to SA-11(3)(a) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-11 (4)
-##  A successful control response will address how manual code reviews
-##  are performed, and what section(s) of components/code are reviewed.
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+    - key: b
+      text: |
+        A control response to SA-11(3)(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-11 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-11 (4) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-11 (5)
-##  A successful control response will address the frequency and scope
-##  of penetration testing.
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-11 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-11 (5) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-11 (6)
-##  A successful control response will address the process and findings of
-##  performing attack surface reviews.
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-11 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-11 (6) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-11 (7)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-11 (7)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-11 (7) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-11 (8)
-##  A successful control response will need to discuss the tools in use,
-##  the means by which the tools are used to identify common flaws, and the
-##  process for documenting results of testing.
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-11 (8)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-11 (8) is planned.'
+        A complete control response is planned. Engineering progress
+        can be tracked at:
 
-##
-## Developers note on SA-12
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: SA-12
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-12 is planned.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (1)
   standard_key: NIST-800-53
@@ -612,8 +848,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (2)
   standard_key: NIST-800-53
@@ -621,8 +857,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (3)
   standard_key: NIST-800-53
@@ -630,8 +866,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (1).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-12(1).
 
 - control_key: SA-12 (4)
   standard_key: NIST-800-53
@@ -639,8 +875,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (13).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-12(13).
 
 - control_key: SA-12 (5)
   standard_key: NIST-800-53
@@ -648,8 +884,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (6)
   standard_key: NIST-800-53
@@ -657,8 +893,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-12 (1).'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-12(1).
 
 - control_key: SA-12 (7)
   standard_key: NIST-800-53
@@ -666,8 +902,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (8)
   standard_key: NIST-800-53
@@ -675,8 +911,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (9)
   standard_key: NIST-800-53
@@ -684,8 +920,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 ##
 ## Developers note on SA-12:
@@ -697,11 +933,13 @@
 - control_key: SA-12 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        A control response to SA-12(10) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-
 
 - control_key: SA-12 (11)
   standard_key: NIST-800-53
@@ -709,8 +947,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (12)
   standard_key: NIST-800-53
@@ -718,8 +956,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (13)
   standard_key: NIST-800-53
@@ -727,8 +965,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (14)
   standard_key: NIST-800-53
@@ -736,8 +974,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-12 (15)
   standard_key: NIST-800-53
@@ -745,17 +983,22 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-13
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-14
   standard_key: NIST-800-53
@@ -763,8 +1006,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-14 (1)
   standard_key: NIST-800-53
@@ -772,13 +1015,9 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into SA-20.'
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into SA-20.
 
-##
-## Developers note on SA-11
-##  tbd
-##
 - control_key: SA-15
   standard_key: NIST-800-53
   covered_by: []
@@ -786,88 +1025,115 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-15 (a) is planned.'
+        A control response to SA-15(a) is planned. Progress
+        can be tracked at:
 
-    ## A successful control response will need to address the types of
-    ## testing performed and the depth required.
+        https://projects.engineering.redhat.com/browse/RHV-21063
+    - key: a.1
+      text: |
+        A control response to SA-15(a)(1) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21063
+    - key: a.2
+      text: |
+        A control response to SA-15(a)(2) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21063
+    - key: a.3
+      text: |
+        A control response to SA-15(a)(3) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21063
+    - key: a.4
+      text: |
+        A control response to SA-15(a)(4) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV-21063
     - key: b
       text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        A control response to SA-15(b) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-15 (1)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV-21063
+
 - control_key: SA-15 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'A control response to SA-15 (1) is planned.'
+    - key: a
+      text: |
+        A control response to SA-15(1)(a) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-15 (2)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+    - key: b
+      text: |
+        A control response to SA-15(1)(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-15 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-15 (2) is planned.'
+        A control response to SA-15(2) is planned.
 
-##
-## Developers note on SA-15 (2)
-##  tbd
-##
 - control_key: SA-15 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        'A control response to SA-15 (3) is planned.'
+         A control response to SA-15(3) is planned.
 
 - control_key: SA-15 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
-##
-## Developers note on SA-15 (5)
-##  tbd
-##
 - control_key: SA-15 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-15 (5) is planned.'
+        A complete control response is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-15 (6)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-15 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-15 (6) is planned.'
+        A control response to SA-15(6) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-15 (7)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-15 (7)
   standard_key: NIST-800-53
   covered_by: []
@@ -875,28 +1141,39 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-15(7)(a) is planned.'
+        A complete control response is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: b
       text: |
-        'A control response to SA-15(7)(b) is planned.'
+        A complete control response is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: c
       text: |
-        'A control response to SA-15(7)(c) is planned.'
+        A complete control response is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: d
       text: |
-        'A control response to SA-15(7)(d) is planned.'
+        A complete control response is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-15 (8)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-15 (8)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-15 (8) is planned.'
+        A control response to SA-15(8) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
 
 - control_key: SA-15 (9)
   standard_key: NIST-800-53
@@ -904,49 +1181,39 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
-##
-## Developers note on SA-15 (10)
-##  tbd
-##
 - control_key: SA-15 (10)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-15 (10) is planned.'
+        A control response to SA-15(10) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-15 (11)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-15 (11)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-15 (11) is planned.'
+        A control response to SA-15(11) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-16
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-16
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-16 is planned.'
+        A control response to SA-16 is planned.
 
-##
-## Developers note on SA-17
-##  tbd
-##
 - control_key: SA-17
   standard_key: NIST-800-53
   covered_by: []
@@ -954,34 +1221,37 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-17(a) is planned.'
+        A control response to SA-17(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: b
       text: |
-        'A control response to SA-17(b) is planned.'
+        A control response to SA-17(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: c
       text: |
-        'A control response to SA-17(c) is planned.'
+        A control response to SA-17(c) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-17 (1)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-17 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        'A control response to SA-17(1)(a) is planned.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
     - key: b
       text: |
-        'A control response to SA-17(1)(b) is planned.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
-##
-## Developers note on SA-17 (2)
-##  tbd
-##
 - control_key: SA-17 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -989,15 +1259,17 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-17(2)(a) is planned.'
+        A control response to SA-17(2)(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: b
       text: |
-        'A control response to SA-17(2)(b) is planned.'
+        A control response to SA-17(2)(b) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-17 (3)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-17 (3)
   standard_key: NIST-800-53
   covered_by: []
@@ -1005,24 +1277,35 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-17(3)(a) is planned.'
+        A control response to SA-17(3)(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: b
       text: |
-        'A control response to SA-17(3)(b) is planned.'
+        A control response to SA-17(3)(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: c
       text: |
-        'A control response to SA-17(3)(c) is planned.'
+        A control response to SA-17(3)(c) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: d
       text: |
-        'A control response to SA-17(3)(d) is planned.'
+        A control response to SA-17(3)(d) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: e
       text: |
-        'A control response to SA-17(3)(e) is planned.'
+        A control response to SA-17(3)(e) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-17 (4)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-17 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -1030,24 +1313,35 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-17(4)(a) is planned.'
+        A control response to SA-17(4)(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: b
       text: |
-        'A control response to SA-17(4)(b) is planned.'
+        A control response to SA-17(4)(b) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: c
       text: |
-        'A control response to SA-17(4)(c) is planned.'
+        A control response to SA-17(4)(c) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: d
       text: |
-        'A control response to SA-17(4)(d) is planned.'
+        A control response to SA-17(4)(d) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: e
       text: |
-        'A control response to SA-17(4)(e) is planned.'
+        A control response to SA-17(4)(e) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-17 (5)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-17 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -1055,73 +1349,85 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-17(5)(a) is planned.'
+        A control response to SA-17(5)(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: b
       text: |
-        'A control response to SA-17(5)(b) is planned.'
+        A control response to SA-17(5)(b) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-17 (6)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-17 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-17 (6) is planned.'
+        A control response to SA-17(6) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-17 (7)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-17 (7)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-17 (7) is planned.'
+        A control response to SA-17(7) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-18
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-18
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
     - text: |
-        'A control response to SA-18 is planned.'
+        A control response to SA-18 is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
 
 - control_key: SA-18 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        A control response to SA-18(1) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
 
 - control_key: SA-18 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        A control response to SA-18(2) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
 
 - control_key: SA-19
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-19 (1)
   standard_key: NIST-800-53
@@ -1129,8 +1435,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-19 (2)
   standard_key: NIST-800-53
@@ -1138,8 +1444,8 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-19 (3)
   standard_key: NIST-800-53
@@ -1147,17 +1453,19 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-19 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        A control response is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
 
 - control_key: SA-20
   standard_key: NIST-800-53
@@ -1165,13 +1473,9 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
-##
-## Developers note on SA-21
-##  tbd
-##
 - control_key: SA-21
   standard_key: NIST-800-53
   covered_by: []
@@ -1179,31 +1483,48 @@
   narrative:
     - key: a
       text: |
-        'A control response to SA-21(a) is planned.'
+        A control response to SA-21(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
     - key: b
       text: |
-        'A control response to SA-21(b) is planned.'
+        A control response to SA-21(b) is planned. Progress
+        can be tracked at:
 
-##
-## Developers note on SA-21 (1)
-##  tbd
-##
+        https://projects.engineering.redhat.com/browse/RHV
+
 - control_key: SA-21 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        'A control response to SA-21 (1) is planned.'
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-22
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: planned
   narrative:
-    - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+    - key: a
+      text: |
+        Red Hat provides a published product life cycle for Red Hat
+        Virtalization. The product life cycle for Red Hat
+        Red Hat Virtalization 4.x can be viewed at:
+
+        https://access.redhat.com/support/policy/updates/rhev
+
+        A control response to SA-22(a) is planned. Progress
+        can be tracked at:
+
+        https://projects.engineering.redhat.com/browse/RHV
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: SA-22 (1)
   standard_key: NIST-800-53
@@ -1211,5 +1532,5 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        'This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.'
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Virtualization Manager (RHVM) configuration.

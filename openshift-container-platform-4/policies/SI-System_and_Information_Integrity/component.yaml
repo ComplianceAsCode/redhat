@@ -1069,7 +1069,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        A control response for SI-7(12) is planned. Engineering progress can be
+        A control response for SI-10(2) is planned. Engineering progress can be
         tracked via:
 
         https://issues.redhat.com/browse/CMP-555
@@ -1080,7 +1080,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        A control response for SI-7(12) is planned. Engineering progress can be
+        A control response for SI-10(3) is planned. Engineering progress can be
         tracked via:
 
         https://issues.redhat.com/browse/CMP-556
@@ -1091,7 +1091,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        A control response for SI-7(12) is planned. Engineering progress can be
+        A control response for SI-10(4) is planned. Engineering progress can be
         tracked via:
 
         https://issues.redhat.com/browse/CMP-557
