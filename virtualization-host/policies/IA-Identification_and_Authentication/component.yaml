@@ -9,12 +9,7 @@
 ##  - implementation_status: partial
 ##  - implementation_status: complete
 ##  - implementation_status: none
-##
-## Based off security control selections from
-## https://nvd.nist.gov/800-53/Rev4/family/Identification%20and%20Authentication
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-1
 - control_key: IA-1
   standard_key: NIST-800-53
   covered_by: []
@@ -22,70 +17,238 @@
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        Developing organization-level identification and authentication
+        policy and procedures are outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        Review and updating an organizational-level identification and authentication
+        policy and procedures are outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-2
 - control_key: IA-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
-    - text: 'The following configuration checks are required to ensure
-    Red Hat Virtualization Host (RHVH) uniquely identifies organizational
-    users:
+    - text: |
+        The following configuration checks are required to ensure
+        Red Hat Virtualization Host (RHVH) uniquely identifies organizational
+        users:
 
-    - CCE-27309-4: Set Boot Loader Password in grub2
+        - CCE-27309-4: Set Boot Loader Password in grub2
 
-    - CCE-80354-4: Set EUFI Boot Loader Password
+        - CCE-80354-4: Set EUFI Boot Loader Password
 
-    - CCE-27287-2: Require Authentication for Single User Mode
+        - CCE-27287-2: Require Authentication for Single User Mode
 
-    - CCE-27175-9: Verify Only Root Has UID 0
+        - CCE-27175-9: Verify Only Root Has UID 0
 
-    - CCE-27294-8: Direct root Logins Not Allowed
+        - CCE-27294-8: Direct root Logins Not Allowed
 
-    - CCE-80650-5: Ensure that System Accounts are Locked
+        - CCE-80650-5: Ensure that System Accounts are Locked
 
-    - CCE-27268-2: Restrict Serial Port Root Logins
+        - CCE-27268-2: Restrict Serial Port Root Logins
 
-    - CCE-2731805: Restrict Virtual Console Root Logins
+        - CCE-2731805: Restrict Virtual Console Root Logins
 
-    - CCE-27445-6: Disable SSH Root Login'
+        - CCE-27445-6: Disable SSH Root Login
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-1
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20602
+
 - control_key: IA-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
-    - text: 'The following configuration checks are required to ensure
-    Red Hat Virtualization Host (RHVH) implements multifactor authentication
-    for network access to privileged accounts:
+    - text: |
+        The following configuration checks are required to ensure
+        Red Hat Virtualization Host (RHVH) implements multifactor authentication
+        for network access to privileged accounts:
 
-    - CCE-80207-4: Enable Smart Card Login'
+        - CCE-80207-4: Enable Smart Card Login
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-2?baseline=low#enhancement-12
-- control_key: IA-2 (12)
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20672
+
+- control_key: IA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20682
+
+- control_key: IA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20683
+
+- control_key: IA-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20684
+
+- control_key: IA-2 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: 'The following configuration checks are required to ensure
-    Red Hat Virtualization Host (RHVH) accepts Personal Identity
-    Verification (PIV) credentials:
+    - text: |
+        By default, Red Hat Virtualization Host (RHVH) does not support or allow group authentication.
 
-    - CCE-80207-4: Enable Smart Card Login'
+- control_key: IA-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-4
+        https://projects.engineering.redhat.com/browse/RHV-22707
+
+- control_key: IA-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22711
+
+- control_key: IA-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20685
+
+- control_key: IA-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20686
+
+- control_key: IA-2 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22712
+
+- control_key: IA-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20687
+
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        The following configuration checks are required to ensure
+        Red Hat Virtualization Host (RHVH) accepts Personal Identity
+        Verification (PIV) credentials:
+
+        - CCE-80207-4: Enable Smart Card Login
+
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20688
+
+- control_key: IA-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Implementing out-of-band authentication methods is an organizational
+        control outside the configuration guidance of Red Hat Virtualization Host (RHVH).
+
+- control_key: IA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20689
+
+- control_key: IA-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22713
+
+- control_key: IA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: IA-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22714
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22714
+
+- control_key: IA-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-22715
+
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
@@ -93,88 +256,167 @@
   narrative:
     - key: a
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
     - key: b
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
     - key: c
       text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
     - key: d
       text: |
-        'Red Hat Virtualization Host (RHVH) is not capable of preventing
+        Red Hat Virtualization Host (RHVH) is not capable of preventing
         the reuse of identifiers for an organization-defined time period.
 
         To satisfy this control, an external identity provider must be
-        used (e.g. Red Hat Identity Management or Microsoft Active Directory).'
+        used (e.g. Red Hat Identity Management or Microsoft Active Directory).
     - key: e
       text: |
-        'To disable identifiers after an organization-defined time period
-        of inactivity, the following configuration checks must be enforced:
+        To disable identifiers after an organization-defined time period
+        of inactivity, the following configuration checks must be enforced
+        for any local accounts:
 
-        - CCE-27355-7: Set Account Expiration Following Inactivity'
+        - CCE-27355-7: Set Account Expiration Following Inactivity
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-5
-- control_key: IA-5
+        When Red Hat Virtualization Host (RHVH) is configured to an external
+        identity provider (e.g. Red Hat Identity Management or Microsoft Active Directory),
+        it is the responsibility of the identity provider to satisfy this control.
+
+- control_key: IA-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: IA-4 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - key: a
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: b
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: c
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: d
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: e
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: f
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: g
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: h
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: i
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
-    - key: j
-      text: |
-        'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-1
-- control_key: IA-5 (1)
+- control_key: IA-4 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Virtualization Host (RHVH) is not capable of dynamically managing
+        authenticators as authenticators are passed through from an external
+        identity provider.
+
+        To satisfy this control, an external identity provider must be
+        used (e.g. Red Hat Identity Management or Microsoft Active Directory).
+
+- control_key: IA-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Coordination with organization-defined external
+        organizations for cross-organization management
+        of identifiers is outside the scope of Red Hat Virtualization Host (RHVH)
+        configuration.
+
+- control_key: IA-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational requirements that the user registration
+        process to receive an individual identifier be conducted
+        in person before a designated registration authority
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
   narrative:
     - key: a
       text: |
-        'To prevent logins to accounts with no password, the following
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20783
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20783
+    - key: d
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+    - key: e
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20783
+    - key: f
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20783
+    - key: g
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20783
+    - key: h
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20783
+    - key: i
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+    - key: j
+      text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        To prevent logins to accounts with no password, the following
         configuration checks must be enabled:
 
         - CCE-27286-4: Prevent Login to Accounts with Empty Password
@@ -222,27 +464,38 @@
         following configuration check must be enabled:
 
         - CCE-27115-5: Set Password Strength Minimum Different Categories
-        '
+
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20784
     - key: b
       text: |
-        'To enforce an organization-defined number of changed characters when
+        To enforce an organization-defined number of changed characters when
         new passwords are created, the following configuration checks must
         be enabled:
 
-        - CCE-26631-2: Set Password Strength Minimum Different Characters'
+        - CCE-26631-2: Set Password Strength Minimum Different Characters
+
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20784
     - key: c
       text: |
-        'To ensure passwords are stored with appropriate cryptographic protections,
+        To ensure passwords are stored with appropriate cryptographic protections,
         the following configuration checks must be enabled:
 
         - CCE-27053-8: Set Password Hashing Algorithm in /etc/libuser.conf
 
         - CCE-27124-7: Set Password Hashing Algorithm in /etc/login.defs
 
-        - CCE-27104-9: Set PAM Password Hashing Algorithm'
+        - CCE-27104-9: Set PAM Password Hashing Algorithm
+
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20784
     - key: d
       text: |
-        'To enforce a password minimum lifetime restriction, the following
+        To enforce a password minimum lifetime restriction, the following
         configuration checks must be enabled:
 
         - CCE-27002-5: Set Password Minimum Age
@@ -250,115 +503,342 @@
         To enforce a password maximum lifetime restriction, the following
         configuration checks must be enabled:
 
-        - CCE-27051-2: Set Password Maximum Age'
+        - CCE-27051-2: Set Password Maximum Age
+
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20784
     - key: e
       text: |
-        'To prohibit password reuse for an organization-defined number
+        To prohibit password reuse for an organization-defined number
         of generations, the following configuration check must
         be enabled:
 
-        - CCE-26923-3: Limit Password Reuse'
+        - CCE-26923-3: Limit Password Reuse
+
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20784
     - key: f
       text: |
-        'This control reflects organizational procedures/policies, and is not
+        This control reflects organizational procedures/policies, and is not
         applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
         However, to force a user to change their password upon next logon,
         a system administrator can expire a users current password:
 
-             $ sudo passwd --expire <<user>>'
+             $ sudo passwd --expire <<user>>
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-5?baseline=low#enhancement-11
-- control_key: IA-5 (11)
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-20784
+
+- control_key: IA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21004
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21004
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21004
+    - key: d
+      text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21004
+
+- control_key: IA-5 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH)'
+    - text: |
+        Organizational requirements that the registration process to
+        receive organization-defined types of and/or specific authenticators
+        be conducted either in person and/or by a trusted third party before
+        organization-defined registration authority with authorization by
+        organization-defined personnel or roles is outside the scope of
+        Red Hat Virtualization Host (RHVH) configuration.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-6
+- control_key: IA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21004
+
+- control_key: IA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+        By default, Red Hat Virtualization Host (RHVH) does not configure or deliver
+        default passwords or authenticators.
+
+- control_key: IA-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational procedural requirement
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: IA-5 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational implementation of organization-defined security
+        safeguards to manage the risk of compromise due to individuals having
+        accounts on multiple information systems is outside the scope of
+        Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-5 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational coordination with organization-defined
+        external organizations for cross-organization management
+        of credentials is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-5 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        To satisfy this control, an external identity provider must be
+        used (e.g. Red Hat Identity Management or Microsoft Active Directory).
+
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21005
+
+- control_key: IA-5 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of mechanisms that satisfy organization-defined
+        biometric quality requirements is outside the scope of
+        Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-5 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: IA-5 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: IA-5 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
-    - text: 'Red Hat Virtualization Host (RHVH) automatically obscures
-    feedback of authentication information and cannot be configured
-    to be out of compliance with this control.'
+    - text: |
+        Red Hat Virtualization Host (RHVH) automatically obscures
+        feedback of authentication information and cannot be configured
+        to be out of compliance with this control.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-7
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21006
+
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: planned
   narrative:
-    - text: 'The Federal Information Security Management
-    Act (FISMA) requires the use of FIPS 140 evaluated cryptography.
-    Red Hat Virtualization Host (RHVH) carries several FIPS validations,
-    however it is imperitive the system have FIPS enabled.
+    - text: |
+        The Federal Information Security Management
+        Act (FISMA) requires the use of FIPS 140 evaluated cryptography.
+        Red Hat Virtualization Host (RHVH) carries several FIPS validations,
+        however it is imperitive the system have FIPS enabled.
 
-    To ensure the version of Red Hat Virtualization Host (RHVH) deployed
-    carries FIPS validations, the following configuration check must
-    be enabled:
+        To ensure the version of Red Hat Virtualization Host (RHVH) deployed
+        carries FIPS validations, the following configuration check must
+        be enabled:
 
-    - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
+        - CCE-80657-0: The Installed Operating System is FIPS 140-2 Certified
 
-    - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
+        - CCE-80658-8: Set kernel parameter crypto.fips_enabled to 1
 
-    - CCE-80359-3: Enable FIPS Mode in GRUB2'
+        - CCE-80359-3: Enable FIPS Mode in GRUB2
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-8
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21008
+
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: 'All information system users, regardless of organizational
-    or non-organizational, receive unique system identifiers. This is
-    non-configurable default behavior. Any attempts to alter
-    user identifiers is audited through events defined in AU-2.'
+    - text: |
+        All information system users, regardless of organizational
+        or non-organizational, receive unique system identifiers. This is
+        non-configurable default behavior. Any attempts to alter
+        user identifiers is audited through events defined in AU-2.
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-1
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-2
+        https://projects.engineering.redhat.com/browse/RHV-21009
+
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-3
+        https://projects.engineering.redhat.com/browse/RHV-21010
+
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
 
-# NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/IA-8?baseline=low#enhancement-4
+        https://projects.engineering.redhat.com/browse/RHV-21011
+
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: 'This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Virtualization Host (RHVH).'
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-21012
+
+- control_key: IA-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-
+
+- control_key: IA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Since Red Hat Virtualization Host (RHVH) is not a service-oriented architecture,
+        it is up to the organization to ensure that service identification
+        and authentication is implemented.
+
+- control_key: IA-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Ensuring that service providers receive, validate, and transmit
+        identification and authentication information is an organizational
+        control outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Ensureing that identification and authentication decisions are transmitted
+        between organizationally defined services consistent with organizational
+        policies is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Requiring that individuals accessing the information system employ
+        organization-defined supplemental authentication techniques or
+        mechanisms under specific organization-defined circumstances or
+        situations is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
+
+- control_key: IA-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be tracked via:
+
+        https://projects.engineering.redhat.com/browse/RHV-

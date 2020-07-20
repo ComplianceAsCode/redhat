@@ -18,11 +18,11 @@
     - key: a
       text: |
         Developing an organization-level contingency planning policy is
-        outside the scope of OpenShift configuration.
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Review and updating an organizational-level contingency planning
-        policy is outside the scope of OpenShift configuration.
+        policy is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-2
   standard_key: NIST-800-53
@@ -32,32 +32,32 @@
     - key: a
       text: |
         Developing an organization-level contingency planning policy is
-        outside the scope of OpenShift configuration.
+        outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Distribution of an organizational-level contingency planning
-        policy is outside the scope of OpenShift configuration.
+        policy is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: c
       text: |
         Coordinating contingency planning activities with incident handling
-        activities is outside the scope of OpenShift configuration.
+        activities is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: d
       text: |
         Reviewing organizational contingency plans for the information system
         at an organization-defined frequency is outside the scope of
-        OpenShift configuration.
+        Red Hat Virtualization Host (RHVH) configuration.
     - key: e
       text: |
         Organizational processes to update the contingency plan are outside the
-        scope of OpenShift configuration.
+        scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: f
       text: |
         Organizational communication plans regarding the contingency plan are outside
-        the scope of OpenShift configuration.
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: g
       text: |
         Protection of the contingency plan from unauthorized disclosure and
-        modification is outside the scope of OpenShift configuration.
+        modification is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-2 (1)
   standard_key: NIST-800-53
@@ -66,7 +66,7 @@
   narrative:
     - text: |
         Coordinating contingency plan development with organizational elements
-        responsible for related plans is outside the scope of OpenShift
+        responsible for related plans is outside the scope of Red Hat Virtualization Host (RHVH)
         configuration.
 
 - control_key: CP-2 (2)
@@ -88,7 +88,7 @@
     - text: |
         Planning for the resumption of essential missions and business
         functions within an organization-defined time period of contingency
-        plan activation is outside the scope of OpenShift configuration.
+        plan activation is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-2 (4)
   standard_key: NIST-800-53
@@ -98,7 +98,7 @@
     - text: |
         Planning for the resumption of all missions and business
         functions within an organization-defined time period of contingency
-        plan activation is outside the scope of OpenShift configuration.
+        plan activation is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-2 (5)
   standard_key: NIST-800-53
@@ -110,7 +110,7 @@
         functions with little or no loss of operational continuity and
         sustainment of that continuity until full information system
         restoration at primary processing and/or storage sites
-        is outside the scope fo OpenShift configuration.
+        is outside the scope fo Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-2 (6)
   standard_key: NIST-800-53
@@ -132,7 +132,7 @@
         Coordination of organizational contingency plans with the
         contingency plans of external service providers to ensure that
         contingency requirements can be satisfied is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-2 (8)
   standard_key: NIST-800-53
@@ -141,7 +141,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-3
   standard_key: NIST-800-53
@@ -153,17 +153,17 @@
         Providing contingency training to information system users consistent
         with assigned roles and responsibilities within an organization-defined
         time period of assuming a contingency role or responsibility is outside
-        the scope of OpenShift configuration.
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Providing contingency training to information system users consistent
         with assigned roles and responsibilities when required by information
-        system changes is outside the scope of OpenShift configuration.
+        system changes is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: c
       text: |
         Providing contingency training to information system users consistent
         with assigned roles and responsibilities at an organization-defined
-        frequency is outside the scope of OpenShift configuration.
+        frequency is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-3 (1)
   standard_key: NIST-800-53
@@ -173,7 +173,7 @@
     - text: |
         Incorporating simulated events into contingency training to
         facilitate effective response by personnel in crisis
-        situations is outside the scope of OpenShift configuration.
+        situations is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-3 (2)
   standard_key: NIST-800-53
@@ -183,7 +183,7 @@
     - text: |
         Employment of automated mechanisms to provide a more thorough and
         realistic contingency training environment is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-4
   standard_key: NIST-800-53
@@ -196,15 +196,15 @@
         organization-defined frequency using organization-defined tests
         to determine the effectiveness of the plan and the organizational
         readiness to execute the plan is outside the scope of
-        OpenShift configuration.
+        Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Organizational reviews of the contingency plan test results is outside
-        the scope of OpenShift configuration.
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: c
       text: |
         Organizational process to intiate corrective actions, if needed,
-        are outside the scope of OpenShift configuration.
+        are outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-4 (1)
   standard_key: NIST-800-53
@@ -214,7 +214,7 @@
     - text: |
         Coordinating contingency plan testing with organizational
         elements responsible for related plans is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-4 (2)
   standard_key: NIST-800-53
@@ -226,13 +226,13 @@
         Organizational testing of the contingency plan at the alternate
         processing site to familiarize contingency personnel with the
         facility and available resources is outside the scope of
-        OpenShift configuration.
+        Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Organizational testing of the contingency plan at the alternate
         processing site to evaluate the capabilities of the alternate
         processing site to support contingency operations is outside
-        the scope of OpenShift configuration.
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-4 (3)
   standard_key: NIST-800-53
@@ -241,7 +241,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-4 (4)
   standard_key: NIST-800-53
@@ -250,7 +250,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-5
   standard_key: NIST-800-53
@@ -270,12 +270,12 @@
         Establishment of an alternative storate site including
         necessary agreements to permit the storage and retrieval
         of information system backup information is outside
-        the scope of OpenShift configuration.
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Ensuring that the alternative storage site provides information
         security safeguards equivalent to that of the primary site
-        is outside the scope of OpenShift configuration.
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-6 (1)
   standard_key: NIST-800-53
@@ -286,7 +286,7 @@
         Identification of an alternate storage site that is
         separated from the primary storage site to reduce
         susceptibility to the same threats is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-6 (2)
   standard_key: NIST-800-53
@@ -295,7 +295,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-6 (3)
   standard_key: NIST-800-53
@@ -306,7 +306,7 @@
         Identification of potential accessibility problems to the alternate
         storage site in an event of an area-wide disruption or disaster and
         the outline of explicit mitigation actions is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-7
   standard_key: NIST-800-53
@@ -316,7 +316,7 @@
     - key: a
       text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
     - key: b
       text: |
         To assist with this organizational control, documentation is being
@@ -326,7 +326,7 @@
     - key: c
       text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-7 (1)
   standard_key: NIST-800-53
@@ -337,7 +337,7 @@
         Identification of an alternate processing site that is
         separated from the primary processing site to reduce
         susceptibility to the same threats is outside the
-        scope of OpenShift configuration.
+        scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-7 (2)
   standard_key: NIST-800-53
@@ -348,7 +348,7 @@
         Identification of potential accessibility problems to the
         alternate processing site in the event of an area-wide
         disruption or disaster and outline of explicit mitigation
-        actions is outside the scope of OpenShift configuration.
+        actions is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-7 (3)
   standard_key: NIST-800-53
@@ -359,7 +359,7 @@
         Development of alternate processing site agreements that contain
         priority-of-service provisions in accordance with organizational
         availability requirements (including recovery time objectives)
-        is outside the scope of OpenShift configuration.
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-7 (4)
   standard_key: NIST-800-53
@@ -368,7 +368,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-7 (5)
   standard_key: NIST-800-53
@@ -386,7 +386,7 @@
     - text: |
         Organizational planning and preparation for circumstances
         that preclude returning to the primary processing site
-        is outside the scope of OpenShift configuration.
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-8
   standard_key: NIST-800-53
@@ -395,7 +395,7 @@
   narrative:
     - text: |
         Establishment of alternate telecommunications services
-        is outside the scope of OpenShift configuration.
+        is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-8 (1)
   standard_key: NIST-800-53
@@ -407,14 +407,14 @@
         Development of primary and alternate telecommunications service
         agreements that contain priority-of-service provisions in accordance
         with organizational availability requirements (including recovery
-        time objectives) is outside the scope of OpenShift configuration.
+        time objectives) is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Requests for Telecommunications Service Priority for all
         telecommunucations services used for national security emergency
         preparedness in the event that the primary and/or alternate
         telecommunications services are provided by a common carrier
-        are outside the scope of OpenShift configuration.
+        are outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-8 (2)
   standard_key: NIST-800-53
@@ -425,7 +425,7 @@
         Obtaining alternate telecommunications services to reduce
         the likelihood of sharing a single point of failure with
         primary telecommunications services is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-8 (3)
   standard_key: NIST-800-53
@@ -436,7 +436,7 @@
         Obtaining alternate telecommunications services from providers
         that are separated from primary service providers to reduce
         susceptibility to the same threats is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-8 (4)
   standard_key: NIST-800-53
@@ -447,17 +447,17 @@
       text: |
         Requiring primary and alternate telecommunications service
         providers to have contingency plans is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
       text: |
         Reviewing provider contingency plans to ensure that the plans
         meet organizational contingecny requirements is outside
-        the scope of OpenShift configuration.
+        the scope of Red Hat Virtualization Host (RHVH) configuration.
     - key: c
       text: |
         Obtaining evidence of contingency testing/training by providers
         at an organization-defined frequency is outside the plannedscope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-8 (5)
   standard_key: NIST-800-53
@@ -467,7 +467,7 @@
     - text: |
         Testing alternate telecommunication services at
         an organization-defined frequency is outside the scope
-        of OpenShift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-9
   standard_key: NIST-800-53
@@ -541,7 +541,7 @@
   narrative:
     - text: |
         Testing backup information for reliability and information integrity
-        is an organizational control outside the scope of Openshift
+        is an organizational control outside the scope of Red Hat Virtualization Host (RHVH)
         configuration.
 
 - control_key: CP-9 (2)
@@ -552,7 +552,7 @@
     - text: |
         Testing backup information for reliability and information integrity
         using sampling data is an organizational control outside the scope
-        of Openshift configuration.
+        of Red Hat Virtualization Host (RHVH) configuration.
 
 - control_key: CP-9 (3)
   standard_key: NIST-800-53
@@ -563,7 +563,7 @@
         Storing backup copies of organization-defined critical information
         system software and other security-related information in a separate
         facility or in a fire-rated container that is not collocated with the
-        operational system is outside the scope of OpenShift configuration.
+        operational system is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
@@ -585,7 +585,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-9 (6)
   standard_key: NIST-800-53
@@ -594,7 +594,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
@@ -608,7 +608,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-10
   standard_key: NIST-800-53
@@ -617,8 +617,8 @@
   narrative:
     - text: |
         The customer will be responsible for documenting how to reconstitute
-        their OpenShift environment. A successful control response will detail
-        processes used to fully recover/restore the OpenShift environment.
+        their Red Hat Virtualization Host (RHVH) environment. A successful control response will detail
+        processes used to fully recover/restore the Red Hat Virtualization Host (RHVH) environment.
 
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
@@ -640,7 +640,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-10 (3)
   standard_key: NIST-800-53
@@ -657,7 +657,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-10 (5)
   standard_key: NIST-800-53
@@ -674,7 +674,7 @@
   narrative:
     - text: |
         This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of OpenShift.
+        applicable to the configuration of Red Hat Virtualization Host (RHVH).
 
 - control_key: CP-11
   standard_key: NIST-800-53
@@ -705,9 +705,9 @@
         Employment of organization-defined alternative or
         supplemental security mechanisms for satisfying
         organization-defined security functions when the primary
-        means of implementing OpenShift security function is
+        means of implementing Red Hat Virtualization Host (RHVH) security function is
         unavailable or compromised is outside the scope of
-        OpenShift configuration guidance.
+        Red Hat Virtualization Host (RHVH) configuration guidance.
 
         A complete control response is planned. Progress can be tracked via:
 

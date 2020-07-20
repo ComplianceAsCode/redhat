@@ -355,8 +355,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - key: a
-      text: |
+    - text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -385,8 +384,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - key: a
-      text: |
+    - text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -397,8 +395,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - key: a
-      text: |
+    - text: |
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
