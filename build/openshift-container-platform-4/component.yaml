@@ -9843,8 +9843,7 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - key: a
-      text: |
+    - text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -9873,8 +9872,7 @@ satisfies:
   covered_by: []
   implementation_status: planned
   narrative:
-    - key: a
-      text: |
+    - text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
@@ -9885,8 +9883,7 @@ satisfies:
   covered_by: []
   implementation_status: complete
   narrative:
-    - key: a
-      text: |
+    - text: |
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
@@ -12127,7 +12124,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A control response for SI-7(12) is planned. Engineering progress can be
+        A control response for SI-10(2) is planned. Engineering progress can be
         tracked via:
 
         https://issues.redhat.com/browse/CMP-555
@@ -12138,7 +12135,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A control response for SI-7(12) is planned. Engineering progress can be
+        A control response for SI-10(3) is planned. Engineering progress can be
         tracked via:
 
         https://issues.redhat.com/browse/CMP-556
@@ -12149,7 +12146,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A control response for SI-7(12) is planned. Engineering progress can be
+        A control response for SI-10(4) is planned. Engineering progress can be
         tracked via:
 
         https://issues.redhat.com/browse/CMP-557
