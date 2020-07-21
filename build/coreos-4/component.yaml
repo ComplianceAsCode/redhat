@@ -3237,9 +3237,15 @@ satisfies:
 - control_key: CM-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
+        Verification of security function implementation and status is an organizational
+        policy and procedure control.
+        Normal Linux security function testing (SELinux, firewalld, users and groups, etc)
+        is sufficient to demonstrate functionality is in place following an operation
+        of installing changed code.
+        
         A complete control response is planned. Engineering progress can be
         tracked via:
 
