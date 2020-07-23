@@ -10909,11 +10909,21 @@ satisfies:
 - control_key: SI-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response for SI-2(6) is planned. Engineering progress can be
-        tracked via:
+        Removal of previous versions of software installed on the CoreOS host is an
+        organization policy and procedure control and not directly applicable to CoreOS.
+        The customer is responsible for ensuring that after installing an updated version
+        of software and firmware that the old version is removed. Configuration of CoreOS
+        post-install is done through OpenShift Container Platform and the Machine Config
+        Operator, including software installation and removal with `yum`.
+        All CoreOS management should be done with the Machine Config Operator, including
+        `yum` commands.
+        Machine Config Operator documentation:
+        https://github.com/openshift/machine-config-operator/tree/master/docs
+
+        Documentation updates and control progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-528
 
