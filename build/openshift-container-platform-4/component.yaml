@@ -7918,11 +7918,18 @@ satisfies:
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
+        Implementing privileged access authorization to perform vulnerability scans of the
+        OpenShift web interface is complete.
+        For the purpose of conducting a vulnerability scan of OpenShift, the host CoreOS
+        should be scanned using an SCAP compatible appliance. OpenShift supports
+        RBAC for users and groups, appropriate vulnerability scans can be performed against
+        the OpenShift web application interface.
 
+
+        Documentation updates and control progress can be tracked at:
         https://issues.redhat.com/browse/CMP-355
 
 - control_key: RA-5 (6)

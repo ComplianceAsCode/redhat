@@ -7642,11 +7642,15 @@ satisfies:
 - control_key: RA-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
+        CoreOS allows for privileged scans to be performed using appropriate credentials, as
+        determined by organizational policy and procedures for vulnerability management.
+        Active OpenShift pods and the OpenShift interface should be scanned using appropriate
+        OpenShift credentials. OpenShift credentials are out of scope for CoreOS configuration.
 
+        Documentation and control progress can be tracked at:
         https://issues.redhat.com/browse/CMP-355
 
 - control_key: RA-5 (6)
