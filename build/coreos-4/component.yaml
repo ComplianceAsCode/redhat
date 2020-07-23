@@ -10442,12 +10442,22 @@ satisfies:
 - control_key: SC-30 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Employing techniques to hide or conceal CoreOS is governed by an organizations
+        policies and procedures, and it not applicable to Core OS.
+        One technique to conceal the CoreOS host from a ping sweep is to disable the ICMP
+        request response. As CoreOS is built on the same Linux distribution as RHEL, the
+        same configuration change is equally applicable to CoreOS as it is the RHEL.
+        CoreOS configuration should be done through the OpenShift Container Platforms
+        Machine Config Operator.
+        Red Hat article to disable ICMP response request:
+        https://access.redhat.com/articles/7134
+        Machine Config Operator documentation:
+        https://github.com/openshift/machine-config-operator/tree/master/docs
 
+        Documentation updates and control progress can be tracked at:
         https://issues.redhat.com/browse/CMP-516
 
 - control_key: SC-31
