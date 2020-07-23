@@ -1246,11 +1246,17 @@
 - control_key: SC-30 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Employing techniques to obsfuscate system components designated by the organization is
+        the sole responsibility of the customer.
+        The HTTP web headers that are presented by the OpenShift web console can be modified to
+        obscure versions other relevant security details that are commonly leaked by HTTP headers.
+        Documentation for the Web Console Operator:
+        https://github.com/openshift/console-operator
+
+        Documentation updates and control progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-516
 
