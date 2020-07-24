@@ -1,0 +1,193 @@
+##
+## BEGINNING OF:
+## PLANNING
+##
+
+- control_key: PL-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+
+- control_key: PL-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: d
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: e
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+
+- control_key: PL-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-7.
+
+- control_key: PL-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-8.
+
+- control_key: PL-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Enterprise Linux configuration.
+
+- control_key: PL-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-2.
+
+- control_key: PL-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: d
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+
+- control_key: PL-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Enterprise Linux configuration.
+
+- control_key: PL-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into Appendix J, AR-2.
+
+- control_key: PL-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        As of NIST 800-53 rev4 this control was withdrawn
+        and incorporated into PL-2.
+
+- control_key: PL-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+
+- control_key: PL-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: c
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+
+- control_key: PL-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Enterprise Linux.
+
+- control_key: PL-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Enterprise Linux configuration.
+
+- control_key: PL-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Enterprise Linux configuration.

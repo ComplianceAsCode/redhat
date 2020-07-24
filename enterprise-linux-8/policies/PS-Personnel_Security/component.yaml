@@ -1,0 +1,360 @@
+##
+## BEGINNING OF:
+## PERSONNEL SECURITY
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: PS-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of Red Hat Enterprise Linux configuration.
+    - key: a.1
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of Red Hat Enterprise Linux configuration.
+    - key: a.2
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational reviews and updates to the personnel security policy
+        and personnel security procedures at an organization-defined frequency
+        is outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b.1
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b.2
+      text: |
+        Organizational development, documentation, and dissemination of
+        a personnel security policy to organization-defined personnel
+        is outside the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational assignment of a risk designation to all organizational
+        positions is outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational establishment of screening criteria for individuals
+        filling those positions is outside the scope of Red Hat Enterprise Linux
+        configuration.
+    - key: c
+      text: |
+        Organizational review and updating of position risk
+        designations at an organization-defined frequency is outside the scope
+        of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational screening of individuals prior to authorizing access
+        to the information system is outside the scope of Red Hat Enterprise Linux
+        configuration.
+    - key: b
+      text: |
+        Organizational processes to rescreen individuals according to
+        organization-defined conditions requiring rescreening and,
+        where rescreening is so indicated, the frequency of such
+        rescreening, is outside the scope of Red Hat Enterprise Linux
+        configuration.
+
+- control_key: PS-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting classified
+        information are cleared and indoctrinated to the highest classification
+        level of the information to which they have access on the system,
+        are outside the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting types of
+        classified information which require formal indoctrination, are
+        formally indoctrinated for all of the relevant types of information
+        to which they have access on the system, are outside the scope
+        of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting information
+        requiring special protection have valid access authorizations that are
+        demonstrated by assigned official government dutues, are outside the
+        scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational processes ensuring that individuals accessing an
+        information system processing, storing, or transmitting information
+        requiring special protection satisgy organization-defined additional
+        personnel screening criteria, are outside the scope of Red Hat Enterprise Linux
+        configuration.
+
+- control_key: PS-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, information system access is disabled within an
+        organization-defined time period, are outside the scope of
+        Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, any authenticators/credentials associated with the individual
+        are terminated/revoked, are outside the scope of
+        Red Hat Enterprise Linux configuration.
+    - key: c
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, exit interviews are conducted that include a discussion of
+        organization-defined information security topics, are outside the scope
+        of Red Hat Enterprise Linux configuration.
+    - key: d
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, all security-related organizational information
+        system-related property is retrieved, are outside the scope
+        of Red Hat Enterprise Linux configuration.
+    - key: e
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, the organization retains access to organizational
+        information systems formerly controlled by the terminated individual,
+        are outside the scope of Red Hat Enterprise Linux configuration.
+    - key: f
+      text: |
+        Organizational processes ensuring that, upon termination of individual
+        employment, the organization notifies organization-defined personnel
+        or roles within an organization-defined time period, are outside
+        the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes which notify terminated individuals of
+        applicable, legally binding post-employment requirements for
+        the protection of organizational information are outside
+        the scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational processes requiring terminated individuals
+        to sign an acknowledgement of post-employment requirements
+        as part of the organizational termination process
+        are outside the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational employment of automated mechanisms to notify
+        organization-defined personnel or roles upon termination of
+        an individual, is outside the scope of
+        Red Hat Enterprise Linux configuration.
+
+- control_key: PS-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes to review and confirm ongoing operational
+        need for current logical and physical access authorizations to
+        information systems/facilities when individuals are reassigned or
+        transferred to other positions within the organization are
+        outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational processes to initiate organization-defined transfer
+        or reassignment actions within organization-defined time period
+        following the formal transfer action are outside the scope of
+        Red Hat Enterprise Linux configuration.
+    - key: c
+      text: |
+        Organizational processes to modify access authorizations as needed to
+        correspond with any changes in oeprational need due to reassignment
+        or transfer are outside the scope of Red Hat Enterprise Linux configuration.
+    - key: d
+      text: |
+        Organizational notifications of organization-defined personnel
+        or roles within an organization-defined time period are outside
+        the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational process to develop and document access agreements for
+        organizational information systems are outside the scope of
+        Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational reviews and updates to the access agreements at an
+        organization-defined frequency are outside the scope of
+        Red Hat Enterprise Linux configuration.
+    - key: c
+      text: |
+        Organizational processes that ensure individuals requiring access to
+        organizational information and information systems sign and re-sign
+        access agreements are outside the scope of Red Hat Enterprise Linux configuration.
+    - key: c.1
+      text: |
+        Organizational processes that ensure individuals requiring access to
+        organizational information and information systems sign and re-sign
+        access agreements are outside the scope of Red Hat Enterprise Linux configuration.
+    - key: c.2
+      text: |
+        Organizational processes that ensure individuals requiring access to
+        organizational information and information systems sign and re-sign
+        access agreements are outside the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: PS-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes that ensure access to classified information
+        requiring special protection is granted only to individuals who
+        have a valid access authorization that is demonstrated by assigned
+        official government duties are outside the scope of Red Hat Enterprise Linux
+        configuration.
+    - key: b
+      text: |
+        Organizational processes that ensure access to classified information
+        requiring special protection is granted only to individuals who
+        satisfy associated personnel security criteria are outside
+        the scope of Red Hat Enterprise Linux configuration.
+    - key: c
+      text: |
+        Organizational processes that ensure access to classified information
+        requiring special protection is granted only to individuals who
+        have read, understood, and signed a nondisclosure agreement are
+        outside the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes to notify individuals of applicable, legally
+        binding post-employment requirements for protection of organizational
+        information are outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational processes which require individuals to sign
+        an acknowledgement of these requirements, if applicable, as
+        part of granting initial access to covered information, are
+        outside the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes to establish security requirements including
+        security roles and responsibilities for third-party providers are
+        outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational processes requiring third-party providers to comply
+        with personnel security polocies and procedures established by
+        the organization are outside the scope of Red Hat Enterprise Linux configuration.
+    - key: c
+      text: |
+        Organizational processes to document presonnel security requirements
+        are outside the scope of Red Hat Enterprise Linux configuration.
+    - key: d
+      text: |
+        Organizational processes to require third-party providers to notify
+        organization-defined personnel or roles of any personnel transfers or
+        terminations of third-party personnel who possess organizational
+        credentials and/or badges, or who have information system privileges
+        within an organization-defined time period, are outside the
+        scope of Red Hat Enterprise Linux configuration.
+    - key: e
+      text: |
+        Organizational monitoring of provider compliance is outside
+        the scope of Red Hat Enterprise Linux configuration.
+
+- control_key: PS-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational employment of a formal sanctions process for individuals
+        failing to comply with established information security policies
+        and procedures is outside the scope of Red Hat Enterprise Linux configuration.
+    - key: b
+      text: |
+        Organizational notification of organization-defined personnel
+        or roles within an organization-defined time period when a formal
+        employee santions process is initiated, identifying the individual
+        sanctioned and the reason for the sanction.
