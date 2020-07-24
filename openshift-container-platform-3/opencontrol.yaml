@@ -29,5 +29,5 @@ dependencies:
     - url: https://github.com/opencontrol/standards
       revision: master
   certifications:
-    - url: https://github.com/opencontrol/FedRAMP-Certifications
+    - url: https://github.com/opencontrol/certifications
       revision: master
