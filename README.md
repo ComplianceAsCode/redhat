@@ -31,7 +31,7 @@ dependencies:
   certifications:
     - url: https://github.com/SecurityCentral/opencontrol-certifications
       revision: master
-    - url: https://github.com/opencontrol/FedRAMP-Certifications
+    - url: https://github.com/opencontrol/certifications
       revision: master
   systems:
     - url: https://github.com/SecurityCentral/redhat-openstack-platform-13
