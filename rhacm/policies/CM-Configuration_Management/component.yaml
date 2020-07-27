@@ -1,0 +1,804 @@
+##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
+
+# ADMINISTRATORS NOTE ON CM-2:
+#       Implimentation of this control varies greatly between customers. Some
+#       want centralized config management, while others expect component
+#       administrators to handle this (e.g. maintain custom Ansible scripts).
+#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
+#       however it's best to double check with the Information System owner
+#       on expectations (component vs central CM).
+#
+
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Developing, documenting, and disseminating an organizational configuration
+        management policy is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Review and update procedures to the organizational configuration
+        management policy is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-260
+
+- control_key: CM-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-261
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-261
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-261
+
+- control_key: CM-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-262
+
+- control_key: CM-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-263
+
+- control_key: CM-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-264
+
+- control_key: CM-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational issuance of organization-defined information
+        systems, system components, or devices with organizational-defined
+        configurations to indivudals traveling to locations that the
+        organization deems to be of significant risk is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Organizational processes to apply organization-defined security
+        safeguards to the devices when the individuals return is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: d
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: e
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: f
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: g
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+
+- control_key: CM-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: d
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: e
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: f
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-266
+
+- control_key: CM-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        The requirement for an information security representative to be
+        a member of the organization-defined configuration change
+        control element is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-267
+
+- control_key: CM-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-268
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational analysis of changes to the information system to
+        determine potential security impacts prior to change implementation
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-269
+
+- control_key: CM-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-270
+
+- control_key: CM-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/896
+
+- control_key: CM-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/897
+
+- control_key: CM-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-187
+
+- control_key: CM-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-271
+
+- control_key: CM-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://github.com/ComplianceAsCode/redhat/issues/901
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-188
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-188
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-188
+    - key: d
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-188
+
+- control_key: CM-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-272
+
+- control_key: CM-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-273
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-273
+
+- control_key: CM-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-274
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-274
+
+- control_key: CM-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-275
+
+- control_key: CM-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-276
+
+- control_key: CM-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-204
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-204
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-204
+
+- control_key: CM-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-205
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-205
+    - key: c
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-205
+
+#       ADMINISTRATORS NOTE ON CM-8:
+#       Implimentation of this control varies between customers. Some agencies
+#       maintain an inventory that state "Red Hat Advanced Cluster Management for Kubernetes 4.x," whereas others want
+#       named RPMs installed on the Red Hat Advanced Cluster Management for Kubernetes components. The vast majority
+#       follow the "Red Hat Advanced Cluster Management for Kubernetes 4.x" listings. For those that do not, and want
+#       complete listings of underlying RPMs, the following section should be
+#       uncommented and updated.
+#
+#       If Satellite is managing the Red Hat Advanced Cluster Management for Kubernetes nodes, documenting how Red Hat Advanced Cluster Management for Kubernetes
+#       components integrate into Satellite for centralized inventory management
+#       is perfectly acceptable.
+#
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-277
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-277
+
+- control_key: CM-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-278
+
+- control_key: CM-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-279
+
+- control_key: CM-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-280
+    - key: b
+      text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-280
+
+- control_key: CM-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to include in the information system
+        component inventory information, a means for identifying
+        by name, position, and/or role, individuals responsible/accountable
+        for administering those components, is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational verification that all components within the
+        authorization boundary of the information system are not
+        duplicated in other information system component
+        inventories is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-8 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-282
+
+- control_key: CM-8 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-283
+
+- control_key: CM-8 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-8 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational assignment of organization-defined aquired information
+        system components to an information system is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Organizational processes to receive an acknowledgement from the
+        information system owner of the assignment in CM-8(8)(a) is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: b
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: c
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: d
+      text: |
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to assign responsibility for developing the
+        configuration management process to organizational personnel that are
+        not directly involved in information system development are outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-284
+    - key: b
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-284
+    - key: c
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-284
+
+- control_key: CM-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Establishment of organizational restrictions on open source software
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+# ADMINISTRATORS NOTE ON CM-11:
+#       This would be a good place to demarcate installation of software
+#       on the OSE nodes vs installation of software in trusted registries.
+#
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-285
+    - key: b
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-285
+    - key: c
+      text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-285
+
+- control_key: CM-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-286
+
+- control_key: CM-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        A complete control response is planned. Progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-287

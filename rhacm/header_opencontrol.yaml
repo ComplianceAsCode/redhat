@@ -1,0 +1,5 @@
+---
+documentation_complete: false
+name: Red Hat Advanced Cluster Management for Kubernetes
+schema_version: 3.0.0
+satisfies:
