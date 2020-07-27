@@ -14,6 +14,8 @@ components:
   - build/openshift-container-platform-4
   - build/openshift-dedicated
   - build/openstack-platform-13
+  - build/rhel-7
+  - build/rhel-8
   - build/virtualization-host
   - build/virtualization-manager
 
