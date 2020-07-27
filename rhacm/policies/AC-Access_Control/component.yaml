@@ -1,0 +1,1711 @@
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        AC-1(a) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        AC-1(b) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        AC-2(a) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        AC-2(b) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |
+        AC-2(c) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |
+        AC-2(d) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: e
+      text: |
+        AC-2(e) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: f
+      text: |
+        AC-2(f) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: g
+      text: |
+        AC-2(g) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: h
+      text: |
+        AC-2(h) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: i
+      text: |
+        AC-2(i) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: j
+      text: |
+        AC-2(j) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: k
+      text: |
+        AC-2(k) is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes components of the system support automated
+        management through monitoring of accounts and system
+        activity by logging of related information.
+
+        While Red Hat Advanced Cluster Management for Kubernetes can generate audit data, and securely
+        transport the data to a SIEM, Red Hat Advanced Cluster Management for Kubernetes does not provide
+        automated mechanisms (e.g. email, text messages) after
+        system events. This functionality would fall to third
+        party software such as an Identity Provider (IdP),
+        Active Directory (MSAD), LDAP, etc.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+# AC-2(2) NOTES:
+#       The customer will be responsible for automatically removing or
+#       disabling emergency and temporary accounts within the required
+#       timeframe. A successful control response will need to address
+#       all of the procedures and mechanisms involved in disabling these
+#       accounts.
+#
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes does not have the capability to create
+        guest/anonymous accounts or temporary accounts. Any
+        external emergency or temporary accounts will be
+        inherited from, and managed by, an external
+        identity service (e.g. Active Directory, LDAP, etc.)
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+#
+# AC-2(3) NOTES:
+#       The customer will be responsible for automatically disabling user
+#       accounts after the specified period of inactivity. A successful
+#       control response will need to address all automated mechanisms
+#       involved in disabling inactive accounts.
+#
+# ADMIN NOTE:
+#       AC-2(2) disables temp/emergency accounts after period of time.
+#       AC-2(3) differs by disabling *every other* account type
+#
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes does not have the ability to automatically
+        disable user accounts. Automatic disabling of these
+        accounts must happen at the centralized account
+        management level; for example, within LDAP, Red Hat
+        IdM, or Active Directory.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        To meet FISMA requirements, Red Hat Advanced Cluster Management for Kubernetes must be configured
+        to use centralized authentication (e.g. LDAP, Red Hat IdM,
+        Active Directory). The audit of account creation,
+        modification, enabling, disabling, and removal actions is
+        the respinsibility of the centralized service. Additionally,
+        notification of organization-defined personnel or roles is
+        also the responsibility of the centralized authentication
+        service.
+
+##
+## Ref: https://access.redhat.com/solutions/2191161
+## "How to modify console session timeouts in Openshift 4"
+##
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for AC-2 (5) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-82
+
+- control_key: AC-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for AC-2 (6) is planned. Engineering
+        progress can be tracked via:
+
+        See https://issues.redhat.com/browse/CMP-83 for local
+        user account handling in Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        Using Role Based Access Control (RBAC), Red Hat Advanced Cluster Management for Kubernetes roles can be used
+        to grant various levels of access both cluster-wide as well as at
+        the project scope. Users and gruops can be associated with, or bound
+        to, multiple roles at the same time.
+
+        For service accounts that might also have privileged access, Security
+        Context Constraints (SCC) should be used to limit privileged actions
+        in service accounts.
+
+        For the cluster, the kubeadmin user should be completely disabled.
+
+        More work is being done to address this control. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-84
+    - key: b
+      text: |-
+        This is an organizational control and not applicble to the configuration
+        of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: c
+      text: |-
+        This is an organizational control and not applicble to the configuration
+        of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: AC-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control is applicable to the identity service provider,
+        and outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control is applicable to the identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-2 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes does not have the concept of group accounts.
+
+        Should the organization allow shared credentials, the
+        creation and management of such would fall under the scope
+        of operating the shared identity service and not Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: AC-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+       Enforcement of organization-defined circumstances and/or usage
+       conditions is the responsibility of third party identity
+       management software such as Red Hat Identity Management (Red Hat IdM),
+       Active Directory (MSAD), LDAP, etc.
+
+       To configure an Identity Provider (IdP), refer to the "Authentication"
+       chapter of the Red Hat Advanced Cluster Management for Kubernetes documentation at
+       https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
+
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A control response for AC-2(12)(a) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-259
+    - key: b
+      text: |-
+        A control response for AC-2(12)(b) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-259
+
+- control_key: AC-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for AC-2(13) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-211
+
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        This control is met through the use of Role-based Access Control
+        for an Red Hat Advanced Cluster Management for Kubernetes user. Namespaces should also be configured to
+        sandbox users and resources to only the required projects.
+
+- control_key: AC-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into
+        AC-6
+
+- control_key: AC-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for AC-3 (2) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-88
+
+- control_key: AC-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A response to AC-3 (3) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-212
+    - key: b
+      text: |-
+        A response to AC-3 (3) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-212
+    - key: c
+      text: |-
+        A response to AC-3 (3) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-212
+
+- control_key: AC-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: b
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: c
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: d
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+    - key: e
+      text: |-
+        A response to AC-3 (4) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-90
+
+- control_key: AC-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A response to AC-3 (5) is planned. Progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-91
+
+- control_key: AC-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-3 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        This control is met through a variety of Red Hat Advanced Cluster Management for Kubernetes technologies:
+        - Role-based Access Control
+        - Seccomp
+        - SELinux
+        - Namespaces
+        - Security Context Constraints (SCC)
+
+- control_key: AC-3 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A response to AC-3 (8) is planned. Engineering progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-96
+
+- control_key: AC-3 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A response to AC-3 (9) is planned. Engineering progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-97
+    - key: b
+      text: |-
+        A response to AC-3 (9) is planned. Engineering progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-97
+
+- control_key: AC-3 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        A response to AC-3 (10) is planned. Engineering progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-213
+
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-98
+
+- control_key: AC-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-99
+
+- control_key: AC-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-100
+
+- control_key: AC-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-101
+
+- control_key: AC-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-214
+
+- control_key: AC-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-215
+
+- control_key: AC-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-102
+
+- control_key: AC-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-216
+
+- control_key: AC-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-103
+
+- control_key: AC-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Changes to Red Hat Advanced Cluster Management for Kubernetes information flows take effect immediately. It is assumed
+        that all information flow modifications have undergone organizational
+        approval processes prior to being implemented in Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes cannot protect against authenticated users who were
+        given authorization to execute administrative commands (such as
+        information flow modifications).
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-104
+
+- control_key: AC-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Privileged Administrators are defined as authenticated users who
+        were given authorization to execute privileged commands on Red Hat Advanced Cluster Management for Kubernetes
+        systems (e.g. "sudo access").
+
+        To modify security policies users must first authenticate with
+        standard credentials (e.g. username/password or username/key).
+        Once authenticated users must elevate privileges to root access
+        through usage of "sudo", which will require users to re-authenticate
+        themselves.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-217
+
+- control_key: AC-4 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Privileged Administrators are defined as authenticated users who
+        were given authorization to execute privileged commands on Red Hat Advanced Cluster Management for Kubernetes
+        systems (e.g. "sudo access").
+
+        The default system behavior allows Privileged Administrators
+        to (re)configure security policy filters. For example,
+        to reflect changes in network security policies, Privileged
+        Administrators can dynamically change the allowed network
+        ports and protocols that security policy mechanisms (such
+        as firewalld) check in accordance with the definitions
+        provided by organizations.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-218
+
+- control_key: AC-4 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-105
+
+- control_key: AC-4 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-106
+
+- control_key: AC-4 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-107
+
+- control_key: AC-4 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-108
+
+- control_key: AC-4 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-4 (17)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-107
+
+- control_key: AC-4 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-110
+
+- control_key: AC-4 (19)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-111
+
+- control_key: AC-4 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-112
+
+- control_key: AC-4 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        The customer will be responsible for separating information flows
+        within the customer application. A successful control response will
+        need to address the customer organizational requirements for
+        the separation of information flows, and the mechanisms and
+        techniques used to accomplish this separation.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-113
+
+- control_key: AC-4 (22)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-114
+
+- control_key: AC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Separation of duties is an organizational process outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        However, to aide in such processes, note that Red Hat Advanced Cluster Management for Kubernetes provides the capability to
+        implement Role-based Access Control (RBAC) which determine whether a
+        user is allowed to perform a given action. Documentation on the Red Hat Advanced Cluster Management for Kubernetes RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+    - key: b
+      text: |
+        Documentation of the seperation of duties of individuals
+        is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+        However, to aide in such processes, note that Red Hat Advanced Cluster Management for Kubernetes provides the capability to
+        implement Role-based access control (RBAC) objects which determine whether a
+        user is allowed to perform a given action. Documentation on the Red Hat Advanced Cluster Management for Kubernetes RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+    - key: c
+      text: |
+        Organizational processes which define information system access
+        authorizations to support separation of duties is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        However, to aide in such processes, note that Red Hat Advanced Cluster Management for Kubernetes provides the capability to
+        implement Role-based access control (RBAC) objects which determine whether a
+        user is allowed to perform a given action. Documentation on the Red Hat Advanced Cluster Management for Kubernetes RBAC
+        capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+
+- control_key: AC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-115
+
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-219
+
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        This is an organizational/procedural control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        The customer will be responsible for requiring users to use the
+        lowest level of access required to perform any given function. In
+        terms of Red Hat Advanced Cluster Management for Kubernetes, this may require creation of multiple logon
+        accounts per user. When users require access to privileged functions
+        or capability, they will need to logout from the unprivileged account
+        and login with an account that has received appropriate RBAC rights.
+
+        Note: Red Hat Advanced Cluster Management for Kubernetes does not have privilege escalation capabilities similar
+        to sudo in Linux. Users will have to completely logout/login when
+        requiring privilege escalation between accounts.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-220
+
+- control_key: AC-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-116
+
+- control_key: AC-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-117
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-118
+
+- control_key: AC-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-119
+
+- control_key: AC-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-120
+    - key: b
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-120
+
+- control_key: AC-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-121
+
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        The customer will be responsible for auditing the execution of
+        privileged functions. A successful control response will need
+        to relate this requirement to the general auditing requirements
+        of the AU control family.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-122
+
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        The customer will be responsible for ensuring that non-privileged
+        users cannot execute privileged functions. A successful control
+        response will need to discuss the use of centralized authentication
+        and authorization and any other means of enforcement of privilege
+        levels.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-123
+
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        The customer will be responsible for enforcing a limit on consecutive
+        failed login attempts.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-124
+    - key: b
+      text: |
+        The customer will be responsible for taking required
+        actions defined by the customer, upon account lockout.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-124
+
+- control_key: AC-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Management of mobile devices is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        The customer will be responsible for displaying a system use
+        notification banner to users. A successful control response will need
+        to address the conditions under which the banner will be displayed
+        (if a non-government user accesses the system, the system use
+        notification banner may not be appropriate), as well as the contents
+        of the nofication message.
+
+        In context of Red Hat Advanced Cluster Management for Kubernetes, a banner must be displayed for all means
+        of accessing Red Hat Advanced Cluster Management for Kubernetes itself (e.g. service consoles, remote access
+        through SSH, etc).
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-125
+    - key: b
+      text: |
+        The customer will be responsible for displaying the use notification
+        banner until the user acknowledges the usage condition and takes
+        explicit actions to further access the system. A successful control
+        response will need to address the means by which the user will indicate
+        acknowlegement and move forward.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-125
+    - key: c
+      text: |
+        The customer will be responsible for displaying a system use
+        information message to users. A successful control response will need
+        to address the conditions under which the message will be
+        displayed (if a non-government user accesses the system, the system
+        use information message may not be appropriate), as well as the
+        contents of the notification message, including references to
+        applicable monitoring, recording, or auditing, and authorized usage
+        of the system.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-125
+    - key: c.1
+      text: |
+        The customer will be responsible for determining the conditions
+        under which the system use notification will be displayed. These
+        conditions must be reviewed and accepted by the FedRAMP JAB.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-125
+    - key: c.2
+      text: |
+        The customer will be responsible for how the system use notification
+        will be verified and how often it should be re-displayed and
+        re-verified. These conditions must be reviewed an accepted by the
+        FedRAMP JAB.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-125
+    - key: c.3
+      text: |
+        The customer will be responsible for verifying that the system use
+        notification is being displayed as required, either through a
+        configuration baseline check or via other means. If this verification
+        does not happen through a configuration baseline check, the JAB must
+        review and accept the process used to perform the verification.
+
+        A control response to AC-8 is planned. Progress can be tracked
+        via:
+
+        https://issues.redhat.com/browse/CMP-125
+
+- control_key: AC-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-126
+
+- control_key: AC-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-127
+
+- control_key: AC-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-128
+
+- control_key: AC-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-129
+
+- control_key: AC-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-130
+
+- control_key: AC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        The customer will be responsible for limiting the number of
+        concurrent sessions to the customer application as required.
+        A successful control implemented will need to address the technical
+        mechanism used to enforce this limit.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-131
+
+- control_key: AC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-222
+    - key: b
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-222
+
+- control_key: AC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-221
+
+- control_key: AC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        The customer will be responsible for defining events or conditions
+        requiring disconnection (for example, user requesting logout), and for
+        terminating the session when those events or conditions arise. A
+        successful control response will need to outline the qualifying events
+        or conditions.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-132
+
+- control_key: AC-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-223
+    - key: b
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-223
+
+- control_key: AC-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Regardless of access mechanism, such as the Red Hat Advanced Cluster Management for Kubernetes Console or remote
+        access attempts through SSH, unauthenticated users will only be shown the
+        system use notifications (as defined in AC-8) and login prompt. This is
+        non-confiurable behavior.
+
+- control_key: AC-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Data release markings, such as NATO or NOFORN, are the responsibility
+        of application and data owners running workload on the Red Hat Advanced Cluster Management for Kubernetes platform.
+        This control is not applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes itself.
+    - key: b
+      text: |
+        Data release markings, such as NATO or NOFORN, are the responsibility
+        of application and data owners running workload on the Red Hat Advanced Cluster Management for Kubernetes platform.
+        This control is not applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes itself.
+    - key: c
+      text: |
+        Data release markings, such as NATO or NOFORN, are the responsibility
+        of application and data owners running workload on the Red Hat Advanced Cluster Management for Kubernetes platform.
+        This control is not applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes itself.
+    - key: d
+      text: |
+        Data release markings, such as NATO or NOFORN, are the responsibility
+        of application and data owners running workload on the Red Hat Advanced Cluster Management for Kubernetes platform.
+        This control is not applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes itself.
+
+- control_key: AC-16 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-16 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: AC-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        Beginning with Red Hat Advanced Cluster Management for Kubernetes 4.3, when Red Hat Advanced Cluster Management for Kubernetes is deployed on Red Hat Enterprise
+        Linux, and FIPS is enabled as a kernel setting, Red Hat Advanced Cluster Management for Kubernetes will use OpenSSL
+        libraries instead of the native Golang crypto. The system operator will need to
+        verify that Red Hat Advanced Cluster Management for Kubernetes is being deployed on a version of Red Hat Advanced Cluster Management for Kubernetes
+        that has been FIPS validated.
+
+        Prior to Red Hat Advanced Cluster Management for Kubernetes 4.3, remote sessions were encrypted using Golang-provided
+        cryptography. While not FIPS validated, this included the following
+        cryptographic algorithms and ciphers to protect the confidentiality
+        and integrity of remote access sessions:
+                - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+                - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+                - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+                - TLS_RSA_WITH_AES_128_CBC_SHA
+                - TLS_RSA_WITH_AES_256_CBC_SHA
+                - TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+                - TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+        A better control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-144
+
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        The customer will be responsible for requiring remote access
+        connections to the customer application to be routed through
+        customer-defined network access control points. A successful control
+        response will need to address the nature, number, and location of
+        such access control points, as well as the security controls in place
+        to protect those access control points.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-145
+
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-146
+    - key: b
+      text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-146
+
+- control_key: AC-17 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-17 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-147
+
+- control_key: AC-17 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-17 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-17 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes utilizes the firewall technology embedded into Red Hat
+        Enterprise Linux. This technology, named firewalld, allows a system
+        administrator to configure host-based rules which take effect
+        immediately. This gives an Red Hat Advanced Cluster Management for Kubernetes operator the ability to immediately
+        drop all remote connections.
+
+        Additionally, Red Hat Advanced Cluster Management for Kubernetes nodes may be placed into Maintenance Mode. This
+        designation will migrate applications from a given cluster node to
+        another, disconnecting any active sessions to a given cluster node.
+
+        If immediate disconnect of all hosted applications are desired,
+        individual containers may be halted. This will disconnect user sessions
+        for tenant applications immediately.
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes regarding the establishment of wireless
+        access usage restrictions are outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Organizational processes regarding wireless access to the information
+        system are outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Configuration of wireless networking is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-18 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-18 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-148
+
+- control_key: AC-18 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-149
+
+- control_key: AC-18 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Radio antenna selection and calibration is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Establishing organizational usage restrictions for mobile devices is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Authorization of mobile devices is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: AC-19 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-19 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-19 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AC-19 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational restrictions on the use of mobile devices is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Enforcement of organizational restrictions of mobile devices is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |
+        Restricting the connection of classified mobile devices to
+        classified information systems is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Encryption strategies for mobile devices is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes for establishing terms and conditions
+        for accessing the information system from external information
+        systems is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Organizational processes for establishing terms and conditions
+        for the processing, storage, or transmission of organization-controlled
+        information using external information systems is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Verification of security control implementation on external systems
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Retention of approved information system connection or processing
+        agreements with organizational entities hosting the external
+        information system is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes regarding the restriction or
+        prohibiting of the use of organization-controled portable
+        storage devices by authorized individuals on external information
+        systems is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-20 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes regarding the restriction or
+        prohibiting of the use of non-organizationally owned
+        information systems, system components, or devices to process,
+        store, or transmit organizational information, is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-20 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes regarding prohibiting the use of
+        organization-defined network accessible storage devices in
+        external information systems is beyond the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Facilitation of information sharing is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Employment of technology or processes to assist users in making
+        information sharing/collaboration decisions is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-21 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Enforcement of information-sharing decisions is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-21 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Implementation of information search and retrieval services
+        that enforce organization-defined information sharing restrictions
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational processes regarding the designation of individuals
+        authorized to post information onto a publicly accessible information
+        system is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Training authorized individuals to ensure that publicly accessible
+        information does not contain nonpublic information is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |
+        Reviewing the proposed content of information prior to posting onto
+        the publicly accessible information system to ensure that nonpublic
+        information is not included is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: d
+      text: |
+        Reviewing content on the publicly accessible information system
+        for nonpublic information at an organization-defined frequency and
+        removal of such information, if discovered, is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-23
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational employment of organization-defined data mining
+        prevension and detection techniques for organization-defined data
+        storage objects is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-24
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-151
+
+- control_key: AC-24 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-152
+
+- control_key: AC-24 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-153
+
+- control_key: AC-25
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-154
