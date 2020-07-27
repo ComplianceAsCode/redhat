@@ -289,7 +289,7 @@
         Normal Linux security function testing (SELinux, firewalld, users and groups, etc)
         is sufficient to demonstrate functionality is in place following an operation
         of installing changed code.
-        
+
         A complete control response is planned. Engineering progress can be
         tracked via:
 
