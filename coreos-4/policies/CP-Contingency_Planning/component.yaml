@@ -607,6 +607,17 @@
         their CoreOS environment. A successful control response will detail
         processes used to fully recover/restore the CoreOS environment.
 
+        CoreOS nodes should not contain any stateful information as stateful information
+        should exist only in etcd and get persisted to OCP nodes via operators.
+        Because of this, CoreOS nodes can be added/removed as necessary to fully
+        recover/restore the CoreOS environment.
+
+        To assist System Administrators and organizations in their control response,
+        documentation about disaster recovery procedures for CoreOS nodes in OpenShift can be
+        viewed at:
+
+        https://docs.openshift.com/container-platform/latest/backup_and_restore/disaster_recovery/about-disaster-recovery.html
+
 - control_key: CP-10 (1)
   standard_key: NIST-800-53
   covered_by: []
