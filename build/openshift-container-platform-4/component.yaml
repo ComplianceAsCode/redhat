@@ -4384,6 +4384,12 @@ satisfies:
         their OpenShift environment. A successful control response will detail
         processes used to fully recover/restore the OpenShift environment.
 
+        To assist System Administrators and organizations in their control response,
+        documentation about disaster recovery procedures in OpenShift can be
+        viewed at:
+
+        https://docs.openshift.com/container-platform/latest/backup_and_restore/disaster_recovery/about-disaster-recovery.html
+
 - control_key: CP-10 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -4508,11 +4514,11 @@ satisfies:
         LDAP, Active Directory, Red Hat SSO, etc). This part of the control
         is not applicable to OpenShift.
 
-        To aid system administrators, documentation on
+        To aid system administrators in configuring a centralized identity provider, documentation on
         supported authentication providers can be found in the
         OpenShift product documentation:
 
-        https://access.redhat.com/documentation/en-us/openshift_container_platform/latest/html/authentication/understanding-identity-provider
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
 
         The ability to uniquely identify processes acting on behalf of
         organizational users, such as when a user deploys a new
@@ -4532,7 +4538,12 @@ satisfies:
         supported authentication providers can be found in the
         OpenShift product documentation:
 
-        https://access.redhat.com/documentation/en-us/openshift_container_platform/latest/html/authentication/understanding-identity-provider
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
+        It is recommended to use separate accounts for privileged access. For example, at least one account for regular user
+        access, and a separate account for cluster or project administrator access.
+        The organization must determine how to best break up privileged accesses based off of organizational
+        needs and requirements.
 
 - control_key: IA-2 (2)
   standard_key: NIST-800-53
@@ -4549,7 +4560,7 @@ satisfies:
         supported authentication providers can be found in the
         OpenShift product documentation:
 
-        https://access.redhat.com/documentation/en-us/openshift_container_platform/latest/html/authentication/understanding-identity-provider
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-2 (3)
   standard_key: NIST-800-53
@@ -4557,8 +4568,13 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        OpenShift, as a web application, is managed remotely through
-        a web console and/or API endpoints. The implementation
+        OpenShift has no concept of local accounts and was designed without the use of local accounts.
+        OpenShift relies on a centralized identity provider rather than a local identity provider.
+        The closest implementation concept of a local user account store would be the implementation
+        of the htpasswd identity provider. However, use of this provider is not recommended for
+        any reason for any security conscious environments or organizations.
+
+        Because OpenShift has no concept of local accounts, the implementation of
         of multifactor authentication for local access to privileged accounts
         is not applicable to OpenShift.
 
@@ -4568,10 +4584,15 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        OpenShift, as a web application, is managed remotely through
-        a web console and/or API endpoints. The implementation
-        of multifactor authentication for local access to non-privileged
-        accounts is not applicable to OpenShift.
+        OpenShift has no concept of local accounts and was designed without the use of local accounts.
+        OpenShift relies on a centralized identity provider rather than a local identity provider.
+        The closest implementation concept of a local user account store would be the implementation
+        of the htpasswd identity provider. However, use of this provider is not recommended for
+        any reason for any security conscious environments or organizations.
+
+        Because OpenShift has no concept of local accounts, the implementation of
+        of multifactor authentication for local access to non-privileged accounts
+        is not applicable to OpenShift.
 
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
