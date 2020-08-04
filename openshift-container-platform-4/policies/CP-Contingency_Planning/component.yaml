@@ -608,6 +608,12 @@
         their OpenShift environment. A successful control response will detail
         processes used to fully recover/restore the OpenShift environment.
 
+        To assist System Administrators and organizations in their control response,
+        documentation about disaster recovery procedures in OpenShift can be
+        viewed at:
+
+        https://docs.openshift.com/container-platform/latest/backup_and_restore/disaster_recovery/about-disaster-recovery.html
+
 - control_key: CP-10 (1)
   standard_key: NIST-800-53
   covered_by: []
