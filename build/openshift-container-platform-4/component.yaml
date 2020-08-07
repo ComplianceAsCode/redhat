@@ -4091,10 +4091,29 @@ satisfies:
         applicable to the configuration of OpenShift.
     - key: b
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        Ensuring that equipment and supplies required to transfer and resume
+        operations are available at the alternate processing site or contracts
+        are in place to support delivery to the site within the
+        organization-defined time period for transfer/resumption is an
+        organizational control outside the configuration of OpenShift.
 
-        https://issues.redhat.com/browse/CMP-294
+        To assist Systems Administrators and Security personnel in answering
+        this control in relation to OpenShift, Red Hat does not provide
+        disaster recovery subscriptions for OpenShift. However, there are a
+        couple of ways that a cluster can be configured to failover in the case
+        of emergency or catastrophic failure. One way is to configure the
+        cluster with geographically diverse set of nodes in different
+        availability zones. See https://docs.openshift.com/container-platform/latest/machine_management/creating-infrastructure-machinesets.html for creating
+        MachineSets for nodes to operate in different clouds.
+
+        Alternatively, Red Hat Advanced Cluster Management for Kubernetes
+        is a solution for multi-cluster deployment and management across
+        different many differing operating environments. Red Hat Advanced
+        Cluster Management for Kubernetes is considered a better tool to
+        manage Kubernetes Clusters and to handle cluster failover in case of
+        failure. Documentation can be viewed at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html/about/welcome-to-red-hat-advanced-cluster-management-for-kubernetes
     - key: c
       text: |
         This control reflects organizational procedures/policies, and is not

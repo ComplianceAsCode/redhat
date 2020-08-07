@@ -4065,9 +4065,15 @@ satisfies:
         applicable to the configuration of CoreOS.
     - key: b
       text: |
-        A complete control response is planned. Progress can be tracked via:
+        Ensuring that equipment and supplies required to transfer and resume
+        operations are available at the alternate processing site or contracts
+        are in place to support delivery to the site within the
+        organization-defined time period for transfer/resumption is an
+        organizational control outside the configuration of CoreOS.
 
-        https://issues.redhat.com/browse/CMP-294
+        For CoreOS operating in an OpenShift environment, Red Hat does not provide
+        disaster recovery subscriptions for OpenShift, and failover should be handled
+        at the cluster layer and not the individual node layer.
     - key: c
       text: |
         This control reflects organizational procedures/policies, and is not
