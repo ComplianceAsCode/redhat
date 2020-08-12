@@ -398,18 +398,39 @@
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        By default, the OpenShift API uses the internal system clocks to generate
+        time stamps for audit records. At the code level, the OpenShift API
+        stores audit events in a struct called MicroTime:
 
-        https://issues.redhat.com/browse/CMP-230
+        // MicroTime is version of Time with microsecond level precision.
+        //
+        // +protobuf.options.marshal=false
+        // +protobuf.as=Timestamp
+        // +protobuf.options.(gogoproto.goproto_stringer)=false
+        type MicroTime struct
+        { time.Time `protobuf:"-"` }
+
+        which really is a time.Time value which comes from the standard golang library:
+
+        https://golang.org/pkg/time/
+
     - key: b
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        By default, the OpenShift API records time stamps for audit records
+        that can be mapped to Coordinated Universal Time (UTC). For example
+        in the following node audit record:
 
-        https://issues.redhat.com/browse/CMP-230
+        {"kind":"Event","apiVersion":"audit.k8s.io/v1","level":"Metadata","auditID":"ad209ce1-fec7-4130-8192-c4cc63f1d8cd","stage":"ResponseComplete","requestURI":"/api/v1/namespaces/openshift-kube-controller-manager/configmaps/cert-recovery-controller-lock?timeout=35s","verb":"update","user":{"username":"system:serviceaccount:openshift-kube-controller-manager:localhost-recovery-client","uid":"dd4997e3-d565-4e37-80f8-7fc122ccd785","groups":["system:serviceaccounts","system:serviceaccounts:openshift-kube-controller-manager","system:authenticated"]},"sourceIPs":["::1"],"userAgent":"cluster-kube-controller-manager-operator/v0.0.0 (linux/amd64) kubernetes/$Format","objectRef":{"resource":"configmaps","namespace":"openshift-kube-controller-manager","name":"cert-recovery-controller-lock","uid":"5c57190b-6993-425d-8101-8337e48c7548","apiVersion":"v1","resourceVersion":"574307"},"responseStatus":{"metadata":{},"code":200},"requestReceivedTimestamp":"2020-04-02T08:27:20.200962Z","stageTimestamp":"2020-04-02T08:27:20.206710Z","annotations":{"authorization.k8s.io/decision":"allow","authorization.k8s.io/reason":"RBAC: allowed by ClusterRoleBinding \"system:openshift:operator:kube-controller-manager-recovery\" of ClusterRole \"cluster-admin\" to ServiceAccount \"localhost-recovery-client/openshift-kube-controller-manager\""}}
+
+        timestamps such as requestReceivedTimestamp and stageTimestamp are
+        in UTC format e.g. 2020-04-02T08:27:20.200962Z
+
+        See https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-audit-log.html
+        for more example of audit records.
 
 - control_key: AU-8 (1)
   standard_key: NIST-800-53

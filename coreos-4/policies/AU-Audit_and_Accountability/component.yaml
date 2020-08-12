@@ -428,18 +428,33 @@
 - control_key: AU-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        By default, CoreOS auditing uses the internal system clocks to generate
+        time stamps for audit records. At the code level, this is accomplished
+        through the use of the C programming language time.h which is part of the
+        C Standard Library.
 
-        https://issues.redhat.com/browse/CMP-230
     - key: b
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        By default, the CoreOS auditing records time stamps for audit records
+        that can be mapped to Coordinated Universal Time (UTC). For example
+        in the following node audit record:
 
-        https://issues.redhat.com/browse/CMP-230
+        type=SYSCALL msg=audit(1364481363.243:24287): arch=c000003e syscall=2 success=no exit=-13 a0=7fffd19c5592 a1=0 a2=7fffd19c4b50 a3=a items=1 ppid=2686 pid=3538 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=pts0 ses=1 comm="cat" exe="/bin/cat" subj=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023 key="sshd_config"
+        type=CWD msg=audit(1364481363.243:24287):  cwd="/home/shadowman"
+        type=PATH msg=audit(1364481363.243:24287): item=0 name="/etc/ssh/sshd_config" inode=409248 dev=fd:00 mode=0100600 ouid=0 ogid=0 rdev=00:00 obj=system_u:object_r:etc_t:s0  nametype=NORMAL cap_fp=none cap_fi=none cap_fe=0 cap_fver=0
+        type=PROCTITLE msg=audit(1364481363.243:24287) : proctitle=636174002F6574632F7373682F737368645F636F6E666967
+
+        The msg field records a time stamp and a unique ID of the record in the form audit(time_stamp:ID).
+        Multiple records can share the same time stamp and ID if they were generated
+        as part of the same Audit event. The time stamp is using the Unix time
+        format - seconds since 00:00:00 UTC on 1 January 1970.
+
+        See https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/auditing-the-system_security-hardening
+        for more example and explanation of auditing.
 
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
