@@ -3733,26 +3733,41 @@ satisfies:
 - control_key: CM-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-284
+        Ensuring that the organization uses software and associated
+        documentation in accordance with contract agreements and copyright laws
+        is the complete responsiblity of the organization. Red Hat's
+        responsibilities to assist with the tracking of software licensing and
+        usage of software provided by Red Hat will be fulfilled in accordance
+        with all applicable contracts and agreements established for the
+        project with the organization.
     - key: b
       text: |
-        A complete control response is planned. Progress can be
-        tracked via:
+        Tracking the use of software and associated documentation protected by
+        quantity licenses to control copying and distribution is an
+        organizational control outside the scope of CoreOS.
 
-        https://issues.redhat.com/browse/CMP-284
+        For CoreOS nodes operating in an OpenShift environment, the OpenShift
+        Cluster Manager (OCM) service acts as a bridge to Red Hat Subscription Manager.
+        A cluster connected to the internet can send telemetry to OpenShift Cluster
+        Manager at https://cloud.redhat.com/openshift/, which then handles
+        integration with Red Hat Subscription Manager to track subscriptions
+        for OpenShift clusters.
+
+        For disconnected clusters utilizing CoreOS, there is no way to send telemetry data to
+        OpenShift Cluster Manager. In this case, the organization must manually
+        register their disconnected clusters with OpenShift Cluster Manager
+        following the instructions at https://access.redhat.com/solutions/4930131
     - key: c
       text: |
-        A complete control response is planned. Progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-284
+        Controlling and documenting the use of peer-to-peer file sharing
+        technology to ensure that this capability is not used for the
+        unauthorized distribution, display, performance, or reproduction
+        of copyrighted work is an organizational control outside the scope
+        of CoreOS configuration.
 
 - control_key: CM-10 (1)
   standard_key: NIST-800-53
