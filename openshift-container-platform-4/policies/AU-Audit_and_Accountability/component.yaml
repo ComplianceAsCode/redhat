@@ -237,16 +237,15 @@
         of OpenShift configuration.
 
         To aide in such organizational processes, note that OpenShift's
-        cluster loggging "Log Forward" feature enables OpenShift
-        administrators to configure custom pipelines to send container
-        logs to remote destinations. These remote destinations, such as
-        Elastic or Splunk endpoints, could be used for information
-        system-wide correlation.
+        Cluster Logging Operator enables OpenShift administrators to
+        configure custom pipelines to send OpenShift cluster logs to remote
+        log stores. These remote destinations, such as Elastic or
+        Splunk endpoints, could be used for information system-wide correlation.
 
-        Documentation regarding how to forward cluster logs to specific
-        endpoints can be found at:
+        Documentation regarding how to forward cluster logs using the
+        Cluster Logging Operator to specific endpoints can be found at:
 
-        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
 
 - control_key: AU-6 (4)
   standard_key: NIST-800-53
@@ -257,6 +256,7 @@
         Organizational capability to centrally review and analyze
         audit records from multiple components within the system
         is outside the scope of OpenShift configuration.
+
         Note: When AU-4 (1) is enforced OpenShift will be configured
         to off-load audit records onto a different system
         or media than the system being audited. In practice this correlates
@@ -278,16 +278,16 @@
         activity is outside the scope of OpenShift configuration.
 
         To aide in such organizational processes, note that OpenShift's
-        cluster loggging "Log Forward" feature enables OpenShift
-        administrators to configure custom pipelines to send container
-        logs to remote destinations. These remote destinations, such as
-        Elastic or Splunk endpoints, could be used for information
+        Cluster Logging Operator enables OpenShift administrators to
+        configure custom pipelines to send OpenShift cluster logs to remote
+        log stores. These remote log stores, such as Elastic
+        or Splunk endpoints, could be used for information
         system-wide correlation.
 
-        Documentation regarding how to forward cluster logs to specific
-        endpoints can be found at:
+        Documentation regarding how to forward cluster logs using the
+        Cluster Logging Operator to specific endpoints can be found at:
 
-        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
 
 - control_key: AU-6 (6)
   standard_key: NIST-800-53
@@ -302,16 +302,16 @@
         is outside the scope of OpenShift configuration.
 
         To aide in such organizational processes, note that OpenShift's
-        cluster loggging "Log Forward" feature enables OpenShift
-        administrators to configure custom pipelines to send container
-        logs to remote destinations. These remote destinations, such as
-        Elastic or Splunk endpoints, could be used to correlate OpenShift
-        logs with physical access data.
+        Cluster Logging Operator enables OpenShift administrators to
+        configure custom pipelines to aggregate all the logs to remote
+        destinations. These remote destinations, such as Elastic
+        or Splunk endpoints, could be used for information
+        system-wide correlation.
 
-        Documentation regarding how to forward cluster logs to specific
-        endpoints can be found at:
+        Documentation regarding how to forward cluster logs using the
+        Cluster Logging Operator to specific endpoints can be found at:
 
-        https://docs.openshift.com/container-platform/latest/logging/config/cluster-logging-log-forwarding.html
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
 
 - control_key: AU-6 (7)
   standard_key: NIST-800-53
@@ -362,18 +362,27 @@
 - control_key: AU-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
+        OpenShift supports an audit reduction and report generation capability that
+        supports on-demand audit review, analysis, and reporting
+        requirements and after-the-fact investigations of security incidents
+        only when the OpenShift Cluster Logging Operator is configured to send
+        logs to a remote log store such as Elastic or Splunk.
+        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        to then provide the support and capability for audit review, analysis, and
+        reporting requirements and after-the-fact investigations of security incidents.
 
-        https://issues.redhat.com/browse/CMP-227
+        To configure cluster logging to aide in audit reduction, review, analysis, and
+        reporting, the OpenShift Cluster Logging Operator can be configured via:
+
+        https://docs.openshift.com/container-platform/4.5/logging/cluster-logging-deploying.html
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-227
+        When OpenShift's Cluster Logging Operator sends OpenShift cluster logs to a remote log store,
+        the operator does not alter the original content or time ordering of audit records.
 
 - control_key: AU-7 (1)
   standard_key: NIST-800-53
@@ -435,17 +444,16 @@
 - control_key: AU-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-232
+        OpenShift synchronizes time by utilizing the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.
     - key: b
       text: |
-        'OpenShift utilizes the time services of the underyling operating
-        operating system. This control is not applicable to OpenShift.'
+        OpenShift synchronizes time by utilizing the time services of the underyling operating
+        operating system. This control is not applicable to OpenShift.
 
 - control_key: AU-8 (2)
   standard_key: NIST-800-53

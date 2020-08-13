@@ -301,6 +301,17 @@
         situational awareness is outside the scope
         of CoreOS configuration.
 
+        To aide in such organizational processes, note that OpenShift's
+        Cluster Logging Operator enables OpenShift administrators to
+        configure custom pipelines to send node logs to remote
+        log stores. These remote destinations, such as Elastic or
+        Splunk endpoints, could be used for information system-wide correlation.
+
+        Documentation regarding how to forward cluster logs using the
+        Cluster Logging Operator to specific endpoints can be found at:
+
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
+
 - control_key: AU-6 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -331,6 +342,18 @@
         enhance the ability to identify inappropriate or unusual
         activity is outside the scope of CoreOS configuration.
 
+        To aide in such organizational processes, note that OpenShift's
+        Cluster Logging Operator enables OpenShift administrators to
+        configure custom pipelines to send CoreOS node logs to remote
+        log stores. These remote log stores, such as Elastic
+        or Splunk endpoints, could be used for information
+        system-wide correlation.
+
+        Documentation regarding how to forward cluster logs using the
+        Cluster Logging Operator to specific endpoints can be found at:
+
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
+
 - control_key: AU-6 (6)
   standard_key: NIST-800-53
   covered_by: []
@@ -342,6 +365,18 @@
         physical access to further enhanced the ability to identify
         suspicious, inappropriate, unusual, or malevolent activity
         is outside the scope of CoreOS configuration.
+
+        To aide in such organizational processes, note that OpenShift's
+        Cluster Logging Operator enables OpenShift administrators to
+        configure custom pipelines to aggregate all the logs to remote
+        destinations. These remote destinations, such as Elastic
+        or Splunk endpoints, could be used for information
+        system-wide correlation.
+
+        Documentation regarding how to forward cluster logs using the
+        Cluster Logging Operator to specific endpoints can be found at:
+
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
 
 - control_key: AU-6 (7)
   standard_key: NIST-800-53
@@ -392,18 +427,28 @@
 - control_key: AU-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
+        CoreOS supports an audit reduction and report generation capability that
+        supports on-demand audit review, analysis, and reporting
+        requirements and after-the-fact investigations of security incidents
+        only when CoreOS is configured in an OpenShift cluster and the OpenShift
+        Cluster Logging Operator is configured to send
+        logs to a remote log store such as Elastic or Splunk.
+        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        to then provide the support and capability for audit review, analysis, and
+        reporting requirements and after-the-fact investigations of security incidents.
 
-        https://issues.redhat.com/browse/CMP-227
+        To configure node logging to aide in audit reduction, review, analysis, and
+        reporting, the OpenShift Cluster Logging Operator can be configured via:
+
+        https://docs.openshift.com/container-platform/4.5/logging/cluster-logging-deploying.html
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-227
+        When OpenShift's Cluster Logging Operator sends CoreOS node logs to a remote log store,
+        the operator does not alter the original content or time ordering of audit records.
 
 - control_key: AU-7 (1)
   standard_key: NIST-800-53
