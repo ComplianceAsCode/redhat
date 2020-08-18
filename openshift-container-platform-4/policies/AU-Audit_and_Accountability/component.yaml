@@ -362,7 +362,7 @@
 - control_key: AU-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: partial
   narrative:
     - key: a
       text: |
