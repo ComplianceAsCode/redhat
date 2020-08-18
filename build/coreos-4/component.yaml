@@ -1321,18 +1321,19 @@ satisfies:
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-146
+        Authorizing the execution of privileged commands and access to security-relevant
+        information via remote acces only for organizational defined needs is an
+        organizational control outside the scope of CoreOS configuration.
     - key: b
       text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-146
+        Documenting the rationale for the execution of privileged commands and access to
+        security-relevant information via remote access in the security plan for the
+        information system is an organizational control outside the scope of CoreOS
+        configuration.
 
 - control_key: AC-17 (5)
   standard_key: NIST-800-53
