@@ -207,18 +207,20 @@
 - control_key: CA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        Engineering progress can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-255
+        The development and implementation of a continuous monitoring program
+        that includes the establishement of organization-defined metrics to be
+        monitored is an organizational control outside the scope of CoreOS
+        configuration.
     - key: b
       text: |
-        Engineering progress can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-255
+        The development and implementation of a continuous monitoring program
+        that includes the establishement of organization-defined frequencies for
+        monitoring and assessment of such monitoring is an organizational control
+        outside the scope of CoreOS configuration.
     - key: c
       text: |
         Engineering progress can be tracked at:
@@ -236,14 +238,14 @@
         https://issues.redhat.com/browse/CMP-255
     - key: f
       text: |
-        Engineering progress can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-255
+        Response actions to address results of the analysis of security-related
+        information is an organizational control outside the scope of CoreOS
+        configuration.
     - key: g
       text: |
-        Engineering progress can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-255
+        Reporting the security status of organization and the information system
+        to organization-defined personnel or roles at a specified organization-defined
+        frequency is outside the scope of CoreOS configuration.
 
 - control_key: CA-7 (1)
   standard_key: NIST-800-53
