@@ -3011,55 +3011,95 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        Configuration management is enforced through Ignition configurations
-        and Operators.
+        The recommended approach for configuration management in the OpenShift Container
+        platform is to implement the principles and patterns of GitOps
 
-        Ignition is the utility that is used by Red Hat Enterprise Linux CoreOS (RHCOS)
-        to manipulate disks during initial configuration, confirming all new machines
-        meet the declared configuration.
-
-        Ignition is meant to initialize systems, not change existing systems. After
-        a machine initializes and the kernel is running from the installed system, the
-        Machine Config Operator from the OpenShift Container Platform cluster completes
-        all future machine configuration.
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable.
 
         Operators are a method of packaging, deploying, and managing a Kubernetes
-        application. Watching over the Kubernetes environment, using its current
+        application. Watching over the OpenShift environment, using its current
         state to make decisions in real time. The Machine Config Operator (MCO)
         manages updates and configuration changes to essentially everything between
         the kernel and kubelet.
 
         For additional information:
-        https://docs.openshift.com/container-platform/latest/architecture/architecture-rhcos.html#rhcos-about-ignition_architecture-rhcos
+        https://docs.openshift.com/container-platform/latest/architecture/cicd_gitops.html
         https://docs.openshift.com/container-platform/latest/operators/olm-what-operators-are.html
-        https://github.com/openshift/machine-config-operator
 
-        tracked via:
-        https://issues.redhat.com/browse/CMP-260
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) is the preferred way of implementing
+        and managing GitOps for OpenShift clusters. For more information on creating and managing
+        channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
 
 - control_key: CM-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization reviewing and updating the baseline configuration of
+        OpenShift per an organization-defined frequency is outside the scope of
+        OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-261
+        However to assist in formulating a control response,
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable. For more on using Git and GitOps see:
+
+        https://docs.openshift.com/container-platform/latest/architecture/cicd_gitops.html
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) is the preferred way of implementing
+        and managing GitOps for OpenShift clusters. For more information on creating and managing
+        channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization reviewing and updating the baseline configuration of
+        OpenShift when required due to organization-defined circumstances is outside the scope of
+        OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-261
+        However to assist in formulating a control response, GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable. For more on using Git and GitOps see:
+
+        https://docs.openshift.com/container-platform/latest/architecture/cicd_gitops.html
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) is the preferred way of implementing
+        and managing GitOps for OpenShift clusters. For more information on creating and managing
+        channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
     - key: c
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization reviewing and updating the baseline configuration of
+        OpenShift as an integral part of OpenShift component installations and upgrades
+        is outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-261
+        However to assist in formulating a control response,  GitOps uses Git pull requests
+        to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable. For more on using Git and GitOps see:
+
+        https://docs.openshift.com/container-platform/latest/architecture/cicd_gitops.html
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) is the preferred way of implementing
+        and managing GitOps for OpenShift clusters. For more information on creating and managing
+        channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
+
 
 - control_key: CM-2 (2)
   standard_key: NIST-800-53
@@ -3857,6 +3897,12 @@ satisfies:
       text: |
         Developing an organization-level contingency planning policy is
         outside the scope of OpenShift configuration.
+
+        To facilitate a control response and assist in contingency planning,
+        Backup and Restore of an Openshift cluster can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/backup_and_restore/disaster_recovery/about-disaster-recovery.html
+
     - key: b
       text: |
         Distribution of an organizational-level contingency planning

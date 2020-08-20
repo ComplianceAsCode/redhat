@@ -3051,34 +3051,76 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Configuration management is enforced through Ignition configurations
+        and Operators.
 
-        https://issues.redhat.com/browse/CMP-260
+        Ignition is the utility that is used by Red Hat Enterprise Linux CoreOS (RHCOS)
+        to manipulate disks during initial configuration, confirming all new machines
+        meet the declared configuration.
+
+        Ignition is meant to initialize systems, not change existing systems. After
+        a machine initializes and the kernel is running from the installed system, the
+        Machine Config Operator from the OpenShift Container Platform cluster completes
+        all future machine configuration.
+
+        Operators are a method of packaging, deploying, and managing a Kubernetes
+        application. Watching over the CoreOS environment, using its current
+        state to make decisions in real time, the Machine Config Operator (MCO)
+        manages updates and configuration changes to essentially everything between
+        the kernel and kubelet.
+
+        For additional information:
+        https://docs.openshift.com/container-platform/latest/architecture/architecture-rhcos.html#rhcos-about_architecture-rhcos
+        https://docs.openshift.com/container-platform/latest/operators/olm-what-operators-are.html
+        https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-managing.html
+        https://docs.openshift.com/container-platform/latest/installing/install_config/installing-customizing.html
 
 - control_key: CM-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization reviewing and updating the baseline configuration of
+        CoreOS per an organization-defined frequency is outside the scope of
+        CoreOS configuration.
 
-        https://issues.redhat.com/browse/CMP-261
+        However to assist in formulating a control response,
+        Machine Config Operators (MCO) allow for periodic update to the CoreOS baseline
+        configuration using MachineConfig objects. For more on MachineConfig, see:
+
+        https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-managing.html
+        https://docs.openshift.com/container-platform/latest/installing/install_config/installing-customizing.html
+
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization reviewing and updating the baseline configuration of
+        CoreOS when required due to organization-defined circumstances is outside the scope of
+        CoreOS configuration.
 
-        https://issues.redhat.com/browse/CMP-261
+        However to assist in formulating a control response, updates can be
+        made as needed through the use of MachineConfig objects.
+        For more on MachineConfig, see:
+
+        https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-managing.html
+        https://docs.openshift.com/container-platform/latest/installing/install_config/installing-customizing.html
+
     - key: c
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization reviewing and updating the baseline configuration of
+        CoreOS as an integral part of CoreOS component installations and upgrades
+        is outside the scope of CoreOS configuration.
 
-        https://issues.redhat.com/browse/CMP-261
+        However to assist in formulating a control response, after a primary or
+        compute/worker node initializes, the Machine Config Operator (MCO) from the
+        OpenShift Container Platform completes all future CoreOS configuration.
+        The Machine Config Operator manages updates and configuration changes to
+        for all subsystems, including the operating system kernel through OpenShift components.
+
+        https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-managing.html
+        https://docs.openshift.com/container-platform/latest/installing/install_config/installing-customizing.html
+
 
 - control_key: CM-2 (2)
   standard_key: NIST-800-53
@@ -3861,6 +3903,12 @@ satisfies:
       text: |
         Developing an organization-level contingency planning policy is
         outside the scope of CoreOS configuration.
+
+        To facilitate a control response and assist in contingency planning,
+        CoreOS nodes should not contain any stateful information as stateful information
+        should exist only in etcd and get persisted to OCP nodes via operators.
+        Because of this, CoreOS nodes can be added/removed as necessary to fully
+        recover/restore the CoreOS environment.
     - key: b
       text: |
         Distribution of an organizational-level contingency planning
