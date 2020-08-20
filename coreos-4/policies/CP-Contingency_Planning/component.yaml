@@ -33,6 +33,12 @@
       text: |
         Developing an organization-level contingency planning policy is
         outside the scope of CoreOS configuration.
+
+        To facilitate a control response and assist in contingency planning,
+        CoreOS nodes should not contain any stateful information as stateful information
+        should exist only in etcd and get persisted to OCP nodes via operators.
+        Because of this, CoreOS nodes can be added/removed as necessary to fully
+        recover/restore the CoreOS environment.
     - key: b
       text: |
         Distribution of an organizational-level contingency planning

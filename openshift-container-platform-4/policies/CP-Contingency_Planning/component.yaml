@@ -33,6 +33,12 @@
       text: |
         Developing an organization-level contingency planning policy is
         outside the scope of OpenShift configuration.
+
+        To facilitate a control response and assist in contingency planning,
+        Backup and Restore of an Openshift cluster can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/backup_and_restore/disaster_recovery/about-disaster-recovery.html
+
     - key: b
       text: |
         Distribution of an organizational-level contingency planning
