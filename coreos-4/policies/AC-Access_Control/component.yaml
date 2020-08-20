@@ -64,7 +64,7 @@
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
         CoreOS components of the system support automated
@@ -80,12 +80,7 @@
         third party software such as an Identity Provider (IdP),
         Active Directory (MSAD), LDAP, etc.
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
-
-        See https://issues.redhat.com/browse/CMP-199 for local
-        user account handling in CoreOS.
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -127,7 +122,7 @@
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
         CoreOS end-user account management is inherited from
@@ -136,12 +131,7 @@
         management level; for example, within LDAP, Red Hat
         IdM, or Active Directory.
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
-
-        See https://issues.redhat.com/browse/CMP-201 for local
-        user account handling in CoreOS.
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
