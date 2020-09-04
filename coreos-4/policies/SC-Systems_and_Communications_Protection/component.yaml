@@ -278,34 +278,33 @@
   narrative:
     - key: a
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-425
+        Implementing a managed interface for each external telecommunication service
+        is addressed at the network infrastructure layer and is an organizational
+        control outside the scope of CoreOS configuration.
     - key: b
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-425
+        Establishing a traffic flow policy for each managed interface for each
+        external telecommuncation service is an organizational control outside the
+        scope of CoreOS configuration and is typically handled at the network
+        infrastructure layer.
     - key: c
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-425
+        Protecting the confidentiality and integrity of the information being transmitted
+        across each interface is an organizational control outside the
+        scope of CoreOS configuration and is typically handled at the network
+        infrastructure layer.
     - key: d
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-425
+        Documenting each exception to the traffic flow policy with a supporting
+        mission/business need and duration of that need is an organizational control outside the
+        scope of CoreOS configuration and is typically handled at the network
+        infrastructure layer.
     - key: e
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-425
+        Reviewing exceptions to the traffic flow policy per the organizationally defined frequency
+        and removing exceptions that are no longer supported by an explicit mission/business need
+        is an organizational control outside the scope of CoreOS configuration and is typically
+        handled at the network infrastructure layer.
 
 - control_key: SC-7 (5)
   standard_key: NIST-800-53
