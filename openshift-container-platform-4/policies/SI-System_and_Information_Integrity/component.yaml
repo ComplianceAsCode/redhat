@@ -335,37 +335,33 @@
         applicable to the configuration of OpenShift.
     - key: a.2
       text: |
-        A control response for SI-4 is planned.
+        Monitoring the system to detect unauthorized local, network, and remote connections
+        is an organizational control outside the scope of OpenShift configuration.
+        Functionality to meet this control can be provided by a third party vendor.
     - key: b
       text: |
-        A control response for SI-4 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-400
+        Identifying unauthorized use of the information system through organization-defined
+        techniques and methods is an organizational control outside the scope
+        of OpenShift configuration. Functionality to meet this control can be provided by a third party vendor.
     - key: c
       text: |
-        A control response for SI-4 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-400
+        Deploying monitoring devices is an organizational control outside the scope of OpenShift configuration.
+        Functionality to meet this control can be provided by a third party vendor.
     - key: c.1
       text: |
-        A control response for SI-4 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-400
+        Deploying monitoring devices strategically within the information system to collect organization-determined
+        essential information is an organizational control outside the scope of OpenShift configuration.
+        Functionality to meet this control can be provided by a third party vendor.
     - key: c.2
       text: |
-        A control response for SI-4 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-400
+        Deploying monitoring devices at ad hoc locations within the system to track specific types of transactions
+        of interest to the organization is an organizational control outside the scope of OpenShift configuration.
+        Functionality to meet this control can be provided by a third party vendor.
     - key: d
       text: |
-        A control response for SI-4 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-400
+        Protecting information obtained from intrusion-monitoring tools from unauthorized access,
+        modification, and deletion is an organizational control outside the scope of OpenShift configuration.
+        Functionality to meet this control can be provided by a third party vendor.
     - key: e
       text: |
         This control reflects organizational procedures/policies, and is not
@@ -392,11 +388,6 @@
         the workflow between local and enterprise intrusion detection
         systems.
 
-        A control response for SI-4(1) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-532
-
 - control_key: SI-4 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -411,11 +402,6 @@
         will indicate who is responsible for hosting such capabilities, and
         what technology and processes are in place to support near-realtime
         analysis of events.
-
-        A control response for SI-4(2) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-399
 
 - control_key: SI-4 (3)
   standard_key: NIST-800-53
@@ -441,11 +427,6 @@
         if this control is inherited from infrastructure providers, and if
         not, how network traffic is continuously monitored.
 
-        A control response for SI-4(4) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-398
-
 - control_key: SI-4 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -458,11 +439,6 @@
         Operations Center staff. A successful control response will indicate
         who is notified, by name or position title(s), and the mechanism of
         the notification.
-
-        A control response for SI-4(4) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-397
 
 - control_key: SI-4 (6)
   standard_key: NIST-800-53
