@@ -152,7 +152,7 @@
 - control_key: SI-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -162,47 +162,39 @@
         to address use of code protection mechanisms to protect assets from
         malicious software (i.e. Viruses, malware, rootkits, worms, and
         scripts). In regards to OpenShift, this is generally through
-        integrating third party tools into CI/CD pipelines.
-
-        A control response for SI-3 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-403
+        the use of third party tools.
     - key: b
       text: |
-        A control response for SI-3 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-403
+        Updating malicious code protection mechanisms whenever new releases
+        are available in accordance with organizational configuration
+        management policy and procedures is an organizational control outside
+        the scope of OpenShift configuration.
     - key: c
       text: |
-        A control response for SI-3 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-403
+        Configuring malicious code protection mechanisms is an organizational control outside
+        the scope of OpenShift configuration.
     - key: c.1
       text: |
-        A control response for SI-3 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-403
+        Performing periodic scans of the information system per organization-defined frequency
+        and real-time scans of files from external sources via endpoints or network entry/exit
+        points as the files are downloaded, opened, or executed in accordance with organizational
+        security policy is an organizational control outside
+        the scope of OpenShift configuration.
     - key: c.2
       text: |
-        A control response for SI-3 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-403
+        Blocking malicious code, quarantining malicious code, sending alerts to administrator, or
+        some other organization-defined action in response to malicious code detection is an organizational control outside
+        the scope of OpenShift configuration.
     - key: d
       text: |
-        A control response for SI-3 is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-403
+        Addressing the receipt of false positives during malicious code detection and eradication
+        and the resulting potential impact on the availability of the information system is an organizational control outside
+        the scope of OpenShift configuration.
 
 - control_key: SI-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
        The customer is responsible for ensuring that their malicious code
@@ -211,15 +203,10 @@
        assessing, authorizing and monitoring of their malicious code
        protection mechanism is centered in one location.
 
-       A control response for SI-3(1) is planned. Engineering progress can be
-       tracked via:
-
-       https://issues.redhat.com/browse/CMP-402
-
 - control_key: SI-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         The customer is responsible for ensuring that they update their
@@ -227,11 +214,6 @@
         definitions become available. A successful control response will need
         to address that the employed malicious code protection
         mechanisms definitions are configured to be updated automatically.
-
-        A control response for SI-3(2) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-401
 
 - control_key: SI-3 (3)
   standard_key: NIST-800-53
