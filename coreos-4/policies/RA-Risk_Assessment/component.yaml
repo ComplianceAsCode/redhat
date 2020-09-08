@@ -190,13 +190,11 @@
   implementation_status: complete
   narrative:
     - text: |
-        CoreOS allows for privileged scans to be performed using appropriate credentials, as
-        determined by organizational policy and procedures for vulnerability management.
-        Active OpenShift pods and the OpenShift interface should be scanned using appropriate
-        OpenShift credentials. OpenShift credentials are out of scope for CoreOS configuration.
-
-        Documentation and control progress can be tracked at:
-        https://issues.redhat.com/browse/CMP-355
+        For the purpose of conducting a vulnerability scan of CoreOS, the CoreOS nodes
+        should be scanned using the OpenShift Compliance Operator. OpenShift supports
+        RBAC for users and groups, appropriate vulnerability scans can be performed against
+        the OpenShift web application interface. For the OpenShift Compliance Operator, only OpenShift
+        Cluster Administators are able to access and run the operator for compliance and vulnerability scans.
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
