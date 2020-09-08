@@ -9715,22 +9715,15 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        CoreOS it not intended to be installed on remote devices. Preventing split tunneling
-        is an organizational responsibility, and not the responsibility of the CoreOS
-        Container Linux operating system.
-
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-423
+        Preventing split tunneling is an organizational responsibility
+        and not the responsibility of the CoreOS Container Linux operating system.
 
 - control_key: SC-7 (8)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - key: a
-      text: |
+    - text: |
         A complete control response is planned. Engineering progress can be
         tracked via:
 
