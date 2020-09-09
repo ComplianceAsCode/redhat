@@ -7810,13 +7810,11 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        CoreOS allows for privileged scans to be performed using appropriate credentials, as
-        determined by organizational policy and procedures for vulnerability management.
-        Active OpenShift pods and the OpenShift interface should be scanned using appropriate
-        OpenShift credentials. OpenShift credentials are out of scope for CoreOS configuration.
-
-        Documentation and control progress can be tracked at:
-        https://issues.redhat.com/browse/CMP-355
+        For the purpose of conducting a vulnerability scan of CoreOS, the CoreOS nodes
+        should be scanned using the OpenShift Compliance Operator. OpenShift supports
+        RBAC for users and groups, appropriate vulnerability scans can be performed against
+        the OpenShift web application interface. For the OpenShift Compliance Operator, only OpenShift
+        Cluster Administators are able to access and run the operator for compliance and vulnerability scans.
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
@@ -11250,7 +11248,7 @@ satisfies:
 - control_key: SI-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -11305,7 +11303,7 @@ satisfies:
 - control_key: SI-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         The customer will be responsible for integrating intrusion detection
@@ -11318,7 +11316,7 @@ satisfies:
 - control_key: SI-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         The customer will be responsible for deploying automated tools to
@@ -11344,7 +11342,7 @@ satisfies:
 - control_key: SI-4 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         The customer will be responsible for identifying how and where
@@ -11357,7 +11355,7 @@ satisfies:
 - control_key: SI-4 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         The customer will be responsible for automatic notification of
@@ -11582,18 +11580,25 @@ satisfies:
         https://issues.redhat.com/browse/CMP-396
     - key: b
       text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.
+        Receiving information system security alerts, advisories, and directives from
+        organization-defined external organizations on an ongoing basis is an
+        organizational procedures/policies outside the scope of CoreOS configuration.
+
+        How to configure organization notifications for Red Hat security advisories on Red
+        Hat specific products can be accomplished following the following documentation:
+
+        https://access.redhat.com/security/updates/advisory
     - key: c
       text: |
-        A control response for SI-5(c) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-396
+        Disseminating security alerts, advisories, and directives to organization-defined
+        personnel or roles, organization-defined elements within the organization,
+        organization-defined external organizations are organizational
+        procedures/policies outside the scope of CoreOS configuration.
     - key: d
       text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of CoreOS.
+        Implementing security directives in accordance with established time frames or notifying
+        the issuing organization of the degree of noncompliance is an organizational
+        procedures/policies outside the scope of CoreOS configuration.
 
 - control_key: SI-5 (1)
   standard_key: NIST-800-53
