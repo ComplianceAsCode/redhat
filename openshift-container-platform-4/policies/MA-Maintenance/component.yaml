@@ -151,14 +151,13 @@
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        Approving and monitoring nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of OpenShift configuration.
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        Allowing the use of nonlocal maintenance and diagnostic tools only as consistent with
+        organizational policy and documented in the security plan for the information system is an
+        orgnaizational control outside the scope of OpenShift configuration.
     - key: c
       text: |
         A control response is planned. Engineering progress can be tracked via:
@@ -166,9 +165,8 @@
         https://issues.redhat.com/browse/CMP-343
     - key: d
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        The maintaining of records for nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of OpenShift configuration.
     - key: e
       text: |
         A control response is planned. Engineering progress can be tracked via:
