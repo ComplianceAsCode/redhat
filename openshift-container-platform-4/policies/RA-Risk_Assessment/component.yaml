@@ -190,16 +190,11 @@
   implementation_status: complete
   narrative:
     - text: |
-        Implementing privileged access authorization to perform vulnerability scans of the
-        OpenShift web interface is complete.
-        For the purpose of conducting a vulnerability scan of OpenShift, the host CoreOS
-        should be scanned using an SCAP compatible appliance. OpenShift supports
+        For the purpose of conducting a vulnerability scan of OpenShift, the OpenShift API and nodes
+        should be scanned using the OpenShift Compliance Operator. OpenShift supports
         RBAC for users and groups, appropriate vulnerability scans can be performed against
-        the OpenShift web application interface.
-
-
-        Documentation updates and control progress can be tracked at:
-        https://issues.redhat.com/browse/CMP-355
+        the OpenShift web application interface. For the OpenShift Compliance Operator, only OpenShift
+        Cluster Administators are able to access and run the operator for compliance and vulnerability scans.
 
 - control_key: RA-5 (6)
   standard_key: NIST-800-53
