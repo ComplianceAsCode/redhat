@@ -5932,14 +5932,13 @@ satisfies:
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        Approving and monitoring nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of OpenShift configuration.
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        Allowing the use of nonlocal maintenance and diagnostic tools only as consistent with
+        organizational policy and documented in the security plan for the information system is an
+        orgnaizational control outside the scope of OpenShift configuration.
     - key: c
       text: |
         A control response is planned. Engineering progress can be tracked via:
@@ -5947,9 +5946,8 @@ satisfies:
         https://issues.redhat.com/browse/CMP-343
     - key: d
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        The maintaining of records for nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of OpenShift configuration.
     - key: e
       text: |
         A control response is planned. Engineering progress can be tracked via:
@@ -10476,25 +10474,34 @@ satisfies:
 - control_key: SC-18
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        Defining acceptable and unacceptable mobile code and mobile code technologies
+        are organizational policies/procedures outside the configuration of OpenShift.
 
-        https://issues.redhat.com/browse/CMP-418
+        In support of developing policies/procedures for mobile code and mobile code technologies
+        OpenShift ships with a JavaScript implementation that is used to power the graphical
+        web console that is accessible through a web browser.
     - key: b
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        Establishing usage restrictions and implementation guidance for acceptable
+        mobile code and mobile code technologies are organizational policies/procedures
+        outside the configuration of OpenShift.
 
-        https://issues.redhat.com/browse/CMP-418
+        In support of developing usage restrictions and implementation guidance for acceptable
+        mobile code and mobile code technologies, OpenShift ships with a JavaScript implementation
+        that is used to power the graphical web console that is accessible through a web browser.
     - key: c
       text: |
         The customer will be responsible for authorizing, monitoring, and
         controlling the use of mobile code within the system in accordance
         with organizational policies defined in SC-18(a) and SC-18(b).
+
+        In support of authorizing, monitoring, and controlling the use of mobile code,
+        OpenShift ships with a JavaScript implementation that is used to power the graphical
+        web console that is accessible through a web browser.
 
 - control_key: SC-18 (1)
   standard_key: NIST-800-53

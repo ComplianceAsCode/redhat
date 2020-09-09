@@ -5782,14 +5782,13 @@ satisfies:
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        Approving and monitoring nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of CoreOS configuration.
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        Allowing the use of nonlocal maintenance and diagnostic tools only as consistent with
+        organizational policy and documented in the security plan for the information system is an
+        orgnaizational control outside the scope of CoreOS configuration.
     - key: c
       text: |
         A control response is planned. Engineering progress can be tracked via:
@@ -5797,9 +5796,8 @@ satisfies:
         https://issues.redhat.com/browse/CMP-343
     - key: d
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-343
+        The maintaining of records for nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of CoreOS configuration.
     - key: e
       text: |
         A control response is planned. Engineering progress can be tracked via:
@@ -10209,20 +10207,17 @@ satisfies:
 - control_key: SC-18
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-418
+        Defining acceptable and unacceptable mobile code and mobile code technologies
+        are organizational policies/procedures outside the configuration of CoreOS.
     - key: b
       text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-418
+        Establishing usage restrictions and implementation guidance for acceptable
+        mobile code and mobile code technologies are organizational policies/procedures
+        outside the configuration of CoreOS.
     - key: c
       text: |
         The customer will be responsible for authorizing, monitoring, and
