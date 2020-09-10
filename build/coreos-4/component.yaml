@@ -1304,7 +1304,7 @@ satisfies:
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer will be responsible for requiring remote access
@@ -1314,9 +1314,20 @@ satisfies:
         such access control points, as well as the security controls in place
         to protect those access control points.
 
-        A control response is planned. Progress can be tracked via:
+        Managed access points can be created and configured through the use of
+        bastion hosts, ingress rule(s), and/or opening a route to a new access point.
 
-        https://issues.redhat.com/browse/CMP-145
+        Documentation for creating and using a bastion host can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/networking/accessing-hosts.html
+
+        Documentation for creating an ingress rule can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/networking/configuring_ingress_cluster_traffic/overview-traffic.html
+
+        Documentation for creating a route can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/networking/routes/route-configuration.html
 
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
@@ -2269,7 +2280,7 @@ satisfies:
         To configure node logging to aide in audit reduction, review, analysis, and
         reporting, the OpenShift Cluster Logging Operator can be configured via:
 
-        https://docs.openshift.com/container-platform/4.5/logging/cluster-logging-deploying.html
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging-deploying.html
     - key: b
       text: |
         When OpenShift's Cluster Logging Operator sends CoreOS node logs to a remote log store,
@@ -2278,12 +2289,23 @@ satisfies:
 - control_key: AU-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        CoreOS supports an audit reduction and report generation capability that
+        supports on-demand audit review, analysis, and reporting
+        requirements and after-the-fact investigations of security incidents
+        only when CoreOS is configured in an OpenShift cluster and the OpenShift
+        Cluster Logging Operator is configured to send
+        logs to a remote log store such as Elastic or Splunk.
+        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        to then provide the support and capability for sort and search audit records
+        for events of interest based on the content audit records.
 
-        https://issues.redhat.com/browse/CMP-228
+        To configure node logging to aide in audit reduction, review, analysis, and
+        reporting, the OpenShift Cluster Logging Operator can be configured via:
+
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging-deploying.html
 
 - control_key: AU-7 (2)
   standard_key: NIST-800-53
@@ -10375,13 +10397,12 @@ satisfies:
 - control_key: SC-22
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-409
+        Ensuring that name/address resolution service is fault-tolerant and
+        internal/external role separation is implemented is not accomplished on the CoreOS
+        node level in an OpenShift cluster. This is done at the OpenShift cluster level.
 
 - control_key: SC-23
   standard_key: NIST-800-53
