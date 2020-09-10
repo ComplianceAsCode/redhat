@@ -3048,7 +3048,7 @@ satisfies:
 - control_key: CM-2
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         Configuration management is enforced through Ignition configurations
@@ -3136,13 +3136,30 @@ satisfies:
 - control_key: CM-2 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization retaining an organization-defined number of previous versions of baseline
+        configurations of the information system to support rollback is an organizational control
+        outside the scope of CoreOS configuration.
 
-        https://issues.redhat.com/browse/CMP-263
+        However to assist in formulating a control response, the Machine Config Operator from
+        the OpenShift Container Platform cluster completes all future machine configuration. It
+        is recommended to store MachineConfigs in a git repository and follow GitOps practices.
+
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable. For more on using Git and GitOps see:
+
+        https://docs.openshift.com/container-platform/latest/architecture/cicd_gitops.html
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) is the preferred way of implementing
+        and managing GitOps for OpenShift clusters. For more information on creating and managing
+        channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
 
 - control_key: CM-2 (4)
   standard_key: NIST-800-53
@@ -3359,13 +3376,22 @@ satisfies:
 - control_key: CM-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
+        Defining, documenting, approving, and enforcing physical and logical access restrictions
+        associated with changes to the information system is an organizational control outside
+        the scope of OpenShift configuration.
 
-        https://github.com/ComplianceAsCode/redhat/issues/896
+        However to assist in developing policies/procedures to address this control, use of Role-based
+        Access Control (RBAC) and the architecture of OpenShift provide logical access restrictions
+        based on user and group roles in addition to logical separation of systems and components
+        of the OpenShift CoreOS nodes.
+
+        See the following for more information on RBAC and OpenShift architecture:
+
+        https://docs.openshift.com/container-platform/latest/architecture/architecture.html
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
 
 - control_key: CM-5 (1)
   standard_key: NIST-800-53
@@ -3638,10 +3664,16 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization is responsible for updating the inventory of information
+        system components as an integral part of component installations, removals,
+        and information system updates.
 
-        https://issues.redhat.com/browse/CMP-278
+        During an install, update, or removal, the OpenShift cluster will roll out updates
+        for the system software inventory including the CoreOS nodes. More about updating
+        to help with creating procedures and processes related to this control can be viewed
+        at:
+
+        https://docs.openshift.com/container-platform/latest/updating/updating-cluster-between-minor.html
 
 - control_key: CM-8 (2)
   standard_key: NIST-800-53
