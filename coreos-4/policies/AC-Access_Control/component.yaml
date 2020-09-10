@@ -1299,7 +1299,7 @@
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer will be responsible for requiring remote access
@@ -1309,9 +1309,20 @@
         such access control points, as well as the security controls in place
         to protect those access control points.
 
-        A control response is planned. Progress can be tracked via:
+        Managed access points can be created and configured through the use of
+        bastion hosts, ingress rule(s), and/or opening a route to a new access point.
 
-        https://issues.redhat.com/browse/CMP-145
+        Documentation for creating and using a bastion host can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/networking/accessing-hosts.html
+
+        Documentation for creating an ingress rule can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/networking/configuring_ingress_cluster_traffic/overview-traffic.html
+
+        Documentation for creating a route can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/networking/routes/route-configuration.html
 
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
