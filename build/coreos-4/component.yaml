@@ -195,7 +195,7 @@ satisfies:
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
         A control response for AC-2 (6) is planned. Engineering
@@ -213,29 +213,38 @@ satisfies:
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |-
-        A control response to AC-2(7)(a) is planned. Progress
-        can be tracked via:
+        Establishing and administering privileged user accounts in accordance with a
+        role-based access scheme that organizes allowed information system access and
+        privileges into roles is an organizational control outside the scope of OpenShift
 
-        https://issues.redhat.com/browse/CMP-84
+        However to facilitate a control response, using Role Based Access Control (RBAC),
+        OpenShift roles can be used to grant various levels of access both cluster-wide as well as at
+        the project scope. Users and gruops can be associated with, or bound
+        to, multiple roles at the same time.
 
-        The ability to use Ignition scripts to configure CoreOS
-        to add local users means that this control needs to be
-        addressed for the case that a local user was added.
+        For service accounts that might also have privileged access, Security
+        Context Constraints (SCC) should be used to limit privileged actions
+        in service accounts.
 
-        See https://issues.redhat.com/browse/CMP-84 for local
-        user account handling in CoreOS.
+        For the cluster, the kubeadmin user should be completely disabled.
+
+        More information on RBAC can be viewed at:
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+
+        More information for SCC can be viewed at:
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
     - key: b
       text: |-
-        This is an organizational control and not applicble to the configuration
-        of CoreOS.
+        The organization monitoring privileged role assignments is an organizational
+        control outside the configuration of CoreOS.
     - key: c
       text: |-
-        This is an organizational control and not applicble to the configuration
-        of CoreOS.
+        The organization taking defined actions when privileged role assignments are no
+        longer appropriate is an organizational control outside the scope of CoreOS.
 
 - control_key: AC-2 (8)
   standard_key: NIST-800-53
@@ -357,38 +366,33 @@ satisfies:
 - control_key: AC-3 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-90
+        CoreOS uses linux file permission modes to enforce discretionary access control
+        over subjects or objects. By default, linux passes information to other subjects
+        or objects based on the default level or the privilege level.
     - key: b
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-90
+        On CoreOS, only a privileged user can fully grant privileges to other subjects.
+        Subjects can grant other subjects some privileges for the files owned by the subject.
     - key: c
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-90
+        On CoreOS, a privileged user can change permissions on security attributes on any
+        and all subjects (e.g. users) and objects (e.g. files). Subjects (e.g. users) and
+        objects (e.g. files) can only change security attributes for their own objects (e.g. files).
     - key: d
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-90
+        On CoreOS, a privileged user can set a policy for the default permissions
+        for subjects (e.g. users) and for newly created objects (e.g. files).
+        A user can also configure a default permission level for their own objects,
+        but they cannot perform those actions for other system users.
     - key: e
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-90
+        On CoreOS, a privileged user can change Linux file permissions for subjects
+        (e.g. users) and objects (e.g. files) as well as set a policy for the default
+        security attributes for all subjects (e.g. users) and objects (e.g. files).
 
 - control_key: AC-3 (5)
   standard_key: NIST-800-53

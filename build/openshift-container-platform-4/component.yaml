@@ -164,24 +164,28 @@ satisfies:
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        A control response for AC-2 (6) is planned. Engineering
-        progress can be tracked via:
+        OpenShift implements dynamic privilege management capabilities through the use
+        of a proper identity provider. OpenShift users can then be assigned roles through
+        role bindings.
 
-        See https://issues.redhat.com/browse/CMP-83 for local
-        user account handling in OpenShift.
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |-
-        Using Role Based Access Control (RBAC), OpenShift roles can be used
-        to grant various levels of access both cluster-wide as well as at
+        Establishing and administering privileged user accounts in accordance with a
+        role-based access scheme that organizes allowed information system access and
+        privileges into roles is an organizational control outside the scope of OpenShift
+
+        However to facilitate a control response, using Role Based Access Control (RBAC),
+        OpenShift roles can be used to grant various levels of access both cluster-wide as well as at
         the project scope. Users and gruops can be associated with, or bound
         to, multiple roles at the same time.
 
@@ -191,27 +195,30 @@ satisfies:
 
         For the cluster, the kubeadmin user should be completely disabled.
 
-        More work is being done to address this control. Engineering
-        progress can be tracked via:
+        More information on RBAC can be viewed at:
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
 
-        https://issues.redhat.com/browse/CMP-84
+        More information for SCC can be viewed at:
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
     - key: b
       text: |-
-        This is an organizational control and not applicble to the configuration
-        of OpenShift.
+        The organization monitoring privileged role assignments is an organizational
+        control outside the configuration of OpenShift.
     - key: c
       text: |-
-        This is an organizational control and not applicble to the configuration
-        of OpenShift.
+        The organization taking defined actions when privileged role assignments are no
+        longer appropriate is an organizational control outside the scope of OpenShift.
 
 - control_key: AC-2 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - text: |-
-        This control is applicable to the identity service provider,
-        and outside the scope of OpenShift configuration.
+        OpenShift will dynamically create user and system accounts in the OpenShift cluster
+        when configured to connect to an identity provider.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -335,38 +342,83 @@ satisfies:
 - control_key: AC-3 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
+        OpenShift uses the concept of users and groups to segregate subjects and objects.
+        A user can be assigned to one or more groups, each of which represent a certain
+        set of users. Groups are useful when managing authorization policies to grant
+        permissions to multiple users at once, for example allowing access to objects
+        within a project, versus granting them to users individually.
 
-        https://issues.redhat.com/browse/CMP-90
+        OpenShift Security Context Constraints (SCC) control the actions that a pod can
+        perform and what it has the ability to access.
+
+        More information on Role Based Access Control (RBAC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+
+        More information on Security Context Constraints (SCC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
     - key: b
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
+        Only OpenShift cluster administrators have privileges to modify the security attributes
+        within OpenShift. Specifically, cluster administrators have full access to modify the
+        bindings of a particular role to a user. For users that have been provided more
+        privileges based on a particular role, those users then can only make changes based on
+        the privileges afforded to them.
 
-        https://issues.redhat.com/browse/CMP-90
+        More information on Role Based Access Control (RBAC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+
+        More information on Security Context Constraints (SCC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
     - key: c
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
+        Only OpenShift cluster administrators have privileges to modify the security attributes
+        within OpenShift. Specifically, cluster administrators have full access to modify the
+        bindings of a particular role to a user. For users that have been provided more
+        privileges based on a particular role, those users then can only make changes based on
+        the privileges afforded to them. The same is true for Security Context Constraints (SCC).
 
-        https://issues.redhat.com/browse/CMP-90
+        More information on Role Based Access Control (RBAC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+
+        More information on Security Context Constraints (SCC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
     - key: d
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
+        Only OpenShift cluster administrators have privileges to modify the full security attributes
+        within OpenShift. Specifically, cluster administrators have full access to modify the default
+        set of security attributes. For users that have been provided more
+        privileges based on a particular role, those users then can only make changes based on
+        the privileges afforded to them. The same is true for Security Context Constraints (SCC).
 
-        https://issues.redhat.com/browse/CMP-90
+        More information on Role Based Access Control (RBAC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+
+        More information on Security Context Constraints (SCC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
     - key: e
       text: |-
-        A response to AC-3 (4) is planned. Engineering
-        progress can be tracked via:
+        Only OpenShift cluster administrators have privileges to change rules governing access
+        control on the cluster. The same is true for Security Context Constraints (SCC).
 
-        https://issues.redhat.com/browse/CMP-90
+        More information on Role Based Access Control (RBAC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+
+        More information on Security Context Constraints (SCC) can be viewed at:
+
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
 
 - control_key: AC-3 (5)
   standard_key: NIST-800-53
