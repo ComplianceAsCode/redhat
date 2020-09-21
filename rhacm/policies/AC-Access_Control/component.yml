@@ -1,0 +1,690 @@
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: not applicable
+##  - implementation_status: none
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        AC-1(a) The development, documentation, and dissemination of organization-defined personnel or roles is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: a.1
+      text: |-
+        AC-1(a.1) An access control policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: a.2
+      text: |-
+        AC-1(a.2) Procedures to facilitate the implementation of the access control policy and associated access controls is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        AC-1(b) Reviewing and updating current access control policies and procedures is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b.1
+      text: |-
+        AC-1(b.1) Reviewing and updating the current access control policies is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b.2
+      text: |-
+        AC-1(b.2) Reviewing and updating the current access control procedures is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        AC-2(a) Identifying and selecting the following types of information system accounts to support organizational missions/business functions is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        AC-2(b) Assigning account managers for information systems is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        AC-2(c) Establishing conditions for group and role memberships is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |-
+        AC-2(d) Specifying authorized users of the information system, group and role membership, and access authorizations (i.e., privileges) and other attributes (as required) for each account is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: e
+      text: |-
+        AC-2(e) Requiring approvals by the organization-defined personnel or roles for requests to create information system accounts is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: f
+      text: |-
+        AC-2(f) Creating, enabling, modifying, disabling, and removing information system accounts in accordance with the organization-defined procedures or conditions is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: g
+      text: |-
+        AC-2(g) Monitoring the use of information system accounts is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: h
+      text: |-
+        AC-2(h) Notifying account managers based on organization policies is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: h.1
+      text: |-
+        AC-2(h.1) Notifying account managers when accounts are no longer required is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: h.2
+      text: |-
+        AC-2(h.2) Notifying account managers when users are terminated or transferred is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: h.3
+      text: |-
+        AC-2(h.3) Notifying account managers when individual information system usage or need-to-know changes is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: i
+      text: |-
+        AC-2(i) Authorizing access to the information system based on organizational policies is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: i.1
+      text: |-
+        AC-2(i.1) Authorizing access to the information system based on a valid access authorization is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: i.2
+      text: |-
+        AC-2(i.2) Authorizing access to the information system based on intended system usage is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: i.3
+      text: |-
+        AC-2(i.3) Authorizing access to the information system based on other attributes as required by the organization or associated missions/business functions is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: j
+      text: |-
+        AC-2(j) Reviewing accounts for compliance with account management requirements is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: k
+      text: |-
+        AC-2(k) Establishing a process for reissuing shared/group account credentials (if deployed) when individuals are removed from the group is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employing automated mechanisms to support the management of information
+        system accounts is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        components that support automated management through monitoring of
+        accounts and system activity by logging of related information.
+
+        While Openshift can generate audit data, and securely
+        transport the data to a SIEM, Red Hat Advanced
+        Cluster Management for Kubernetes nor OpenShift provides
+        automated mechanisms (e.g. email, text messages) after
+        system events. This functionality would fall to third
+        party software such as an Identity Provider (IdP),
+        Active Directory (MSAD), LDAP, etc.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+# AC-2(2) NOTES:
+#       The customer will be responsible for automatically removing or
+#       disabling emergency and temporary accounts within the required
+#       timeframe. A successful control response will need to address
+#       all of the procedures and mechanisms involved in disabling these
+#       accounts.
+#
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for account management. OpenShift does not have the
+        capability to create guest/anonymous accounts or temporary
+        accounts. Any external emergency or temporary accounts will
+        be inherited from, and managed by, an external identity
+        service (e.g. Active Directory, LDAP, etc.)
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+#
+# AC-2(3) NOTES:
+#       The customer will be responsible for automatically disabling user
+#       accounts after the specified period of inactivity. A successful
+#       control response will need to address all automated mechanisms
+#       involved in disabling inactive accounts.
+#
+# ADMIN NOTE:
+#       AC-2(2) disables temp/emergency accounts after period of time.
+#       AC-2(3) differs by disabling *every other* account type
+#
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for account management.
+        OpenShift does not have the ability to automatically
+        disable user accounts. Automatic disabling of these
+        accounts must happen at the centralized account
+        management level; for example, within LDAP, Red Hat
+        IdM, or Active Directory.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        To meet FISMA requirements, OpenShift must be configured
+        to use centralized authentication (e.g. LDAP, Red Hat IdM,
+        Active Directory). The audit of account creation,
+        modification, enabling, disabling, and removal actions is
+        the respinsibility of the centralized service. Additionally,
+        notification of organization-defined personnel or roles is
+        also the responsibility of the centralized authentication
+        service.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-5
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        OpenShift has a control response planned for AC-2 (5). Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-82
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-6
+- control_key: AC-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        OpenShift implements dynamic privilege management capabilities through the use
+        of a proper identity provider. OpenShift users can then be assigned roles through
+        role bindings.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-7
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Establishing and administering privileged user accounts in accordance with a
+        role-based access scheme that organizes allowed information system access and
+        privileges into roles is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        The organization monitoring privileged role assignments is an organizational
+        control outside the configuration of OpenShift.
+    - key: c
+      text: |-
+        The organization taking defined actions when privileged role assignments are no
+        longer appropriate is an organizational control outside the scope of OpenShift.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-8
+- control_key: AC-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        OpenShift will dynamically create user and system accounts in the OpenShift cluster
+        when configured to connect to an identity provider.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-9
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        This control is applicable to the identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-10
+- control_key: AC-2 (10)
+  standard_key: NIST-800-103
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        OpenShift does not have the concept of group accounts.
+
+        Should the organization allow shared credentials, the
+        creation and management of such would fall under the scope
+        of operating the shared identity service and not OpenShift.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-11
+- control_key: AC-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        However, to assist with this control, enforcement of
+        organization-defined circumstances and/or usage conditions
+        is the responsibility of third party identity management
+        software such as Red Hat Identity Management (Red Hat IdM),
+        Active Directory (MSAD), LDAP, etc.
+
+        To configure an Identity Provider (IdP), refer to the "Authentication"
+        chapter of the OpenShift Container Platform documentation at
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-12
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        A control response for AC-2(12)(a) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-259
+    - key: b
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        A control response for AC-2(12)(b) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-259
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-13
+- control_key: AC-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control management.
+
+        A control response for AC-2(13) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-211
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3
+- control_key: AC-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-5
+- control_key: AC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6
+- control_key: AC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-1
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-2
+- control_key: AC-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-3
+- control_key: AC-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-5
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-9
+- control_key: AC-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-10
+- control_key: AC-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-7
+- control_key: AC-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |-
+        ''
+    - key: b
+      text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-8
+- control_key: AC-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - key: a
+      text: |-
+        ''
+    - key: b
+      text: |-
+        ''
+    - key: c
+      text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-10
+- control_key: AC-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-11
+- control_key: AC-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-11?baseline=moderate#enhancement-1
+- control_key: AC-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-12
+- control_key: AC-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-14
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-1
+- control_key: AC-17 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-2
+- control_key: AC-17 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-3
+- control_key: AC-17 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-4
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18?baseline=moderate#enhancement-1
+- control_key: AC-18 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18?baseline=moderate#enhancement-4
+- control_key: AC-18 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18?baseline=moderate#enhancement-5
+- control_key: AC-18 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-19
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-19?baseline=moderate#enhancement-5
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20?baseline=moderate#enhancement-1
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20?baseline=moderate#enhancement-2
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-21
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: unknown
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-22
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
