@@ -7,9 +7,9 @@ metadata:
     - Gabe Alford <galford@redhat.com>
 
 components:
-#  - ./policies/AC-Access_Control
+  - ./policies/AC-Access_Control
   - ./policies/AT-Awareness_and_Training
-#  - ./policies/AU-Audit_and_Accountability
+  - ./policies/AU-Audit_and_Accountability
 #  - ./policies/CA-Security_Assessment_and_Authorization
 #  - ./policies/CM-Configuration_Management
 #  - ./policies/CP-Contingency_Planning
