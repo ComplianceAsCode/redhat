@@ -1,0 +1,929 @@
+##
+## BEGINNING OF:
+## AUDIT AND ACCOUNTABILITY
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: not applicable
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: AU-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Developing an organization-level audit and accountability
+        policy is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+    - key: a.1
+      text: |
+        Developing an organization-level audit and accountability
+        policy that addresses purpose, scope, roles, responsibilities,
+        management commitment, coordination among organizational entities,
+        and compliance is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+    - key: a.2
+      text: |
+        Developing organization-level procedures to facilitate the
+        implementation of the audit and accountability policy and
+        associated audit and accountability controls
+        is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |
+        Review and updating an organizational-level audit and
+        accountability policy is outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: b.1
+      text: |
+        Review and updating an organizational-level audit and
+        accountability policy per a defined frequency is outside
+        the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+    - key: b.2
+      text: |
+        Reviewing and updating an organizational-level audit and
+        accountability procedures per a defined frequency is outside
+        the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+
+- control_key: AU-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Coordinating the security audit function with other
+        organizational entities is outside the scope of
+        system configuration.
+    - key: c
+      text: |
+        For rationale regarding why the auditable events are deemed to be
+        adequate to support after-the-fact investigations of security incidents,
+        please contact your countries Common Criteria representative:
+        https://www.commoncriteriaportal.org/ccra/members/
+    - key: d
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational review and updates to the audited events are
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Organizational review and analysis of information system
+        audit records for indications of organization-defined
+        inappropriate or unusual activity is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Reporting findings of organization-defined inappropriate or
+        unusual activity to organization-defined personnel or roles is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational analysis and correlation of audit records across
+        different repositories to gain organization-wide
+        situational awareness is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to centrally review and analyze
+        audit records from multiple components within the system
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to integrate analysis or audit
+        records with analysis of additional organization-defined
+        data/information collected from other sources to further
+        enhance the ability to identify inappropriate or unusual
+        activity is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational capability to correlate information from
+        Red Hat Advanced Cluster Management for Kubernetes audit records with information obtained from monitoring
+        physical access to further enhanced the ability to identify
+        suspicious, inappropriate, unusual, or malevolent activity
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational specification of permitted actions for
+        information system processes, roles, and/or users, associated
+        with the review, analysis, and reporting of audit
+        information is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to perform full text analysis or audited
+        privileged commands in a physically distinct component or subsystem
+        of the information system, or other information system that is
+        dedicated to that analysis, is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: AU-6 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational processes to correlate information
+        from nontechnical sources with audit information to enhance
+        organization-wide situational awareness is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-6 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Organizational adjustment of the level of audit review, analysis, and
+        reporting within the information system when there is a change in risk
+        based on law enforcement information, intelligence information, or other
+        credible sources of information, is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: AU-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+    - key: b
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing and time synchronization capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing and time synchronization capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Writing audit trails to hardware enforced, write-once media,
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Backup of audit records onto a physically different system or
+        system component than the component being audited is the
+        responsibility of the centralized audit facility defined in
+        AU-4 (1), "Transfer to Alternate Storage," and outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-9 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        This control was withdrawn by NIST.
+
+- control_key: AU-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-12 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-12 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-12 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Monitoring of organization-defined open source information
+        and/or information sites at an organization-defined frequency for
+        evidence of unauthorized disclosure of organizational information
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of automated mechanisms to determine if
+        organizational information has been disclosed in an
+        unauthorized manner is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Reviews of the open source information sites being monitored
+        at an organization-defined frequency is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-14 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-14 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        The organization provides an alternate audit capability in the
+        event of a failure in primary audit capability that provides
+        organization-defined alternate audit functionality is an organizational
+        control outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Employment of organization-defined methods for coordinating
+        organization-defined audit information among external
+        organizations when audit information is transmitted
+        across organizational boundaries is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-16 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Red Hat Advanced Cluster Management for Kubernetes relies on
+        OpenShift for auditing capabilities.
+
+        This control is applicable to the OpenShift Cluster Logging
+        Operator and to the OpenShift cluster and is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: AU-16 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |
+        Providing cross-organizational audit information to
+        organization-defined organizations based on
+        organization-defined cross-organizational sharing
+        agreements is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
