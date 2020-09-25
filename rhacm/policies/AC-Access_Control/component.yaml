@@ -143,7 +143,7 @@
         of Red Hat Advanced Cluster Management for Kubernetes configuration.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-1
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-1
 - control_key: AC-2 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -166,7 +166,7 @@
 #       accounts.
 #
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-2
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-2
 - control_key: AC-2 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -192,7 +192,7 @@
 #       differs by disabling *every other* account type
 #
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-3
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-3
 - control_key: AC-2 (3)
   standard_key: NIST-800-53
   covered_by: []
@@ -207,7 +207,7 @@
         for Kubernetes configuration.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-4
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-4
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -218,7 +218,7 @@
         relies on OpenShift for access control management.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-5
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-5
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -229,7 +229,7 @@
         relies on OpenShift for access control management.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-6
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-6
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
   covered_by: []
@@ -244,7 +244,7 @@
         for Kubernetes configuration.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-7
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-7
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
@@ -267,7 +267,7 @@
         Cluster Management for Kubernetes.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-8
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-8
 - control_key: AC-2 (8)
   standard_key: NIST-800-53
   covered_by: []
@@ -282,7 +282,7 @@
         for Kubernetes configuration.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-9
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-9
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
   covered_by: []
@@ -297,9 +297,9 @@
         for Kubernetes configuration.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-10
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-10
 - control_key: AC-2 (10)
-  standard_key: NIST-800-103
+  standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
@@ -308,7 +308,7 @@
         relies on OpenShift for access control management.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-11
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-11
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
   covered_by: []
@@ -323,7 +323,7 @@
         for Kubernetes configuration.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-12
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-12
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
@@ -340,7 +340,7 @@
         relies on OpenShift for access control management.
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-2?baseline=moderate#enhancement-13
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-13
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
   covered_by: []
@@ -355,7 +355,120 @@
 - control_key: AC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for access control enforcement.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-1
+- control_key: AC-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into
+        AC-6.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-2
+- control_key: AC-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for AC-3 (2) is planned. Engineering
+        progress can be tracked via:
+
+        https://issues.redhat.com/browse/<TBD>
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-3
+- control_key: AC-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        ''
+    - key: b
+      text: |-
+        ''
+    - key: c
+      text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-4
+- control_key: AC-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-5
+- control_key: AC-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-6
+- control_key: AC-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into
+        MP-4 and SC-28.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-7
+- control_key: AC-3 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-8
+- control_key: AC-3 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-9
+- control_key: AC-3 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+        # NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-10
+- control_key: AC-3 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
   narrative:
     - text: |-
         ''
@@ -391,7 +504,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-1
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6#enhancement-1
 - control_key: AC-6 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -401,7 +514,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-2
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6#enhancement-2
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -411,7 +524,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-3
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6#enhancement-3
 - control_key: AC-6 (3)
   standard_key: NIST-800-53
   covered_by: []
@@ -421,7 +534,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-5
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6#enhancement-5
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -431,7 +544,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-9
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6#enhancement-9
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
   covered_by: []
@@ -441,7 +554,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-6?baseline=moderate#enhancement-10
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-6#enhancement-10
 - control_key: AC-6 (10)
   standard_key: NIST-800-53
   covered_by: []
@@ -502,7 +615,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-11?baseline=moderate#enhancement-1
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-11#enhancement-1
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -542,7 +655,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-1
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17#enhancement-1
 - control_key: AC-17 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -552,7 +665,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-2
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17#enhancement-2
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
   covered_by: []
@@ -562,7 +675,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-3
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17#enhancement-3
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
   covered_by: []
@@ -572,7 +685,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-17?baseline=moderate#enhancement-4
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-17#enhancement-4
 - control_key: AC-17 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -592,7 +705,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-18?baseline=moderate#enhancement-1
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18#enhancement-1
 - control_key: AC-18 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -602,7 +715,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-18?baseline=moderate#enhancement-4
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18#enhancement-4
 - control_key: AC-18 (4)
   standard_key: NIST-800-53
   covered_by: []
@@ -612,7 +725,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-18?baseline=moderate#enhancement-5
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-18#enhancement-5
 - control_key: AC-18 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -632,7 +745,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-19?baseline=moderate#enhancement-5
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-19#enhancement-5
 - control_key: AC-19 (5)
   standard_key: NIST-800-53
   covered_by: []
@@ -652,7 +765,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-20?baseline=moderate#enhancement-1
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20#enhancement-1
 - control_key: AC-20 (1)
   standard_key: NIST-800-53
   covered_by: []
@@ -662,7 +775,7 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-20?baseline=moderate#enhancement-2
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-20#enhancement-2
 - control_key: AC-20 (2)
   standard_key: NIST-800-53
   covered_by: []
