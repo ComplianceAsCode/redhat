@@ -1080,32 +1080,27 @@
 - control_key: SI-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        The customer will be responsible for generating error messages in
-        cusomer-controlled operating systems and software that provide
-        information necessary for corrective actions without revealing
-        information that could be exploited by adversaries. A successful
-        control response will need to discuss the process by which error
-        messages are created, analyzed, and corrected when necessary.
+        In OpenShift, the logs depend greatly on the component. Some
+        components would just write messages to stdout that the cluster
+        administrator can retrieve logs through the use of the `oc` command.
+        Some components emit events, and others emit a Prometheus metric which
+        the API server would write into their logs.
 
-        A control response for SI-11(a) is planned. Engineering progress can be
-        tracked via:
+        For the OCP components that run in a container (most operators),
+        the usual RBAC rules would prevent a non-admin user from reading
+        the container logs or events.
 
-        https://issues.redhat.com/browse/CMP-392
+        OpenShift error message handling is designed to obscure or not log
+        sensitive information such as passwords, credit card numbers, social
+        security information, account information, etc.
     - key: b
       text: |
-        The customer will be responsible for revealing error messages only to
-        authorized personnel. A successful control response will need to
-        address how error messages are displayed and the means by which access
-        to error messages is controlled.
-
-        A control response for SI-11(b) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-392
+        By default, the API server logs are protected by UNIX permissions and
+        only cluster administrators are allowed access to logs.
 
 - control_key: SI-12
   standard_key: NIST-800-53
