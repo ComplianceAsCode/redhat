@@ -181,7 +181,7 @@
 
         However to facilitate a control response, using Role Based Access Control (RBAC),
         OpenShift roles can be used to grant various levels of access both cluster-wide as well as at
-        the project scope. Users and gruops can be associated with, or bound
+        the project scope. Users and groups can be associated with, or bound
         to, multiple roles at the same time.
 
         For service accounts that might also have privileged access, Security

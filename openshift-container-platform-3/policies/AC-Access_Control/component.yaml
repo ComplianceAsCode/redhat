@@ -156,7 +156,7 @@
     - key: a
       text: |
         'OpenShift roles can be used to grant various levels of access both
-        cluster-wide as well as at the project scope. Users and gruops can be
+        cluster-wide as well as at the project scope. Users and groups can be
         associated with, or bound to, multiple roles at the same time.
 
         Documentation regarding the management of Role-based Access Control
