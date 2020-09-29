@@ -320,7 +320,7 @@ satisfies:
         to address the conditions under which the banner will be displayed
         (if a non-government user accesses the system, the system use
         notification banner may not be appropriate), as well as the contents
-        of the nofication message.
+        of the notification message.
 
         In context of Red Hat OpenStack Platform, a banner must be displayed for all means
         of accessing Red Hat OpenStack Platform itself (e.g. service consoles, remote access
@@ -335,7 +335,7 @@ satisfies:
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.
+        acknowledgement and move forward.
 
         Documentation/implementation guidance for this control is being tracked
         through Jira:
@@ -1232,7 +1232,7 @@ satisfies:
 ##
 
 # ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
+#       Implementation of this control varies greatly between customers. Some
 #       want centralized config management, while others expect component
 #       administrators to handle this (e.g. maintain custom Ansible scripts).
 #       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
@@ -1866,7 +1866,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Guidance on establishing such backups is being tracked in GitHub:
@@ -1880,7 +1880,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Guidance on establishing such backups is being tracked in GitHub:
@@ -1894,7 +1894,7 @@ satisfies:
         guidance include maintaining at least three backup copies of user-level
         information (at least one of which is available online) or provides an
         equivalent alternative. A successful control response will detail how
-        backups of user-level information occures, and how three backup copies
+        backups of user-level information occurs, and how three backup copies
         are maintained.
 
         Guidance on establishing such backups is being tracked in GitHub:
@@ -2350,7 +2350,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Personal Identity Verificiation (PIV) credentials are those
+        'Personal Identity Verification (PIV) credentials are those
         credentials issued by federal agencies that conform to FIPS Publication
         201 and supporting guidance documents. Customers will not be expected
         to perform this credential verification for government agencies. A
@@ -2367,7 +2367,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -2382,7 +2382,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -2397,7 +2397,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services

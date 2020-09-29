@@ -489,7 +489,7 @@ satisfies:
 ##
 
 # ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
+#       Implementation of this control varies greatly between customers. Some
 #       want centralized config management, while others expect component
 #       administrators to handle this (e.g. maintain custom Ansible scripts).
 #       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
@@ -634,7 +634,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Guidance on establishing such backups is being tracked in GitHub:
@@ -648,7 +648,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Guidance on establishing such backups is being tracked in GitHub:
@@ -662,7 +662,7 @@ satisfies:
         guidance include maintaining at least three backup copies of user-level
         information (at least one of which is available online) or provides an
         equivalent alternative. A successful control response will detail how
-        backups of user-level information occures, and how three backup copies
+        backups of user-level information occurs, and how three backup copies
         are maintained.
 
         Guidance on establishing such backups is being tracked in GitHub:
@@ -946,7 +946,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Personal Identity Verificiation (PIV) credentials are those
+        'Personal Identity Verification (PIV) credentials are those
         credentials issued by federal agencies that conform to FIPS Publication
         201 and supporting guidance documents. Customers will not be expected
         to perform this credential verification for government agencies. A
@@ -968,7 +968,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -988,7 +988,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -1008,7 +1008,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -2074,9 +2074,9 @@ satisfies:
 ##  configuration guide, such as a NIST National Checklist or DoD
 ##  STIG, for the component.
 ##
-##  In absense of an approved government configuration baseline,
+##  In absence of an approved government configuration baseline,
 ##  note this requirement is satisfied by a *description* of
-##  functional properties. Implimentation details are offered in
+##  functional properties. Implementation details are offered in
 ##  SA-4(2).
 ##
 - control_key: SA-4 (1)

@@ -773,7 +773,7 @@ satisfies:
         https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
     - key: b
       text: |
-        Documentation of the seperation of duties of individuals
+        Documentation of the separation of duties of individuals
         is an organizational control outside the scope of OpenShift
         configuration.
 
@@ -986,7 +986,7 @@ satisfies:
         to address the conditions under which the banner will be displayed
         (if a non-government user accesses the system, the system use
         notification banner may not be appropriate), as well as the contents
-        of the nofication message.
+        of the notification message.
 
         In context of OpenShift, a banner must be displayed for all means
         of accessing OpenShift itself (e.g. service consoles, remote access
@@ -1002,7 +1002,7 @@ satisfies:
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.
+        acknowledgement and move forward.
 
         A control response to AC-8 is planned. Progress can be tracked
         via:
@@ -2938,13 +2938,13 @@ satisfies:
     - key: a
       text: |
         The development and implementation of a continuous monitoring program
-        that includes the establishement of organization-defined metrics to be
+        that includes the establishment of organization-defined metrics to be
         monitored is an organizational control outside the scope of OpenShift
         configuration.
     - key: b
       text: |
         The development and implementation of a continuous monitoring program
-        that includes the establishement of organization-defined frequencies for
+        that includes the establishment of organization-defined frequencies for
         monitoring and assessment of such monitoring is an organizational control
         outside the scope of OpenShift configuration.
     - key: c
@@ -3056,7 +3056,7 @@ satisfies:
 ##
 
 # ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
+#       Implementation of this control varies greatly between customers. Some
 #       want centralized config management, while others expect component
 #       administrators to handle this (e.g. maintain custom Ansible scripts).
 #       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
@@ -3687,7 +3687,7 @@ satisfies:
         https://issues.redhat.com/browse/CMP-205
 
 #       ADMINISTRATORS NOTE ON CM-8:
-#       Implimentation of this control varies between customers. Some agencies
+#       Implementation of this control varies between customers. Some agencies
 #       maintain an inventory that state "OpenShift 4.x," whereas others want
 #       named RPMs installed on the OpenShift components. The vast majority
 #       follow the "OpenShift 4.x" listings. For those that do not, and want
@@ -4468,7 +4468,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Conducting backups of user-level information to include the backups of
@@ -4486,7 +4486,7 @@ satisfies:
         maintaining at least three backup copies of system-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Conducting backups of system-level information is an organizational
@@ -8389,9 +8389,9 @@ satisfies:
 ##  configuration guide, such as a NIST National Checklist or DoD
 ##  STIG, for the component.
 ##
-##  In absense of an approved government configuration baseline,
+##  In absence of an approved government configuration baseline,
 ##  note this requirement is satisfied by a *description* of
-##  functional properties. Implimentation details are offered in
+##  functional properties. Implementation details are offered in
 ##  SA-4(2).
 ##
 - control_key: SA-4 (1)

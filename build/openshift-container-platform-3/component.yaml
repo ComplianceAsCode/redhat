@@ -414,7 +414,7 @@ satisfies:
         to address the conditions under which the banner will be displayed
         (if a non-government user accesses the system, the system use
         notification banner may not be appropriate), as well as the contents
-        of the nofication message.
+        of the notification message.
 
         In context of OpenShift, a banner must be displayed for all means
         of accessing OpenShift itself (e.g. service consoles, remote access
@@ -429,7 +429,7 @@ satisfies:
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.
+        acknowledgement and move forward.
 
         Documentation/implementation guidance for this control is being tracked
         through Jira:
@@ -1004,7 +1004,7 @@ satisfies:
         'OpenShift Administrators  are responsible for alerting personnel
         or roles in the event of an audit processing failure. A successful
         control response will outline the process taken to alert personnel
-        when an auditing failure occures.'
+        when an auditing failure occurs.'
     - key: b
       text: |
         'In the event of an audit processing failure, OpenShift Administrators
@@ -1327,7 +1327,7 @@ satisfies:
 ##
 
 # ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
+#       Implementation of this control varies greatly between customers. Some
 #       want centralized config management, while others expect component
 #       administrators to handle this (e.g. maintain custom Ansible scripts).
 #       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
@@ -1370,7 +1370,7 @@ satisfies:
         configuration as a part of installations and upgrades.'
 
 # ADMINISTRATORS NOTE ON CM-2(2):
-#       Implimentation of this control varies between customers. Some create
+#       Implementation of this control varies between customers. Some create
 #       a central configuration management system, while others expect
 #       information system components (e.g. OpenShift Adminstrators)
 #       to create their own playbooks and store them in the centralized
@@ -1578,7 +1578,7 @@ satisfies:
         */'
 
 #       ADMINISTRATORS NOTE ON CM-8:
-#       Implimentation of this control varies between customers. Some agencies
+#       Implementation of this control varies between customers. Some agencies
 #       maintain an inventory that state "OpenShift 3.x," whereas others want
 #       named RPMs installed on the OpenShift components. The vast majority
 #       follow the "OpenShift 3.x" listings. For those that do not, and want
@@ -1989,7 +1989,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Guidance on establishing such backups is being tracked in Jira:
@@ -2002,7 +2002,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Guidance on establishing such backups is being tracked in Jira:
@@ -2015,7 +2015,7 @@ satisfies:
         guidance include maintaining at least three backup copies of user-level
         information (at least one of which is available online) or provides an
         equivalent alternative. A successful control response will detail how
-        backups of user-level information occures, and how three backup copies
+        backups of user-level information occurs, and how three backup copies
         are maintained.
 
         Guidance on establishing such backups is being tracked in Jira:
@@ -2435,7 +2435,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Personal Identity Verificiation (PIV) credentials are those
+        'Personal Identity Verification (PIV) credentials are those
         credentials issued by federal agencies that conform to FIPS Publication
         201 and supporting guidance documents. Customers will not be expected
         to perform this credential verification for government agencies. A
@@ -2452,7 +2452,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -2467,7 +2467,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -2483,7 +2483,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -3708,9 +3708,9 @@ satisfies:
 ##  configuration guide, such as a NIST National Checklist or DoD
 ##  STIG, for the component.
 ##
-##  In absense of an approved government configuration baseline,
+##  In absence of an approved government configuration baseline,
 ##  note this requirement is satisfied by a *description* of
-##  functional properties. Implimentation details are offered in
+##  functional properties. Implementation details are offered in
 ##  SA-4(2).
 ##
 - control_key: SA-4 (1)

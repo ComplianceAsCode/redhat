@@ -171,7 +171,7 @@ satisfies:
         - Ansible Tower is configured to use an external authentication service, such as
         a corporate Red Hat IdM or Active Directory instance; and,
         - An organizational user is added to Ansible Tower however does not login
-        for a time period that exceeds the organization-defined threshhold; and,
+        for a time period that exceeds the organization-defined threshold; and,
         - During that time period the user logins to other corporate services, thus
         the external authentication provider shows the account is being actively used.
 
@@ -278,7 +278,7 @@ satisfies:
         Auditors implicitly inherit the read-only capability for all objects
         within the Tower environment.
 
-        - System Adminisrator
+        - System Administrator
         A Tower System Administrator (also known as a Superuser) has admin,
         read, and write privileges over the entire Tower installation. A
         System Administrator is typically responsible for managing all
@@ -338,7 +338,7 @@ satisfies:
         does Ansible Tower have the capability to lock an account until
         released by an administrator.
 
-        To satisfy those elemenets of this control an external
+        To satisfy those elements of this control an external
         authentication service, such as Red Hat IdM, must be used.
         Those two elements of this control are not applicable to
         Ansible Tower when an external authentication service
@@ -620,8 +620,8 @@ satisfies:
   narrative:
     - text: |
         'By default Ansible Tower generates audit records containing
-        information that establishes what type of event occured,
-        when the event occured, where the event occured, the source
+        information that establishes what type of event occurred,
+        when the event occurred, where the event occurred, the source
         of the event, the outcome of the event, and the identity
         of individuals or subjects associated with the event.
 
@@ -634,13 +634,13 @@ satisfies:
         The "operation" field identifies the type of event recorded.
         In this case, a new user was created.
 
-        WHEN THE EVENT OCCURED:
+        WHEN THE EVENT OCCURRED:
         The "timestamp" field indicates the system time of
-        when the event occured. In this example the event happened
+        when the event occurred. In this example the event happened
         at 2018-06-19T00:46:45.337458Z.
 
-        WHERE THE EVENT OCCURED:
-        The "X-API-Node" field indicates where the event occured. In
+        WHERE THE EVENT OCCURRED:
+        The "X-API-Node" field indicates where the event occurred. In
         this example, the host was tower.redhatgov.io.
 
         SOURCE OF EVENT:
@@ -964,7 +964,7 @@ satisfies:
 
         A sample audit event for updating a "Demo Project" with content from
         GitHub is below. The "scm_url" field reflects source of information
-        being imported and "status" field indicates succes or failure:
+        being imported and "status" field indicates success or failure:
 
             {
                 "count": 1,
@@ -1128,7 +1128,7 @@ satisfies:
 ##
 
 # ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
+#       Implementation of this control varies greatly between customers. Some
 #       want centralized config management, while others expect component
 #       administrators to handle this (e.g. maintain custom Ansible scripts).
 #       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
@@ -1308,7 +1308,7 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        Ansible Tower installations can occur in a High Availabiltiy (HA) configuration.
+        Ansible Tower installations can occur in a High Availability (HA) configuration.
         In this configuration, Tower runs with a single active node, called the Primary
         Instance, and any number of inactive nodes, called Secondary Instances.
 
@@ -1594,7 +1594,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Documentation on backing up and restoring Ansible Tower data
@@ -1612,7 +1612,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Documentation on backing up and restoring Ansible Tower data
@@ -1630,7 +1630,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Documentation on backing up and restoring Ansible Tower data
@@ -1949,8 +1949,8 @@ satisfies:
       text: |
         'Ansible Tower does not have default account authenticators.
         Authenticators used during the installation of Ansible Tower,
-        such as passwords for the embeded database, are created by the
-        system administratur during the Ansible Tower installation.
+        such as passwords for the embedded database, are created by the
+        system administrator during the Ansible Tower installation.
         This is non-configurable behavior.
 
         This requirement is not applicable to the
@@ -2144,7 +2144,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Personal Identity Verificiation (PIV) credentials are those
+        'Personal Identity Verification (PIV) credentials are those
         credentials issued by federal agencies that conform to FIPS Publication
         201 and supporting guidance documents. Customers will not be expected
         to perform this credential verification for government agencies. A
@@ -2161,7 +2161,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -2176,7 +2176,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers iwill not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -2191,7 +2191,7 @@ satisfies:
         'FICAM approved credentials are those credentials issued by nonfederal
         government entities approved by the Federal Identity, Credential, and
         Access Management (FICAM) Trust Framework Solutions Initiative.
-        Customers will not be expected to perform credential veritification for
+        Customers will not be expected to perform credential verification for
         government agencies. A mechanism for allowing government agencies to
         perform credential verification in a way that can be trusted by the
         customer system is through Active Directory Federation Services
@@ -3252,9 +3252,9 @@ satisfies:
 ##  configuration guide, such as a NIST National Checklist or DoD
 ##  STIG, for the component.
 ##
-##  In absense of an approved government configuration baseline,
+##  In absence of an approved government configuration baseline,
 ##  note this requirement is satisfied by a *description* of
-##  functional properties. Implimentation details are offered in
+##  functional properties. Implementation details are offered in
 ##  SA-4(2).
 ##
 - control_key: SA-4 (1)

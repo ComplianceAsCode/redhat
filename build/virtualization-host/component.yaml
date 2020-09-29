@@ -745,7 +745,7 @@ satisfies:
         user is allowed to perform a given action.
     - key: b
       text: |
-        Documentation of the seperation of duties of individuals
+        Documentation of the separation of duties of individuals
         is an organizational control outside the scope of Red Hat Virtualization Host (RHVH)
         configuration.
 
@@ -4672,7 +4672,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         To assist with this organizational control, documentation is being
@@ -4687,7 +4687,7 @@ satisfies:
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         To assist with this organizational control, documentation is being
@@ -4702,7 +4702,7 @@ satisfies:
         guidance include maintaining at least three backup copies of user-level
         information (at least one of which is available online) or provides an
         equivalent alternative. A successful control response will detail how
-        backups of user-level information occures, and how three backup copies
+        backups of user-level information occurs, and how three backup copies
         are maintained.
 
         To assist with this organizational control, documentation is being
@@ -8764,9 +8764,9 @@ satisfies:
 ##  configuration guide, such as a NIST National Checklist or DoD
 ##  STIG, for the component.
 ##
-##  In absense of an approved government configuration baseline,
+##  In absence of an approved government configuration baseline,
 ##  note this requirement is satisfied by a *description* of
-##  functional properties. Implimentation details are offered in
+##  functional properties. Implementation details are offered in
 ##  SA-4(2).
 ##
 - control_key: SA-4 (1)
