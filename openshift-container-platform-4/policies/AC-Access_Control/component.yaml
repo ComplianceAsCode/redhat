@@ -768,7 +768,7 @@
         https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
     - key: b
       text: |
-        Documentation of the seperation of duties of individuals
+        Documentation of the separation of duties of individuals
         is an organizational control outside the scope of OpenShift
         configuration.
 
