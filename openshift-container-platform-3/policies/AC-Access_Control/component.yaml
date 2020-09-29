@@ -409,7 +409,7 @@
         to address the conditions under which the banner will be displayed
         (if a non-government user accesses the system, the system use
         notification banner may not be appropriate), as well as the contents
-        of the nofication message.
+        of the notification message.
 
         In context of OpenShift, a banner must be displayed for all means
         of accessing OpenShift itself (e.g. service consoles, remote access
@@ -424,7 +424,7 @@
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.
+        acknowledgement and move forward.
 
         Documentation/implementation guidance for this control is being tracked
         through Jira:

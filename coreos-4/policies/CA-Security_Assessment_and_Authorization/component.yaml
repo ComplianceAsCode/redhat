@@ -212,13 +212,13 @@
     - key: a
       text: |
         The development and implementation of a continuous monitoring program
-        that includes the establishement of organization-defined metrics to be
+        that includes the establishment of organization-defined metrics to be
         monitored is an organizational control outside the scope of CoreOS
         configuration.
     - key: b
       text: |
         The development and implementation of a continuous monitoring program
-        that includes the establishement of organization-defined frequencies for
+        that includes the establishment of organization-defined frequencies for
         monitoring and assessment of such monitoring is an organizational control
         outside the scope of CoreOS configuration.
     - key: c

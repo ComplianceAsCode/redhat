@@ -740,7 +740,7 @@
         user is allowed to perform a given action.
     - key: b
       text: |
-        Documentation of the seperation of duties of individuals
+        Documentation of the separation of duties of individuals
         is an organizational control outside the scope of Red Hat Virtualization Host (RHVH)
         configuration.
 

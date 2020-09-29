@@ -166,7 +166,7 @@
         - Ansible Tower is configured to use an external authentication service, such as
         a corporate Red Hat IdM or Active Directory instance; and,
         - An organizational user is added to Ansible Tower however does not login
-        for a time period that exceeds the organization-defined threshhold; and,
+        for a time period that exceeds the organization-defined threshold; and,
         - During that time period the user logins to other corporate services, thus
         the external authentication provider shows the account is being actively used.
 
@@ -273,7 +273,7 @@
         Auditors implicitly inherit the read-only capability for all objects
         within the Tower environment.
 
-        - System Adminisrator
+        - System Administrator
         A Tower System Administrator (also known as a Superuser) has admin,
         read, and write privileges over the entire Tower installation. A
         System Administrator is typically responsible for managing all
@@ -333,7 +333,7 @@
         does Ansible Tower have the capability to lock an account until
         released by an administrator.
 
-        To satisfy those elemenets of this control an external
+        To satisfy those elements of this control an external
         authentication service, such as Red Hat IdM, must be used.
         Those two elements of this control are not applicable to
         Ansible Tower when an external authentication service
