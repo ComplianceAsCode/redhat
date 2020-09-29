@@ -166,7 +166,7 @@
         - Ansible Tower is configured to use an external authentication service, such as
         a corporate Red Hat IdM or Active Directory instance; and,
         - An organizational user is added to Ansible Tower however does not login
-        for a time period that exceeds the organization-defined threshhold; and,
+        for a time period that exceeds the organization-defined threshold; and,
         - During that time period the user logins to other corporate services, thus
         the external authentication provider shows the account is being actively used.
 
