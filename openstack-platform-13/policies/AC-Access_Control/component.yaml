@@ -315,7 +315,7 @@
         to address the conditions under which the banner will be displayed
         (if a non-government user accesses the system, the system use
         notification banner may not be appropriate), as well as the contents
-        of the nofication message.
+        of the notification message.
 
         In context of Red Hat OpenStack Platform, a banner must be displayed for all means
         of accessing Red Hat OpenStack Platform itself (e.g. service consoles, remote access
