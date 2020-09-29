@@ -16,11 +16,11 @@
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
+      text: |-
         Developing organization-level identification and authentication
         policy and procedures are outside the scope of OpenShift configuration.
     - key: b
-      text: |
+      text: |-
         Review and updating an organizational-level identification and authentication
         policy and procedures are outside the scope of OpenShift configuration.
 
@@ -29,7 +29,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         Unique identification and authentication of organizational users
         is deferred to the organizational identity provider (such as
         LDAP, Active Directory, Red Hat SSO, etc). This part of the control
@@ -50,7 +50,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Implementation of multifactor authentication for network
         access to privileged accounts is deferred to the
         organizational identity provider (such as
@@ -71,7 +71,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Implementing multifactor authentication for network access
         to non-privileged accounts is the responsibility of the
         organizational identity provider (such as
@@ -88,7 +88,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         OpenShift has no concept of local accounts and was designed without the use of local accounts.
         OpenShift relies on a centralized identity provider rather than a local identity provider.
         The closest implementation concept of a local user account store would be the implementation
@@ -104,7 +104,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         OpenShift has no concept of local accounts and was designed without the use of local accounts.
         OpenShift relies on a centralized identity provider rather than a local identity provider.
         The closest implementation concept of a local user account store would be the implementation
@@ -120,7 +120,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-314
@@ -130,7 +130,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-315
@@ -140,7 +140,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-316
@@ -150,7 +150,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-573
@@ -160,7 +160,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-574
@@ -170,7 +170,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         A control response for IA-2(10) is planned.
 
 - control_key: IA-2 (11)
@@ -178,7 +178,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Implementing a separate device from the system
         gaining access to the information system using multifactor
         authentication for remote access to privileged and non-privileged
@@ -188,19 +188,26 @@
 - control_key: IA-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
-    - text: |
-        A control response is planned. Engineering progress can be tracked via:
+    - text: |-
+        Acceptance and electronic verification of Personal
+        Identity Verification (PIV) credentials is the responsibility
+        of the organizational identity provider (such as
+        LDAP, Active Directory, Red Hat SSO, etc).
 
-        https://issues.redhat.com/browse/CMP-317
+        To aid system administrators, documentation on
+        supported authentication providers can be found in the
+        OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-2 (13)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Implementing out-of-band authentication methods is an organizational
         control outside the configuration guidance of OpenShift.
 
@@ -209,7 +216,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         A control response for IA-3 is planned.
 
 - control_key: IA-3 (1)
@@ -217,7 +224,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-318
@@ -227,7 +234,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This control was withdrawn by NIST.
 
 - control_key: IA-3 (3)
@@ -236,12 +243,12 @@
   implementation_status: planned
   narrative:
     - key: a
-      text: |
+      text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
     - key: b
-      text: |
+      text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-319
@@ -250,7 +257,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-320
@@ -258,37 +265,62 @@
 - control_key: IA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
+      text: |-
+        Receiving authorization from organization-defined personnel or roles to assign
+        an individual, group, role, or device identifier is an organizational procedural
+        requirement outside the scope of OpenShift configuration.
     - key: b
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
+      text: |-
+        Selecting an identifier that identifies an individual, group, role, or device
+        is an organizational procedural requirement outside the scope of OpenShift
+        configuration.
+
+        To affectively manage information system identifiers in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: c
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
+      text: |-
+        Assigning the identifier to the intended individual, group, role, or device
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
+
+        To affectively manage information system identifiers in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: d
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Preventing reuse of identifiers for organization-defined time period is an organizational
+        procedural requirement outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-321
+        To affectively manage information system identifiers in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: e
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Disabling the identifier after organization-defined time period of inactivity
+        is an organizational procedural requirement outside the scope of OpenShift
+        configuration.
 
-        https://issues.redhat.com/browse/CMP-321
+        To affectively manage information system identifiers in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-4 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-323
@@ -298,7 +330,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
@@ -307,7 +339,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
@@ -316,7 +348,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
@@ -325,7 +357,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-324
@@ -335,7 +367,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Coordination with organization-defined external
         organizations for cross-organization management
         of identifiers is outside the scope of OpenShift
@@ -346,7 +378,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Organizational requirements that the user registration
         process to receive an individual identifier be conducted
         in person before a designated registration authority
@@ -355,89 +387,161 @@
 - control_key: IA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This is an organizational procedural requirement
+      text: |-
+        Verifying, as part of the initial authenticator distribution, the identity
+        of the individual, group, role, or device receiving the authenticator
+        is an organizational procedural requirement
         outside the scope of OpenShift configuration.
     - key: b
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Establishing initial authenticator content for authenticators defined by the organization
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-325
+        To affectively manage information system authenticators in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: c
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Ensuring that authenticators have sufficient strength of mechanism for their intended use
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-325
+        To affectively manage information system authenticators in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: d
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
+      text: |-
+        Establishing and implementing administrative procedures for initial authenticator distribution,
+        for lost/compromised or damaged authenticators, and for revoking authenticators
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
+
+        To affectively manage information system authenticators in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: e
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-325
+      text: |-
+        Changing default content of authenticators prior to information system installation
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
     - key: f
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Establishing minimum and maximum lifetime restrictions and reuse conditions for authenticators
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-325
+        To affectively manage information system authenticators in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: g
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Changing/refreshing authenticators by organization-defined time period by authenticator type
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-325
+        To affectively manage information system authenticators in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: h
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Protecting authenticator content from unauthorized disclosure and modification
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-325
+        To affectively manage information system authenticators in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: i
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
+      text: |-
+        Requiring individuals to take, and having devices implement, specific security safeguards to protect authenticators
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
     - key: j
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
+      text: |-
+        Changing authenticators for group/role accounts when membership to those accounts changes
+        is an organizational procedural requirement outside the scope of OpenShift configuration.
+
+        To affectively manage information system authenticators in OpenShift, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This is an organizational procedural requirement
-        outside the scope of OpenShift configuration.
+      text: |-
+        Enforcing a minimum password complexity of organization-defined requirements for case sensitivity,
+        number of characters, mix of upper-case letters, lower-case letters, numbers, and special
+        characters, including minimum requirements for each type is outside the scope of OpenShift
+        configuration.
+
+        To affectively use password-based authentication, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: b
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Enforcing at least an organization-defined number of changed characters when new passwords are created
+        is outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-326
+        To affectively use password-based authentication, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: c
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Storing and transmitting only cryptographically-protected passwords
+        is outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-326
+        To affectively use password-based authentication, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: d
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Enforcing password minimum and maximum lifetime restrictions of organization-defined numbers for
+        lifetime minimum and maximum is outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-326
+        To affectively use password-based authentication, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: e
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Prohibiting password reuse for organization-defined number generations
+        is outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-326
+        To affectively use password-based authentication, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: f
-      text: |
-        A control response is planned. Engineering progress can be tracked via:
+      text: |-
+        Allowing the use of a temporary password for system logons with an immediate change
+        to a permanent password is outside the scope of OpenShift configuration.
 
-        https://issues.redhat.com/browse/CMP-326
+        To affectively use password-based authentication, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-5 (2)
   standard_key: NIST-800-53
@@ -445,22 +549,22 @@
   implementation_status: planned
   narrative:
     - key: a
-      text: |
+      text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-327
     - key: b
-      text: |
+      text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-327
     - key: c
-      text: |
+      text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-327
     - key: d
-      text: |
+      text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-327
@@ -470,7 +574,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Organizational requirements that the registration process to
         receive organization-defined types of and/or specific authenticators
         be conducted either in person and/or by a trusted third party before
@@ -483,7 +587,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-328
@@ -493,7 +597,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
@@ -502,7 +606,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
@@ -511,7 +615,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         A control response for IA-5(7) is planned.
 
 - control_key: IA-5 (8)
@@ -519,7 +623,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Organizational implementation of organization-defined security
         safeguards to manage the risk of compromise due to individuals having
         accounts on multiple information systems is outside the scope of
@@ -530,7 +634,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Organizational coordination with organization-defined
         external organizations for cross-organization management
         of credentials is outside the scope of OpenShift configuration.
@@ -540,7 +644,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-330
@@ -550,7 +654,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Employment of mechanisms that satisfy organization-defined
         token quality requirements is outside the scope of
         OpenShift configuration.
@@ -560,7 +664,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Employment of mechanisms that satisfy organization-defined
         biometric quality requirements is outside the scope of
         OpenShift configuration.
@@ -570,7 +674,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-331
@@ -580,7 +684,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-331
@@ -590,7 +694,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-332
@@ -598,19 +702,18 @@
 - control_key: IA-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    - text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-333
+    - text: |-
+        By default, OpenShift Container Platform session key and account login
+        passwords are obscured by not being displayed on output or by asterisks.
 
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-334
@@ -620,7 +723,7 @@
   covered_by: []
   implementation_status: complete
   narrative:
-    - text: |
+    - text: |-
         A control response for IA-8 is planned.
 
 - control_key: IA-8 (1)
@@ -628,48 +731,75 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
-        A control response is planned. Engineering progress can be tracked via:
+    - text: |-
+        Acceptance and electronically verified Personal Identity Verification (PIV) credentials
+        from other federal agencies is outside the scope of OpenShift configuration
+        and is the responsibility of a third-party identity provider.
 
-        https://issues.redhat.com/browse/CMP-370
+        To affectively use PIV credentials, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-8 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Acceptance of FICAM-approved third-party credentials
-        is outside the scope of OpenShift configuration.
+        is outside the scope of OpenShift configuration
+        and is the responsibility of a third-party identity provider.
+
+        To affectively use FICAM credentials, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
 
 - control_key: IA-8 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Employment of only FICAM-approved information system
         components (e.g. cards, card holders, physical access
         control system components) in organization-defined
         information systems to accept third-party credentials
-        is outside the scope of OpenShift configuration.
+        is outside the scope of OpenShift configuration
+        and is the responsibility of a third-party identity provider.
+
+        To affectively use FICAM components, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-8 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
-    - text: |
-        A control response is planned. Engineering progress can be tracked via:
+    - text: |-
+        Usage of FICAM-issued profiles is outside the scope of
+        OpenShift configuration and is the responsibility of a
+        third-party identity provider.
 
-        https://issues.redhat.com/browse/CMP-335
+        To affectively use FICAM profiles, configuring an
+        indentity provider is required. Documentation on supported authentication providers
+        can be found in the OpenShift product documentation:
+
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: IA-8 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: partial
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-336
@@ -679,7 +809,7 @@
   covered_by: []
   implementation_status: partial
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-337
@@ -689,7 +819,7 @@
   covered_by: []
   implementation_status: partial
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-338
@@ -699,7 +829,7 @@
   covered_by: []
   implementation_status: partial
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-339
@@ -709,7 +839,7 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
+    - text: |-
         Requiring that individuals accessing the information system employ
         organization-defined supplemental authentication techniques or
         mechanisms under specific organization-defined circumstances or
@@ -720,7 +850,7 @@
   covered_by: []
   implementation_status: planned
   narrative:
-    - text: |
+    - text: |-
         A control response is planned. Engineering progress can be tracked via:
 
         https://issues.redhat.com/browse/CMP-340
