@@ -81,7 +81,7 @@
         'OpenShift Administrators  are responsible for alerting personnel
         or roles in the event of an audit processing failure. A successful
         control response will outline the process taken to alert personnel
-        when an auditing failure occures.'
+        when an auditing failure occurs.'
     - key: b
       text: |
         'In the event of an audit processing failure, OpenShift Administrators

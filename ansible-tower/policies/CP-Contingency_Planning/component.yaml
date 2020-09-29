@@ -79,7 +79,7 @@
   implementation_status: complete
   narrative:
     - text: |
-        Ansible Tower installations can occur in a High Availabiltiy (HA) configuration.
+        Ansible Tower installations can occur in a High Availability (HA) configuration.
         In this configuration, Tower runs with a single active node, called the Primary
         Instance, and any number of inactive nodes, called Secondary Instances.
 
@@ -365,7 +365,7 @@
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Documentation on backing up and restoring Ansible Tower data
@@ -383,7 +383,7 @@
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Documentation on backing up and restoring Ansible Tower data
@@ -401,7 +401,7 @@
         maintaining at least three backup copies of user-level information (at
         least one of which is available online) or provides an equivalent
         alternative. A successful control response will detail how backups of
-        user-level information occures, and how three backup copies are
+        user-level information occurs, and how three backup copies are
         maintained.
 
         Documentation on backing up and restoring Ansible Tower data
