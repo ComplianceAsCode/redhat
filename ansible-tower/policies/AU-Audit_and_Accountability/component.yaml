@@ -24,8 +24,8 @@
   narrative:
     - text: |
         'By default Ansible Tower generates audit records containing
-        information that establishes what type of event occured,
-        when the event occured, where the event occured, the source
+        information that establishes what type of event occurred,
+        when the event occurred, where the event occurred, the source
         of the event, the outcome of the event, and the identity
         of individuals or subjects associated with the event.
 
@@ -38,13 +38,13 @@
         The "operation" field identifies the type of event recorded.
         In this case, a new user was created.
 
-        WHEN THE EVENT OCCURED:
+        WHEN THE EVENT OCCURRED:
         The "timestamp" field indicates the system time of
-        when the event occured. In this example the event happened
+        when the event occurred. In this example the event happened
         at 2018-06-19T00:46:45.337458Z.
 
-        WHERE THE EVENT OCCURED:
-        The "X-API-Node" field indicates where the event occured. In
+        WHERE THE EVENT OCCURRED:
+        The "X-API-Node" field indicates where the event occurred. In
         this example, the host was tower.redhatgov.io.
 
         SOURCE OF EVENT:
@@ -368,7 +368,7 @@
 
         A sample audit event for updating a "Demo Project" with content from
         GitHub is below. The "scm_url" field reflects source of information
-        being imported and "status" field indicates succes or failure:
+        being imported and "status" field indicates success or failure:
 
             {
                 "count": 1,

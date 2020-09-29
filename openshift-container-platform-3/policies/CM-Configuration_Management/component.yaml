@@ -4,7 +4,7 @@
 ##
 
 # ADMINISTRATORS NOTE ON CM-2:
-#       Implimentation of this control varies greatly between customers. Some
+#       Implementation of this control varies greatly between customers. Some
 #       want centralized config management, while others expect component
 #       administrators to handle this (e.g. maintain custom Ansible scripts).
 #       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
@@ -47,7 +47,7 @@
         configuration as a part of installations and upgrades.'
 
 # ADMINISTRATORS NOTE ON CM-2(2):
-#       Implimentation of this control varies between customers. Some create
+#       Implementation of this control varies between customers. Some create
 #       a central configuration management system, while others expect
 #       information system components (e.g. OpenShift Adminstrators)
 #       to create their own playbooks and store them in the centralized
@@ -255,7 +255,7 @@
         */'
 
 #       ADMINISTRATORS NOTE ON CM-8:
-#       Implimentation of this control varies between customers. Some agencies
+#       Implementation of this control varies between customers. Some agencies
 #       maintain an inventory that state "OpenShift 3.x," whereas others want
 #       named RPMs installed on the OpenShift components. The vast majority
 #       follow the "OpenShift 3.x" listings. For those that do not, and want

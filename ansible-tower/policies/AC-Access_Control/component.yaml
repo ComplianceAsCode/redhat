@@ -273,7 +273,7 @@
         Auditors implicitly inherit the read-only capability for all objects
         within the Tower environment.
 
-        - System Adminisrator
+        - System Administrator
         A Tower System Administrator (also known as a Superuser) has admin,
         read, and write privileges over the entire Tower installation. A
         System Administrator is typically responsible for managing all
@@ -333,7 +333,7 @@
         does Ansible Tower have the capability to lock an account until
         released by an administrator.
 
-        To satisfy those elemenets of this control an external
+        To satisfy those elements of this control an external
         authentication service, such as Red Hat IdM, must be used.
         Those two elements of this control are not applicable to
         Ansible Tower when an external authentication service
