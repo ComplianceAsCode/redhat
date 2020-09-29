@@ -949,7 +949,7 @@
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.
+        acknowledgement and move forward.
 
         A control response to AC-8 is planned. Progress can be tracked
         via:

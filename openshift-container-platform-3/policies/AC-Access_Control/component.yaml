@@ -424,7 +424,7 @@
         banner until the user acknowledges the usage condition and takes
         explicit actions to further access the system. A successful control
         response will need to address the means by which the user will indicate
-        acknowlegement and move forward.
+        acknowledgement and move forward.
 
         Documentation/implementation guidance for this control is being tracked
         through Jira:
