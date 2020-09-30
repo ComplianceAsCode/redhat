@@ -129,7 +129,7 @@
         to use centralized authentication (e.g. LDAP, Red Hat IdM,
         Active Directory). The audit of account creation,
         modification, enabling, disabling, and removal actions is
-        the respinsibility of the centralized service. Additionally,
+        the responsibility of the centralized service. Additionally,
         notification of organization-defined personnel or roles is
         also the responsibility of the centralized authentication
         service.'
@@ -549,7 +549,7 @@
         'Regardless of access mechanism, such as the OpenShift Console or remote
         access attempts through SSH, unauthenticated users will only be shown the
         system use notifications (as defined in AC-8) and login prompt. This is
-        non-confiurable behavior.'
+        non-configurable behavior.'
 
 - control_key: AC-16
   standard_key: NIST-800-53

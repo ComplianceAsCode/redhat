@@ -202,7 +202,7 @@
   narrative:
     - text: |
         'Documentation regarding how OpenShift generates, distributes, stores,
-        accesses, and desctructs, cryptographic keys is forthcoming. This
+        accesses, and destructs, cryptographic keys is forthcoming. This
         activity is being tracked in Jira:
 
         https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-24'

@@ -153,7 +153,7 @@
         to use centralized authentication (e.g. LDAP, Red Hat IdM,
         Active Directory). The audit of account creation,
         modification, enabling, disabling, and removal actions is
-        the respinsibility of the centralized service. Additionally,
+        the responsibility of the centralized service. Additionally,
         notification of organization-defined personnel or roles is
         also the responsibility of the centralized authentication
         service.
@@ -1144,7 +1144,7 @@
         Regardless of access mechanism, such as the CoreOS Console or remote
         access attempts through SSH, unauthenticated users will only be shown the
         system use notifications (as defined in AC-8) and login prompt. This is
-        non-confiurable behavior.
+        non-configurable behavior.
 
 - control_key: AC-14 (1)
   standard_key: NIST-800-53
@@ -1336,7 +1336,7 @@
     - key: a
       text: |
         Authorizing the execution of privileged commands and access to security-relevant
-        information via remote acces only for organizational defined needs is an
+        information via remote access only for organizational defined needs is an
         organizational control outside the scope of CoreOS configuration.
     - key: b
       text: |
@@ -1564,7 +1564,7 @@
   narrative:
     - text: |
         Organizational processes regarding the restriction or
-        prohibiting of the use of organization-controled portable
+        prohibiting of the use of organization-controlled portable
         storage devices by authorized individuals on external information
         systems is outside the scope of CoreOS configuration.
 
@@ -1660,7 +1660,7 @@
   narrative:
     - text: |
         Organizational employment of organization-defined data mining
-        prevension and detection techniques for organization-defined data
+        prevention and detection techniques for organization-defined data
         storage objects is outside the scope of CoreOS configuration.
 
 - control_key: AC-24

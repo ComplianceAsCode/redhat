@@ -54,7 +54,7 @@
     - text: |
         'Documentation regarding how Red Hat Identity Management generates,
         distributes, stores,
-        accesses, and desctructs, cryptographic keys is forthcoming. This
+        accesses, and destructs, cryptographic keys is forthcoming. This
         activity is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat-identity-management/issues/145'
