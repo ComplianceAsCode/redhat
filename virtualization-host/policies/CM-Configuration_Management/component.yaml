@@ -117,7 +117,7 @@
       text: |
         Organizational issuance of organization-defined information
         systems, system components, or devices with organizational-defined
-        configurations to indivudals traveling to locations that the
+        configurations to individuals traveling to locations that the
         organization deems to be of significant risk is outside the scope
         of Red Hat Virtualization Host (RHVH) configuration.
     - key: b
@@ -673,7 +673,7 @@
   narrative:
     - key: a
       text: |
-        Organizational assignment of organization-defined aquired information
+        Organizational assignment of organization-defined acquired information
         system components to an information system is outside the scope
         of Red Hat Virtualization Host (RHVH) configuration.
     - key: b

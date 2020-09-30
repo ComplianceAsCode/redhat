@@ -111,7 +111,7 @@
         Additionally, in regards to the AU-2(d) requirement of defining
         "the frequency" of auditing for each identified event, it should be
         noted that the CoreOS audit subsystem generates audit events in
-        realtime (e.g. immediately upon an audited event occuring).
+        realtime (e.g. immediately upon an audited event occurring).
 
 - control_key: AU-2 (1)
   standard_key: NIST-800-53
@@ -437,7 +437,7 @@
         only when CoreOS is configured in an OpenShift cluster and the OpenShift
         Cluster Logging Operator is configured to send
         logs to a remote log store such as Elastic or Splunk.
-        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        It is then the responsibility of the 3rd party tools such as Elastic or Splunk
         to then provide the support and capability for audit review, analysis, and
         reporting requirements and after-the-fact investigations of security incidents.
 
@@ -462,7 +462,7 @@
         only when CoreOS is configured in an OpenShift cluster and the OpenShift
         Cluster Logging Operator is configured to send
         logs to a remote log store such as Elastic or Splunk.
-        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        It is then the responsibility of the 3rd party tools such as Elastic or Splunk
         to then provide the support and capability for sort and search audit records
         for events of interest based on the content audit records.
 

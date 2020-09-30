@@ -178,7 +178,7 @@
       text: |
         Organizational issuance of organization-defined information
         systems, system components, or devices with organizational-defined
-        configurations to indivudals traveling to locations that the
+        configurations to individuals traveling to locations that the
         organization deems to be of significant risk is outside the scope
         of CoreOS configuration.
     - key: b
@@ -746,7 +746,7 @@
   narrative:
     - key: a
       text: |
-        Organizational assignment of organization-defined aquired information
+        Organizational assignment of organization-defined acquired information
         system components to an information system is outside the scope
         of CoreOS configuration.
     - key: b
@@ -797,7 +797,7 @@
       text: |
         Ensuring that the organization uses software and associated
         documentation in accordance with contract agreements and copyright laws
-        is the complete responsiblity of the organization. Red Hat's
+        is the complete responsibility of the organization. Red Hat's
         responsibilities to assist with the tracking of software licensing and
         usage of software provided by Red Hat will be fulfilled in accordance
         with all applicable contracts and agreements established for the

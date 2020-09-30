@@ -596,7 +596,7 @@
 
 ##
 ## Developers note on SA-10 (1)
-##  A successful controlr response will need to address the process and
+##  A successful control response will need to address the process and
 ##  mechanisms involved in integrity verification.
 ##
 ##  For example, TPM+TXT for hardware and operating systems.

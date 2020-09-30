@@ -371,7 +371,7 @@
         requirements and after-the-fact investigations of security incidents
         only when the OpenShift Cluster Logging Operator is configured to send
         logs to a remote log store such as Elastic or Splunk.
-        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        It is then the responsibility of the 3rd party tools such as Elastic or Splunk
         to then provide the support and capability for audit review, analysis, and
         reporting requirements and after-the-fact investigations of security incidents.
 
@@ -395,7 +395,7 @@
         requirements and after-the-fact investigations of security incidents
         only when the OpenShift Cluster Logging Operator is configured to send
         logs to a remote log store such as Elastic or Splunk.
-        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        It is then the responsibility of the 3rd party tools such as Elastic or Splunk
         to then provide the support and capability for sort and search audit records
         for events of interest based on the content audit records.
 

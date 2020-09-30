@@ -114,7 +114,7 @@
         functions with little or no loss of operational continuity and
         sustainment of that continuity until full information system
         restoration at primary processing and/or storage sites
-        is outside the scope fo CoreOS configuration.
+        is outside the scope of CoreOS configuration.
 
 - control_key: CP-2 (6)
   standard_key: NIST-800-53
@@ -205,7 +205,7 @@
         the scope of CoreOS configuration.
     - key: c
       text: |
-        Organizational process to intiate corrective actions, if needed,
+        Organizational process to initiate corrective actions, if needed,
         are outside the scope of CoreOS configuration.
 
 - control_key: CP-4 (1)
@@ -269,7 +269,7 @@
   narrative:
     - key: a
       text: |
-        Establishment of an alternative storate site including
+        Establishment of an alternative storage site including
         necessary agreements to permit the storage and retrieval
         of information system backup information is outside
         the scope of CoreOS configuration.

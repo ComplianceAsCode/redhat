@@ -1762,7 +1762,7 @@
   narrative:
     - text: |
         Organizational processes regarding the restriction or
-        prohibiting of the use of organization-controled portable
+        prohibiting of the use of organization-controlled portable
         storage devices by authorized individuals on external information
         systems is outside the scope of Red Hat Virtualization Host (RHVH) configuration.
 

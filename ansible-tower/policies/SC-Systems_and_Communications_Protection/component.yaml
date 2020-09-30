@@ -16,7 +16,7 @@
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation of anti-dential of service capabilities is being
+        'Documentation of anti-denial of service capabilities is being
         tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/333'
@@ -36,7 +36,7 @@
     - text: |
         'Documentation regarding how Ansible Tower generates,
         distributes, stores,
-        accesses, and desctructs, cryptographic keys is forthcoming. This
+        accesses, and destructs, cryptographic keys is forthcoming. This
         activity is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/334'
