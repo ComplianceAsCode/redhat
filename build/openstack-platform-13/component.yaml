@@ -4345,7 +4345,7 @@ satisfies:
   narrative:
     - text: |
         'Documentation regarding how Red Hat OpenStack Platform generates, distributes, stores,
-        accesses, and desctructs, cryptographic keys is forthcoming. This
+        accesses, and destructs, cryptographic keys is forthcoming. This
         activity is being tracked in GitHub:
 
         https://github.com/SecurityCentral/redhat-openstack-platform-13/projects/1'

@@ -134,7 +134,7 @@ satisfies:
         to use centralized authentication (e.g. LDAP, Red Hat IdM,
         Active Directory). The audit of account creation,
         modification, enabling, disabling, and removal actions is
-        the respinsibility of the centralized service. Additionally,
+        the responsibility of the centralized service. Additionally,
         notification of organization-defined personnel or roles is
         also the responsibility of the centralized authentication
         service.'
@@ -554,7 +554,7 @@ satisfies:
         'Regardless of access mechanism, such as the OpenShift Console or remote
         access attempts through SSH, unauthenticated users will only be shown the
         system use notifications (as defined in AC-8) and login prompt. This is
-        non-confiurable behavior.'
+        non-configurable behavior.'
 
 - control_key: AC-16
   standard_key: NIST-800-53
@@ -4034,7 +4034,7 @@ satisfies:
 
 ##
 ## Developers note on SA-10 (1)
-##  A successful controlr response will need to address the process and
+##  A successful control response will need to address the process and
 ##  mechanisms involved in integrity verification.
 ##
 ##  For example, TPM+TXT for hardware and operating systems.
@@ -4312,7 +4312,7 @@ satisfies:
   narrative:
     - text: |
         'Documentation regarding how OpenShift generates, distributes, stores,
-        accesses, and desctructs, cryptographic keys is forthcoming. This
+        accesses, and destructs, cryptographic keys is forthcoming. This
         activity is being tracked in Jira:
 
         https://securitycentral.atlassian.net/secure/RapidBoard.jspa?rapidView=3&projectKey=OFO&view=planning&selectedIssue=OFO-24'

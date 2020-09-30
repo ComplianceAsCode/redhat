@@ -1602,7 +1602,7 @@ satisfies:
   narrative:
     - text: |
         Organizational processes regarding the restriction or
-        prohibiting of the use of organization-controled portable
+        prohibiting of the use of organization-controlled portable
         storage devices by authorized individuals on external information
         systems is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
@@ -3159,7 +3159,7 @@ satisfies:
       text: |
         Organizational issuance of organization-defined information
         systems, system components, or devices with organizational-defined
-        configurations to indivudals traveling to locations that the
+        configurations to individuals traveling to locations that the
         organization deems to be of significant risk is outside the scope
         of Red Hat Virtualization Manager (RHVM) configuration.
     - key: b
@@ -3715,7 +3715,7 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Organizational assignment of organization-defined aquired information
+        Organizational assignment of organization-defined acquired information
         system components to an information system is outside the scope
         of Red Hat Virtualization Manager (RHVM) configuration.
     - key: b
@@ -3952,7 +3952,7 @@ satisfies:
         functions with little or no loss of operational continuity and
         sustainment of that continuity until full information system
         restoration at primary processing and/or storage sites
-        is outside the scope fo Red Hat Virtualization Manager (RHVM) configuration.
+        is outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: CP-2 (6)
   standard_key: NIST-800-53
@@ -4045,7 +4045,7 @@ satisfies:
         the scope of Red Hat Virtualization Manager (RHVM) configuration.
     - key: c
       text: |
-        Organizational process to intiate corrective actions, if needed,
+        Organizational process to initiate corrective actions, if needed,
         are outside the scope of Red Hat Virtualization Manager (RHVM) configuration.
 
 - control_key: CP-4 (1)
@@ -4109,7 +4109,7 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Establishment of an alternative storate site including
+        Establishment of an alternative storage site including
         necessary agreements to permit the storage and retrieval
         of information system backup information is outside
         the scope of Red Hat Virtualization Manager (RHVM) configuration.
@@ -8633,7 +8633,7 @@ satisfies:
 
 ##
 ## Developers note on SA-10 (1)
-##  A successful controlr response will need to address the process and
+##  A successful control response will need to address the process and
 ##  mechanisms involved in integrity verification.
 ##
 ##  For example, TPM+TXT for hardware and operating systems.

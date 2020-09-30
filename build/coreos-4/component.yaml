@@ -158,7 +158,7 @@ satisfies:
         to use centralized authentication (e.g. LDAP, Red Hat IdM,
         Active Directory). The audit of account creation,
         modification, enabling, disabling, and removal actions is
-        the respinsibility of the centralized service. Additionally,
+        the responsibility of the centralized service. Additionally,
         notification of organization-defined personnel or roles is
         also the responsibility of the centralized authentication
         service.
@@ -1149,7 +1149,7 @@ satisfies:
         Regardless of access mechanism, such as the CoreOS Console or remote
         access attempts through SSH, unauthenticated users will only be shown the
         system use notifications (as defined in AC-8) and login prompt. This is
-        non-confiurable behavior.
+        non-configurable behavior.
 
 - control_key: AC-14 (1)
   standard_key: NIST-800-53
@@ -1341,7 +1341,7 @@ satisfies:
     - key: a
       text: |
         Authorizing the execution of privileged commands and access to security-relevant
-        information via remote acces only for organizational defined needs is an
+        information via remote access only for organizational defined needs is an
         organizational control outside the scope of CoreOS configuration.
     - key: b
       text: |
@@ -1569,7 +1569,7 @@ satisfies:
   narrative:
     - text: |
         Organizational processes regarding the restriction or
-        prohibiting of the use of organization-controled portable
+        prohibiting of the use of organization-controlled portable
         storage devices by authorized individuals on external information
         systems is outside the scope of CoreOS configuration.
 
@@ -1665,7 +1665,7 @@ satisfies:
   narrative:
     - text: |
         Organizational employment of organization-defined data mining
-        prevension and detection techniques for organization-defined data
+        prevention and detection techniques for organization-defined data
         storage objects is outside the scope of CoreOS configuration.
 
 - control_key: AC-24
@@ -1951,7 +1951,7 @@ satisfies:
         Additionally, in regards to the AU-2(d) requirement of defining
         "the frequency" of auditing for each identified event, it should be
         noted that the CoreOS audit subsystem generates audit events in
-        realtime (e.g. immediately upon an audited event occuring).
+        realtime (e.g. immediately upon an audited event occurring).
 
 - control_key: AU-2 (1)
   standard_key: NIST-800-53
@@ -2277,7 +2277,7 @@ satisfies:
         only when CoreOS is configured in an OpenShift cluster and the OpenShift
         Cluster Logging Operator is configured to send
         logs to a remote log store such as Elastic or Splunk.
-        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        It is then the responsibility of the 3rd party tools such as Elastic or Splunk
         to then provide the support and capability for audit review, analysis, and
         reporting requirements and after-the-fact investigations of security incidents.
 
@@ -2302,7 +2302,7 @@ satisfies:
         only when CoreOS is configured in an OpenShift cluster and the OpenShift
         Cluster Logging Operator is configured to send
         logs to a remote log store such as Elastic or Splunk.
-        It is then the responsiblity of the 3rd party tools such as Elastic or Splunk
+        It is then the responsibility of the 3rd party tools such as Elastic or Splunk
         to then provide the support and capability for sort and search audit records
         for events of interest based on the content audit records.
 
@@ -2889,7 +2889,7 @@ satisfies:
         of an information system-level Plan of Action and Milestones (POA&M)
         is outside the scope of CoreOS configuration processes.
 
-        However, Red Hat will be evaluatng the self-assessment POA&M items specific
+        However, Red Hat will be evaluating the self-assessment POA&M items specific
         to CoreOS. Engineering progress can be tracked at:
 
         https://issues.redhat.com/browse/CMP-254
@@ -3223,7 +3223,7 @@ satisfies:
       text: |
         Organizational issuance of organization-defined information
         systems, system components, or devices with organizational-defined
-        configurations to indivudals traveling to locations that the
+        configurations to individuals traveling to locations that the
         organization deems to be of significant risk is outside the scope
         of CoreOS configuration.
     - key: b
@@ -3791,7 +3791,7 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Organizational assignment of organization-defined aquired information
+        Organizational assignment of organization-defined acquired information
         system components to an information system is outside the scope
         of CoreOS configuration.
     - key: b
@@ -3842,7 +3842,7 @@ satisfies:
       text: |
         Ensuring that the organization uses software and associated
         documentation in accordance with contract agreements and copyright laws
-        is the complete responsiblity of the organization. Red Hat's
+        is the complete responsibility of the organization. Red Hat's
         responsibilities to assist with the tracking of software licensing and
         usage of software provided by Red Hat will be fulfilled in accordance
         with all applicable contracts and agreements established for the
@@ -4042,7 +4042,7 @@ satisfies:
         functions with little or no loss of operational continuity and
         sustainment of that continuity until full information system
         restoration at primary processing and/or storage sites
-        is outside the scope fo CoreOS configuration.
+        is outside the scope of CoreOS configuration.
 
 - control_key: CP-2 (6)
   standard_key: NIST-800-53
@@ -4133,7 +4133,7 @@ satisfies:
         the scope of CoreOS configuration.
     - key: c
       text: |
-        Organizational process to intiate corrective actions, if needed,
+        Organizational process to initiate corrective actions, if needed,
         are outside the scope of CoreOS configuration.
 
 - control_key: CP-4 (1)
@@ -4197,7 +4197,7 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Establishment of an alternative storate site including
+        Establishment of an alternative storage site including
         necessary agreements to permit the storage and retrieval
         of information system backup information is outside
         the scope of CoreOS configuration.
@@ -8549,7 +8549,7 @@ satisfies:
 
 ##
 ## Developers note on SA-10 (1)
-##  A successful controlr response will need to address the process and
+##  A successful control response will need to address the process and
 ##  mechanisms involved in integrity verification.
 ##
 ##  For example, TPM+TXT for hardware and operating systems.

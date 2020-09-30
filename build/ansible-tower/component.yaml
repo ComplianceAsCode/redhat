@@ -3578,7 +3578,7 @@ satisfies:
 
 ##
 ## Developers note on SA-10 (1)
-##  A successful controlr response will need to address the process and
+##  A successful control response will need to address the process and
 ##  mechanisms involved in integrity verification.
 ##
 ##  For example, TPM+TXT for hardware and operating systems.
@@ -3670,7 +3670,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        'Documentation of anti-dential of service capabilities is being
+        'Documentation of anti-denial of service capabilities is being
         tracked on GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/333'
@@ -3690,7 +3690,7 @@ satisfies:
     - text: |
         'Documentation regarding how Ansible Tower generates,
         distributes, stores,
-        accesses, and desctructs, cryptographic keys is forthcoming. This
+        accesses, and destructs, cryptographic keys is forthcoming. This
         activity is being tracked in GitHub:
 
         https://github.com/ComplianceAsCode/redhat/issues/334'
