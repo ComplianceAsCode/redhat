@@ -1,0 +1,962 @@
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Developing organization-level identification and authentication
+        policy and procedures are outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: a.1
+      text: |-
+        An identification and authentication policy that addresses purpose, scope, roles,
+        responsibilities, management commitment, coordination among organizational entities,
+        and compliance is an organizational control outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes configuration.
+    - key: a.2
+      text: |-
+        Procedures to facilitate the implementation of the identification and authentication
+        policy and associated identification and authentication controls
+        is an organizational control outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |-
+        Review and updating an organizational-level identification and authentication
+        policy and procedures are outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b.1
+      text: |-
+        Reviewing and updating the current identification and authentication policy is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: b.2
+      text: |-
+        Reviewing and updating the current identification and authentication procedures is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: IA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Implementing out-of-band authentication methods is an organizational
+        control outside the configuration guidance of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for IA-3 is planned.
+
+- control_key: IA-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: IA-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Receiving authorization from organization-defined personnel or roles to assign
+        an individual, group, role, or device identifier is an organizational procedural
+        requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |-
+        Selecting an identifier that identifies an individual, group, role, or device
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: c
+      text: |-
+        Assigning the identifier to the intended individual, group, role, or device
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: d
+      text: |-
+        Preventing reuse of identifiers for organization-defined time period is an organizational
+        procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: e
+      text: |-
+        Disabling the identifier after organization-defined time period of inactivity
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization prohibiting the use of information system account identifiers
+        that are the same as public identifiers for individual electronic mail accounts
+        is an organizational control outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization requireing that the registration process to receive an individual
+        identifier includes supervisor authorization is an organizational procedural requirement
+        outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization requireing multiple forms of certification of individual
+        identification be presented to the registration authority is an organizational procedural requirement
+        outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization manages individual identifiers by uniquely identifying
+        each individual as an organization-defined characteristic identifying individual status
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Coordination with organization-defined external
+        organizations for cross-organization management
+        of identifiers is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational requirements that the user registration
+        process to receive an individual identifier be conducted
+        in person before a designated registration authority
+        is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Verifying, as part of the initial authenticator distribution, the identity
+        of the individual, group, role, or device receiving the authenticator
+        is an organizational procedural requirement
+        outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |-
+        Establishing initial authenticator content for authenticators defined by the organization
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: c
+      text: |-
+        Ensuring that authenticators have sufficient strength of mechanism for their intended use
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: d
+      text: |-
+        Establishing and implementing administrative procedures for initial authenticator distribution,
+        for lost/compromised or damaged authenticators, and for revoking authenticators
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: e
+      text: |-
+        Changing default content of authenticators prior to information system installation
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: f
+      text: |-
+        Establishing minimum and maximum lifetime restrictions and reuse conditions for authenticators
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: g
+      text: |-
+        Changing/refreshing authenticators by organization-defined time period by authenticator type
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: h
+      text: |-
+        Protecting authenticator content from unauthorized disclosure and modification
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: i
+      text: |-
+        Requiring individuals to take, and having devices implement, specific security safeguards to protect authenticators
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: j
+      text: |-
+        Changing authenticators for group/role accounts when membership to those accounts changes
+        is an organizational procedural requirement outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Enforcing a minimum password complexity of organization-defined requirements for case sensitivity,
+        number of characters, mix of upper-case letters, lower-case letters, numbers, and special
+        characters, including minimum requirements for each type is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |-
+        Enforcing at least an organization-defined number of changed characters when new passwords are created
+        is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: c
+      text: |-
+        Storing and transmitting only cryptographically-protected passwords
+        is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: d
+      text: |-
+        Enforcing password minimum and maximum lifetime restrictions of organization-defined numbers for
+        lifetime minimum and maximum is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: e
+      text: |-
+        Prohibiting password reuse for organization-defined number generations
+        is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: f
+      text: |-
+        Allowing the use of a temporary password for system logons with an immediate change
+        to a permanent password is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: c
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: d
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational requirements that the registration process to
+        receive organization-defined types of and/or specific authenticators
+        be conducted either in person and/or by a trusted third party before
+        organization-defined registration authority with authorization by
+        organization-defined personnel or roles is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: IA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization requireing developers/installers of information system
+        components to provide unique authenticators or change default
+        authenticators prior to delivery/installation is an organizational process
+        outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization protects authenticators commensurate with the security
+        category of the information to which use of the authenticator permits access
+        is an organizational process outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational implementation of organization-defined security
+        safeguards to manage the risk of compromise due to individuals having
+        accounts on multiple information systems is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: IA-5 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational coordination with organization-defined
+        external organizations for cross-organization management
+        of credentials is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-5 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employment of mechanisms that satisfy organization-defined
+        token quality requirements is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: IA-5 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employment of mechanisms that satisfy organization-defined
+        biometric quality requirements is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: IA-5 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response is planned. Engineering progress can be tracked via:
+
+
+
+- control_key: IA-5 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response is planned. Engineering progress can be tracked via:
+
+
+
+- control_key: IA-5 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        By default, Red Hat Advanced Cluster Management for Kubernetes session key and account login
+        passwords are obscured by not being displayed on output or by asterisks.
+
+- control_key: IA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for identification and authentication.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization identifying and authenticating organization-defined
+        information system services using organization-defined security safeguards
+        is an organizational control outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization ensuring that service providers receive, validate, and
+        transmit identification and authentication information is an
+        organizational control outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization ensuring that identification and authentication decisions
+        are transmitted between organization-defined services that are consistent
+        with organizational policies is an
+        organizational control outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Requiring that individuals accessing the information system employ
+        organization-defined supplemental authentication techniques or
+        mechanisms under specific organization-defined circumstances or
+        situations is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: IA-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response is planned. Engineering progress can be tracked via:
+
