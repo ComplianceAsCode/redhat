@@ -1,0 +1,478 @@
+##
+## BEGINNING OF:
+## MAINTENANCE
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: MA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Developing, documenting, and disseminating to organization-defined personnel or roles
+        system maintenance policy and produres is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: a.1
+      text: |-
+        A system maintenance policy that addresses purpose, scope, roles, responsibilities,
+        management commitment, coordination among organizational entities, and compliance
+        is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: a.2
+      text: |-
+        Procedures to facilitate the implementation of the access control policy and
+        associated access controls is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Reviewing and updating the current system maintenance policy and produres is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b.1
+      text: |-
+        Reviewing and updating the current system maintenance policy per an organization-defined frequency
+        is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b.2
+      text: |-
+        Reviewing and updating the current system maintenance procedures per an organization-defined frequency
+        is an organizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: MA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Scheduling, performing, documenting, and reviewing records of maintenance and repairs
+        on information system components in accordance with manufacturer or vendor specifications
+        and/or organizational requirements is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Approveing and monitoring all maintenance activities, whether performed on site or
+        remotely and whether the equipment is serviced on site or removed to another location
+        is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Requiring that organization-defined personnel or roles explicitly approve the removal
+        of the information system or system components from organizational facilities for
+        off-site maintenance or repairs is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |-
+        Sanitizing equipment to remove all information from associated media prior to removal
+        from organizational facilities for off-site maintenance or repairs
+        is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: e
+      text: |-
+        Checking all potentially impacted security controls to verify that the controls are still
+        functioning properly following maintenance or repair actions is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: f
+      text: |-
+        Including organization-defined maintenance-related information in organizational maintenance records
+        is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Employing automated mechanisms to schedule, conduct, and document
+        maintenance and repairs reflects organizational procedures/policies and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        Producing up-to date, accurate, and complete records of all
+        maintenance and repair actions requested, scheduled, in process, and completed
+        reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: MA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization approveing, controlling, and monitoring information system maintenance tools
+        is an orgnaizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: MA-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization inspecting the maintenance tools carried into a facility
+        by maintenance personnel for improper or unauthorized modifications is an
+        orgnaizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Checking media containing diagnostic and test programs for
+        malicious code before the media are used in the information
+        system is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Preventing the unauthorized removal of maintenance equipment containing
+        organizational information by verifying that there is no organizational
+        information contained on the equipment is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Preventing the unauthorized removal of maintenance equipment containing
+        organizational information by sanitizing or destroying the equipment is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Preventing the unauthorized removal of maintenance equipment containing
+        organizational information by retaining the equipment within the
+        facility is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |-
+        Preventing the unauthorized removal of maintenance equipment containing
+        organizational information by obtaining an exception from
+        organization-defined personnel or roles explicity authorizing removal
+        of the equipment from the facility is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: MA-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system restricting the use of maintenance tools to
+        authorized personnel only applies to OpenShift and is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Approving and monitoring nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Allowing the use of nonlocal maintenance and diagnostic tools only as consistent with
+        organizational policy and documented in the security plan for the information system is an
+        orgnaizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for authentication management.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: d
+      text: |-
+        The maintaining of records for nonlocal maintenance and diagnostic activities is an
+        orgnaizational control outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: e
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for session management.
+
+        This control is applicable to the OpenShift and is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for session auditing.
+
+        This control is applicable to the OpenShift and is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Reviewing the records of the maintenance and diagnostic sessions
+        is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization documenting in the security plan for the information system,
+        the policies and procedures for the establishment and use of nonlocal maintenance
+        and diagnostic connections is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        Removing the component to be serviced from the information system prior
+        to nonlocal maintenance or diagnostic services, sanitizes the component
+        (with regard to organizational information) before removal from organizational
+        facilities, and after the service is performed, inspects and sanitizes the component
+        (with regard to potentially malicious software) before reconnecting the component
+        to the information system is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for authentication management.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for authentication management.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b.1
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for authentication management.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+    - key: b.2
+      text: |-
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for authentication management.
+
+        This control is applicable to the OpenShift identity service provider
+        and outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: MA-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Approval of each nonlocal maintenance session by
+        organization-defined personnel or roles is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Notification of organization-defined personnel or roles of
+        the date and time of planned nonlocal maintenance is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response is planned. Engineering progress can be tracked via:
+
+
+- control_key: MA-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response is planned. Engineering progress can be tracked via:
+
+
+- control_key: MA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Establishing a process for maintenance personnel authorization and
+        maintaining a list of authorized maintenance organizations or personnel
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Ensuring that non-escorted personnel performing maintenance on
+        the information system have required access authorizations is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Designating organizational personnel with required access
+        authorizations and technical competence to supervise the
+        maintenance activities of personnel who do not possess
+        the required access authorizations is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Implementing organizational procedures for the use of maintenance
+        personnel that lack appropriate security clearances or are not U.S.
+        citizens is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Development and implementation of alternate security safeguards
+        in the event an information system component cannot be sanitized,
+        removed, or disconnected from the system, is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational processes ensuring that personnel performing
+        maintenance and diagnostic activities on an information system
+        processing, storing, or transmitting classified information
+        possess security clearances and formal access approvals for at
+        least the highest classification level and for all compartments
+        of information on the system, is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: MA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational processes ensuring that personnel performing
+        maintenance and diagnostic activities on an information system
+        processing, storing, or transmitting classified information are
+        U.S. citizens, is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Organizational processes that ensure cleared foreign nationals (i.e.
+        foreign nationals with appropriate security clearances), are used
+        to conduct maintenance and diagnostic activities on classified
+        information systems only when the systems are jointly owned and
+        operated by the United States and foreign allied governments, or
+        owned and operated solely by foreign allied governments, is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Organizational processes that ensure approvals, consents, and detailed
+        operational conditions regarding the use of foreign nationals to
+        conduct maintenance and diagnostic activities on classified information
+        systems are fully documented within Memoranda of Agreements, is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational processes ensuring that non-escorted personnel
+        performing maintenance activities not directly associated with
+        the information system but in the physical proximity of the
+        system, have required access authorizations, is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization obtaining maintenance support and/or spare parts for
+        organization-defined information system components within an organization-defined
+        time period of failure is an organizational control outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: MA-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization performs preventive maintenance on organization-defined
+        information system components at organization-defined time intervals
+        is an organizational control outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: MA-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization performs predictive maintenance on organization-defined
+        information system components at organization-defined time intervals is
+        an organizational control outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: MA-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization employs automated mechanisms to transfer predictive
+        maintenance data to a computerized maintenance management system is
+        an organizational control outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes.
