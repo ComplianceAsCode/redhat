@@ -1,0 +1,313 @@
+##
+## BEGINNING OF:
+## MEDIA PROTECTION
+##
+
+- control_key: MP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-6 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: MP-6 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-6 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes does not utilize or have access to media such as optical
+        drives, USB devices, etc. Therefore, this control is not applicable to
+        Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: MP-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: MP-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedure/policy and is not
+        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
