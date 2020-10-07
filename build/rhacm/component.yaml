@@ -178,11 +178,14 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Automatically removing or disabling temporary and emergency accounts after a defined
+        time period is outside the scope of Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes relies on
         OpenShift for account management.
 
         This control is applicable to the OpenShift identity service provider
-        and outside the scope of Red Hat Advanced Cluster Management
+        which is outside the scope of Red Hat Advanced Cluster Management
         for Kubernetes configuration.
 
 #
@@ -204,11 +207,14 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Automatically disabling inactive accounts after an organization-defined time period is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
         relies on OpenShift for account management.
 
         This control is applicable to the OpenShift identity service provider
-        and outside the scope of Red Hat Advanced Cluster Management
+        which is outside the scope of Red Hat Advanced Cluster Management
         for Kubernetes configuration.
 
 # NIST Control URL:
@@ -219,8 +225,12 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Automatically auditing account creation, modification, enabling, disabling, and removal
+        actions, and notifying appropriate individuals is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        relies on OpenShift for account management.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-5
@@ -230,8 +240,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Requiring that users log out after an organization-defined time period of
+        inactivity is outside the scope of Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        relies on OpenShift for account management.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-6
@@ -241,11 +254,14 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Implementing dynamic privilege management capabilities is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        relies on OpenShift for account management.
 
         This control is applicable to the OpenShift identity service provider
-        and outside the scope of Red Hat Advanced Cluster Management
+        which is outside the scope of Red Hat Advanced Cluster Management
         for Kubernetes configuration.
 
 # NIST Control URL:
@@ -279,11 +295,14 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Creating organization-defined information system accounts dynamically is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        relies on OpenShift for account management.
 
         This control is applicable to the OpenShift identity service provider
-        and outside the scope of Red Hat Advanced Cluster Management
+        which is outside the scope of Red Hat Advanced Cluster Management
         for Kubernetes configuration.
 
 # NIST Control URL:
@@ -294,12 +313,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
-        Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
-
-        This control is applicable to the OpenShift identity service provider
-        and outside the scope of Red Hat Advanced Cluster Management
-        for Kubernetes configuration.
+        Permitting the use of shared/group accounts that meet organization-defined conditions
+        for establishing shared/group accounts is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-10
@@ -309,8 +325,8 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
-        Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        Terminating shared/group account credentials when members leave the group is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-11
@@ -320,12 +336,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
-        Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
-
-        This control is applicable to the OpenShift identity service provider
-        and outside the scope of Red Hat Advanced Cluster Management
-        for Kubernetes configuration.
+        Enforcement of organization-defined circumstances and/or usage conditions for
+        organization-defined information system accounts is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-12
@@ -336,13 +349,18 @@ satisfies:
   narrative:
     - key: a
       text: |-
-        Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        Monitoring information system accounts for organization-defined atypical usage is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes.
 
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for account management.
     - key: b
       text: |-
+        Reporting atypical usage of information system accounts to organization-defined personnel
+        or roles is outside the scope of Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        relies on OpenShift for account management.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-2#enhancement-13
@@ -352,8 +370,12 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Disabling the accounts of users posing a significant risk within an
+        organization-defined time period of discovery of the risk is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control management.
+        relies on OpenShift for account management.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3
@@ -363,8 +385,12 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
+        Enforcing approved authorizations for logical access to information and system resources
+        in accordance with applicable access control policies is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes.
+
         Red Hat Advanced Cluster Management for Kubernetes
-        relies on OpenShift for access control enforcement.
+        relies on OpenShift for access enforcement.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-1
@@ -385,10 +411,7 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |-
-        A control response for AC-3 (2) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/<TBD>
+        A control response for AC-3 (2) is planned.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-3
@@ -399,13 +422,74 @@ satisfies:
   narrative:
     - key: a
       text: |-
-        ''
+        Enforcement of organization-defined mandatory access control policy over all subjects
+        and objects where the policy is uniformly enforced across all subjects and objects
+        within the boundary of the information system is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
     - key: b
       text: |-
-        ''
+        Enforcement of organization-defined mandatory access control policy over all subjects
+        and objects where the policy specifies that a subject that has been granted access to
+        information is constrained is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
+    - key: b.1
+      text: |-
+        Specifying that a subject that has been granted access to information is constrained
+        from passing the information to unauthorized subjects or objects is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
+    - key: b.2
+      text: |-
+        Specifying that a subject that has been granted access to information is constrained
+        from granting its privileges to other subjects is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
+    - key: b.3
+      text: |-
+        Specifying that a subject that has been granted access to information is constrained
+        from changing one or more security attributes on subjects, obnjects, the information
+        system, or information system components is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
+    - key: b.4
+      text: |-
+        Specifying that a subject that has been granted access to information is constrained
+        from choosing the security attributes and attribute values to be associated with newly
+        created or modified objects is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
+    - key: b.5
+      text: |-
+        Specifying that a subject that has been granted access to information is constrained
+        from changing the rules governing access control is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
     - key: c
       text: |-
-        ''
+        Enforcement of organization-defined mandatory access control policy over all subjects
+        and objects where the policy specifies that organization-defined subjects may explicitly
+        be granted organization-defined privileges such that they are not limited by some or all
+        of the above constraints is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for mandatory access control enforcement.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-4
@@ -414,8 +498,53 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |-
-        ''
+    - key: a
+      text: |-
+        Enforcement of organization-defined discretionary access control policies over defined
+        subjects and objects where the policy specifies that a subject has been granted access
+        to information can pass the information to any other subjects or objects is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for discretionary access control enforcement.
+    - key: b
+      text: |-
+        Enforcement of organization-defined discretionary access control policies over defined
+        subjects and objects where the policy specifies that a subject has been granted access
+        to information can grant its privileges to other subjects is outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for discretionary access control enforcement.
+    - key: c
+      text: |-
+        Enforcement of organization-defined discretionary access control policies over defined
+        subjects and objects where the policy specifies that a subject has been granted access
+        to information can change security attributes on subjects, objects, the information
+        system, or the information system's components is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for discretionary access control enforcement.
+    - key: d
+      text: |-
+        Enforcement of organization-defined discretionary access control policies over defined
+        subjects and objects where the policy specifies that a subject has been granted access
+        to information can choose the security attributes to be associated with newly created
+        or revised objects is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for discretionary access control enforcement.
+    - key: e
+      text: |-
+        Enforcement of organization-defined discretionary access control policies over defined
+        subjects and objects where the policy specifies that a subject has been granted access
+        to information can change the rules governing access control is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for discretionary access control enforcement.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-5
@@ -425,7 +554,12 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
-        ''
+        Preventing access to organization-defined security-relevant information except during
+        secure, non-operable system states is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes
+        relies on OpenShift for preventing access to security-relavent information.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-6
