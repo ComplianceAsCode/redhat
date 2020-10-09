@@ -1,0 +1,341 @@
+##
+## BEGINNING OF:
+## SECURITY ASSESSMENT AND AUTHORIZATION
+##
+
+- control_key: CA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Establishing organizational security assessment and
+        authorization policy and procedures is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: b
+      text: |-
+        Establishing organizational security assessment and
+        authorization policy and procedures is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Development of an organizational security assessment plan
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration
+        guidance.
+    - key: b
+      text: |-
+        Development of an organizational security assessment plan
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration
+        guidance.
+    - key: c
+      text: |-
+        Development of an organizational security assessment plan
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration
+        guidance.
+    - key: d
+      text: |-
+        Development of an organizational security assessment plan
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration
+        guidance.
+
+- control_key: CA-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employment of independent assessors or assessment teams
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration
+        guidance.
+
+- control_key: CA-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Specialized security assessments are outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational acceptance of the results of an assessment
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Establishment of organizational system interconnection
+        agreements is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration guidance.
+    - key: b
+      text: |-
+        Establishment of organizational system interconnection
+        agreements is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration guidance.
+    - key: c
+      text: |-
+        Establishment of organizational system interconnection
+        agreements is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration guidance.
+
+- control_key: CA-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization employing an allow-all, deny-by-exception; deny-all, permit-by-exception
+        policy for allowing organization-defined information systems to connect to external
+        information systems is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on Red Hat Advanced Cluster
+        Management for Kubernetes components that support the capability to manage connections to
+        and from external information systems. As such, this control is applicable to the
+        organization and to the underlying OpenShift layer.
+
+- control_key: CA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Creating an information system-level Plan of Action
+        and Milestones (POA&M) is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration processes.
+
+        However, to aid in remediating or
+        mitigating any known weaknesses or deficiencies in
+        Red Hat Advanced Cluster Management for Kubernetes, Red Hat is planning to make public a
+        POA&M specific to Red Hat Advanced Cluster Management for Kubernetes. This is currently in
+        progress. If you would like to monitor or collaborate on the Red Hat Advanced Cluster
+        Management for Kubernetes POA&M, Engineering progress can be tracked at:
+
+        https://issues.redhat.com/browse/ACM-348
+    - key: b
+      text: |-
+        Organizational processes relating to updating and the maintenance
+        of an information system-level Plan of Action and Milestones (POA&M)
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration
+        processes.
+
+        However, Red Hat will be evaluating the self-assessment POA&M items specific
+        to Red Hat Advanced Cluster Management for Kubernetes. Engineering progress can be tracked
+        at:
+
+        https://issues.redhat.com/browse/ACM-348
+
+- control_key: CA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Updates and maintenance of an information system-level
+        Plan of Action and Milestones (POA&M) document outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: b
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: c
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The development and implementation of a continuous monitoring program
+        that includes the establishment of organization-defined metrics to be
+        monitored is an organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        The development and implementation of a continuous monitoring program
+        that includes the establishment of organization-defined frequencies for
+        monitoring and assessment of such monitoring is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Engineering progress can be tracked at:
+
+        https://issues.redhat.com/browse/ACM-364
+    - key: d
+      text: |-
+        Engineering progress can be tracked at:
+
+        https://issues.redhat.com/browse/ACM-364
+    - key: e
+      text: |-
+        Engineering progress can be tracked at:
+
+        https://issues.redhat.com/browse/ACM-364
+    - key: f
+      text: |-
+        Response actions to address results of the analysis of security-related
+        information is an organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+    - key: g
+      text: |-
+        Reporting the security status of organization and the information system
+        to organization-defined personnel or roles at a specified organization-defined
+        frequency is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CA-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employment of assessors or assessment teams is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CA-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational trend analyses processes are
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration
+        guidance.
+
+- control_key: CA-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Penetration testing is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employment of independent penetration testers
+        is out of scope for Red Hat Advanced Cluster Management for Kubernetes configuration
+        guidance.
+
+- control_key: CA-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Team Exercises are out of scope for
+        Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CA-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |-
+        Authorizing internal connections of organization-defined information system components
+        or classes of components] to the information system is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Documenting, for each internal connection, the interface characteristics, security
+        requirements, and the nature of the information communicated is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CA-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system performing security compliance checks on constituent system
+        components prior to the establishment of the internal connection is not applicable to
+        Red Hat Advanced Cluster Management for Kubernetes since it relies on OpenShift to
+        manage internal system connections.
