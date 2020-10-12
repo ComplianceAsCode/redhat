@@ -10,13 +10,13 @@ components:
   - ./policies/AC-Access_Control
   - ./policies/AT-Awareness_and_Training
   - ./policies/AU-Audit_and_Accountability
-#  - ./policies/CA-Security_Assessment_and_Authorization
-#  - ./policies/CM-Configuration_Management
-#  - ./policies/CP-Contingency_Planning
-#  - ./policies/IA-Identification_and_Authentication
+  - ./policies/CA-Security_Assessment_and_Authorization
+  - ./policies/CM-Configuration_Management
+  - ./policies/CP-Contingency_Planning
+  - ./policies/IA-Identification_and_Authentication
   - ./policies/IR-Incident_Response
-#  - ./policies/MA-Maintenance
-#  - ./policies/MP-Media_Protection
+  - ./policies/MA-Maintenance
+  - ./policies/MP-Media_Protection
   - ./policies/PE-Physical_and_Environmental_Protection
   - ./policies/PL-Planning
   - ./policies/PM-Program_Management

@@ -1,0 +1,857 @@
+##
+## BEGINNING OF:
+## CONFIGURATION MANAGEMENT
+##
+
+# ADMINISTRATORS NOTE ON CM-2:
+#       Implementation of this control varies greatly between customers. Some
+#       want centralized config management, while others expect component
+#       administrators to handle this (e.g. maintain custom Ansible scripts).
+#       In Red Hat's OpenControl content CM-2 is handled at the PMO level,
+#       however it's best to double check with the Information System owner
+#       on expectations (component vs central CM).
+#
+
+- control_key: CM-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Developing, documenting, and disseminating an organizational configuration
+        management policy is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+    - key: b
+      text: |-
+        Review and update procedures to the organizational configuration
+        management policy is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+
+- control_key: CM-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The recommended approach for configuration management for Red Hat Advanced Cluster
+        Management for Kubernetes (RHACM) is to implement the principles and patterns of GitOps
+
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable.
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) contains capabilities and
+        functionality to manage GitOps for OpenShift clusters and applications including
+        Red Hat Advanced Cluster Management for Kubernetes. For more information on creating and
+        managing channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
+- control_key: CM-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The organization reviewing and updating the baseline configuration of
+        Red Hat Advanced Cluster Management for Kubernetes per an organization-defined frequency is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        However to assist in formulating a control response,
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable.
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) contains capabilities and
+        functionality to manage GitOps for OpenShift clusters and applications including
+        Red Hat Advanced Cluster Management for Kubernetes. For more information on creating and
+        managing channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
+    - key: b
+      text: |-
+        The organization reviewing and updating the baseline configuration of Red Hat Advanced
+        Cluster Management for Kubernetes when required due to organization-defined circumstances
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+        However to assist in formulating a control response,
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable.
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) contains capabilities and
+        functionality to manage GitOps for OpenShift clusters and applications including
+        Red Hat Advanced Cluster Management for Kubernetes. For more information on creating and
+        managing channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
+    - key: c
+      text: |-
+        The organization reviewing and updating the baseline configuration of Red Hat Advanced
+        Cluster Management as an integral part of Red Hat Advanced Cluster Management for
+        Kubernetes component installations and upgrades is outside the scope of Red Hat Advanced
+        Cluster Management configuration.
+
+        However to assist in formulating a control response,
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable.
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) contains capabilities and
+        functionality to manage GitOps for OpenShift clusters and applications including
+        Red Hat Advanced Cluster Management for Kubernetes. For more information on creating and
+        managing channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
+- control_key: CM-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-357
+
+- control_key: CM-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization retaining an organization-defined number of previous versions of baseline
+        configurations of the information system to support rollback is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management configuration.
+
+        However to assist in formulating a control response,
+        GitOps uses Git pull requests to manage infrastructure and application configurations.
+        The Git repository is considered the only source of truth and contains the
+        entire state of the system so that the trail of changes to the system state are
+        visible and auditable.
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) contains capabilities and
+        functionality to manage GitOps for OpenShift clusters and applications including
+        Red Hat Advanced Cluster Management for Kubernetes. For more information on creating and
+        managing channels for GitOps approaches using RHACM, see:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/manage_applications/index#creating-and-managing-channels
+
+
+- control_key: CM-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CM-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |-
+        The organization maintainings a baseline configuration for information system development
+        and test environments that is managed separately from the operational baseline
+        configuration are organizational processes/procedures outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Organizational issuance of organization-defined information
+        systems, system components, or devices with organizational-defined
+        configurations to individuals traveling to locations that the
+        organization deems to be of significant risk is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Organizational processes to apply organization-defined security
+        safeguards to the devices when the individuals return is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: b
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: c
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: d
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: e
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: f
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-265
+    - key: g
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management configuration guidance.
+
+
+- control_key: CM-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: b
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: c
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: d
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: e
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+    - key: f
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/CMP-266
+
+- control_key: CM-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The requirement for an information security representative to be
+        a member of the organization-defined configuration change
+        control element is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CM-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes implementing organization-defined
+        security responses automatically if baseline configurations are changed in an unauthorized
+        manner is outside the scope of the Red Hat Advanced Cluster Management for Kubernetes
+        application, and a third-party product should be used to satisfy this control.
+
+- control_key: CM-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+- control_key: CM-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational analysis of changes to the information system to
+        determine potential security impacts prior to change implementation
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CM-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization analyzing changes to the information system in a separate test environment
+        before implementation in an operational environment, looking for security impacts due to
+        flaws, weaknesses, incompatibility, or intentional malice is an organizational
+        policy/procedure outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CM-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Verification of security function implementation and status is an organizational
+        policy and procedure control. This functionality is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes configuration.
+
+- control_key: CM-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-358
+
+- control_key: CM-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-359
+
+- control_key: CM-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-360
+
+- control_key: CM-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-361
+
+- control_key: CM-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+- control_key: CM-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+
+    - key: b
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management configuration guidance.
+
+- control_key: CM-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CM-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: partial
+  narrative:
+    - key: a
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-365
+    - key: b
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-365
+    - key: c
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-365
+    - key: d
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-365
+
+- control_key: CM-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-366
+
+- control_key: CM-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
+
+- control_key: CM-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CM-6 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CM-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-367
+    - key: b
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-367
+
+- control_key: CM-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The organization reviewing the information system per organization-defined frequency to
+        identify unnecessary and/or nonsecure functions, ports, protocols, and services is
+        an organizational process/procedure outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        The organization disabling organization-defined functions, ports, protocols, and services
+        within the information system deemed to be unnecessary and/or nonsecure is
+        an organizational process/procedure outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+
+- control_key: CM-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-368
+
+- control_key: CM-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer is responsible for ensuring compliance with organization-defined registration
+        requirements for functions, ports, protocols, and services.
+
+- control_key: CM-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The customer is responsible for identifying organization-defined software programs not
+        authorized to execute on the information system.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the OpenShift operating layer
+        to provide unauthorized software support in preventing unauthorized applications from
+        running on the cluster and in a container through deny listing methods.
+    - key: b
+      text: |-
+        The customer is responsible for employing an allow-all, deny-by-exception policy to
+        prohibit the execution of unauthorized software programs on the information system.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the OpenShift operating layer
+        to provide unauthorized software support in preventing unauthorized applications from
+        running on the cluster and in a container through deny listing methods.
+    - key: c
+      text: |-
+        The customer is responsible for reviewing and updating the list of unauthorized software
+        programs per an organization-defined frequency.
+
+- control_key: CM-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The customer is responsible for identifying organization-defined software programs
+        authorized to execute on the information system.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the OpenShift operating layer
+        to provide authorized software support in allowing authorized applications from
+        running on the cluster and in a container through allow listing methods.
+    - key: b
+      text: |-
+        The customer is responsible for employing an allow-all, deny-by-exception policy to allow
+        the execution of unauthorized software programs on the information system.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the OpenShift operating layer
+        to provide authorized software support in allowing authorized applications from
+        running on the cluster and in a container through allow listing methods.
+    - key: c
+      text: |-
+        The customer is responsible for reviewing and updating the list of authorized software
+        programs per an organization-defined frequency.
+
+- control_key: CM-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-369
+    - key: b
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-369
+
+- control_key: CM-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization is responsible for updating the inventory of information
+        system components as an integral part of component installations, removals,
+        and information system updates.
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) relies on the OpenShift
+        operating layer to provide installation, updates, or removal of RHACM versions through
+        the Operator Lifecycle Manager (OLM) operator.
+
+- control_key: CM-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization is responsible for employing automated mechanisms to help maintain an
+        up-to-date, complete, accurate, and readily available inventory of information system
+        components.
+
+        Red Hat Advanced Cluster Management for Kubernetes (RHACM) relies on the OpenShift
+        operating layer to provide installation, updates, or removal of RHACM versions through
+        the Operator Lifecycle Manager (OLM) operator.
+
+- control_key: CM-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The organization is responsible for employing automated mechanisms per organization-defined
+        frequency to detect the presence of unauthorized hardware, software, and firmware
+        components within the information system.
+    - key: b
+      text: |-
+        The organization is responsible for taking the following actions when unauthorized
+        components are detected:
+          - disabling network access by such components
+          - isolating the components
+          - notifying organization-defined personnel or roles
+
+- control_key: CM-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational processes to include in the information system
+        component inventory information, a means for identifying
+        by name, position, and/or role, individuals responsible/accountable
+        for administering those components, is outside the scope
+        of Red Hat Advanced Cluster Management configuration.
+
+- control_key: CM-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational verification that all components within the
+        authorization boundary of the information system are not
+        duplicated in other information system component
+        inventories is outside the scope of Red Hat Advanced Cluster Management configuration.
+
+- control_key: CM-8 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization is responsible for including assessing component configurations and any
+        approved deviations to current deployed configurations in the information system component
+        inventory.
+
+- control_key: CM-8 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization is responsible for providing a centralized repository for the inventory of
+        information system components.
+
+- control_key: CM-8 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management configuration guidance.
+
+- control_key: CM-8 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Organizational assignment of organization-defined acquired information
+        system components to an information system is outside the scope
+        of Red Hat Advanced Cluster Management configuration.
+    - key: b
+      text: |-
+        Organizational processes to receive an acknowledgement from the
+        information system owner of the assignment in CM-8(8)(a) is outside
+        the scope of Red Hat Advanced Cluster Management configuration.
+
+- control_key: CM-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management configuration guidance.
+    - key: b
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management configuration guidance.
+    - key: c
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management configuration guidance.
+    - key: d
+      text: |-
+        This control reflects organizational processes outside the scope
+        of Red Hat Advanced Cluster Management configuration guidance.
+
+- control_key: CM-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational processes to assign responsibility for developing the
+        configuration management process to organizational personnel that are
+        not directly involved in information system development are outside
+        the scope of Red Hat Advanced Cluster Management configuration.
+
+- control_key: CM-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-370
+    - key: b
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-370
+    - key: c
+      text: |-
+        Controlling and documenting the use of peer-to-peer file sharing
+        technology to ensure that this capability is not used for the
+        unauthorized distribution, display, performance, or reproduction
+        of copyrighted work is an organizational control outside the scope
+        of Red Hat Advanced Cluster Management configuration.
+
+- control_key: CM-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Establishment of organizational restrictions on open source software
+        is outside the scope of Red Hat Advanced Cluster Management configuration.
+
+- control_key: CM-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-371
+    - key: b
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-371
+    - key: c
+      text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-371
+
+- control_key: CM-11 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system alerting organization-defined personnel or roles when the
+        unauthorized installation of software is detected is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes and is the responsibility of the underlying
+        OpenShift and/or third-party products.
+
+- control_key: CM-11 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-372
