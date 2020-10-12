@@ -1,0 +1,702 @@
+##
+## BEGINNING OF:
+## CONTINGENCY PLANNING
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: CP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Developing an organization-level contingency planning policy is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Review and updating an organizational-level contingency planning
+        policy is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Developing an organization-level contingency planning policy is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Distribution of an organizational-level contingency planning
+        policy is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: c
+      text: |-
+        Coordinating contingency planning activities with incident handling
+        activities is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: d
+      text: |-
+        Reviewing organizational contingency plans for the information system
+        at an organization-defined frequency is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: e
+      text: |-
+        Organizational processes to update the contingency plan are outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: f
+      text: |-
+        Organizational communication plans regarding the contingency plan are outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: g
+      text: |-
+        Protection of the contingency plan from unauthorized disclosure and
+        modification is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Coordinating contingency plan development with organizational elements
+        responsible for related plans is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes
+        configuration.
+
+- control_key: CP-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+        A complete control response is planned. Engineering progress can be tracked via:
+        https://issues.redhat.com/browse/ACM-373
+
+- control_key: CP-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Planning for the resumption of essential missions and business
+        functions within an organization-defined time period of contingency
+        plan activation is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Planning for the resumption of all missions and business
+        functions within an organization-defined time period of contingency
+        plan activation is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Planning for the continuance of essential missions and business
+        functions with little or no loss of operational continuity and
+        sustainment of that continuity until full information system
+        restoration at primary processing and/or storage sites
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Coordination of organizational contingency plans with the
+        contingency plans of external service providers to ensure that
+        contingency requirements can be satisfied is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Providing contingency training to information system users consistent
+        with assigned roles and responsibilities within an organization-defined
+        time period of assuming a contingency role or responsibility is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Providing contingency training to information system users consistent
+        with assigned roles and responsibilities when required by information
+        system changes is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: c
+      text: |-
+        Providing contingency training to information system users consistent
+        with assigned roles and responsibilities at an organization-defined
+        frequency is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Incorporating simulated events into contingency training to
+        facilitate effective response by personnel in crisis
+        situations is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employment of automated mechanisms to provide a more thorough and
+        realistic contingency training environment is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Testing the contingency plan for the information system at an
+        organization-defined frequency using organization-defined tests
+        to determine the effectiveness of the plan and the organizational
+        readiness to execute the plan is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Organizational reviews of the contingency plan test results is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Organizational process to initiate corrective actions, if needed,
+        are outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Coordinating contingency plan testing with organizational
+        elements responsible for related plans is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Organizational testing of the contingency plan at the alternate
+        processing site to familiarize contingency personnel with the
+        facility and available resources is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Organizational testing of the contingency plan at the alternate
+        processing site to evaluate the capabilities of the alternate
+        processing site to support contingency operations is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CP-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Establishment of an alternative storage site including
+        necessary agreements to permit the storage and retrieval
+        of information system backup information is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Ensuring that the alternative storage site provides information
+        security safeguards equivalent to that of the primary site
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Identification of an alternate storage site that is
+        separated from the primary storage site to reduce
+        susceptibility to the same threats is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Identification of potential accessibility problems to the alternate
+        storage site in an event of an area-wide disruption or disaster and
+        the outline of explicit mitigation actions is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        Ensuring that equipment and supplies required to transfer and resume
+        operations are available at the alternate processing site or contracts
+        are in place to support delivery to the site within the
+        organization-defined time period for transfer/resumption is an
+        organizational control outside the configuration of Red Hat Advanced Cluster Management for
+        Kubernetes.
+    - key: c
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Identification of an alternate processing site that is
+        separated from the primary processing site to reduce
+        susceptibility to the same threats is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Identification of potential accessibility problems to the
+        alternate processing site in the event of an area-wide
+        disruption or disaster and outline of explicit mitigation
+        actions is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Development of alternate processing site agreements that contain
+        priority-of-service provisions in accordance with organizational
+        availability requirements (including recovery time objectives)
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CP-7 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational planning and preparation for circumstances
+        that preclude returning to the primary processing site
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Establishment of alternate telecommunications services
+        is outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Development of primary and alternate telecommunications service
+        agreements that contain priority-of-service provisions in accordance
+        with organizational availability requirements (including recovery
+        time objectives) is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: b
+      text: |-
+        Requests for Telecommunications Service Priority for all
+        telecommunucations services used for national security emergency
+        preparedness in the event that the primary and/or alternate
+        telecommunications services are provided by a common carrier
+        are outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Obtaining alternate telecommunications services to reduce
+        the likelihood of sharing a single point of failure with
+        primary telecommunications services is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Obtaining alternate telecommunications services from providers
+        that are separated from primary service providers to reduce
+        susceptibility to the same threats is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-8 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Requiring primary and alternate telecommunications service
+        providers to have contingency plans is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        Reviewing provider contingency plans to ensure that the plans
+        meet organizational contingecny requirements is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Obtaining evidence of contingency testing/training by providers
+        at an organization-defined frequency is outside the plannedscope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-8 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Testing alternate telecommunication services at
+        an organization-defined frequency is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for conducting daily incremental and
+        weekly full backups of user-level information contained in the
+        information system. Additional requirements and guidance include
+        maintaining at least three backup copies of user-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occurs, and how three backup copies are
+        maintained.
+
+        Conducting backups of user-level information to include the backups of
+        a centralized identity provider is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b
+      text: |-
+        The customer will be responsible for conducting daily incremental and
+        weekly full backups of system-level information contained in the
+        information system. Additional requirements and guidance include
+        maintaining at least three backup copies of system-level information (at
+        least one of which is available online) or provides an equivalent
+        alternative. A successful control response will detail how backups of
+        user-level information occurs, and how three backup copies are
+        maintained.
+
+        Conducting backups of system-level information is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: c
+      text: |-
+        The customer will be responsible for conducting daily incremental and
+        weekly full backups of information system documentation including
+        security-related documentation.
+
+        Conducting backups on information system and security-related documentation
+        is an organizational control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+    - key: d
+      text: |-
+        The customer will be responsible for protecting the confidentiality,
+        integrity, and available of backup information at storage locations.
+        Additional requirements and guidance include determining
+        what elements of the cloud environment require the Information System
+        Backup control. The customer will determine how Information System
+        Backup is going to be verified and appropriate periodicity of the
+        check.
+
+        Protecting the confidentiality, integrity, and availability of backup
+        information at separate storage locations an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-9 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The testing of backup information to verify media reliability
+        and information integrity is an organizational control outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: CP-9 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization using a sample of backup information in the restoration of selected
+        information system functions as part of contingency plan testing is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: CP-9 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Storing backup copies of organization-defined critical information
+        system software and other security-related information in a separate
+        facility or in a fire-rated container that is not collocated with the
+        operational system is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+
+- control_key: CP-9 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CP-9 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-9 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-9 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for documenting how to reconstitute
+        their Red Hat Advanced Cluster Management for Kubernetes environment. A successful control
+        response will detail processes used to fully recover/restore the Red Hat Advanced Cluster
+        Management for Kubernetes environment.
+
+- control_key: CP-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: CP-10 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: CP-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The Red Hat Advanced Cluster Management for Kubernetes providing the capability to employ
+        organization-defined alternative communications protocols in support of maintaining
+        continuity of operations is the responsibility of the underlying operations layer which is
+        OpenShift.
+
+- control_key: CP-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A complete control response is planned. Progress can be tracked via:
+
+
+- control_key: CP-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employment of organization-defined alternative or
+        supplemental security mechanisms for satisfying
+        organization-defined security functions when the primary
+        means of implementing Red Hat Advanced Cluster Management for Kubernetes security function
+        is unavailable or compromised is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration guidance.
