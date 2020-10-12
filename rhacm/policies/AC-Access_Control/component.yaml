@@ -575,7 +575,13 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        ''
+        Enforcing a role-based access control policy over defined subjects and
+        objects and controlling access based upon organization-defined roles and
+        users authorized to assume such roles is outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for enforcing role-based access controls.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-8
@@ -585,7 +591,14 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        ''
+        Enforcing the revocation of access authorizations resulting from
+        changes to the security attributes of subjects and objects based on
+        organization-defined fules governing the timing of revocations of access
+        authorizations is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for enforcing access authorization revocations.
 
 # NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-9
@@ -594,12 +607,167 @@
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |-
-        ''
+    - key: a
+      text: |-
+        Not releasing information outside of the established system boundaries
+        unless the receiving organization-defined information system or system
+        component provides organization-defined security safeguards is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes.
 
-        # NIST Control URL:
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for enforcing controlled release information.
+    - key: b
+      text: |-
+        Not releasing information outside of the established system boundaries
+        unless the organization-defined security safeguards are used to validate
+        the appropriateness of the information designated for release is outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for enforcing controlled release information.
+
+# NIST Control URL:
 #   https://nvd.nist.gov/800-53/Rev4/control/AC-3#enhancement-10
 - control_key: AC-3 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Employing an audited override of automated access control mechanisms
+        under organization-defined conditions is outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for enforcing the audited override of access control mechanisms.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4
+- control_key: AC-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Enforcing approved authorizations for controlling the flow of
+        information within the system and between interconnected systems based
+        on organization-defined information flow control policies is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for information flow enforcement.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-1
+- control_key: AC-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Using security attributes with information, source, and desstination
+        objects to enforce information flow control policies as a basis for flow
+        control decisions is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for information flow enforcement.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-2
+- control_key: AC-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Using protected processing domains to enforce organization-defined
+        information flow control policiesas a basis for flow control decisions
+        is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on OpenShift
+        for information flow enforcement.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-3
+- control_key: AC-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Enforcing dynamic information flow control based on organization-defined
+        policies is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-4
+- control_key: AC-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Preventing encrypted information from bypassing content-checking
+        mechanisms by either: decrypting the information; blocking the flow of
+        the encrypted information; terminating communications sessions
+        attempting to pass encrypted information; or organization-defined
+        procedures or methods is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-5
+- control_key: AC-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Enforcing organization-defined limitations on embedding data types
+        withing other data types is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-6
+- control_key: AC-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Enforcing information flow control based on organization-defined
+        metadata is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-7
+- control_key: AC-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Enforcing organization-defined one-way information flows using hardware
+        mechanisms is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-8
+- control_key: AC-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Enforcing information flow control using organization-defined security
+        policy filters as a basis for flow control decisions for
+        organization-defined information flows is outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes.
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-9
+- control_key: AC-4 (9)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
@@ -608,11 +776,131 @@
         ''
 
 # NIST Control URL:
-#   https://nvd.nist.gov/800-53/Rev4/control/AC-4
-- control_key: AC-4
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-10
+- control_key: AC-4 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: unknown
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-11
+- control_key: AC-4 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-12
+- control_key: AC-4 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-13
+- control_key: AC-4 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-14
+- control_key: AC-4 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-15
+- control_key: AC-4 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-16
+- control_key: AC-4 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-17
+- control_key: AC-4 (17)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-18
+- control_key: AC-4 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-19
+- control_key: AC-4 (19)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-20
+- control_key: AC-4 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-21
+- control_key: AC-4 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        ''
+
+# NIST Control URL:
+#   https://nvd.nist.gov/800-53/Rev4/control/AC-4#enhancement-22
+- control_key: AC-4 (22)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
   narrative:
     - text: |-
         ''
