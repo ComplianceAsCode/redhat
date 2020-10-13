@@ -1,0 +1,284 @@
+##
+## BEGINNING OF:
+## RISK ASSESSMENT
+##
+## Reminder of "implementation_status" codes:
+##  - implementation_status: unsatisfied
+##  - implementation_status: unknown
+##  - implementation_status: planned
+##  - implementation_status: partial
+##  - implementation_status: complete
+##  - implementation_status: none
+
+- control_key: RA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: a.1
+      text: |-
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: a.2
+      text: |-
+        Organizational development, documentation, and dissemination to
+        organization-defined personnel or roles a risk assessment policy
+        and procedures is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: b
+      text: |-
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b.1
+      text: |-
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: b.2
+      text: |-
+        Organizational review and updates to the risk assessment policy
+        and risk assessment procedures is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: RA-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Organizational processes to categorize information and information
+        systems in accordance with applicable federal laws, Executive
+        Orders, directives, policies, regulations, standards, and
+        guidance, are outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: b
+      text: |-
+        Organizational processes to document the security categorization
+        results (including supporting rationale) in the security plan for
+        the information system are outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Organizational processes to ensure that the authorizing official
+        or authorizing official designated representative reviews and
+        approved the security categorization decision are outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: RA-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Organizational processes to conduct an assessment of risk,
+        including the likelihood and magnitude of harm, from the unauthorized
+        access, use, disclosure, disruption, modification, or desctruction of
+        the information system and the information it processes, stores, or
+        transmits, are outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: b
+      text: |-
+        Organizational processes to document risk assessment results in
+        security plans, risk assessment reports, or organization-defined
+        documents, are outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: c
+      text: |-
+        Organizational processes to review risk assessment results at
+        an organization-defined frequency are outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |-
+        Organizational processes to disseminate risk assessment results to
+        organization-defined personnel or roles are outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: e
+      text: |-
+        Organizational processes to update the risk assessment at an
+        organization-defined frequency or whenever there are significant
+        changes to the information system or environment of operation
+        (including the identification of new threats and vulnerabilities),
+        or other conditions that may impact the security state of the system,
+        are outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: RA-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: RA-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        The organization employing vulnerability scanning tools and techniques that facilitate
+        interoperability among tools and automate parts of the vulnerability management process by
+        using standards reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+        To facilitate creation of organizational procedures/policies, Red Hat Advanced Cluster
+        Management for Kubernetes provides functionality to employ vulnerability scanning tools
+        and automate parts of the vulnerability management process via a security policy.
+        Documentation on how to create a security policy can be viewed at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/security/index?lb_target=production#governance-and-risk
+    - key: c
+      text: |-
+        The organization analyzing vulnerability scan reports and results from security control
+        assessments reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: d
+      text: |-
+        The organization remediating legitimate vulnerabilities organization-defined response
+        times in accordance with an organizational assessment of risk reflects organizational
+        procedures/policies, and is not applicable to the configuration of Red Hat Advanced Cluster
+        Management for Kubernetes.
+
+        To facilitate creation of organizational procedures/policies, Red Hat Advanced Cluster
+        Management for Kubernetes provides functionality to remediate identified vulnerabilities
+        via a security policy. Documentation on how to create a security policy can be viewed at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/security/index?lb_target=production#governance-and-risk
+    - key: e
+      text: |-
+        Organizational processes to share information obtained from the
+        vulnerability scanning process and security control assessments
+        with organization-defined personnel or roles to help eliminate
+        similar vulnerabilities in other information systems (i.e.,
+        systemic weaknesses or deficiences) are outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: RA-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization determining what information about the information system is discoverable
+        by adversaries and subsequently takes organization-defined corrective actions against
+        discoverable information reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: RA-5 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: RA-5 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: RA-5 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        The organization determining what information about the information system is discoverable
+        by adversaries and subsequently takes organization-defined corrective actions against
+        discoverable information reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: RA-5 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implementing privileged access authorization to
+        organization-identified information system components for selected organization-defined
+        vulnerability scanning activities is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the underlying OpenShift
+        layer to provide and implement privileged access.
+
+- control_key: RA-5 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization employing automated mechanisms to compare the results of vulnerability
+        scans over time to determine trends in information system vulnerabilities is an
+        organizational process/procedure outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: RA-5 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: RA-5 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational review of historic audit logs to determine if a
+        vulnerability identified in the information system has been
+        previously exploited is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: RA-5 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST.
+
+- control_key: RA-5 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational processes to correlate the output from vulnerability
+        scanning tools to determine the presence of
+        multi-vulnerability/multi-hop attack vectors are outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: RA-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Organizational employment of a technical surveillance countermeasures
+        survey at organization-defined locations at an organization-defined
+        frequency or when organization-defeined events or indicators
+        occur is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
