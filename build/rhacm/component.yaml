@@ -5942,29 +5942,43 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing, documenting, and dissemintating to organization-defined
+        personnel or roles of incident response policies and procedures is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
     - key: a.1
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing, documenting, and dissemintating to organization-defined
+        personnel or roles an incident response policy that addresses purpose,
+        scope, roles, responsibilities, management commitment, coordination
+        among organizational entities, and compliance is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: a.2
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing, documenting, and dissemintating to organization-defined
+        personnel or roles procedures to facilitate the implementation of the
+        incident response policy and associated incident response controls is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
     - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Reviewing and updating incident response policy and procedures is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
     - key: b.1
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Reviewing and updating the current incident response policy on an
+        organzation-defined frequency is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
     - key: b.2
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Reviewing and updating the current incident response procedures on an
+        organization-defined frequency is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-2
   standard_key: NIST-800-53
@@ -5972,17 +5986,25 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Providing incident response training to information system users
+        consistent with assigned roles and responsibilities within an
+        organization-defined time period of assuming an incident response role
+        or responsibility is an organizational control outside the scope of Red
+        Hat Advanced Cluster Management for Kubernetes configuration.
     - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Providing incident response training to information system users
+        consistent with assigned roles and responsibilities when required by
+        information system changes is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: c
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Providing incident response training to information system users
+        consistent with assigned roles and responsibilities on a TBD time
+        thereafter is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 ##
 ## Note to content authors:
@@ -5997,45 +6019,56 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Incorporating simulated events into incident response training to
+        facilitate effective response by personnel in crisis situations is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-2 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing automated mechanisms to provide a more thorough and realistic
+        incident response training environment is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-3
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Testing the incident response capability for the information system on
+        an organization-defined frequency using organization-defined tests to
+        determine the incident response effectiveness and documents the results
+        is an organizational control outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes configuration.
 
 - control_key: IR-3 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing automated mechanisms to more thoroughly and effectively test
+        the incident response capability is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-3 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Coordinating incident response testing with organizational elements
+        responsible for related plans is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-4
   standard_key: NIST-800-53
@@ -6043,26 +6076,33 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Implementing an incident handling capability for security incidents that
+        includes preparation, detection and analysis, containment, eradication,
+        and recovery is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Coordinating incident handling activities with contingency planning
+        activities is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: c
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Incorporating lessons learned from ongoing incident handling activities
+        into incident response procedures, training, and testing, and implements
+        the resulting changes accordingly is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-4 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing automated mechanisms to support the incident handling process
+        is an organizational control outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes configuration.
 
 ##
 ## Note to content authors:
@@ -6077,90 +6117,111 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Including dynamic reconfiguration of organization-defined information
+        system components as part of the incident response capability is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-4 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Identifying organization-defined classes of incidents and
+        organization-defined actions to take in response to classes of incidents
+        to ensure continuation of organizational missions and business
+        functions. is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-4 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Correlating incident information and individual incident responses to
+        achieve an organization-wide perspective on incident awareness and
+        response is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-4 (5)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Implementing a configurable capability to automatically disable the
+        information system if organization-defined security violations are
+        detected is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-4 (6)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Implementing incident handling capability for insider threats is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-4 (7)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Coordinating incident handling capability for insider threats across
+        organization-defined components or elements of the organization is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-4 (8)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Coordinating with organization-defined external organizations to
+        correlate and share organization-defined incident information to achieve
+        a cross-organization perspective on incident awareness and more
+        effective incident responses is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-4 (9)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing organization-defined dynamic response capabilities to
+        effectively respond to security incidents is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-4 (10)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Coordinating incident handling activities involving supply chain events
+        with other organizations involved in the supply chain is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-5
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedure/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Tracking and documenting information system security incidents is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 ##
 ## Note to content authors:
@@ -6177,9 +6238,11 @@ satisfies:
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing automated mechanisms to assist in the tracking of security
+        incidents and in the collection and analysis of incident information is
+        an organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-6
   standard_key: NIST-800-53
@@ -6187,58 +6250,74 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Requiring personnel to report suspected security incidents to the
+        organizational incident response capability within an
+        organization-defined time period is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
     - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Reporting security incident information to organization-defined
+        authorities is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-6 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing automated mechanisms to assist in the reporting of security
+        incidents is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-6 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Reporting information system vulnerabilities associated with reported
+        security incidents to organization-defined personnel or roles is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-6 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Providing security incident information to other organizations involved
+        in the supply chain for information systems or information system
+        components related to the incident is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-7
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - text: |-
+        Providing an incident response support resource, integral to the
+        organizational incident response capability that offers advice and
+        assistance to users of the information system for the handling and
+        reporting of security incidents is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-7 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing automated mechanisms to increase the availability of incident
+        response-related information and support is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-7 (2)
   standard_key: NIST-800-53
@@ -6246,13 +6325,16 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Establishing a direct, cooperative relationship between its incident
+        response capability and external providers of information system
+        protection capability is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
     - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Identifying organizational incident response team members to the
+        external providers is an organizational control outside the scope of Red
+        Hat Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-8
   standard_key: NIST-800-53
@@ -6260,61 +6342,85 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        The development of an incident response plan is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: a.1
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that provides the organization with
+        a roadmap for implementing its incident response capability is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
     - key: a.2
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that describes the structure and
+        organization of the incident response capability is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: a.3
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that provides a high-level approach
+        for how the incident response capability fits into the overall
+        organization is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: a.4
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that meets the unique requirements
+        of the organization, which relate to mission, size, structure, and
+        functions is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: a.5
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that defines reportable incidents
+        is an organizational control outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes configuration.
     - key: a.6
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that provides metrics for measuring
+        the incident response capability within the organization is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
     - key: a.7
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that defines the resources and
+        management support needed to effectively maintain and mature an incident
+        response capability is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
     - key: a.8
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Developing an incident response plan that is reviewed and approved by
+        organization-defined personnel or roles is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
     - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Distributing copies of the incident response plan to
+        organization-defined incident response personnel and organizational
+        elements is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: c
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Reviewing the incident response plan on an organization-defined
+        frequency is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: d
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Updating he incident response plan to address system/organizational
+        changes or problems encountered during plan implementation, execution,
+        or testing is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: e
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Communicating incident response plan changes to organization-defined
+        incident response personnel and organizational elements is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
     - key: f
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Protecting the incident response plan from unauthorized disclosure and
+        modification is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-9
   standard_key: NIST-800-53
@@ -6322,74 +6428,97 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - key: a
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Responding to information spills by identifying the specific information
+        involved in the information system contamination is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: b
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Responding to information spills by alerting organization-defined
+        personnel or roles of the information spill using a method of
+        communication not associated with the spill is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
     - key: c
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Responding to information spills by isolating the contaminated
+        information system or system component is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
     - key: d
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Responding to information spills by eradicating the information from the
+        contaminated information system or component is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: e
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Responding to information spills by identifying other information
+        systems or system components that may have been subsequently
+        contaminated is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: f
-      text: |
-        This control reflects organizational procedures/policies, and is not
-        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+      text: |-
+        Responding to information spills by performing other
+        organization-defined actions is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-9 (1)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Assigning organization-defined personnel or roles with responsibility
+        for responding to information spills is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: IR-9 (2)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Providing information spillage response training organization-defined
+        frequency is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-9 (3)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Implementing organization-defined procedures to ensure that
+        organizational personnel impacted by information spills can continue to
+        carry out assigned tasks while contaminated systems are undergoing
+        corrective actions is an organizational control outside the scope of Red
+        Hat Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: IR-9 (4)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Employing organization-defined security safeguards for personnel exposed
+        to information not within assigned access authorizations is an
+        organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
 
 - control_key: IR-10
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: not applicable
   narrative:
-    - text: |
-        This control reflects organizational procedures/policies and is not
-        applicable to Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - text: |-
+        Establishing an integrated team of forensic/malicious code analysts,
+        tool developers, and real-time operations personnel is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
 ##
 ## BEGINNING OF:
 ## MAINTENANCE
