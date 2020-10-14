@@ -1951,12 +1951,43 @@ satisfies:
   narrative:
     - key: a
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        The development, documentation, and dissemination to organization-defined personnel
+        or roles is an organizational control outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration.
+    - key: a.1
+      text: |
+        The development, documentation, and dissemination to
+        organization-defined personnel or roles a security awareness and
+        training policy that addresses purpose, scope, roles, responsibilities,
+        management commitment, coordination among organizational entities, and
+        compliance is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
+    - key: a.2
+      text: |
+        The development, documentation, and dissemination to
+        organization-defined personnel or roles procedures to facilitate the
+        implementation of the security awareness and training policy and
+        associated security awareness and training controls is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: b
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Reviewing and updating the current security awareness training policies
+        and procedures is an organizational control outside the scope of Red Hat
+        Advanced Cluster
+        Management for Kubernetes configuration.
+    - key: b.1
+      text: |
+        Reviewing and updating the current security awareness and training
+        policy on an organization-defined frequency is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+    - key: b.2
+      text: |
+        Reviewing and updating the current security awareness and training
+        procedures on an organization-defined frequency is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
 
 - control_key: AT-2
   standard_key: NIST-800-53
@@ -1965,16 +1996,25 @@ satisfies:
   narrative:
     - key: a
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing basic security awareness training to information system users
+        (including managers, senior executives, and contractors) as part of
+        initial training for new users is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
     - key: b
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing basic security awareness training to information system users
+        (including managers, senior executives, and contractors) when required
+        by information system changes is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
     - key: c
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing basic security awareness training to information system users
+        (including managers, senior executives, and contractors) on an
+        organizational-defined frequency is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: AT-2 (1)
   standard_key: NIST-800-53
@@ -1982,8 +2022,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Including practical exercises in security awareness training that
+        simulate actual cyber attacks is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: AT-2 (2)
   standard_key: NIST-800-53
@@ -1991,8 +2033,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Including ecurity awareness training on recognizing and reporting
+        potential indicators of insider threat is an organizational control
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: AT-3
   standard_key: NIST-800-53
@@ -2001,16 +2045,23 @@ satisfies:
   narrative:
     - key: a
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing  role-based security training to personnel with assigned
+        security roles and responsibilities before authorizing access to the
+        information system or performing assigned duties is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: b
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing  role-based security training to personnel with assigned
+        security roles and responsibilities when required by information system
+        changes is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
     - key: c
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing  role-based security training to personnel with assigned
+        security roles and responsibilities on an organizational-defined
+        frequency is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: AT-3 (1)
   standard_key: NIST-800-53
@@ -2018,8 +2069,10 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing organization-defined personnel or roles with initial and an
+        organization-defined frequency training in the employment and operation
+        of environmental controls is an organizational control outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: AT-3 (2)
   standard_key: NIST-800-53
@@ -2027,8 +2080,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing organization-defined personnel or roles with initial and an
+        organization-defined frequency training in the employment and operation
+        of physical security controls is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
 
 - control_key: AT-3 (3)
   standard_key: NIST-800-53
@@ -2036,8 +2092,9 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Including practical exercises in security training that reinforce
+        training objectives is an organizational control outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: AT-3 (4)
   standard_key: NIST-800-53
@@ -2045,8 +2102,11 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Providing training to its personnel on organization-defined indicators
+        of malicious code to recognize suspicious communications and anomalous
+        behavior in organizational information systems is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
 
 - control_key: AT-4
   standard_key: NIST-800-53
@@ -2055,12 +2115,16 @@ satisfies:
   narrative:
     - key: a
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Documenting and monitoring individual information system security
+        training activities including basic security awareness training and
+        specific information system security training is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
     - key: b
       text: |
-        This control reflects organizational procedure/policy and is not
-        applicable to component-level configuration.
+        Retaining individual training records for an organization-defined time
+        period is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
 
 - control_key: AT-5
   standard_key: NIST-800-53
@@ -2068,8 +2132,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        As of NIST 800-53 rev4 this control was withdrawn
-        and incorporated into PM-15.
+        This control was withdrawn by NIST, and incorporated into PM-15.
 ##
 ## BEGINNING OF:
 ## AUDIT AND ACCOUNTABILITY
