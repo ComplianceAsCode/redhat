@@ -3,7 +3,7 @@ name: Ansible Tower
 metadata:
   description: Ansible Tower
   maintainers:
-    - Shawn Wells <shawn@redhat.com>
+    - NAPS Compliance Owners <compliance@redhat.com>
 
 components:
   - ./policies/AC-Access_Control

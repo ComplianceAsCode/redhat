@@ -3,8 +3,7 @@ name: Red Hat ATO Pathways
 metadata:
   description: Aggregates all Red Hat OpenControl content.
   maintainers:
-    - Shawn Wells <shawn@redhat.com>
-    - Gabe Alford <galford@redhat.com>
+    - NAPS Compliance Owners <compliance@redhat.com>
 
 components:
   - build/ansible-tower
