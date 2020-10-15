@@ -3,7 +3,7 @@ name: Red Hat OpenStack Platform v13
 metadata:
   description: Red Hat OpenStack Platform v13
   maintainers:
-    - Shawn Wells <shawn@redhat.com>
+    - NAPS Compliance Owners <compliance@redhat.com>
 
 components:
     - ./policies/AC-Access_Control

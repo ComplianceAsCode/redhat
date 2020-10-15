@@ -3,8 +3,7 @@ name: Red Hat Advanced Cluster Management for Kubernetes
 metadata:
   description: Red Hat Advanced Cluster Management for Kubernetes
   maintainers:
-    - Carlos Matos <cmatos@redhat.com>
-    - Gabe Alford <galford@redhat.com>
+    - NAPS Compliance Owners <compliance@redhat.com>
 
 components:
   - ./policies/AC-Access_Control

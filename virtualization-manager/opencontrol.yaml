@@ -1,14 +1,12 @@
 schema_version: "1.0.0"
 name: Red Hat Virtualization Manager 
 metadata:
-  description: |
-    'Red Hat Virtualization Manager is the user interface to Red Hat
-    Virtualization.'
+  description: |-
+    Red Hat Virtualization Manager is the user interface to Red Hat
+    Virtualization.
 
   maintainers:
-    - Shawn Wells <shawn@redhat.com>
-    - Gabriel Alford <ralford@redhat.com>
-    - Ryan Barry <rbarry@redhat.com>
+    - NAPS Compliance Owners <compliance@redhat.com>
 
 components:
     - ./policies/AC-Access_Control

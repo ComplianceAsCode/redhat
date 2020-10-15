@@ -3,8 +3,7 @@ name: Red Hat Identity Management
 metadata:
   description: Red Hat Identity Management
   maintainers:
-    - Shawn Wells <shawn@redhat.com>
-    - Dmitri Pal <dpal@redhat.com>
+    - NAPS Compliance Owners <compliance@redhat.com>
 
 components:
     - ./policies/AC-Access_Control

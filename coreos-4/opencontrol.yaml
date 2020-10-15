@@ -3,7 +3,7 @@ name: CoreOS 4
 metadata:
   description: CoreOS 4
   maintainers:
-    - Shawn Wells <shawn@redhat.com>
+    - NAPS Compliance Owners <compliance@redhat.com>
 
 components:
   - ./policies/AC-Access_Control
