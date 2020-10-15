@@ -1,0 +1,1177 @@
+##
+## BEGINNING OF:
+## SYSTEM AND INFORMATION INTEGRITY
+##
+- control_key: SI-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: a.1
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: a.2
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b.1
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b.2
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for analyzing their Red Hat Advanced Cluster Management
+        for Kubernetes deployment for flaws, reporting on those flaws, and correcting them. A
+        successful control response will include a discussion of the process by which flaws are
+        discovered and remediated, as well as tools that are used to assist in detection and
+        remediation.
+    - key: b
+      text: |-
+        The customer will be responsible for testing Red Hat Advanced Cluster Management for
+        Kubernetes updates related to flaw remediation prior to installation. A successful control
+        response will discuss the testing process (e.g. the nature of the test environment, the
+        types of testing performed, the tools in testing, etc.).
+    - key: c
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: d
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization centrally managing the flaw remediation processes is an organizational
+        control outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the underlying Red Hat
+        Advanced Cluster Management for Kubernetes layer or third party tools for managing flaw
+        remediation.
+
+- control_key: SI-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be required to employ automated mechanisms per an
+        organizational-defined frequency to determine the state of information system components
+        with regard to flaw remediation on their information systems as
+        required by their organizations policy. A successful control response
+        will address the customers use of automated tools such as Nessus to
+        perform periodic and on-demand scans through their system to determine
+        the state of system components with regard to flaw remediation.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the underlying Red Hat
+        Advanced Cluster Management for Kubernetes layer or third party tools for managing flaw
+        remediation.
+
+- control_key: SI-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The customer is responsible for scanning for flaws in their
+        information systems and for measuring the time between flaw
+        identification and flaw remediation. A successful control response
+        will need to address the time between flaw identification and
+        remediation using timestamps and calculates the time elapsed
+        difference.
+    - key: b
+      text: |-
+        The customer will be responsible for scanning for flaws in their
+        information systems and for establishing benchmarks for taking
+        correctie actions according to their organizational policies. A
+        successful control response will need to address the use of
+        benchmarks to remediate high, and moderate risk flaws within a
+        customer defined period after a flaws discovery.
+
+- control_key: SI-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into SI-2.
+
+- control_key: SI-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization installing security-relevant software and firmware updates automatically
+        to organization-defined information system components is out of scope for direct
+        application to Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the underlying OpenShift layer
+        to install security-relevant software updates. This is done through the Lifecycle Manager
+        (OLM) operator.
+
+- control_key: SI-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Removal of previous versions of Red Hat Advanced Cluster Management for Kubernetes an
+        organization policy and procedure control and is out of scope for direct application to
+        Red Hat Advanced Cluster Management for Kubernetes.
+
+        Red Hat Advanced Cluster Management for Kubernetes relies on the underlying OpenShift layer
+        to remove previous versions. This is done through the Lifecycle Manager (OLM) operator.
+
+- control_key: SI-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The customer is responsible for ensuring that they employ malicious code protection at
+        information system entry, and exit points to detect and eradicate malicious code. A
+        successful control response will need to address use of code protection mechanisms to
+        protect assets from malicious software (i.e. Viruses, malware, rootkits, worms, and
+        scripts). In regards to Red Hat Advanced Cluster Management for Kubernetes, this is
+        generally through the use of third party tools.
+    - key: b
+      text: |-
+        Updating malicious code protection mechanisms whenever new releases
+        are available in accordance with organizational configuration
+        management policy and procedures is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Configuring malicious code protection mechanisms is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c.1
+      text: |-
+        Performing periodic scans of the information system per organization-defined frequency
+        and real-time scans of files from external sources via endpoints or network entry/exit
+        points as the files are downloaded, opened, or executed in accordance with organizational
+        security policy is an organizational control outside
+        the scope of Red Hat Advanced Cluster Management for Kubernetes configuration.
+    - key: c.2
+      text: |-
+        Blocking malicious code, quarantining malicious code, sending alerts to administrator, or
+        some other organization-defined action in response to malicious code detection is an
+        organizational control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+    - key: d
+      text: |-
+        Addressing the receipt of false positives during malicious code detection and eradication
+        and the resulting potential impact on the availability of the information system is an
+        organizational control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+
+- control_key: SI-3 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+       The customer is responsible for ensuring that their malicious code
+       protection mechanisms are centrally managed. A successful control
+       response will need to address that the planning, implementing,
+       assessing, authorizing and monitoring of their malicious code
+       protection mechanism is centered in one location.
+
+- control_key: SI-3 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer is responsible for ensuring that they update their
+        malicious code protection mechanisms automatically when new versions/
+        definitions become available. A successful control response will need
+        to address that the employed malicious code protection
+        mechanisms definitions are configured to be updated automatically.
+
+- control_key: SI-3 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into AC-6(10).
+
+- control_key: SI-3 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system updating malicious code protection mechanisms only when directed by
+        a privileged user is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes and is the responsiblity of the underlying OpenShift layer which manages
+        updates through the Lifecycle Manager (OLM) operator.
+
+- control_key: SI-3 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-3 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-3 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer is responsible for ensuring that they implement a
+        nonsignature-based malicious code detection mechanism on their
+        information system. A successful control response will need to address
+        a nonsignature based detection mechanism that can detect, analyze and
+        describe the characteristics or behavior of malicious code and
+        could provide safeguards against malicious code for which signatures
+        do not yet exist.
+
+- control_key: SI-3 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system detecting organization-defined unauthorized operating system
+        commands through the kernel application programming interface at organization-defined
+        information system hardware components and issues a warning, audits the command execution,
+        and/or prevents the execution of the command is outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes and is the responsiblity of the underlying OpenShift
+        layer.
+
+- control_key: SI-3 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implements organization-defined security safeguards to authenticate
+        organization-defined remote commands is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes and is the responsiblity of the underlying OpenShift layer.
+
+- control_key: SI-3 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: a.1
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: a.2
+      text: |-
+        Monitoring the system to detect unauthorized local, network, and remote connections is an
+        organizational control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration. Functionality to meet this control can be provided by a third
+        party vendor.
+    - key: b
+      text: |-
+        Identifying unauthorized use of the information system through organization-defined
+        techniques and methods is an organizational control outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes configuration. Functionality to meet this control can be
+        provided by a third party vendor.
+    - key: c
+      text: |-
+        Deploying monitoring devices is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration. Functionality to meet this
+        control can be provided by a third party vendor.
+    - key: c.1
+      text: |-
+        Deploying monitoring devices strategically within the information system to collect
+        organization-determined essential information is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration. Functionality to
+        meet this control can be provided by a third party vendor.
+    - key: c.2
+      text: |-
+        Deploying monitoring devices at ad hoc locations within the system to track specific types
+        of transactions of interest to the organization is an organizational control outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration. Functionality to
+        meet this control can be provided by a third party vendor.
+    - key: d
+      text: |-
+        Protecting information obtained from intrusion-monitoring tools from unauthorized access,
+        modification, and deletion is an organizational control outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration. Functionality to meet this
+        control can be provided by a third party vendor.
+    - key: e
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: f
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: g
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for integrating intrusion detection tools into the Red Hat
+        Advanced Cluster Management for Kubernetes environment, and documenting how this capability
+        is integrated into enterprise-wide intrusion detection systems when applicable. A
+        successful control response will address the workflow between local and enterprise
+        intrusion detection systems.
+
+- control_key: SI-4 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for deploying automated tools to
+        support near real-time analysis of events in their infrastructure.
+        This is frequently provided by corporate services outside the
+        information system, e.g. centralized security operation centers may
+        host an enterprise logging solution. A successful control response
+        will indicate who is responsible for hosting such capabilities, and
+        what technology and processes are in place to support near-realtime
+        analysis of events.
+
+- control_key: SI-4 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization employing automated tools to integrate intrusion detection tools into
+        access control and flow control mechanisms for rapid response to attacks by enabling
+        reconfiguration of these mechanisms in support of attack isolation and elimination is an
+        organizational control outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration.
+
+- control_key: SI-4 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for identifying how and where
+        network traffic is continuously monitored. Frequently this control
+        is inherited from network and Infrastructure as a Service providers,
+        such as Microsoft Azure. A successful control response will indicate
+        if this control is inherited from infrastructure providers, and if
+        not, how network traffic is continuously monitored.
+
+- control_key: SI-4 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for automatic notification of
+        appropriate staff when indicators of compromise are detected.
+        Frequently this is accomplished by automatic alerting to Security
+        Operations Center staff. A successful control response will indicate
+        who is notified, by name or position title(s), and the mechanism of
+        the notification.
+
+- control_key: SI-4 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into AC-6(10).
+
+- control_key: SI-4 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system notifying incident response personnel of detected suspicious events
+        and takes least-disruptive actions to terminate suspicious events is outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration and is the responsiblity
+        of the underlying OpenShift layer.
+
+- control_key: SI-4 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization makes provisions so that encrypted communications traffic is visible to
+        information system monitoring tools is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration and is the responsiblity of the underlying
+        OpenShift layer.
+
+- control_key: SI-4 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: c
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes infrastructure does not have wireless
+        capabilities.
+
+- control_key: SI-4 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes infrastructure does not have wireless
+        capabilities.
+
+- control_key: SI-4 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for aggregating and correlating information from
+        monitoring tools, for multiple system components. This is frequently accomplished with
+        centralized audit reduction tools is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration and is the responsiblity of the underlying
+        OpenShift layer or a third party product.
+
+- control_key: SI-4 (17)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (18)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization analyzing outbound communications traffic at the external boundary of the
+        information system (i.e., system perimeter) and at interior points within the system (e.g.,
+        subsystems, subnetworks] to detect covert exfiltration of information is outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration and is the
+        responsiblity of the underlying OpenShift layer or a third party product.
+
+- control_key: SI-4 (19)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (20)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization implementing additional monitoring of privileged users is outside the
+        scope of Red Hat Advanced Cluster Management for Kubernetes configuration and is the
+        responsiblity of the underlying OpenShift layer or a third party product.
+
+- control_key: SI-4 (21)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-4 (22)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system detecting network services that have not been authorized or approved
+        by authorization or approval processes and audits or alerts organization-defined personnel
+
+
+- control_key: SI-4 (23)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for installing host-based monitoring mechanisms which is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration and
+        is the responsiblity of the underlying OpenShift layer.
+
+
+- control_key: SI-4 (24)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        The information system discovering, collecting, distributing, and uses indicators of
+        compromise is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration and is the responsiblity of the underlying OpenShift layer.
+
+- control_key: SI-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        Receiving information system security alerts, advisories, and directives from
+        organization-defined external organizations on an ongoing basis is an organizational
+        procedures/policies outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+        How to configure organization notifications for Red Hat security advisories on Red
+        Hat specific products can be accomplished following the following documentation:
+
+        https://access.redhat.com/security/updates/advisory
+    - key: b
+      text: |-
+        The organization generating internal security alerts, advisories, and directives as deemed
+        necessary is an organizational procedures/policies outside the scope of Red Hat Advanced
+        Cluster Management for Kubernetes configuration.
+    - key: c
+      text: |-
+        Disseminating security alerts, advisories, and directives to organization-defined personnel
+        or roles, organization-defined elements within the organization, organization-defined
+        external organizations are organizational procedures/policies outside the scope of Red Hat
+        Advanced Cluster Management for Kubernetes configuration.
+    - key: d
+      text: |-
+        Implementing security directives in accordance with established time frames or notifying
+        the issuing organization of the degree of noncompliance is an organizational
+        procedures/policies outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration.
+
+- control_key: SI-5 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for verifying the correct operation
+        of security functions within customer-controlled operating systems and
+        software. A successful control response will need to discuss the
+        security functions deemed necessary to verify, as well as the means
+        for testing the correct operation and resolving any issues found.
+    - key: b
+      text: |-
+        The customer will be responsible for performing security function
+        verification at customer-specified frequencies and under
+        customer-specified circumstances (to include the requirements stated
+        by FedRAMP). A successful control response will need to address the
+        rationale for selection of the specific frequency and circumstances
+        of security function verification.
+    - key: c
+      text: |-
+        The customer will be responsible for notifying appropriate personnel
+        of failed security verification tests. A successful control response
+        will need to outline the personnel or roles selected (to include
+        system administrators and security personnel as required by FedRAMP).
+    - key: d
+      text: |-
+        The customer will be responsible for performing appropriate actions
+        in response to anomalies in security unction verifiation. A successful
+        control response will need to discuss the actions taken (to include
+        notification of system administrators and security personnel as
+        required by FedRAMP) as well as the rationale for selecting these
+        actions.
+
+- control_key: SI-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into SI-6.
+
+- control_key: SI-6 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implementing automated mechanisms to support the management of
+        distributed security testing is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration and is the responsiblity of the underlying OpenShift layer.
+
+- control_key: SI-6 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization reports the results of security function verification to
+        organization-defined personnel is an organizational process/procedure outside the scope of
+        Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: SI-7
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for employing integrity verification
+        tools for customer-controlled operating systems and software. A
+        successful control response will need to discuss the tools in use and
+        the integrity-checking mechanisms these tools employ.
+
+- control_key: SI-7 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for performing integrity checks at
+        customer-specific frequencies and under customer-specified
+        circumstances (including frequencies and circumstances specified by
+        FedRAMP). A successful control response will need to identify the
+        criteria for performing integrity checking, as well as the rationale
+        for selecting those criteria.
+
+- control_key: SI-7 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization employing automated tools that provide notification to
+        organization-defined personnel or roles upon discovering discrepancies during integrity
+        verification is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: SI-7 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization employing centrally managed integrity verification tools is an
+        organizational process/procedure outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes configuration.
+
+- control_key: SI-7 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into AC-6(10).
+
+- control_key: SI-7 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system automatically shutting the information system down, restarting the
+        information system, implementing organization-defined security safeguards when integrity
+        violations are discovered is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration and is the responsiblity of the underlying OpenShift layer.
+
+- control_key: SI-7 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implementing cryptographic mechanisms to detect unauthorized changes
+        to software, firmware, and information is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration and is the responsiblity of the underlying
+        OpenShift layer.
+
+- control_key: SI-7 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for incorporating the detection of
+        customer-defined security-relevant changes into the customers incident
+        response capability. A successful control response will need to
+        outline the process for deeming particular changes as
+        security-relevant and the means by which the incident response
+        capability is invoked when needed.
+
+- control_key: SI-7 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system, upon detection of a potential integrity violation, provides the
+        capability to audit the event and generates an audit record, alerts current user, alerts
+        organization-defined personnel organization-defined other
+        actions
+
+- control_key: SI-7 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system verifying the integrity of the boot process of organization-defined
+        devices is outside the scope of Red Hat Advanced Cluster Management for
+        Kubernetes configuration and is the responsiblity of the underlying OpenShift layer.
+
+- control_key: SI-7 (10)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implementing security safeguards to protect the integrity of boot
+        firmware in organization-defined devices is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration and is the responsiblity of the underlying
+        OpenShift layer.
+
+- control_key: SI-7 (11)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-7 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization requireing that the integrity of user-installed software be verified prior
+        to execution is outside the scope of Red Hat Advanced Cluster Management for Kubernetes
+        configuration and is the responsiblity of the underlying OpenShift layer.
+
+- control_key: SI-7 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-7 (14)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        This control reflects organizational procedures/policies, and is not
+        applicable to the configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-7 (15)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implementing cryptographic mechanisms to authenticate software or
+        firmware components prior to installation is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration and is the responsiblity of the underlying
+        OpenShift layer.
+
+- control_key: SI-7 (16)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The organization preventing processes to execute without supervision for more than an
+        organization-defined time period reflects organizational procedures/policies that are
+        not applicable to the configuration of Red Hat Advanced Cluster Management for
+        Kubernetes.
+
+- control_key: SI-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: b
+      text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-8 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-9
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into AC-2, AC-3, AC-5 and AC-6.
+
+- control_key: SI-10
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for SI-10 is planned. Engineering progress can be
+        tracked via:
+
+        https://issues.redhat.com/browse/ACM-408
+
+- control_key: SI-10 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: d
+      text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+    - key: c
+      text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-10 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        The organization ensures that input validation errors are reviewed and resolved within an
+        organization-defined time period is an organizational procedures/policies outside the scope
+        of Red Hat Advanced Cluster Management for Kubernetes configuration.
+
+- control_key: SI-10 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for SI-10(3) is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-10 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for SI-10(4) is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-10 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-11
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        The information system generating error messages that provide information necessary for
+        corrective actions without revealing information that could be exploited by adversaries is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration and
+        is the responsiblity of the underlying OpenShift layer.
+    - key: b
+      text: |-
+        The information system revealing error messages only to organization-defined personnel is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration and
+        is the responsiblity of the underlying OpenShift layer.
+
+- control_key: SI-12
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for handling and retaining
+        information within, or hosted by, Red Hat Advanced Cluster Management for Kubernetes in
+        accordance with applicable federal laws, Executive Orders,
+        directives, policies, regulations, standards, and operational
+        requirements. A successful control response will need to outline
+        the specific requirements applicable to customer information
+        handling and retention, and the means by which those requirements
+        are met.
+
+- control_key: SI-13
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - key: a
+      text: |-
+        A control response for SI-13(a) is planned. Engineering progress can be
+        tracked via:
+
+    - key: b
+      text: |-
+        A control response for SI-13(b) is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-13 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control reflects organizational procedures/policies that are not applicable to the
+        configuration of Red Hat Advanced Cluster Management for Kubernetes.
+
+- control_key: SI-13 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        This control was withdrawn by NIST, and incorporated into SI-7(16).
+
+- control_key: SI-13 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for SI-13(3) is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-13 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        A control response for SI-13(4) is planned. Engineering progress can be
+        tracked via:
+    - key: b
+      text: |-
+        A control response for SI-13(4) is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-13 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for SI-13(5) is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for SI-14 is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-14 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: complete
+  narrative:
+    - text: |-
+        Red Hat Advanced Cluster Management for Kubernetes provides methods for attaining vendor
+        software from trusted vendor sources for online or disconnected environments. Documentation
+        on how to get trusted vendor software for Red Hat Advanced Cluster Management for
+        Kubernetes can be viewed at:
+
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html-single/install/index#install-on-disconnected-networks
+
+- control_key: SI-15
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: planned
+  narrative:
+    - text: |-
+        A control response for SI-15 is planned. Engineering progress can be
+        tracked via:
+
+- control_key: SI-16
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implementing organization-defined security safeguards to protect its
+        memory from unauthorized code execution is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes configuration and is the responsiblity of the underlying
+        operating system layer which OpenShift nodes operate under.
+
+- control_key: SI-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The information system implements fail-safe procedures when failure conditions occur is
+        outside the scope of Red Hat Advanced Cluster Management for Kubernetes configuration and
+        is the responsiblity of the underlying OpenShift layer.
