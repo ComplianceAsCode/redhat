@@ -1923,7 +1923,7 @@
     - text: |-
         A control response is planned. Progress can be tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-435
 
 - control_key: AC-25
   standard_key: NIST-800-53
@@ -1933,4 +1933,4 @@
     - text: |-
         A control response is planned. Progress can be tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-436
