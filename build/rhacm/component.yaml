@@ -1928,7 +1928,7 @@ satisfies:
     - text: |-
         A control response is planned. Progress can be tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-435
 
 - control_key: AC-25
   standard_key: NIST-800-53
@@ -1938,7 +1938,7 @@ satisfies:
     - text: |-
         A control response is planned. Progress can be tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-436
 ##
 ## BEGINNING OF:
 ## AWARENESS AND TRAINING CONTROLS
@@ -9205,13 +9205,13 @@ satisfies:
         A control response to SA-4(5)(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-453
     - key: b
       text: |-
         A control response to SA-4(5)(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-453
 
 ##
 ## Developers note on SA-4 (6):
@@ -9261,13 +9261,13 @@ satisfies:
         A control response to SA-4(7)(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-454
     - key: b
       text: |-
         A control response to SA-4(7)(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-454
 
 ##
 ## Developers note on SA-4 (8):
@@ -9284,7 +9284,7 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-455
 
 ##
 ## Developers note on SA-4 (9):
@@ -9643,7 +9643,7 @@ satisfies:
     - text: |-
         A control response is planned. Progress can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-456
 
 ##
 ## Developers note on SA-10 (4)
@@ -9657,7 +9657,7 @@ satisfies:
     - text: |-
         A control response is planned. Progress can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-457
 
 ##
 ## Developers note on SA-10 (4)
@@ -9671,7 +9671,7 @@ satisfies:
     - text: |-
         A control response is planned. Progress can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-458
 
 - control_key: SA-11
   standard_key: NIST-800-53
@@ -9719,7 +9719,7 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+        https://issues.redhat.com/browse/ACM-459
 
 - control_key: SA-11 (2)
   standard_key: NIST-800-53
@@ -9730,7 +9730,7 @@ satisfies:
         A control response to SA-11(e) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-460
 
 - control_key: SA-11 (3)
   standard_key: NIST-800-53
@@ -9742,13 +9742,13 @@ satisfies:
         A control response to SA-11(3)(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-461
     - key: b
       text: |-
         A control response to SA-11(3)(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-461
 
 - control_key: SA-11 (4)
   standard_key: NIST-800-53
@@ -9781,7 +9781,7 @@ satisfies:
         A control response to SA-11(e) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-463
 
 - control_key: SA-11 (7)
   standard_key: NIST-800-53
@@ -9792,7 +9792,7 @@ satisfies:
         A control response to SA-11(e) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-464
 
 - control_key: SA-11 (8)
   standard_key: NIST-800-53
@@ -9804,7 +9804,7 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+          https://issues.redhat.com/browse/ACM-465
 
 - control_key: SA-12
   standard_key: NIST-800-53
@@ -9914,7 +9914,7 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+        https://issues.redhat.com/browse/ACM-464
 
 - control_key: SA-12 (11)
   standard_key: NIST-800-53
@@ -10054,14 +10054,14 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+        https://issues.redhat.com/browse/ACM-469
     - key: b
       text: |-
         A complete control response is planned. To assist with this
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+        https://issues.redhat.com/browse/ACM-469
 
 - control_key: SA-15 (2)
   standard_key: NIST-800-53
@@ -10073,7 +10073,7 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+        https://issues.redhat.com/browse/ACM-474
 
 - control_key: SA-15 (3)
   standard_key: NIST-800-53
@@ -10120,7 +10120,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |-
-        A control response to SA-15(5) is planned.
+        A control response to is planned. Progress can be tracked at:
+
+        https://issues.redhat.com/browse/ACM-475
 
 - control_key: SA-15 (6)
   standard_key: NIST-800-53
@@ -10128,10 +10130,9 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |-
-        A control response to SA-15(6) is planned. Progress
-        can be tracked at:
+        A control response to is planned. Progress can be tracked at:
 
-        https://issues.redhat.com/browse/CMP-TBD
+        https://issues.redhat.com/browse/ACM-476
 
 - control_key: SA-15 (7)
   standard_key: NIST-800-53
@@ -10177,7 +10178,7 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+        https://issues.redhat.com/browse/ACM-477
 
 - control_key: SA-15 (9)
   standard_key: NIST-800-53
@@ -10211,7 +10212,7 @@ satisfies:
         organizational control, documentation is being planned. Progress can be
         tracked via:
 
-        https://TBD
+        https://issues.redhat.com/browse/ACM-478
 
 - control_key: SA-16
   standard_key: NIST-800-53
@@ -10273,13 +10274,13 @@ satisfies:
         A control response to SA-17(2)(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-479
     - key: b
       text: |-
         A control response to SA-17(2)(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-479
 
 - control_key: SA-17 (3)
   standard_key: NIST-800-53
@@ -10291,31 +10292,31 @@ satisfies:
         A control response to SA-17(3)(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-480
     - key: b
       text: |-
         A control response to SA-17(3)(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-480
     - key: c
       text: |-
         A control response to SA-17(3)(c) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-480
     - key: d
       text: |-
         A control response to SA-17(3)(d) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-480
     - key: e
       text: |-
         A control response to SA-17(3)(e) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-480
 
 - control_key: SA-17 (4)
   standard_key: NIST-800-53
@@ -10327,31 +10328,31 @@ satisfies:
         A control response to SA-17(4)(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-481
     - key: b
       text: |-
         A control response to SA-17(4)(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-481
     - key: c
       text: |-
         A control response to SA-17(4)(c) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-481
     - key: d
       text: |-
         A control response to SA-17(4)(d) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-481
     - key: e
       text: |-
         A control response to SA-17(4)(e) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-481
 
 - control_key: SA-17 (5)
   standard_key: NIST-800-53
@@ -10363,13 +10364,13 @@ satisfies:
         A control response to SA-17(5)(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-484
     - key: b
       text: |-
         A control response to SA-17(5)(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-484
 
 - control_key: SA-17 (6)
   standard_key: NIST-800-53
@@ -10380,7 +10381,7 @@ satisfies:
         A control response to SA-17(6) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-485
 
 - control_key: SA-17 (7)
   standard_key: NIST-800-53
@@ -10391,7 +10392,7 @@ satisfies:
         A control response to SA-17(7) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-486
 
 - control_key: SA-18
   standard_key: NIST-800-53
@@ -10502,13 +10503,13 @@ satisfies:
         A control response to SA-21(a) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-487
     - key: b
       text: |-
         A control response to SA-21(b) is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-487
 
 - control_key: SA-21 (1)
   standard_key: NIST-800-53
@@ -10520,7 +10521,7 @@ satisfies:
         A control response to SA-21 is planned. Progress
         can be tracked at:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-488
 
 - control_key: SA-22
   standard_key: NIST-800-53
@@ -10714,7 +10715,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-489
 
 - control_key: SC-5 (2)
   standard_key: NIST-800-53
@@ -10725,7 +10726,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-490
 
 - control_key: SC-5 (3)
   standard_key: NIST-800-53
@@ -10754,7 +10755,8 @@ satisfies:
 
         More information about resource allocation for Red Hat Advanced Cluster
         Management for Kubernetes can be found at:
-        https://TBD
+
+        https://issues.redhat.com/browse/ACM-491
 
 - control_key: SC-7
   standard_key: NIST-800-53
@@ -11599,7 +11601,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-492
 
 - control_key: SC-24
   standard_key: NIST-800-53
@@ -11742,7 +11744,7 @@ satisfies:
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-493
 
 - control_key: SC-30 (4)
   standard_key: NIST-800-53
@@ -11909,7 +11911,7 @@ satisfies:
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-502
 
 - control_key: SC-37
   standard_key: NIST-800-53
@@ -11917,11 +11919,13 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |-
-        A complete control response is planned. To assist with this
-        organizational control, documentation is being planned. Progress can be
-        tracked via:
+        Red Hat Advanced Cluster Management for Kubernetes allows organizations
+        to employ organization-defined out-of-band channels by providing a
+        disconnected configuration. More information on how to configure Red Hat
+        Advanced Cluster Management for Kubernetes in a disconnected
+        environment, refer to the following documentation:
 
-        https://issues.redhat.com/browse/TBD
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html/install/installing#install-on-disconnected-networks
 
 - control_key: SC-37 (1)
   standard_key: NIST-800-53
