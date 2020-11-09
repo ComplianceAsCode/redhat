@@ -1280,18 +1280,14 @@
 - control_key: AC-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
         The customer will be responsible for defining events or conditions
         requiring disconnection (for example, user requesting logout), and for
-        terminating the session when those events or conditions arise. A
-        successful control response will need to outline the qualifying events
-        or conditions.
-
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/TBD
+        terminating the session when those events or conditions arise. This
+        control is outside the scope of Red Hat Advanced Cluster Management
+        for Kubernetes.
 
 - control_key: AC-12 (1)
   standard_key: NIST-800-53
