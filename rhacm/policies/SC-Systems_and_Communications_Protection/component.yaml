@@ -165,7 +165,7 @@
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-489
 
 - control_key: SC-5 (2)
   standard_key: NIST-800-53
@@ -176,7 +176,7 @@
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-490
 
 - control_key: SC-5 (3)
   standard_key: NIST-800-53
@@ -205,7 +205,8 @@
 
         More information about resource allocation for Red Hat Advanced Cluster
         Management for Kubernetes can be found at:
-        https://TBD
+
+        https://issues.redhat.com/browse/ACM-491
 
 - control_key: SC-7
   standard_key: NIST-800-53
@@ -1050,7 +1051,7 @@
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-492
 
 - control_key: SC-24
   standard_key: NIST-800-53
@@ -1193,7 +1194,7 @@
         To assist with this organizational control, documentation is being
         planned. Progress can be tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-493
 
 - control_key: SC-30 (4)
   standard_key: NIST-800-53
@@ -1360,7 +1361,7 @@
         A complete control response is planned. Engineering progress can be
         tracked via:
 
-        https://issues.redhat.com/browse/TBD
+        https://issues.redhat.com/browse/ACM-502
 
 - control_key: SC-37
   standard_key: NIST-800-53
@@ -1368,11 +1369,13 @@
   implementation_status: complete
   narrative:
     - text: |-
-        A complete control response is planned. To assist with this
-        organizational control, documentation is being planned. Progress can be
-        tracked via:
+        Red Hat Advanced Cluster Management for Kubernetes allows organizations
+        to employ organization-defined out-of-band channels by providing a
+        disconnected configuration. More information on how to configure Red Hat
+        Advanced Cluster Management for Kubernetes in a disconnected
+        environment, refer to the following documentation:
 
-        https://issues.redhat.com/browse/TBD
+        https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/html/install/installing#install-on-disconnected-networks
 
 - control_key: SC-37 (1)
   standard_key: NIST-800-53
