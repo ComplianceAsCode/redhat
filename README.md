@@ -13,27 +13,34 @@ Instructions on how to prepare your development host:
 - [Perform a test build](https://github.com/opencontrol/RedHat/blob/master/README-hostprep.md#perform-a-test-build)
 
 ## Using this Content
-Usable/"stable" content is kept on the ``opencontrol`` branch. A sample opencontrol.yaml:
-`````
-name: Template Information System
-metadata:
-  description: Template Information System
-  maintainers:
-    - You <you@domain.com
 
-components:
-#    - ./local/content/
+Users can use [GoComply/fedramp](https://github.com/GoComply/fedramp) tool to genereate OSCAL formatted FedRAMP SSPs out of the OpenControl formatted here. Example:
 
-dependencies:
-  standards:
-    - url: https://github.com/opencontrol/standards
-      revision: master
-  certifications:
-    - url: https://github.com/SecurityCentral/opencontrol-certifications
-      revision: master
-    - url: https://github.com/opencontrol/certifications
-      revision: master
-  systems:
-    - url: https://github.com/SecurityCentral/redhat-openstack-platform-13
-      revision: opencontrol
-`````
+```
+podman run \
+  --rm -t --security-opt label=disable \
+  -v $(pwd):/shared-dir \
+  quay.io/gocomply/gocomply sh -c "\
+      cd /shared-dir && \
+      gocomply_fedramp opencontrol https://github.com/ComplianceAsCode/redhat oscal.xml/"
+  find oscal.xml/ -type f
+```
+
+The results of this process can be reviewed online under [ComplianceAsCode/oscal](https://github.com/ComplianceAsCode/oscal) project.
+
+## Debugging the OpenControl
+
+Compliance masonry command from [OpenControl project](https://open-control.org/https://open-control.org/) may be used to fetch opencontrol dependencies of this project and validate the repository conformance with OpenControl standard.
+
+```
+podman run \
+  --rm -t --security-opt label=disable \
+  -v $(pwd):/shared-dir \
+  quay.io/gocomply/gocomply sh -c "\
+      cd /shared-dir && \
+      git clone --depth 1 https://github.com/complianceascode/redhat ComplianceAsCode.redhat && \
+      cd ComplianceAsCode.redhat && \ 
+      masonry get --verbose && \
+      masonry validate"
+find ComplianceAsCode.redhat/opencontrols/ -type f
+```
