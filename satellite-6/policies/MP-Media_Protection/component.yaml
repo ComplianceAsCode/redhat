@@ -1,0 +1,19 @@
+- control_key: MP-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+   - text: |-
+        Narrative text on how product can be configured against MP-1.
+
+        This answer can be multi-line.
+
+- control_key: MP-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+   - text: |-
+        Narrative text on how product can be configured against MP-2.
+
+        This answer can be multi-line.

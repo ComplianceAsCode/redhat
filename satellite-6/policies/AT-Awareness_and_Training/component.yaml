@@ -1,0 +1,112 @@
+##
+## BEGINNING OF:
+## AWARENESS AND TRAINING CONTROLS
+##
+
+- control_key: AT-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for developing, documenting, and
+        disseminating Security Awareness and Training policy and procedures.
+        A successful control response will need to address the content of the
+        policy (which must include purpose, scope, roles, responsibilities,
+        management commitment, coordination, and compliance) and procedures
+        (which must facilitate the implementation of the policies and
+        associated controls).
+    - key: b
+      text: |-
+        The organization will be responsible for reviewing and updating the
+        Security Awareness and Training policy every 3 years, and procedures
+        annually. A successful control response will need to address the
+        review and update process, including the role(s) responsible for
+        initiating the review process, updating the policy and procedures,
+        and providing approval of the updates.
+
+- control_key: AT-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for providing basic security
+        awareness training as part of initial training. A successful control
+        response will outline the content of the training and will discuss the
+        process for ensuring that all users undergo the required training.
+
+    - key: b
+      text: |-
+        The customer will be responsible for providing updated basic security
+        awareness training as required by information system changes. A
+        succesful control response will discuss the process for determining
+        what information system changes require updated training, how the
+        training content is updated, and how users are notified of the need for
+        re-training.
+
+    - key: c
+      text: |-
+        The customer will be responsible for refreshing the basic security
+        awareness training annually. A successful control response will
+        discuss the process for ensuring that all users undergo the required
+        re-trianing.
+
+- control_key: AT-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The organization will be responsible for including information about
+        indicators of insider threat in security awareness training materials.
+        A successful control response will summarize potential indicators of
+        insider threat and outline the process for reporting them to appropriate
+        organizational officials.
+
+- control_key: AT-3
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for providing role-based security
+        training prior to users commencing work on their system. A successful
+        control response will outline the content of the training (including
+        how the content varies by assigned role) and will discuss the process
+        for ensuring that all users undergo the required training for their
+        roles.
+    - key: b
+      text: |-
+        The organization will be responsible for providing updated role-based
+        security training as required by information system changes. A
+        successful control response will discuss the process for determining
+        what information system changes require updated training, how the
+        training content is updated, and hw users are notified of the need
+        for re-training.
+    - key: c
+      text: |-
+        The custmoer will be responsible for refreshing role-based security
+        training annually. A successful control response will discuss the
+        process for ensuring that all users undergo the required re-training.
+
+- control_key: AT-4
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for tracking successful completion
+        of basic security awareness training and role-based training
+        security training activities. A successful control response will discuss
+        the process or system used to monitor and document completion of
+        training for each user.
+    - key: b
+      text: |-
+        The organization will be responsible for retaining training records for
+        the required timeframe. A successful control response will outline the
+        methods by which required retention is achieved.

@@ -1,0 +1,28 @@
+##
+## BEGINNING OF:
+## IDENTIFICATION AND AUTHENTICATION
+##
+
+- control_key: IA-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for developing, documenting, and
+        disseminating Identification and Authentication policy and procedures.
+        A successful control response will need to address the content of the
+        policy (which must include purpose, scope, roles, responsibilities,
+        management commitment, coordination, and compliance) and procedures
+        (which must facilitate the implementation of the policies and
+        associated controls).
+
+    - key: b
+      text: |-
+        The organization will be responsible for reviewing and updating the
+        Identification and Authentication policy every 3 years, and procedures
+        annually. A successful control response will need to address the
+        review and update process, including the role(s) responsible for
+        initiating the review process, updating the policy and procedures,
+        and providing approval of the updates.

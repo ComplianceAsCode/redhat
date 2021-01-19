@@ -1,0 +1,609 @@
+##
+## BEGINNING OF:
+## ACCESS CONTROL
+##
+
+- control_key: AC-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        (O) The organization will be responsible for developing, documenting,
+        and disseminating access control policy and procedures. A successful
+        control response will need to address the content of the policy (which
+        must include purpose, scope, roles, responsibilities, management
+        commitment, coordination, and compliance) and procedures (which must
+        facilitate the implementation of the policies and associated controls).
+
+    - key: a.1
+      text: |-
+        (O) The organization will be responsible for developing, documenting,
+        and disseminating an access control policy that addresses purpose,
+        scope, roles, responsibilities, management commitment, coordination
+        among organizational entities, and compliance. A successful control
+        response will need to address the content of the policy (which must
+        include purpose, scope, roles, responsibilities, management commitment,
+        coordination, and compliance).
+
+    - key: a.2
+      text: |-
+        (O) The organization will be responsible for developing, documenting,
+        and disseminating the procedures to facilitate the implementation of the
+        access control policy and associated access controls. A successful
+        control response will need to address the procedures (which must
+        facilitate the implementation of the policies and associated controls).
+
+    - key: b
+      text: |-
+        (O) The organization will be responsible for reviewing and updating the
+        current access control policies and procedures. A successful control
+        response will need to address the review and update process, including
+        the role(s) responsible for initiating the review process, updating the
+        policy and procedures, and providing approval of the updates.
+
+    - key: b.1
+      text: |-
+        (O) The organization will be responsible for reviewing and updating the
+        current access control policies. A successful control response will need
+        to address the review and update process, including the role(s)
+        responsible for initiating the review process, updating the policy, and
+        providing approval of the updates.
+
+    - key: b.2
+      text: |-
+        (O) The organization will be responsible for reviewing and updating the
+        current access control procedures. A successful control response will
+        need to address the review and update process, including the role(s)
+        responsible for initiating the review process, updating the procedures,
+        and providing approval of the updates.
+
+- control_key: AC-2
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        (O) The organization will be responsible for identifying and selecting
+        the types of accounts required to support the organizations application.
+        Examples of account types include individual, shared, group, system,
+        guest/anonymous, emergency, developer/manufacturer/vendor, temporary,
+        and service. A successful control response will need to address the
+        specific requirements fulfulled by each account type in use.
+
+    - key: b
+      text: |-
+        (O) The organization will be responsible for assigning account managers,
+        who will have responsibilities related to the creation, management, and
+        removal of accounts. A successful control response will need to discuss
+        how account managers are identified within the organization.
+
+    - key: c
+      text: |-
+        (O) The organization will be responsible for setting conditions for
+        group and role memberships. A successful control response will need to
+        outline these conditions and how they are enforced.
+
+    - key: d
+      text: |-
+        (O) The organization will be responsible for specifying authorized
+        users, group and role memberships, and privileges for each account. A
+        successful control response will need to addess the process by which
+        authorized users are specified and privilege levels are determined.
+
+    - key: e
+      text: |-
+        (O) The organization will be responsible for requiring approval by
+        designated personnel or roles prior to creating information system
+        accounts. A successful control response will need to outline the
+        personnel or roles responsible for approving information system accounts
+        and the process by which those personnel or roles are notified and
+        approval is granted.
+
+    - key: f
+      text: |-
+        (O) The organization will be repsonsible for defining and enforcing
+        procedures or conditions for the creation, management, and removal of
+        information system accounts. A successful control response will outline
+        the conditions for each action and the tools or procedures used to
+        enforce those conditions.
+
+    - key: g
+      text: |-
+        (O) The organization will be responsible for monitoring the use of
+        information system accounts. This may include reviewing records of
+        account management activities. A successful control response will relate
+        the monitoring activities required for this control to the auditing
+        activities in the AU control family.
+
+    - key: h
+      text: |-
+        (O) The organization will be responsible for notifying account managers
+        when triggering events occur. A successful control response will need to
+        address the methods by which these triggering events are identified and
+        the managers are notified.
+
+    - key: h.1
+      text: |-
+        (O) The organization will be responsible for notifying account managers
+        when accounts are no longer required. A successful control response will
+        need to address the methods by which this triggering event is identified
+        and the managers are notified.
+
+    - key: h.2
+      text: |-
+        (O) The organization will be responsible for notifying account managers
+        when when users are terminated. A successful control response will need
+        to address the methods by which this triggering event is identified and
+        the managers are notified.
+
+    - key: h.3
+      text: |-
+        (O) The organization will be responsible for notifying account managers
+        when when system usage or need-to-know changes. A successful control
+        response will need to address the methods by which this triggering event
+        is identified and the managers are notified.
+
+    - key: i
+      text: |-
+        (O) The organization will be responsible for authorizing access to the
+        organizations information system based on a valid access authorization.
+        A successful control response will need to address ensuring that all
+        accounts are granted access based on a valid authorization.
+
+    - key: i.1
+      text: |-
+        (O) The organization will be responsible for authorizing access to the
+        organizations application. A successful control response will need to
+        address ensuring that all accounts are granted access based on a valid
+        authorization.
+
+    - key: i.2
+      text: |-
+        (O) The organization will be responsible for authorizing access to the
+        organizations application based on . A successful control response will
+        need to address ensuring that all accounts are granted access based on a
+        valid authorization for a specific intended usage.
+
+    - key: i.3
+      text: |-
+        (O) The organization will be responsible for authorizing access to the
+        organizations application. A successful control response will need to
+        address ensuring that all accounts are granted access based on a valid
+        authorization for a specific intended usage.
+
+    - key: j
+      text: |-
+        (O) The organization will be responsible for reviewing accounts for
+        compliance with account management requirements at the specified
+        frequency. A successful control response will need to address the
+        process used to review accounts, the means by which compliance is
+        verified, and the process for remediation of any accounts found not to
+        be in compliance.
+
+    - key: k
+      text: |-
+        (O) The organization will be responsible for reissing shared/group
+        account credentials when individuals are removed from the group. A
+        successful control response will need to discuss how a triggering event
+        is notified, what the process and timeframe for reissuing credentials
+        is, and how the process is enforced.
+
+- control_key: AC-2 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        (O) The organization will be responsible for employing automated
+        mechanisms to support account management activities. A successful
+        control response will need to address all automated mechanisms used for
+        account management.
+
+- control_key: AC-2 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        (S) The information system will be responsible for automatically
+        removing or disabling emergency and temporary accounts within the
+        required timeframe. A successful control response will need to address
+        all of the procedures and mechanisms involved in disabling these
+        accounts.
+
+- control_key: AC-2 (3)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        (S) The information system will be responsible for automatically
+        disabling user accounts after the specified period of inactivity. A
+        successful control response will need to address all automated
+        mechanisms involved in disabling inactive accounts.
+
+- control_key: AC-2 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        (S) The information system will be responsible for audting changes to
+        accounts and integrity of accounts to improve situational awareness. A
+        successful control response Automatically auditing account creation,
+        modification, enabling, disabling, and removal actions, and notifying
+        appropriate individuals is outside the scope of Red Hat Advanced Cluster
+        Management for Kubernetes.
+
+- control_key: AC-2 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        (O|S) The organization will be responsible for requiring that users logout
+        when an organization-defined time-period of expected inactivity or
+        description of when to log out. A successful control response will
+        define account timeout and conditions when users shall log out. This
+        control is expected to be addressed at the organizational level for
+        policy guidance, and at the information system level for implimentation.
+
+- control_key: AC-2 (6)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        (S) The information system will be responsible for implementing dynamic
+        privilege management capabilities for account management. A successful
+        control response will detail the mechanisms and processes used for
+        dynamic privilege management.
+
+- control_key: AC-2 (7)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - key: a
+      text: |-
+        (O) The organization will be responsible for establishing and
+        administering privileged accounts in accordance with a role-based access
+        (RBAC) scheme. A successful control response will need to address the
+        types of users or rules that receive privileged access as well as the
+        organization of the RBAC scheme.
+
+    - key: b
+      text: |-
+        (O) The organization will be responsible for monitoring privileged role
+        assignments. A successful control response will need to address the
+        process by which role assignments are reviewed for continued
+        appropriateness.
+
+    - key: c
+      text: |-
+        (O) The organization will be responsible for defining and executing
+        actions to take when privileged role assignments are no longer
+        appropriate. A successful control response will need to address the
+        criteria for determining whether assignments are no longer appropriate,
+        the actions to be taken, and the roles or personnel responsible for
+        taking those actions.
+
+- control_key: AC-2 (8)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        (S) The information system will be responsible for creating system
+        accounts dynamically. A successful control response will need to address
+        the mechanisms used to create accounts dynamically.
+
+- control_key: AC-2 (9)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: not applicable
+  narrative:
+    - text: |-
+        The customer will be responsible for defining and enforcing
+        conditions for the use of shared group accounts. A successful control
+        response will need to address the specific need for the existing of
+        a shared or group account versus multiple individual accounts, as well
+        as the process for reviewing membership of shared or group accounts to
+        verify that all individuals with access still require that access.
+
+- control_key: AC-2 (12)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for monitoring information system
+        accounts for atypical use. A successful control response will relate
+        the monitoring activities required for this control to the auditing
+        activities in the AU control family, and will discuss the criteria
+        for atypical use.
+    - key: b
+      text: |-
+        The organization will be responsible for reporting atypical use of
+        information system accounts. A successful control response will
+        discuss the personnel or roles that must be notified and the process
+        for notification.
+
+- control_key: AC-2 (13)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The organization will be responsible for disabling accounts of users
+        posing a significant risk within an organizational-defined time
+        period of discovery of the risk. A successful control response defines
+        the time period and the processes to disable the account(s).
+
+- control_key: AC-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for defining separation of duties
+        between individuals so as to reduce the risk of insider threat without
+        collusion. A successful control response will need to consider the
+        possible actions a malicious insider could take to undermine the
+        security of the system, and delineate how duties are separated to
+        prevent or reduce the likelihood of those actions.
+    - key: b
+      text: |-
+        The customer will be responsible for documenting separation of duties.
+        A successful control response will need to address the location of this
+        documentation and the process for reviewing it if necessary.
+    - key: c
+      text: |-
+        The customer will be responsible for defining access authorizations
+        to support separation of duties, for example by using Role Based
+        Access Control. A successful control response will need to address
+        policy and technical enforcement of separation of duties.
+
+- control_key: AC-6
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The customer will be responsible for following least-privilege
+        principles when granting authorized access. A successful control
+        response will need to address the use of business requirements
+        to determine the level of access required to perform each job function,
+        and how that is related to the role-based access control scheme used
+        within the system.
+
+- control_key: AC-6 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The customer will be responsible for defining key security functions
+        and security-relevant information, and for explicitly authorizing
+        access to those functions and information. A successful control response
+        will need to address the criteria used to determine which functions
+        and information require explicit access authorization.
+
+- control_key: AC-6 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The customer will be responsible for defining specific personnel
+        or roles who require privileged access, and restricting privileged
+        access to those personnel or roles. A successful response will need
+        to address the job functions or responsibilities for which
+        privileged access is required.
+
+- control_key: AC-14
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for identifying user actions that can
+        be performed on the information system without identification or
+        authentication consistent with missions/business functions. A
+        successful control response will identify such actions.
+
+- control_key: AC-17
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for establishing and documenting
+        usage restrictions, configuration and connection requirements, and
+        implementation guidance for access to the customer application
+        (note that in a cloud environment, all user access will be remote
+        access).
+
+    - key: b
+      text: |-
+        The customer will be responsible for authorizing remote access before
+        allowing such connections. Due to the nature of the cloud environment,
+        a successful control response will need to indicate that authorizing
+        remote access is equivalent to authorizing any access, and relate this
+        control to AC-2.
+
+- control_key: AC-17 (4)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The customer will be responsible for authoring the execution of
+        privileged commands and access to security-relevant information via
+        remote access. Due to the nature of the cloud environment, a
+        successful control response will need to indicate that authorizing
+        these activities over remote access is equivalent to authorizing them
+        at all, and refer to AC-2.
+
+    - key: b
+      text: |-
+        The customer will be responsible for authorizing the execution of
+        privileged commands and access to security-relevant information via
+        remote access. Due to the nature of the cloud environment, a successful
+        control response will need to indicate that authorizing these activities
+        over remote access is equivalent to authorizing them at all, and refer
+        to AC-2.
+
+- control_key: AC-18
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        Given the data center focus of the infrastructure running OpenShift,
+        it is likely this control is not applicable. A successful response
+        will document if wireless connectivity is enabled, and if so,
+        how usage and connection requirements were created.
+    - key: b
+      text: |-
+        A successful control response will document how connections are
+        authorized prior to recieving full connectivity to the wireless
+        network. This is frequently accomplished via WEP2 and other
+        encrption and/or passphrase requirements.
+
+- control_key: AC-19
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        A successful control response will document how, if wireless
+        connectivity is permitted, end-user devices are organizationally
+        managed (configurations, connections, and applications).
+    - key: b
+      text: |-
+        A successful control response will document how, if wireless
+        connectivity is permitted, mobile devices are authorized to
+        connect to organizational networks (e.g. MDM).
+
+- control_key: AC-19 (5)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        A successful control response will document how either full-device
+        encryption on mobile devices is being used. This is only applicable
+        if mobile is within scope of your security package.
+
+- control_key: AC-20
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for establishing terms and conditions
+        allowing authorized individuals to access the organization application
+        from external information sysetms. A successful control response will
+        need to outline the terms and conditions and the external information
+        systems to which those terms and conditions apply.
+    - key: b
+      text: |-
+        The organization will be responsible for establishing terms and conditions
+        allowing authorized individuals to process, store, or transmit
+        customer-controlled information using external information systems. A
+        successful control response will need to outline the terms and
+        conditions and the external information systems to which those terms
+        and conditions apply.
+
+- control_key: AC-20 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for verifying the implementation of
+        required security controls on external information systems used to
+        access the organization application. A successful control response will
+        need to address how this verification occurs (e.g. through an
+        independent assessment).
+    - key: b
+      text: |-
+        If part (a) is not possible, then the organization will be responsible
+        for establishing and retaining approved information system connection
+        or processing agreements with the external entity hosting the external
+        information system used to access the organization application.
+
+- control_key: AC-20 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The organization will be responsible for restricting or prohibiting the
+        use of customer-controlled portable storage devices on external
+        information systems. If such use is not prohibited, a successful
+        control repsonse will need to address specific restrictions on how
+        or under what conditions such use may occur.
+
+- control_key: AC-21
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for determining when authorized users
+        are required to use discretion as to whether to share information. A
+        successful control response will need to address the circumstances
+        where user direction (rather than automatic access enforcement) is
+        required.
+    - key: b
+      text: |-
+        The organization will be responsible for defining and employing automated
+        mechanisms or manual processes to assist users in making information
+        sharing decisions.
+
+- control_key: AC-22
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for designating individuals
+        authorized to post information publicly. A successful control response
+        will need to address the specific business requirements or job functions
+        that justify such access.
+    - key: b
+      text: |-
+        The organization will be responsible for trianing designated authorized
+        individuals to prevent disclosure of nonpublic information. A
+        successful control response will need to outline the training
+        provided.
+    - key: c
+      text: |-
+        The organization will be responsible for reviewing information prior to
+        public posting to ensure that nonpublic information is not included. A
+        successful control response will need to address the roles or personnel
+        responsible for this review and the process for signoff.
+    - key: d
+      text: |-
+        The organization will be responsible for reviewing publicly available
+        information at the reqired frequency and removing nonpublic information
+        when discovered. A successful control response will need to address the
+        roles or personnel responsible for the review, the process used to
+        review publicly available information, and the process for removal of
+        nonpublic information.
