@@ -1,0 +1,88 @@
+- control_key: SI-1
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for developing, documenting, and
+        disseminating System and Information Integrity policy and procedures. A
+        successful control response will need to address the content of the
+        policy (which must include purpose, scope, roles, responsibilities,
+        management commitment, coordination, and compliance) and procedures
+        (which must facilitate the implementation of the policies and
+        associated controls).
+
+    - key: b
+      text: |-
+        The organization will be responsible for reviewing and updating the
+        System and Information Integrity policy every 3 years, and procedures
+        annually. A successful control response will need to address the
+        review and update process, including the role(s) responsible for
+        initiating the review process, updating the policy and procedures,
+        and providing approval of the updates.
+
+- control_key: SI-5
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: b
+      text: |-
+        The organization will be responsible for generatign internal security
+        alerts, advisories and directives. A successful control response will
+        need to address the criteria used to determine what alerts, advisories,
+        and directives are necessary, based on the specifics of the customer
+        mission, software, or service.
+
+    - key: c
+      text: |-
+        The organization will be responsible for disseminating security alerts,
+        advisories and directives within the customer organization and to
+        external organizations as necessary. A successful control response will
+        need to address the personnel or roles within the organization who
+        require notificiation.
+
+- control_key: SI-8
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - key: a
+      text: |-
+        The organization will be responsible for employing spam protection
+        mechanisms at organizational information system entry and exit points
+        to detect and take action on unsolicited messages. A successful
+        control response will need to address how the organization deploys
+        spam protection.
+
+    - key: b
+      text: |-
+        The organization will be responsible for updating spam protection
+        mechanisms when new releases are available in accordance with
+        organizational configuration management policy and procedures. A
+        successful control response will describe the organizations process
+        to ensure spam protection mechanisms are updated.
+
+- control_key: SI-8 (1)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The organization is responsible for centrally managing spam protection
+        mechanisms. A successful control response will indicate how spam
+        protection is provided as a corporate service, and when applicable,
+        how spam protection content is disseminated to subordinate mail
+        servers.
+
+- control_key: SI-8 (2)
+  standard_key: NIST-800-53
+  covered_by: []
+  implementation_status: none
+  narrative:
+    - text: |-
+        The organization is responsible for automatic updates to spam
+        protection mechanisms. A successful control response will indicate
+        how automatic updates are performed, both for protection mechanisms
+        and filtering content.
