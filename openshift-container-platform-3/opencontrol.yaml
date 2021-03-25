@@ -3,7 +3,7 @@ name: OpenShift Container Platform 3.x
 metadata:
   description: OpenShift Container Platform 3.x
   maintainers:
-    - NAPS Compliance Owners <compliance@redhat.com>
+    - Carlos Matos <cmatos@redhat.com>
 
 components:
     - ./policies/AC-Access_Control

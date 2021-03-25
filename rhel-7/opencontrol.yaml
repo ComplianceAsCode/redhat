@@ -3,7 +3,7 @@ name: Red Hat Enterpise Linux 7.x
 metadata:
   description: Red Hat Enterpise Linux 7.x
   maintainers:
-    - NAPS Compliance Owners <compliance@redhat.com>
+    - Carlos Matos <cmatos@redhat.com>
 
 components:
 #  - ./policies/AC-Access_Control
