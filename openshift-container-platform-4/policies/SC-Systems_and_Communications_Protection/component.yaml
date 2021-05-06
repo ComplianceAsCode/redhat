@@ -128,17 +128,20 @@
 - control_key: SC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer is responsible for preventing unauthorized and
-        unintended information transfer via shared system resources. A
-        successful control response will discuss how this is prevented.
+        OpenShift namespaces/projects are used to isolate resources
+        in the cluster. If a Secret or a ConfigMap object exists
+        in the cluster, it will only be accessible by other resources
+        on that same namespace. Only users with explicit access to a
+        namespace are able to access those objects.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Accidental exposure of secrets is prevented by the Kubelet itself,
+        since it's responsible of deleting the secret once no
+        workload is using it [1]
 
-        https://issues.redhat.com/browse/CMP-428
+        [1] https://kubernetes.io/docs/concepts/configuration/secret/#protections
 
 - control_key: SC-4 (1)
   standard_key: NIST-800-53
