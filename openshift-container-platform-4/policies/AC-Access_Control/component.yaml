@@ -78,7 +78,11 @@
         party software such as an Identity Provider (IdP),
         Active Directory (MSAD), LDAP, etc.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -99,7 +103,11 @@
         inherited from, and managed by, an external
         identity service (e.g. Active Directory, LDAP, etc.)
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
 #
 # AC-2(3) NOTES:
@@ -124,7 +132,11 @@
         management level; for example, within LDAP, Red Hat
         IdM, or Active Directory.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
@@ -166,12 +178,12 @@
         of a proper identity provider. OpenShift users can then be assigned roles through
         role bindings.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - key: a
       text: |-
@@ -213,7 +225,7 @@
         OpenShift will dynamically create user and system accounts in the OpenShift cluster
         when configured to connect to an identity provider.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
