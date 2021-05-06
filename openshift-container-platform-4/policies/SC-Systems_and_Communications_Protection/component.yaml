@@ -47,23 +47,25 @@
 - control_key: SC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer is responsible for deployment utilizing namespaces,
-        host roles and other features as well as policies and procedures
-        to implement and ensure continued isolation of security functions
-        from non-security functions.
+        OpenShift uses the concept of namespaces or projects to ensure
+        workload isolation. The OpenShift platform comes with several
+        default projects that start with the "openshift-" prefix. [1] Such
+        projects, host functionality that's critical for the cluster's
+        operations. Only Cluser Administrators have access to these namespaces,
+        which ensures that regular users don't hace access to cluster
+        management functionality.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-467
+        The namespace/project functionality can't be turned off.
+        
+        [1] https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
 
 - control_key: SC-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer is responsible for deployment utilizing namespaces,
@@ -71,15 +73,24 @@
         to implement and ensure continued isolation of security functions
         from non-security functions.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        A common way of ensuring that workloads land on certain nodes is
+        through the usage of taints and tolerations [1]. This ensure that
+        unless a workload tolerates the specified taints on the node, it won't
+        be scheduled there.
 
-        https://issues.redhat.com/browse/CMP-468
+        Another alternative is the usage of node affinity which allows a
+        workload to specify a set of restrictions for it to be scheduled [2].
+
+        These mechanisms can be used to ensure that only allowed hardware
+        is used to run the desired workloads.
+
+        [1] https://docs.openshift.com/container-platform/4.7/nodes/scheduling/nodes-scheduler-taints-tolerations.html
+        [2] https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
 
 - control_key: SC-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer is responsible for deployment utilizing namespaces,
@@ -87,10 +98,10 @@
         to implement and ensure continued isolation of security functions
         from non-security functions.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Information flow control can be ensured in the cluster's network
+        by configuring the Network Policies as seen appropriate. [1]
 
-        https://issues.redhat.com/browse/CMP-469
+        [1] https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: SC-3 (3)
   standard_key: NIST-800-53
@@ -98,10 +109,16 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        Isolation of non-security functions can be achieved by a
+        combination of features already included in the platform.
 
-        https://issues.redhat.com/browse/CMP-470
+        The definition of non-security functions, as well as the implementation
+        of such isolation is left to the organization to decide.
+
+        https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
+        https://docs.openshift.com/container-platform/4.7/nodes/scheduling/nodes-scheduler-taints-tolerations.html
+        https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+        https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: SC-3 (4)
   standard_key: NIST-800-53
@@ -109,10 +126,16 @@
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        Isolation of security functions can be achieved by a
+        combination of features already included in the platform.
 
-        https://issues.redhat.com/browse/CMP-471
+        The definition of security functions, as well as the implementation
+        of such isolation is left to the organization to decide.
+
+        https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
+        https://docs.openshift.com/container-platform/4.7/nodes/scheduling/nodes-scheduler-taints-tolerations.html
+        https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+        https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: SC-3 (5)
   standard_key: NIST-800-53
