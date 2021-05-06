@@ -125,7 +125,19 @@
         applicable to the configuration of OpenShift.
     - key: b
       text: |
-        A control response is planned. Progress can be tracked via:
+        The Compliance Operator [1] scans the host and the platform (OCP)
+        configuration for software flaws and improper configurations according
+        to different compliance benchmarks. It uses OpenSCAP as a backend,
+        which is a known and certified tool to do such scans.
+
+        The default results are presented by the operator in the form of
+        ComplianceCheckResults, which are Kubernetes objects. These objects
+        are labeled with the appropriate severity of the finding.
+
+        It is also possible to download the raw results which contain
+        information such as the risk score.
+
+        [1] https://docs.openshift.com/container-platform/4.7/security/compliance_operator/compliance-operator-understanding.html#compliance-operator-understanding
 
         https://issues.redhat.com/browse/CMP-352
     - key: c
@@ -134,7 +146,16 @@
         applicable to the configuration of OpenShift.
     - key: d
       text: |
-        A control response is planned. Progress can be tracked via:
+        The Compliance Operator [1] scans the host and the platform (OCP)
+        configuration for software flaws and improper configurations according
+        to different compliance benchmarks. It uses OpenSCAP as a backend,
+        which is a known and certified tool to do such scans.
+
+        The system presents remediations as ComplianceRemediation objects,
+        which are Kubernetes objects stored in Etcd. These can be applied
+        to remediate findings per organizational policy.
+
+        [1] https://docs.openshift.com/container-platform/4.7/security/compliance_operator/compliance-operator-understanding.html#compliance-operator-understanding
 
         https://issues.redhat.com/browse/CMP-352
     - key: e
