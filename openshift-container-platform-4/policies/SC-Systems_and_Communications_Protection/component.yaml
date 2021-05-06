@@ -59,7 +59,7 @@
         management functionality.
 
         The namespace/project functionality can't be turned off.
-        
+
         [1] https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
 
 - control_key: SC-3 (1)
