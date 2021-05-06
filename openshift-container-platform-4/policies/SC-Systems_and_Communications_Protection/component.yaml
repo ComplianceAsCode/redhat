@@ -34,7 +34,7 @@
         Besides the aforementioned project separation, user permissions are also
         managed via RBAC, which is enabled by default [2]. This prevents unprivileged
         users from using privileged functionality.
-        
+
         [1] https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
         [2] https://docs.openshift.com/container-platform/4.7/authentication/using-rbac.html
 
@@ -55,7 +55,7 @@
         Besides the aforementioned project separation, user permissions are also
         managed via RBAC, which is enabled by default [2]. This prevents unprivileged
         users from using privileged functionality.
-        
+
         [1] https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
         [2] https://docs.openshift.com/container-platform/4.7/authentication/using-rbac.html
 
