@@ -300,31 +300,30 @@
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |-
-        A control response for AC-2(12)(a) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-259
+        Monitoring of atypical use is outside of the scope of OpenShift configuration.
+        However, setting up log forwarding can help analyze the data for suspicious
+        activity. Please refer to
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
+        to learn more about setting up secure log forwarding.
     - key: b
       text: |-
-        A control response for AC-2(12)(b) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-259
+        Monitoring of atypical use is outside of the scope of OpenShift configuration.
+        However, setting up log forwarding can help analyze the data for suspicious
+        activity. Please refer to
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
+        to learn more about setting up secure log forwarding.
 
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
-        A control response for AC-2(13) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-211
+        AC-2 (13) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AC-3
   standard_key: NIST-800-53
