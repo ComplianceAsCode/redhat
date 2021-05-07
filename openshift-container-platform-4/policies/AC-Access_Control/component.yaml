@@ -141,7 +141,7 @@
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
         To meet FISMA requirements, OpenShift must be configured
@@ -153,10 +153,18 @@
         also the responsibility of the centralized authentication
         service.
 
-##
-## Ref: https://access.redhat.com/solutions/2191161
-## "How to modify console session timeouts in Openshift 4"
-##
+        OpenShift automatically audits creation of the Identity
+        API objects which subsequently allow to match the creation
+        of the OpenShift identity to the external IDP identity. See
+        https://docs.openshift.com/container-platform/latest/security/audit-log-view.html
+        for documentation on how to view the audit logs and
+        https://docs.openshift.com/container-platform/latest/security/audit-log-policy-config.html
+        for information on configuring the audit logging.
+
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
+
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
