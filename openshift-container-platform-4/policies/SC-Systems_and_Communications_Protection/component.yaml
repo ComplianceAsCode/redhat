@@ -597,7 +597,10 @@
   implementation_status: complete
   narrative:
     - text: |
-        OpenShift uses a FIPS compliant TLS library. [1]
+        OpenShift uses a FIPS compliant TLS library [1] to assist with
+        preventing unauthorized disclosures or modifications of
+        information during preparation for transmission and during
+        reception.
 
         [1] https://docs.openshift.com/container-platform/4.7/installing/installing-fips.html
 
