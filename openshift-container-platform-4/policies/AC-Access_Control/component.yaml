@@ -256,8 +256,15 @@
   implementation_status: not applicable
   narrative:
     - text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of OpenShift configuration.
+        OpenShift does not have the concept of group accounts.
+
+        Should the organization allow shared credentials, the
+        creation and management of such would fall under the scope
+        of operating the shared identity service and not OpenShift.
+
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
@@ -270,6 +277,10 @@
         Should the organization allow shared credentials, the
         creation and management of such would fall under the scope
         of operating the shared identity service and not OpenShift.
+
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
