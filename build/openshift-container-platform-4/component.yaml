@@ -83,7 +83,11 @@ satisfies:
         party software such as an Identity Provider (IdP),
         Active Directory (MSAD), LDAP, etc.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
 
 # AC-2(2) NOTES:
 #       The customer will be responsible for automatically removing or
@@ -104,7 +108,11 @@ satisfies:
         inherited from, and managed by, an external
         identity service (e.g. Active Directory, LDAP, etc.)
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
 #
 # AC-2(3) NOTES:
@@ -129,12 +137,16 @@ satisfies:
         management level; for example, within LDAP, Red Hat
         IdM, or Active Directory.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
+
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
 
 - control_key: AC-2 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
         To meet FISMA requirements, OpenShift must be configured
@@ -146,20 +158,43 @@ satisfies:
         also the responsibility of the centralized authentication
         service.
 
-##
-## Ref: https://access.redhat.com/solutions/2191161
-## "How to modify console session timeouts in Openshift 4"
-##
+        OpenShift automatically audits creation of the Identity
+        API objects which subsequently allow to match the creation
+        of the OpenShift identity to the external IDP identity. See
+        https://docs.openshift.com/container-platform/latest/security/audit-log-view.html
+        for documentation on how to view the audit logs and
+        https://docs.openshift.com/container-platform/latest/security/audit-log-policy-config.html
+        for information on configuring the audit logging.
+
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
+
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        A control response for AC-2 (5) is planned. Engineering
-        progress can be tracked via:
+        To meet the requirements, OpenShift must be configured
+        to use centralized authentication via an IDP. The account
+        inactivity timeout can be either configured per OAuth client
+        as described here:
+        https://docs.openshift.com/container-platform/latest/authentication/configuring-oauth-clients.html#oauth-token-inactivity-timeout_configuring-oauth-clients
 
-        https://issues.redhat.com/browse/CMP-82
+        Or globally (this example uses 600s timeout):
+        $ oc patch oauth.config cluster -p '{"spec":{"tokenConfig":{"accessTokenInactivityTimeout": "600s"}}}' --type='merge'
+
+        Note that the global configuration does not change the configuration
+        of the oauthclient objects, so for proper compliance check, both must
+        be audited.
+
+        Also note that prior to OpenShift 4.8, changing the global oauth.config
+        object triggers a rollout of the kube-apiserver which can take up
+        to 15 minutes. You can watch the kube-apiserver rollout with
+        "oc get co kube-apiserver". Once the rollout finishes, the "Progressing"
+        column will say "False".
+
 
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
@@ -171,12 +206,12 @@ satisfies:
         of a proper identity provider. OpenShift users can then be assigned roles through
         role bindings.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: AC-2 (7)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: not applicable
+  implementation_status: complete
   narrative:
     - key: a
       text: |-
@@ -218,7 +253,7 @@ satisfies:
         OpenShift will dynamically create user and system accounts in the OpenShift cluster
         when configured to connect to an identity provider.
 
-        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/identity_providers/configuring-ldap-identity-provider.html#configuring-ldap-identity-provider
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
 
 - control_key: AC-2 (9)
   standard_key: NIST-800-53
@@ -226,8 +261,15 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |-
-        This control is applicable to the identity service provider
-        and outside the scope of OpenShift configuration.
+        OpenShift does not have the concept of group accounts.
+
+        Should the organization allow shared credentials, the
+        creation and management of such would fall under the scope
+        of operating the shared identity service and not OpenShift.
+
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
 - control_key: AC-2 (10)
   standard_key: NIST-800-53
@@ -240,6 +282,10 @@ satisfies:
         Should the organization allow shared credentials, the
         creation and management of such would fall under the scope
         of operating the shared identity service and not OpenShift.
+
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
 - control_key: AC-2 (11)
   standard_key: NIST-800-53
@@ -259,31 +305,30 @@ satisfies:
 - control_key: AC-2 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |-
-        A control response for AC-2(12)(a) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-259
+        Monitoring of atypical use is outside of the scope of OpenShift configuration.
+        However, setting up log forwarding can help analyze the data for suspicious
+        activity. Please refer to
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
+        to learn more about setting up secure log forwarding.
     - key: b
       text: |-
-        A control response for AC-2(12)(b) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-259
+        Monitoring of atypical use is outside of the scope of OpenShift configuration.
+        However, setting up log forwarding can help analyze the data for suspicious
+        activity. Please refer to
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
+        to learn more about setting up secure log forwarding.
 
 - control_key: AC-2 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
-        A control response for AC-2(13) is planned. Engineering
-        progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-211
+        AC-2 (13) is an organizational control outside the scope of OpenShift configuration.
 
 - control_key: AC-3
   standard_key: NIST-800-53
@@ -9957,23 +10002,25 @@ satisfies:
 - control_key: SC-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer is responsible for deployment utilizing namespaces,
-        host roles and other features as well as policies and procedures
-        to implement and ensure continued isolation of security functions
-        from non-security functions.
+        OpenShift uses the concept of namespaces or projects to ensure
+        workload isolation. The OpenShift platform comes with several
+        default projects that start with the "openshift-" prefix. [1] Such
+        projects, host functionality that's critical for the cluster's
+        operations. Only Cluser Administrators have access to these namespaces,
+        which ensures that regular users don't hace access to cluster
+        management functionality.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The namespace/project functionality can't be turned off.
 
-        https://issues.redhat.com/browse/CMP-467
+        [1] https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
 
 - control_key: SC-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer is responsible for deployment utilizing namespaces,
@@ -9981,15 +10028,24 @@ satisfies:
         to implement and ensure continued isolation of security functions
         from non-security functions.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        A common way of ensuring that workloads land on certain nodes is
+        through the usage of taints and tolerations [1]. This ensure that
+        unless a workload tolerates the specified taints on the node, it won't
+        be scheduled there.
 
-        https://issues.redhat.com/browse/CMP-468
+        Another alternative is the usage of node affinity which allows a
+        workload to specify a set of restrictions for it to be scheduled [2].
+
+        These mechanisms can be used to ensure that only allowed hardware
+        is used to run the desired workloads.
+
+        [1] https://docs.openshift.com/container-platform/4.7/nodes/scheduling/nodes-scheduler-taints-tolerations.html
+        [2] https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
 
 - control_key: SC-3 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer is responsible for deployment utilizing namespaces,
@@ -9997,10 +10053,10 @@ satisfies:
         to implement and ensure continued isolation of security functions
         from non-security functions.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Information flow control can be ensured in the cluster's network
+        by configuring the Network Policies as seen appropriate. [1]
 
-        https://issues.redhat.com/browse/CMP-469
+        [1] https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: SC-3 (3)
   standard_key: NIST-800-53
@@ -10008,10 +10064,16 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        Isolation of non-security functions can be achieved by a
+        combination of features already included in the platform.
 
-        https://issues.redhat.com/browse/CMP-470
+        The definition of non-security functions, as well as the implementation
+        of such isolation is left to the organization to decide.
+
+        https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
+        https://docs.openshift.com/container-platform/4.7/nodes/scheduling/nodes-scheduler-taints-tolerations.html
+        https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+        https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: SC-3 (4)
   standard_key: NIST-800-53
@@ -10019,10 +10081,16 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        Isolation of security functions can be achieved by a
+        combination of features already included in the platform.
 
-        https://issues.redhat.com/browse/CMP-471
+        The definition of security functions, as well as the implementation
+        of such isolation is left to the organization to decide.
+
+        https://docs.openshift.com/container-platform/4.7/applications/projects/working-with-projects.html
+        https://docs.openshift.com/container-platform/4.7/nodes/scheduling/nodes-scheduler-taints-tolerations.html
+        https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity
+        https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: SC-3 (5)
   standard_key: NIST-800-53
@@ -10038,17 +10106,20 @@ satisfies:
 - control_key: SC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer is responsible for preventing unauthorized and
-        unintended information transfer via shared system resources. A
-        successful control response will discuss how this is prevented.
+        OpenShift namespaces/projects are used to isolate resources
+        in the cluster. If a Secret or a ConfigMap object exists
+        in the cluster, it will only be accessible by other resources
+        on that same namespace. Only users with explicit access to a
+        namespace are able to access those objects.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Accidental exposure of secrets is prevented by the Kubelet itself,
+        since it's responsible of deleting the secret once no
+        workload is using it [1]
 
-        https://issues.redhat.com/browse/CMP-428
+        [1] https://kubernetes.io/docs/concepts/configuration/secret/#protections
 
 - control_key: SC-4 (1)
   standard_key: NIST-800-53
