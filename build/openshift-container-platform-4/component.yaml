@@ -10193,13 +10193,20 @@ satisfies:
     - text: |
         The customer is responsible for the protection and availability of
         resources by allocating processor and memory resources by process
-        priority and resource availability. A successful control response will
-        discuss how resource availability is protected.
+        priority and resource availability.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        It is recommended that all workloads in the system establish appropriate
+        resource requests and limits to avoid resource starvation of critical
+        workloads. Appropriate configurations exist to manage resource
+        overcommitment [1]. Ensure that appropriate quotas are set in each
+        relevant project [2], or establish a cluster quota to limit the resources
+        that workloads can take [3]. The platform also allows for priorization
+        of workloads using priority classes [4].
 
-        https://issues.redhat.com/browse/CMP-476
+        [1] https://docs.openshift.com/container-platform/4.7/nodes/clusters/nodes-cluster-overcommit.html
+        [2] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html
+        [3] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-across-multiple-projects.html
+        [4] https://docs.openshift.com/container-platform/4.7/nodes/pods/nodes-pods-priority.html
 
 - control_key: SC-7
   standard_key: NIST-800-53
