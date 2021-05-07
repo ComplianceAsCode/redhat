@@ -253,7 +253,7 @@
     - text: |
         The customer is responsible for the protection and availability of
         resources by allocating processor and memory resources by process
-        priority and resource availability. 
+        priority and resource availability.
 
         It is recommended that all workloads in the system establish appropriate
         resource requests and limits to avoid resource starvation of critical
