@@ -601,13 +601,15 @@
 - control_key: SC-8 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        To assist with this organizational control, documentation is being
-        planned. Progress can be tracked via:
+        OpenShift uses a FIPS compliant TLS library [1] to assist with
+        preventing unauthorized disclosures or modifications of
+        information during preparation for transmission and during
+        reception.
 
-        https://issues.redhat.com/browse/CMP-492
+        [1] https://docs.openshift.com/container-platform/4.7/installing/installing-fips.html
 
 - control_key: SC-8 (3)
   standard_key: NIST-800-53
