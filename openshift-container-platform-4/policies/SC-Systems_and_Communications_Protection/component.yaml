@@ -214,7 +214,7 @@
         overcommitment [1]. Ensure that appropriate quotas are set in each
         relevant project [2], or establish a cluster quota to limit the resources
         that workloads can take [3].
-        
+
         OpenShift also allows the configuration of egress and ingress traffic
         for individual workloads [4]. This ensures that workloads don't get
         overwhelmed by incoming traffic, and that they don't act as Denial
@@ -285,7 +285,7 @@
         relevant project [2], or establish a cluster quota to limit the resources
         that workloads can take [3]. The platform also allows for priorization
         of workloads using priority classes [4].
-        
+
         [1] https://docs.openshift.com/container-platform/4.7/nodes/clusters/nodes-cluster-overcommit.html
         [2] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html
         [3] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-across-multiple-projects.html
