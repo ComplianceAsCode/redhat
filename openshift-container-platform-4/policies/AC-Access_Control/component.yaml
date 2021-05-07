@@ -168,13 +168,28 @@
 - control_key: AC-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        A control response for AC-2 (5) is planned. Engineering
-        progress can be tracked via:
+        To meet the requirements, OpenShift must be configured
+        to use centralized authentication via an IDP. The account
+        inactivity timeout can be either configured per OAuth client
+        as described here:
+        https://docs.openshift.com/container-platform/latest/authentication/configuring-oauth-clients.html#oauth-token-inactivity-timeout_configuring-oauth-clients
 
-        https://issues.redhat.com/browse/CMP-82
+        Or globally (this example uses 600s timeout):
+        $ oc patch oauth.config cluster -p '{"spec":{"tokenConfig":{"accessTokenInactivityTimeout": "600s"}}}' --type='merge'
+
+        Note that the global configuration does not change the configuration
+        of the oauthclient objects, so for proper compliance check, both must
+        be audited.
+
+        Also note that prior to OpenShift 4.8, changing the global oauth.config
+        object triggers a rollout of the kube-apiserver which can take up
+        to 15 minutes. You can watch the kube-apiserver rollout with
+        "oc get co kube-apiserver". Once the rollout finishes, the "Progressing"
+        column will say "False".
+
 
 - control_key: AC-2 (6)
   standard_key: NIST-800-53
