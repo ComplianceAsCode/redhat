@@ -10141,35 +10141,95 @@ satisfies:
 - control_key: SC-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Depending on the exposure of the workloads or the component that's
+        intended to be protected, OpenShift offers several settings to enforce
+        rate-limiting and protection against denial of service attacks.
+
+        It is recommended that all workloads in the system establish appropriate
+        resource requests and limits to avoid resource starvation of critical
+        workloads. Appropriate configurations exist to manage resource
+        overcommitment [1]. Ensure that appropriate quotas are set in each
+        relevant project [2], or establish a cluster quota to limit the resources
+        that workloads can take [3].
+
+        OpenShift also allows the configuration of egress and ingress traffic
+        for individual workloads [4]. This ensures that workloads don't get
+        overwhelmed by incoming traffic, and that they don't act as Denial
+        of Service agents.
+
+        If a workload is to be exposed externally, it is recommended that it's
+        behind an OpenShift Route. Routes allow for the configuration of several
+        security attributes, but most relevant to this control is the rate-limiting
+        settings that it allows to configure in the form of annotations. configuring
+        rate-limiting settings for a workload exposed on a route not only protects
+        the workload itself, but also ensures that the target workload doesn't
+        interfere with other workloads placed on the same node or set of nodes.
+
+        On the other hand, OpenShift's API is configured with the Kubernetes API
+        Priority & Fairness feature enabled by default. This feature allows for
+        fine-grained configuration of the handling of incoming requests. [6]
+        This way it's possible to control how the cluster will react on an
+        overload situation. By default, OpenShift has a catch-all configuration
+        that classifies every request.
+
+        Finally, regardless of the environment that OpenShift is deployed in,
+        it is assumed that there is a load balancer or load balancing service
+        handling requests for the OpenShift API. This provides redundancy and
+        extra protection when dealing with Denial of Service attacks.
+
+        [1] https://docs.openshift.com/container-platform/4.7/nodes/clusters/nodes-cluster-overcommit.html
+        [2] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html
+        [3] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-across-multiple-projects.html
+        [4] https://docs.openshift.com/container-platform/4.7/nodes/pods/nodes-pods-configuring.html#nodes-pods-configuring-bandwidth_nodes-pods-configuring
+        [5] https://docs.openshift.com/container-platform/4.7/networking/routes/route-configuration.html#nw-route-specific-annotations_route-configuration
+        [6] https://kubernetes.io/docs/concepts/cluster-administration/flow-control/
 
         https://issues.redhat.com/browse/CMP-427
 
 - control_key: SC-5 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        It is recommended that all workloads in the system establish appropriate
+        resource requests and limits to avoid resource starvation of critical
+        workloads. Appropriate configurations exist to manage resource
+        overcommitment [1]. Ensure that appropriate quotas are set in each
+        relevant project [2], or establish a cluster quota to limit the resources
+        that workloads can take [3].
 
-        https://issues.redhat.com/browse/CMP-474
+        OpenShift also allows the configuration of egress and ingress traffic
+        for individual workloads [4]. This ensures that workloads don't get
+        overwhelmed by incoming traffic, and that they don't act as Denial
+        of Service agents.
+
+        [1] https://docs.openshift.com/container-platform/4.7/nodes/clusters/nodes-cluster-overcommit.html
+        [2] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html
+        [3] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-across-multiple-projects.html
+        [4] https://docs.openshift.com/container-platform/4.7/nodes/pods/nodes-pods-configuring.html#nodes-pods-configuring-bandwidth_nodes-pods-configuring
 
 - control_key: SC-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        It is recommended that all workloads in the system establish appropriate
+        resource requests and limits to avoid resource starvation of critical
+        workloads. Appropriate configurations exist to manage resource
+        overcommitment [1]. Ensure that appropriate quotas are set in each
+        relevant project [2], or establish a cluster quota to limit the resources
+        that workloads can take [3]. The platform also allows for priorization
+        of workloads using priority classes [4].
 
-        https://issues.redhat.com/browse/CMP-475
+        [1] https://docs.openshift.com/container-platform/4.7/nodes/clusters/nodes-cluster-overcommit.html
+        [2] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-per-project.html
+        [3] https://docs.openshift.com/container-platform/4.7/applications/quotas/quotas-setting-across-multiple-projects.html
+        [4] https://docs.openshift.com/container-platform/4.7/nodes/pods/nodes-pods-priority.html
 
 - control_key: SC-5 (3)
   standard_key: NIST-800-53
