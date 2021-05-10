@@ -711,18 +711,17 @@
 - control_key: SC-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer will be responsible for terminating network connections
-        at the end of the session or after no longer than 30 minutes of
-        inactivity. A successful control response will document the technical
-        means on how this is established.
+        The OpenShift Oauth Server has a setting that enables the termination
+        of inactive sessions. The relevant setting is `accessTokenInactivityTimeout`
+        and it's possible to configure it under the OAuth object. [1]
+        A similar configuration exists in OAuthClient objects. This takes precedence
+        over the global OAuth object configuration, so it needs to be verified as
+        well.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-422
+        [1] https://docs.openshift.com/container-platform/4.7/authentication/configuring-internal-oauth.html#oauth-token-inactivity-timeout_configuring-internal-oauth
 
 - control_key: SC-11
   standard_key: NIST-800-53
