@@ -336,7 +336,7 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |-
-        This control is met through the use of Role-based Access Control
+        This control is inherently met through the use of Role-based Access Control
         for an OpenShift user. Namespaces should also be configured to
         sandbox users and resources to only the required projects.
 
