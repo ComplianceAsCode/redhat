@@ -9963,11 +9963,12 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        OpenShift uses the concept of namespaces or projects to ensure
-        workload isolation. The OpenShift platform comes with several
-        default projects that start with the "openshift-" prefix. [1] Such
-        projects, host functionality that's critical for the cluster's
-        operations. Only Cluser Administrators have access to these namespaces,
+        This is inherently met by OpenShift since uses the concept of
+        namespaces or projects to ensure workload isolation. The
+        OpenShift platform comes with several default projects that
+        start with the "openshift-" prefix. [1] Such projects, host
+        functionality that's critical for the cluster's operations.
+        Only Cluser Administrators have access to these namespaces,
         which ensures that regular users don't hace access to cluster
         management functionality.
 
@@ -9984,11 +9985,12 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        OpenShift uses the concept of namespaces or projects to ensure
-        workload isolation. The OpenShift platform comes with several
-        default projects that start with the "openshift-" prefix. [1] Such
-        projects, host functionality that's critical for the cluster's
-        operations. Only Cluser Administrators have access to these namespaces,
+        This is inherently met by OpenShift since uses the concept of
+        namespaces or projects to ensure workload isolation. The
+        OpenShift platform comes with several default projects that
+        start with the "openshift-" prefix. [1] Such projects, host
+        functionality that's critical for the cluster's operations.
+        Only Cluser Administrators have access to these namespaces,
         which ensures that regular users don't hace access to cluster
         management functionality.
 
@@ -10005,11 +10007,12 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        OpenShift uses the concept of namespaces or projects to ensure
-        workload isolation. The OpenShift platform comes with several
-        default projects that start with the "openshift-" prefix. [1] Such
-        projects, host functionality that's critical for the cluster's
-        operations. Only Cluser Administrators have access to these namespaces,
+        This is inherently met by OpenShift since uses the concept of
+        namespaces or projects to ensure workload isolation. The
+        OpenShift platform comes with several default projects that
+        start with the "openshift-" prefix. [1] Such projects, host
+        functionality that's critical for the cluster's operations.
+        Only Cluser Administrators have access to these namespaces,
         which ensures that regular users don't hace access to cluster
         management functionality.
 
@@ -10023,6 +10026,7 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
+        This is inherently met by OpenShift due to its native constructs.
         The customer is responsible for deployment utilizing namespaces,
         host roles and other features as well as policies and procedures
         to implement and ensure continued isolation of security functions
@@ -10064,6 +10068,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
+        This is inherently met by OpenShift due to its native constructs.
         Isolation of non-security functions can be achieved by a
         combination of features already included in the platform.
 
@@ -10081,6 +10086,7 @@ satisfies:
   implementation_status: not applicable
   narrative:
     - text: |
+        This is inherently met by OpenShift due to its native constructs.
         Isolation of security functions can be achieved by a
         combination of features already included in the platform.
 
@@ -10109,6 +10115,7 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
+        This is inherently met by OpenShift due to its native constructs.
         OpenShift namespaces/projects are used to isolate resources
         in the cluster. If a Secret or a ConfigMap object exists
         in the cluster, it will only be accessible by other resources
