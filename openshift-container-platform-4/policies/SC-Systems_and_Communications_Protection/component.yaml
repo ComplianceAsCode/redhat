@@ -1547,7 +1547,8 @@
   implementation_status: complete
   narrative:
     - text: |
-        The control is met when SELinux and namespaces are enabled and used.
+        OpenShift inherently meets this control since SELinux and namespaces
+        are enabled and used.
 
 - control_key: SC-39 (1)
   standard_key: NIST-800-53
