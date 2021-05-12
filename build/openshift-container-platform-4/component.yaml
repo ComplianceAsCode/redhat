@@ -10983,32 +10983,39 @@ satisfies:
 - control_key: SC-20
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
         OpenShift administrators are responsible for providing
         origin authentication and integrity verification artifacts along
-        with authoritative name resolution data returns in response. A
-        successful control response will discuss the technical means used to
-        accomplish this.
+        with authoritative name resolution data returns in response.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        When installing the OpenShift Platform on any cloud, or even on
+        baremetal, it's assumed that there is an available DNS service
+        that will host relevant entries that OpenShift needs. [1]
 
-        https://issues.redhat.com/browse/CMP-417
+        OpenShift administrators will need to configure DNSSEC for their
+        service and should consult their service provider for more details
+        on this.
+
+        [1] https://docs.openshift.com/container-platform/4.6/installing/installing_platform_agnostic/installing-platform-agnostic.html#installation-dns-user-infra_installing-platform-agnostic
+
     - key: b
       text: |
         OpenShift administrators are responsible for
         providing means to indicate the security status of child zones and
         enable verification of a chain of trust among parent and child domains.
-        A successful control response will discuss the technical means used to
-        accomplish this.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        When installing the OpenShift Platform on any cloud, or even on
+        baremetal, it's assumed that there is an available DNS service
+        that will host relevant entries that OpenShift needs. [1]
 
-        https://issues.redhat.com/browse/CMP-417
+        OpenShift administrators will need to configure DNSSEC for their
+        service and should consult their service provider for more details
+        on this.
+
+        [1] https://docs.openshift.com/container-platform/4.6/installing/installing_platform_agnostic/installing-platform-agnostic.html#installation-dns-user-infra_installing-platform-agnostic
 
 - control_key: SC-20 (1)
   standard_key: NIST-800-53
