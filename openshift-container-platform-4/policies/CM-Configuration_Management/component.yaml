@@ -125,13 +125,30 @@
 - control_key: CM-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        All of OpenShift control plane components are managed by operators.
+        Operator themselves expose functionality and configuration through
+        declarative objects that can be represented as YAML files, but ultimately
+        get stored and persisted in etcd. Due to the declarative nature of
+        how operators work, OpenShift inherently meets this requirements as it's
+        trivial and encouraged for administrators to store the YAML files that
+        are used to configure the cluster in means that allow for further automation.
+        This goes from the high level control plane components, down to the Operating
+        System configurations. It's all managed through Kubernetes Objects.
 
-        https://issues.redhat.com/browse/CMP-262
+        This allows for keeping the cluster's configuration in git and establishing
+        a GitOps sort of workflow for configuring the cluster and ensuring that
+        configuration changes are tracked, audited and stored securely.
+
+        Furthermore, Red Hat Advanced Cluster Manager allows for managing
+        multiple clusters and their configuratoins in a central and secure way [1].
+
+        Customers must then choose what path do they want to take to store their baseline
+        configurations and enforce their usage.
+
+        [1] https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/2.0/
 
 - control_key: CM-2 (3)
   standard_key: NIST-800-53
