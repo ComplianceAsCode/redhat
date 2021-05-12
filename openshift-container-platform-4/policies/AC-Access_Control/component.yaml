@@ -955,17 +955,20 @@
 - control_key: AC-6 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer will be responsible for auditing the execution of
-        privileged functions. A successful control response will need
-        to relate this requirement to the general auditing requirements
-        of the AU control family.
+        OpenShift performs audit logging by default, which makes this
+        control inherently met.
 
-        A control response is planned. Progress can be tracked via:
+        What constitutes an action by an admin role must be synthetized in a
+        SIEM, though. OCP audit logs do specify the RBAC rule that allowed the action
+        and the identity that requested the action.
 
-        https://issues.redhat.com/browse/CMP-122
+        See https://docs.openshift.com/container-platform/latest/security/audit-log-view.html
+        for documentation on how to view the audit logs and
+        https://docs.openshift.com/container-platform/latest/security/audit-log-policy-config.html
+        for information on configuring the audit logging.
 
 - control_key: AC-6 (10)
   standard_key: NIST-800-53
