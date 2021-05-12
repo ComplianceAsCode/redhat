@@ -3331,49 +3331,50 @@ satisfies:
 - control_key: CM-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-265
+        The organization reviewing the types of changes that should be
+        configuration controlled is out of scope from OpenShift.
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-265
+        The organization approving configuration controlled changes
+        to the system is out of scope from OpenShift.
     - key: c
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-265
+        The organization documented the decisions for configuration changes
+        to the system is out of scope from OpenShift.
     - key: d
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-265
+        The organization implementing approved configuration changes
+        to the system is out of scope from OpenShift.
     - key: e
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization maintaining records of the configuration-controlled
+        changes to the system is out of scope from OpenShift. However,
+        OpenShift allows for such capability since all configurations of
+        OpenShift are done through operators, which are configured through
+        Kubernetes objects which can be stored and even version-controlled.
 
-        https://issues.redhat.com/browse/CMP-265
+        Any change to the system will generate an audit log that allows for
+        determining when a change is made. And having a GitOps approach to
+        managing the system allows for tracking the change approvals.
     - key: f
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        The organization auditing activities related to configuration
+        changes to the system is out of scope from OpenShift. However,
+        OpenShift allows for such capability since all configurations of
+        OpenShift are done through operators, which are configured through
+        Kubernetes objects which can be stored and even version-controlled.
 
-        https://issues.redhat.com/browse/CMP-265
+        Any change to the system will generate an audit log that allows for
+        determining when a change is made. And having a GitOps approach to
+        managing the system allows for tracking the change approvals.
     - key: g
       text: |
         This control reflects organizational processes outside the scope
         of OpenShift configuration guidance.
-
 
 - control_key: CM-3 (1)
   standard_key: NIST-800-53
