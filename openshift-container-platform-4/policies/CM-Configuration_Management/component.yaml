@@ -393,10 +393,15 @@
   implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Progress can be
-        tracked via:
+        OpenShift enforces access restrictions through RBAC, which is
+        enabled and enforcing by default [1]. Every action in the system
+        is audited with relevant information about the time of the event,
+        the user involved, the source and destination of the action, the
+        Kubernetes object involved, and the enforcement (RBAC) decision taken
+        for that action.
 
-        https://github.com/ComplianceAsCode/redhat/issues/897
+        [1] https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+        [2] https://docs.openshift.com/container-platform/4.7/security/audit-log-view.html
 
 - control_key: CM-5 (2)
   standard_key: NIST-800-53
