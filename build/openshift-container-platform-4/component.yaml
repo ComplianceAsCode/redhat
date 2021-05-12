@@ -11091,12 +11091,17 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        OpenShift administrators are responsible for ensuring
-        services are fault-tolerant and implement internal/external role
-        separation.
+        OpenShift's internal DNS implementation inherently meets this
+        control as the CoreDNS instances deployed by the cluster-dns-operator
+        are run as a DaemonSet, and hence, run on every node on the cluster. [1]
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        This implementation provides adequate fault tolerance since there
+        are as many replicas as there are nodes in the cluster. Moreover,
+        by default nodes in the cluster are deployed in different availability
+        zones on the hosting cloud. This same pattern is recommended for
+        on-prem deployments.
+
+        [1] https://docs.openshift.com/container-platform/latest/networking/dns-operator.html
 
         https://issues.redhat.com/browse/CMP-409
 
