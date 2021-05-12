@@ -12202,7 +12202,7 @@ satisfies:
 - control_key: SI-4 (16)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer will be responsible for aggregating and correlating
@@ -12210,10 +12210,14 @@ satisfies:
         This is frequently accomplished with centralized audit reduction
         tools.
 
-        A control response for SI-4(16) is planned. Engineering progress can be
-        tracked via:
+        OpenShift enables auditing by default for the API Servers, the OAuth
+        server and the Linux hosts themselves. Auditing cannot be turned off.
 
-        https://issues.redhat.com/browse/CMP-536
+        The Cluster Logging Operator is able to forward the aforementioned
+        audit logs to a SIEM for further inspection and correlation of
+        information. [1]
+
+        [1] https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
 
 - control_key: SI-4 (17)
   standard_key: NIST-800-53
