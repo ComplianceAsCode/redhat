@@ -758,15 +758,13 @@
   implementation_status: planned
   narrative:
     - text: |
-        The customer will be responsible for employing integrity verification
-        tools for customer-controlled operating systems and software. A
-        successful control response will need to discuss the tools in use and
-        the integrity-checking mechanisms these tools employ.
+        The OpenShift Platform provides the File Integrity Operator to do
+        integrity verification of files and information on the nodes. [1]
 
-        A control response for SI-7 is planned. Engineering progress can be
-        tracked via:
+        Integrity verification of Operating System's firmware and bootloader is
+        planned through Keylime which is in development.
 
-        https://issues.redhat.com/browse/CMP-394
+        [1] https://docs.openshift.com/container-platform/latest/security/file_integrity_operator/file-integrity-operator-installation.html
 
 - control_key: SI-7 (1)
   standard_key: NIST-800-53
@@ -774,17 +772,18 @@
   implementation_status: planned
   narrative:
     - text: |
-        The customer will be responsible for performing integrity checks at
-        customer-specific frequencies and under customer-specified
-        circumstances (including frequencies and circumstances specified by
-        FedRAMP). A successful control response will need to identify the
-        criteria for performing integrity checking, as well as the rationale
-        for selecting those criteria.
+        The OpenShift Platform provides the File Integrity Operator to do
+        integrity verification of files and information on the nodes. [1]
 
-        A control response for SI-7(1) is planned. Engineering progress can be
-        tracked via:
+        The operator can be configured to perform integrity checks at user-defined
+        intervals. [2]
 
-        https://issues.redhat.com/browse/CMP-395
+        Integrity verification of Operating System's firmware and bootloader is
+        planned through Keylime which is in development. This will allow to
+        cover the system's startup integrity as specified by the control.
+
+        [1] https://docs.openshift.com/container-platform/latest/security/file_integrity_operator/file-integrity-operator-installation.html
+        [2] https://docs.openshift.com/container-platform/4.6/security/file_integrity_operator/file-integrity-operator-configuring.html
 
 - control_key: SI-7 (2)
   standard_key: NIST-800-53
