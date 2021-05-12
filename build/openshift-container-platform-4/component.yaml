@@ -10965,7 +10965,7 @@ satisfies:
 - control_key: SC-19
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
@@ -10976,6 +10976,9 @@ satisfies:
         The customer will be responsible for authorizing, monitoring, and
         controlling the use of VoIP within the system in accordance with
         organizational policies defined in SC-19(a).
+
+        This needs to be done on the networking or OS layer and does not
+        correspond to the platform implementation.
 
 - control_key: SC-20
   standard_key: NIST-800-53
