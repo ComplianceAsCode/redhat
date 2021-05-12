@@ -11740,32 +11740,32 @@ satisfies:
 - control_key: SI-2 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response for SI-2(1) is planned. Engineering progress can be
-        tracked via:
+        This is inherently met by the platform as it comes with a
+        pre-configured, pre-installed, and self-updating monitoring stack
+        installed by default [1]. This allows for specifying metrics and
+        heuristics to immediately alert administrators if there's a flaw
+        in the system so it can be remediated. This allows for the configuration
+        of real-time alerts.
 
-        https://issues.redhat.com/browse/CMP-526
+        [1] https://docs.openshift.com/container-platform/latest/monitoring/understanding-the-monitoring-stack.html
 
 - control_key: SI-2 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer will be required to employ automated mechanisms on a
-        monthly basis to determine the state of information system components
-        with regard to flaw remediation on their information systems as
-        required by their organizations policy. A successful control response
-        will address the customers use of automated tools such as Nessus to
-        perform periodic and on-demand scans through their system to determine
-        the state of system components with regard to flaw remediation.
+        This is inherently met by the platform as it comes with a
+        pre-configured, pre-installed, and self-updating monitoring stack
+        installed by default [1]. This allows for specifying metrics and
+        heuristics to immediately alert administrators if there's a flaw
+        in the system so it can be remediated. This allows for the configuration
+        of real-time alerts.
 
-        A control response for SI-2(2) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-405
+        [1] https://docs.openshift.com/container-platform/latest/monitoring/understanding-the-monitoring-stack.html
 
 - control_key: SI-2 (3)
   standard_key: NIST-800-53
