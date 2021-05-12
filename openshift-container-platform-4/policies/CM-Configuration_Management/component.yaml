@@ -128,11 +128,11 @@
   implementation_status: complete
   narrative:
     - text: |
-        All of OpenShift control plane components are managed by operators.
-        Operator themselves expose functionality and configuration through
+        All of Red Hat OpenShift's control plane components are managed by operators.
+        Operators themselves expose functionality and configuration through
         declarative objects that can be represented as YAML files, but ultimately
         get stored and persisted in etcd. Due to the declarative nature of
-        how operators work, OpenShift inherently meets this requirements as it's
+        how operators work, Red Hat OpenShift inherently meets this requirement as it's
         trivial and encouraged for administrators to store the YAML files that
         are used to configure the cluster in means that allow for further automation.
         This goes from the high level control plane components, down to the Operating
@@ -140,10 +140,10 @@
 
         This allows for keeping the cluster's configuration in git and establishing
         a GitOps sort of workflow for configuring the cluster and ensuring that
-        configuration changes are tracked, audited and stored securely.
+        configuration changes are tracked, audited, and stored securely.
 
         Furthermore, Red Hat Advanced Cluster Manager allows for managing
-        multiple clusters and their configuratoins in a central and secure way [1].
+        multiple clusters and their configurations centrally and securely [1].
 
         Customers must then choose what path do they want to take to store their baseline
         configurations and enforce their usage.
