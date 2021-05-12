@@ -865,7 +865,7 @@
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
         This is an organizational/procedural control outside the scope of
@@ -882,9 +882,9 @@
         to sudo in Linux. Users will have to completely logout/login when
         requiring privilege escalation between accounts.
 
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-220
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
 - control_key: AC-6 (3)
   standard_key: NIST-800-53
@@ -909,12 +909,12 @@
 - control_key: AC-6 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-118
+        Restricting privileged accounts to organization-defined personnel
+        or roles is outside the scope of OpenShift configuration, therefore
+        AC-6(5) is an organizational control.
 
 - control_key: AC-6 (6)
   standard_key: NIST-800-53
