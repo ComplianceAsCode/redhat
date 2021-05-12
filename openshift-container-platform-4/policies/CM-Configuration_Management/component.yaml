@@ -363,13 +363,13 @@
 - control_key: CM-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-269
+        Organizational analysis of changes to the information system to
+        determine potential security impacts in a test environment prior
+        to change implementation is outside the scope of OpenShift
+        configuration.
 
 - control_key: CM-4 (2)
   standard_key: NIST-800-53
