@@ -837,22 +837,30 @@
 - control_key: AC-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
+        This control is inherently met through the combination of Role-based
+        Access Control for both user and system accounts by dividing the
+        roles and assigning them via RBAC to the appropriate accounts,
+        plus defaulting to the restricted SCC.
 
-        https://issues.redhat.com/browse/CMP-115
+        Documentation on the OpenShift RBAC capabilities can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
+        Documentation on the OpenShift SCCs can be found at
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
 
 - control_key: AC-6 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-219
+        This control is inherently met because OpenShift requires the
+        membership in the cluster-admin role in order to change security
+        functions or security relevant information by default. Other
+        finer-grained access control can be configured using RBAC:
+        https://docs.openshift.com/container-platform/latest/authentication/using-rbac.html
 
 - control_key: AC-6 (2)
   standard_key: NIST-800-53
@@ -962,18 +970,11 @@
 - control_key: AC-6 (10)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer will be responsible for ensuring that non-privileged
-        users cannot execute privileged functions. A successful control
-        response will need to discuss the use of centralized authentication
-        and authorization and any other means of enforcement of privilege
-        levels.
-
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-123
+        This control is inherently met through the use of Role-based Access Control
+        and SCCs.
 
 - control_key: AC-7
   standard_key: NIST-800-53
