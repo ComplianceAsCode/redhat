@@ -1105,17 +1105,21 @@
 - control_key: SI-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer will be responsible for handling and retaining
         information within, or hosted by, OpenShift in
         accordance with applicable federal laws, Executive Orders,
         directives, policies, regulations, standards, and operational
-        requirements. A successful control response will need to outline
-        the specific requirements applicable to customer information
-        handling and retention, and the means by which those requirements
-        are met.
+        requirements.
+
+        This can be achieved with a combination of log forwarding [1]
+        and backing up the etcd datastore [2]. The appropriate retention
+        o the aforementioned data shall be ensured and determined by the customer.
+
+        [1] https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
+        [2] https://docs.openshift.com/container-platform/latest/backup_and_restore/backing-up-etcd.html
 
 - control_key: SI-13
   standard_key: NIST-800-53
