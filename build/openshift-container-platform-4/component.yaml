@@ -11200,35 +11200,37 @@ satisfies:
 - control_key: SC-28
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Information about the state of the system is stored in etcd.
+        OpenShift has support for enabling etcd encryption [1], which
+        effectively protects the confidentiality and integrity of
+        the cluster's runtime and workload-related information at rest.
 
-        https://issues.redhat.com/browse/CMP-407
+        [1] https://docs.openshift.com/container-platform/latest/security/encrypting-etcd.html
 
 - control_key: SC-28 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer is responsible for implementing cryptographic
         mechanisms to prevent unauthorzed disclosure and modification of
-        customer data. A successful control response will outline how
-        cryptography is used to ensure integrity of data in rest and
-        transport.
+        customer data.
 
         When running on Red Hat Enterprise Linux, full disk encryption
         is possible for data at rest on the OpenShift nodes. For data
         in transport, OpenShift uses cryptographic algorithms and ciphers to
         protect confidentiality and integrity of data in transport.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Information about the state of the system is stored in etcd.
+        OpenShift has support for enabling etcd encryption [1], which
+        effectively protects the confidentiality and integrity of
+        the cluster's runtime and workload-related information at rest.
 
-        https://issues.redhat.com/browse/CMP-509
+        [1] https://docs.openshift.com/container-platform/latest/security/encrypting-etcd.html
 
 - control_key: SC-28 (2)
   standard_key: NIST-800-53
