@@ -983,24 +983,35 @@ satisfies:
 - control_key: AC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        The customer will be responsible for enforcing a limit on consecutive
-        failed login attempts.
+        To meet the requirements, OpenShift must be configured
+        to use centralized authentication via an IDP. The limit
+        on consecutive failed login attempts must then be set
+        on the IDP side.
 
-        A control response is planned. Progress can be tracked via:
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
 
-        https://issues.redhat.com/browse/CMP-124
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
     - key: b
       text: |
+        To meet the requirements, OpenShift must be configured
+        to use centralized authentication via an IDP. The account
+        lock or delay until next login prompt must then be set
+        on the IDP side.
+
+        Note that the using the htpasswd IDP type cannot cover this
+        control, therefore using httpasswd based IDPs should render
+        the system non-compliant.
+
+        To configure an IdP, see https://docs.openshift.com/container-platform/latest/authentication/understanding-identity-provider.html
         The customer will be responsible for taking required
         actions defined by the customer, upon account lockout.
 
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-124
 
 - control_key: AC-7 (1)
   standard_key: NIST-800-53
