@@ -11078,23 +11078,24 @@ satisfies:
 - control_key: SC-23
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer will be responsible for guarding against, for
         example, man in the middle or session hijacking attacks for
         connections to the customer application, for example via the
-        use of TLS. A successful control response will address the
-        various types of attacks against session authenticity and the
-        mechanisms used to protect against those attacks.
+        use of TLS.
 
         OpenShift uses various TLS algorithms and ciphers to protect
-        the authenticity of communications sessions.
+        the authenticity of communications sessions. By default,
+        all of the control plane components in OpenShift use mutual-TLS
+        to protect communications against the attacks mentioned by this
+        control. [1] Thus, OpenShift inherently meets this requirement.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Any Route exposed by the deployment also use TLS and have a policy
+        to redirect requests to use TLS, and thus are secure by default.
 
-        https://issues.redhat.com/browse/CMP-408
+        [1] https://docs.openshift.com/container-platform/latest/security/certificate_types_descriptions/control-plane-certificates.html
 
 - control_key: SC-23 (1)
   standard_key: NIST-800-53
