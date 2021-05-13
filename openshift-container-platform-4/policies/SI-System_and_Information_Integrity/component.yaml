@@ -1116,7 +1116,7 @@
 
         This can be achieved with a combination of log forwarding [1]
         and backing up the etcd datastore [2]. The appropriate retention
-        o the aforementioned data shall be ensured and determined by the customer.
+        of the aforementioned data shall be ensured and determined by the customer.
 
         [1] https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
         [2] https://docs.openshift.com/container-platform/latest/backup_and_restore/backing-up-etcd.html
