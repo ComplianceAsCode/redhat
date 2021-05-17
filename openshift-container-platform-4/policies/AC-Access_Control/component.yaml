@@ -1036,33 +1036,31 @@
   narrative:
     - key: a
       text: |
-        The customer will be responsible for displaying a system use
-        notification banner to users. A successful control response will need
-        to address the conditions under which the banner will be displayed
-        (if a non-government user accesses the system, the system use
-        notification banner may not be appropriate), as well as the contents
-        of the notification message.
+        To configure a login banner for console logins via "oc login",
+        ensure a "motd" configMap in the openshift namespace exists.
+        The login message is set in the "message" key of the configMap:
 
-        In context of OpenShift, a banner must be displayed for all means
-        of accessing OpenShift itself (e.g. service consoles, remote access
-        through SSH, etc).
+        $ oc create cm motd --from-literal=message="this is the display banner" -nopenshift
 
-        A control response to AC-8 is planned. Progress can be tracked
-        via:
+        To configure a login banner for the webUI logins, please follow:
+        https://docs.openshift.com/container-platform/latest/web_console/customizing-the-web-console.html#customizing-the-login-page_customizing-web-console
 
-        https://issues.redhat.com/browse/CMP-125
     - key: b
       text: |
-        The customer will be responsible for displaying the use notification
-        banner until the user acknowledges the usage condition and takes
-        explicit actions to further access the system. A successful control
-        response will need to address the means by which the user will indicate
-        acknowledgement and move forward.
+        To configure a login banner for console logins via "oc login",
+        ensure a "motd" configMap in the openshift namespace exists.
+        The login message is set in the "message" key of the configMap:
 
-        A control response to AC-8 is planned. Progress can be tracked
-        via:
+        $ oc create cm motd --from-literal=message="this is the display banner" -nopenshift
 
-        https://issues.redhat.com/browse/CMP-125
+        To configure a login banner for the webUI logins, please follow:
+        https://docs.openshift.com/container-platform/latest/web_console/customizing-the-web-console.html#customizing-the-login-page_customizing-web-console
+
+        The login banner is displayed before the user logins in to the webUI,
+        thus satisfying the control. For console logins, the login banner
+        is displayed when the user acquires an OAuth token, but before they
+        actually perform any action.
+
     - key: c
       text: |
         The customer will be responsible for displaying a system use
