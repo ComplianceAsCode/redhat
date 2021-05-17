@@ -1180,28 +1180,31 @@
 - control_key: AC-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A control response is planned. Progress can be tracked via:
+        A session lock must be configured with the device that is used
+        to access Red Hat OpenShift.
 
-        https://issues.redhat.com/browse/CMP-222
+        See also AC-2(5) for information on configuring inactivity timeout.
     - key: b
       text: |
-        A control response is planned. Progress can be tracked via:
+        A session lock must be configured with the device that is used
+        to access Red Hat OpenShift.
 
-        https://issues.redhat.com/browse/CMP-222
+        See also AC-2(5) for information on configuring inactivity timeout.
 
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
+        A session lock must be configured with the device that is used
+        to access Red Hat OpenShift.
 
-        https://issues.redhat.com/browse/CMP-221
+        See also AC-2(5) for information on configuring inactivity timeout.
 
 - control_key: AC-12
   standard_key: NIST-800-53
