@@ -433,13 +433,15 @@
 - control_key: CM-5 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        OpenShift allows for enforcing that only signed and verified
+        containers run on the platform [1]. This is not enabled by default
+        and needs to be configured per the customer's environment and
+        requirements.
 
-        https://issues.redhat.com/browse/CMP-187
+        [1] https://docs.openshift.com/container-platform/4.7/security/container_security/security-deploy.html
 
 - control_key: CM-5 (4)
   standard_key: NIST-800-53
