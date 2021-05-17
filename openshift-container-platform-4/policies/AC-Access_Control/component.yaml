@@ -1401,7 +1401,7 @@
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Beginning with OpenShift 4.3, when OpenShift is deployed on Red Hat Enterprise
@@ -1409,27 +1409,6 @@
         libraries instead of the native Golang crypto. The system operator will need to
         verify that OpenShift is being deployed on a version of Red Hat Enterprise Linux
         that has been FIPS validated.
-
-        Prior to OpenShift 4.3, remote sessions were encrypted using Golang-provided
-        cryptography. While not FIPS validated, this included the following
-        cryptographic algorithms and ciphers to protect the confidentiality
-        and integrity of remote access sessions:
-                - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-                - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-                - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-                - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-                - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-                - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-                - TLS_RSA_WITH_AES_128_CBC_SHA
-                - TLS_RSA_WITH_AES_256_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-                - TLS_RSA_WITH_3DES_EDE_CBC_SHA
-
-        A better control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-144
 
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
@@ -1516,19 +1495,24 @@
   implementation_status: complete
   narrative:
     - text: |
-        OpenShift utilizes the firewall technology embedded into Red Hat
-        Enterprise Linux. This technology, named firewalld, allows a system
-        administrator to configure host-based rules which take effect
-        immediately. This gives an OpenShift operator the ability to immediately
-        drop all remote connections.
+        This control is inherently met by Red Hat OpenShift.
 
-        Additionally, OpenShift nodes may be placed into Maintenance Mode. This
+        OpenShift nodes may be placed into Maintenance Mode. This
         designation will migrate applications from a given cluster node to
         another, disconnecting any active sessions to a given cluster node.
 
         If immediate disconnect of all hosted applications are desired,
         individual containers may be halted. This will disconnect user sessions
         for tenant applications immediately.
+
+        In order to disconnect all users, delete all OAuth tokens:
+        $ oc delete oauthaccesstoken --all
+
+        Since neither Kubernetes nor Red Hat OpenShift support CRLs or
+        OSCP, the advice is not to use x509 certificates. If certificates
+        must absolutely be used, use very short-lived certificates and
+        as a last resort, instead of preventing authentication, remove all
+        RBAC rules associated with accounts that possess x509 certificates.
 
 - control_key: AC-18
   standard_key: NIST-800-53
