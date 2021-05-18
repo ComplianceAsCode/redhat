@@ -1166,9 +1166,14 @@
   implementation_status: planned
   narrative:
     - text: |
-        At the moment, Red Hat OpenShift does not allow limiting the number
-        of concurrent sessions. The RFE is tracked with:
-        https://issues.redhat.com/browse/RFE-48
+        The customer will be responsible for limiting the number of
+        concurrent sessions to the customer application as required.
+        A successful control implemented will need to address the technical
+        mechanism used to enforce this limit.
+
+        A control response is planned. Progress can be tracked via:
+
+        https://issues.redhat.com/browse/CMP-131
 
 - control_key: AC-11
   standard_key: NIST-800-53
