@@ -490,32 +490,39 @@
 - control_key: CM-6
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Customers should document the configuration settings applicable to their
+        deployments and ensure that appropriate hardening settings are in place.
+        Red Hat provides a hardening guide that's useful to help customers get
+        a reasonable hardened configuration. [1]
 
-        https://issues.redhat.com/browse/CMP-188
+        [1] https://access.redhat.com/solutions/5870581
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        A hardened configuration can be implemented by the customer, however
+        OpenShift's Compliance Operator [1] provides some automated remediations
+        and checks to verify that the hardened configuration has been implemented
+        correctly.
 
-        https://issues.redhat.com/browse/CMP-188
+        [1] https://docs.openshift.com/container-platform/4.7/security/compliance_operator/compliance-operator-understanding.html#compliance-operator-understanding
     - key: c
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        It is the customer's responsibility to document deviations from the
+        recommended hardened settings. In case of using the Compliance Operator,
+        this can be achieved by filling in appropriate details in the `rationale`
+        sections in the TailoredProfile objects. [1]
 
-        https://issues.redhat.com/browse/CMP-188
+        [1] https://docs.openshift.com/container-platform/4.7/security/compliance_operator/compliance-operator-tailor.html
     - key: d
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-188
+        Monitoring and controlling changes to the configuration itself is out of
+        OpenShift's scope. However, any changes to the system will be audited by the
+        platform. Further change control and management can be achieved by following
+        a GitOps workflow, which enables one to track who made and authorized
+        changes to the system.
 
 - control_key: CM-6 (1)
   standard_key: NIST-800-53
