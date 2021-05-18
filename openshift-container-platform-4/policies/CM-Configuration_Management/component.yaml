@@ -457,14 +457,19 @@
 - control_key: CM-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Progress can be
-        tracked via:
+        OpenShift inherently meets this requirement as adding additional Operators
+        requires admin RBAC permissions. Regular users are not able to install
+        extra operators in the system.
 
-        https://github.com/ComplianceAsCode/redhat/issues/901
+        On the other hand, deploying additional workloads requires that users have
+        access to the target namespace. Which is also protected by RBAC. Users need
+        to have explicit permission in order to add or remove components from namespaces. [1]
+
+        [1] https://docs.openshift.com/container-platform/4.7/authentication/using-rbac.html
     - key: b
       text: |
         This control reflects organizational processes outside the scope
