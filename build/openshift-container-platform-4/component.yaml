@@ -1041,33 +1041,31 @@ satisfies:
   narrative:
     - key: a
       text: |
-        The customer will be responsible for displaying a system use
-        notification banner to users. A successful control response will need
-        to address the conditions under which the banner will be displayed
-        (if a non-government user accesses the system, the system use
-        notification banner may not be appropriate), as well as the contents
-        of the notification message.
+        To configure a login banner for console logins via "oc login",
+        ensure a "motd" configMap in the openshift namespace exists.
+        The login message is set in the "message" key of the configMap:
 
-        In context of OpenShift, a banner must be displayed for all means
-        of accessing OpenShift itself (e.g. service consoles, remote access
-        through SSH, etc).
+        $ oc create cm motd --from-literal=message="this is the display banner" -nopenshift
 
-        A control response to AC-8 is planned. Progress can be tracked
-        via:
+        To configure a login banner for the webUI logins, please follow:
+        https://docs.openshift.com/container-platform/latest/web_console/customizing-the-web-console.html#customizing-the-login-page_customizing-web-console
 
-        https://issues.redhat.com/browse/CMP-125
     - key: b
       text: |
-        The customer will be responsible for displaying the use notification
-        banner until the user acknowledges the usage condition and takes
-        explicit actions to further access the system. A successful control
-        response will need to address the means by which the user will indicate
-        acknowledgement and move forward.
+        To configure a login banner for console logins via "oc login",
+        ensure a "motd" configMap in the openshift namespace exists.
+        The login message is set in the "message" key of the configMap:
 
-        A control response to AC-8 is planned. Progress can be tracked
-        via:
+        $ oc create cm motd --from-literal=message="this is the display banner" -nopenshift
 
-        https://issues.redhat.com/browse/CMP-125
+        To configure a login banner for the webUI logins, please follow:
+        https://docs.openshift.com/container-platform/latest/web_console/customizing-the-web-console.html#customizing-the-login-page_customizing-web-console
+
+        The login banner is displayed before the user logins in to the webUI,
+        thus satisfying the control. For console logins, the login banner
+        is displayed when the user acquires an OAuth token, but before they
+        actually perform any action.
+
     - key: c
       text: |
         The customer will be responsible for displaying a system use
@@ -1185,28 +1183,31 @@ satisfies:
 - control_key: AC-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A control response is planned. Progress can be tracked via:
+        A session lock must be configured with the device that is used
+        to access Red Hat OpenShift.
 
-        https://issues.redhat.com/browse/CMP-222
+        See also AC-2(5) for information on configuring inactivity timeout.
     - key: b
       text: |
-        A control response is planned. Progress can be tracked via:
+        A session lock must be configured with the device that is used
+        to access Red Hat OpenShift.
 
-        https://issues.redhat.com/browse/CMP-222
+        See also AC-2(5) for information on configuring inactivity timeout.
 
 - control_key: AC-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response is planned. Progress can be tracked via:
+        A session lock must be configured with the device that is used
+        to access Red Hat OpenShift.
 
-        https://issues.redhat.com/browse/CMP-221
+        See also AC-2(5) for information on configuring inactivity timeout.
 
 - control_key: AC-12
   standard_key: NIST-800-53
@@ -1406,7 +1407,7 @@ satisfies:
 - control_key: AC-17 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         Beginning with OpenShift 4.3, when OpenShift is deployed on Red Hat Enterprise
@@ -1414,27 +1415,6 @@ satisfies:
         libraries instead of the native Golang crypto. The system operator will need to
         verify that OpenShift is being deployed on a version of Red Hat Enterprise Linux
         that has been FIPS validated.
-
-        Prior to OpenShift 4.3, remote sessions were encrypted using Golang-provided
-        cryptography. While not FIPS validated, this included the following
-        cryptographic algorithms and ciphers to protect the confidentiality
-        and integrity of remote access sessions:
-                - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-                - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-                - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-                - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-                - TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-                - TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-                - TLS_RSA_WITH_AES_128_CBC_SHA
-                - TLS_RSA_WITH_AES_256_CBC_SHA
-                - TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-                - TLS_RSA_WITH_3DES_EDE_CBC_SHA
-
-        A better control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-144
 
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
@@ -1521,19 +1501,24 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |
-        OpenShift utilizes the firewall technology embedded into Red Hat
-        Enterprise Linux. This technology, named firewalld, allows a system
-        administrator to configure host-based rules which take effect
-        immediately. This gives an OpenShift operator the ability to immediately
-        drop all remote connections.
+        This control is inherently met by Red Hat OpenShift.
 
-        Additionally, OpenShift nodes may be placed into Maintenance Mode. This
+        OpenShift nodes may be placed into Maintenance Mode. This
         designation will migrate applications from a given cluster node to
         another, disconnecting any active sessions to a given cluster node.
 
         If immediate disconnect of all hosted applications are desired,
         individual containers may be halted. This will disconnect user sessions
         for tenant applications immediately.
+
+        In order to disconnect all users, delete all OAuth tokens:
+        $ oc delete oauthaccesstoken --all
+
+        Since neither Kubernetes nor Red Hat OpenShift support CRLs or
+        OSCP, the advice is not to use x509 certificates. If certificates
+        must absolutely be used, use very short-lived certificates and
+        as a last resort, instead of preventing authentication, remove all
+        RBAC rules associated with accounts that possess x509 certificates.
 
 - control_key: AC-18
   standard_key: NIST-800-53
@@ -3569,14 +3554,19 @@ satisfies:
 - control_key: CM-5 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Progress can be
-        tracked via:
+        OpenShift inherently meets this requirement as adding additional Operators
+        requires admin RBAC permissions. Regular users are not able to install
+        extra operators in the system.
 
-        https://github.com/ComplianceAsCode/redhat/issues/901
+        On the other hand, deploying additional workloads requires that users have
+        access to the target namespace. Which is also protected by RBAC. Users need
+        to have explicit permission in order to add or remove components from namespaces. [1]
+
+        [1] https://docs.openshift.com/container-platform/4.7/authentication/using-rbac.html
     - key: b
       text: |
         This control reflects organizational processes outside the scope
