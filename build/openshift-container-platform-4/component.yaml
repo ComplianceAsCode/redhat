@@ -1212,18 +1212,33 @@ satisfies:
 - control_key: AC-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer will be responsible for defining events or conditions
-        requiring disconnection (for example, user requesting logout), and for
-        terminating the session when those events or conditions arise. A
-        successful control response will need to outline the qualifying events
-        or conditions.
+        requiring disconnection (for example, user requesting logout),
+        and for terminating the session when those events or conditions
+        arise. Because a very common condition is to disconnect a user
+        after a certain period of time, this control response describes
+        how to configure the internal OAuth server’s token duration.
 
-        A control response is planned. Progress can be tracked via:
+        To meet the requirements, OpenShift must be configured
+        to use centralized authentication via an IDP. The token
+        duration can be then be configured globally:
+        https://docs.openshift.com/container-platform/latest/authentication/configuring-internal-oauth.html#oauth-configuring-internal-oauth_configuring-internal-oauth
 
-        https://issues.redhat.com/browse/CMP-132
+        Or per client:
+        https://docs.openshift.com/container-platform/4.7/rest_api/oauth_apis/oauthclient-oauth-openshift-io-v1.html#oauthclient-oauth-openshift-io-v1
+
+        Note that the global configuration does not change the configuration
+        of the oauthclient objects, so for proper compliance check, both must
+        be audited.
+
+        Also note that prior to OpenShift 4.8, changing the global oauth.config
+        object triggers a rollout of the kube-apiserver which can take up
+        to 15 minutes. You can watch the kube-apiserver rollout with
+        "oc get co kube-apiserver". Once the rollout finishes, the "Progressing"
+        column will say "False".
 
 - control_key: AC-12 (1)
   standard_key: NIST-800-53
