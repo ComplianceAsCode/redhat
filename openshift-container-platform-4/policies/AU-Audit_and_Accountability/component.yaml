@@ -629,12 +629,19 @@
 - control_key: AU-11
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        The Red Hat OpenShift audit logs are emited by the API servers
+        and stored on the master nodes.
+        The API servers do not support retaining audit logs for at least a
+        defined number of days, therefore the logs must be offloaded from
+        the cluster.
 
-        https://issues.redhat.com/browse/CMP-243
+        The Cluster Logging Operator is able to forward the Red Hat OpenShift
+        audit logs so that they can be stored per organizational policy.
+
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
 
 - control_key: AU-11 (1)
   standard_key: NIST-800-53
