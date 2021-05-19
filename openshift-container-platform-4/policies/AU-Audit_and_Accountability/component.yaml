@@ -128,12 +128,14 @@
 - control_key: AU-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        The Cluster Logging Operator is able to forward the Red Hat OpenShift
+        audit logs to a SIEM for further inspection and correlation of
+        information. [1]
 
-        https://issues.redhat.com/browse/CMP-160
+        [1] https://docs.openshift.com/container-platform/latest/logging/cluster-logging-external.html
 
 - control_key: AU-5
   standard_key: NIST-800-53
