@@ -145,18 +145,29 @@
 - control_key: AU-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
+        In case writing an audit record fails, all the API servers increase the
+        "apiserver_audit_error_total" metric. A PrometheusRule needs to be
+        created to create an alert in case the "apiserver_audit_error_total"
+        metric increases.
 
-        https://issues.redhat.com/browse/CMP-161
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
+        Red Hat OpenShift audit servers allow to configure the maximum size
+        of an audit log file, the maximum number of audit logs. Together with
+        the separate partition the audit logs reside on, this can be used to
+        alleviate concerns about running out of space.
 
-        https://issues.redhat.com/browse/CMP-161
+        At the moment, the apiservers don't support performing a configurable
+        action in case creating an audit log entry fails.
+        However, the AlertManager can be configured to call a webhook in
+        case writing the audit records fails. Because overwriting the old
+        logs is an acceptable action for FedRAMP moderate, the webhook could
+        just delete the old logs. A follow up ticket to create such webhook
+        is being tracked with https://issues.redhat.com/browse/CMP-965
 
 - control_key: AU-5 (1)
   standard_key: NIST-800-53
