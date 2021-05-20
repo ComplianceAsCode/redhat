@@ -2408,6 +2408,8 @@ satisfies:
 
         https://golang.org/pkg/time/
 
+        Therefore this control is inherently met.
+
     - key: b
       text: |-
         By default, the OpenShift API records time stamps for audit records
@@ -2418,6 +2420,8 @@ satisfies:
 
         timestamps such as requestReceivedTimestamp and stageTimestamp are
         in UTC format e.g. 2020-04-02T08:27:20.200962Z
+
+        Therefore this control is inherently met.
 
         See https://docs.openshift.com/container-platform/latest/nodes/nodes/nodes-nodes-audit-log.html
         for more example of audit records.
