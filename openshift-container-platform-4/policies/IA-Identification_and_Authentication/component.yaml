@@ -118,12 +118,15 @@
 - control_key: IA-2 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        A control response is planned. Engineering progress can be tracked via:
+        It is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
 
-        https://issues.redhat.com/browse/CMP-314
+        This would get rid of the only shared account normally present
+        in Red Hat OpenShift and map users in the organization to system users.
 
 - control_key: IA-2 (6)
   standard_key: NIST-800-53
