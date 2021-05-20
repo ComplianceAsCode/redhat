@@ -333,13 +333,16 @@
 - control_key: SA-4 (9)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response to SA-4(9) is planned. Progress
-        can be tracked at:
+        An overview of all the networking requirements can be
+        found at:
+        https://docs.openshift.com/container-platform/latest/installing/installing_bare_metal/installing-bare-metal-network-customizations.html#installation-network-user-infra_installing-bare-metal-network-customizations
 
-        https://issues.redhat.com/browse/CMP-366
+        As part of the compliance checks performed by the Compliance Operator,
+        Red Hat OpenShift components such as the kubelet are checked for using
+        TLS and communicating only on the approved ports.
 
 - control_key: SA-4 (10)
   standard_key: NIST-800-53
