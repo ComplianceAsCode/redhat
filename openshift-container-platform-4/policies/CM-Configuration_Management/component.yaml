@@ -700,20 +700,42 @@
 - control_key: CM-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        It is up to the customer to review and implement an appropriate
+        system component inventory. However, Red Hat provides tools that can
+        aid customers in generating such inventories and keeping them up-to-date.
 
-        https://issues.redhat.com/browse/CMP-277
+        A summary of the cluster's specification is available through the
+        ClusterVersion object [1]. This will provide information both on the version
+        and the specific container hash used. A list of the control plane operators
+        used for managing Red Hat OpenShift is available through the ClusterOperator
+        object [2].
+
+        Knowing this information, it's possible to get the list of packages for the
+        underlying hosts, as well as their versions. This can be done by
+        inspecting OpenShift's payload [3].
+
+        Installed operators with their respective versions can be listed through the
+        ClusterServiceVersion [4] object. Note that this is a namespaced resource, so
+        all namespaces need to be inspected.
+
+        Finally, Red Hat also provides the Skopeo [5] and Podman [6] to further inspect
+        any container images used in the deployment. These tools can help fill out extra
+        details about the contents of the containers used in the system.
+
+        [1] https://docs.openshift.com/container-platform/4.7/support/summarizing-cluster-specifications.html
+        [2] https://docs.openshift.com/container-platform/4.7/installing/validating-an-installation.html#getting-cluster-version-and-update-details_validating-an-installation
+        [3] https://access.redhat.com/solutions/5787001
+        [4] https://docs.openshift.com/container-platform/4.7/operators/understanding/olm/olm-understanding-olm.html#olm-csv_olm-understanding-olm
+        [5] https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/building_running_and_managing_containers/index#skopeo
+        [6] https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html-single/building_running_and_managing_containers/index#podman
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-277
+        It is up to the customer to ensure that the system component
+        inventory is kept up-to-date.
 
 - control_key: CM-8 (1)
   standard_key: NIST-800-53
