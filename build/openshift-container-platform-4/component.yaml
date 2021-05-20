@@ -2454,12 +2454,22 @@ satisfies:
 - control_key: AU-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        Access to and integrity of the audit records on the master nodes
+        is protected by the usual operating system permissions.
 
-        https://issues.redhat.com/browse/CMP-232
+        This control is met when /var/log/kube-apiserver,
+        /var/log/openshift-apiserver and /var/log/oauth-apiserver have
+        the permissions 0700 and the files under them 0600 and are
+        owned by root.root.
+
+        In addition, if audit logs are being offloaded from the cluster
+        using Cluster Logging Operator, care must be taken to only
+        use TLS in transit - all ClusterLogForwarder outputs must use
+        either https:// or tls:// as protocol. For more information, see
+        https://docs.openshift.com/container-platform/4.6/logging/cluster-logging-external.html
 
 - control_key: AU-9 (1)
   standard_key: NIST-800-53
@@ -2495,13 +2505,12 @@ satisfies:
 - control_key: AU-9 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |
-        A complete control response is planned. Progress can be tracked
-        via:
-
-        https://github.com/ComplianceAsCode/redhat/issues/863
+        Authorizing access to management of audit functionality to only
+        organizationally defined subset of users is outside the scope
+        of OpenShift configuration.
 
 - control_key: AU-9 (5)
   standard_key: NIST-800-53
