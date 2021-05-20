@@ -568,38 +568,52 @@
 - control_key: CM-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Red Hat OpenShift is targeted at running containers, and thus it
+        contains the minimal components to provide a secure, reliable
+        and operable container platform. It also runs over Red Hat CoreOS, [1]
+        which only contains a subset of packages that RHEL would usually have.
+        This subset is the minimum required to run OpenShift.
 
-        https://issues.redhat.com/browse/CMP-273
+        [1] https://docs.openshift.com/container-platform/4.7/architecture/architecture-rhcos.html
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Within OpenShift, as in Kubernetes, restrictions on network communications (open
+        ports and protocols) can be done by using NetworkPolicies [1]. This allows
+        administrators to restrict the traffic to and within a namespace.
 
-        https://issues.redhat.com/browse/CMP-273
+        Further restrictions should be done from the cloud that's running OpenShift,
+        or the infrastructure that the platform is running on.
+
+        [1] https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: CM-7 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        It is up to the customer to review the deployment to identify the minimal
+        needed services, network protocols and ports that need to be enabled in
+        the system.
 
-        https://issues.redhat.com/browse/CMP-274
+        For OpenShift, there is a comprehensive list in the documentation [1]
+
+        [1] https://docs.openshift.com/container-platform/4.7/installing/install_config/configuring-firewall.html
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Within OpenShift, as in Kubernetes, restrictions on network communications (open
+        ports and protocols) can be done by using NetworkPolicies [1]. This allows
+        administrators to restrict the traffic to and within a namespace.
 
-        https://issues.redhat.com/browse/CMP-274
+        Further restrictions should be done from the cloud that's running OpenShift,
+        or the infrastructure that the platform is running on.
+
+        [1] https://docs.openshift.com/container-platform/4.7/networking/network_policy/about-network-policy.html
 
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
