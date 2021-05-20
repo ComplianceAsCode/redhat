@@ -160,13 +160,12 @@
 - control_key: SA-4 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response to SA-4 (1) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-360
+        Red Hat has published a guide to securing Red Hat OpenShift
+        which can be downloaded from:
+        https://access.redhat.com/articles/5059881
 
 ##
 ## Developers note on SA-4 (2):
