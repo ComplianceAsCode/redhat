@@ -315,13 +315,12 @@
 - control_key: SA-4 (8)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response to SA-4(8) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-365
+        In order to continuously monitor the security controls, the
+        organization can deploy the Compliance Operator:
+        https://access.redhat.com/documentation/en-us/openshift_container_platform/latest/html/security_and_compliance/compliance-operator#compliance-operator-installation
 
 ##
 ## Developers note on SA-4 (9):
