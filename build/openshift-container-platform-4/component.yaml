@@ -6368,12 +6368,12 @@ satisfies:
 - control_key: MA-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
         Approving and monitoring nonlocal maintenance and diagnostic activities is an
-        orgnaizational control outside the scope of OpenShift configuration.
+        organizational control outside the scope of OpenShift configuration.
     - key: b
       text: |
         Allowing the use of nonlocal maintenance and diagnostic tools only as consistent with
@@ -6381,18 +6381,37 @@ satisfies:
         orgnaizational control outside the scope of OpenShift configuration.
     - key: c
       text: |
-        A control response is planned. Engineering progress can be tracked via:
+        Red Hat OpenShift does not have special maintenance or diagnostics
+        accounts or login procedures except for backup and restore
+        of the etcd database which requires ssh access:
+        https://docs.openshift.com/container-platform/4.7/backup_and_restore/disaster_recovery/scenario-2-restoring-cluster-state.html
+        For ssh access, the only permitted authenticator are ssh keys provided
+        via MachineConfig objects.
 
-        https://issues.redhat.com/browse/CMP-343
+        Similarly to what is being suggested in the AC control family,
+        it is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
     - key: d
       text: |
         The maintaining of records for nonlocal maintenance and diagnostic activities is an
         orgnaizational control outside the scope of OpenShift configuration.
     - key: e
       text: |
-        A control response is planned. Engineering progress can be tracked via:
+        Red Hat OpenShift does not have special maintenance or diagnostics
+        accounts or login procedures.
 
-        https://issues.redhat.com/browse/CMP-343
+        Similarly to what is being suggested in the AC control family,
+        it is recommended to grant the cluster-admin clusterrole
+        to a user or a group backed by an IDP and subsequently
+        remove the kubeadmin user as described in https://docs.openshift.com/container-platform/latest/authentication/remove-kubeadmin.html
+
+        With that, any login session can be terminated by removing the
+        appropriate "oauthaccesstoken" API object.
+
+        When restoring the etcd database, the RHCOS hosts need to be configured
+        to terminate idle sessions.
+
 
 - control_key: MA-4 (1)
   standard_key: NIST-800-53
