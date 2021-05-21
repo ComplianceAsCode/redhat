@@ -5635,8 +5635,10 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |-
-        By default, OpenShift Container Platform session key and account login
+        Red Hat OpenShift inherently meets this as the session key and account login
         passwords are obscured by not being displayed on output or by asterisks.
+
+        This is applicable to both the `oc` CLI and OpenShift's UI console.
 
 - control_key: IA-7
   standard_key: NIST-800-53
