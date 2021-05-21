@@ -3776,13 +3776,19 @@ satisfies:
 - control_key: CM-7 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Red Hat OpenShift allows for configuring the platform in such a way
+        that only signed containers will be accepted for scheduling. [1] [2]
 
-        https://issues.redhat.com/browse/CMP-275
+        Red Hat signs the images provided for running the platform, as well
+        as the base images that are usable for building other workloads.
+
+        Customers should be careful to enforce image signing on their own images.
+
+        [1] https://docs.openshift.com/container-platform/4.7/security/container_security/security-container-signature.html
+        [2] https://docs.openshift.com/container-platform/4.7/security/container_security/security-deploy.html#security-deploy-image-sources_security-deploy
 
 - control_key: CM-7 (3)
   standard_key: NIST-800-53
@@ -5049,9 +5055,16 @@ satisfies:
   implementation_status: complete
   narrative:
     - text: |-
-        A control response is planned. Engineering progress can be tracked via:
+        OpenShift offers support for replay-resistant authentication
+        mechanisms, both for OpenShift console and 3rd party
+        authentication. Third party identity providers configured for
+        modern TLS is supported by OpenShift.
 
-        https://issues.redhat.com/browse/CMP-573
+        Please see the specific identity provider documentation:
+        https://docs.openshift.com/container-platform/latest/authentication/understanding-authentication.html
+
+        When using the LDAP provider, care must be taken to not set
+        the "insecure" flag so that TLS is used.
 
 - control_key: IA-2 (9)
   standard_key: NIST-800-53
