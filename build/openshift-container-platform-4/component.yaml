@@ -5574,15 +5574,16 @@ satisfies:
 - control_key: IA-8
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |-
-        A control response for IA-8 is planned.
+        This control is applicable to the identity provider (IdP) configured in
+        OpenShift and outside the scope of OpenShift Platform itself.
 
 - control_key: IA-8 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |-
         Acceptance and electronically verified Personal Identity Verification (PIV) credentials
@@ -8735,13 +8736,14 @@ satisfies:
 - control_key: SA-4 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response to SA-4 (2) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-361
+        Red Hat OpenShift documentation (https://docs.openshift.com/container-platform/latest/welcome/index.html)
+        has a chapter on Security. In addition Red Hat provides API reference:
+          https://docs.openshift.com/container-platform/4.7/rest_api/index.html
+        Finally, everything is open source:
+          https://github.com/openshift/
 
 ##
 ## Developers note on SA-4 (3):
