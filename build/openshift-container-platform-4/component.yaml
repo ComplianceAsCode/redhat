@@ -540,12 +540,22 @@ satisfies:
 - control_key: AC-4
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        A control response is planned. Progress can be tracked via:
+        The customer is responsible for ensuring that NetworkPolicies
+        are configured in all non-openshift namespaces to allow traffic
+        only in the namespace and not across namespaces:
+        https://docs.openshift.com/container-platform/4.6/networking/network_policy/about-network-policy.html
 
-        https://issues.redhat.com/browse/CMP-98
+        Routes created in Red Hat OpenShift must also have an appropriate
+        policy that prefers a secure endpoint.
+
+        Documentation for creating an ingress rule can be viewed at:
+        https://docs.openshift.com/container-platform/latest/networking/configuring_ingress_cluster_traffic/overview-traffic.html
+
+        Documentation for creating a route can be viewed at:
+        https://docs.openshift.com/container-platform/latest/networking/routes/route-configuration.html
 
 - control_key: AC-4 (1)
   standard_key: NIST-800-53
@@ -778,18 +788,22 @@ satisfies:
 - control_key: AC-4 (21)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        The customer will be responsible for separating information flows
-        within the customer application. A successful control response will
-        need to address the customer organizational requirements for
-        the separation of information flows, and the mechanisms and
-        techniques used to accomplish this separation.
+        The customer is responsible for ensuring that NetworkPolicies
+        are configured in all non-openshift namespaces to allow traffic
+        only in the namespace and not across namespaces:
+        https://docs.openshift.com/container-platform/4.6/networking/network_policy/about-network-policy.html
 
-        A control response is planned. Progress can be tracked via:
+        Routes created in Red Hat OpenShift must also have an appropriate
+        policy that prefers a secure endpoint.
 
-        https://issues.redhat.com/browse/CMP-113
+        Documentation for creating an ingress rule can be viewed at:
+        https://docs.openshift.com/container-platform/latest/networking/configuring_ingress_cluster_traffic/overview-traffic.html
+
+        Documentation for creating a route can be viewed at:
+        https://docs.openshift.com/container-platform/latest/networking/routes/route-configuration.html
 
 - control_key: AC-4 (22)
   standard_key: NIST-800-53
