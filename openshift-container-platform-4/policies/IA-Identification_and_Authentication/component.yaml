@@ -227,7 +227,18 @@
   implementation_status: complete
   narrative:
     - text: |-
-        A control response for IA-3 is planned.
+        During cluster operation, all components are using mutual-TLS
+        to authenticate each other's identities:
+        https://docs.openshift.com/container-platform/4.6/security/certificate_types_descriptions/node-certificates.html
+
+        mTLS is also used during the initial bootstrap of the cluster:
+        https://docs.openshift.com/container-platform/4.3/authentication/certificate-types-descriptions.html#bootstrap-certificates_ocp-certificates
+        https://docs.openshift.com/container-platform/4.6/security/certificate_types_descriptions/bootstrap-certificates.html
+
+        Therefore, this control is inherently met.
+
+        Authenticating devices outside the cluster is the customer's
+        reponsibility.
 
 - control_key: IA-3 (1)
   standard_key: NIST-800-53
