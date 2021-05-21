@@ -96,22 +96,41 @@
 - control_key: AU-3
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        Red Hat OpenShift enables auditing by default for the API Servers,
+        the OAuth server and the Linux hosts themselves. Auditing cannot
+        be turned off which makes the control inherently met.
 
-        https://issues.redhat.com/browse/CMP-156
+        The control asks for the following information to be audited:
+          - what type of event occurred (verb is logged)
+          - when the event occurred (timestamp is logged)
+          - where the event occurred (request stage, the physical location of the file)
+          - the source of the event (sourceIP, user are logged)
+          - the outcome of the event (responseStatus is logged)
+          - the identity of any individuals or subjects associated with
+            the event (user UUID is logged which can be correlated with the real
+            identity)
+
+        More documentation on what information Red Hat OpenShift audits can be found at:
+        https://docs.openshift.com/container-platform/4.7/security/audit-log-view.html
+        and:
+        https://docs.openshift.com/container-platform/4.7/security/audit-log-policy-config.html
 
 - control_key: AU-3 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
+        Red Hat OpenShift supports three different audit policies which are
+        documented at:
+        https://docs.openshift.com/container-platform/4.7/security/audit-log-policy-config.html
 
-        https://issues.redhat.com/browse/CMP-157
+        At the moment, custom audit policies are not supported. However,
+        the WriteRequestBodies and AllRequestBodies policies should satisfy
+        all the information the control asks for.
 
 - control_key: AU-3 (2)
   standard_key: NIST-800-53
