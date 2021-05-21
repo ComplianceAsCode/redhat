@@ -8906,50 +8906,59 @@ satisfies:
 - control_key: SA-5
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - key: a
       text: |
-        A control response to SA-5(a) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        Obtaining administrator documentation is an organizational procedure.
+        To facilitate a response, links to Red Hat OpenShift documentation
+        are provided below.
     - key: a.1
       text: |
-        A control response to SA-5(a)(1) is planned. Progress
-        can be tracked at:
+        A guide to securing Red Hat OpenShift can be downloaded from:
+        https://access.redhat.com/articles/5059881
 
-        https://issues.redhat.com/browse/CMP-367
+        Installation:
+        https://docs.openshift.com/container-platform/latest/installing/index.html
+
+        Compliance:
+        https://docs.openshift.com/container-platform/latest/security/compliance_operator/compliance-operator-installation.html
     - key: a.2
       text: |
-        A control response to SA-5(a)(2) is planned. Progress
-        can be tracked at:
+        The Guide to securing Red Hat OpenShift touches on effective use
+        of security mechanisms:
+        https://access.redhat.com/articles/5059881
 
-        https://issues.redhat.com/browse/CMP-367
+        Red Hat OpenShift documentation has chapters on SCCs:
+        https://docs.openshift.com/container-platform/latest/authentication/managing-security-context-constraints.html
+        on hardening RHCOS:
+        https://docs.openshift.com/container-platform/latest/security/container_security/security-hardening.html
+        or securing the container platform:
+        https://docs.openshift.com/container-platform/latest/security/container_security/security-platform.html
     - key: a.3
       text: |
-        A control response to SA-5(a)(3) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        Official Red Hat CVE findings can be found at:
+        https://access.redhat.com/security/security-updates/#/cve
     - key: b
       text: |
-        A control response to SA-5(b) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        Obtaining administrator documentation is an organizational procedure.
+        To facilitate a response, links to Red Hat OpenShift documentation
+        are provided below.
     - key: b.1
       text: |
-        A control response to SA-5(b)(1) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        The following chapter provides an overview of container security
+        functions:
+        https://docs.openshift.com/container-platform/latest/security/container_security/security-understanding.html
+        as well as Chapter 3 (Container Security) of the OpenShift
+        security guide.
     - key: b.2
       text: |
-        A control response to SA-5(b)(2) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-367
+        Since users of Red Hat OpenShift are primarily developers, developer-centric
+        documentation applies here.
+        The following chapters provides an overview of securing the container content
+        and the build process:
+        https://docs.openshift.com/container-platform/4.7/security/container_security/security-container-content.html
+        https://docs.openshift.com/container-platform/4.7/security/container_security/security-build.html
     - key: b.3
       text: |
         This control reflects organizational procedure/policy and is not
@@ -9101,13 +9110,12 @@ satisfies:
 - control_key: SA-9 (5)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: not applicable
   narrative:
     - text: |
-        A control response to SA-9(5) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-368
+        Restricting location of information processing; data; information
+        system services is an organization policy and procedure control
+        that is out of scope for OpenShift configuration
 
 ##
 ## Developers note on SA-10
