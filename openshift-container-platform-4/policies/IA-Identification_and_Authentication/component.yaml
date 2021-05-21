@@ -717,6 +717,7 @@
     - text: |-
         Red Hat OpenShift inherently meets this as the session key and account login
         passwords are obscured by not being displayed on output or by asterisks.
+        This control is inherently met.
 
         This is applicable to both the `oc` CLI and OpenShift's UI console.
 
