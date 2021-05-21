@@ -714,23 +714,24 @@
 - control_key: AU-12
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-245
+        Red Hat OpenShift enables auditing by default for the API Servers,
+        the OAuth server and the Linux hosts themselves. Auditing cannot
+        be turned off which makes the control inherently met.
     - key: b
       text: |
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-245
+        Red Hat OpenShift allows the administrator to select from three
+        different audit profiles:
+        https://docs.openshift.com/container-platform/4.7/security/audit-log-policy-config.html
     - key: c
       text: |
+        Red Hat OpenShift enables auditing by default for the API Servers,
+        the OAuth server and the Linux hosts themselves. Auditing cannot
+        be turned off which makes the control inherently met.
         A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-245
 
 - control_key: AU-12 (1)
   standard_key: NIST-800-53
