@@ -631,12 +631,11 @@
 - control_key: IA-5 (4)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-328
+        Checking password complexity should be set on the IDP side.
+        The use of the htpasswd-based IDP is not allowed.
 
 - control_key: IA-5 (5)
   standard_key: NIST-800-53
