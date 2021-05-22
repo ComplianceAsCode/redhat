@@ -30,7 +30,7 @@ The results of this process can be reviewed online under [ComplianceAsCode/oscal
 
 ## Debugging the OpenControl
 
-Compliance masonry command from [OpenControl project](https://open-control.org/https://open-control.org/) may be used to fetch opencontrol dependencies of this project and validate the repository conformance with OpenControl standard.
+Compliance masonry command from [OpenControl project](https://open-control.org/) may be used to fetch opencontrol dependencies of this project and validate the repository conformance with OpenControl standard.
 
 ```
 podman run \
