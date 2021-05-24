@@ -5502,28 +5502,53 @@ satisfies:
 - control_key: IA-5 (2)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |-
-        A control response is planned. Engineering progress can be tracked via:
+        The certificates used for in-cluster mTLS authentication
+        are issued by an internal CA. It is not possible
+        to set a different CA:
+        https://docs.openshift.com/container-platform/4.6/security/certificate_types_descriptions/control-plane-certificates.html
 
-        https://issues.redhat.com/browse/CMP-327
+        The API server's certificates can be swapped for user-provided
+        ones:
+        https://docs.openshift.com/container-platform/4.6/security/certificate_types_descriptions/user-provided-certificates-for-api-server.html
+
+        It is also possible to set a custom CA for the Proxy objects:
+        https://docs.openshift.com/container-platform/4.6/security/certificate_types_descriptions/proxy-certificates.html
+        services:
+        https://docs.openshift.com/container-platform/4.6/security/certificate_types_descriptions/service-ca-certificates.html
+
+        When setting up IDPs, all compliant IDP allow the CA that signed
+        the IDP certificate to be set:
+        https://docs.openshift.com/container-platform/4.7/rest_api/config_apis/oauth-config-openshift-io-v1.html
     - key: b
       text: |-
-        A control response is planned. Engineering progress can be tracked via:
+        Most of the private keys are stored in Kubernetes secrets
+        which are inherently protected by the combination of RBAC
+        and namespaces.
 
-        https://issues.redhat.com/browse/CMP-327
+        In addition, OpenShift makes use of a number of key files as part
+        of the operation of its components. This includes keys for control
+        place components like kube-apiserver, kube-controller-manager,
+        kube-scheduler and etcd. These key files are protected using
+        traditional UNIX permissions as well as SELinux labels. Private
+        keys on the filesystem are checked using CaC rules that will be
+        imported from the CIS profile. It is possible to check their
+        permissions and SELinux labels by running:
+        $ find /etc/kubernetes/static-pod-resources/ -name \*.key -exec ls -lZ {} \;
+
     - key: c
       text: |-
-        A control response is planned. Engineering progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-327
+        The customer is responsible for checking that no wildcard
+        certificates are being used.
     - key: d
       text: |-
-        A control response is planned. Engineering progress can be tracked via:
+        There seems to be a gap where the certificates for IDPs are
+        not checked using OCSP or CRLS:
+        https://issues.redhat.com/browse/CMP-977
 
-        https://issues.redhat.com/browse/CMP-327
 
 - control_key: IA-5 (3)
   standard_key: NIST-800-53
