@@ -1448,7 +1448,7 @@ satisfies:
 - control_key: AC-17 (3)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: complete
+  implementation_status: not applicable
   narrative:
     - text: |
         The customer will be responsible for requiring remote access
@@ -5663,6 +5663,7 @@ satisfies:
     - text: |-
         Red Hat OpenShift inherently meets this as the session key and account login
         passwords are obscured by not being displayed on output or by asterisks.
+        This control is inherently met.
 
         This is applicable to both the `oc` CLI and OpenShift's UI console.
 
