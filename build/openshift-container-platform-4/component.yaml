@@ -2244,8 +2244,15 @@ satisfies:
   implementation_status: planned
   narrative:
     - text: |
-        A control response is planned. Engineering progress can be tracked via:
-        https://issues.redhat.com/browse/CMP-167
+        In order to to integrate audit review, analysis, and reporting
+        processes to support organizational processes for investigation
+        and response to suspicious activities, make sure the Cluster
+        Logging Operator is enabled.
+
+        Documentation regarding how to forward cluster logs using the
+        Cluster Logging Operator to specific endpoints can be found at:
+
+        https://docs.openshift.com/container-platform/latest/logging/cluster-logging.html
 
 - control_key: AU-6 (2)
   standard_key: NIST-800-53
