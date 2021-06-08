@@ -1185,9 +1185,9 @@
         A successful control implemented will need to address the technical
         mechanism used to enforce this limit.
 
-        A control response is planned. Progress can be tracked via:
-
-        https://issues.redhat.com/browse/CMP-131
+        At the moment, the OpenShift OAuth server does not support
+        limiting the number of concurrent logins. This work is scheduled
+        for OpenShift in https://issues.redhat.com/browse/RFE-48
 
 - control_key: AC-11
   standard_key: NIST-800-53
