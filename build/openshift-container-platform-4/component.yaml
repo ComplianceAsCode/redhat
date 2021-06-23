@@ -8875,6 +8875,8 @@ satisfies:
         which can be downloaded from:
         https://access.redhat.com/articles/5059881
 
+        Therefore this control is addressed via documentation.
+
 ##
 ## Developers note on SA-4 (2):
 ##  This control differs from SA-4 (1) in that implementation
@@ -8900,6 +8902,8 @@ satisfies:
           https://docs.openshift.com/container-platform/4.7/rest_api/index.html
         Finally, everything is open source:
           https://github.com/openshift/
+
+        Therefore this control is addressed via documentation.
 
 ##
 ## Developers note on SA-4 (3):
@@ -9046,6 +9050,8 @@ satisfies:
         An overview of all the networking requirements can be
         found at:
         https://docs.openshift.com/container-platform/latest/installing/installing_bare_metal/installing-bare-metal-network-customizations.html#installation-network-user-infra_installing-bare-metal-network-customizations
+
+        Therefore this control is addressed via documentation.
 
         As part of the compliance checks performed by the Compliance Operator,
         Red Hat OpenShift components such as the kubelet are checked for using
