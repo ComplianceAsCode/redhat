@@ -1,3 +1,4 @@
+---
 ##
 ## BEGINNING OF:
 ## SYSTEMS AND COMMUNICATIONS PROTECTION
@@ -338,26 +339,41 @@
 - control_key: SC-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - key: a
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Network segmentation configuration and policies can be achieved in the
+        OpenShift platform using network policies.
 
-        https://issues.redhat.com/browse/CMP-426
+        NetworkPolicies are on by default for the cluster when using the OCP CNI
+        plugin. [1][2] Cluster admin must add policies to relevant projects.
+
+        Depending on the SDN implementation, there will be different logs
+        and interfaces to monitor the network flows.
+
+        [1] https://docs.openshift.com/container-platform/4.7/networking/network_policy/multitenant-network-policy.html
+        [2] https://docs.openshift.com/container-platform/4.7/networking/network_policy/default-network-policy.html#default-network-policy
+
     - key: b
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Network segmentation within the cluster is achieved in the OpenShift
+        Platform using NetworkPolicies.
 
-        https://issues.redhat.com/browse/CMP-426
+        NetworkPolicies are on by default for the cluster when using the OCP CNI
+        plugin. [1][2] Cluster admin must add policies to relevant projects.
+
+        [1] https://docs.openshift.com/container-platform/4.7/networking/network_policy/multitenant-network-policy.html
+        [2] https://docs.openshift.com/container-platform/4.7/networking/network_policy/default-network-policy.html#default-network-policy
+
     - key: c
       text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        Egress network policy settings are configurable via the standard
+        OpenShift Platform/Kubernetes CNI interfaces. [1][2][3]
 
-        https://issues.redhat.com/browse/CMP-426
+        [1]https://docs.openshift.com/container-platform/4.7/networking/ovn_kubernetes_network_provider/configuring-egress-firewall-ovn.html
+        [2]https://docs.openshift.com/container-platform/4.7/networking/ovn_kubernetes_network_provider/configuring-egress-ips-ovn.html
+        [3]https://docs.openshift.com/container-platform/4.7/networking/ovn_kubernetes_network_provider/using-an-egress-router-ovn.html
 
 - control_key: SC-7 (1)
   standard_key: NIST-800-53
@@ -460,10 +476,13 @@
   implementation_status: planned
   narrative:
     - text: |
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        OpenShift allows for the configuration of a cluster-wide proxy. This
+        will set up the appropriate environment variables so workloads can take
+        it into use [1]. To enforce that applications aren't able to access
+        the outside world, deployments should be using restricted networks.[2]
 
-        https://issues.redhat.com/browse/CMP-477
+        [1] https://docs.openshift.com/container-platform/4.7/networking/enable-cluster-wide-proxy.html
+        [2] https://docs.openshift.com/container-platform/4.7/installing/installing_bare_metal/installing-restricted-networks-bare-metal.html
 
 - control_key: SC-7 (9)
   standard_key: NIST-800-53
@@ -508,35 +527,42 @@
 - control_key: SC-7 (12)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer will be responsible for implementing host-based
-        boundary protection mechanisms. This is often through configuration of
-        local firewalld and SELinux policies.
+        For applications, Network segmentation configuration and policies can
+        be achieved in the OpenShift platform using network policies.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        NetworkPolicies are on by default for the cluster when using the OCP CNI
+        plugin. [1][2] Cluster admin must add policies to relevant projects.
 
-        https://issues.redhat.com/browse/CMP-483
+        Depending on the SDN implementation, there will be different logs
+        and interfaces to monitor the network flows.
+
+        Firewall settings for the nodes themselves are usually controlled on the
+        underlying cloud's configurations. Additional host-based firewall settings
+        can be configured to address this requirement [3].
+
+        [1] https://docs.openshift.com/container-platform/4.7/networking/network_policy/multitenant-network-policy.html
+        [2] https://docs.openshift.com/container-platform/4.7/networking/network_policy/default-network-policy.html#default-network-policy
+        [3] https://docs.openshift.com/container-platform/4.7/installing/install_config/configuring-firewall.html
 
 - control_key: SC-7 (13)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         The customer will be responsible for ensuring that OpenShift is
         isolated from other internal information system components by
         implementing physically separate subnetworks with managed
-        interfaces to other components of the system. A successful control
-        response will discuss the networking configuration to satisfy this
-        control.
+        interfaces to other components of the system.
 
-        A complete control response is planned. Engineering progress can be
-        tracked via:
+        OpenShift inherently meets this control as it comes with the Multus plugin [1]
+        which allows administrators to chain multiple CNI plugins.
+        These plugins can be attached to physically separate networks.
 
-        https://issues.redhat.com/browse/CMP-484
+        [1] https://docs.openshift.com/container-platform/4.7/networking/multiple_networks/understanding-multiple-networks.html
 
 - control_key: SC-7 (14)
   standard_key: NIST-800-53
