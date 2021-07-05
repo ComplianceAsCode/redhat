@@ -582,7 +582,7 @@
         Red Hat uses git and github for development, so all changes including
         their authorship are tracked in SCMs and identifiable with a hash.
         Any downstream-specific changes are tracked in a special "midstream"
-        repository.
+        repository. This makes the control inherently met.
 
     - key: b
       text: |
