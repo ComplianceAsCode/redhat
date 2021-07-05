@@ -572,64 +572,45 @@
         system services is an organization policy and procedure control
         that is out of scope for OpenShift configuration
 
-##
-## Developers note on SA-10
-##  A successful control response will document all network
-##  information. Take care to document internal network usage,
-##  including loopback devices, as it is customary to block all
-##  traffic not explicitly outlined in this control.
-##
 - control_key: SA-10
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
-    ## A successful control response will document performance of configuration
-    ## management. Processes and mechanisms involved in configuration management
-    ## will need to be addressed.
     - key: a
       text: |
-        A control response to SA-10(a) is planned. Progress
-        can be tracked at:
+        Red Hat uses git and github for development, so all changes including
+        their authorship are tracked in SCMs and identifiable with a hash.
+        Any downstream-specific changes are tracked in a special "midstream"
+        repository.
 
-        https://issues.redhat.com/browse/CMP-369
-
-    ## A successful control response will need to address the processes
-    ## and mechanisms involved in documenting, managing, and controlling the
-    ## integrity of chances.
     - key: b
       text: |
-        A control response to SA-10(b) is planned. Progress
-        can be tracked at:
+        Red Hat uses git and github for development, so all changes including
+        their authorship are tracked in SCMs and identifiable with a hash.
+        Any downstream-specific changes are tracked in a special "midstream"
+        repository.
 
-        https://issues.redhat.com/browse/CMP-369
-
-    ## A successful control response will need to address the approval process
-    ## and safeguards in place to ensure only approved changes are implemented.
     - key: c
       text: |
-        A control response to SA-10(c) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-369
+        All commits to repositories must be peer-reviewed. In addition,
+        changes are tracked in Jira where every Epic must be signed off.
 
     ## A successful control response will need to discuss the process for
     ## documentation.
     - key: d
       text: |
-        A control response to SA-10(d) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-369
+        Each individual change goes through a peer review. Larger, system-wide
+        changes are tracked with a PR against the enhancements repository
+        (https://github.com/openshift/enhancements/). Each change tracked in
+        Jira also requires a signoff by the documentation team.
 
     ## A successful control response will need to discuss the process
     ## and tools used for tracking, resolution, and reporting.
     - key: e
       text: |
-        A control response to SA-10(e) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-369
+        Official Red Hat CVE findings can be found at:
+        https://access.redhat.com/security/security-updates/#/cve
 
 ##
 ## Developers note on SA-10 (1)
