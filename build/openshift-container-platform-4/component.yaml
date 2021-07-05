@@ -9311,7 +9311,7 @@ satisfies:
         Red Hat uses git and github for development, so all changes including
         their authorship are tracked in SCMs and identifiable with a hash.
         Any downstream-specific changes are tracked in a special "midstream"
-        repository.
+        repository. This makes the control inherently met.
 
     - key: b
       text: |
@@ -11396,7 +11396,7 @@ satisfies:
 - control_key: SC-22
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
         OpenShift's internal DNS implementation inherently meets this
