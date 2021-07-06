@@ -622,13 +622,13 @@
 - control_key: SA-10 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response to SA-10(1) is planned. Progress
-        can be tracked at:
-
-        https://issues.redhat.com/browse/CMP-373
+        All containers comprising the OpenShift Container Platform are
+        signed and from an authorized registry. Signature verification is
+        done in the Container Runtime level before running the containers.
+        Therefore, the OpenShift Platform inherently meets this control.
 
 - control_key: SA-10 (2)
   standard_key: NIST-800-53
