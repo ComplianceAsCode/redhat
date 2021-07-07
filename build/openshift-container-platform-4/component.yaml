@@ -3177,7 +3177,7 @@ satisfies:
 - control_key: CA-9
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: partial
+  implementation_status: complete
   narrative:
     - key: a
       text: |
