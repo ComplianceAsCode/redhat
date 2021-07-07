@@ -3181,14 +3181,22 @@ satisfies:
   narrative:
     - key: a
       text: |
-        Engineering progress can be tracked at:
+        By default, all of the control plane components in Red Hat OpenShift
+        use mutual-TLS to authenticate servers and clients. Thus, Red Hat
+        OpenShift inherently meets this control.
 
-        https://issues.redhat.com/browse/CMP-256
     - key: b
       text: |
-        Engineering progress can be tracked at:
+        All of Red Hat OpenShift's control plane components are managed by operators.
+        A list of the control plane operators used for managing Red Hat OpenShift
+        is available through the ClusterOperator object [1].
 
-        https://issues.redhat.com/browse/CMP-256
+        Red Hat Advanced Cluster Security[2] provides the capability to visualize
+        and discover network traffic, providing more visibility to the in-cluster
+        networking.
+
+        [1] https://docs.openshift.com/container-platform/4.7/installing/validating-an-installation.html#getting-cluster-version-and-update-details_validating-an-installation
+        [2] https://www.redhat.com/en/resources/advanced-cluster-security-for-kubernetes-datasheet
 
 - control_key: CA-9 (1)
   standard_key: NIST-800-53
