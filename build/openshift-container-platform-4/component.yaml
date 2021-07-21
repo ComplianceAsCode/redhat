@@ -5727,15 +5727,26 @@ satisfies:
 
         This is applicable to both the `oc` CLI and OpenShift's UI console.
 
+# For the full discussion, see https://issues.redhat.com/browse/CMP-983
+# the tl;dr is that this control seems to be a superset of SC-12 and SC-13.
+# For this control in particular, requiring FIPS seems like the best thing
+# to do and is agreed on by the most people.
 - control_key: IA-7
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |-
-        A control response is planned. Engineering progress can be tracked via:
+        FIPS mode can be enabled in OpenShift through a flag that
+        can be set at installation time [1]. Follow the relevant
+        documentation for the applicable cloud provider [2][3][4][5]
+        for more information. But note that this is also applicable
+        in on-prem deployments.
 
-        https://issues.redhat.com/browse/CMP-334
+        [1] https://docs.openshift.com/container-platform/latest/installing/installing-fips.html
+        [2] https://docs.openshift.com/container-platform/latest/installing/installing_aws/installing-aws-government-region.html#installation-configuration-parameters_installing-aws-government-region
+        [3] https://docs.openshift.com/container-platform/4.7/installing/installing_azure/installing-azure-customizations.html
+        [4] https://docs.openshift.com/container-platform/4.7/installing/installing_gcp/installing-gcp-customizations.html
 
 - control_key: IA-8
   standard_key: NIST-800-53
