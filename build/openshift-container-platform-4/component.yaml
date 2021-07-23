@@ -5626,13 +5626,48 @@ satisfies:
         This is an organizational procedural requirement
         outside the scope of OpenShift configuration.
 
+# For discussion about this control, see
+# https://issues.redhat.com/browse/CMP-982
 - control_key: IA-5 (7)
   standard_key: NIST-800-53
   covered_by: []
   implementation_status: complete
   narrative:
     - text: |-
-        A control response for IA-5(7) is planned.
+        Ensuring  that unencrypted static authenticators are not embedded
+        in applications or access scripts or stored on function keys, is
+        an organizational procedural requirement outside the scope of
+        OpenShift configuration.
+
+        Some general guidance can be provided for Kubernetes Secrets and
+        private PKI keys stored on the filesystem.
+
+        The private PKI keys are only protected by a combination of UNIX
+        permissions and SELinux labels, but otherwise they are stored
+        unencrypted on the filesystem.
+
+        Regarding Kubernetes secrets, as a general rule, it is recommended
+        to check all Kubernetes manifests (typically YAML files) and
+        ensure that no secrets are embedded there. Likewise, the manifests
+        should not use Kubernetes secret objects as environment variables
+        to avoid e.g. leaking them when the whole environment is printed
+        during debugging.
+
+        Kubernetes supports secrets as first-class objects, but care
+        needs to be taken to ensure that access to secrets is carefully
+        limited. Using an external secrets provider can ease the management
+        of access to secrets, especially where secrets are used across
+        both Kubernetes and non-Kubernetes environments.
+
+        Encrypting the etcd database ensures that secrets along with the
+        rest of the database is encrypted at rest.
+
+        It might be prudent to consider the use of an external secrets
+        storage and management system, instead of using Kubernetes
+        Secrets directly, if you have more complex secret management
+        needs. Ensure the solution requires authentication to access
+        secrets, has auditing of access to and use of secrets, and encrypts
+        secrets. Some solutions also make it easier to rotate secrets.
 
 - control_key: IA-5 (8)
   standard_key: NIST-800-53
