@@ -40,6 +40,11 @@
         https://docs.openshift.com/container-platform/4.7/security/audit-log-view.html
         and:
         https://docs.openshift.com/container-platform/4.7/security/audit-log-policy-config.html
+
+        Note that in order to correlate RHCOS audit.log entries that audit
+        process activity with container workloads, the CRI-O container runtime
+        is being enhanced to log the PID<->container relation:
+          https://github.com/cri-o/cri-o/pull/5134
     - key: b
       text: |
         Coordinating the security audit function with other
