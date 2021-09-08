@@ -12664,17 +12664,16 @@ satisfies:
 - control_key: SI-4 (23)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        The customer will be responsible for installing host-based monitoring
-        mechanisms. A successful control response will need to discuss how
-        various elements of the OpenShift infrastructure are monitored.
-
-        A control response for SI-4(20) is planned. Engineering progress can be
-        tracked via:
-
-        https://issues.redhat.com/browse/CMP-540
+        The OpenShift Platform inherently meets this controls as it enables
+        Host-based monitoring by having logging capabilities enabled by default.
+        On the Kubernetes level, audit logs are enabled and they track
+        activities of service accounts allocated to individual nodes, as well
+        other service accounts active on the system. On the node level, both
+        journald and audit logs are enabled by default, which can be then
+        shipped outside of the cluster for further analysis.
 
 - control_key: SI-4 (24)
   standard_key: NIST-800-53
