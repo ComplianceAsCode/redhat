@@ -9528,13 +9528,14 @@ satisfies:
 - control_key: SA-11 (1)
   standard_key: NIST-800-53
   covered_by: []
-  implementation_status: planned
+  implementation_status: complete
   narrative:
     - text: |
-        A control response to SA-11(e) is planned. Progress
-        can be tracked at:
+        Red Hat Product Security requires the a static analysis scan as
+        part of OCP's production pipeline.
 
-        https://issues.redhat.com/browse/CMP-375
+        For more details (private), see
+        https://issues.redhat.com/browse/CMP-1003
 
 - control_key: SA-11 (2)
   standard_key: NIST-800-53
