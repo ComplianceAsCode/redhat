@@ -1,3 +1,14 @@
+# This repository is DEPRECATED
+
+Please refer to [ComplianceAsCode/content](http://github.com/ComplianceAsCode/content) instead.
+
+Entries from OpenControl were migrated to the controls structure:
+
+e.g.
+
+* https://github.com/ComplianceAsCode/content/pulls?q=is%3Apr+is%3Amerged+migrate+label%3Aopencontrol-to-cac
+
+
 # Open Controls for Red Hat technologies
 
 This repository contains control responses to NIST-800-53 security controls. Human readable overview is available at http://atopathways.redhatgov.io/ato/products/select/NIST-800-53
